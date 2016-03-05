@@ -1,3 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Le plus important est invisible</title><link>/</link><description></description><atom:link href="/feeds/masayuki-igawa.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 05 Mar 2016 22:18:00 +0900</lastBuildDate><item><title>Test Post</title><link>/posts/2016/03/05/test-post/</link><description>&lt;p&gt;This is a super awesome test post.&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Le plus important est invisible</title><link>/</link><description></description><atom:link href="/feeds/masayuki-igawa.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 05 Mar 2016 23:16:00 +0900</lastBuildDate><item><title>なぜ毎週自転車に乗って遠くまで行くのか？</title><link>/posts/2016/03/05/why-do-i-go-cycling-far-away/</link><description>&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;メリット&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;痩せるため&lt;/li&gt;
+&lt;li&gt;アイス（ジェラートを食べたいため）&lt;/li&gt;
+&lt;li&gt;自転車乗って、鍛えたいため&lt;/li&gt;
+&lt;li&gt;より遠くに行きたい&lt;ul&gt;
+&lt;li&gt;海を見たい&lt;/li&gt;
+&lt;li&gt;山を見たい&lt;/li&gt;
+&lt;li&gt;富士山のそばまで行きたい&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;気晴らし&lt;/li&gt;
+&lt;li&gt;自分の力だけで、そこまで行けるってことが嬉しい&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;デメリット&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;体が辛いことがある （風が強い日など特に。。）&lt;/li&gt;
+&lt;li&gt;長距離には時間がかかる&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;およそ、平均時速20km/h程度。100kmで5時間かかる計算。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Sat, 05 Mar 2016 23:16:00 +0900</pubDate><guid>tag:,2016-03-05:posts/2016/03/05/why-do-i-go-cycling-far-away/</guid></item><item><title>Test Post</title><link>/posts/2016/03/05/test-post/</link><description>&lt;p&gt;This is a super awesome test post.&lt;/p&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Sat, 05 Mar 2016 22:18:00 +0900</pubDate><guid>tag:,2016-03-05:posts/2016/03/05/test-post/</guid><category>example</category><category>test</category></item><item><title>My First Review</title><link>/posts/2010/12/03/my-first-review/</link><description>&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Fri, 03 Dec 2010 10:20:00 +0900</pubDate><guid>tag:,2010-12-03:posts/2010/12/03/my-first-review/</guid></item></channel></rss>
