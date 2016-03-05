@@ -19,13 +19,11 @@
 &lt;h2&gt;デメリット&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;体が辛いことがある （風が強い日など特に。。）&lt;/li&gt;
-&lt;li&gt;長距離には時間がかかる&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;ul class="simple"&gt;
+&lt;li&gt;長距離には時間がかかる&lt;ul&gt;
 &lt;li&gt;およそ、平均時速20km/h程度。100kmで5時間かかる計算。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 </summary></entry><entry><title>Test Post</title><link href="/posts/2016/03/05/test-post/" rel="alternate"></link><updated>2016-03-05T22:18:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:,2016-03-05:posts/2016/03/05/test-post/</id><summary type="html">&lt;p&gt;This is a super awesome test post.&lt;/p&gt;
 </summary><category term="example"></category><category term="test"></category></entry><entry><title>My Update</title><link href="/posts/2016/01/07/my_update/" rel="alternate"></link><updated>2016-01-07T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:,2016-01-07:posts/2016/01/07/my_update/</id><summary type="html">&lt;h1&gt;2016-01-07 My Update&lt;/h1&gt;
