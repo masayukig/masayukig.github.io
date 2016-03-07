@@ -1,5 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>What is essential is invisible to the eye</title><link href="http://blog.afterstack.net/" rel="alternate"></link><link href="http://blog.afterstack.net/feeds/masayuki-igawa.atom.xml" rel="self"></link><id>http://blog.afterstack.net/</id><updated>2016-03-06T00:00:00+09:00</updated><entry><title>Test</title><link href="http://blog.afterstack.net/posts/2016/03/06/test/" rel="alternate"></link><updated>2016-03-06T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:blog.afterstack.net,2016-03-06:posts/2016/03/06/test/</id><summary type="html">&lt;p&gt;test&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>What is essential is invisible to the eye</title><link href="http://blog.afterstack.net/" rel="alternate"></link><link href="http://blog.afterstack.net/feeds/masayuki-igawa.atom.xml" rel="self"></link><id>http://blog.afterstack.net/</id><updated>2016-03-08T00:00:00+09:00</updated><entry><title>HPEにオープンソースデベロッパーとして転職して２ヶ月で感じたこと</title><link href="http://blog.afterstack.net/posts/2016/03/08/update-past-2months/" rel="alternate"></link><updated>2016-03-08T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:blog.afterstack.net,2016-03-08:posts/2016/03/08/update-past-2months/</id><summary type="html">&lt;h1&gt;結論&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;もっと早く転職しとくんだった&lt;/li&gt;
+&lt;li&gt;記憶力、スピードなどはどうしても年々衰えてくる&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;とは言え、それなりのオファーがないと転職は難しい。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;自分のキャリアパスはきちんと考えて、流されずに主張しよう。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;思い描いたキャリアパスが無いのなら、それがあるところに移ることを考えよう。&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;「面白そう」と思う分野に進んだほうが、全体最適化から考えても有意義。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;今回の以前にも転職活動していた時期がある。その時はいろんな会社を受けまくったけど、ことごとく敗退。自己主張、アピールが足りなかったんだろうなと思う。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;英語について&lt;/h1&gt;
+&lt;h2&gt;Face to Face&lt;/h2&gt;
+&lt;h2&gt;テキスト&lt;/h2&gt;
+&lt;h3&gt;E-mail&lt;/h3&gt;
+&lt;h3&gt;IRC&lt;/h3&gt;
+&lt;p&gt;HPEは外資系の会社なので、社内のシステムやメールなどは英語が主ですが、日本にいる社員の大半は日本人なので、日本オフィスは、日本語が共通語になっているようです。
+ただし、私の仕事内容はOpenStackというオープンソースのクラウド基盤ソフトウェアを、コミュニティの中で開発することです。また、会社のチームはインターナショナルチームなのでチームメンバー・上司が英語が母国語の人たちが大多数で共通語は英語という状況。そのため、英語が必須な状況ですが、２ヶ月経った今も、英語スキルは以前とあまり変わりがありません。。
+もちろん「前から英語ができてた」わけではなく「今もあまりできません」という有様です。
+気心知れた人との１対１での会話なら、「あ、こいつ英語苦手なんだね」と相手がある程度手加減してくれることが多いのでなんとかなりますが、
+ネイティブあるいはそれに近い人達が議論をし始めると、なかなか入っていけません。
+また、もともと人見知りでコミュニケーションは苦手な部分があるので、そういうところからも、なかなか会話に入っていけません。
+それでも、どうにかなってるのは、テキストでの会話（IRC, E-mail）のお陰です。&lt;/p&gt;
+&lt;p&gt;E-mailはリアルタイム性が低いので、結構やりやすいですが、どうしても時間がかかってしまいがちです。
+IRCはリアルタイム性が高いので、やり取りがけっこう大変ですが、くだけた会話でもどうにかなります。
+一長一短ありますが、IRCの方が気楽なことが多いと思います。&lt;/p&gt;
+&lt;h1&gt;仕事内容について&lt;/h1&gt;
+&lt;h2&gt;体制&lt;/h2&gt;
+&lt;p&gt;チームには日本人は私しかおらず、日本で作業しているのも私のみです。
+直属のマネージャはオーストラリアにおり、タイムゾーンが近いこともあって、IRCなどで会話をすることが多いです。
+さらにその上の上司は、Alison Randallさんで、タイムゾーンがかなり違うこともあり、なかなか会話はないですが、やはりIRCで会話をすることが多いです。
+さらに上の方になってくると、HPE のクラウドを統括している人になってきますが、なかなか話をする機会はないですね。ただ、IRCのミーティングに参加したりすることもあり、非常に上下の風通しは良いんじゃないかと感じます。
+変な「親会社」「子会社」みたいな意識が見えないのが心地よく感じます。&lt;/p&gt;
+&lt;h2&gt;作業内容&lt;/h2&gt;
+&lt;p&gt;ひたすらコードの読み書き・レビューしてます。
+最近はopenstack-healthというコンポーネントに注力して作業してます。フロントエンドが&lt;/p&gt;</summary><category term="work"></category><category term="oss"></category><category term="english"></category><category term="career"></category></entry><entry><title>Test</title><link href="http://blog.afterstack.net/posts/2016/03/06/test/" rel="alternate"></link><updated>2016-03-06T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:blog.afterstack.net,2016-03-06:posts/2016/03/06/test/</id><summary type="html">&lt;p&gt;test&lt;/p&gt;
 </summary></entry><entry><title>なぜ毎週自転車に乗って遠くまで行くのか？</title><link href="http://blog.afterstack.net/posts/2016/03/05/why-do-i-go-cycling-far-away/" rel="alternate"></link><updated>2016-03-05T23:16:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:blog.afterstack.net,2016-03-05:posts/2016/03/05/why-do-i-go-cycling-far-away/</id><summary type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;メリット&lt;/h2&gt;
 &lt;ul class="simple"&gt;
