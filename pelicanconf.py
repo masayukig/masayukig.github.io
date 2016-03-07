@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Masayuki Igawa'
-SITENAME = u'Le plus important est invisible'
+SITENAME = u'What is essential is invisible to the eye'
 #SITEURL = ''
 SITEURL = 'http://blog.afterstack.net'
 
