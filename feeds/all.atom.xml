@@ -1,2 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Miscellaneous things I have been thinking about</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2010-12-03T10:20:00+09:00</updated><entry><title>My First Review</title><link href="/posts/2010/12/03/my-first-review/" rel="alternate"></link><updated>2010-12-03T10:20:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:,2010-12-03:posts/2010/12/03/my-first-review/</id><summary type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</summary></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Le plus important est invisible</title><link href="http://blog.afterstack.net/" rel="alternate"></link><link href="http://blog.afterstack.net/feeds/all.atom.xml" rel="self"></link><id>http://blog.afterstack.net/</id><updated>2016-03-06T00:00:00+09:00</updated><entry><title>Test</title><link href="http://blog.afterstack.net/posts/2016/03/06/test/" rel="alternate"></link><updated>2016-03-06T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:blog.afterstack.net,2016-03-06:posts/2016/03/06/test/</id><summary type="html">&lt;p&gt;test&lt;/p&gt;
+</summary></entry><entry><title>なぜ毎週自転車に乗って遠くまで行くのか？</title><link href="http://blog.afterstack.net/posts/2016/03/05/why-do-i-go-cycling-far-away/" rel="alternate"></link><updated>2016-03-05T23:16:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:blog.afterstack.net,2016-03-05:posts/2016/03/05/why-do-i-go-cycling-far-away/</id><summary type="html">&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;メリット&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;痩せるため&lt;/li&gt;
+&lt;li&gt;アイス（ジェラートを食べたいため）&lt;/li&gt;
+&lt;li&gt;自転車乗って、鍛えたいため&lt;/li&gt;
+&lt;li&gt;より遠くに行きたい&lt;ul&gt;
+&lt;li&gt;海を見たい&lt;/li&gt;
+&lt;li&gt;山を見たい&lt;/li&gt;
+&lt;li&gt;富士山のそばまで行きたい&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;気晴らし&lt;/li&gt;
+&lt;li&gt;自分の力だけで、そこまで行けるってことが嬉しい&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;デメリット&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;体が辛いことがある （風が強い日など特に。。）&lt;/li&gt;
+&lt;li&gt;長距離には時間がかかる&lt;ul&gt;
+&lt;li&gt;およそ、平均時速20km/h程度。100kmで5時間かかる計算。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Test Post</title><link href="http://blog.afterstack.net/posts/2016/03/05/test-post/" rel="alternate"></link><updated>2016-03-05T22:18:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:blog.afterstack.net,2016-03-05:posts/2016/03/05/test-post/</id><summary type="html">&lt;p&gt;This is a super awesome test post.&lt;/p&gt;
+</summary><category term="example"></category><category term="test"></category></entry><entry><title>My Update</title><link href="http://blog.afterstack.net/posts/2016/01/07/my_update/" rel="alternate"></link><updated>2016-01-07T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:blog.afterstack.net,2016-01-07:posts/2016/01/07/my_update/</id><summary type="html">&lt;h1&gt;2016-01-07 My Update&lt;/h1&gt;
+&lt;p&gt;3 days has passed since I started my new job. Here's an update of me.&lt;/p&gt;
+&lt;p&gt;I’m very excited to announce joining the Allison’s team that is in HPE.
+(Matthew and Sean are there. :-)
+I’m very happy to work with the members because all members are very kind :)&lt;/p&gt;
+&lt;p&gt;Now, I go Ohjima HPE Japan HQ office everyday. It’s only 1 mile/20 mins
+by walk from my home! And there are a great and beautiful cafeteria at the office.
+And of course, A CVS and Starbucks are also there.&lt;/p&gt;
+&lt;p&gt;My responsibility is contributing to the OpenStack upstream. It’s not so different
+from my previous job but I’m not a “manager” anymore. Now I’m doing some stuffs for
+my initial setup. So I don’t have enough time to spend for upstream things right now.
+But I hope I’ll have the time tomorrow or next week at least.&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;新たな職場となり、３日間が過ぎましたので、そろそろ近況報告させていただきます。&lt;/p&gt;
+&lt;h1&gt;新たな職場&lt;/h1&gt;
+&lt;p&gt;Hewlett Packard Enterprise/日本ヒューレット・パッカード株式会社です。&lt;/p&gt;
+&lt;h1&gt;業務内容&lt;/h1&gt;
+&lt;p&gt;OpenStack upstreamに対する開発（コントリビューション）が業務内容となります。&lt;/p&gt;
+&lt;p&gt;というわけで、今までは、
+「仕事はマネージャ、心はプログラマ」
+だったのですが、今は
+「仕事も心もプログラマ」
+となりましたｗ&lt;/p&gt;
+&lt;h1&gt;チーム&lt;/h1&gt;
+&lt;p&gt;Allison Randal さんチーム一員となりました。
+なので、以前からOpenStack QAチームとして仕事をしていた Matthew Treinish さんや Sean Dague さんと
+会社としても同じチームになりました :)
+レポートラインは日本側ではなく、オーストラリア、アメリカの上司です。（初めての外国人上司！）
+チームメンバーはみんなフレンドリーで、非常にありがたいです。&lt;/p&gt;
+&lt;p&gt;なお、日本側にも上司がいます（ホスティングマネージャと呼ばれているようです）が、
+休暇申請などの勤怠管理をしてもらうくらいのようで、業務指示は出ないとのこと。
+また、日本側の組織の方々には、全く認識してもらっていなかったようで、
+配属初日（昨日）から結構ゴタゴタしました。
+でもまぁ、徐々に馴染んでいくんじゃないかと思いますｗ&lt;/p&gt;
+&lt;h1&gt;オフィス&lt;/h1&gt;
+&lt;p&gt;でも、現在、大島の日本ヒューレット・パッカード本社オフィスに勤務しています。
+綺麗な社員食堂/カフェテリア、セブンイレブン、スターバックスなどがあり、とても
+便利です。（なお、自宅からオフィスまで歩いて２０分くらいなので、めちゃくちゃ近く
+なりましたｗ）
+「柔軟な働き方」が推進されている最中のようで、ジーンズでの出社もOKとのことなので、
+服装は徐々に、そういう方向にシフトしていこうかなと思っています。&lt;/p&gt;
+&lt;h1&gt;今のところの主な課題&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;仕事用のPCが無い&lt;/li&gt;
+&lt;li&gt;今月末行く予定の linux.conf.au の出張手続きが、システム上できてない&lt;/li&gt;
+&lt;li&gt;いろんな初期作業(初期教育、事務手続き、マシンセットアップ等)に時間を取られて、実務に取り掛かれていない&lt;/li&gt;
+&lt;li&gt;英語がヤバい
+と言ったあたり。
+「1.」は、普通の仕事なら結構致命的ですが、
+実務自体は、「Upstreamに対するコントリビューション」なので
+あまり影響が無いとも言えます。（が、社内手続きは結構大変。。）
+また「4.」も、かなり致命的ですが、徐々になんとかしていきたいと思います。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;さいごに&lt;/h1&gt;
+&lt;p&gt;関係各位にはご迷惑をお掛けしたことと思いますが、
+今後とも、よろしくお願い致します。&lt;/p&gt;</summary></entry><entry><title>My First Review</title><link href="http://blog.afterstack.net/posts/2010/12/03/my-first-review/" rel="alternate"></link><updated>2010-12-03T10:20:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:blog.afterstack.net,2010-12-03:posts/2010/12/03/my-first-review/</id><summary type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</summary></entry></feed>
