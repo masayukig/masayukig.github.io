@@ -3,7 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Masayuki Igawa'
-SITENAME = u'What is essential is invisible to the eye'
+#SITENAME = u'What is essential is invisible to the eye'
+SITENAME = u'What is done is done'
 #SITEURL = ''
 SITEURL = 'http://blog.afterstack.net'
 
@@ -54,9 +55,13 @@ TWITTER_USERNAME = 'masayukig'
 TWITTER_WIDGET_ID = '650189654373724160'
 ADDTHIS_PROFILE = 'masayukig'
 
-SOCIAL = (('twitter', 'https://twitter.com/masayukig'),
-          ('linkedin', 'https://www.linkedin.com/in/masayukig'),
-          ('github', 'https://github.com/masayukig'),)
+SOCIAL = (('Twitter', 'https://twitter.com/masayukig'),
+          ('LinkedIn', 'https://www.linkedin.com/in/masayukig'),
+          ('GitHub', 'https://github.com/masayukig'),
+          ('Flickr', 'https://flickr.com/masayun'),
+          ('Instagram', 'https://instagram.com/masayukig'),)
+
+ABOUT_ME = '<a href="https://about.me/masayukig">about.me</a>'
 #DISPLAY_CATEGORIES_ON_SIDEBAR = True
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 RECENT_POST_COUNT = True
@@ -73,3 +78,5 @@ STATIC_PATHS = ['images', 'extra/custom.css']
 EXTRA_PATH_METADATA = {
     'extra/custom.css': {'path': 'static/custom.css'}
 }
+SHOW_ARTICLE_AUTHOR = True
+
