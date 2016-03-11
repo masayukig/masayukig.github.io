@@ -6,7 +6,7 @@ AUTHOR = u'Masayuki Igawa'
 #SITENAME = u'What is essential is invisible to the eye'
 SITENAME = u'What is done is done'
 #SITEURL = ''
-SITEURL = 'http://blog.afterstack.net'
+SITEURL = 'http://afterstack.net'
 
 PATH = 'content'
 
@@ -46,8 +46,8 @@ EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 THEME = '../pelican-themes/pelican-bootstrap3'
 DISQUS_DISPLAY_COUNTS = True
 # https://github.com/DandyDev/pelican-bootstrap3/issues/219
-# DISQUSURL = 'http://blog.afterstack.net'
-# DISQUS_URL = 'http://blog.afterstack.net'
+# DISQUSURL = 'http://afterstack.net'
+# DISQUS_URL = 'http://afterstack.net'
 
 CC_LICENSE = 'CC-BY'
 TWITTER_CARDS = True
