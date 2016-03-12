@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What is done is done</title><link>http://afterstack.net/</link><description></description><atom:link href="http://afterstack.net/feeds/masayuki-igawa.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 08 Mar 2016 00:00:00 +0900</lastBuildDate><item><title></title><link>http://afterstack.net/posts/2016/03/08//</link><description>&lt;p&gt;Title: OSSプログラマとして転職して２ヶ月で感じたこと
-Slug: update-past-2months
-Tags: work, oss, english, career
-Category: Work&lt;/p&gt;
-&lt;div class="section" id="id1"&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What is done is done</title><link>http://afterstack.net/</link><description></description><atom:link href="http://afterstack.net/feeds/masayuki-igawa.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 08 Mar 2016 00:00:00 +0900</lastBuildDate><item><title>OSSプログラマとして転職して２ヶ月で感じたこと</title><link>http://afterstack.net/posts/2016/03/08/update-past-2months/</link><description>&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;想定読者&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;「外資系」ってどういうところなのか知りたい&lt;/li&gt;
@@ -154,7 +150,7 @@ IRCはリアルタイム性が高いので、やり取りがけっこう大変�
 URL:&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Tue, 08 Mar 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-03-08:posts/2016/03/08//</guid></item><item><title>Test</title><link>http://afterstack.net/posts/2016/03/06/test/</link><description>&lt;p&gt;test&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Tue, 08 Mar 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-03-08:posts/2016/03/08/update-past-2months/</guid><category>work</category><category>oss</category><category>english</category><category>career</category></item><item><title>Test</title><link>http://afterstack.net/posts/2016/03/06/test/</link><description>&lt;p&gt;test&lt;/p&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Sun, 06 Mar 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-03-06:posts/2016/03/06/test/</guid></item><item><title>なぜ毎週自転車に乗って遠くまで行くのか？</title><link>http://afterstack.net/posts/2016/03/05/why-do-i-go-cycling-far-away/</link><description>&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;メリット&lt;/h2&gt;
 &lt;ul class="simple"&gt;
