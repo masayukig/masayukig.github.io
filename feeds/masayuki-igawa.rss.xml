@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What is done is done</title><link>http://afterstack.net/</link><description></description><atom:link href="http://afterstack.net/feeds/masayuki-igawa.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 08 Mar 2016 00:00:00 +0900</lastBuildDate><item><title>HPEにOSSプログラマとして転職して２ヶ月で感じたこと</title><link>http://afterstack.net/posts/2016/03/08/update-past-2months/</link><description>&lt;h1&gt;結論&lt;/h1&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What is done is done</title><link>http://afterstack.net/</link><description></description><atom:link href="http://afterstack.net/feeds/masayuki-igawa.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 08 Mar 2016 00:00:00 +0900</lastBuildDate><item><title>OSSプログラマとして転職して２ヶ月で感じたこと</title><link>http://afterstack.net/posts/2016/03/08/update-past-2months/</link><description>&lt;h1&gt;結論&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;技術力だけじゃない&lt;/li&gt;
-&lt;li&gt;もっと早く転職しとくんだった&lt;/li&gt;
+&lt;li&gt;４０歳でも（転職）初体験できる&lt;/li&gt;
 &lt;li&gt;英語大事&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;以下、その内容。&lt;/p&gt;
 &lt;h1&gt;技術力だけじゃない&lt;/h1&gt;
-&lt;p&gt;私は、「スーパーハカー・プログラマ・デベロッパ」と言ったものではありません。技術力的には「並」くらいはあるとは思いたいですが、それほど突出しているわけではありません。周りのOpenStack開発者をざっと見回しても「あいつには勝てないな・・・」と思う人が多々います。
-そんな状況なのに「プログラマとして転職してやっていけるだろうか・・・」と自問自答している日々ではありますが、最近は「技術力だけではない」と思うようにしています。
+&lt;p&gt;まずはじめに、私はスーパー(ハカー|プログラマ|デベロッパ)と呼ばれるほどの腕は持ってません。技術力は「並」くらいはあるとは思いたいですが、突出しているわけではありません。周りのOpenStack開発者をざっと見回しても「あいつには勝てないな・・・」と思う人が多々います。
+　そんな状況なのに「プログラマとして転職してやっていけるだろうか・・・」と自問自答している日々ではありますが、最近は「技術力だけではない」と思うようにしています。自分の役割として、
 &lt;em&gt; 自分の持っている知識・技術・経験を使って、ほかの人に伝える・手伝う/助ける。
 &lt;/em&gt; あまり他の人がやっていない分野に貢献する。
 * 盛り上げ役（苦手ダケド）
@@ -20,12 +20,14 @@
 &lt;p&gt;実際、今のマネージャからは「アレやれ、コレやれ」という指示は全く無く、
 一応、週1でミーティングしてますが、IRCでチャットしてるだけで、特にノルマ（ｘ件/月パッチマージとか）もありません。
 情報共有しておきたいこと、困ってることなどを相談する場になっています。&lt;/p&gt;
-&lt;p&gt;もちろん、社内の必須教育、事務処理&lt;/p&gt;
-&lt;h1&gt;もっと早く転職しとくんだった&lt;/h1&gt;
+&lt;p&gt;もちろん、社内の必須教育、事務処理などはある程度ありますがそれほど多いとは感じません。&lt;/p&gt;
+&lt;h1&gt;４０歳でも（転職）初体験できる&lt;/h1&gt;
+&lt;p&gt;比較的長く「技術者」として働ける環境ができているとは思います。
+が、以下の点からもっと早く転職しておくんだったと思っています。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;見極めはもっと早くすべき。年齢を重ねて、地位が上がるにつれ、関係各所に色々と迷惑をかけることが増えてきて、身動きが取りづらくなる。&lt;/li&gt;
 &lt;li&gt;記憶力、スピードなどはどうしても年々衰えてくるので&lt;/li&gt;
-&lt;li&gt;とは言え、それなりのオファーがないと転職は難しい。&lt;/li&gt;
+&lt;li&gt;とは言え、それなりのオファーがないと転職は難しいので、私としては最速に近いくらいのタイミングだった。&lt;/li&gt;
 &lt;li&gt;自分のキャリアパスはきちんと考えて、流されずに主張しよう。&lt;/li&gt;
 &lt;li&gt;思い描いたキャリアパスが今の会社に無いのなら、それがあるところに移ることを考えよう。&lt;ul&gt;
 &lt;li&gt;もちろん「自分の道を作っていく」という選択肢もあり、それをやりたい人ならそこで頑張るのが良いと思います。私の場合はそうではありませんでした。&lt;/li&gt;
@@ -67,7 +69,10 @@ IRCはリアルタイム性が高いので、やり取りがけっこう大変�
 変な上下意識が見えないのが心地よく感じます。（もちろん、上下の役割はしっかり意識されています。）&lt;/p&gt;
 &lt;h2&gt;作業内容&lt;/h2&gt;
 &lt;p&gt;ひたすらコードの読み書き・レビューしてます。
-最近はopenstack-healthというコンポーネントに注力して作業してます。フロントエンドがAngularJSなので、かなり刺激的。悪戦苦闘の日々です。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Tue, 08 Mar 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-03-08:posts/2016/03/08/update-past-2months/</guid><category>work</category><category>oss</category><category>english</category><category>career</category></item><item><title>Test</title><link>http://afterstack.net/posts/2016/03/06/test/</link><description>&lt;p&gt;test&lt;/p&gt;
+最近はopenstack-healthというコンポーネントに注力して作業してます。フロントエンドがAngularJSなので、かなり刺激的。悪戦苦闘の日々です。&lt;/p&gt;
+&lt;h2&gt;作業場所&lt;/h2&gt;
+&lt;p&gt;大島日本法人本社８階 食堂で作業してます。景色がいいし、比較的静か（心地よいノイズ）があるのでいい感じで作業できてます。
+URL:&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Tue, 08 Mar 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-03-08:posts/2016/03/08/update-past-2months/</guid><category>work</category><category>oss</category><category>english</category><category>career</category></item><item><title>Test</title><link>http://afterstack.net/posts/2016/03/06/test/</link><description>&lt;p&gt;test&lt;/p&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Sun, 06 Mar 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-03-06:posts/2016/03/06/test/</guid></item><item><title>なぜ毎週自転車に乗って遠くまで行くのか？</title><link>http://afterstack.net/posts/2016/03/05/why-do-i-go-cycling-far-away/</link><description>&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;メリット&lt;/h2&gt;
 &lt;ul class="simple"&gt;
