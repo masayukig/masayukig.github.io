@@ -95,8 +95,9 @@
 &lt;/div&gt;
 &lt;div class="section" id="id8"&gt;
 &lt;h3&gt;テキスト&lt;/h3&gt;
-&lt;p&gt;E-mail
-++++---++&lt;/p&gt;
+&lt;div class="section" id="e-mail"&gt;
+&lt;h4&gt;E-mail&lt;/h4&gt;
+&lt;/div&gt;
 &lt;div class="section" id="irc"&gt;
 &lt;h4&gt;IRC&lt;/h4&gt;
 &lt;p&gt;　HPEは外資系の会社なので、社内のシステムやメールなどは英語が主ですが、日本にいる社員の大半は日本人なので、
