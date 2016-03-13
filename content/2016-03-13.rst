@@ -2,6 +2,7 @@
 :slug: update-past-2months
 :tags: work, oss, english, career
 :category: Work
+:date: 2016-03-13
 
 想定読者
 ========
