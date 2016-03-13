@@ -15,8 +15,10 @@ TIMEZONE = 'Asia/Tokyo'
 DEFAULT_LANG = u'en'
 DEFAULT_DATE_FORMAT = ('%Y-%m-%d')
 
-ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+# ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+# ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
 
 DISQUS_SITENAME = 'afterstack'
 
@@ -69,7 +71,7 @@ LINKS = (('Python.org', 'http://python.org/'),
         ('OpenStack.org', 'http://openstack.org/'),)
 #BOOTSTRAP_FLUID = True
 PLUGIN_PATHS = ['../pelican-plugins']
-PLUGINS = ['related_posts']
+PLUGINS = ['related_posts', 'tag_cloud']
 
 CUSTOM_CSS = 'static/custom.css'
 # Tell Pelican to add 'extra/custom.css' to the output dir
@@ -81,3 +83,4 @@ EXTRA_PATH_METADATA = {
 SHOW_ARTICLE_AUTHOR = True
 
 DISPLAY_ARTICLE_INFO_ON_INDEX = True
+DISPLAY_TAGS_ON_SIDEBAR = True
