@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What is done is done</title><link>http://afterstack.net/</link><description></description><atom:link href="http://afterstack.net/feeds/masayuki-igawa.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 08 Mar 2016 00:00:00 +0900</lastBuildDate><item><title>OSSプログラマとして転職して２ヶ月で感じたこと</title><link>http://afterstack.net/posts/2016/03/08/update-past-2months/</link><description>&lt;div class="section" id="id1"&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What is done is done</title><link>http://afterstack.net/</link><description></description><atom:link href="http://afterstack.net/feeds/masayuki-igawa.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 08 Mar 2016 00:00:00 +0900</lastBuildDate><item><title>OSSプログラマとして転職して２ヶ月で感じたこと</title><link>http://afterstack.net/posts/2016/03/update-past-2months/</link><description>&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;想定読者&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;「外資系」ってどういうところなのか知りたい&lt;/li&gt;
@@ -24,8 +24,8 @@
 が、最近は「技術力だけではない」と思うようにしています。自分の役割としては...&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;dl class="first docutils"&gt;
-&lt;dt&gt;OpenStackをより良くしていくための開発&lt;/dt&gt;
-&lt;dd&gt;&lt;p class="first last"&gt;-&amp;gt; これが一番重要。早い・遅いはそれほど重視されていない様に感じる。知らないことがあれば、どうやって解決していくのかが重要。&lt;/p&gt;
+&lt;dt&gt;OpenStack開発&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first last"&gt;-&amp;gt; もちろん、これが一番重要。早い・遅いはそれほど重視されていない様に感じる。知らないことがあれば、どうやって解決していくのかが重要。&lt;/p&gt;
 &lt;/dd&gt;
 &lt;/dl&gt;
 &lt;/li&gt;
@@ -42,11 +42,11 @@
 &lt;blockquote&gt;
 「人から言われて動くようだと、今のチームではうまくやっていけないと思う。だから、自分でやるべきことを考え・
 探してやっていくようにしたほうが良いよ。」&lt;/blockquote&gt;
-&lt;p&gt;というようなことを言われました。&lt;/p&gt;
-&lt;p&gt;実際、今のマネージャからは「アレやれ、コレやれ」という指示は全く無く、
-一応、週1でミーティングしてますが、IRCでチャットしてるだけで、特にノルマ（ｘ件/月パッチマージとか）も
-ありません。情報共有しておきたいこと、困ってることなどを相談する場になっています。&lt;/p&gt;
-&lt;p&gt;もちろん、社内の必須教育、事務処理フォローなどはありますが、それほど多いとは感じません。&lt;/p&gt;
+&lt;p&gt;というようなことを言われました。
+　実際、今のマネージャからは「アレやれ、コレやれ」という指示は全く無く、週1のマネージャとのミーティングも、
+IRCでチャットしてるだけで、特にノルマ（ｘ件/月パッチマージとか）もありません。情報共有しておきたいこと、
+困ってることなどを相談する場になっています。もちろん、社内の必須教育、事務処理フォローなどはありますが、
+それほど多いとは感じません。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id4"&gt;
 &lt;h2&gt;４０歳でも（転職）初体験できる&lt;/h2&gt;
@@ -153,8 +153,8 @@ IRCはリアルタイム性が高いので、やり取りがけっこう大変�
 URL:&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Tue, 08 Mar 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-03-08:posts/2016/03/08/update-past-2months/</guid><category>work</category><category>oss</category><category>english</category><category>career</category></item><item><title>Test</title><link>http://afterstack.net/posts/2016/03/06/test/</link><description>&lt;p&gt;test&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Sun, 06 Mar 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-03-06:posts/2016/03/06/test/</guid></item><item><title>なぜ毎週自転車に乗って遠くまで行くのか？</title><link>http://afterstack.net/posts/2016/03/05/why-do-i-go-cycling-far-away/</link><description>&lt;div class="section" id="id2"&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Tue, 08 Mar 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-03-08:posts/2016/03/update-past-2months/</guid><category>work</category><category>oss</category><category>english</category><category>career</category></item><item><title>Test</title><link>http://afterstack.net/posts/2016/03/test/</link><description>&lt;p&gt;test&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Sun, 06 Mar 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-03-06:posts/2016/03/test/</guid></item><item><title>なぜ毎週自転車に乗って遠くまで行くのか？</title><link>http://afterstack.net/posts/2016/03/why-do-i-go-cycling-far-away/</link><description>&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;メリット&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;痩せるため&lt;/li&gt;
@@ -180,8 +180,8 @@ URL:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Sat, 05 Mar 2016 23:16:00 +0900</pubDate><guid>tag:afterstack.net,2016-03-05:posts/2016/03/05/why-do-i-go-cycling-far-away/</guid></item><item><title>Test Post</title><link>http://afterstack.net/posts/2016/03/05/test-post/</link><description>&lt;p&gt;This is a super awesome test post.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Sat, 05 Mar 2016 22:18:00 +0900</pubDate><guid>tag:afterstack.net,2016-03-05:posts/2016/03/05/test-post/</guid><category>example</category><category>test</category></item><item><title>My Update</title><link>http://afterstack.net/posts/2016/01/07/my_update/</link><description>&lt;h1&gt;2016-01-07 My Update&lt;/h1&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Sat, 05 Mar 2016 23:16:00 +0900</pubDate><guid>tag:afterstack.net,2016-03-05:posts/2016/03/why-do-i-go-cycling-far-away/</guid></item><item><title>Test Post</title><link>http://afterstack.net/posts/2016/03/test-post/</link><description>&lt;p&gt;This is a super awesome test post.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Sat, 05 Mar 2016 22:18:00 +0900</pubDate><guid>tag:afterstack.net,2016-03-05:posts/2016/03/test-post/</guid><category>example</category><category>test</category></item><item><title>My Update</title><link>http://afterstack.net/posts/2016/01/my_update/</link><description>&lt;h1&gt;2016-01-07 My Update&lt;/h1&gt;
 &lt;p&gt;3 days has passed since I started my new job. Here's an update of me.&lt;/p&gt;
 &lt;p&gt;I’m very excited to announce joining the Allison’s team that is in HPE.
 (Matthew and Sean are there. :-)
@@ -237,4 +237,4 @@ But I hope I’ll have the time tomorrow or next week at least.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;h1&gt;さいごに&lt;/h1&gt;
 &lt;p&gt;関係各位にはご迷惑をお掛けしたことと思いますが、
-今後とも、よろしくお願い致します。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Thu, 07 Jan 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-01-07:posts/2016/01/07/my_update/</guid></item><item><title>My First Review</title><link>http://afterstack.net/posts/2010/12/03/my-first-review/</link><description>&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Fri, 03 Dec 2010 10:20:00 +0900</pubDate><guid>tag:afterstack.net,2010-12-03:posts/2010/12/03/my-first-review/</guid></item></channel></rss>
+今後とも、よろしくお願い致します。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Thu, 07 Jan 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-01-07:posts/2016/01/my_update/</guid></item><item><title>My First Review</title><link>http://afterstack.net/posts/2010/12/my-first-review/</link><description>&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Fri, 03 Dec 2010 10:20:00 +0900</pubDate><guid>tag:afterstack.net,2010-12-03:posts/2010/12/my-first-review/</guid></item></channel></rss>
