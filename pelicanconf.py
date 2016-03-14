@@ -6,7 +6,7 @@ AUTHOR = u'Masayuki Igawa'
 #SITENAME = u'What is essential is invisible to the eye'
 SITENAME = u'What is done is done'
 #SITEURL = ''
-SITEURL = 'http://afterstack.net'
+SITEURL = 'https://afterstack.net'
 
 PATH = 'content'
 
