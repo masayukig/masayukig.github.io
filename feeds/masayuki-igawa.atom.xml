@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>What is done is done</title><link href="http://afterstack.net/" rel="alternate"></link><link href="http://afterstack.net/feeds/masayuki-igawa.atom.xml" rel="self"></link><id>http://afterstack.net/</id><updated>2016-03-13T00:00:00+09:00</updated><entry><title>OSSプログラマとして転職して２ヶ月で感じたこと</title><link href="http://afterstack.net/posts/2016/03/update-past-2months/" rel="alternate"></link><updated>2016-03-13T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:afterstack.net,2016-03-13:posts/2016/03/update-past-2months/</id><summary type="html">&lt;div class="section" id="id1"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>What is done is done</title><link href="https://afterstack.net/" rel="alternate"></link><link href="https://afterstack.net/feeds/masayuki-igawa.atom.xml" rel="self"></link><id>https://afterstack.net/</id><updated>2016-03-13T00:00:00+09:00</updated><entry><title>OSSプログラマとして転職して２ヶ月で感じたこと</title><link href="https://afterstack.net/posts/2016/03/update-past-2months/" rel="alternate"></link><updated>2016-03-13T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:afterstack.net,2016-03-13:posts/2016/03/update-past-2months/</id><summary type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;想定読者&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;「外資系」ってどういうところなのか知りたい&lt;/li&gt;
@@ -50,8 +50,13 @@ IRCでチャットしてるだけで、特にノルマ（ｘ件/月パッチマ�
 &lt;/div&gt;
 &lt;div class="section" id="id4"&gt;
 &lt;h2&gt;４０歳でも（転職）初体験できる&lt;/h2&gt;
-&lt;p&gt;比較的長く「技術者」として働ける環境ができているとは思います。
-が、以下の点からもっと早く転職しておくんだったと思っています。&lt;/p&gt;
+&lt;p&gt;　私、今、４０歳です。日本のIT業界一般常識から考えると頭の良いキャリアではないとも思っています。日本の
+IT業界的には、
+「マネージャになって、デカイプロジェクトをガンガンさばいて、コンサル系に転職してウハウハ」
+みたいなのを思い描いている人もいると思いますが、私はそういうところに「楽しみ」を見いだせませんでした。
+なので、「技術者」として生きていく道をずっと考えていたので、今回、縁があって転職することになりました。
+転職した先では、比較的長く「技術者」として働ける環境ができているとは思います。
+　今、思っていることなどを以下に列挙してみます。&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;見極めはもっと早くすべき。年齢を重ねて、地位が上がるにつれ、関係各所に色々と迷惑をかけることが増えて
 きて、身動きが取りづらくなる。&lt;/li&gt;
