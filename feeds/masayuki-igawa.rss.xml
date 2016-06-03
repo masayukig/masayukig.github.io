@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What is done is done</title><link>https://afterstack.net/</link><description></description><atom:link href="https://afterstack.net/feeds/masayuki-igawa.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 13 Mar 2016 00:00:00 +0900</lastBuildDate><item><title>OSSプログラマとして転職して２ヶ月で感じたこと</title><link>https://afterstack.net/posts/2016/03/update-past-2months/</link><description>&lt;div class="section" id="id1"&gt;
-&lt;h2&gt;想定読者&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;「外資系」ってどういうところなのか知りたい&lt;/li&gt;
-&lt;li&gt;オープンソース開発で飯食っていけるの！？と思っている人&lt;/li&gt;
-&lt;li&gt;なんとなく、OSSとかプログラマに興味がある&lt;/li&gt;
-&lt;/ul&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What is done is done</title><link>https://afterstack.net/</link><description></description><atom:link href="https://afterstack.net/feeds/masayuki-igawa.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 03 Jun 2016 00:00:00 +0900</lastBuildDate><item><title>あなたの知らないOSSプログラマの世界 - part 1</title><link>https://afterstack.net/posts/2016/06/update-past-5months/</link><description>&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;概要&lt;/h2&gt;
+&lt;p&gt;　「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が
+多いかなと思い、こんなブログを書いてみました。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id2"&gt;
+&lt;h2&gt;想定読者&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;オープンソース開発で飯食っていけるの！？と思っている人&lt;/li&gt;
+&lt;li&gt;なんとなく、OSSとかプログラマに興味がある&lt;/li&gt;
+&lt;li&gt;「外資系」ってどういうところなのか知りたい&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
 &lt;h2&gt;結論&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;技術力だけじゃない&lt;/li&gt;
@@ -15,7 +20,17 @@
 &lt;li&gt;英語大事&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id3"&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h2&gt;自己紹介&lt;/h2&gt;
+&lt;p&gt;　現在Hewlett Packard Enterprise/日本ヒューレット・パッカード所属です。OpenStack開発者で、
+主にQAを担当しています。日本で作業していますが、日本人は私一人です。他のメンバーは全て海外にいます。
+（正確な人数は多分30人弱くらいかと思います。）
+　インターナショナルで分散チームで、大半は、アメリカ・欧州・オーストラリアにいて、アジア人は中国人が1人と
+私の2名と思います。英語はそれほどしゃべれません。TOEIC最高点は(ほぼマグレで)800点でした。が、最近は
+受けてませんが、そんなに大きな違いは無いかと思います。
+（TOEICをある程度知っている方はどの程度なのか想像がつくのではないでしょうか...）&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id5"&gt;
 &lt;h2&gt;技術力だけじゃない&lt;/h2&gt;
 &lt;p&gt;　まずはじめに。私はスーパー(ハカー|プログラマ|デベロッパ)と呼ばれるほどの技術は持ってません。技術力は
 「並」くらいはあるとは思いたいですが、突出しているわけではありません。周りのOpenStack開発者をざっと
@@ -48,7 +63,7 @@ IRCでチャットしてるだけで、特にノルマ（ｘ件/月パッチマ�
 困ってることなどを相談する場になっています。もちろん、社内の必須教育、事務処理フォローなどはありますが、
 それほど多いとは感じません。&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id4"&gt;
+&lt;div class="section" id="id6"&gt;
 &lt;h2&gt;４０歳でも（転職）初体験できる&lt;/h2&gt;
 &lt;p&gt;　私、今、４０歳です。日本のIT業界一般常識から考えると頭の良いキャリアではないとも思っています。日本の
 IT業界的には、
@@ -61,20 +76,26 @@ IT業界的には、
 &lt;li&gt;見極めはもっと早くすべき。年齢を重ねて、地位が上がるにつれ、関係各所に色々と迷惑をかけることが増えて
 きて、身動きが取りづらくなる。&lt;/li&gt;
 &lt;li&gt;記憶力、スピードなどはどうしても年々衰えてくるのでそういう意味でも若いうちにやれることはどんどん
-やっておくべき。
-* とは言え、それなりのオファーがないと転職は難しいので、私としては最速に近いくらいのタイミングだった。&lt;/li&gt;
+やっておくべき。&lt;ul&gt;
+&lt;li&gt;とは言え、それなりのオファーがないと転職は難しいので、私としては最速に近いくらいのタイミングだった。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;自分のキャリアパスはきちんと考えて、流されずに主張しよう。&lt;/li&gt;
-&lt;li&gt;思い描いたキャリアパスが今の会社に無いのなら、それがあるところに移ることも考えよう。
-* もちろん「自分の道を作っていく」という選択肢もあり、それをやりたい人ならそこで頑張るのが良いと思い
+&lt;li&gt;思い描いたキャリアパスが今の会社に無いのなら、それがあるところに移ることも考えよう。&lt;ul&gt;
+&lt;li&gt;もちろん「自分の道を作っていく」という選択肢もあり、それをやりたい人ならそこで頑張るのが良いと思い
 ます。私の場合はそうではありませんでした。&lt;/li&gt;
-&lt;li&gt;自分が「面白そう」と思う分野に進んだほうが、全体最適化から考えても有意義。
-* 人は自らやる気になって動く時が一番力を発揮できると思います。個々人が「面白そう」と思ったことに
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;自分が「面白そう」と思う分野に進んだほうが、全体最適化から考えても有意義。&lt;ul&gt;
+&lt;li&gt;人は自らやる気になって動く時が一番力を発揮できると思います。個々人が「面白そう」と思ったことに
 全力を傾けるのが、結果、全体最適になるはず。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;実は、数年前にも転職活動していた時期があります。その時はいくつか面接まで行きましたが、ことごとく
 敗退。自己主張、アピールが足りなかったんだろうなと思う。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id5"&gt;
+&lt;div class="section" id="id7"&gt;
 &lt;h2&gt;英語大事&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;学生のうちに本気で取り組むべき。&lt;/li&gt;
@@ -83,9 +104,9 @@ IT業界的には、
 &lt;p&gt;まだまだ英語苦手なので、コミュニケーションに日本語の3倍以上の時間と労力がかかりますが、これをなんとか
 小さくしていくべく、トレーニングの毎日です。&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id6"&gt;
+&lt;div class="section" id="id8"&gt;
 &lt;h2&gt;次回予告&lt;/h2&gt;
 &lt;p&gt;次回は自己紹介とコミュニケーションの様子などを書きたいと思います。&lt;/p&gt;
 &lt;p&gt;Happy Hacking!&lt;/p&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Sun, 13 Mar 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-03-13:posts/2016/03/update-past-2months/</guid><category>work</category><category>oss</category><category>english</category><category>career</category></item></channel></rss>
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Fri, 03 Jun 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-06-03:posts/2016/06/update-past-5months/</guid><category>work</category><category>oss</category><category>english</category><category>career</category></item></channel></rss>
