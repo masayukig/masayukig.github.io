@@ -12,20 +12,21 @@
 <link rel="canonical" href="https://afterstack.net/posts/2016/06/oss-programmer-part1/">
 
         <meta name="author" content="Masayuki Igawa" />
-        <meta name="keywords" content="work,oss,english,career" />
-        <meta name="description" content="概要 「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が 多いかなと思い、こんなブログを書いてみました。 想定読者 オープンソース開発で飯食っていけるの！？と思っている人 なんとなく、OSSとかプログラマに興味がある 「外資系」ってどういうところなのか知りたい 結論 技術力だけじゃない ４０歳でも（転職）初体験できる 英語大事 自己紹介 現在Hewlett Packard Enterprise/日本ヒューレット・パッカード所属です。OpenStack開発者で、 主にQAを担当しています。日本で作業していますが、日本人は私一人です。他のメンバーは全て海外にいます。 （正確な人数は把握してませんが、多分2-30人弱くらいかと思います。） インターナショナルで分散チームで、大半は、アメリカ・欧州・オーストラリアにいて、アジア人は中国人が1人と 私の2名と思います。英語はそれほどしゃべれません。TOEIC最高点は(ほぼマグレで)800点でした。最近は受けて ませんが、そんなに大きな違いは無いかと思います。 （TOEICをある程度知っている方はどの程度なのか想像がつくのではないでしょうか...） 技術力だけじゃない ..." />
+        <meta name="keywords" content="work,oss,english,career,openstack" />
+        <meta name="description" content="概要 「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が 多いかなと思い、こんなブログを書いてみました。 想定読者 オープンソース開発で飯食っていけるの！？と思っている人 なんとなく、OSSとかプログラマに興味がある 「外資系」ってどういうところなのか知りたい 結論 技術力だけじゃない ４０歳でも（転職）初体験できる 英語大事 自己紹介 現在Hewlett Packard Enterprise/日本ヒューレット・パッカード所属です。OpenStack開発者で、 主にQAを担当しています。日本で作業していますが、日本人は私一人です。他のメンバーは全て海外にいます。 （正確な人数は把握してませんが、多分2-30人弱くらいかと思います。） インターナショナルで分散チームで、大半は、アメリカ・欧州・オーストラリアにいて、アジア人は中国人1名と 私の合計2名です。チームの中にマネージャが数名おり、１マネージャあたり、数名を管理するような体制です。 なお、私のマネージャはオーストラリアに在住していますが、私は英語はそれほどしゃべれません。TOEIC最高点は (ほぼマグレで)800点でした ..." />
 
         <meta property="og:site_name" content="What is done is done" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="あなたの知らないOSSプログラマの世界 - part 1"/>
         <meta property="og:url" content="https://afterstack.net/posts/2016/06/oss-programmer-part1/"/>
-        <meta property="og:description" content="概要 「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が 多いかなと思い、こんなブログを書いてみました。 想定読者 オープンソース開発で飯食っていけるの！？と思っている人 なんとなく、OSSとかプログラマに興味がある 「外資系」ってどういうところなのか知りたい 結論 技術力だけじゃない ４０歳でも（転職）初体験できる 英語大事 自己紹介 現在Hewlett Packard Enterprise/日本ヒューレット・パッカード所属です。OpenStack開発者で、 主にQAを担当しています。日本で作業していますが、日本人は私一人です。他のメンバーは全て海外にいます。 （正確な人数は把握してませんが、多分2-30人弱くらいかと思います。） インターナショナルで分散チームで、大半は、アメリカ・欧州・オーストラリアにいて、アジア人は中国人が1人と 私の2名と思います。英語はそれほどしゃべれません。TOEIC最高点は(ほぼマグレで)800点でした。最近は受けて ませんが、そんなに大きな違いは無いかと思います。 （TOEICをある程度知っている方はどの程度なのか想像がつくのではないでしょうか...） 技術力だけじゃない ..."/>
+        <meta property="og:description" content="概要 「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が 多いかなと思い、こんなブログを書いてみました。 想定読者 オープンソース開発で飯食っていけるの！？と思っている人 なんとなく、OSSとかプログラマに興味がある 「外資系」ってどういうところなのか知りたい 結論 技術力だけじゃない ４０歳でも（転職）初体験できる 英語大事 自己紹介 現在Hewlett Packard Enterprise/日本ヒューレット・パッカード所属です。OpenStack開発者で、 主にQAを担当しています。日本で作業していますが、日本人は私一人です。他のメンバーは全て海外にいます。 （正確な人数は把握してませんが、多分2-30人弱くらいかと思います。） インターナショナルで分散チームで、大半は、アメリカ・欧州・オーストラリアにいて、アジア人は中国人1名と 私の合計2名です。チームの中にマネージャが数名おり、１マネージャあたり、数名を管理するような体制です。 なお、私のマネージャはオーストラリアに在住していますが、私は英語はそれほどしゃべれません。TOEIC最高点は (ほぼマグレで)800点でした ..."/>
         <meta property="article:published_time" content="2016-06-03" />
             <meta property="article:section" content="Work" />
             <meta property="article:tag" content="work" />
             <meta property="article:tag" content="oss" />
             <meta property="article:tag" content="english" />
             <meta property="article:tag" content="career" />
+            <meta property="article:tag" content="openstack" />
             <meta property="article:author" content="Masayuki Igawa" />
 
     <meta name="twitter:card" content="summary">
@@ -115,6 +116,8 @@ What is done is done            </a>
 	<a href="https://afterstack.net/tag/english.html">english</a>
         /
 	<a href="https://afterstack.net/tag/career.html">career</a>
+        /
+	<a href="https://afterstack.net/tag/openstack.html">openstack</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
@@ -143,18 +146,19 @@ What is done is done            </a>
 <h2>自己紹介</h2>
 <p>　現在Hewlett Packard Enterprise/日本ヒューレット・パッカード所属です。OpenStack開発者で、
 主にQAを担当しています。日本で作業していますが、日本人は私一人です。他のメンバーは全て海外にいます。
-（正確な人数は把握してませんが、多分2-30人弱くらいかと思います。）
-　インターナショナルで分散チームで、大半は、アメリカ・欧州・オーストラリアにいて、アジア人は中国人が1人と
-私の2名と思います。英語はそれほどしゃべれません。TOEIC最高点は(ほぼマグレで)800点でした。最近は受けて
-ませんが、そんなに大きな違いは無いかと思います。
+（正確な人数は把握してませんが、多分2-30人弱くらいかと思います。）</p>
+<p>　インターナショナルで分散チームで、大半は、アメリカ・欧州・オーストラリアにいて、アジア人は中国人1名と
+私の合計2名です。チームの中にマネージャが数名おり、１マネージャあたり、数名を管理するような体制です。
+なお、私のマネージャはオーストラリアに在住していますが、私は英語はそれほどしゃべれません。TOEIC最高点は
+(ほぼマグレで)800点でした。最近は受けてませんが、そんなに大きな違いは無いかと思います。
 （TOEICをある程度知っている方はどの程度なのか想像がつくのではないでしょうか...）</p>
 </div>
 <div class="section" id="id5">
 <h2>技術力だけじゃない</h2>
 <p>　まずはじめに。私はスーパー(ハカー|プログラマ|デベロッパ)と呼ばれるほどの技術は持ってません。技術力は
 「並」くらいはあるとは思いたいですが、突出しているわけではありません。周りのOpenStack開発者をざっと
-見回しても「あいつには勝てないな・・・」と思う人が多々います。
-　そんな状況なのに「プログラマとして転職してやっていけるだろうか・・・」と自問自答している日々ではあります
+見回しても「あいつには勝てないな・・・」と思うことが多々あります。</p>
+<p>　そんな状況なのに「プログラマとして転職してやっていけるだろうか・・・」と自問自答している日々ではあります
 が、最近は「技術力だけではない」と思うようにしています。自分の役割としては...</p>
 <ul>
 <li><dl class="first docutils">
@@ -173,15 +177,15 @@ What is done is done            </a>
 </ul>
 <p>などなど、色々貢献できる領域があると思うようになってきました。逆に、技術力だけ非常に高くても、
 コミュニケーション能力が圧倒的に低いと厳しいだろうなと思います。（という意味でも英語大事）</p>
-<p>また、転職するときに今のチームメンバーから、</p>
+<p>また、転職するときに今のチームメンバーの一人から、</p>
 <blockquote>
 「人から言われて動くようだと、今のチームではうまくやっていけないと思う。だから、自分でやるべきことを
 考え・ 探してやっていくようにしたほうが良いよ。」</blockquote>
 <p>というようなことを言われました。
-　実際、今のマネージャからは「アレやれ、コレやれ」という指示は無く、週1のマネージャとのミーティングも、
-IRCでチャットしてるだけで、特にノルマ（ｘ件/月パッチマージとか）もありません。情報共有しておきたいこと、
-困ってることなどを相談する場になっています。もちろん、社内の必須教育、事務処理フォローなどはあります
-が、それほど多いとは感じません。</p>
+　実際、今のマネージャやその上の上司などからは「アレやれ、コレやれ」という指示は無く、週1のマネージャと
+のミーティングも、IRCでチャットしてるだけで、特にノルマ（ｘ件/月パッチマージとか）もありません。情報共
+有しておきたいこと、困ってることなどを相談する場になっています。もちろん、社内の必須教育、事務処理フォロ
+ーなどはありますが、それほど多いとは感じません。</p>
 </div>
 <div class="section" id="id6">
 <h2>４０歳でも（転職）初体験できる</h2>
@@ -308,13 +312,18 @@ IRCでチャットしてるだけで、特にノルマ（ｘ件/月パッチマ�
             <li class="list-group-item"><a href="https://afterstack.net/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-4">
+                        <a href="https://afterstack.net/tag/openstack.html">
+                            openstack
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
                         <a href="https://afterstack.net/tag/english.html">
                             english
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="https://afterstack.net/tag/oss.html">
-                            oss
+                        <a href="https://afterstack.net/tag/career.html">
+                            career
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -323,8 +332,8 @@ IRCでチャットしてるだけで、特にノルマ（ｘ件/月パッチマ�
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="https://afterstack.net/tag/career.html">
-                            career
+                        <a href="https://afterstack.net/tag/oss.html">
+                            oss
                         </a>
                     </li>
                 </ul>
