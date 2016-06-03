@@ -1,5 +1,5 @@
 :title: あなたの知らないOSSプログラマの世界 - part 1
-:slug: update-past-5months
+:slug: oss-programmer-part1
 :tags: work, oss, english, career
 :category: Work
 :date: 2016-06-03
