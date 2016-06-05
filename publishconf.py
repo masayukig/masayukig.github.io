@@ -21,4 +21,4 @@ DELETE_OUTPUT_DIRECTORY = True
 # Following items are often useful when publishing
 
 DISQUS_SITENAME = "afterstack"
-#GOOGLE_ANALYTICS = ""
+GOOGLE_ANALYTICS = "UA-4773446-12"
