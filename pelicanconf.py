@@ -84,3 +84,7 @@ SHOW_ARTICLE_AUTHOR = True
 
 DISPLAY_ARTICLE_INFO_ON_INDEX = True
 DISPLAY_TAGS_ON_SIDEBAR = True
+
+# https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3
+GOOGLE_ANALYTICS_UNIVERSAL = 'UA-4773446-12'
+GOOGLE_ANALYTICS_UNIVERSAL_PROPERTY = 'auto'
