@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What is done is done</title><link>https://afterstack.net/</link><description></description><atom:link href="https://afterstack.net/feeds/masayuki-igawa.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 18 Oct 2016 00:00:00 +0900</lastBuildDate><item><title>あなたの知らないOSSプログラマの世界 - part 2</title><link>https://afterstack.net/posts/2016/10/oss-programmer-part2/</link><description>&lt;p&gt;&lt;a class="reference external" href="../../06/oss-programmer-part1"&gt;oss-programmer-part1&lt;/a&gt; の続き&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What is done is done</title><link>https://afterstack.net/</link><description></description><atom:link href="https://afterstack.net/feeds/masayuki-igawa.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 18 Oct 2016 00:00:00 +0900</lastBuildDate><item><title>チーム解散</title><link>https://afterstack.net/posts/2016/10/dps-forever/</link><description>&lt;p&gt;&lt;a class="reference external" href="../../10/oss-programmer-part2"&gt;oss-programmer-part2&lt;/a&gt; にて:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+(でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。
+が、それはまた別途書きたいと思います。)
+&lt;/pre&gt;
+&lt;p&gt;と書きました。が、それについて書きたいと思います。&lt;/p&gt;
+&lt;p&gt;連投になってしまって申し訳ないです。もう少し気を静めてから書こうかとも思ったのですが、
+今の気持ちも含めて記録しておきたいなと思い。&lt;/p&gt;
+&lt;p&gt;まずは、関連Tweetをいくつか。&lt;/p&gt;
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Today I laid off my entire team. I&amp;#39;m completely gutted. They&amp;#39;re the best w/whom I&amp;#39;ve ever worked. They humble me daily. Hire them, please.&lt;/p&gt;&amp;mdash; VM Brasseur (@vmbrasseur) &lt;a href="https://twitter.com/vmbrasseur/status/788052309225902080"&gt;October 17, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Today I was notified that my position at HPE is affected by layoffs so I am looking for a new role — &lt;a href="https://t.co/A9XLekuX25"&gt;https://t.co/A9XLekuX25&lt;/a&gt; &lt;br&gt;&lt;br&gt;Please share!&lt;/p&gt;&amp;mdash; Donald Stufft (@dstufft) &lt;a href="https://twitter.com/dstufft/status/788051252592648192"&gt;October 17, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;I&amp;#39;m seeking a new ops or evangelist role! Must haves: Open source, travel for speaking and work from home. Details: &lt;a href="https://t.co/PDD6HGPsuz"&gt;https://t.co/PDD6HGPsuz&lt;/a&gt;&lt;/p&gt;&amp;mdash; Elizabeth K. Joseph (@pleia2) &lt;a href="https://twitter.com/pleia2/status/788159332521086977"&gt;October 17, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;All of my US-based team-mates got laid off today. Each and every one would be a stellar hire. Hire them.&lt;/p&gt;&amp;mdash; Cory Benfield (@Lukasaoz) &lt;a href="https://twitter.com/Lukasaoz/status/788052699271028740"&gt;October 17, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;p&gt;悲痛な叫びではあるものの、変に会社にしがみついたり、固執したり、あるいは、会社批判や今後を悲観するような
+内容がないのが印象的。既に、次に向けて活動を開始している。
+もちろん、これは表向きの顔なので、実際の本人たちの苦悩は計り知れないものがある。&lt;/p&gt;
+&lt;p&gt;でも、この辺が、国民性・文化・社会システムの違いなのかなと思ったりしています。&lt;/p&gt;
+&lt;p&gt;また、&lt;a class="reference external" href="http://www.geekwire.com/2016/struggling-keep-pace-cloud-hewlett-packard-enterprise-cuts-staff/"&gt;Hewlett Packard Enterprise cuts staff as it struggles to keep pace in the
+cloud&lt;/a&gt;
+というところでニュース扱いされているようです。
+（でも、色んな噂話まで含めて記事にしてる感もあるのであんまり鵜呑みにしないほうが良いと思う。）&lt;/p&gt;
+&lt;p&gt;と、他人事のように書いていますが、思いっきり私の身にもこの変化の影響が降り掛かっていて、
+タイトルの通り、 &lt;strong&gt;チーム解散&lt;/strong&gt; となる見込みです。&lt;/p&gt;
+&lt;p&gt;アメリカ、オーストラリア、ブラジルのほとんどのチームメンバーがレイオフ対象となり、彼らはチームの大多数を
+占めていたため、チーム存続は難しく、解散となりそう。(少なくとも現状のHPEの中では無理)&lt;/p&gt;
+&lt;p&gt;これ以上、あまり、詳しい状況を書くわけにもいかず、詳しく知りたい人は個人的に聞いてください :-p&lt;/p&gt;
+&lt;p&gt;なお、私を含めたレイオフを逃れた数名は、社内OpenStack製品の CI/CDを行っているチーム配下に移って、
+Upstream活動を継続したりしています。ただし、チームの活動内容とあまりマッチしているとは思えず、
+今後、どの程度の期間継続できるのかは不透明です。&lt;/p&gt;
+&lt;p&gt;そのため、今後の身の振り方も含めて考えなきゃいけないな、と思っています。&lt;/p&gt;
+&lt;p&gt;では、最後の気分転換にコスモスの写真をご覧ください。&lt;/p&gt;
+&lt;a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/masayun/30296689256/in/datetaken/" title="#cosmos #flowers"&gt;&lt;img src="https://c1.staticflickr.com/9/8269/30296689256_973a38e686_n.jpg" width="320" height="320" alt="#cosmos #flowers"&gt;&lt;/a&gt;&lt;script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"&gt;&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-10-18:posts/2016/10/dps-forever/</guid><category>work</category><category>oss</category><category>english</category><category>career</category><category>openstack</category></item><item><title>あなたの知らないOSSプログラマの世界 - part 2</title><link>https://afterstack.net/posts/2016/10/oss-programmer-part2/</link><description>&lt;p&gt;&lt;a class="reference external" href="../../06/oss-programmer-part1"&gt;oss-programmer-part1&lt;/a&gt; の続き&lt;/p&gt;
 &lt;p&gt;前回:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 次回は仕事内容、コミュニケーションの様子などを書きたいと思います。
