@@ -1,5 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What is done is done</title><link>https://afterstack.net/</link><description></description><atom:link href="https://afterstack.net/feeds/masayuki-igawa.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 03 Jun 2016 00:00:00 +0900</lastBuildDate><item><title>あなたの知らないOSSプログラマの世界 - part 1</title><link>https://afterstack.net/posts/2016/06/oss-programmer-part1/</link><description>&lt;div class="section" id="id1"&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What is done is done</title><link>https://afterstack.net/</link><description></description><atom:link href="https://afterstack.net/feeds/masayuki-igawa.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 18 Oct 2016 00:00:00 +0900</lastBuildDate><item><title>あなたの知らないOSSプログラマの世界 - part 2</title><link>https://afterstack.net/posts/2016/10/oss-programmer-part2/</link><description>&lt;p&gt;&lt;a class="reference external" href="../../06/oss-programmer-part1"&gt;oss-programmer-part1&lt;/a&gt; の続き&lt;/p&gt;
+&lt;p&gt;前回:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+次回は仕事内容、コミュニケーションの様子などを書きたいと思います。
+&lt;/pre&gt;
+&lt;p&gt;と、書いておいてしばらく経ってしまいました。
+気になってる人がいないとも限らないので、書いてみたいと思います。&lt;/p&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;コミュニケーションの様子&lt;/h2&gt;
+&lt;p&gt;HPEは外資系の会社なので、社内のシステムやメールなどは英語が主ですが、日本にいる社員の大半は日本人なので、
+日本オフィスは、日本語が共通語になっているようです。&lt;/p&gt;
+&lt;p&gt;ただし、私の仕事内容はOpenStackというオープンソースのクラウド基盤ソフトウェアを、コミュニティの中で開発
+することです。また、会社のチームはインターナショナルチームなのでチームメンバー・上司が英語が母国語の
+人たちが大多数で共通語は英語という状況。そのため、英語が必須な状況ですが、10ヶ月近く経った今も、
+英語スキルは以前とあまり変わりがありません orz...&lt;/p&gt;
+&lt;p&gt;もちろん「前から英語ができてた」わけではなく「今もあまりできません」という有様です。
+気心知れた人との１対１での会話ならなんとかなります(「あ、こいつ英語苦手なんだね」と相手がある程度手加減
+してくれることが多いのです)が、ネイティブあるいはそれに近い同士が議論をし始めると、なかなか入っていけません。&lt;/p&gt;
+&lt;p&gt;また、もともと人見知り(!)でコミュニケーションは苦手な部分があるので、なかなか会話に入っていけません。
+それでも、どうにかなってるのは、テキストでの会話（IRC, E-mail）のお陰かなと思います。&lt;/p&gt;
+&lt;p&gt;この辺は、自分の中の要改善項目です。&lt;/p&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h3&gt;テキスト&lt;/h3&gt;
+&lt;p&gt;というわけで私はテキストでの会話が主です。タイムゾーン問題、英語力、などのことを考慮すると、
+テキストでの会話が便利です。&lt;/p&gt;
+&lt;div class="section" id="e-mail"&gt;
+&lt;h4&gt;E-mail&lt;/h4&gt;
+&lt;p&gt;テキストでのコミュニケーションというとコレが思い浮かぶと思います。ただ、あまり使ってないです。
+正式な通知とか、後述のものでは伝えにくいもの（言うことがたくさんあったり、添付ファイルとか）で
+使う感じ。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="irc"&gt;
+&lt;h4&gt;IRC&lt;/h4&gt;
+&lt;p&gt;E-mailはリアルタイム性が低いので、結構やりやすいですが、どうしても時間がかかってしまいがちです。
+IRCはリアルタイム性が高いので、やり取りがけっこう大変ですが、くだけた会話でもどうにかなります。
+一長一短ありますが、IRCの方が気楽なことが多いと思います。
+今だと、SlackやHipChatなどのツールもありますが、私のチームではできるだけ「オープン」なものが
+好まれる印象です。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="face-to-face"&gt;
+&lt;h3&gt;Face to Face&lt;/h3&gt;
+&lt;p&gt;Face to Faceのやり取りがないのかというと、そうでもありません。&lt;/p&gt;
+&lt;div class="section" id="google-hangouts-skype"&gt;
+&lt;h4&gt;Google Hangouts, Skype&lt;/h4&gt;
+&lt;p&gt;これらのツールを使う機会もあって、&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Happy Hour&lt;/li&gt;
+&lt;li&gt;重要な通知&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;といったタイミングで使ってきました。&lt;/p&gt;
+&lt;p&gt;「Happy Hour」はチーム内のコミュニケーションを活性化して、風通しを良くするような効果があったと思います。&lt;/p&gt;
+&lt;p&gt;その名の通り、就業時間後のバーチャル飲み会風な感じなのですが、日本時間だと朝９時とかなので、
+こちらはさすがにお酒を飲むわけにはいかないのがつらいところでしたｗ&lt;/p&gt;
+&lt;p&gt;また、雑談が高速で行われるので、あんまりついていけない感じなのも残念でした＞自分&lt;/p&gt;
+&lt;p&gt;「重要な通知」は、メールやIRCだけで伝えるべき内容ではないものですね。チームの行く末とか。
+こちらについてはまた別途。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h4&gt;各種イベント&lt;/h4&gt;
+&lt;p&gt;OpenStack Summit等、各種イベントで各国に散らばってるメンバーが集まることもあるので、
+一緒にお昼ごはんに行ったり、夜飲んだりとかありました。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h2&gt;仕事内容について&lt;/h2&gt;
+&lt;div class="section" id="id5"&gt;
+&lt;h3&gt;体制&lt;/h3&gt;
+&lt;p&gt;チームには日本人は私しかおらず、日本で作業しているのも私のみです。
+直属のマネージャはオーストラリアにおり、タイムゾーンが近いこともあって、IRCなどで会話をすることが多いです。
+さらにその上の上司は、 &lt;a class="reference external" href="http://allisonrandal.com/"&gt;Allison Randal&lt;/a&gt; (&lt;a class="reference external" href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AA%E3%82%BD%E3%83%B3%E3%83%BB%E3%83%A9%E3%83%B3%E3%83%80%E3%83%AB"&gt;Wikipedia JA&lt;/a&gt;, &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Allison_Randal"&gt;Wikipedia EN&lt;/a&gt;) さんで、
+やはりIRCで会話をすることが多いです。(タイムゾーンが違うこともあり、なかなか会話はないですが)&lt;/p&gt;
+&lt;p&gt;さらに上の方になってくると、HPE のクラウドを統括している人になってきますが、なかなか話をする機会はない
+ですね。ただ、IRCのミーティングに参加したりすることもあり、非常に上下の風通しは良いんじゃないかと感じます。
+変な上下意識が見えないのが心地よく感じます。（もちろん、役割はしっかり意識されています。）&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id6"&gt;
+&lt;h3&gt;外資系企業について&lt;/h3&gt;
+&lt;p&gt;身の回りの10ヶ月弱くらいの感想です。
+当初思っていたよりも、ずっと個人を重視してくれているように思います。外資系企業に対する私の印象は、&lt;/p&gt;
+&lt;p&gt;　「キミ、最近パフォーマンスが良くないから、改善策を検討して実施するように。特になければこの改善策を実施
+　　して、1ヶ月で改善されないようならクビね。」&lt;/p&gt;
+&lt;p&gt;くらい厳しいものだったのですが、少なくとも今いるチームではそのようなことはありません。
+この辺は、上司に依存するところが大きいと思います。&lt;/p&gt;
+&lt;p&gt;(でも、パフォーマンスに関係なくバッサリクビを斬られることがわかりました。。
+が、それはまた別途書きたいと思います。)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id7"&gt;
+&lt;h3&gt;作業内容&lt;/h3&gt;
+&lt;p&gt;基本的にはOpenStack関連コードの読み書き・レビューしてます。
+イベントでの発表などがあれば、その準備も。&lt;/p&gt;
+&lt;p&gt;最近はopenstack-healthというコンポーネントに注力して作業してます。フロントエンドがAngularJSなので、
+かなり刺激的。悪戦苦闘の日々です。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id8"&gt;
+&lt;h3&gt;作業場所&lt;/h3&gt;
+&lt;p&gt;大島 日本法人本社８階 食堂で作業してます。景色がいいし、比較的静か（心地よいノイズ）があるのでいい感じで
+作業できてます。&lt;/p&gt;
+&lt;p&gt;参考URL:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html"&gt;http://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.shashoku.com/shashoku/012.html"&gt;http://www.shashoku.com/shashoku/012.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.pc-ninki.net/about/hp-oshima.html"&gt;http://www.pc-ninki.net/about/hp-oshima.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://job.career-tasu.jp/2017/guide/study/shashoku/01.html"&gt;https://job.career-tasu.jp/2017/guide/study/shashoku/01.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-10-18:posts/2016/10/oss-programmer-part2/</guid><category>work</category><category>oss</category><category>english</category><category>career</category><category>openstack</category></item><item><title>あなたの知らないOSSプログラマの世界 - part 1</title><link>https://afterstack.net/posts/2016/06/oss-programmer-part1/</link><description>&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;概要&lt;/h2&gt;
 &lt;p&gt;　「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が
 多いかなと思い、こんなブログを書いてみました。&lt;/p&gt;
