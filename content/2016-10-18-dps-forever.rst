@@ -2,8 +2,8 @@
 :slug: dps-forever
 :tags: work, oss, english, career, openstack
 :category: Work
-:date: 2016-10-19
-:Status: draft
+:date: 2016-10-18
+:Status: published
 
 `oss-programmer-part2 <../../10/oss-programmer-part2>`_ にて::
 
@@ -12,7 +12,8 @@
 
 と書きました。が、それについて書きたいと思います。
 
-連投になってしまって申し訳ないですが、今の気持ちも含めて記録しておきたいなと思い。
+連投になってしまって申し訳ないです。もう少し気を静めてから書こうかとも思ったのですが、
+今の気持ちも含めて記録しておきたいなと思い。
 
 まずは、関連Tweetをいくつか。
 
@@ -40,7 +41,6 @@
 cloud <http://www.geekwire.com/2016/struggling-keep-pace-cloud-hewlett-packard-enterprise-cuts-staff/>`_
 というところでニュース扱いされているようです。
 （でも、色んな噂話まで含めて記事にしてる感もあるのであんまり鵜呑みにしないほうが良いと思う。）
-
 
 と、他人事のように書いていますが、思いっきり私の身にもこの変化の影響が降り掛かっていて、
 タイトルの通り、 **チーム解散** となる見込みです。
