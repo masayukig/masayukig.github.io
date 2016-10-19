@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What is done is done</title><link>https://afterstack.net/</link><description></description><atom:link href="https://afterstack.net/feeds/masayuki-igawa.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 18 Oct 2016 00:00:00 +0900</lastBuildDate><item><title>チーム解散?!</title><link>https://afterstack.net/posts/2016/10/dps-forever/</link><description>&lt;p&gt;&lt;a class="reference external" href="../../10/oss-programmer-part2"&gt;oss-programmer-part2&lt;/a&gt; にて:&lt;/p&gt;
+<rss version="2.0"><channel><title>What is done is done</title><link>https://afterstack.net/</link><description></description><lastBuildDate>Wed, 19 Oct 2016 00:00:00 +0900</lastBuildDate><item><title>OpenStack-Health updates</title><link>https://afterstack.net/posts/2016/10/openstack-health-updates/</link><description>&lt;p&gt;本日、&lt;a class="reference external" href="http://git.openstack.org/cgit/openstack/openstack-health"&gt;OpenStack-Health&lt;/a&gt; のパッチをいくつかApproveしました。&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://review.openstack.org/#/c/363934/"&gt;Add base utilities for canvas charts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://review.openstack.org/#/c/380884/"&gt;Add canvas line chart&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://review.openstack.org/#/c/380885/"&gt;Add canvas scatter chart&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;これは、グラフ描画用のJavascriptライブラリ（ユーティリティ）です。今までは、&lt;a class="reference external" href="http://nvd3.org/"&gt;nvd3&lt;/a&gt; という`d3js`_ を
+使いやすくしたJavascriptライブラリを使用していましたが、パフォーマンスと細かなバグに悩まされることも多く、
+独自実装に切り替えようとしています。(&lt;a class="reference external" href="https://d3js.org/"&gt;d3js&lt;/a&gt; は引き続き使っています。)&lt;/p&gt;
+&lt;p&gt;まだ、全てのグラフを置き換えられたわけではありませんし、荒削りな部分が多々ありますが、良い方向に進んでいる
+と思います。&lt;/p&gt;
+&lt;p&gt;まぁ、最悪、クリティカルなバグがあったとしても、パッチをrevertすれば良いので、
+恐る恐る進む必要もなく、むしろ、現時点では、リスクを恐れて前に進まないほうが問題と判断しました。&lt;/p&gt;
+&lt;p&gt;現時点での課題は...&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;unit testが無い&lt;/li&gt;
+&lt;li&gt;グラフが二重描画されることがある -&amp;gt; ブラウザリサイズ/リロードでなおる&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;今後も、品質改善に向けて進んでいきます :)&lt;/p&gt;
+&lt;img alt="OpenStack-Health" src="https://afterstack.net/images/openstack-health-2016-10-19.png" /&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Wed, 19 Oct 2016 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:afterstack.net,2016-10-19:posts/2016/10/openstack-health-updates/</guid><category>work</category><category>oss</category><category>openstack</category><category>openstack-health</category></item><item><title>チーム解散?!</title><link>https://afterstack.net/posts/2016/10/dps-forever/</link><description>&lt;p&gt;&lt;a class="reference external" href="../../10/oss-programmer-part2"&gt;oss-programmer-part2&lt;/a&gt; にて:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 (でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。
 が、それはまた別途書きたいと思います。)
@@ -36,7 +57,7 @@ Upstream活動を継続したりしています。ただし、チームの活動
 今後、どの程度の期間継続できるのかは不透明です。&lt;/p&gt;
 &lt;p&gt;そのため、今後の身の振り方も含めて考えなきゃいけないな、と思っています。&lt;/p&gt;
 &lt;p&gt;では、最後の気分転換にコスモスの写真をご覧ください。&lt;/p&gt;
-&lt;a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/masayun/30296689256/in/datetaken/" title="#cosmos #flowers"&gt;&lt;img src="https://c1.staticflickr.com/9/8269/30296689256_973a38e686_n.jpg" width="320" height="320" alt="#cosmos #flowers"&gt;&lt;/a&gt;&lt;script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"&gt;&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-10-18:posts/2016/10/dps-forever/</guid><category>work</category><category>oss</category><category>english</category><category>career</category><category>openstack</category></item><item><title>あなたの知らないOSSプログラマの世界 - part 2</title><link>https://afterstack.net/posts/2016/10/oss-programmer-part2/</link><description>&lt;p&gt;&lt;a class="reference external" href="../../06/oss-programmer-part1"&gt;oss-programmer-part1&lt;/a&gt; の続き&lt;/p&gt;
+&lt;a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/masayun/30296689256/in/datetaken/" title="#cosmos #flowers"&gt;&lt;img src="https://c1.staticflickr.com/9/8269/30296689256_973a38e686_n.jpg" width="320" height="320" alt="#cosmos #flowers"&gt;&lt;/a&gt;&lt;script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"&gt;&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:afterstack.net,2016-10-18:posts/2016/10/dps-forever/</guid><category>work</category><category>oss</category><category>english</category><category>career</category><category>openstack</category></item><item><title>あなたの知らないOSSプログラマの世界 - part 2</title><link>https://afterstack.net/posts/2016/10/oss-programmer-part2/</link><description>&lt;p&gt;&lt;a class="reference external" href="../../06/oss-programmer-part1"&gt;oss-programmer-part1&lt;/a&gt; の続き&lt;/p&gt;
 &lt;p&gt;前回:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 次回は仕事内容、コミュニケーションの様子などを書きたいと思います。
@@ -147,7 +168,7 @@ IRCはリアルタイム性が高いので、やり取りがけっこう大変�
 &lt;p&gt;Happy Hacking!&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-10-18:posts/2016/10/oss-programmer-part2/</guid><category>work</category><category>oss</category><category>english</category><category>career</category><category>openstack</category></item><item><title>あなたの知らないOSSプログラマの世界 - part 1</title><link>https://afterstack.net/posts/2016/06/oss-programmer-part1/</link><description>&lt;div class="section" id="id1"&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:afterstack.net,2016-10-18:posts/2016/10/oss-programmer-part2/</guid><category>work</category><category>oss</category><category>english</category><category>career</category><category>openstack</category></item><item><title>あなたの知らないOSSプログラマの世界 - part 1</title><link>https://afterstack.net/posts/2016/06/oss-programmer-part1/</link><description>&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;概要&lt;/h2&gt;
 &lt;p&gt;　「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が
 多いかなと思い、こんなブログを書いてみました。&lt;/p&gt;
@@ -259,4 +280,4 @@ IRCはリアルタイム性が高いので、やり取りがけっこう大変�
 &lt;p&gt;次回は仕事内容、コミュニケーションの様子などを書きたいと思います。&lt;/p&gt;
 &lt;p&gt;Happy Hacking!&lt;/p&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Fri, 03 Jun 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-06-03:posts/2016/06/oss-programmer-part1/</guid><category>work</category><category>oss</category><category>english</category><category>career</category><category>openstack</category></item></channel></rss>
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Fri, 03 Jun 2016 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:afterstack.net,2016-06-03:posts/2016/06/oss-programmer-part1/</guid><category>work</category><category>oss</category><category>english</category><category>career</category><category>openstack</category></item></channel></rss>

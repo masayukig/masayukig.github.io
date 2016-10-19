@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Archives - What is done is done</title>
+    <title>openstack-health - What is done is done</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,7 +10,8 @@
 
 
 
-        <meta name="author" content="Masayuki Igawa" />
+    <meta name="author" content="Masayuki Igawa" />
+    <meta name="keywords" content="openstack-health" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="What is done is done" />
@@ -74,27 +75,53 @@ What is done is done            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-    <section id="content">
-        <h1>Archives for What is done is done</h1>
-        <div id="archives">
-                <p>
-                    <span class="categories-timestamp"><time datetime="2016-10-19T00:00:00+09:00">2016-10-19</time></span>
-                    <a href="https://afterstack.net/posts/2016/10/openstack-health-updates/">OpenStack-Health updates</a>
-                </p>
-                <p>
-                    <span class="categories-timestamp"><time datetime="2016-10-18T00:00:00+09:00">2016-10-18</time></span>
-                    <a href="https://afterstack.net/posts/2016/10/dps-forever/">チーム解散?!</a>
-                </p>
-                <p>
-                    <span class="categories-timestamp"><time datetime="2016-10-18T00:00:00+09:00">2016-10-18</time></span>
-                    <a href="https://afterstack.net/posts/2016/10/oss-programmer-part2/">あなたの知らないOSSプログラマの世界 - part 2</a>
-                </p>
-                <p>
-                    <span class="categories-timestamp"><time datetime="2016-06-03T00:00:00+09:00">2016-06-03</time></span>
-                    <a href="https://afterstack.net/posts/2016/06/oss-programmer-part1/">あなたの知らないOSSプログラマの世界 - part 1</a>
-                </p>
-        </div>
-    </section>
+            <article>
+                <h2><a href="https://afterstack.net/posts/2016/10/openstack-health-updates/">OpenStack-Health updates</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2016-10-19T00:00:00+09:00"> 2016-10-19</time>
+    </span>
+
+
+            <span class="label label-default">By</span>
+            <a href="https://afterstack.net/author/masayuki-igawa.html"><i class="fa fa-user"></i> Masayuki Igawa</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://afterstack.net/tag/work.html">work</a>
+        /
+	<a href="https://afterstack.net/tag/oss.html">oss</a>
+        /
+	<a href="https://afterstack.net/tag/openstack.html">openstack</a>
+        /
+	<a href="https://afterstack.net/tag/openstack-health.html">openstack-health</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><p>本日、<a class="reference external" href="http://git.openstack.org/cgit/openstack/openstack-health">OpenStack-Health</a> のパッチをいくつかApproveしました。</p>
+<ul class="simple">
+<li><a class="reference external" href="https://review.openstack.org/#/c/363934/">Add base utilities for canvas charts</a></li>
+<li><a class="reference external" href="https://review.openstack.org/#/c/380884/">Add canvas line chart</a></li>
+<li><a class="reference external" href="https://review.openstack.org/#/c/380885/">Add canvas scatter chart</a></li>
+</ul>
+<p>これは、グラフ描画用のJavascriptライブラリ（ユーティリティ）です。今までは、<a class="reference external" href="http://nvd3.org/">nvd3</a> という`d3js`_ を
+使いやすくしたJavascriptライブラリを使用していましたが、パフォーマンスと細かなバグに悩まされることも多く、
+独自実装に切り替えようとしています。(<a class="reference external" href="https://d3js.org/">d3js</a> は引き続き使っています。)</p>
+<p>まだ、全てのグラフを置き換えられたわけではありませんし、荒削りな部分が多々ありますが、良い方向に進んでいる
+と思います。</p>
+<p>まぁ、最悪、クリティカルなバグがあったとしても、パッチをrevertすれば良いので、
+恐る恐る進む必要もなく、むしろ、現時点では、リスクを恐れて前に進まないほうが問題と判断しました。</p>
+<p>現時点での課題は...</p>
+<ul class="simple">
+<li>unit testが無い</li>
+<li>グラフが二重描画されることがある -&gt; ブラウザリサイズ ...</li></ul>
+<p><small><a href="https://afterstack.net/posts/2016/10/openstack-health-updates/#disqus_thread" data-disqus-identifier="openstack-health-updates">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://afterstack.net/posts/2016/10/openstack-health-updates/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
