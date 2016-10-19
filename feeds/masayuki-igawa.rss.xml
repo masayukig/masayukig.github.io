@@ -5,7 +5,7 @@
 &lt;li&gt;&lt;a class="reference external" href="https://review.openstack.org/#/c/380884/"&gt;Add canvas line chart&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://review.openstack.org/#/c/380885/"&gt;Add canvas scatter chart&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;これは、グラフ描画用のJavascriptライブラリ（ユーティリティ）です。今までは、&lt;a class="reference external" href="http://nvd3.org/"&gt;nvd3&lt;/a&gt; という`d3js`_ を
+&lt;p&gt;これは、グラフ描画用のJavascriptライブラリ（ユーティリティ）です。今までは、&lt;a class="reference external" href="http://nvd3.org/"&gt;nvd3&lt;/a&gt; という &lt;a class="reference external" href="https://d3js.org/"&gt;d3js&lt;/a&gt; を
 使いやすくしたJavascriptライブラリを使用していましたが、パフォーマンスと細かなバグに悩まされることも多く、
 独自実装に切り替えようとしています。(&lt;a class="reference external" href="https://d3js.org/"&gt;d3js&lt;/a&gt; は引き続き使っています。)&lt;/p&gt;
 &lt;p&gt;まだ、全てのグラフを置き換えられたわけではありませんし、荒削りな部分が多々ありますが、良い方向に進んでいる
@@ -18,6 +18,9 @@
 &lt;li&gt;グラフが二重描画されることがある -&amp;gt; ブラウザリサイズ/リロードでなおる&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;今後も、品質改善に向けて進んでいきます :)&lt;/p&gt;
+&lt;p&gt;以下が OpenStack-Health の画面です。って、&lt;a class="reference external" href="http://status.openstack.org/openstack-health/"&gt;http://status.openstack.org/openstack-health/&lt;/a&gt; にアクセスすれば、
+誰でも見られます :)&lt;/p&gt;
+&lt;hr class="docutils" /&gt;
 &lt;img alt="OpenStack-Health" src="https://afterstack.net/images/openstack-health-2016-10-19.png" /&gt;
 &lt;p&gt;Happy Hacking!&lt;/p&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Wed, 19 Oct 2016 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:afterstack.net,2016-10-19:posts/2016/10/openstack-health-updates/</guid><category>work</category><category>oss</category><category>openstack</category><category>openstack-health</category></item><item><title>チーム解散?!</title><link>https://afterstack.net/posts/2016/10/dps-forever/</link><description>&lt;p&gt;&lt;a class="reference external" href="../../10/oss-programmer-part2"&gt;oss-programmer-part2&lt;/a&gt; にて:&lt;/p&gt;

@@ -13,13 +13,13 @@
 
         <meta name="author" content="Masayuki Igawa" />
         <meta name="keywords" content="work,oss,openstack,openstack-health" />
-        <meta name="description" content="本日、OpenStack-Health のパッチをいくつかApproveしました。 Add base utilities for canvas charts Add canvas line chart Add canvas scatter chart これは、グラフ描画用のJavascriptライブラリ（ユーティリティ）です。今までは、nvd3 という`d3js`_ を 使いやすくしたJavascriptライブラリを使用していましたが、パフォーマンスと細かなバグに悩まされることも多く、 独自実装に切り替えようとしています。(d3js は引き続き使っています。) まだ、全てのグラフを置き換えられたわけではありませんし、荒削りな部分が多々ありますが、良い方向に進んでいる と思います。 まぁ、最悪、クリティカルなバグがあったとしても、パッチをrevertすれば良いので、 恐る恐る進む必要もなく、むしろ、現時点では、リスクを恐れて前に進まないほうが問題と判断しました。 現時点での課題は... unit testが無い グラフが二重描画されることがある -&gt; ブラウザリサイズ ..." />
+        <meta name="description" content="本日、OpenStack-Health のパッチをいくつかApproveしました。 Add base utilities for canvas charts Add canvas line chart Add canvas scatter chart これは、グラフ描画用のJavascriptライブラリ（ユーティリティ）です。今までは、nvd3 という d3js を 使いやすくしたJavascriptライブラリを使用していましたが、パフォーマンスと細かなバグに悩まされることも多く、 独自実装に切り替えようとしています。(d3js は引き続き使っています。) まだ、全てのグラフを置き換えられたわけではありませんし、荒削りな部分が多々ありますが、良い方向に進んでいる と思います。 まぁ、最悪、クリティカルなバグがあったとしても、パッチをrevertすれば良いので、 恐る恐る進む必要もなく、むしろ、現時点では、リスクを恐れて前に進まないほうが問題と判断しました。 現時点での課題は... unit testが無い グラフが二重描画されることがある -&gt; ブラウザリサイズ/リロードでなおる ..." />
 
         <meta property="og:site_name" content="What is done is done" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="OpenStack-Health updates"/>
         <meta property="og:url" content="https://afterstack.net/posts/2016/10/openstack-health-updates/"/>
-        <meta property="og:description" content="本日、OpenStack-Health のパッチをいくつかApproveしました。 Add base utilities for canvas charts Add canvas line chart Add canvas scatter chart これは、グラフ描画用のJavascriptライブラリ（ユーティリティ）です。今までは、nvd3 という`d3js`_ を 使いやすくしたJavascriptライブラリを使用していましたが、パフォーマンスと細かなバグに悩まされることも多く、 独自実装に切り替えようとしています。(d3js は引き続き使っています。) まだ、全てのグラフを置き換えられたわけではありませんし、荒削りな部分が多々ありますが、良い方向に進んでいる と思います。 まぁ、最悪、クリティカルなバグがあったとしても、パッチをrevertすれば良いので、 恐る恐る進む必要もなく、むしろ、現時点では、リスクを恐れて前に進まないほうが問題と判断しました。 現時点での課題は... unit testが無い グラフが二重描画されることがある -&gt; ブラウザリサイズ ..."/>
+        <meta property="og:description" content="本日、OpenStack-Health のパッチをいくつかApproveしました。 Add base utilities for canvas charts Add canvas line chart Add canvas scatter chart これは、グラフ描画用のJavascriptライブラリ（ユーティリティ）です。今までは、nvd3 という d3js を 使いやすくしたJavascriptライブラリを使用していましたが、パフォーマンスと細かなバグに悩まされることも多く、 独自実装に切り替えようとしています。(d3js は引き続き使っています。) まだ、全てのグラフを置き換えられたわけではありませんし、荒削りな部分が多々ありますが、良い方向に進んでいる と思います。 まぁ、最悪、クリティカルなバグがあったとしても、パッチをrevertすれば良いので、 恐る恐る進む必要もなく、むしろ、現時点では、リスクを恐れて前に進まないほうが問題と判断しました。 現時点での課題は... unit testが無い グラフが二重描画されることがある -&gt; ブラウザリサイズ/リロードでなおる ..."/>
         <meta property="article:published_time" content="2016-10-19" />
             <meta property="article:section" content="Work" />
             <meta property="article:tag" content="work" />
@@ -128,7 +128,7 @@ What is done is done            </a>
 <li><a class="reference external" href="https://review.openstack.org/#/c/380884/">Add canvas line chart</a></li>
 <li><a class="reference external" href="https://review.openstack.org/#/c/380885/">Add canvas scatter chart</a></li>
 </ul>
-<p>これは、グラフ描画用のJavascriptライブラリ（ユーティリティ）です。今までは、<a class="reference external" href="http://nvd3.org/">nvd3</a> という`d3js`_ を
+<p>これは、グラフ描画用のJavascriptライブラリ（ユーティリティ）です。今までは、<a class="reference external" href="http://nvd3.org/">nvd3</a> という <a class="reference external" href="https://d3js.org/">d3js</a> を
 使いやすくしたJavascriptライブラリを使用していましたが、パフォーマンスと細かなバグに悩まされることも多く、
 独自実装に切り替えようとしています。(<a class="reference external" href="https://d3js.org/">d3js</a> は引き続き使っています。)</p>
 <p>まだ、全てのグラフを置き換えられたわけではありませんし、荒削りな部分が多々ありますが、良い方向に進んでいる
@@ -141,6 +141,9 @@ What is done is done            </a>
 <li>グラフが二重描画されることがある -&gt; ブラウザリサイズ/リロードでなおる</li>
 </ul>
 <p>今後も、品質改善に向けて進んでいきます :)</p>
+<p>以下が OpenStack-Health の画面です。って、<a class="reference external" href="http://status.openstack.org/openstack-health/">http://status.openstack.org/openstack-health/</a> にアクセスすれば、
+誰でも見られます :)</p>
+<hr class="docutils" />
 <img alt="OpenStack-Health" src="https://afterstack.net/images/openstack-health-2016-10-19.png" />
 <p>Happy Hacking!</p>
 
@@ -230,8 +233,8 @@ What is done is done            </a>
             <li class="list-group-item"><a href="https://afterstack.net/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-1">
-                        <a href="https://afterstack.net/tag/openstack.html">
-                            openstack
+                        <a href="https://afterstack.net/tag/work.html">
+                            work
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -240,18 +243,18 @@ What is done is done            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://afterstack.net/tag/career.html">
-                            career
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="https://afterstack.net/tag/oss.html">
                             oss
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://afterstack.net/tag/work.html">
-                            work
+                        <a href="https://afterstack.net/tag/career.html">
+                            career
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://afterstack.net/tag/openstack.html">
+                            openstack
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
