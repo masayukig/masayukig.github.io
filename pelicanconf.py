@@ -6,7 +6,7 @@ AUTHOR = u'Masayuki Igawa'
 #SITENAME = u'What is essential is invisible to the eye'
 SITENAME = u'What is done is done'
 #SITEURL = ''
-SITEURL = 'https://afterstack.net'
+#SITEURL = 'https://afterstack.net'
 
 PATH = 'content'
 
@@ -23,9 +23,13 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
 DISQUS_SITENAME = 'afterstack'
 
 # Feed generation is usually not desired when developing
+FEED_DOMAIN = 'https://afterstack.net'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
+
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
