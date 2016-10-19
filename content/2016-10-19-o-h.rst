@@ -11,7 +11,7 @@
 * `Add canvas line chart <https://review.openstack.org/#/c/380884/>`_
 * `Add canvas scatter chart <https://review.openstack.org/#/c/380885/>`_
 
-これは、グラフ描画用のJavascriptライブラリ（ユーティリティ）です。今までは、`nvd3`_ という`d3js`_ を
+これは、グラフ描画用のJavascriptライブラリ（ユーティリティ）です。今までは、`nvd3`_ という `d3js`_ を
 使いやすくしたJavascriptライブラリを使用していましたが、パフォーマンスと細かなバグに悩まされることも多く、
 独自実装に切り替えようとしています。(`d3js`_ は引き続き使っています。)
 
@@ -32,6 +32,10 @@
 
 今後も、品質改善に向けて進んでいきます :)
 
+以下が OpenStack-Health の画面です。って、http://status.openstack.org/openstack-health/ にアクセスすれば、
+誰でも見られます :)
+
+----------------------------------------------------------------
 
 .. image:: {filename}/images/openstack-health-2016-10-19.png
   :alt: OpenStack-Health
