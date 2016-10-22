@@ -3,7 +3,20 @@
 :tags: work, oss, english, career, openstack
 :category: Work
 :date: 2016-10-18
+:modified: 2016-10-22 15:41
 :Status: published
+
+
+追記
+-----------------------
+
+以下は、あくまで私が所属しているチーム(OpenStack, OSSをアップストリームで開発)についてのみ言及しています。
+それ以外のHelion開発その他については言及していません。誤解のなきよう。
+
+
+オリジナル
+-----------------------
+
 
 `oss-programmer-part2 <../../10/oss-programmer-part2>`_ にて::
 
