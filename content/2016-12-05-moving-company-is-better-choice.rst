@@ -3,11 +3,15 @@
 :tags: work, oss, team, career
 :category: Work
 :date: 2016-12-05
-:Status: draft
+:Status: published
 
-先日、 `少々刺激的なエントリ`_ を投下しましたが、現在の気持ちを少し述べてみたいと思います。
+本エントリは「 `OpenStack Advent Calendar 2016`_ 」の 12/5 分です。
 
-.. _少々刺激的なエントリ: ../../06/dps-forever
+.. _OpenStack Advent Calendar 2016: http://www.adventar.org/calendars/1739
+
+先日(もう半年も前か)、 `少々刺激的なエントリ`_ を投下しましたが、現在の気持ちを少し述べてみたいと思います。
+
+.. _少々刺激的なエントリ: ../../10/dps-forever
 
 **結論：転職は良い選択だった**
 
