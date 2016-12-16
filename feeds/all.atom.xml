@@ -1,5 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>What is done is done</title><link href="https://afterstack.net/" rel="alternate"></link><link href="https://afterstack.net/feeds/all.atom.xml" rel="self"></link><id>https://afterstack.net/</id><updated>2016-12-05T00:00:00+09:00</updated><entry><title>転職は良い選択だった</title><link href="https://afterstack.net/posts/2016/12/moving-company-is-better-choice/" rel="alternate"></link><updated>2016-12-05T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:afterstack.net,2016-12-05:posts/2016/12/moving-company-is-better-choice/</id><summary type="html">&lt;p&gt;本エントリは「 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; 」の 12/5 分です。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>What is done is done</title><link href="https://afterstack.net/" rel="alternate"></link><link href="https://afterstack.net/feeds/all.atom.xml" rel="self"></link><id>https://afterstack.net/</id><updated>2016-12-17T00:00:00+09:00</updated><entry><title>初めてのOpenStackリポジトリ追加</title><link href="https://afterstack.net/posts/2016/12/adding-a-new-repo-to-openstack/" rel="alternate"></link><updated>2016-12-17T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:afterstack.net,2016-12-17:posts/2016/12/adding-a-new-repo-to-openstack/</id><summary type="html">&lt;p&gt;これは、 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; のエントリです。&lt;/p&gt;
+&lt;p&gt;先日、OpenStack に新たなリポジトリを追加したので、そのときに感じたことや経験を共有してみたいと思います。&lt;/p&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;ナニを追加したのか？&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://launchpad.net/coverage2sql"&gt;coverage2sql&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://coverage.readthedocs.io/"&gt;Coverage.py&lt;/a&gt; によって生成される、単体テストなどの coverage データを、データベースに時系列な
+データとして保持するための小さなツールです。最終的には、 &lt;a class="reference external" href="https://launchpad.net/openstack-health"&gt;openstack-health&lt;/a&gt; と連携して、
+単体テストの coverage 推移を表示したいと考えてます。もちろん、&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+「カバレッジ100%だったら品質が良いわけじゃないよね？」
+&lt;/pre&gt;
+&lt;p&gt;という話はあります。しかし、少なくとも、カバレッジ率が意図せず下落傾向な場合は、問題がある可能性があり、
+それを知ることができるというのが重要と考えています。&lt;/p&gt;
+&lt;p&gt;このような性質のコンポーネントのため、独立したプロジェクトではなく、 &lt;a class="reference external" href="https://wiki.openstack.org/wiki/QA"&gt;Quality Assurance&lt;/a&gt;
+プログラム配下のリポジトリとして追加しました。このようなリポジトリを追加することはなかなか無いこととは
+思いますが、新しいリポジトリを追加した経験は、もしかしたら誰かの役に立つかもしれないと思い、共有します。&lt;/p&gt;
+&lt;p&gt;なお、似たようなツールとして &lt;a class="reference external" href="https://launchpad.net/subunit2sql"&gt;subunit2sql&lt;/a&gt; と言うものがあるのですが、それにインスパイアされて作りました。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;新しいリポジトリの追加方法&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://docs.openstack.org/infra/manual/creators.html"&gt;Project Creator's Guide&lt;/a&gt; をまずは読みます。ステップ・バイ・ステップで丁寧に説明された
+ドキュメントです。このとおりやっていれば、あまり迷うことも無いと思います。&lt;/p&gt;
+&lt;p&gt;大きな流れとしては、&lt;/p&gt;
+&lt;p&gt;# Launchpad 設定
+# PyPI 設定
+# openstack-infra/project-config, openstack/governance 設定
+# レビュー待ち＆対応
+# 新しいリポジトリ作成（最初でもOK）
+# Gateジョブ実行動作確認
+# 初期バージョンリリース
+# ...&lt;/p&gt;
+&lt;p&gt;という感じになると思います。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;ドキュメントに書いてないこと&lt;/h2&gt;
+&lt;p&gt;ドキュメントのとおりに進んでいって、特に困ったことにはならなかったので、あまりないですね。強いて言えば、&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Launchpadの登録で、少しだけ記述が現状とあってない部分があった。&lt;ul&gt;
+&lt;li&gt;-&amp;gt; &lt;a class="reference external" href="https://review.openstack.org/#/c/393651"&gt;ドキュメントの修正パッチ&lt;/a&gt; を出しています。（まだ誰もレビューしてくれないけどｗ）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ubuntuバージョンはxenialが基本(trustyが必要でなければそのジョブは入れないほうが良い)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;くらいでしょうか。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id5"&gt;
+&lt;h2&gt;感想・まとめ&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;リポジトリ追加は比較的カンタン&lt;/li&gt;
+&lt;li&gt;OpenStack Infra job設定わかりづらい。。(他のを真似してやればある程度は想像つくけど)&lt;/li&gt;
+&lt;li&gt;でも、OpenStack インフラを使って自動ビルド・テストが実行できるのはとても便利&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="url"&gt;
+&lt;h2&gt;参考URL&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://docs.openstack.org/infra/manual/creators.html"&gt;Project Creator’s Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;coverage2sql&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://launchpad.net/coverage2sql"&gt;https://launchpad.net/coverage2sql&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;openstack/governance: &lt;a class="reference external" href="https://review.openstack.org/#/c/394276/"&gt;Add coverage2sql to Quality Assurance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;openstack-infra/project-config: &lt;a class="reference external" href="https://review.openstack.org/#/c/393634/"&gt;Add coverage2sql project&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="work"></category><category term="oss"></category><category term="openstack"></category><category term="development"></category></entry><entry><title>転職は良い選択だった</title><link href="https://afterstack.net/posts/2016/12/moving-company-is-better-choice/" rel="alternate"></link><updated>2016-12-05T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:afterstack.net,2016-12-05:posts/2016/12/moving-company-is-better-choice/</id><summary type="html">&lt;p&gt;本エントリは「 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; 」の 12/5 分です。&lt;/p&gt;
 &lt;p&gt;先日(2ヶ月弱前)、 &lt;a class="reference external" href="../../10/dps-forever"&gt;少々刺激的なエントリ&lt;/a&gt; を投下しましたが、現在の気持ちを少し述べてみたいと思います。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;結論：転職は良い選択だった&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;今年１月に転職し、あらたな環境で働くことになりました。前職は、新卒で入社しずっと働いてきた会社で、
