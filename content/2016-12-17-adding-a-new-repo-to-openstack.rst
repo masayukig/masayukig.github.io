@@ -3,7 +3,7 @@
 :tags: work, oss, openstack, development
 :category: Work
 :date: 2016-12-17
-:Status: draft
+:Status: published
 
 これは、 `OpenStack Advent Calendar 2016`_ のエントリです。
 
