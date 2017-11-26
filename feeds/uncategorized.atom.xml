@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>What is done is done - Uncategorized</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/uncategorized.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2015-12-12T09:59:00+09:00</updated><entry><title>技術的じゃないOpenStackの話</title><link href="https://igawa.io/posts/2015/12/ji-shu-de-ziyanaiopenstacknohua/" rel="alternate"></link><published>2015-12-12T09:59:00+09:00</published><updated>2015-12-12T09:59:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2015-12-12:/posts/2015/12/ji-shu-de-ziyanaiopenstacknohua/</id><summary type="html">&lt;p&gt;&lt;a href="https://gist.github.com/masayukig/3ab6c18ace33eb01f9d1.js"&gt;https://gist.github.com/masayukig/3ab6c18ace33eb01f9d1.js&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://gist.github.com/masayukig/3ab6c18ace33eb01f9d1.js"&gt;https://gist.github.com/masayukig/3ab6c18ace33eb01f9d1.js&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>OpenStack Tempest の テストを実行する方法 (testr vs run_tempest.sh vs tox)</title><link href="https://igawa.io/posts/2014/12/openstack-tempest-no-tesutowoshi-xing-surufang-fa-testr-vs-run_tempestsh-vs-tox/" rel="alternate"></link><published>2014-12-17T05:34:00+09:00</published><updated>2014-12-17T05:34:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2014-12-17:/posts/2014/12/openstack-tempest-no-tesutowoshi-xing-surufang-fa-testr-vs-run_tempestsh-vs-tox/</id><summary type="html">&lt;p&gt;Tempest は OpenStackのテストスイートです。&lt;br&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done - Uncategorized</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/uncategorized.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2015-12-12T09:59:00+09:00</updated><entry><title>技術的じゃないOpenStackの話</title><link href="https://igawa.io/posts/2015/12/ji-shu-de-ziyanaiopenstacknohua/" rel="alternate"></link><published>2015-12-12T09:59:00+09:00</published><updated>2015-12-12T09:59:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2015-12-12:/posts/2015/12/ji-shu-de-ziyanaiopenstacknohua/</id><summary type="html">&lt;p&gt;&lt;a href="https://gist.github.com/masayukig/3ab6c18ace33eb01f9d1.js"&gt;https://gist.github.com/masayukig/3ab6c18ace33eb01f9d1.js&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://gist.github.com/masayukig/3ab6c18ace33eb01f9d1.js"&gt;https://gist.github.com/masayukig/3ab6c18ace33eb01f9d1.js&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>OpenStack Tempest の テストを実行する方法 (testr vs run_tempest.sh vs tox)</title><link href="https://igawa.io/posts/2014/12/openstack-tempest-no-tesutowoshi-xing-surufang-fa-testr-vs-run_tempestsh-vs-tox/" rel="alternate"></link><published>2014-12-17T05:34:00+09:00</published><updated>2014-12-17T05:34:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2014-12-17:/posts/2014/12/openstack-tempest-no-tesutowoshi-xing-surufang-fa-testr-vs-run_tempestsh-vs-tox/</id><summary type="html">&lt;p&gt;Tempest は OpenStackのテストスイートです。&lt;br&gt;
 これを実行することにより、OpenStackが"ちゃんとうごく"かどうかを確認できます。&lt;/p&gt;
 &lt;h2&gt;準備&lt;/h2&gt;
 &lt;p&gt;DevStackを使ってOpenStackをインストールして、一緒にTempestもインストールした場合には下記準備作業は不要です（自動的に設定ファイルを設定してくれるため）。&lt;br&gt;
@@ -354,24 +354,18 @@ from スラッシュドット・ジャパン &lt;a href="http://slashdot.jp/"&gt
 &lt;p&gt;ちょっと気になる。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://hardware.slashdot.jp/story/12/03/07/096258/"&gt;http://hardware.slashdot.jp/story/12/03/07/096258/&lt;/a&gt;&lt;br&gt;
 from スラッシュドット・ジャパン &lt;a href="http://slashdot.jp/"&gt;http://slashdot.jp/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;ちょっと気になる。&lt;/p&gt;</content></entry><entry><title>【速報】本日よりiOS5.1へ...そしてSiriが日本語に対応！</title><link href="https://igawa.io/posts/2012/03/su-bao-ben-ri-yoriios51hesoshitesirigari-ben-yu-nidui-ying/" rel="alternate"></link><published>2012-03-07T19:31:00+09:00</published><updated>2012-03-07T19:31:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-07:/posts/2012/03/su-bao-ben-ri-yoriios51hesoshitesirigari-ben-yu-nidui-ying/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.gizmodo.jp/2012/03/ios51siri.html"&gt;http://www.gizmodo.jp/2012/03/ios51siri.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://www.gizmodo.jp/upload_files2/120308ios-siri.jpg"&gt;{width="640"
-height="423"}&lt;br&gt;
+&lt;p&gt;&lt;img alt="" height="423" src="http://www.gizmodo.jp/upload_files2/120308ios-siri.jpg" width="640"&gt;
 ついにこの日が...。
-先程発表がありました、iOSが5.1にアップデートの際にSiriが日本語に対応することが発表されました！　やったー！　Siri子がついに日本にきました。果たして...声はどうなってるんでしょうかね。楽しみー！
-(長谷憲)
-&lt;img alt="" src="http://rss.rssad.jp/rss/artimg/T7he30zk4qYy/401117ac96803f93891b534c7febe7ba"&gt;{width="1"
-height="1"}&lt;/p&gt;
-&lt;p&gt;from ギズモード・ジャパン &lt;a href="http://www.gizmodo.jp/"&gt;http://www.gizmodo.jp/&lt;/a&gt;  &lt;/p&gt;
+先程発表がありました、iOSが5.1にアップデートの際にSiriが日本語に対応することが発表されました！　やったー！　Siri子がついに日本にきました。果たして...声はどうなってるんでしょうかね。楽しみー！ (長谷憲)
+&lt;img alt="" height="1" src="http://rss.rssad.jp/rss/artimg/T7he30zk4qYy/401117ac96803f93891b534c7febe7ba" width="1"&gt;&lt;/p&gt;
+&lt;p&gt;from ギズモード・ジャパン &lt;a href="http://www.gizmodo.jp/"&gt;http://www.gizmodo.jp/&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;日本語でどの程度の認識をしてくれるのか、楽しみ。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.gizmodo.jp/2012/03/ios51siri.html"&gt;http://www.gizmodo.jp/2012/03/ios51siri.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://www.gizmodo.jp/upload_files2/120308ios-siri.jpg"&gt;{width="640"
-height="423"}&lt;br&gt;
+&lt;p&gt;&lt;img alt="" height="423" src="http://www.gizmodo.jp/upload_files2/120308ios-siri.jpg" width="640"&gt;
 ついにこの日が...。
-先程発表がありました、iOSが5.1にアップデートの際にSiriが日本語に対応することが発表されました！　やったー！　Siri子がついに日本にきました。果たして...声はどうなってるんでしょうかね。楽しみー！
-(長谷憲)
-&lt;img alt="" src="http://rss.rssad.jp/rss/artimg/T7he30zk4qYy/401117ac96803f93891b534c7febe7ba"&gt;{width="1"
-height="1"}&lt;/p&gt;
-&lt;p&gt;from ギズモード・ジャパン &lt;a href="http://www.gizmodo.jp/"&gt;http://www.gizmodo.jp/&lt;/a&gt;  &lt;/p&gt;
+先程発表がありました、iOSが5.1にアップデートの際にSiriが日本語に対応することが発表されました！　やったー！　Siri子がついに日本にきました。果たして...声はどうなってるんでしょうかね。楽しみー！ (長谷憲)
+&lt;img alt="" height="1" src="http://rss.rssad.jp/rss/artimg/T7he30zk4qYy/401117ac96803f93891b534c7febe7ba" width="1"&gt;&lt;/p&gt;
+&lt;p&gt;from ギズモード・ジャパン &lt;a href="http://www.gizmodo.jp/"&gt;http://www.gizmodo.jp/&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;日本語でどの程度の認識をしてくれるのか、楽しみ。&lt;/p&gt;</content></entry><entry><title>今日は東京タワーに行ってみることにします♪</title><link href="https://igawa.io/posts/2011/09/jin-ri-hadong-jing-tawanixing-tsutemirukotonishimasu/" rel="alternate"></link><published>2011-09-11T10:22:00+09:00</published><updated>2011-09-11T10:22:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-09-11:/posts/2011/09/jin-ri-hadong-jing-tawanixing-tsutemirukotonishimasu/</id><summary type="html">&lt;div class="posterous_autopost"&gt;
 
@@ -519,25 +513,7 @@ height="286"}&lt;/a&gt;&lt;/p&gt;
 &lt;img alt="" src="http://www.0r2.info/blog//lunatic.xrea.jp/b/000f5254.872e6b72"&gt;{width="1"
 height="1"}を買っちゃいました！&lt;/p&gt;
 &lt;p&gt;まだ買ったばかりで、２回ぐらいしか使ってないので、使い勝手がよくわかっていませんが、&lt;br&gt;
-もし、食器洗い乾燥機を買おうと考えている人がいるのなら、なるべく容量の大きな物を買った方が良いと思います。結構入れるの大変です。二人暮らしなのにいっぱいいっぱいです。&lt;/p&gt;</content></entry><entry><title>「iPod (60GB)白」を（も)買いました</title><link href="https://igawa.io/posts/2006/08/ipod-60gbbai-womomai-imashita/" rel="alternate"></link><published>2006-08-20T23:26:00+09:00</published><updated>2006-08-20T23:26:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2006-08-20:/posts/2006/08/ipod-60gbbai-womomai-imashita/</id><summary type="html">&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/DSC_1768.html"&gt;&lt;img alt="" src="http://lunatic.xrea.jp/mt/archives/DSC_1768-thumb.jpg"&gt;{width="204"
-height="320"}&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.amazon.co.jp/gp/redirect.html?link_code=ur2&amp;amp;tag=hughundercons-22&amp;amp;camp=247&amp;amp;creative=1211&amp;amp;location=/gp/search%3F%26index=blended%26keywords=iPod%252060GB%26_encoding=UTF8"&gt;iPod
-60GB&lt;/a&gt;を買ってしまいました。。&lt;br&gt;
-iPodの10GB(第２世代？)を持っていたのですが、ウチの奥さんが実家に帰るのに持っていくとの事だったので、&lt;br&gt;
-それをいい口実に買ってしまいました。。&lt;/p&gt;
-&lt;p&gt;で、最近のiPodなので当然動画も見られます。&lt;br&gt;
-映っているのは、&lt;a href="http://www.amazon.co.jp/gp/redirect.html?link_code=ur2&amp;amp;tag=hughundercons-22&amp;amp;camp=247&amp;amp;creative=1211&amp;amp;location=/gp/search%3F%26index=dvd-jp%26keywords=B000BZ8JBG%26_encoding=UTF8"&gt;中島美嘉さんのBEST
-DVD&lt;/a&gt;です。&lt;br&gt;
-DVDから吸い出して、iPodに入れました。その方法なんかもそのうちここに載せようかと思っています。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/DSC_1768.html"&gt;&lt;img alt="" src="http://lunatic.xrea.jp/mt/archives/DSC_1768-thumb.jpg"&gt;{width="204"
-height="320"}&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.amazon.co.jp/gp/redirect.html?link_code=ur2&amp;amp;tag=hughundercons-22&amp;amp;camp=247&amp;amp;creative=1211&amp;amp;location=/gp/search%3F%26index=blended%26keywords=iPod%252060GB%26_encoding=UTF8"&gt;iPod
-60GB&lt;/a&gt;を買ってしまいました。。&lt;br&gt;
-iPodの10GB(第２世代？)を持っていたのですが、ウチの奥さんが実家に帰るのに持っていくとの事だったので、&lt;br&gt;
-それをいい口実に買ってしまいました。。&lt;/p&gt;
-&lt;p&gt;で、最近のiPodなので当然動画も見られます。&lt;br&gt;
-映っているのは、&lt;a href="http://www.amazon.co.jp/gp/redirect.html?link_code=ur2&amp;amp;tag=hughundercons-22&amp;amp;camp=247&amp;amp;creative=1211&amp;amp;location=/gp/search%3F%26index=dvd-jp%26keywords=B000BZ8JBG%26_encoding=UTF8"&gt;中島美嘉さんのBEST
-DVD&lt;/a&gt;です。&lt;br&gt;
-DVDから吸い出して、iPodに入れました。その方法なんかもそのうちここに載せようかと思っています。&lt;/p&gt;</content></entry><entry><title>サイトのデザイン配置をちょっと変えました</title><link href="https://igawa.io/posts/2005/10/saitonodezainpei-zhi-wochiyotsutobian-emashita/" rel="alternate"></link><published>2005-10-01T00:32:00+09:00</published><updated>2005-10-01T00:32:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-10-01:/posts/2005/10/saitonodezainpei-zhi-wochiyotsutobian-emashita/</id><summary type="html">&lt;p&gt;前は、３段だったのですが２段にしました。&lt;br&gt;
+もし、食器洗い乾燥機を買おうと考えている人がいるのなら、なるべく容量の大きな物を買った方が良いと思います。結構入れるの大変です。二人暮らしなのにいっぱいいっぱいです。&lt;/p&gt;</content></entry><entry><title>サイトのデザイン配置をちょっと変えました</title><link href="https://igawa.io/posts/2005/10/saitonodezainpei-zhi-wochiyotsutobian-emashita/" rel="alternate"></link><published>2005-10-01T00:32:00+09:00</published><updated>2005-10-01T00:32:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-10-01:/posts/2005/10/saitonodezainpei-zhi-wochiyotsutobian-emashita/</id><summary type="html">&lt;p&gt;前は、３段だったのですが２段にしました。&lt;br&gt;
 こっちの方がなんだか落ち着きます。&lt;/p&gt;</summary><content type="html">&lt;p&gt;前は、３段だったのですが２段にしました。&lt;br&gt;
 こっちの方がなんだか落ち着きます。&lt;/p&gt;</content></entry><entry><title>TomcatがApacheのTLP(top-level project)に</title><link href="https://igawa.io/posts/2005/09/tomcatgaapachenotlptop-level-projectni/" rel="alternate"></link><published>2005-09-29T11:21:00+09:00</published><updated>2005-09-29T11:21:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-09-29:/posts/2005/09/tomcatgaapachenotlptop-level-projectni/</id><summary type="html">&lt;p&gt;&lt;a href="http://slashdot.jp/developers/05/09/29/0047250.shtml?topic=43"&gt;slashdot.jp&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;JavaのWebコンテナ(サーブレット/JSPコンテナ実行環境)の標準ですからね。&lt;br&gt;
@@ -833,36 +809,28 @@ PCのどちらでもス&lt;br&gt;
 &lt;p&gt;らしいのですが、&lt;br&gt;
 トータルの航空事故が発生する可能性は小さいのでしょうか？&lt;br&gt;
 飛行機が小さいってことは、気流の影響を受けやすそうだし、&lt;br&gt;
-航空事故が発生する可能性が高まる気がするのですが。&lt;/p&gt;</content></entry><entry><title>オーストラリアに行ってきました</title><link href="https://igawa.io/posts/2005/07/osutorarianixing-tsutekimashita/" rel="alternate"></link><published>2005-07-21T23:12:00+09:00</published><updated>2005-07-21T23:12:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-07-21:/posts/2005/07/osutorarianixing-tsutekimashita/</id><summary type="html">&lt;p&gt;オーストラリアに行ってきました。&lt;br&gt;
-最初はあんまり天気がよくありませんでしたが、&lt;br&gt;
-エアーズロック（ウルル）です。&lt;br&gt;
-&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1044s.html"&gt;&lt;img alt="" src="http://lunatic.xrea.jp/mt/archives/dsc_1044s-thumb.jpg"&gt;{width="320"
-height="212"}&lt;/a&gt;&lt;br&gt;
-とても良かったでーす。&lt;br&gt;
+航空事故が発生する可能性が高まる気がするのですが。&lt;/p&gt;</content></entry><entry><title>オーストラリアに行ってきました</title><link href="https://igawa.io/posts/2005/07/osutorarianixing-tsutekimashita/" rel="alternate"></link><published>2005-07-21T23:12:00+09:00</published><updated>2005-07-21T23:12:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-07-21:/posts/2005/07/osutorarianixing-tsutekimashita/</id><summary type="html">&lt;p&gt;オーストラリアに行ってきました。
+最初はあんまり天気がよくありませんでしたが、
+エアーズロック（ウルル）です。
+&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1044s.html"&gt;&lt;img alt="" height="212" src="http://lunatic.xrea.jp/mt/archives/dsc_1044s-thumb.jpg" width="320"&gt;&lt;/a&gt;
+とても良かったでーす。
 ちなみにウルルには登りませんでした。&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1364s.html"&gt;&lt;img alt="" src="http://lunatic.xrea.jp/mt/archives/dsc_1364s-thumb.jpg"&gt;{width="320"
-height="212"}&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1364s.html"&gt;&lt;img alt="" height="212" src="http://lunatic.xrea.jp/mt/archives/dsc_1364s-thumb.jpg" width="320"&gt;&lt;/a&gt;
 ゴールドコーストのホテルからの夜景。&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1220s1.html"&gt;&lt;img alt="" src="http://lunatic.xrea.jp/mt/archives/dsc_1220s-thumb.jpg"&gt;{width="320"
-height="213"}&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1220s1.html"&gt;&lt;img alt="" height="213" src="http://lunatic.xrea.jp/mt/archives/dsc_1220s-thumb.jpg" width="320"&gt;&lt;/a&gt;
 南十字座&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1223s.html"&gt;&lt;img alt="" src="http://lunatic.xrea.jp/mt/archives/dsc_1223s-thumb.JPG"&gt;{width="320"
-height="213"}&lt;/a&gt;&lt;br&gt;
-泊まったホテルの夜&lt;/p&gt;</summary><content type="html">&lt;p&gt;オーストラリアに行ってきました。&lt;br&gt;
-最初はあんまり天気がよくありませんでしたが、&lt;br&gt;
-エアーズロック（ウルル）です。&lt;br&gt;
-&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1044s.html"&gt;&lt;img alt="" src="http://lunatic.xrea.jp/mt/archives/dsc_1044s-thumb.jpg"&gt;{width="320"
-height="212"}&lt;/a&gt;&lt;br&gt;
-とても良かったでーす。&lt;br&gt;
+&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1223s.html"&gt;&lt;img alt="" height="213" src="http://lunatic.xrea.jp/mt/archives/dsc_1223s-thumb.JPG" width="320"&gt;&lt;/a&gt;
+泊まったホテルの夜&lt;/p&gt;</summary><content type="html">&lt;p&gt;オーストラリアに行ってきました。
+最初はあんまり天気がよくありませんでしたが、
+エアーズロック（ウルル）です。
+&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1044s.html"&gt;&lt;img alt="" height="212" src="http://lunatic.xrea.jp/mt/archives/dsc_1044s-thumb.jpg" width="320"&gt;&lt;/a&gt;
+とても良かったでーす。
 ちなみにウルルには登りませんでした。&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1364s.html"&gt;&lt;img alt="" src="http://lunatic.xrea.jp/mt/archives/dsc_1364s-thumb.jpg"&gt;{width="320"
-height="212"}&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1364s.html"&gt;&lt;img alt="" height="212" src="http://lunatic.xrea.jp/mt/archives/dsc_1364s-thumb.jpg" width="320"&gt;&lt;/a&gt;
 ゴールドコーストのホテルからの夜景。&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1220s1.html"&gt;&lt;img alt="" src="http://lunatic.xrea.jp/mt/archives/dsc_1220s-thumb.jpg"&gt;{width="320"
-height="213"}&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1220s1.html"&gt;&lt;img alt="" height="213" src="http://lunatic.xrea.jp/mt/archives/dsc_1220s-thumb.jpg" width="320"&gt;&lt;/a&gt;
 南十字座&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1223s.html"&gt;&lt;img alt="" src="http://lunatic.xrea.jp/mt/archives/dsc_1223s-thumb.JPG"&gt;{width="320"
-height="213"}&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1223s.html"&gt;&lt;img alt="" height="213" src="http://lunatic.xrea.jp/mt/archives/dsc_1223s-thumb.JPG" width="320"&gt;&lt;/a&gt;
 泊まったホテルの夜&lt;/p&gt;</content></entry><entry><title>簡単! Pure Javaのデータベースエンジン - HSQLDB 1.8公開</title><link href="https://igawa.io/posts/2005/07/jian-dan-pure-javanodetabesuenzin-hsqldb-18gong-kai/" rel="alternate"></link><published>2005-07-07T00:25:00+09:00</published><updated>2005-07-07T00:25:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-07-07:/posts/2005/07/jian-dan-pure-javanodetabesuenzin-hsqldb-18gong-kai/</id><summary type="html">&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2005/07/05/011.html"&gt;http://pcweb.mycom.co.jp/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;すごいなぁ。&lt;br&gt;
 軽いデータベースエンジンなら、色々使い道があるから、&lt;br&gt;
@@ -1125,21 +1093,19 @@ FILE&lt;/a&gt;&lt;br&gt;
 &lt;p&gt;っていうか、天下のMicrosoftなんだからそういうソフト&lt;br&gt;
 (パスワード管理ソフト)を発売すればいいじゃない？&lt;br&gt;
 #いまどき、無料で良いソフトがたくさん有るから、&lt;br&gt;
-#売れるかどうかはわからんが。&lt;/p&gt;</content></entry><entry><title>おいおい。いいのか？</title><link href="https://igawa.io/posts/2005/05/oioi-iinoka/" rel="alternate"></link><published>2005-05-26T00:14:00+09:00</published><updated>2005-05-26T00:14:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-05-26:/posts/2005/05/oioi-iinoka/</id><summary type="html">&lt;p&gt;おいおい。いいのか？&lt;br&gt;
-&lt;a href="http://lunatic.xrea.jp/mt/archives/linux_windows.html"&gt;&lt;img alt="" src="http://lunatic.xrea.jp/mt/archives/linux_windows-thumb.PNG"&gt;{width="320"
-height="236"}&lt;/a&gt;&lt;br&gt;
+#売れるかどうかはわからんが。&lt;/p&gt;</content></entry><entry><title>おいおい。いいのか？</title><link href="https://igawa.io/posts/2005/05/oioi-iinoka/" rel="alternate"></link><published>2005-05-26T00:14:00+09:00</published><updated>2005-05-26T00:14:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-05-26:/posts/2005/05/oioi-iinoka/</id><summary type="html">&lt;p&gt;おいおい。いいのか？
+&lt;a href="http://lunatic.xrea.jp/mt/archives/linux_windows.html"&gt;&lt;img alt="" height="236" src="http://lunatic.xrea.jp/mt/archives/linux_windows-thumb.PNG" width="320"&gt;&lt;/a&gt;
 &lt;a href="http://japan.linux.com/enterprise/05/05/23/0210210.shtml?topic=1"&gt;http://japan.linux.com/enterprise/05/05/23/0210210.shtml?topic=1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;今は違うかもしれないけど、私がこのページを見たときには、&lt;br&gt;
-Microsoftの&lt;br&gt;
-「&lt;a href="http://www.microsoft.com/japan/windowsserversystem/facts/default.mspx"&gt;WindowsはLinuxよりTCOが低くてチョー良い感じ〜&lt;/a&gt;」&lt;br&gt;
+&lt;p&gt;今は違うかもしれないけど、私がこのページを見たときには、
+Microsoftの
+「&lt;a href="http://www.microsoft.com/japan/windowsserversystem/facts/default.mspx"&gt;WindowsはLinuxよりTCOが低くてチョー良い感じ〜&lt;/a&gt;」
 な広告が出ていました。。。&lt;/p&gt;
-&lt;p&gt;わざとか？&lt;/p&gt;</summary><content type="html">&lt;p&gt;おいおい。いいのか？&lt;br&gt;
-&lt;a href="http://lunatic.xrea.jp/mt/archives/linux_windows.html"&gt;&lt;img alt="" src="http://lunatic.xrea.jp/mt/archives/linux_windows-thumb.PNG"&gt;{width="320"
-height="236"}&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;わざとか？&lt;/p&gt;</summary><content type="html">&lt;p&gt;おいおい。いいのか？
+&lt;a href="http://lunatic.xrea.jp/mt/archives/linux_windows.html"&gt;&lt;img alt="" height="236" src="http://lunatic.xrea.jp/mt/archives/linux_windows-thumb.PNG" width="320"&gt;&lt;/a&gt;
 &lt;a href="http://japan.linux.com/enterprise/05/05/23/0210210.shtml?topic=1"&gt;http://japan.linux.com/enterprise/05/05/23/0210210.shtml?topic=1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;今は違うかもしれないけど、私がこのページを見たときには、&lt;br&gt;
-Microsoftの&lt;br&gt;
-「&lt;a href="http://www.microsoft.com/japan/windowsserversystem/facts/default.mspx"&gt;WindowsはLinuxよりTCOが低くてチョー良い感じ〜&lt;/a&gt;」&lt;br&gt;
+&lt;p&gt;今は違うかもしれないけど、私がこのページを見たときには、
+Microsoftの
+「&lt;a href="http://www.microsoft.com/japan/windowsserversystem/facts/default.mspx"&gt;WindowsはLinuxよりTCOが低くてチョー良い感じ〜&lt;/a&gt;」
 な広告が出ていました。。。&lt;/p&gt;
 &lt;p&gt;わざとか？&lt;/p&gt;</content></entry><entry><title>ニンテンドーDSでLinuxが動いた</title><link href="https://igawa.io/posts/2005/05/nintendodsdelinuxgadong-ita/" rel="alternate"></link><published>2005-05-09T23:44:00+09:00</published><updated>2005-05-09T23:44:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-05-09:/posts/2005/05/nintendodsdelinuxgadong-ita/</id><summary type="html">&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=05/05/09/0315223&amp;amp;topic=76"&gt;http://slashdot.jp/article.pl?sid=05/05/09/0315223&amp;amp;topic=76&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;う〜ん。すごい。&lt;br&gt;
@@ -1343,10 +1309,8 @@ Firefox(Mozilla)とGoogleが手を組んで、FirefoxでGoogle検索したとき
 非接触ICカードではなく、ICタグを使うことによるメリットはどの辺なのか？&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://japan.cnet.com/news/sec/story/0,2000050480,20081528,00.htm"&gt;http://japan.cnet.com/news/sec/story/0,2000050480,20081528,00.htm&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;う〜ん。ICタグなんて使わずに、非接触ICカードを使えばいいんじゃない？&lt;br&gt;
 そんなに、コストを下げたいのだろうか？&lt;br&gt;
-非接触ICカードではなく、ICタグを使うことによるメリットはどの辺なのか？&lt;/p&gt;</content></entry><entry><title>さくらが咲きました</title><link href="https://igawa.io/posts/2005/04/sakuragaxiao-kimashita/" rel="alternate"></link><published>2005-04-03T00:48:00+09:00</published><updated>2005-04-03T00:48:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-04-03:/posts/2005/04/sakuragaxiao-kimashita/</id><summary type="html">&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/DSC_22.html"&gt;&lt;img alt="" src="http://lunatic.xrea.jp/mt/archives/DSC_22-thumb.JPG"&gt;{width="320"
-height="254"}&lt;/a&gt;&lt;br&gt;
-近くで、さくらが咲いたので撮ってみた。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/DSC_22.html"&gt;&lt;img alt="" src="http://lunatic.xrea.jp/mt/archives/DSC_22-thumb.JPG"&gt;{width="320"
-height="254"}&lt;/a&gt;&lt;br&gt;
+非接触ICカードではなく、ICタグを使うことによるメリットはどの辺なのか？&lt;/p&gt;</content></entry><entry><title>さくらが咲きました</title><link href="https://igawa.io/posts/2005/04/sakuragaxiao-kimashita/" rel="alternate"></link><published>2005-04-03T00:48:00+09:00</published><updated>2005-04-03T00:48:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-04-03:/posts/2005/04/sakuragaxiao-kimashita/</id><summary type="html">&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/DSC_22.html"&gt;&lt;img alt="" height="254" src="http://lunatic.xrea.jp/mt/archives/DSC_22-thumb.JPG" width="320"&gt;&lt;/a&gt;
+近くで、さくらが咲いたので撮ってみた。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/DSC_22.html"&gt;&lt;img alt="" height="254" src="http://lunatic.xrea.jp/mt/archives/DSC_22-thumb.JPG" width="320"&gt;&lt;/a&gt;
 近くで、さくらが咲いたので撮ってみた。&lt;/p&gt;</content></entry><entry><title>MacはUNIXベースのOSじゃないの？</title><link href="https://igawa.io/posts/2005/03/machaunixbesunoosziyanaino/" rel="alternate"></link><published>2005-03-24T22:00:00+09:00</published><updated>2005-03-24T22:00:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-03-24:/posts/2005/03/machaunixbesunoosziyanaino/</id><summary type="html">&lt;p&gt;&lt;a href="http://japan.cnet.com/news/sec/story/0,2000050480,20081520,00.htm"&gt;http://japan.cnet.com/news/sec/story/0,2000050480,20081520,00.htm&lt;/a&gt;  &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;「Mac

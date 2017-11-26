@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>What is done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Sat, 17 Dec 2016 00:00:00 +0900</lastBuildDate><item><title>初めてのOpenStackリポジトリ追加</title><link>https://igawa.io/posts/2016/12/adding-a-new-repo-to-openstack/</link><description>&lt;p&gt;これは、 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; のエントリです。&lt;/p&gt;
+<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Sat, 17 Dec 2016 00:00:00 +0900</lastBuildDate><item><title>初めてのOpenStackリポジトリ追加</title><link>https://igawa.io/posts/2016/12/adding-a-new-repo-to-openstack/</link><description>&lt;p&gt;これは、 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; のエントリです。&lt;/p&gt;
 &lt;p&gt;先日、OpenStack に新たなリポジトリを追加したので、そのときに感じたことや経験を共有してみたいと思います。&lt;/p&gt;
 &lt;div class="section" id="id1"&gt;
 &lt;h2&gt;ナニを追加したのか？&lt;/h2&gt;
