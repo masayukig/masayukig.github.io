@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>What is done is done - openstack</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/openstack.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2013-01-02T10:47:00+09:00</updated><entry><title>Challenging OpenStack on Nexus 7... but failed #openstack #nexus7</title><link href="https://igawa.io/posts/2013/01/challenging-openstack-on-nexus-7-but-failed-openstack-nexus7/" rel="alternate"></link><published>2013-01-02T10:47:00+09:00</published><updated>2013-01-02T10:47:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2013-01-02:/posts/2013/01/challenging-openstack-on-nexus-7-but-failed-openstack-nexus7/</id><summary type="html">&lt;p&gt;&lt;a href="https://wiki.ubuntu.com/Nexus7/Installation"&gt;Nexus
+7にUbuntuをインストールできる&lt;/a&gt;というのをみて、&lt;br&gt;
+「もしかしたらOpenStackも動くかも？！」と思ってやってみたのですが、&lt;/p&gt;
+&lt;p&gt;あえなく撃沈。。&lt;/p&gt;
+&lt;div class="separator" style="clear:both;text-align:center;"&gt;
+
+[![](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png){width="640"
+height="240"}](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png)
+
+&lt;/div&gt;
+
+&lt;div class="separator" style="clear:both;text-align:center;"&gt;
+
+[![](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png){width="640"
+height="144"}](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png …&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://wiki.ubuntu.com/Nexus7/Installation"&gt;Nexus
+7にUbuntuをインストールできる&lt;/a&gt;というのをみて、&lt;br&gt;
+「もしかしたらOpenStackも動くかも？！」と思ってやってみたのですが、&lt;/p&gt;
+&lt;p&gt;あえなく撃沈。。&lt;/p&gt;
+&lt;div class="separator" style="clear:both;text-align:center;"&gt;
+
+[![](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png){width="640"
+height="240"}](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png)
+
+&lt;/div&gt;
+
+&lt;div class="separator" style="clear:both;text-align:center;"&gt;
+
+[![](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png){width="640"
+height="144"}](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png)
+
+&lt;/div&gt;
+
+&lt;div class="separator" style="clear:both;text-align:center;"&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;具体的には、以下のような感じでインストールを行った。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;DevStackのインストール&lt;/li&gt;
+&lt;li&gt;stack.shの実行&lt;/li&gt;
+&lt;li&gt;Horizonの起動を確認&lt;/li&gt;
+&lt;li&gt;Dashboardへアクセス成功(だいぶ動作がとろいが)&lt;/li&gt;
+&lt;li&gt;いきなりDashboardからインスタンス起動&lt;/li&gt;
+&lt;li&gt;→ エラー&lt;/li&gt;
+&lt;li&gt;ログ確認(nova-compute)&lt;/li&gt;
+&lt;li&gt;最終的には起動時に以下の理由(ログ)で、nova-computeの起動に失敗している模様&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- --&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;2013-01-02 06:10:42 TRACE nova libvirtError: internal error Cannot find suitable emulator for armv7l
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ARM＆libvirtdの対応が行われていないらしい。&lt;br&gt;
+libvirtのソースも多少読んだが、大枠の構造を理解してないので直せる力量をつけるにはまだまだ時間が掛かりそう。&lt;/p&gt;
+&lt;p&gt;このままだとさすがにNexus7使いづらいので、&lt;a href="https://wiki.ubuntu.com/Nexus7/Installation#Having_both_Android_and_Ubuntu_installed_for_dual_boot"&gt;Dual
+Boot&lt;/a&gt;できるようにしてから&lt;br&gt;
+再挑戦しようとおもいます。&lt;/p&gt;</content><category term="nexus7"></category></entry><entry><title>Mac に vagrant+devstack を入れてみる - その２ #openstack #devstack #vagrant</title><link href="https://igawa.io/posts/2012/10/mac-ni-vagrantdevstack-woru-retemiru-sono2-openstack-devstack-vagrant/" rel="alternate"></link><published>2012-10-04T21:13:00+09:00</published><updated>2012-10-04T21:13:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-10-04:/posts/2012/10/mac-ni-vagrantdevstack-woru-retemiru-sono2-openstack-devstack-vagrant/</id><summary type="html">&lt;h2&gt;続き&lt;/h2&gt;
+&lt;div&gt;
+
+無事ダウンロードは終了し、VMも起動したが、NFSでマウントできないってエラーが
+
+&lt;/div&gt;
+
+&lt;div&gt;
+
+発生。
+
+&lt;/div&gt;
+
+&lt;div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[vagrant] Downloading box: http://dl.dropbox.com/u/1537815/precise64.box
+[vagrant] Extracting box...
+[vagrant] Verifying box...
+[vagrant] Cleaning up downloaded box...
+[default] Importing base box &amp;#39;precise&amp;#39;...
+[default] The guest additions on this VM do not match the install version of
+VirtualBox! This may cause …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;続き&lt;/h2&gt;
+&lt;div&gt;
+
+無事ダウンロードは終了し、VMも起動したが、NFSでマウントできないってエラーが
+
+&lt;/div&gt;
+
+&lt;div&gt;
+
+発生。
+
+&lt;/div&gt;
+
+&lt;div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[vagrant] Downloading box: http://dl.dropbox.com/u/1537815/precise64.box
+[vagrant] Extracting box...
+[vagrant] Verifying box...
+[vagrant] Cleaning up downloaded box...
+[default] Importing base box &amp;#39;precise&amp;#39;...
+[default] The guest additions on this VM do not match the install version of
+VirtualBox! This may cause things such as forwarded ports, shared
+folders, and more to not work properly. If any of those things fail on
+this machine, please update the guest additions and repackage the
+box.
+
+Guest Additions Version: 4.1.18
+VirtualBox Version: 4.1.23
+[default] Matching MAC address for NAT networking...
+[default] Mounting shared folders...
+[default] -- v-root: /vagrant
+[default] -- v-ssh: /home/vagrant/.host-ssh
+[default] -- v-csc-1: /tmp/vagrant-chef-1/chef-solo-1/cookbooks
+[default] Mounting NFS shared folders...
+Mounting NFS shared folders failed. This is most often caused by the NFS
+client software not being installed on the guest machine. Please verify
+that the NFS client software is properly installed, and consult any resources
+specific to the linux distro you&amp;#39;re using for more information on how to
+do this.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;でも、vagrant sshでGuest OSには接続できた!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-&amp;gt; % vagrant ssh
+Welcome to Ubuntu 12.04.1 LTS (GNU/Linux 3.2.0-23-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+Welcome to your Vagrant-built virtual machine.
+Last login: Mon Aug 20 19:28:45 2012 from 10.0.2.2
+vagrant@precise64:~$ uname -a
+Linux precise64 3.2.0-23-generic #36-Ubuntu SMP Tue Apr 10 20:39:51 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux
+vagrant@precise64:~$ uptime
+ 21:52:20 up  5:24,  1 user,  load average: 0.00, 0.01, 0.05
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;でも、OpenStack関連のサービスは全く起動していないようだったので、
+vagrant reloadをやってみた&lt;/p&gt;
+&lt;p&gt;[]{#more}&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-&amp;gt; % vagrant reload       
+[default] Attempting graceful shutdown of VM...
+[default] Clearing any previously set forwarded ports...
+[default] Forwarding ports...
+[default] -- 22 =&amp;gt; 2222 (adapter 1)
+[default] Exporting NFS shared folders...
+[vagrant] Preparing to edit /etc/exports. Administrator privileges will be required...
+Password:
+[default] Creating shared folders metadata...
+[default] Clearing any previously set network interfaces...
+[default] Preparing network interfaces based on configuration...
+[default] Running any VM customizations...
+[default] Booting VM...
+[default] Waiting for VM to boot. This can take a few minutes.
+[default] VM booted and ready for use!
+[default] Configuring and enabling network interfaces...
+[default] Mounting shared folders...
+[default] -- v-root: /vagrant
+[default] -- v-ssh: /home/vagrant/.host-ssh
+[default] -- v-csc-1: /tmp/vagrant-chef-1/chef-solo-1/cookbooks
+[default] Mounting NFS shared folders...
+[default] Running provisioner: Vagrant::Provisioners::ChefSolo...
+[default] Generating chef JSON and uploading...
+[default] Running chef-solo...
+stdin: is not a tty
+[Thu, 04 Oct 2012 20:38:58 +0000] INFO: *** Chef 0.10.10 ***
+[Thu, 04 Oct 2012 20:38:59 +0000] DEBUG: Building node object for precise64.
+[Thu, 04 Oct 2012 20:38:59 +0000] DEBUG: Extracting run list from JSON attributes provided on command line
+[Thu, 04 Oct 2012 20:38:59 +0000] INFO: Setting the run_list to [&amp;quot;recipe[vagrant-openstack::hostname]&amp;quot;, &amp;quot;recipe[vagrant-openstack::cache]&amp;quot;, &amp;quot;recipe[vagrant-openstack::devstack-cache]&amp;quot;, &amp;quot;recipe[devstack]&amp;quot;, &amp;quot;recipe[vagrant-openstack::devstack-update-cache]&amp;quot;] from JSON
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;と、最初の方は調子良さそうだったが...&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;+ sudo rm -rf /home/vagrant/cache /home/vagrant/devstack
+rm: cannot remove `/home/vagrant/cache&amp;#39;: Device or resource busy
+++ failed
+++ local r=1
++++ jobs -p
+++ kill
+++ set +o xtrace
+---- End output of su -c &amp;#39;set -e; cd /home/vagrant/devstack; RECLONE=yes bash stack.sh &amp;gt; devstack.log&amp;#39; vagrant ----
+Ran su -c &amp;#39;set -e; cd /home/vagrant/devstack; RECLONE=yes bash stack.sh &amp;gt; devstack.log&amp;#39; vagrant returned 1
+Chef never successfully completed! Any errors should be visible in the
+output above. Please fix your recipes so that they properly complete.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;と、エラー終了orz.. 道のりは長そうだ。&lt;/p&gt;</content><category term="Mac"></category><category term="vagrant"></category></entry><entry><title>Mac に vagrant+devstack を入れてみる - その１ #openstack #devstack #vagrant</title><link href="https://igawa.io/posts/2012/10/mac-ni-vagrantdevstack-woru-retemiru-sono1-openstack-devstack-vagrant/" rel="alternate"></link><published>2012-10-03T15:06:00+09:00</published><updated>2012-10-03T15:06:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-10-03:/posts/2012/10/mac-ni-vagrantdevstack-woru-retemiru-sono1-openstack-devstack-vagrant/</id><summary type="html">&lt;h2&gt;何するのか?&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/bcwaldon/vagrant_devstack"&gt;vagrant_devstack&lt;/a&gt; っていうのを使って、vagrant+devstack
+という素敵な環境を、&lt;/p&gt;
+&lt;div&gt;
+
+Mac OS Mountain Lion(10.8.2)に 作ってみる。  
+一応、vagrant\_devstackのREADMEには、Macに対する言及があるので、  
+できるんじゃないかと妄想。
+
+&lt;/div&gt;
+
+&lt;div&gt;
+
+はじめに
+--------
+
+&lt;/div&gt;
+
+&lt;div&gt;
+
+まずは、
+
+&lt;/div&gt;
+
+&lt;div&gt;
+
+&lt;https://github.com/bcwaldon/vagrant_devstack&gt;
+
+&lt;/div&gt;
+
+&lt;div&gt;
+
+のREADMEにしたがって、
+
+&lt;/div&gt;
+
+&lt;div&gt;
+
+1.  Virtualboxインストール
+2.  gem update --system
+3.  gem install vagrant
+
+&lt;div&gt;
+
+を行った。。。。
+困ったこと発生
+--------------
+
+が、「3.」で問題発生。
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;% gem install vagrant  &lt;/span&gt;
+&lt;span class="n"&gt;Fetching&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;archive&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;minitar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;何するのか?&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/bcwaldon/vagrant_devstack"&gt;vagrant_devstack&lt;/a&gt; っていうのを使って、vagrant+devstack
+という素敵な環境を、&lt;/p&gt;
+&lt;div&gt;
+
+Mac OS Mountain Lion(10.8.2)に 作ってみる。  
+一応、vagrant\_devstackのREADMEには、Macに対する言及があるので、  
+できるんじゃないかと妄想。
+
+&lt;/div&gt;
+
+&lt;div&gt;
+
+はじめに
+--------
+
+&lt;/div&gt;
+
+&lt;div&gt;
+
+まずは、
+
+&lt;/div&gt;
+
+&lt;div&gt;
+
+&lt;https://github.com/bcwaldon/vagrant_devstack&gt;
+
+&lt;/div&gt;
+
+&lt;div&gt;
+
+のREADMEにしたがって、
+
+&lt;/div&gt;
+
+&lt;div&gt;
+
+1.  Virtualboxインストール
+2.  gem update --system
+3.  gem install vagrant
+
+&lt;div&gt;
+
+を行った。。。。
+困ったこと発生
+--------------
+
+が、「3.」で問題発生。
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;% gem install vagrant  &lt;/span&gt;
+&lt;span class="n"&gt;Fetching&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;archive&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;minitar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="c"&gt;%)&lt;/span&gt;
+&lt;span class="n"&gt;Fetching&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;4.&lt;/span&gt;&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="c"&gt;%)&lt;/span&gt;
+&lt;span class="n"&gt;Building&lt;/span&gt; &lt;span class="n"&gt;native&lt;/span&gt; &lt;span class="n"&gt;extensions&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;  &lt;span class="n"&gt;This&lt;/span&gt; &lt;span class="n"&gt;could&lt;/span&gt; &lt;span class="n"&gt;take&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="c"&gt;...&lt;/span&gt;
+&lt;span class="n"&gt;ERROR&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;  &lt;span class="n"&gt;Error&lt;/span&gt; &lt;span class="n"&gt;installing&lt;/span&gt; &lt;span class="n"&gt;vagrant&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+ &lt;span class="n"&gt;ERROR&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Failed&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;build&lt;/span&gt; &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="n"&gt;native&lt;/span&gt; &lt;span class="n"&gt;extension&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+
+        &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Users&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;igawa&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rvm&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rubies&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.9&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p194&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt; &lt;span class="n"&gt;extconf&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rb&lt;/span&gt;
+&lt;span class="n"&gt;checking&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;re&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="c"&gt;... *** extconf.rb failed ***&lt;/span&gt;
+&lt;span class="n"&gt;Could&lt;/span&gt; &lt;span class="n"&gt;not&lt;/span&gt; &lt;span class="n"&gt;create&lt;/span&gt; &lt;span class="n"&gt;Makefile&lt;/span&gt; &lt;span class="n"&gt;due&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;some&lt;/span&gt; &lt;span class="n"&gt;reason&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;probably&lt;/span&gt; &lt;span class="n"&gt;lack&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt;
+&lt;span class="n"&gt;necessary&lt;/span&gt; &lt;span class="n"&gt;libraries&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;or&lt;/span&gt; &lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;  &lt;span class="n"&gt;Check&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;mkmf&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;log&lt;/span&gt; &lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;more&lt;/span&gt;
+&lt;span class="n"&gt;details&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;  &lt;span class="n"&gt;You&lt;/span&gt; &lt;span class="n"&gt;may&lt;/span&gt; &lt;span class="n"&gt;need&lt;/span&gt; &lt;span class="n"&gt;configuration&lt;/span&gt; &lt;span class="n"&gt;options&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div&gt;
+
+と、こんな感じのエラーが出力され、インストール出来ない。
+解決策
+------
+
+ググってみると、
+
+**[【Mac】【RubyGems】/usr/bin/gcc-4.2
+がない！](http://loveless-ainakimono.seesaa.net/article/232323709.html)**
+
+&lt;div class="p1"&gt;
+
+&lt;/div&gt;
+
+&lt;div class="p1"&gt;
+
+という記事を見つけたので、それに習って、以下のようにシンボリックリンクを
+
+&lt;/div&gt;
+
+&lt;div class="p1"&gt;
+
+張ってみました。
+
+&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;% sudo ln -s /usr/bin/llvm-gcc-4.2 /usr/bin/gcc-4.2&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="p1"&gt;
+
+結果、
+    % gem install vagrant                              
+    Building native extensions.  This could take a while...
+    Fetching: log4r-1.1.10.gem (100%)
+    Fetching: net-ssh-2.2.2.gem (100%)
+    Fetching: net-scp-1.0.4.gem (100%)
+    Fetching: vagrant-1.0.5.gem (100%)
+    Successfully installed json-1.5.4
+    Successfully installed log4r-1.1.10
+    Successfully installed net-ssh-2.2.2
+    Successfully installed net-scp-1.0.4
+    Successfully installed vagrant-1.0.5
+    5 gems installed
+
+っていうように先に進めました。
+
+ようやく本番
+------------
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;ようやく、本来やりたかったところに入れます。&lt;/p&gt;
+&lt;p&gt;で、更に、マニュアルに従い、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone http://github.com/bcwaldon/vagrant_devstack.git
+cd vagrant_devstack 
+git submodule init
+git submodule update
+cp etc/vagrant.yaml.sample etc/vagrant.yaml
+vim Vagrantfile
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;を実行。Vagrantfileは、以下の様な感じに修正。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;% git diff&lt;/span&gt;
+&lt;span class="n"&gt;diff&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Vagrantfile&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Vagrantfile&lt;/span&gt;
+&lt;span class="n"&gt;index&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="n"&gt;aaa5fa&lt;/span&gt;&lt;span class="p"&gt;..&lt;/span&gt;&lt;span class="mi"&gt;75&lt;/span&gt;&lt;span class="n"&gt;bccfe&lt;/span&gt; &lt;span class="mi"&gt;100644&lt;/span&gt;
+&lt;span class="o"&gt;---&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Vagrantfile&lt;/span&gt;
+&lt;span class="o"&gt;+++&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Vagrantfile&lt;/span&gt;
+&lt;span class="p"&gt;@@&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt; &lt;span class="p"&gt;@@&lt;/span&gt; &lt;span class="n"&gt;conf&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+     &lt;span class="s"&gt;&amp;#39;ip_prefix&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;192.168.27&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+     &lt;span class="s"&gt;&amp;#39;mac_prefix&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;080027027&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+     &lt;span class="s"&gt;&amp;#39;box_name&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;precise&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;    &lt;span class="s"&gt;&amp;#39;box_url&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;http://c479942.r42.cf2.rackcdn.com/precise64.box&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="o"&gt;+&lt;/span&gt;    &lt;span class="s"&gt;&amp;#39;box_url&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;http://dl.dropbox.com/u/1537815/precise64.box&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="o"&gt;+&lt;/span&gt;#    &lt;span class="s"&gt;&amp;#39;box_url&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;http://files.vagrantup.com/precise64.box&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="o"&gt;+&lt;/span&gt;#    &lt;span class="s"&gt;&amp;#39;box_url&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;http://c479942.r42.cf2.rackcdn.com/precise64.box&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+     &lt;span class="s"&gt;&amp;#39;allocate_memory&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;1024&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+     &lt;span class="s"&gt;&amp;#39;cache_dir&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;cache/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+     &lt;span class="s"&gt;&amp;#39;ssh_dir&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;~/.ssh/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;で、ここまで来たら、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;vagrant up
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;を実行。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[default] Box precise was not found. Fetching box from specified URL...
+[vagrant] Downloading with Vagrant::Downloaders::HTTP...
+[vagrant] Downloading box: http://dl.dropbox.com/u/1537815/precise64.box
+[vagrant] Progress: 7% (43960869 / 567768576)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;結構時間が掛かる。待ってられないので、一眠り。。。。&lt;/p&gt;</content><category term="vagrant"></category></entry></feed>

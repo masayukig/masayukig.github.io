@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>高速で無駄のないソフトウェア開発を実現するための7つのポイント - What is done is done</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="https://igawa.io/drafts/gao-su-dewu-tuo-nonaisohutoueakai-fa-woshi-xian-surutameno7tsunopointo.html">
+
+        <meta name="author" content="masayukig" />
+        <meta name="description" content="http://kuranuki.sonicgarden.jp/2012/03/post-70.html どうすれば小規模なチームでも大きな成果を出せるのか。大きな組織で沢山の量をこなすのは当たり前のことで、あまりクールではありません。少ない人数でも大きな成果を出すには、スピードをあげることと、そのためにも無駄をなくすことがポイントになってきます。 [Ferrari F1 - Fernando Alonso / JiteshJagadish]{style=&#34;background:#333;color:#ddd;font-size:10px;padding:3px;&#34;} ソフトウェアをつくるための３つの役割で書いた通り、ソフトウェア開発をクラウドのようなサービス提供で続けていくには、プロダクトオーナーとプログラマーがキャッチボールのような形で、仕様と実装をずっと繰り返しながら作っていくのが自然です。 SonicGardenで使っているツールと開発の流れの全体は以下のようになります。大事なことは「動くソフトウェア」の状態を保ったまま、どれだけ回転数をあげていけるか、ということです。そのために、プロダクトオーナーとプログラマの間で待ち時間を減らすために並行して進めるようにするなど工夫しています。 ホワイトボードとMVP 実際の開発の流れとしては、まずはホワイトボードを使って最大でも１ヶ月ほどで完成できる範囲の設計をします。この際は細部や例外に拘るのではなく、最小限だけれども全体の流れを一通り実現できるような機能を設計します。こうした必要最小限の機能をリーンスタートアップでは「MVP …" />
+
+        <meta property="og:site_name" content="What is done is done" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="高速で無駄のないソフトウェア開発を実現するための7つのポイント"/>
+        <meta property="og:url" content="https://igawa.io/drafts/gao-su-dewu-tuo-nonaisohutoueakai-fa-woshi-xian-surutameno7tsunopointo.html"/>
+        <meta property="og:description" content="http://kuranuki.sonicgarden.jp/2012/03/post-70.html どうすれば小規模なチームでも大きな成果を出せるのか。大きな組織で沢山の量をこなすのは当たり前のことで、あまりクールではありません。少ない人数でも大きな成果を出すには、スピードをあげることと、そのためにも無駄をなくすことがポイントになってきます。 [Ferrari F1 - Fernando Alonso / JiteshJagadish]{style=&#34;background:#333;color:#ddd;font-size:10px;padding:3px;&#34;} ソフトウェアをつくるための３つの役割で書いた通り、ソフトウェア開発をクラウドのようなサービス提供で続けていくには、プロダクトオーナーとプログラマーがキャッチボールのような形で、仕様と実装をずっと繰り返しながら作っていくのが自然です。 SonicGardenで使っているツールと開発の流れの全体は以下のようになります。大事なことは「動くソフトウェア」の状態を保ったまま、どれだけ回転数をあげていけるか、ということです。そのために、プロダクトオーナーとプログラマの間で待ち時間を減らすために並行して進めるようにするなど工夫しています。 ホワイトボードとMVP 実際の開発の流れとしては、まずはホワイトボードを使って最大でも１ヶ月ほどで完成できる範囲の設計をします。この際は細部や例外に拘るのではなく、最小限だけれども全体の流れを一通り実現できるような機能を設計します。こうした必要最小限の機能をリーンスタートアップでは「MVP …"/>
+        <meta property="article:published_time" content="2012-03-09" />
+            <meta property="article:section" content="Uncategorized" />
+            <meta property="article:author" content="masayukig" />
+
+    <meta name="twitter:dnt" content="on">
+    <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@masayukig">
+        <meta name="twitter:creator" content="@masayukig">
+    <meta name="twitter:domain" content="https://igawa.io">
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://igawa.io/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="https://igawa.io/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://igawa.io/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://igawa.io/theme/css/style.css" type="text/css"/>
+        <link href="https://igawa.io/static/custom.css" rel="stylesheet">
+
+        <link href="https://igawa.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="What is done is done ATOM Feed"/>
+
+
+
+        <link href="https://igawa.io/feeds/uncategorized.atom.xml" type="application/atom+xml" rel="alternate"
+              title="What is done is done Uncategorized ATOM Feed"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="https://igawa.io/" class="navbar-brand">
+What is done is done            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="https://igawa.io/pages/disclaimer.html">
+                             DISCLAIMER
+                          </a></li>
+                        <li >
+                            <a href="https://igawa.io/category/imported.html">Imported</a>
+                        </li>
+                        <li >
+                            <a href="https://igawa.io/category/openstack.html">Openstack</a>
+                        </li>
+                        <li >
+                            <a href="https://igawa.io/category/oss.html">Oss</a>
+                        </li>
+                        <li class="active">
+                            <a href="https://igawa.io/category/uncategorized.html">Uncategorized</a>
+                        </li>
+                        <li >
+                            <a href="https://igawa.io/category/work.html">Work</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="https://igawa.io/drafts/gao-su-dewu-tuo-nonaisohutoueakai-fa-woshi-xian-surutameno7tsunopointo.html"
+                       rel="bookmark"
+                       title="Permalink to 高速で無駄のないソフトウェア開発を実現するための7つのポイント">
+                        高速で無駄のないソフトウェア開発を実現するための7つのポイント
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2012-03-09T10:16:00+09:00"> 2012-03-09</time>
+    </span>
+
+
+            <span class="label label-default">By</span>
+            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
+
+
+
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p><a href="http://kuranuki.sonicgarden.jp/2012/03/post-70.html">http://kuranuki.sonicgarden.jp/2012/03/post-70.html</a>  </p>
+<blockquote>
+<p>どうすれば小規模なチームでも大きな成果を出せるのか。大きな組織で沢山の量をこなすのは当たり前のことで、あまりクールではありません。少ない人数でも大きな成果を出すには、スピードをあげることと、そのためにも無駄をなくすことがポイントになってきます。</p>
+<div style="height:300px;width:500px;padding:1px;background:#333;">
+
+<p><a href="http://www.flickr.com/photos/jiteshjagadish/5178446972/"><img alt="Ferrari F1 - Fernando
+Alonso" src="http://farm2.static.flickr.com/1404/5178446972_1f31252091.jpg"></a>[Ferrari
+F1 - Fernando Alonso /
+JiteshJagadish]{style="background:#333;color:#ddd;font-size:10px;padding:3px;"}</p>
+</div>
+
+<p><a href="http://kuranuki.sonicgarden.jp/2012/01/post-62.html">ソフトウェアをつくるための３つの役割</a>で書いた通り、ソフトウェア開発をクラウドのようなサービス提供で続けていくには、プロダクトオーナーとプログラマーがキャッチボールのような形で、仕様と実装をずっと繰り返しながら作っていくのが自然です。</p>
+<p>SonicGardenで使っているツールと開発の流れの全体は以下のようになります。大事なことは「動くソフトウェア」の状態を保ったまま、どれだけ回転数をあげていけるか、ということです。そのために、プロダクトオーナーとプログラマの間で待ち時間を減らすために並行して進めるようにするなど工夫しています。</p>
+<p><img alt="" src="https://lh5.googleusercontent.com/-4vmMd43SWkI/T1k5irwtE2I/AAAAAAAAAbU/DrTIn5C_xWM/s400/20120309blog_1.png"></p>
+<h3>ホワイトボードとMVP</h3>
+<p>実際の開発の流れとしては、まずはホワイトボードを使って最大でも１ヶ月ほどで完成できる範囲の設計をします。この際は細部や例外に拘るのではなく、最小限だけれども全体の流れを一通り実現できるような機能を設計します。こうした必要最小限の機能を<a href="http://kuranuki.sonicgarden.jp/2011/06/post-28.html">リーンスタートアップ</a>では「MVP」と呼ばれています。そして、MVPが決まれば、すぐにプログラミングに取りかかります。わざわざドキュメントにする必要はありません。</p>
+<p><img alt="" src="https://lh6.googleusercontent.com/-tzfOrguP0D4/TyHVParrhRI/AAAAAAAAAaI/cThLVON8Rqw/s400/Photo_12-01-26_14_15_55.jpg"></p>
+<h3>Pivotal Trackerとチケット駆動開発</h3>
+<p>実際にプログラミングをする前に、ユーザから見て意味のある機能単位のユーザストーリーと呼ばれる単位に分割し、<a href="https://www.pivotaltracker.com/"><strong>Pivotal
+Tracker</strong></a>というツールに登録していきます。ユーザストーリーの追加はプロダクトオーナーの仕事です。プログラマは登録されたユーザストーリーを優先順位の順に並んでいるので上から順に対応していきます。こうしたやり方を<strong>「チケット駆動開発」</strong>と呼びます。</p>
+<p>実際にはプロダクトオーナーがどんどんと勝手に追加していくのではなくて、プログラマとのディスカッションを行ってから合意がとれてから追加していくことになります。その時のポイントは、プロダクトオーナーは解決したい課題から話し始めることです。解決するための機能をどう実現するかは、色々なプログラムのつくり方によって変わってくるので、機能の実現方法についてはプログラマと話あって決めます。そうすると、余計な機能を作り込んだり、技術的に無駄に頑張るといったことがなくなります。</p>
+<p><img alt="" src="https://lh4.googleusercontent.com/-XGj2vkkw9QQ/T1k5z4aLo8I/AAAAAAAAAb0/RQWjKOunjk0/s400/20120309blog_2.png"></p>
+<h3>youRoomと顧客同室</h3>
+<p>最初の設計で詳細まで決めないので、プログラミング中に不明な点などが出てきたら、<a href="http://youroom.in"><strong>youRoom</strong></a>というツールを使ってコミュニケーションを図ります。youRoomはグループ毎にコミュニケーションがとれるツールで、メーリングリストよりも気軽に投稿できるので、何かあればすぐに確認ができます。チャットと違い非同期に書き込めるのでお互いの集中時間も妨げません。youRoomを使えば仮想的に<strong>「顧客同室」</strong>を実現できます。</p>
+<p>メールだとついつい一度に沢山の情報を誤解のないように伝えようと一通のメールが長くなってしまいがちです。そうすると、気軽な返信ができなくなってしまい、また返事も長くなるという悪循環に陥ることで結果コミュニケーションの総量が減ってしまうという問題がありますが、youRoomだとそんなことは起こりません。一つの情報量を制限することで、総量としてのコミュニケーション量を増やすことができます。</p>
+<p><img alt="" src="https://lh6.googleusercontent.com/-ccdEgyHehzs/T1k4CX3Tk3I/AAAAAAAAAas/OtABS2NqTqE/s400/20120309blog_3.png"></p>
+<h3>Githubとコードの共同所有、コードレビュー、リファクタリング</h3>
+<p>開発中のソースコードは<a href="http://github.com"><strong>Github</strong></a>で共有することで<strong>「コードの共同所有」</strong>を行いますし、Githubのソースコードにコメントが出来る機能を使って、プログラマ同士で<strong>「コードレビュー」</strong>を行います。コードレビューで知識と知恵の補完をすることができ、その指摘をもとに<strong>「リファクタリング」</strong>を行うことで保守性が高まります。ソニックガーデンでは外部のデザイナーともGithubを使って共有しています。</p>
+<p><img alt="" src="https://lh6.googleusercontent.com/-9PJ2hHZqRWI/T1k4EIfQ4DI/AAAAAAAAAa8/cY78msNLXBY/s400/20120309blog_4.png"></p>
+<h3>RSpec、Cucumberとテスト駆動開発、ペアプログラミング</h3>
+<p>プログラミング時には、<strong>RSpec</strong>と<strong>Cucumber</strong>を使って<strong>「テスト駆動開発」</strong>を行うことで、繰り返し開発をしてもデグレしないようにしています。また実装上で難しい箇所を開発する際や、本番環境を触る際は必ず２名以上で作業にあたるようにしており<strong>「ペアプログラミング」</strong>と呼ばれています。ソニックガーデンではペアプログラミングをしやすいように、フリーアドレス制にしているのと、机を向かい合わせでなく背中あわせになるようにレイアウトしています。</p>
+<h3>Herokuとステージング環境、継続的デリバリ</h3>
+<p>プログラマ側で完成したら、<a href="http://www.heroku.com/"><strong>Heroku</strong></a>というRubyのPaaS上に作った<strong>「ステージング環境」</strong>にアップロードします。プロダクトオーナーはいつでもこのステージング環境を見ることで動くソフトウェアを確認することができます。<strong>「継続的デリバリ」</strong>をする対象がステージング環境になります。プロダクトオーナーは動作確認が出来れば、Pivotal
+Tracker上でアクセプトすることで、そのユーザストーリーが終了します。</p>
+<h3>Skypeとイテレーション</h3>
+<p>１週間単位くらいで<a href="http://www.skype.com/intl/ja/home/"><strong>Skype</strong></a>を使ったリアルタイムのミーティングも実施します。このミーティングは進捗の確認というよりも、次の１〜２週間で何を作るのかといった認識あわせをする場になります。なぜならば進捗状況は、毎日Pivotal
+TrackerとyouRoomで確認出来ているからです。ここは<strong>「イテレーション」</strong>とよばれるタイムボックスを意識する場でもあります。期間をきることで、決めるべきことを決めて進めていく感覚になります。日々の情報共有さえできていれば、30分もかからずに終わることも多いです。</p>
+<p><img alt="" src="https://lh5.googleusercontent.com/-4vmMd43SWkI/T1k5irwtE2I/AAAAAAAAAbU/DrTIn5C_xWM/s400/20120309blog_1.png"></p>
+<p>このようにして、実際に動くソフトウェアを中心にして、徹底的に無駄を省きながら、繰り返して開発を続けて改善していっています。紹介したツールはすべてクラウドから利用でき、無料で試すことができますよ。</p>
+<p>ご質問などあれば、お気軽に<a href="http://twitter.com/kuranuki">Twitter( @kuranuki
+)</a>などで聞いて下さい。</p>
+</blockquote>
+<p>from Social Change! <a href="http://kuranuki.sonicgarden.jp/">http://kuranuki.sonicgarden.jp/</a></p>
+            </div>
+            <!-- /.entry-content -->
+    <hr />
+    <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style">
+            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+            <a class="addthis_button_tweet"></a>
+            <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    </div>
+    <!-- AddThis Button END -->
+    <hr/>
+    <section class="comments" id="comments">
+        <h2>Comments</h2>
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'afterstack'; // required: replace example with your forum shortname
+
+                    var disqus_identifier = 'gao-su-dewu-tuo-nonaisohutoueakai-fa-woshi-xian-surutameno7tsunopointo';
+                var disqus_url = 'https://igawa.io/drafts/gao-su-dewu-tuo-nonaisohutoueakai-fa-woshi-xian-surutameno7tsunopointo.html';
+
+            var disqus_config = function () {
+                this.language = "en";
+            };
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<div id="aboutme">
+    <p>
+      <strong>About Masayuki Igawa</strong><br/>
+        <a href="https://about.me/masayukig">about.me</a>
+    </p>
+</div><!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://twitter.com/masayukig"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+    <li class="list-group-item"><a href="https://www.linkedin.com/in/masayukig"><i class="fa fa-linkedin-square fa-lg"></i> LinkedIn</a></li>
+    <li class="list-group-item"><a href="https://github.com/masayukig"><i class="fa fa-github-square fa-lg"></i> GitHub</a></li>
+    <li class="list-group-item"><a href="https://flickr.com/masayun"><i class="fa fa-flickr fa-lg"></i> Flickr</a></li>
+    <li class="list-group-item"><a href="https://instagram.com/masayukig"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Recent Posts -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+  <ul class="list-group" id="recentposts">
+    <li class="list-group-item"><a href="https://igawa.io/posts/2016/12/adding-a-new-repo-to-openstack/">初めてのOpenStackリポジトリ追加</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Recent Posts -->
+
+<!-- Sidebar/Tag Cloud -->
+<li class="list-group-item">
+  <a href="https://igawa.io/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+  <ul class="list-group " id="tags">
+    <li class="list-group-item tag-1">
+      <a href="https://igawa.io/tag/pc.html">PC</a>
+    </li>
+    <li class="list-group-item tag-1">
+      <a href="https://igawa.io/tag/instagram.html">instagram</a>
+    </li>
+    <li class="list-group-item tag-1">
+      <a href="https://igawa.io/tag/phs-mobile-phone.html">PHS-Mobile-Phone</a>
+    </li>
+    <li class="list-group-item tag-1">
+      <a href="https://igawa.io/tag/ifttt.html">ifttt</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/software.html">Software</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/psp.html">PSP</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/xperia.html">Xperia</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/xie-zhen.html">写真</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/fedora.html">Fedora</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/android.html">Android</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/vps.html">VPS</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/life_health.html">life_health</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/ojin.html">お金</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/sakura.html">さくら</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/mac.html">Mac</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/twitter.html">twitter</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/iphone.html">iPhone</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/iphone-3gs.html">iPhone 3GS</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/iphone-3g-s.html">iPhone 3G S</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/entertainments.html">entertainments</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/science.html">science</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/game.html">game</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/net.html">net</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/wei-fen-lei.html">未分類</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/kai-fa.html">開発</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/linux.html">Linux</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/spam.html">SPAM</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/kindle.html">Kindle</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/konosaitonokoto.html">このサイトのこと</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/ipad.html">iPad</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/apple.html">Apple</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/os.html">OS</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/pickup.html">PICKUP</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/backup.html">backup</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/plugin.html">plugin</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/unixbench.html">unixbench</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/du-shu.html">読書</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/lvm.html">LVM</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/food.html">food</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/benchmark.html">benchmark</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/work.html">work</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/konosaitonoshi.html">このサイトの事</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/apuri.html">アプリ</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/tips.html">tips</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/crashplan.html">crashplan</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/life-hack.html">life hack</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/cyan-yu.html">C言語</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/kvm.html">KVM</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/wu-yu.html">物欲</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/openstack.html">openstack</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/kernel.html">kernel</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/dropbox.html">dropbox</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/english.html">english</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/evernote.html">evernote</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/sheng-huo.html">生活</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/lion.html">lion</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/bian-naxie-zhen.html">変な写真</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/hua-xiang.html">画像</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/kamera.html">カメラ</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/ubuntu.html">Ubuntu</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/spmodo.html">SPモード</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/oss.html">oss</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/c.html">C++</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/blog.html">blog</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/career.html">career</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/she-ding.html">設定</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/nex-5n.html">nex-5n</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/she-hui.html">社会</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/konosaito.html">このサイト</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/blogger.html">blogger</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/scala.html">scala</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/saba.html">サーバ</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/vagrant.html">vagrant</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/gmail.html">Gmail</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/firefox.html">Firefox</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/nex-5nd.html">nex-5nd</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/simple-massager.html">Simple-Massager</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/atsupudeto.html">アップデート</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/hdd.html">HDD</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/customize.html">customize</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/fedora11.html">Fedora11</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/facebook.html">facebook</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/coreserverjp.html">coreserver.jp</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/kurezitsutokado.html">クレジットカード</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/timemachine.html">timemachine</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/lift.html">lift</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/book.html">book</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/camera.html">camera</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/sony.html">sony</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/ode.html">お得</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/gadget.html">gadget</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/oming-qian-com.html">お名前.com</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/uroad-7000.html">UROAD-7000</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/ipad2.html">ipad2</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/vim.html">vim</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/xfs.html">xfs</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/shi-shi.html">仕事</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/apache.html">apache</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/gps.html">GPS</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/rpm.html">rpm</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Tag Cloud -->
+
+<!-- Sidebar/Twitter Timeline -->
+<li class="list-group-item">
+  <h4><i class="fa fa-twitter fa-lg"></i><span class="icon-label">Latest Tweets</span></h4>
+  <div id="twitter_timeline">
+    <a class="twitter-timeline" data-width="250" data-height="300" data-dnt="true" data-theme="light" href="https://twitter.com/masayukig">Tweets by masayukig</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</li>
+<!-- End Sidebar/Twitter Timeline -->
+
+<!-- Sidebar/Links -->
+<li class="list-group-item">
+  <h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+  <ul class="list-group" id="links">
+    <li class="list-group-item">
+      <a href="http://python.org/" target="_blank">Python.org</a>
+    </li>
+    <li class="list-group-item">
+      <a href="http://openstack.org/" target="_blank">OpenStack.org</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Links -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2016 Masayuki Igawa
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="https://igawa.io/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://igawa.io/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="https://igawa.io/theme/js/respond.min.js"></script>
+
+
+    <!-- Disqus -->
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'afterstack'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <!-- End Disqus Code -->
+    <!-- Google Analytics Universal -->
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-4773446-12', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics Universal Code -->
+
+
+        <script type="text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=masayukig"></script>
+</body>
+</html>
