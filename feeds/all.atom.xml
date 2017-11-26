@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/all.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2016-12-17T00:00:00+09:00</updated><entry><title>初めてのOpenStackリポジトリ追加</title><link href="https://igawa.io/posts/2016/12/adding-a-new-repo-to-openstack/" rel="alternate"></link><published>2016-12-17T00:00:00+09:00</published><updated>2016-12-17T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2016-12-17:/posts/2016/12/adding-a-new-repo-to-openstack/</id><summary type="html">&lt;p&gt;これは、 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; のエントリです。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/all.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2017-11-26T00:00:00+09:00</updated><entry><title>Imported my blog to igawa.io</title><link href="https://igawa.io/posts/2017/11/imported-my-blog-to-igawaio/" rel="alternate"></link><published>2017-11-26T00:00:00+09:00</published><updated>2017-11-26T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-11-26:/posts/2017/11/imported-my-blog-to-igawaio/</id><summary type="html">&lt;p&gt;I changed my blog to my original domain. My blogs were split to some
+different domains due to my laziness. So I decided to merge them.&lt;/p&gt;
+&lt;p&gt;I was trying to change it to wordpress.com first. But it's not my
+taste :-p So, I decided to use &lt;a class="reference external" href="https://github.com/getpelican/pelican"&gt;pelican&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I actually …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I changed my blog to my original domain. My blogs were split to some
+different domains due to my laziness. So I decided to merge them.&lt;/p&gt;
+&lt;p&gt;I was trying to change it to wordpress.com first. But it's not my
+taste :-p So, I decided to use &lt;a class="reference external" href="https://github.com/getpelican/pelican"&gt;pelican&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I actually had two blogs on Blogger(br.0r2.info) and github
+pages(afterstack.net). So I needed to export br.0r2.info data to merge
+github pages. And I also wanted to change the domain to use &lt;a class="reference external" href="https://igawa.io/"&gt;igawa.io&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Firstly, I was trying to use wordpress.com, so I exported my blogger
+data, and imported it on wordpress. And next, I also exported the
+wordprss data, and I imported the data with using &lt;a class="reference external" href="http://docs.getpelican.com/en/latest/importer.html"&gt;pelican-import&lt;/a&gt; like
+this.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ pelican-import -m
+markdown --strip-raw --disable-slugs --wp-attach --wpfile -o
+./content/imported ~/wordpress.2017-11-26.001.xml
+&lt;/pre&gt;
+&lt;p&gt;I actually faced some warnings and errors. So, I needed to fix it by
+hand :-p And, finally, I did it. Some pages still have some issues
+such as images, URLs and some other something. But I did it, anyway.&lt;/p&gt;
+&lt;p&gt;This is just a starting point for my new blog. I have some candidates
+like tempest, my servers, and the other openstack things. I hope I'll
+write the posts in the near future.&lt;/p&gt;
+&lt;p&gt;I really like this pelican blog system. But only one thing is that
+editor. I'd like to use text editors to write blog posts such as vim
+or emacs but they aren't on my smartphone...&lt;/p&gt;
+</content></entry><entry><title>初めてのOpenStackリポジトリ追加</title><link href="https://igawa.io/posts/2016/12/adding-a-new-repo-to-openstack/" rel="alternate"></link><published>2016-12-17T00:00:00+09:00</published><updated>2016-12-17T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2016-12-17:/posts/2016/12/adding-a-new-repo-to-openstack/</id><summary type="html">&lt;p&gt;これは、 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; のエントリです。&lt;/p&gt;
 &lt;p&gt;先日、OpenStack に新たなリポジトリを追加したので、そのときに感じたことや経験を共有してみたいと思います。&lt;/p&gt;
 &lt;div class="section" id="id1"&gt;
 &lt;h2&gt;ナニを追加したのか？&lt;/h2&gt;
