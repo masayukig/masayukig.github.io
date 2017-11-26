@@ -4,9 +4,9 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Masayuki Igawa'
 #SITENAME = u'What is essential is invisible to the eye'
-SITENAME = u'What is done is done'
+SITENAME = u"What's done is done"
 #SITEURL = ''
-#SITEURL = 'https://afterstack.net'
+#SITEURL = 'https://igawa.io'
 
 PATH = 'content'
 
@@ -23,7 +23,7 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
 DISQUS_SITENAME = 'afterstack'
 
 # Feed generation is usually not desired when developing
-FEED_DOMAIN = 'https://afterstack.net'
+FEED_DOMAIN = 'https://igawa.io'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
@@ -75,7 +75,11 @@ LINKS = (('Python.org', 'http://python.org/'),
         ('OpenStack.org', 'http://openstack.org/'),)
 #BOOTSTRAP_FLUID = True
 PLUGIN_PATHS = ['../pelican-plugins']
-PLUGINS = ['related_posts', 'tag_cloud']
+PLUGINS = ['related_posts', 'tag_cloud', 'i18n_subsites', ]
+JINJA_ENVIRONMENT = {
+    'extensions': ['jinja2.ext.i18n'],
+}
+
 
 CUSTOM_CSS = 'static/custom.css'
 # Tell Pelican to add 'extra/custom.css' to the output dir
