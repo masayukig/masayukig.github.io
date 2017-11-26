@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What is done is done</title><link>https://afterstack.net/</link><description></description><atom:link href="https://afterstack.net/feeds/masayuki-igawa.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 17 Dec 2016 00:00:00 +0900</lastBuildDate><item><title>初めてのOpenStackリポジトリ追加</title><link>https://afterstack.net/posts/2016/12/adding-a-new-repo-to-openstack/</link><description>&lt;p&gt;これは、 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; のエントリです。&lt;/p&gt;
+<rss version="2.0"><channel><title>What is done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Sat, 17 Dec 2016 00:00:00 +0900</lastBuildDate><item><title>初めてのOpenStackリポジトリ追加</title><link>https://igawa.io/posts/2016/12/adding-a-new-repo-to-openstack/</link><description>&lt;p&gt;これは、 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; のエントリです。&lt;/p&gt;
 &lt;p&gt;先日、OpenStack に新たなリポジトリを追加したので、そのときに感じたことや経験を共有してみたいと思います。&lt;/p&gt;
 &lt;div class="section" id="id1"&gt;
 &lt;h2&gt;ナニを追加したのか？&lt;/h2&gt;
@@ -17,57 +17,7 @@
 &lt;p&gt;このような性質のコンポーネントのため、独立したプロジェクトではなく、 &lt;a class="reference external" href="https://wiki.openstack.org/wiki/QA"&gt;Quality Assurance&lt;/a&gt;
 プログラム配下のリポジトリとして追加しました。このようなリポジトリを追加することはなかなか無いこととは
 思いますが、新しいリポジトリを追加した経験は、もしかしたら誰かの役に立つかもしれないと思い、共有します。&lt;/p&gt;
-&lt;p&gt;なお、似たようなツールとして &lt;a class="reference external" href="https://launchpad.net/subunit2sql"&gt;subunit2sql&lt;/a&gt; と言うものがあるのですが、それにインスパイアされて作りました。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id2"&gt;
-&lt;h2&gt;新しいリポジトリの追加方法&lt;/h2&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://docs.openstack.org/infra/manual/creators.html"&gt;Project Creator's Guide&lt;/a&gt; をまずは読みます。ステップ・バイ・ステップで丁寧に説明された
-ドキュメントです。このとおりやっていれば、あまり迷うことも無いと思います。&lt;/p&gt;
-&lt;p&gt;大きな流れとしては、&lt;/p&gt;
-&lt;p&gt;# Launchpad 設定
-# PyPI 設定
-# openstack-infra/project-config, openstack/governance 設定
-# レビュー待ち＆対応
-# 新しいリポジトリ作成（最初でもOK）
-# Gateジョブ実行動作確認
-# 初期バージョンリリース
-# ...&lt;/p&gt;
-&lt;p&gt;という感じになると思います。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id3"&gt;
-&lt;h2&gt;ドキュメントに書いてないこと&lt;/h2&gt;
-&lt;p&gt;ドキュメントのとおりに進んでいって、特に困ったことにはならなかったので、あまりないですね。強いて言えば、&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Launchpadの登録で、少しだけ記述が現状とあってない部分があった。&lt;ul&gt;
-&lt;li&gt;-&amp;gt; &lt;a class="reference external" href="https://review.openstack.org/#/c/393651"&gt;ドキュメントの修正パッチ&lt;/a&gt; を出しています。（まだ誰もレビューしてくれないけどｗ）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Ubuntuバージョンはxenialが基本(trustyが必要でなければそのジョブは入れないほうが良い)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;くらいでしょうか。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id5"&gt;
-&lt;h2&gt;感想・まとめ&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;リポジトリ追加は比較的カンタン&lt;/li&gt;
-&lt;li&gt;OpenStack Infra job設定わかりづらい。。(他のを真似してやればある程度は想像つくけど)&lt;/li&gt;
-&lt;li&gt;でも、OpenStack インフラを使って自動ビルド・テストが実行できるのはとても便利&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="url"&gt;
-&lt;h2&gt;参考URL&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://docs.openstack.org/infra/manual/creators.html"&gt;Project Creator’s Guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;coverage2sql&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://launchpad.net/coverage2sql"&gt;https://launchpad.net/coverage2sql&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;openstack/governance: &lt;a class="reference external" href="https://review.openstack.org/#/c/394276/"&gt;Add coverage2sql to Quality Assurance&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;openstack-infra/project-config: &lt;a class="reference external" href="https://review.openstack.org/#/c/393634/"&gt;Add coverage2sql project&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Happy Hacking!&lt;/p&gt;
-&lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Sat, 17 Dec 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-12-17:posts/2016/12/adding-a-new-repo-to-openstack/</guid><category>work</category><category>oss</category><category>openstack</category><category>development</category></item><item><title>転職は良い選択だった</title><link>https://afterstack.net/posts/2016/12/moving-company-is-better-choice/</link><description>&lt;p&gt;本エントリは「 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; 」の 12/5 分です。&lt;/p&gt;
+&lt;p&gt;なお、似たようなツールとして &lt;a class="reference external" href="https://launchpad.net/subunit2sql"&gt;subunit2sql&lt;/a&gt; と言うものがあるのですが、それにインスパイアされて作りました …&lt;/p&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Sat, 17 Dec 2016 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:igawa.io,2016-12-17:/posts/2016/12/adding-a-new-repo-to-openstack/</guid><category>work</category><category>oss</category><category>openstack</category><category>development</category></item><item><title>転職は良い選択だった</title><link>https://igawa.io/posts/2016/12/moving-company-is-better-choice/</link><description>&lt;p&gt;本エントリは「 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; 」の 12/5 分です。&lt;/p&gt;
 &lt;p&gt;先日(2ヶ月弱前)、 &lt;a class="reference external" href="../../10/dps-forever"&gt;少々刺激的なエントリ&lt;/a&gt; を投下しましたが、現在の気持ちを少し述べてみたいと思います。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;結論：転職は良い選択だった&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;今年１月に転職し、あらたな環境で働くことになりました。前職は、新卒で入社しずっと働いてきた会社で、
@@ -89,47 +39,7 @@
 &lt;p&gt;その選択理由として、以下のようなことを考えてました。&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;英語が標準語なので、英語スキルを高められる。&lt;/li&gt;
-&lt;li&gt;あと1.5〜2年くらいはブーム(バブル)が続くだろう。&lt;/li&gt;
-&lt;li&gt;技術・英語スキルを伸ばせば、次に繋げることができる。&lt;/li&gt;
-&lt;li&gt;今いる会社でやりたいことをやるには、そのために色々と動く必要があり、自分のやりたいことをやるまでに、色々大変そう。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="section" id="id2"&gt;
-&lt;h2&gt;ヨカッタと思うこと&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;英語スキルが多少上がった（気がする）&lt;/li&gt;
-&lt;li&gt;視野が広がった(国内だけではなく、海外に目を向けるようになった)&lt;/li&gt;
-&lt;li&gt;社外の人との交流が増えた&lt;/li&gt;
-&lt;li&gt;「次」を考えることができるようになった&lt;/li&gt;
-&lt;li&gt;ストレスが減った&lt;/li&gt;
-&lt;li&gt;やりたいことに集中できる環境を手に入れた&lt;/li&gt;
-&lt;li&gt;給料(微)増&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id3"&gt;
-&lt;h2&gt;イマイチだったと思うこと&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;英語スキルを想定よりも向上できてない&lt;/li&gt;
-&lt;li&gt;技術スキルも想定よりも向上できてない&lt;/li&gt;
-&lt;li&gt;想定よりも早くブーム(バブル)が下火になってきた&lt;ul&gt;
-&lt;li&gt;100% upstream オープンソース開発 というのも難しくなってきた（かもしれない）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id4"&gt;
-&lt;h2&gt;まとめ&lt;/h2&gt;
-&lt;p&gt;総合的には、転職して「良かった」と思っています。&lt;/p&gt;
-&lt;p&gt;確かに、想定外のことや「イマイチだったなー」と思うことはあるものの、
-今の所はヨカッタと思うことの方が上回っています。&lt;/p&gt;
-&lt;p&gt;なので、以下のような場合には、転職を考えても良いと思う。&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;自分がやりたいと思うことが出来ていない＆社内にそういう環境を見いだせない&lt;/li&gt;
-&lt;li&gt;今よりも良い環境が他の会社にある&lt;/li&gt;
-&lt;li&gt;その企業からのオファーを受け取った&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;もっと詳しく聞きたいという方がいたら、ご連絡ください :)&lt;/p&gt;
-&lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Mon, 05 Dec 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-12-05:posts/2016/12/moving-company-is-better-choice/</guid><category>work</category><category>oss</category><category>team</category><category>career</category></item><item><title>OpenStack-Health updates</title><link>https://afterstack.net/posts/2016/10/openstack-health-updates/</link><description>&lt;p&gt;本日、&lt;a class="reference external" href="http://git.openstack.org/cgit/openstack/openstack-health"&gt;OpenStack-Health&lt;/a&gt; のパッチをいくつかApproveしました。&lt;/p&gt;
+&lt;li&gt;あと1 …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Mon, 05 Dec 2016 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:igawa.io,2016-12-05:/posts/2016/12/moving-company-is-better-choice/</guid><category>work</category><category>oss</category><category>team</category><category>career</category></item><item><title>OpenStack-Health updates</title><link>https://igawa.io/posts/2016/10/openstack-health-updates/</link><description>&lt;p&gt;本日、&lt;a class="reference external" href="http://git.openstack.org/cgit/openstack/openstack-health"&gt;OpenStack-Health&lt;/a&gt; のパッチをいくつかApproveしました。&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://review.openstack.org/#/c/363934/"&gt;Add base utilities for canvas charts&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://review.openstack.org/#/c/380884/"&gt;Add canvas line chart&lt;/a&gt;&lt;/li&gt;
@@ -145,15 +55,7 @@
 &lt;p&gt;現時点での課題は...&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;unit testが無い&lt;/li&gt;
-&lt;li&gt;グラフが二重描画されることがある -&amp;gt; ブラウザリサイズ/リロードでなおる&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;今後も、品質改善に向けて進んでいきます :)&lt;/p&gt;
-&lt;p&gt;以下が OpenStack-Health の画面です。って、&lt;a class="reference external" href="http://status.openstack.org/openstack-health/"&gt;http://status.openstack.org/openstack-health/&lt;/a&gt; にアクセスすれば、
-誰でも見られます :)&lt;/p&gt;
-&lt;hr class="docutils" /&gt;
-&lt;img alt="OpenStack-Health" src="https://afterstack.net/images/openstack-health-2016-10-19.png" /&gt;
-&lt;p&gt;Happy Hacking!&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Wed, 19 Oct 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-10-19:posts/2016/10/openstack-health-updates/</guid><category>work</category><category>oss</category><category>openstack</category><category>openstack-health</category></item><item><title>チーム解散?!</title><link>https://afterstack.net/posts/2016/10/dps-forever/</link><description>&lt;div class="section" id="id1"&gt;
+&lt;li&gt;グラフが二重描画されることがある -&amp;gt; ブラウザリサイズ/リロードでなおる …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Wed, 19 Oct 2016 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:igawa.io,2016-10-19:/posts/2016/10/openstack-health-updates/</guid><category>work</category><category>oss</category><category>openstack</category><category>openstack-health</category></item><item><title>チーム解散?!</title><link>https://igawa.io/posts/2016/10/dps-forever/</link><description>&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;追記&lt;/h2&gt;
 &lt;p&gt;以下は、あくまで私が所属しているチーム(OpenStack, OSSをアップストリームで開発)についてのみ言及しています。
 それ以外のHelion開発その他については言及していません。誤解のなきよう。&lt;/p&gt;
@@ -169,36 +71,7 @@
 &lt;p&gt;連投になってしまって申し訳ないです。もう少し気を静めてから書こうかとも思ったのですが、
 今の気持ちも含めて記録しておきたいなと思い。&lt;/p&gt;
 &lt;p&gt;まずは、関連Tweetをいくつか。&lt;/p&gt;
-&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Today I laid off my entire team. I&amp;#39;m completely gutted. They&amp;#39;re the best w/whom I&amp;#39;ve ever worked. They humble me daily. Hire them, please.&lt;/p&gt;&amp;mdash; VM Brasseur (@vmbrasseur) &lt;a href="https://twitter.com/vmbrasseur/status/788052309225902080"&gt;October 17, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
-&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Today I was notified that my position at HPE is affected by layoffs so I am looking for a new role — &lt;a href="https://t.co/A9XLekuX25"&gt;https://t.co/A9XLekuX25&lt;/a&gt; &lt;br&gt;&lt;br&gt;Please share!&lt;/p&gt;&amp;mdash; Donald Stufft (@dstufft) &lt;a href="https://twitter.com/dstufft/status/788051252592648192"&gt;October 17, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
-&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;I&amp;#39;m seeking a new ops or evangelist role! Must haves: Open source, travel for speaking and work from home. Details: &lt;a href="https://t.co/PDD6HGPsuz"&gt;https://t.co/PDD6HGPsuz&lt;/a&gt;&lt;/p&gt;&amp;mdash; Elizabeth K. Joseph (@pleia2) &lt;a href="https://twitter.com/pleia2/status/788159332521086977"&gt;October 17, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
-&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;All of my US-based team-mates got laid off today. Each and every one would be a stellar hire. Hire them.&lt;/p&gt;&amp;mdash; Cory Benfield (@Lukasaoz) &lt;a href="https://twitter.com/Lukasaoz/status/788052699271028740"&gt;October 17, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;p&gt;悲痛な叫びではあるものの、変に会社にしがみついたり、固執したり、あるいは、会社批判や今後を悲観するような
-内容がないのが印象的。既に、次に向けて活動を開始している。
-もちろん、これは表向きの顔なので、実際の本人たちの苦悩は計り知れないものがある。&lt;/p&gt;
-&lt;p&gt;でも、この辺が、国民性・文化・社会システムの違いなのかなと思ったりしています。&lt;/p&gt;
-&lt;p&gt;また、&lt;a class="reference external" href="http://www.geekwire.com/2016/struggling-keep-pace-cloud-hewlett-packard-enterprise-cuts-staff/"&gt;Hewlett Packard Enterprise cuts staff as it struggles to keep pace in the
-cloud&lt;/a&gt;
-というところでニュース扱いされているようです。
-（でも、色んな噂話まで含めて記事にしてる感もあるのであんまり鵜呑みにしないほうが良いと思う。）&lt;/p&gt;
-&lt;p&gt;と、他人事のように書いていますが、思いっきり私の身にもこの変化の影響が降り掛かっていて、
-タイトルの通り、 &lt;strong&gt;チーム解散&lt;/strong&gt; となる見込みです。&lt;/p&gt;
-&lt;p&gt;アメリカ、オーストラリア、ブラジルのほとんどのチームメンバーがレイオフ対象となり、彼らはチームの大多数を
-占めていたため、チーム存続は難しく、解散となりそう。(少なくとも現状のHPEの中では無理)&lt;/p&gt;
-&lt;p&gt;これ以上、あまり、詳しい状況を書くわけにもいかず、詳しく知りたい人は個人的に聞いてください :-p&lt;/p&gt;
-&lt;p&gt;なお、私を含めたレイオフを逃れた数名は、社内OpenStack製品の CI/CDを行っているチーム配下に移って、
-Upstream活動を継続したりしています。ただし、チームの活動内容とあまりマッチしているとは思えず、
-今後、どの程度の期間継続できるのかは不透明です。&lt;/p&gt;
-&lt;p&gt;そのため、今後の身の振り方も含めて考えなきゃいけないな、と思っています。&lt;/p&gt;
-&lt;p&gt;では、最後の気分転換にコスモスの写真をご覧ください。&lt;/p&gt;
-&lt;a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/masayun/30296689256/in/datetaken/" title="#cosmos #flowers"&gt;&lt;img src="https://c1.staticflickr.com/9/8269/30296689256_973a38e686_n.jpg" width="320" height="320" alt="#cosmos #flowers"&gt;&lt;/a&gt;&lt;script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Sat, 22 Oct 2016 15:41:00 +0900</pubDate><guid>tag:afterstack.net,2016-10-18:posts/2016/10/dps-forever/</guid><category>work</category><category>oss</category><category>english</category><category>career</category><category>openstack</category></item><item><title>あなたの知らないOSSプログラマの世界 - part 2</title><link>https://afterstack.net/posts/2016/10/oss-programmer-part2/</link><description>&lt;p&gt;&lt;a class="reference external" href="../../06/oss-programmer-part1"&gt;oss-programmer-part1&lt;/a&gt; の続き&lt;/p&gt;
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Today I laid off my entire team. I&amp;#39;m completely gutted. They&amp;#39;re the best w/whom I&amp;#39;ve ever worked. They humble me daily. Hire them …&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:igawa.io,2016-10-18:/posts/2016/10/dps-forever/</guid><category>work</category><category>oss</category><category>english</category><category>career</category><category>openstack</category></item><item><title>あなたの知らないOSSプログラマの世界 - part 2</title><link>https://igawa.io/posts/2016/10/oss-programmer-part2/</link><description>&lt;p&gt;&lt;a class="reference external" href="../../06/oss-programmer-part1"&gt;oss-programmer-part1&lt;/a&gt; の続き&lt;/p&gt;
 &lt;p&gt;前回:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 次回は仕事内容、コミュニケーションの様子などを書きたいと思います。
@@ -217,99 +90,7 @@ Upstream活動を継続したりしています。ただし、チームの活動
 気心知れた人との１対１での会話ならなんとかなります(「あ、こいつ英語苦手なんだね」と相手がある程度手加減
 してくれることが多いのです)が、ネイティブあるいはそれに近い同士が議論をし始めると、なかなか入っていけません。&lt;/p&gt;
 &lt;p&gt;また、もともと人見知り(!)でコミュニケーションは苦手な部分があるので、なかなか会話に入っていけません。
-それでも、どうにかなってるのは、テキストでの会話（IRC, E-mail）のお陰かなと思います。&lt;/p&gt;
-&lt;p&gt;この辺は、自分の中の要改善項目です。&lt;/p&gt;
-&lt;div class="section" id="id2"&gt;
-&lt;h3&gt;テキスト&lt;/h3&gt;
-&lt;p&gt;というわけで私はテキストでの会話が主です。タイムゾーン問題、英語力、などのことを考慮すると、
-テキストでの会話が便利です。&lt;/p&gt;
-&lt;div class="section" id="e-mail"&gt;
-&lt;h4&gt;E-mail&lt;/h4&gt;
-&lt;p&gt;テキストでのコミュニケーションというとコレが思い浮かぶと思います。ただ、あまり使ってないです。
-正式な通知とか、後述のものでは伝えにくいもの（言うことがたくさんあったり、添付ファイルとか）で
-使う感じ。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="irc"&gt;
-&lt;h4&gt;IRC&lt;/h4&gt;
-&lt;p&gt;E-mailはリアルタイム性が低いので、結構やりやすいですが、どうしても時間がかかってしまいがちです。
-IRCはリアルタイム性が高いので、やり取りがけっこう大変ですが、くだけた会話でもどうにかなります。
-一長一短ありますが、IRCの方が気楽なことが多いと思います。
-今だと、SlackやHipChatなどのツールもありますが、私のチームではできるだけ「オープン」なものが
-好まれる印象です。&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="face-to-face"&gt;
-&lt;h3&gt;Face to Face&lt;/h3&gt;
-&lt;p&gt;Face to Faceのやり取りがないのかというと、そうでもありません。&lt;/p&gt;
-&lt;div class="section" id="google-hangouts-skype"&gt;
-&lt;h4&gt;Google Hangouts, Skype&lt;/h4&gt;
-&lt;p&gt;これらのツールを使う機会もあって、&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Happy Hour&lt;/li&gt;
-&lt;li&gt;重要な通知&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;といったタイミングで使ってきました。&lt;/p&gt;
-&lt;p&gt;「Happy Hour」はチーム内のコミュニケーションを活性化して、風通しを良くするような効果があったと思います。&lt;/p&gt;
-&lt;p&gt;その名の通り、就業時間後のバーチャル飲み会風な感じなのですが、日本時間だと朝９時とかなので、
-こちらはさすがにお酒を飲むわけにはいかないのがつらいところでしたｗ&lt;/p&gt;
-&lt;p&gt;また、雑談が高速で行われるので、あんまりついていけない感じなのも残念でした＞自分&lt;/p&gt;
-&lt;p&gt;「重要な通知」は、メールやIRCだけで伝えるべき内容ではないものですね。チームの行く末とか。
-こちらについてはまた別途。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id3"&gt;
-&lt;h4&gt;各種イベント&lt;/h4&gt;
-&lt;p&gt;OpenStack Summit等、各種イベントで各国に散らばってるメンバーが集まることもあるので、
-一緒にお昼ごはんに行ったり、夜飲んだりとかありました。&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id4"&gt;
-&lt;h2&gt;仕事内容について&lt;/h2&gt;
-&lt;div class="section" id="id5"&gt;
-&lt;h3&gt;体制&lt;/h3&gt;
-&lt;p&gt;チームには日本人は私しかおらず、日本で作業しているのも私のみです。
-直属のマネージャはオーストラリアにおり、タイムゾーンが近いこともあって、IRCなどで会話をすることが多いです。
-さらにその上の上司は、 &lt;a class="reference external" href="http://allisonrandal.com/"&gt;Allison Randal&lt;/a&gt; (&lt;a class="reference external" href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AA%E3%82%BD%E3%83%B3%E3%83%BB%E3%83%A9%E3%83%B3%E3%83%80%E3%83%AB"&gt;Wikipedia JA&lt;/a&gt;, &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Allison_Randal"&gt;Wikipedia EN&lt;/a&gt;) さんで、
-やはりIRCで会話をすることが多いです。(タイムゾーンが違うこともあり、なかなか会話はないですが)&lt;/p&gt;
-&lt;p&gt;さらに上の方になってくると、HPE のクラウドを統括している人になってきますが、なかなか話をする機会はない
-ですね。ただ、IRCのミーティングに参加したりすることもあり、非常に上下の風通しは良いんじゃないかと感じます。
-変な上下意識が見えないのが心地よく感じます。（もちろん、役割はしっかり意識されています。）&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id6"&gt;
-&lt;h3&gt;外資系企業について&lt;/h3&gt;
-&lt;p&gt;当初思っていたよりも、ずっと個人を重視してくれているように思います。
-(身の回りの10ヶ月弱くらいの感想です。)&lt;/p&gt;
-&lt;p&gt;外資系企業に対する私の印象は、&lt;/p&gt;
-&lt;blockquote&gt;
-「キミ、最近パフォーマンスが良くないから、改善策を検討して実施するように。特になければこの改善策を実施
-　して、1ヶ月で改善されないようならクビね。」&lt;/blockquote&gt;
-&lt;p&gt;くらい厳しいものだったのですが、少なくとも今いるチームではそのようなことはありません。
-この辺は、上司に依存するところが大きいと思います。&lt;/p&gt;
-&lt;p&gt;(でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。
-が、それはまた別途書きたいと思います。)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id7"&gt;
-&lt;h3&gt;作業内容&lt;/h3&gt;
-&lt;p&gt;基本的にはOpenStack関連コードの読み書き・レビューしてます。
-イベントでの発表などがあれば、その準備も。&lt;/p&gt;
-&lt;p&gt;最近はopenstack-healthというコンポーネントに注力して作業してます。フロントエンドがAngularJSなので、
-かなり刺激的。悪戦苦闘の日々です。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id8"&gt;
-&lt;h3&gt;作業場所&lt;/h3&gt;
-&lt;p&gt;大島 日本法人本社８階 食堂で作業してます。景色がいいし、比較的静か（心地よいノイズ）があるのでいい感じで
-作業できてます。&lt;/p&gt;
-&lt;p&gt;参考URL:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html"&gt;http://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://www.shashoku.com/shashoku/012.html"&gt;http://www.shashoku.com/shashoku/012.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://www.pc-ninki.net/about/hp-oshima.html"&gt;http://www.pc-ninki.net/about/hp-oshima.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://job.career-tasu.jp/2017/guide/study/shashoku/01.html"&gt;https://job.career-tasu.jp/2017/guide/study/shashoku/01.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Happy Hacking!&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-10-18:posts/2016/10/oss-programmer-part2/</guid><category>work</category><category>oss</category><category>english</category><category>career</category><category>openstack</category></item><item><title>あなたの知らないOSSプログラマの世界 - part 1</title><link>https://afterstack.net/posts/2016/06/oss-programmer-part1/</link><description>&lt;div class="section" id="id1"&gt;
+それでも、どうにかなってるのは、テキストでの会話（IRC, E-mail …&lt;/p&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:igawa.io,2016-10-18:/posts/2016/10/oss-programmer-part2/</guid><category>work</category><category>oss</category><category>english</category><category>career</category><category>openstack</category></item><item><title>あなたの知らないOSSプログラマの世界 - part 1</title><link>https://igawa.io/posts/2016/06/oss-programmer-part1/</link><description>&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;概要&lt;/h2&gt;
 &lt;p&gt;　「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が
 多いかなと思い、こんなブログを書いてみました。&lt;/p&gt;
@@ -338,87 +119,4 @@ IRCはリアルタイム性が高いので、やり取りがけっこう大変�
 &lt;p&gt;　インターナショナルで分散チームで、大半は、アメリカ・欧州・オーストラリアにいて、アジア人は中国人1名と
 私の合計2名です。チームの中にマネージャが数名おり、１マネージャあたり、数名を管理するような体制です。
 なお、私のマネージャはオーストラリアに在住していますが、私は英語はそれほどしゃべれません。TOEIC最高点は
-(ほぼマグレで)800点でした。最近は受けてませんが、そんなに大きな違いは無いかと思います。
-（TOEICをある程度知っている方はどの程度なのか想像がつくのではないでしょうか...）&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id5"&gt;
-&lt;h2&gt;技術力だけじゃない&lt;/h2&gt;
-&lt;p&gt;　まずはじめに。私はスーパー(ハカー|プログラマ|デベロッパ)と呼ばれるほどの技術は持ってません。技術力は
-「並」くらいはあるとは思いたいですが、突出しているわけではありません。周りのOpenStack開発者をざっと
-見回しても「あいつには勝てないな・・・」と思うことが多々あります。&lt;/p&gt;
-&lt;p&gt;　そんな状況なのに「プログラマとして転職してやっていけるだろうか・・・」と自問自答している日々ではあります
-が、最近は「技術力だけではない」と思うようにしています。自分の役割としては...&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;dl class="first docutils"&gt;
-&lt;dt&gt;OpenStack開発&lt;/dt&gt;
-&lt;dd&gt;&lt;p class="first last"&gt;-&amp;gt; もちろん、これが一番重要。早い・遅いはそれほど重視されていない様に感じる。知らないことがあれば、
-どうやって解決していくのかが重要。&lt;/p&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;自分の持っている知識・技術・経験を使って、ほかの人に伝える・手伝う/助ける。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;あまり他の人がやっていない分野に貢献する。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;盛り上げ役（苦手ダケド）&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;などなど、色々貢献できる領域があると思うようになってきました。逆に、技術力だけ非常に高くても、
-コミュニケーション能力が圧倒的に低いと厳しいだろうなと思います。（という意味でも英語大事）&lt;/p&gt;
-&lt;p&gt;また、転職するときに今のチームメンバーの一人から、&lt;/p&gt;
-&lt;blockquote&gt;
-「人から言われて動くようだと、今のチームではうまくやっていけないと思う。だから、自分でやるべきことを
-考え・ 探してやっていくようにしたほうが良いよ。」&lt;/blockquote&gt;
-&lt;p&gt;というようなことを言われました。
-　実際、今のマネージャやその上の上司などからは「アレやれ、コレやれ」という指示は無く、週1のマネージャと
-のミーティングも、IRCでチャットしてるだけで、特にノルマ（ｘ件/月パッチマージとか）もありません。情報共
-有しておきたいこと、困ってることなどを相談する場になっています。もちろん、社内の必須教育、事務処理フォロ
-ーなどはありますが、それほど多いとは感じません。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id6"&gt;
-&lt;h2&gt;４０歳でも（転職）初体験できる&lt;/h2&gt;
-&lt;p&gt;　私、今、４０歳です。日本のIT業界一般常識から考えると頭の良いキャリア選択ではなかったかなとも思っていま
-す。日本のIT業界的には、&lt;/p&gt;
-&lt;p&gt;「マネージャになって、デカイプロジェクトをガンガンさばいて、コンサル系に転職してウハウハ」&lt;/p&gt;
-&lt;p&gt;みたいなのを思い描いている人もいると思いますが、私は、そういうところに「楽しみ」を見いだせませんでした。
-なので、「技術者」として生きていく道をずっと考えていたので、今回、縁があって転職することになりました。
-転職した先では、比較的長く「技術者」として働ける環境ができているとは思います。
-　今、思っていることなどを以下に列挙してみます。&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;見極めはもっと早くすべき。年齢を重ねて、地位が上がるにつれ、関係各所に色々と迷惑をかけることが増えて
-きて、身動きが取りづらくなる。&lt;/li&gt;
-&lt;li&gt;記憶力、スピードなどはどうしても年々衰えてくるのでそういう意味でも若いうちにやれることはどんどん
-やっておくべき。&lt;ul&gt;
-&lt;li&gt;とは言え、それなりのオファーがないと転職は難しいので、私としては最速に近いくらいのタイミングだった。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;自分のキャリアパスはきちんと考えて、流されずに主張しよう。&lt;/li&gt;
-&lt;li&gt;思い描いたキャリアパスが今の会社に無いのなら、それがあるところに移ることも考えよう。&lt;ul&gt;
-&lt;li&gt;もちろん「自分の道を作っていく」という選択肢もあり、それをやりたい人ならそこで頑張るのが良いと思い
-ます。私の場合はそうではありませんでした。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;自分が「面白そう」と思う分野に進んだほうが、全体最適化から考えても有意義。&lt;ul&gt;
-&lt;li&gt;自らやる気になって動く時が一番力を発揮できると思います。個々人が「面白そう」と思ったことに
-全力を傾けるのが、結果、全体最適になるはず。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;実は、数年前にも転職活動していた時期があります。その時はいくつか面接まで行きましたが、ことごとく
-敗退。自己主張、アピールが足りなかったんだろうなと思う。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id7"&gt;
-&lt;h2&gt;英語大事&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;学生のうちから本気で取り組むべき。&lt;/li&gt;
-&lt;li&gt;と、後悔だけしても意味が無いので、これから頑張ることにします。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;まだまだ英語苦手なので、コミュニケーションに日本語の3倍以上の時間と労力がかかりますが、この労力をなんとか
-小さくしていくべく、トレーニングの毎日です。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id8"&gt;
-&lt;h2&gt;次回予告&lt;/h2&gt;
-&lt;p&gt;次回は仕事内容、コミュニケーションの様子などを書きたいと思います。&lt;/p&gt;
-&lt;p&gt;Happy Hacking!&lt;/p&gt;
-&lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Fri, 03 Jun 2016 00:00:00 +0900</pubDate><guid>tag:afterstack.net,2016-06-03:posts/2016/06/oss-programmer-part1/</guid><category>work</category><category>oss</category><category>english</category><category>career</category><category>openstack</category></item></channel></rss>
+(ほぼマグレで)800点でした …&lt;/p&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Fri, 03 Jun 2016 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:igawa.io,2016-06-03:/posts/2016/06/oss-programmer-part1/</guid><category>work</category><category>oss</category><category>english</category><category>career</category><category>openstack</category></item></channel></rss>

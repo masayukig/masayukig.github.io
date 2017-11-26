@@ -9,17 +9,17 @@
 
 
 
-<link rel="canonical" href="https://afterstack.net/posts/2016/06/oss-programmer-part1/">
+<link rel="canonical" href="https://igawa.io/posts/2016/06/oss-programmer-part1/">
 
         <meta name="author" content="Masayuki Igawa" />
         <meta name="keywords" content="work,oss,english,career,openstack" />
-        <meta name="description" content="概要 「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が 多いかなと思い、こんなブログを書いてみました。 想定読者 オープンソース開発で飯食っていけるの！？と思っている人 なんとなく、OSSとかプログラマに興味がある 「外資系」ってどういうところなのか知りたい 結論 技術力だけじゃない ４０歳でも（転職）初体験できる 英語大事 自己紹介 現在Hewlett Packard Enterprise/日本ヒューレット・パッカード所属です。OpenStack開発者で、 主にQAを担当しています。日本で作業していますが、日本人は私一人です。他のメンバーは全て海外にいます。 （正確な人数は把握してませんが、多分2-30人弱くらいかと思います。） インターナショナルで分散チームで、大半は、アメリカ・欧州・オーストラリアにいて、アジア人は中国人1名と 私の合計2名です。チームの中にマネージャが数名おり、１マネージャあたり、数名を管理するような体制です。 なお、私のマネージャはオーストラリアに在住していますが、私は英語はそれほどしゃべれません。TOEIC最高点は (ほぼマグレで)800点でした ..." />
+        <meta name="description" content="概要 「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が 多いかなと思い、こんなブログを書いてみました。 想定読者 オープンソース開発で飯食っていけるの！？と思っている人 なんとなく、OSSとかプログラマに興味がある 「外資系」ってどういうところなのか知りたい 結論 技術力だけじゃない ４０歳でも（転職）初体験できる 英語大事 自己紹介 現在Hewlett Packard Enterprise/日本ヒューレット・パッカード所属です。OpenStack開発者で、 主にQAを担当しています。日本で作業していますが、日本人は私一人です。他のメンバーは全て海外にいます。 （正確な人数は把握してませんが、多分2-30人弱くらいかと思います。） インターナショナルで分散チームで、大半は、アメリカ・欧州・オーストラリアにいて、アジア人は中国人1名と 私の合計2名です。チームの中にマネージャが数名おり、１マネージャあたり、数名を管理するような体制です。 なお、私のマネージャはオーストラリアに在住していますが、私は英語はそれほどしゃべれません。TOEIC最高点は (ほぼマグレで)800点でした …" />
 
         <meta property="og:site_name" content="What is done is done" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="あなたの知らないOSSプログラマの世界 - part 1"/>
-        <meta property="og:url" content="https://afterstack.net/posts/2016/06/oss-programmer-part1/"/>
-        <meta property="og:description" content="概要 「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が 多いかなと思い、こんなブログを書いてみました。 想定読者 オープンソース開発で飯食っていけるの！？と思っている人 なんとなく、OSSとかプログラマに興味がある 「外資系」ってどういうところなのか知りたい 結論 技術力だけじゃない ４０歳でも（転職）初体験できる 英語大事 自己紹介 現在Hewlett Packard Enterprise/日本ヒューレット・パッカード所属です。OpenStack開発者で、 主にQAを担当しています。日本で作業していますが、日本人は私一人です。他のメンバーは全て海外にいます。 （正確な人数は把握してませんが、多分2-30人弱くらいかと思います。） インターナショナルで分散チームで、大半は、アメリカ・欧州・オーストラリアにいて、アジア人は中国人1名と 私の合計2名です。チームの中にマネージャが数名おり、１マネージャあたり、数名を管理するような体制です。 なお、私のマネージャはオーストラリアに在住していますが、私は英語はそれほどしゃべれません。TOEIC最高点は (ほぼマグレで)800点でした ..."/>
+        <meta property="og:url" content="https://igawa.io/posts/2016/06/oss-programmer-part1/"/>
+        <meta property="og:description" content="概要 「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が 多いかなと思い、こんなブログを書いてみました。 想定読者 オープンソース開発で飯食っていけるの！？と思っている人 なんとなく、OSSとかプログラマに興味がある 「外資系」ってどういうところなのか知りたい 結論 技術力だけじゃない ４０歳でも（転職）初体験できる 英語大事 自己紹介 現在Hewlett Packard Enterprise/日本ヒューレット・パッカード所属です。OpenStack開発者で、 主にQAを担当しています。日本で作業していますが、日本人は私一人です。他のメンバーは全て海外にいます。 （正確な人数は把握してませんが、多分2-30人弱くらいかと思います。） インターナショナルで分散チームで、大半は、アメリカ・欧州・オーストラリアにいて、アジア人は中国人1名と 私の合計2名です。チームの中にマネージャが数名おり、１マネージャあたり、数名を管理するような体制です。 なお、私のマネージャはオーストラリアに在住していますが、私は英語はそれほどしゃべれません。TOEIC最高点は (ほぼマグレで)800点でした …"/>
         <meta property="article:published_time" content="2016-06-03" />
             <meta property="article:section" content="Work" />
             <meta property="article:tag" content="work" />
@@ -29,25 +29,27 @@
             <meta property="article:tag" content="openstack" />
             <meta property="article:author" content="Masayuki Igawa" />
 
+    <meta name="twitter:dnt" content="on">
     <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@masayukig">
         <meta name="twitter:creator" content="@masayukig">
-    <meta name="twitter:domain" content="https://afterstack.net">
+    <meta name="twitter:domain" content="https://igawa.io">
+
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://afterstack.net/theme/css/bootstrap.min.css" type="text/css"/>
-    <link href="https://afterstack.net/theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://igawa.io/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="https://igawa.io/theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="https://afterstack.net/theme/css/pygments/native.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://afterstack.net/theme/css/style.css" type="text/css"/>
-        <link href="https://afterstack.net/static/custom.css" rel="stylesheet">
+    <link href="https://igawa.io/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://igawa.io/theme/css/style.css" type="text/css"/>
+        <link href="https://igawa.io/static/custom.css" rel="stylesheet">
 
-        <link href="https://afterstack.net/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+        <link href="https://igawa.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
               title="What is done is done ATOM Feed"/>
 
 
 
-        <link href="https://afterstack.net/feeds/work.atom.xml" type="application/atom+xml" rel="alternate"
+        <link href="https://igawa.io/feeds/work.atom.xml" type="application/atom+xml" rel="alternate"
               title="What is done is done Work ATOM Feed"/>
 
 </head>
@@ -62,20 +64,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="https://afterstack.net/" class="navbar-brand">
+            <a href="https://igawa.io/" class="navbar-brand">
 What is done is done            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                         <li><a href="https://afterstack.net/pages/disclaimer.html">
+                         <li><a href="https://igawa.io/pages/disclaimer.html">
                              DISCLAIMER
                           </a></li>
                         <li class="active">
-                            <a href="https://afterstack.net/category/work.html">Work</a>
+                            <a href="https://igawa.io/category/work.html">Work</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="https://afterstack.net/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -90,7 +91,7 @@ What is done is done            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="https://afterstack.net/posts/2016/06/oss-programmer-part1/"
+                    <a href="https://igawa.io/posts/2016/06/oss-programmer-part1/"
                        rel="bookmark"
                        title="Permalink to あなたの知らないOSSプログラマの世界 - part 1">
                         あなたの知らないOSSプログラマの世界 - part 1
@@ -108,20 +109,20 @@ What is done is done            </a>
 
 
             <span class="label label-default">By</span>
-            <a href="https://afterstack.net/author/masayuki-igawa.html"><i class="fa fa-user"></i> Masayuki Igawa</a>
+            <a href="https://igawa.io/author/masayuki-igawa.html"><i class="fa fa-user"></i> Masayuki Igawa</a>
 
 
 
 <span class="label label-default">Tags</span>
-	<a href="https://afterstack.net/tag/work.html">work</a>
+	<a href="https://igawa.io/tag/work.html">work</a>
         /
-	<a href="https://afterstack.net/tag/oss.html">oss</a>
+	<a href="https://igawa.io/tag/oss.html">oss</a>
         /
-	<a href="https://afterstack.net/tag/english.html">english</a>
+	<a href="https://igawa.io/tag/english.html">english</a>
         /
-	<a href="https://afterstack.net/tag/career.html">career</a>
+	<a href="https://igawa.io/tag/career.html">career</a>
         /
-	<a href="https://afterstack.net/tag/openstack.html">openstack</a>
+	<a href="https://igawa.io/tag/openstack.html">openstack</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
@@ -164,20 +165,16 @@ What is done is done            </a>
 見回しても「あいつには勝てないな・・・」と思うことが多々あります。</p>
 <p>　そんな状況なのに「プログラマとして転職してやっていけるだろうか・・・」と自問自答している日々ではあります
 が、最近は「技術力だけではない」と思うようにしています。自分の役割としては...</p>
-<ul>
+<ul class="simple">
 <li><dl class="first docutils">
 <dt>OpenStack開発</dt>
-<dd><p class="first last">-&gt; もちろん、これが一番重要。早い・遅いはそれほど重視されていない様に感じる。知らないことがあれば、
-どうやって解決していくのかが重要。</p>
-</dd>
+<dd>-&gt; もちろん、これが一番重要。早い・遅いはそれほど重視されていない様に感じる。知らないことがあれば、
+どうやって解決していくのかが重要。</dd>
 </dl>
 </li>
-<li><p class="first">自分の持っている知識・技術・経験を使って、ほかの人に伝える・手伝う/助ける。</p>
-</li>
-<li><p class="first">あまり他の人がやっていない分野に貢献する。</p>
-</li>
-<li><p class="first">盛り上げ役（苦手ダケド）</p>
-</li>
+<li>自分の持っている知識・技術・経験を使って、ほかの人に伝える・手伝う/助ける。</li>
+<li>あまり他の人がやっていない分野に貢献する。</li>
+<li>盛り上げ役（苦手ダケド）</li>
 </ul>
 <p>などなど、色々貢献できる領域があると思うようになってきました。逆に、技術力だけ非常に高くても、
 コミュニケーション能力が圧倒的に低いと厳しいだろうなと思います。（という意味でも英語大事）</p>
@@ -243,11 +240,11 @@ What is done is done            </a>
 <section class="well" id="related-posts">
     <h4>Related Posts:</h4>
     <ul>
-        <li><a href="https://afterstack.net/posts/2016/10/dps-forever/">チーム解散?!</a></li>
-        <li><a href="https://afterstack.net/posts/2016/10/oss-programmer-part2/">あなたの知らないOSSプログラマの世界 - part 2</a></li>
-        <li><a href="https://afterstack.net/posts/2016/10/openstack-health-updates/">OpenStack-Health updates</a></li>
-        <li><a href="https://afterstack.net/posts/2016/12/moving-company-is-better-choice/">転職は良い選択だった</a></li>
-        <li><a href="https://afterstack.net/posts/2016/12/adding-a-new-repo-to-openstack/">初めてのOpenStackリポジトリ追加</a></li>
+        <li><a href="https://igawa.io/posts/2016/10/dps-forever/">チーム解散?!</a></li>
+        <li><a href="https://igawa.io/posts/2016/10/oss-programmer-part2/">あなたの知らないOSSプログラマの世界 - part 2</a></li>
+        <li><a href="https://igawa.io/posts/2016/10/openstack-health-updates/">OpenStack-Health updates</a></li>
+        <li><a href="https://igawa.io/posts/2016/12/adding-a-new-repo-to-openstack/">初めてのOpenStackリポジトリ追加</a></li>
+        <li><a href="https://igawa.io/posts/2016/12/moving-company-is-better-choice/">転職は良い選択だった</a></li>
     </ul>
 </section>
     <hr />
@@ -268,7 +265,7 @@ What is done is done            </a>
             var disqus_shortname = 'afterstack'; // required: replace example with your forum shortname
 
                     var disqus_identifier = 'oss-programmer-part1';
-                var disqus_url = 'https://afterstack.net/posts/2016/06/oss-programmer-part1/';
+                var disqus_url = 'https://igawa.io/posts/2016/06/oss-programmer-part1/';
 
             var disqus_config = function () {
                 this.language = "en";
@@ -296,104 +293,92 @@ What is done is done            </a>
             <aside>
 <div id="aboutme">
     <p>
-        <strong>About Masayuki Igawa</strong><br/>
+      <strong>About Masayuki Igawa</strong><br/>
         <a href="https://about.me/masayukig">about.me</a>
     </p>
-</div>
+</div><!-- Sidebar -->
 <section class="well well-sm">
-    <ul class="list-group list-group-flush">
-            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
-              <ul class="list-group" id="social">
-                <li class="list-group-item"><a href="https://twitter.com/masayukig"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
-                <li class="list-group-item"><a href="https://www.linkedin.com/in/masayukig"><i class="fa fa-linkedin-square fa-lg"></i> LinkedIn</a></li>
-                <li class="list-group-item"><a href="https://github.com/masayukig"><i class="fa fa-github-square fa-lg"></i> GitHub</a></li>
-                <li class="list-group-item"><a href="https://flickr.com/masayun"><i class="fa fa-flickr fa-lg"></i> Flickr</a></li>
-                <li class="list-group-item"><a href="https://instagram.com/masayukig"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
-              </ul>
-            </li>
+  <ul class="list-group list-group-flush">
 
-            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
-                <ul class="list-group" id="recentposts">
-                    <li class="list-group-item">
-                        <a href="https://afterstack.net/posts/2016/12/adding-a-new-repo-to-openstack/">
-                            初めてのOpenStackリポジトリ追加
-                        </a>
-                    </li>
-                </ul>
-            </li>
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://twitter.com/masayukig"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+    <li class="list-group-item"><a href="https://www.linkedin.com/in/masayukig"><i class="fa fa-linkedin-square fa-lg"></i> LinkedIn</a></li>
+    <li class="list-group-item"><a href="https://github.com/masayukig"><i class="fa fa-github-square fa-lg"></i> GitHub</a></li>
+    <li class="list-group-item"><a href="https://flickr.com/masayun"><i class="fa fa-flickr fa-lg"></i> Flickr</a></li>
+    <li class="list-group-item"><a href="https://instagram.com/masayukig"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
 
+<!-- Sidebar/Recent Posts -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+  <ul class="list-group" id="recentposts">
+    <li class="list-group-item"><a href="https://igawa.io/posts/2016/12/adding-a-new-repo-to-openstack/">初めてのOpenStackリポジトリ追加</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Recent Posts -->
 
-            <li class="list-group-item"><a href="https://afterstack.net/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
-                <ul class="list-group " id="tags">
-                    <li class="list-group-item tag-0">
-                        <a href="https://afterstack.net/tag/oss.html">
-                            oss
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-0">
-                        <a href="https://afterstack.net/tag/work.html">
-                            work
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://afterstack.net/tag/career.html">
-                            career
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
-                        <a href="https://afterstack.net/tag/openstack.html">
-                            openstack
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-2">
-                        <a href="https://afterstack.net/tag/english.html">
-                            english
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://afterstack.net/tag/openstack-health.html">
-                            openstack-health
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://afterstack.net/tag/development.html">
-                            development
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://afterstack.net/tag/team.html">
-                            team
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-
-
-    <li class="list-group-item"><h4><i class="fa fa-twitter fa-lg"></i><span class="icon-label">Latest Tweets</span></h4></li>
-    <div id="twitter_timeline">
-        <a class="twitter-timeline" data-chrome="noheader" href="https://twitter.com/masayukig" data-widget-id="650189654373724160">Tweets by masayukig</a>
-    </div>
-
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
-      <ul class="list-group" id="links">
-        <li class="list-group-item">
-            <a href="http://python.org/" target="_blank">
-                Python.org
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="http://openstack.org/" target="_blank">
-                OpenStack.org
-            </a>
-        </li>
-      </ul>
+<!-- Sidebar/Tag Cloud -->
+<li class="list-group-item">
+  <a href="https://igawa.io/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+  <ul class="list-group " id="tags">
+    <li class="list-group-item tag-0">
+      <a href="https://igawa.io/tag/oss.html">oss</a>
     </li>
-    </ul>
+    <li class="list-group-item tag-0">
+      <a href="https://igawa.io/tag/work.html">work</a>
+    </li>
+    <li class="list-group-item tag-1">
+      <a href="https://igawa.io/tag/career.html">career</a>
+    </li>
+    <li class="list-group-item tag-1">
+      <a href="https://igawa.io/tag/openstack.html">openstack</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/english.html">english</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/openstack-health.html">openstack-health</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/team.html">team</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/development.html">development</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Tag Cloud -->
+
+<!-- Sidebar/Twitter Timeline -->
+<li class="list-group-item">
+  <h4><i class="fa fa-twitter fa-lg"></i><span class="icon-label">Latest Tweets</span></h4>
+  <div id="twitter_timeline">
+    <a class="twitter-timeline" data-width="250" data-height="300" data-dnt="true" data-theme="light" href="https://twitter.com/masayukig">Tweets by masayukig</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</li>
+<!-- End Sidebar/Twitter Timeline -->
+
+<!-- Sidebar/Links -->
+<li class="list-group-item">
+  <h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+  <ul class="list-group" id="links">
+    <li class="list-group-item">
+      <a href="http://python.org/" target="_blank">Python.org</a>
+    </li>
+    <li class="list-group-item">
+      <a href="http://openstack.org/" target="_blank">OpenStack.org</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Links -->
+  </ul>
 </section>
-            </aside>
+<!-- End Sidebar -->            </aside>
         </div>
     </div>
 </div>
@@ -404,22 +389,23 @@ What is done is done            </a>
          <div class="col-xs-10">&copy; 2016 Masayuki Igawa
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>              <p><small>  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     Content
-  licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
 </small></p>
          </div>
          <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
       </div>
    </div>
 </footer>
-<script src="https://afterstack.net/theme/js/jquery.min.js"></script>
+<script src="https://igawa.io/theme/js/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://afterstack.net/theme/js/bootstrap.min.js"></script>
+<script src="https://igawa.io/theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="https://afterstack.net/theme/js/respond.min.js"></script>
+<script src="https://igawa.io/theme/js/respond.min.js"></script>
+
 
     <!-- Disqus -->
     <script type="text/javascript">
@@ -447,6 +433,7 @@ What is done is done            </a>
         ga('send', 'pageview');
     </script>
     <!-- End Google Analytics Universal Code -->
+
 
         <script type="text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=masayukig"></script>
