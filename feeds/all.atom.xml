@@ -15,8 +15,8 @@ data, and imported it on wordpress. And next, I also exported the
 wordprss data, and I imported the data with using &lt;a class="reference external" href="http://docs.getpelican.com/en/latest/importer.html"&gt;pelican-import&lt;/a&gt; like
 this.&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
-$ pelican-import -m
-markdown --strip-raw --disable-slugs --wp-attach --wpfile -o
+$ pelican-import -m \
+markdown --strip-raw --disable-slugs --wp-attach --wpfile -o \
 ./content/imported ~/wordpress.2017-11-26.001.xml
 &lt;/pre&gt;
 &lt;p&gt;I actually faced some warnings and errors. So, I needed to fix it by
