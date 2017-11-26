@@ -18,8 +18,8 @@ this.
 
 ::
 
-  $ pelican-import -m
-  markdown --strip-raw --disable-slugs --wp-attach --wpfile -o
+  $ pelican-import -m \
+  markdown --strip-raw --disable-slugs --wp-attach --wpfile -o \
   ./content/imported ~/wordpress.2017-11-26.001.xml
 
 I actually faced some warnings and errors. So, I needed to fix it by
