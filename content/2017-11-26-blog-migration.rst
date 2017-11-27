@@ -1,4 +1,4 @@
-Imported my blog to igawa.io
+Migrated my blog to igawa.io
 ============================
 
 I changed my blog to my original domain. My blogs were split to some
