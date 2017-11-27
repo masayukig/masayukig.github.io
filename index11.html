@@ -91,12 +91,12 @@ What's done is done            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
-                <h2><a href="https://igawa.io/posts/2012/03/google-readerdesutawotsuketaji-shi-wozi-dong-de-niburogutou-gao-suru/">Google Readerでスターをつけた記事を自動的にブログ投稿する</a></h2>
+                <h2><a href="https://igawa.io/posts/2011/02/fedora-on-vmware-fusion-3-on-macbook-air/">Fedora on VMWare Fusion 3 on MacBook Air</a></h2>
                     <div class="well well-sm">
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2012-03-07T20:34:00+09:00"> 2012-03-07</time>
+        <i class="fa fa-calendar"></i><time datetime="2011-02-07T05:21:00+09:00"> 2011-02-07</time>
     </span>
 
 
@@ -106,39 +106,56 @@ What's done is done            </a>
 
 
 <span class="label label-default">Tags</span>
-	<a href="https://igawa.io/tag/blogger.html">blogger</a>
+	<a href="https://igawa.io/tag/apple.html">Apple</a>
         /
-	<a href="https://igawa.io/tag/googlereader.html">googlereader</a>
+	<a href="https://igawa.io/tag/fedora.html">Fedora</a>
         /
-	<a href="https://igawa.io/tag/ifttt.html">ifttt</a>
+	<a href="https://igawa.io/tag/mac.html">Mac</a>
+        /
+	<a href="https://igawa.io/tag/os.html">OS</a>
+        /
+	<a href="https://igawa.io/tag/partition.html">partition</a>
+        /
+	<a href="https://igawa.io/tag/pc.html">PC</a>
+        /
+	<a href="https://igawa.io/tag/vmware.html">vmware</a>
+        /
+	<a href="https://igawa.io/tag/vmware-fusion.html">vmware fusion</a>
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>Google
-Readerでスターをつけた記事を、自動的にブログ投稿するようにしてみた。</p>
-<h3>どんな仕組み？</h3>
-<p><a href="http://ifttt.com/">http://ifttt.com/</a> を利用しています。これ、スゴい便利。<br>
-「Channel」と呼ばれるものを組み合わせて、「Task」を作り、動作させます。<br>
-今回は、「Google
-Reader」と「Gmail」のChannelを組み合わせてTaskを作っています。</p>
-<p>ifttt自体については、<a href="https://www.google.co.jp/search?q=ifttt">ググれば色々出てきます</a>。  </p>
-<h3>で、レシピは？</h3>
-<p>When #googlereader starred, send to #blogger<br>
-<a href="http://ifttt.com/recipes/24057">http://ifttt.com/recipes/24057</a></p>
-<h3>いきなり公開されると困るんだけど...?</h3>
-<p>Bloggerのメール投稿の設定で「下書き」状態にしておけばいいんじゃないかと。<br>
-で、公開したいものだけ、好きなように編集して公開すれば良いと思いますです。<br>
-(最初、「全て公開」にしていて、ちょっぴり後悔しましたｗ)</p>
-<p><small><a href="https://igawa.io/posts/2012/03/google-readerdesutawotsuketaji-shi-wozi-dong-de-niburogutou-gao-suru/#disqus_thread" data-disqus-identifier="google-readerdesutawotsuketaji-shi-wozi-dong-de-niburogutou-gao-suru">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2012/03/google-readerdesutawotsuketaji-shi-wozi-dong-de-niburogutou-gao-suru/">more ...</a>
+                <div class="summary"><p><a href="http://www.flickr.com/photos/masayun/5422904210/" title="Fedora14 on VMware Fusion on MacBook Air by masayukig, on Flickr"><img alt="Fedora14 on VMware Fusion on MacBook
+Air" src="http://farm6.static.flickr.com/5297/5422904210_999389cb72_m.jpg">{width="240"
+height="150"}</a></p>
+<p><a href="http://www.0r2.info/blog/2011/02/06/macbook-air%E3%81%ABlinuxfedora%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/">先日のエントリー</a>で、MacBook
+AirにFedoraをインストールしたことを書きましたが、<br>
+やはり、Mac OS X上からもLinuxを使いたいので試行錯誤して、<br>
+VMWare Fusion 3上から使うことができました。</p>
+<p>以下、その方法。</p>
+<p>まずは、普通に別パーティション(私の場合/dev/disk0s3(Mac表記))へFedora14(x86_64)をインストール。<br>
+なお、swapパーティションは、とりあえず作らない。必要なら後からswapファイルを作ってそれをswapにする。<br>
+(無駄なディスク領域は作りたくないので)<br>
+また、MacのUSキーボードの場合、キーボードは無印の「アメリカ合衆国」を選んだ方がいいようだ。<br>
+「日本語入力するから国際版(International)」かな？と思ってそれを選んだら、<br>
+「\~, `, ", '」<br>
+などのキーがまともに入力できなくなってしまいました。</p>
+<p>なお、設定は/etc/sysconfig/keyboardの</p>
+<div class="highlight"><pre><span></span>KEYBOARD=&quot;acentos-us&quot;
+</pre></div>
+
+
+<p>となっているところを</p>
+<div class="highlight"><pre><span></span>KEYBOARD …</pre></div>
+<p><small><a href="https://igawa.io/posts/2011/02/fedora-on-vmware-fusion-3-on-macbook-air/#disqus_thread" data-disqus-identifier="fedora-on-vmware-fusion-3-on-macbook-air">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2011/02/fedora-on-vmware-fusion-3-on-macbook-air/">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://igawa.io/posts/2012/03/apple-tv-xin-moderufa-biao/">Apple TV 新モデル発表！</a></h2>
+                <h2><a href="https://igawa.io/posts/2011/02/macbook-airnilinuxfedorawoinsutoru/">MacBook AirにLinux(Fedora)をインストール</a></h2>
                     <div class="well well-sm">
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2012-03-07T19:31:00+09:00"> 2012-03-07</time>
+        <i class="fa fa-calendar"></i><time datetime="2011-02-06T06:40:00+09:00"> 2011-02-06</time>
     </span>
 
 
@@ -149,33 +166,27 @@ Reader」と「Gmail」のChannelを組み合わせてTaskを作っています�
 
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>［ #iPad3 ］より美しくカッコよくなった「Apple TV」の新モデルが出たよ！<br>
-<a href="http://www.gizmodo.jp/2012/03/_ipad3_apple_tv.html">http://www.gizmodo.jp/2012/03/_ipad3_apple_tv.html</a></p>
-<blockquote>
-<p><img alt="" src="http://www.gizmodo.jp/upload_files2/120308appletvhd.jpg">{width="640"
-height="360"}<br>
-まずは「Apple TV」が「HD」でキター！
-期待のアップル発表会の先陣を切って登場したのは、新たに1080pのHD動画に対応したApple
-TVでしたね。iTunesでも1080pの動画配信がスタートしますよ。
-ちなみにHD対応を強化して美しい映像にこだわったのみならず、より使いやすくてカッコいいApple
-TVとしても生まれ変わっています。メニューからUIが変更されており、iCloudとの統合強化で、iPhoneにて撮影した写真の自動配信機能なんかも便利そうですよね。
-ん、でも、液晶テレビと一体型になった大刷新まではなかったみたいですかね～
-Sam Biddle（米版／湯木進悟）
-<img alt="" src="http://rss.rssad.jp/rss/artimg/T7he30zk4qYy/7188f17b757f9e8fd3cc038cd2db832b">{width="1"
-height="1"}</p>
-</blockquote>
-<p>from ギズモード・ジャパン <a href="http://www.gizmodo.jp/">http://www.gizmodo …</a></p>
-<p><small><a href="https://igawa.io/posts/2012/03/apple-tv-xin-moderufa-biao/#disqus_thread" data-disqus-identifier="apple-tv-xin-moderufa-biao">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2012/03/apple-tv-xin-moderufa-biao/">more ...</a>
+                <div class="summary"><p>MacBook AirにLinuxをインストールした。</p>
+<p><a href="http://www.flickr.com/photos/masayun/5419108725/" title="Fedora14 on MacBook Air by masayukig, on Flickr"><img alt="Fedora14 on MacBook
+Air" src="http://farm6.static.flickr.com/5133/5419108725_0289d42b50_m.jpg">{width="240"
+height="160"}</a></p>
+<p>参考にしたページは、<br>
+<a href="http://d.hatena.ne.jp/masami256/20110115/1295104000">http://d.hatena.ne.jp/masami256/20110115/1295104000</a><br>
+です。</p>
+<p>ただ、私の場合、どうやってもUSBメモリからのブートがうまくいかず、<br>
+以下の、USB接続のDVDドライブを購入しました。<br>
+<a href="http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=hughundercons-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;asins=B002FB6VJQ">http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=hughundercons-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon …</a></p>
+<p><small><a href="https://igawa.io/posts/2011/02/macbook-airnilinuxfedorawoinsutoru/#disqus_thread" data-disqus-identifier="macbook-airnilinuxfedorawoinsutoru">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2011/02/macbook-airnilinuxfedorawoinsutoru/">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://igawa.io/posts/2012/03/atsupuru-xin-ipad-fa-biao-2048x1536-jie-xiang-du-a5x-da-zai-lte-dui-ying-3yue-16ri-fa-mai/">アップル 新 iPad 発表：2048x1536 解像度、A5X 搭載、LTE 対応、3月16日発売</a></h2>
+                <h2><a href="https://igawa.io/posts/2011/01/macbook-airdemo-hua-mian-wobi-zitemosuripusasenaiyounisuru-apuri/">MacBook (Airでも) 画面を閉じてもスリープさせないようにする アプリ</a></h2>
                     <div class="well well-sm">
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2012-03-07T19:31:00+09:00"> 2012-03-07</time>
+        <i class="fa fa-calendar"></i><time datetime="2011-01-26T05:51:00+09:00"> 2011-01-26</time>
     </span>
 
 
@@ -184,173 +195,222 @@ height="1"}</p>
 
 
 
+<span class="label label-default">Tags</span>
+	<a href="https://igawa.io/tag/apple.html">Apple</a>
+        /
+	<a href="https://igawa.io/tag/mac.html">Mac</a>
+        /
+	<a href="https://igawa.io/tag/sleep.html">sleep</a>
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p><a href="http://japanese.engadget.com/2012/03/07/new-ipad/">http://japanese.engadget.com/2012/03/07/new-ipad/</a></p>
-<div style="text-align:center;">
+                <div class="summary"><p>画面を閉じてもスリープさせたくないときもあるので、<br>
+ググったら見つかりました。</p>
+<p><a href="http://semaja2.net/insomniaxinfo">InsomniaX</a></p>
+<p>というアプリです。</p>
+<p>情報元は以下のページです。<br>
+<a href="http://espressoaddshot.blog74.fc2.com/blog-entry-221.html">macbookディスプレイを閉じてもスリープしないように。Mac導入日記</a><br>
+<a href="http://maruta.be/sugimurase/356">MacBook Air
+閉じてもスリープしないように</a></p>
+<p><small><a href="https://igawa.io/posts/2011/01/macbook-airdemo-hua-mian-wobi-zitemosuripusasenaiyounisuru-apuri/#disqus_thread" data-disqus-identifier="macbook-airdemo-hua-mian-wobi-zitemosuripusasenaiyounisuru-apuri">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2011/01/macbook-airdemo-hua-mian-wobi-zitemosuripusasenaiyounisuru-apuri/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="https://igawa.io/posts/2011/01/ubuntudedehuorutonoedeitawonanokaravimnibian-geng/">Ubuntuでデフォルトのエディタをnanoからvimに変更</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2011-01-26T05:01:00+09:00"> 2011-01-26</time>
+    </span>
 
-![iPad](http://www.blogcdn.com/www.engadget.com/media/2012/03/apple-ipad-3-ipad-hd-liveblog-2926.jpg)
 
-</div>
+            <span class="label label-default">By</span>
+            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
 
-<p>アップルの<a href="http://japanese.engadget.com/2012/03/07/ipad/">発表イベント</a>にて、新
-iPad が発表されました。主な特長は：</p>
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://igawa.io/tag/nano.html">nano</a>
+        /
+	<a href="https://igawa.io/tag/software.html">Software</a>
+        /
+	<a href="https://igawa.io/tag/ubuntu.html">Ubuntu</a>
+        /
+	<a href="https://igawa.io/tag/vim.html">vim</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><p>Ubuntuのデフォルトエディタはnanoというやつですが、<br>
+操作方法がさっぱりわからんので、vimに変更します。<br>
+参考にしたサイトは、<br>
+「<a href="http://www.gabuchan.net/blog/archives/15">Ubuntu のデフォルトエディタを nano から vim
+に変更する方法</a>」です。</p>
+<p>まずは、vimのインストールから。</p>
+<div class="highlight"><pre><span></span>$ sudo apt-get install vim 
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています                
+状態情報を読み取っています... 完了
+以下の特別パッケージがインストールされます:
+  vim-runtime
+提案パッケージ:
+  ctags vim-doc vim-scripts
+以下のパッケージが新たにインストールされます:
+  vim vim-runtime
+アップグレード: <span class="m">0</span> 個、新規インストール: <span class="m">2</span> 個、削除: <span class="m">0</span> 個、保留: <span class="m">10</span> 個。
+<span class="m">6</span>,563kB のアーカイブを取得する必要があります。
+この操作後に追加で <span class="m">27</span>.1MB のディスク容量が消費されます …</pre></div>
+<p><small><a href="https://igawa.io/posts/2011/01/ubuntudedehuorutonoedeitawonanokaravimnibian-geng/#disqus_thread" data-disqus-identifier="ubuntudedehuorutonoedeitawonanokaravimnibian-geng">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2011/01/ubuntudedehuorutonoedeitawonanokaravimnibian-geng/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="https://igawa.io/posts/2011/01/ubuntu1010dezui-xin-kernelbirudo/">Ubuntu(10.10)で最新Kernelビルド</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2011-01-22T07:30:00+09:00"> 2011-01-22</time>
+    </span>
+
+
+            <span class="label label-default">By</span>
+            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://igawa.io/tag/build.html">build</a>
+        /
+	<a href="https://igawa.io/tag/kai-fa.html">開発</a>
+        /
+	<a href="https://igawa.io/tag/kernel.html">kernel</a>
+        /
+	<a href="https://igawa.io/tag/make.html">make</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><p>UbuntuでKernelをビルドしたくなり、そのときのメモ。<br>
+<a href="http://dogmap.jp/2009/06/19/rebuild-kernel/">http://dogmap.jp/2009/06/19/rebuild-kernel/</a><br>
+を、参考に（ほぼそのままですが）しました。</p>
+<div class="highlight"><pre><span></span>/*** カーネル再構築に必要なパッケージをインストール ***/
+$ sudo apt-get install build-essential
+$ sudo apt-get install kernel-package libncurses5-dev libqt3-mt-dev
+$ sudo apt-get install git git-core
+$ sudo apt-get install fakeroot
+
+/*** カーネルソースをインストールして展開 ***/
+$ mkdir ~/src<span class="p">;</span> <span class="nb">cd</span> src
+$ git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds …</pre></div>
+<p><small><a href="https://igawa.io/posts/2011/01/ubuntu1010dezui-xin-kernelbirudo/#disqus_thread" data-disqus-identifier="ubuntu1010dezui-xin-kernelbirudo">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2011/01/ubuntu1010dezui-xin-kernelbirudo/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="https://igawa.io/posts/2011/01/htc-ariatezaringushi-shitemita/">HTC Ariaテザリング試してみた</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2011-01-16T17:43:00+09:00"> 2011-01-16</time>
+    </span>
+
+
+            <span class="label label-default">By</span>
+            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://igawa.io/tag/android.html">Android</a>
+        /
+	<a href="https://igawa.io/tag/tezaringu.html">テザリング</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><p><a href="http://www.flickr.com/photos/31362181@N08/5359702596/" title="IMAG0001.jpg"><img alt="IMAG0001.jpg" src="http://farm6.static.flickr.com/5167/5359702596_6c7564b0be.jpg"></a></p>
+<p>下りが1Mbps以上出ました！スゴい。<br>
+今後もこのスピードが維持されるのだろうか？</p>
+<p><small><a href="https://igawa.io/posts/2011/01/htc-ariatezaringushi-shitemita/#disqus_thread" data-disqus-identifier="htc-ariatezaringushi-shitemita">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2011/01/htc-ariatezaringushi-shitemita/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="https://igawa.io/posts/2011/01/htc-arias31htgou-ru/">HTC Aria(S31HT)購入</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2011-01-16T17:28:00+09:00"> 2011-01-16</time>
+    </span>
+
+
+            <span class="label label-default">By</span>
+            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://igawa.io/tag/android.html">Android</a>
+        /
+	<a href="https://igawa.io/tag/emobile.html">emobile</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><p><a href="http://www.flickr.com/photos/31362181@N08/5359055485/"><img alt="" src="http://farm6.static.flickr.com/5162/5359055485_04cd25ea24.jpg"></a></p>
+<p>ドコモのパケット料金が高いので、イー・モバイルを契約しました。<br>
+端末は<a href="http://emobile.jp/products/ht/s31ht/">HTC Aria</a>にしました。<br>
+<a href="http://emobile.jp/products/hw/s31hw/">Pocket WiFi
+S</a>も、選択肢にありましたが、<br>
+実際に店頭で触ってみると、HTC Ariaの方がいい感じに動いたので。</p>
+<p>で、実際の使った感覚ですが、<br>
+CPUはXperiaに劣るはずなんですが、使った感じは(かなり)Aria優勢です。<br>
+今後使い込んでいくと、また違った感じになるかも知れませんが、<br>
+今のところは、かなりのさくさく具合で、満足です。</p>
+<p>これから、テザリングを試してみます。</p>
+<p><small><a href="https://igawa.io/posts/2011/01/htc-arias31htgou-ru/#disqus_thread" data-disqus-identifier="htc-arias31htgou-ru">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2011/01/htc-arias31htgou-ru/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="https://igawa.io/posts/2011/01/macbook-air13mai-tsuta-iya-dao-zhao-shita/">MacBook Air(13")買った。いや、到着した！</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2011-01-14T05:08:00+09:00"> 2011-01-14</time>
+    </span>
+
+
+            <span class="label label-default">By</span>
+            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://igawa.io/tag/apple.html">Apple</a>
+        /
+	<a href="https://igawa.io/tag/mac.html">Mac</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><p><a href="http://www.flickr.com/photos/masayun/5352096223/" title="Untitled by masayukig, on Flickr"><img alt="" src="http://farm6.static.flickr.com/5125/5352096223_fc20480cdf.jpg">{width="500"
+height="333"}</a></p>
+<p>Twitterではつぶやき済みですが、<br>
+<a href="http://www.apple.com/jp/macbookair/">MacBook Air
+13"</a>~~を買いました。~~が到着しました！</p>
 <ul>
-<li>Retina Display：iPad のディスプレイも高精細化。解像度は2048x1536！
-    264ppiという数字は iPhone 4 / 4S
-    ほどではありませんが、十分に精細です。彩度も40%向上。</li>
-<li>Apple A5X：クアッドコアプロセッサ。A5 の倍高速（アップル比）。</li>
-<li>iSight
-    カメラ：5メガピクセル …</li></ul>
-<p><small><a href="https://igawa.io/posts/2012/03/atsupuru-xin-ipad-fa-biao-2048x1536-jie-xiang-du-a5x-da-zai-lte-dui-ying-3yue-16ri-fa-mai/#disqus_thread" data-disqus-identifier="atsupuru-xin-ipad-fa-biao-2048x1536-jie-xiang-du-a5x-da-zai-lte-dui-ying-3yue-16ri-fa-mai">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2012/03/atsupuru-xin-ipad-fa-biao-2048x1536-jie-xiang-du-a5x-da-zai-lte-dui-ying-3yue-16ri-fa-mai/">more ...</a>
+<li>USキーボード</li>
+<li>128GB SSD</li>
+<li>CPU:1.86GHz</li>
+</ul>
+<p>といった感じにカスタマイズしてます。</p>
+<p><small><a href="https://igawa.io/posts/2011/01/macbook-air13mai-tsuta-iya-dao-zhao-shita/#disqus_thread" data-disqus-identifier="macbook-air13mai-tsuta-iya-dao-zhao-shita">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2011/01/macbook-air13mai-tsuta-iya-dao-zhao-shita/">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://igawa.io/posts/2012/03/google-kontentsupei-xin-sabisugoogle-play-wofa-biao/">Google、コンテンツ配信サービス「Google Play」を発表</a></h2>
+                <h2><a href="https://igawa.io/posts/2011/01/macbook-airhashang-hai-karachu-he-sarerurashii/">MacBook Airは上海から出荷されるらしい</a></h2>
                     <div class="well well-sm">
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2012-03-07T19:31:00+09:00"> 2012-03-07</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
-
-
-
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p><a href="http://it.slashdot.jp/story/12/03/07/0856204/">http://it.slashdot.jp/story/12/03/07/0856204/</a><br>
-from スラッシュドット・ジャパン <a href="http://slashdot.jp/">http://slashdot.jp/</a></p>
-<p>今のところ、AndroidサイトのURLが変わっただけのようにしか見えないです。</p>
-<p><small><a href="https://igawa.io/posts/2012/03/google-kontentsupei-xin-sabisugoogle-play-wofa-biao/#disqus_thread" data-disqus-identifier="google-kontentsupei-xin-sabisugoogle-play-wofa-biao">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2012/03/google-kontentsupei-xin-sabisugoogle-play-wofa-biao/">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://igawa.io/posts/2012/03/mit-app-inventor-edugagong-kai/">MIT　App　Inventor　Eduが公開</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2012-03-07T19:31:00+09:00"> 2012-03-07</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
-
-
-
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p><a href="http://kamo.pos.to/dpoke/c/UW5968.html">http://kamo.pos.to/dpoke/c/UW5968.html</a><br>
-from useWillcom(ウィルコムを使え!) <a href="http://kamo.pos.to/dpoke/">http://kamo.pos.to/dpoke/</a>  </p>
-<hr>
-<p>ちょっと使ってみたが、操作方法がよくわからんので、<br>
-もう少し勉強が必要。</p>
-<p><small><a href="https://igawa.io/posts/2012/03/mit-app-inventor-edugagong-kai/#disqus_thread" data-disqus-identifier="mit-app-inventor-edugagong-kai">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2012/03/mit-app-inventor-edugagong-kai/">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://igawa.io/posts/2012/03/rezakatsutagazhu-yi-nokahuefabcafe-shibui-gu-niopun/">レーザーカッターが主役のカフェ「FabCafe」、渋谷にオープン</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2012-03-07T19:31:00+09:00"> 2012-03-07</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
-
-
-
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p><a href="http://hardware.slashdot.jp/story/12/03/07/096258/">http://hardware.slashdot.jp/story/12/03/07/096258/</a><br>
-from スラッシュドット・ジャパン <a href="http://slashdot.jp/">http://slashdot.jp/</a></p>
-<p>ちょっと気になる。</p>
-<p><small><a href="https://igawa.io/posts/2012/03/rezakatsutagazhu-yi-nokahuefabcafe-shibui-gu-niopun/#disqus_thread" data-disqus-identifier="rezakatsutagazhu-yi-nokahuefabcafe-shibui-gu-niopun">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2012/03/rezakatsutagazhu-yi-nokahuefabcafe-shibui-gu-niopun/">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://igawa.io/posts/2012/03/su-bao-ben-ri-yoriios51hesoshitesirigari-ben-yu-nidui-ying/">【速報】本日よりiOS5.1へ...そしてSiriが日本語に対応！</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2012-03-07T19:31:00+09:00"> 2012-03-07</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
-
-
-
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p><a href="http://www.gizmodo.jp/2012/03/ios51siri.html">http://www.gizmodo.jp/2012/03/ios51siri.html</a></p>
-<p><img alt="" height="423" src="http://www.gizmodo.jp/upload_files2/120308ios-siri.jpg" width="640">
-ついにこの日が...。
-先程発表がありました、iOSが5.1にアップデートの際にSiriが日本語に対応することが発表されました！　やったー！　Siri子がついに日本にきました。果たして...声はどうなってるんでしょうかね。楽しみー！ (長谷憲)
-<img alt="" height="1" src="http://rss.rssad.jp/rss/artimg/T7he30zk4qYy/401117ac96803f93891b534c7febe7ba" width="1"></p>
-<p>from ギズモード・ジャパン <a href="http://www.gizmodo.jp/">http://www.gizmodo.jp/</a></p>
-<hr>
-<p>日本語でどの程度の認識をしてくれるのか、楽しみ。</p>
-<p><small><a href="https://igawa.io/posts/2012/03/su-bao-ben-ri-yoriios51hesoshitesirigari-ben-yu-nidui-ying/#disqus_thread" data-disqus-identifier="su-bao-ben-ri-yoriios51hesoshitesirigari-ben-yu-nidui-ying">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2012/03/su-bao-ben-ri-yoriios51hesoshitesirigari-ben-yu-nidui-ying/">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://igawa.io/posts/2012/02/buroguwobloggernishitemita/">ブログをBloggerにしてみた</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2012-02-27T21:01:00+09:00"> 2012-02-27</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
-
-
-
-<span class="label label-default">Tags</span>
-	<a href="https://igawa.io/tag/blog.html">blog</a>
-        /
-	<a href="https://igawa.io/tag/blogger.html">blogger</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>ブログをWordPressから、Bloggerにしてみた。</p>
-<p>コンテンツの移行は、比較的簡単。<br>
-(WordPress上でコンテンツをExportして、<br>
-以下のサービスを使ってBloggerコンテンツに変換。<br>
-BloggerでImportすればおKだった。<br>
-<a href="http://wordpress2blogger.appspot.com/">http://wordpress2blogger.appspot.com/</a> )</p>
-<p>でも、Blogger上のURL形式は変更できなくて、<br>
-「そっくりそのまま移行」というのは、難しそう。</p>
-<p>しばらく、404を無視して、Googleの更新を待つか、<br>
-２重にコンテンツを持つか、若干悩ましいところ...</p>
-<p><small><a href="https://igawa.io/posts/2012/02/buroguwobloggernishitemita/#disqus_thread" data-disqus-identifier="buroguwobloggernishitemita">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2012/02/buroguwobloggernishitemita/">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://igawa.io/posts/2011/10/ipad2gou-ru/">iPad2購入</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2011-10-29T06:45:00+09:00"> 2011-10-29</time>
+        <i class="fa fa-calendar"></i><time datetime="2011-01-06T04:26:00+09:00"> 2011-01-06</time>
     </span>
 
 
@@ -362,83 +422,80 @@ BloggerでImportすればおKだった。<br>
 <span class="label label-default">Tags</span>
 	<a href="https://igawa.io/tag/apple.html">Apple</a>
         /
-	<a href="https://igawa.io/tag/ipad.html">iPad</a>
-        /
-	<a href="https://igawa.io/tag/ipad2.html">ipad2</a>
+	<a href="https://igawa.io/tag/mac.html">Mac</a>
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><hr>
-<p><a href="https://picasaweb.google.com/lh/photo/8gHrPRHvlm78tLkx_IPZcw?feat=embedwebsite"><img alt="" height="300" src="https://lh4.googleusercontent.com/-DjtpT99VSgU/TqsdSBEAd2I/AAAAAAAAoWU/N512e1upM-Y/s400/IMG_1202.jpg" width="400"></a>
-  送信者 <a href="https://picasaweb.google.com/masayuki.igawa/ForBlog?authuser=0&amp;feat=embedwebsite">for Blog</a></p>
-<hr>
-<p>というわけで、iPad2を購入しました。</p>
-<p>例の「アレコレソレキャンペーン」で購入しました。<br>
-基本的には、3G通信は一切行わない予定なので、「<a href="http://mb.softbank.jp/mb/special/are_kore_sore/another_one/packet/">ゼロから定額プラン</a>」にしました。</p>
-<p>当然、モバイルデータ通信は「オフ」に設定しています。  </p>
-<hr>
-<p><a href="https://picasaweb.google.com/lh/photo/e9YASe4zfhWXc0IrcXCEsw?feat=embedwebsite"><img alt="" height="400" src="https://lh4.googleusercontent.com/-a9obLN-pbTk/TqsjNY3vnTI/AAAAAAAAoXI/6RwjLHfBBvA/s400/IMG_0002.jpg" width="300"></a>
-  送信者 <a href="https://picasaweb.google.com/masayuki.igawa/ForBlog?authuser=0&amp;feat=embedwebsite">for Blog</a></p>
-<hr>
-<p>まぁ、このプラン、100MBまでは0円なのですが、それ以降従量課金で、<br>
-111.5MBで、4,980円になるという素晴らしいプランですｗ<br>
-11.5MBで4,980円なので、100MBを超えると、433円/MBってことでしょうか。<br>
-すごいですね。</p>
-<p>外で、じっくり使う場合には、やっぱりハードウェアキーボードが欲しくなるので、<br>
-<a href="http://store.apple.com/jp/product/H6353PA/A">Incase Workstation for Apple Wireless Keyboard, iPad and iPad
-2</a>と、<a href="http://store.apple.com/jp/product/MC184LL/B">Apple Wireless …</a></p>
-<p><small><a href="https://igawa.io/posts/2011/10/ipad2gou-ru/#disqus_thread" data-disqus-identifier="ipad2gou-ru">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2011/10/ipad2gou-ru/">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://igawa.io/posts/2011/10/iphone4syu-yue-shen-shiip-nda/">iPhone4S予約申し込んだ！</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2011-10-09T06:11:00+09:00"> 2011-10-09</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
-
-
-
-<span class="label label-default">Tags</span>
-	<a href="https://igawa.io/tag/apple.html">Apple</a>
-        /
-	<a href="https://igawa.io/tag/ipad.html">iPad</a>
-        /
-	<a href="https://igawa.io/tag/iphone.html">iPhone</a>
-        /
-	<a href="https://igawa.io/tag/iphone4s.html">iPhone4S</a>
-        /
-	<a href="https://igawa.io/tag/phs-mobile-phone.html">PHS-Mobile-Phone</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>というわけで、iPhone4Sを申し込みました！  </p>
-<hr>
-<p><a href="https://picasaweb.google.com/lh/photo/hmnjuu2dzHTguh0a8_cmFg?feat=embedwebsite"><img alt="" height="352" src="https://lh4.googleusercontent.com/-u_uNEMVPZnk/TpC7P5bsMpI/AAAAAAAAoII/rQJIVGdAbyc/s400/%2525E3%252582%2525B9%2525E3%252582%2525AF%2525E3%252583%2525AA%2525E3%252583%2525BC%2525E3%252583%2525B3%2525E3%252582%2525B7%2525E3%252583%2525A7%2525E3%252583%252583%2525E3%252583%252588%2525202011-10-09%2525205.41.22.png" width="400"></a>
-  送信者 <a href="https://picasaweb.google.com/masayuki.igawa/ForBlog?authuser=0&amp;feat=embedwebsite">for Blog</a></p>
-<hr>
-<p><a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2127008&amp;pid=880339671"><img alt="" src="http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=2127008&amp;pid=880339671">{width="1"
-height="1"}SoftBankのオンラインショップ</a>で予約をしました。</p>
-<p>近くの家電量販店(≠ヨドバシ、ビック、ヤマダ)に行ってみたのですが、<br>
-特に、予約受付をしている感じではなかったので、オンラインショップで予約をすることにしました。</p>
-<p>とはいえ、予約を申し込むと、以下のようなメールが送られてきて、  </p>
+                <div class="summary"><p><a href="http://www.0r2.info/blog/2011/01/04/macbook-air13%e3%82%a4%e3%83%b3%e3%83%81%e8%b3%bc%e5%85%a5%ef%bc%81/">先日注文した</a>、Apple
+Storeから「商品出荷のお知らせ」というのが来た！</p>
+<p><a href="http://www.flickr.com/photos/31362181@N08/5328031242/" title="MacBook_Air_shipped_email"><img alt="MacBook_Air_shipped_email" src="http://farm6.static.flickr.com/5250/5328031242_f3959b7941_m.jpg"></a></p>
+<p>ので、<br>
+「配送状況を確認」したところ、</p>
 <blockquote>
-<p>在庫の確保が出来しだい、メールにて本申し込みのご案内をいたします。<br>
-在庫状況によりご連絡にお時間がかかる場合がありますので、あらかじめ<br>
-ご了承ください。</p>
-<p>また、在庫状況により、在庫の確保が困難な場合につきましては、<br>
-お取り消しのご連絡をさせていただきますので、あらかじめご了承ください。</p>
+<p>海外荷物受付<br>
+海外で荷物をお預かりしました</p>
 </blockquote>
-<p>まだ在庫の確保中で、本申し込みメール待ちです。<br>
-詳しい予約の流れ等は、<a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2127008&amp;pid=880339671"><img alt="" src="http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=2127008&amp;pid=880339671">{width="1"
-height="1"}こちらから</a>どうぞ。</p>
-<p><a href="http://ad.jp.ap.valuecommerce.com/servlet/htmlbanner?sid=2127008&amp;pid=880339669">http://ad.jp.ap.valuecommerce.com/servlet/htmlbanner?sid …</a></p>
-<p><small><a href="https://igawa.io/posts/2011/10/iphone4syu-yue-shen-shiip-nda/#disqus_thread" data-disqus-identifier="iphone4syu-yue-shen-shiip-nda">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2011/10/iphone4syu-yue-shen-shiip-nda/">more ...</a>
+<p><a href="http://www.flickr.com/photos/31362181@N08/5328007756/" title="shipped_on_yamato"><img alt="shipped_on_yamato" src="http://farm6.static.flickr.com/5005/5328007756_9ec8ea6c54_m.jpg"></a></p>
+<p>となっており、<br>
+「担当店名」が「上海支店（中国）」となっていました。<br>
+ずいぶん遠くから来るんだなーと思いました。<br>
+カスタマイズしたからかな？？</p>
+<p><small><a href="https://igawa.io/posts/2011/01/macbook-airhashang-hai-karachu-he-sarerurashii/#disqus_thread" data-disqus-identifier="macbook-airhashang-hai-karachu-he-sarerurashii">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2011/01/macbook-airhashang-hai-karachu-he-sarerurashii/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="https://igawa.io/posts/2011/01/macbook-air13inchigou-ru/">MacBook Air(13インチ)購入！</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2011-01-04T07:07:00+09:00"> 2011-01-04</time>
+    </span>
+
+
+            <span class="label label-default">By</span>
+            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://igawa.io/tag/apple.html">Apple</a>
+        /
+	<a href="https://igawa.io/tag/wu-yu.html">物欲</a>
+        /
+	<a href="https://igawa.io/tag/mai-iwu.html">買い物</a>
+        /
+	<a href="https://igawa.io/tag/mac.html">Mac</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><p>MacBook Air(13インチ)を購入した！</p>
+<p><a href="http://store.apple.com/jp/browse/campaigns/newyearspecial">Apple
+Storeの初売り</a>に背中を押された形です。</p>
+<p><a href="http://www.flickr.com/photos/31362181@N08/5321142285/" title="apple-store-macbook_air_screenshot_m"><img alt="apple-store-macbook_air_screenshot_m" src="http://farm6.static.flickr.com/5125/5321142285_6164911975.jpg"></a></p>
+<p>妻にも事前に許可をもらい（タワー型PCを２台処分したのが大きかった模様）、<br>
+「iMacもいいかなぁ」<br>
+「MacBookProの方が良いかなぁ」<br>
+「11インチでも良いんじゃないかなぁ」<br>
+「同じ値段でiPadを３つ位買えるんじゃないか？」<br>
+「HPのプリンタを買うと1万円キャッシュバック？<br>
+　HP Photosmart Wireless B110aが1万円で、これが実質無料？」<br>
+「外で使うにしても、ネットワークどうしよう。」<br>
+「ValueCommerceのショッパーズクラブ経由で買うと0.8%報酬？」<br>
+「実は、他のサイトや店舗ではもっと安く買えるのでは？」<br>
+「キーボードはUSかJISどっちにしよう？」<br>
+等、色々悩むところ、考えるところありましたが、購入しました。</p>
+<p>なお、上記の悩みは以下のように解決。<br>
+「iMacもいいかなぁ」<br>
+→まぁ、今はデスクトップPC(Linux)があるからいらないだろう。</p>
+<p>「MacBookProの方が良いかなぁ」<br>
+→重いから却下。</p>
+<p>「11インチでも良いんじゃないかなぁ」<br>
+→少しでもパワフルの方が良い。</p>
+<p>「同じ値段でiPadを３つ位買えるんじゃないか？」<br>
+→MacBook Airを保有すること...Price less　w</p>
+<p>「HPのプリンタを買うと1万円キャッシュバック？<br>
+　HP …</p>
+<p><small><a href="https://igawa.io/posts/2011/01/macbook-air13inchigou-ru/#disqus_thread" data-disqus-identifier="macbook-air13inchigou-ru">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2011/01/macbook-air13inchigou-ru/">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -620,16 +677,6 @@ height="1"}こちらから</a>どうぞ。</p>
                             href="https://igawa.io/index86.html">86</a></li>
                     <li class=""><a
                             href="https://igawa.io/index87.html">87</a></li>
-                    <li class=""><a
-                            href="https://igawa.io/index88.html">88</a></li>
-                    <li class=""><a
-                            href="https://igawa.io/index89.html">89</a></li>
-                    <li class=""><a
-                            href="https://igawa.io/index90.html">90</a></li>
-                    <li class=""><a
-                            href="https://igawa.io/index91.html">91</a></li>
-                    <li class=""><a
-                            href="https://igawa.io/index92.html">92</a></li>
                 <li class="next"><a
                         href="https://igawa.io/index12.html">&raquo;</a></li>
         </ul>
@@ -672,34 +719,76 @@ height="1"}こちらから</a>どうぞ。</p>
   <a href="https://igawa.io/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
   <ul class="list-group " id="tags">
     <li class="list-group-item tag-1">
-      <a href="https://igawa.io/tag/phs-mobile-phone.html">PHS-Mobile-Phone</a>
-    </li>
-    <li class="list-group-item tag-1">
       <a href="https://igawa.io/tag/pc.html">PC</a>
     </li>
     <li class="list-group-item tag-1">
-      <a href="https://igawa.io/tag/ifttt.html">ifttt</a>
-    </li>
-    <li class="list-group-item tag-1">
-      <a href="https://igawa.io/tag/instagram.html">instagram</a>
+      <a href="https://igawa.io/tag/phs-mobile-phone.html">PHS-Mobile-Phone</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/psp.html">PSP</a>
+      <a href="https://igawa.io/tag/apple.html">Apple</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/spam.html">SPAM</a>
+      <a href="https://igawa.io/tag/linux.html">Linux</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/kai-fa.html">開発</a>
+      <a href="https://igawa.io/tag/kindle.html">Kindle</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/net.html">net</a>
+      <a href="https://igawa.io/tag/science.html">science</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/life_health.html">life_health</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/android.html">Android</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/mac.html">Mac</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/xperia.html">Xperia</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/entertainments.html">entertainments</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/ojin.html">お金</a>
     </li>
     <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/iphone.html">iPhone</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/entertainments.html">entertainments</a>
+      <a href="https://igawa.io/tag/ipad.html">iPad</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/wei-fen-lei.html">未分類</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/game.html">game</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/iphone-3gs.html">iPhone 3GS</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/net.html">net</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/sakura.html">さくら</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/spam.html">SPAM</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/iphone-3g-s.html">iPhone 3G S</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/kai-fa.html">開発</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/os.html">OS</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/psp.html">PSP</a>
     </li>
     <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/fedora.html">Fedora</a>
@@ -708,247 +797,160 @@ height="1"}こちらから</a>どうぞ。</p>
       <a href="https://igawa.io/tag/software.html">Software</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/iphone-3gs.html">iPhone 3GS</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/android.html">Android</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/sakura.html">さくら</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/life_health.html">life_health</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/game.html">game</a>
-    </li>
-    <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/konosaitonokoto.html">このサイトのこと</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/ipad.html">iPad</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/apple.html">Apple</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/wei-fen-lei.html">未分類</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/os.html">OS</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/kindle.html">Kindle</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/xperia.html">Xperia</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/iphone-3g-s.html">iPhone 3G S</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/science.html">science</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/ojin.html">お金</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/twitter.html">twitter</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/linux.html">Linux</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/mac.html">Mac</a>
     </li>
     <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/vps.html">VPS</a>
     </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/benchmark.html">benchmark</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/konosaitonoshi.html">このサイトの事</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/blog.html">blog</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/xie-zhen.html">写真</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/openstack.html">openstack</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/food.html">food</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/kvm.html">KVM</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/unixbench.html">unixbench</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/c.html">C++</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/konosaito.html">このサイト</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/hua-xiang.html">画像</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/scala.html">scala</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/pickup.html">PICKUP</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/cyan-yu.html">C言語</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/blogger.html">blogger</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/she-ding.html">設定</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/evernote.html">evernote</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/wu-yu.html">物欲</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/lion.html">lion</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/sheng-huo.html">生活</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/dropbox.html">dropbox</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/work.html">work</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/plugin.html">plugin</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/life-hack.html">life hack</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/crashplan.html">crashplan</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/spmodo.html">SPモード</a>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/twitter.html">twitter</a>
     </li>
     <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/apuri.html">アプリ</a>
     </li>
     <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/tips.html">tips</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/career.html">career</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/nex-5n.html">nex-5n</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/kernel.html">kernel</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/she-hui.html">社会</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/english.html">english</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/ubuntu.html">Ubuntu</a>
-    </li>
-    <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/kamera.html">カメラ</a>
     </li>
     <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/du-shu.html">読書</a>
+      <a href="https://igawa.io/tag/backup.html">backup</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/spmodo.html">SPモード</a>
     </li>
     <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/lvm.html">LVM</a>
     </li>
     <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/lion.html">lion</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/cyan-yu.html">C言語</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/hua-xiang.html">画像</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/konosaito.html">このサイト</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/evernote.html">evernote</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/kernel.html">kernel</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/english.html">english</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/life-hack.html">life hack</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/food.html">food</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/nex-5n.html">nex-5n</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/she-hui.html">社会</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/du-shu.html">読書</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/c.html">C++</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/unixbench.html">unixbench</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/ifttt.html">ifttt</a>
+    </li>
+    <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/oss.html">oss</a>
     </li>
     <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/backup.html">backup</a>
+      <a href="https://igawa.io/tag/plugin.html">plugin</a>
     </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/shi-shi.html">仕事</a>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/blog.html">blog</a>
     </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/firefox.html">Firefox</a>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/dropbox.html">dropbox</a>
     </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/timemachine.html">timemachine</a>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/crashplan.html">crashplan</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/benchmark.html">benchmark</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/sheng-huo.html">生活</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/blogger.html">blogger</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/career.html">career</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/konosaitonoshi.html">このサイトの事</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/openstack.html">openstack</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/wu-yu.html">物欲</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/xie-zhen.html">写真</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/ubuntu.html">Ubuntu</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/she-ding.html">設定</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/pickup.html">PICKUP</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/work.html">work</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/scala.html">scala</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/tips.html">tips</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/kvm.html">KVM</a>
     </li>
     <li class="list-group-item tag-4">
       <a href="https://igawa.io/tag/facebook.html">facebook</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/gadget.html">gadget</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/gmail.html">Gmail</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/ipad2.html">ipad2</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/fedora11.html">Fedora11</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/coreserverjp.html">coreserver.jp</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/vim.html">vim</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/uroad-7000.html">UROAD-7000</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/nexus7.html">nexus7</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/vagrant.html">vagrant</a>
+      <a href="https://igawa.io/tag/xfs.html">xfs</a>
     </li>
     <li class="list-group-item tag-4">
       <a href="https://igawa.io/tag/simple-massager.html">Simple-Massager</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/saba.html">サーバ</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/bian-naxie-zhen.html">変な写真</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/book.html">book</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/apache.html">apache</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/oming-qian-com.html">お名前.com</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/macbook.html">macbook</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/xfs.html">xfs</a>
-    </li>
-    <li class="list-group-item tag-4">
       <a href="https://igawa.io/tag/sony.html">sony</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/hdd.html">HDD</a>
+      <a href="https://igawa.io/tag/fedora11.html">Fedora11</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/customize.html">customize</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/timemachine.html">timemachine</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/vagrant.html">vagrant</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/apache.html">apache</a>
     </li>
     <li class="list-group-item tag-4">
       <a href="https://igawa.io/tag/camera.html">camera</a>
@@ -957,19 +959,64 @@ height="1"}こちらから</a>どうぞ。</p>
       <a href="https://igawa.io/tag/atsupudeto.html">アップデート</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/nex-5nd.html">nex-5nd</a>
+      <a href="https://igawa.io/tag/lift.html">lift</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/lift.html">lift</a>
+      <a href="https://igawa.io/tag/rpm.html">rpm</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/shi-shi.html">仕事</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/book.html">book</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/nexus7.html">nexus7</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/vim.html">vim</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/firefox.html">Firefox</a>
     </li>
     <li class="list-group-item tag-4">
       <a href="https://igawa.io/tag/gps.html">GPS</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/customize.html">customize</a>
+      <a href="https://igawa.io/tag/oming-qian-com.html">お名前.com</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/rpm.html">rpm</a>
+      <a href="https://igawa.io/tag/uroad-7000.html">UROAD-7000</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/bian-naxie-zhen.html">変な写真</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/nex-5nd.html">nex-5nd</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/coreserverjp.html">coreserver.jp</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/ipad2.html">ipad2</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/hdd.html">HDD</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/gadget.html">gadget</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/macbook.html">macbook</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/sabaguan-li.html">サーバ管理</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/gmail.html">Gmail</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/saba.html">サーバ</a>
     </li>
   </ul>
 </li>
