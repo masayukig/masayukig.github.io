@@ -5,9 +5,6 @@
 :date: 2017-11-26
 :Status: published
 
-Switched my blog to igawa.io
-============================
-
 I changed my blog to my original domain. My blogs were split to some
 different domains due to my laziness. So I decided to merge them.
 

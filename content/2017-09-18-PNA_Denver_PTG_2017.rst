@@ -5,9 +5,6 @@
 :date: 2017-09-18
 :Status: published
 
-Retrospective for PTG in Denver 2017
-------------------------------------
-
 I'd like to run a retrospective myself against the PTG in Denver, briefly.
 
 Positive
