@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Sun, 26 Nov 2017 00:00:00 +0900</lastBuildDate><item><title>Switched my blog to igawa.io</title><link>https://igawa.io/posts/2017/11/migrated-my-blog-to-igawaio/</link><description>&lt;div class="section" id="switched-my-blog-to-igawa-io"&gt;
-&lt;h2&gt;Switched my blog to igawa.io&lt;/h2&gt;
-&lt;p&gt;I changed my blog to my original domain. My blogs were split to some
+<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Sun, 26 Nov 2017 00:00:00 +0900</lastBuildDate><item><title>Switched my blog to igawa.io</title><link>https://igawa.io/posts/2017/11/migrated-my-blog-to-igawaio/</link><description>&lt;p&gt;I changed my blog to my original domain. My blogs were split to some
 different domains due to my laziness. So I decided to merge them.&lt;/p&gt;
 &lt;p&gt;I was trying to change it to wordpress.com first. But it's not my
-taste :-p So, I …&lt;/p&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Sun, 26 Nov 2017 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:igawa.io,2017-11-26:/posts/2017/11/migrated-my-blog-to-igawaio/</guid><category>oss</category><category>blog</category></item><item><title>Retrospective for PTG in Denver 2017</title><link>https://igawa.io/posts/2017/09/retrospective-denver-ptg-2017/</link><description>&lt;div class="section" id="retrospective-for-ptg-in-denver-2017"&gt;
-&lt;h2&gt;Retrospective for PTG in Denver 2017&lt;/h2&gt;
-&lt;p&gt;I'd like to run a retrospective myself against the PTG in Denver, briefly.&lt;/p&gt;
+taste :-p So, I decided to use &lt;a class="reference external" href="https://github.com/getpelican/pelican"&gt;pelican&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I actually …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Sun, 26 Nov 2017 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:igawa.io,2017-11-26:/posts/2017/11/migrated-my-blog-to-igawaio/</guid><category>oss</category><category>blog</category></item><item><title>Retrospective for PTG in Denver 2017</title><link>https://igawa.io/posts/2017/09/retrospective-denver-ptg-2017/</link><description>&lt;p&gt;I'd like to run a retrospective myself against the PTG in Denver, briefly.&lt;/p&gt;
 &lt;div class="section" id="positive"&gt;
-&lt;h3&gt;Positive&lt;/h3&gt;
+&lt;h2&gt;Positive&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;keep to have conversation with QA and the other people&lt;/li&gt;
 &lt;li&gt;got new conversation with QA and some people&lt;/li&gt;
 &lt;li&gt;had a lot of fun time in a social meeting&lt;/li&gt;
-&lt;li&gt;(almost) only …&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Mon, 18 Sep 2017 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:igawa.io,2017-09-18:/posts/2017/09/retrospective-denver-ptg-2017/</guid><category>work</category><category>oss</category><category>openstack</category><category>development</category><category>conference</category><category>ptg</category></item><item><title>初めてのOpenStackリポジトリ追加</title><link>https://igawa.io/posts/2016/12/adding-a-new-repo-to-openstack/</link><description>&lt;p&gt;これは、 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; のエントリです。&lt;/p&gt;
+&lt;li&gt;(almost) only one pub was very convenient :)&lt;/li&gt;
+&lt;li&gt;got …&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Mon, 18 Sep 2017 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:igawa.io,2017-09-18:/posts/2017/09/retrospective-denver-ptg-2017/</guid><category>work</category><category>oss</category><category>openstack</category><category>development</category><category>conference</category><category>ptg</category></item><item><title>初めてのOpenStackリポジトリ追加</title><link>https://igawa.io/posts/2016/12/adding-a-new-repo-to-openstack/</link><description>&lt;p&gt;これは、 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; のエントリです。&lt;/p&gt;
 &lt;p&gt;先日、OpenStack に新たなリポジトリを追加したので、そのときに感じたことや経験を共有してみたいと思います。&lt;/p&gt;
 &lt;div class="section" id="id1"&gt;
 &lt;h2&gt;ナニを追加したのか？&lt;/h2&gt;
