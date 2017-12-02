@@ -1,4 +1,11 @@
-Migrated my blog to igawa.io
+:title: Switched my blog to igawa.io
+:slug: migrated-my-blog-to-igawaio
+:tags: oss, blog
+:category: Misc
+:date: 2017-11-26
+:Status: published
+
+Switched my blog to igawa.io
 ============================
 
 I changed my blog to my original domain. My blogs were split to some
