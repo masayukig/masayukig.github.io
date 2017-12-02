@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/all.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2017-11-26T00:00:00+09:00</updated><entry><title>Migrated my blog to igawa.io</title><link href="https://igawa.io/posts/2017/11/migrated-my-blog-to-igawaio/" rel="alternate"></link><published>2017-11-26T00:00:00+09:00</published><updated>2017-11-26T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-11-26:/posts/2017/11/migrated-my-blog-to-igawaio/</id><summary type="html">&lt;p&gt;I changed my blog to my original domain. My blogs were split to some
+<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/all.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2017-11-26T00:00:00+09:00</updated><entry><title>Switched my blog to igawa.io</title><link href="https://igawa.io/posts/2017/11/migrated-my-blog-to-igawaio/" rel="alternate"></link><published>2017-11-26T00:00:00+09:00</published><updated>2017-11-26T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-11-26:/posts/2017/11/migrated-my-blog-to-igawaio/</id><summary type="html">&lt;div class="section" id="switched-my-blog-to-igawa-io"&gt;
+&lt;h2&gt;Switched my blog to igawa.io&lt;/h2&gt;
+&lt;p&gt;I changed my blog to my original domain. My blogs were split to some
 different domains due to my laziness. So I decided to merge them.&lt;/p&gt;
 &lt;p&gt;I was trying to change it to wordpress.com first. But it's not my
-taste :-p So, I decided to use &lt;a class="reference external" href="https://github.com/getpelican/pelican"&gt;pelican&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I actually …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I changed my blog to my original domain. My blogs were split to some
+taste :-p So, I …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="switched-my-blog-to-igawa-io"&gt;
+&lt;h2&gt;Switched my blog to igawa.io&lt;/h2&gt;
+&lt;p&gt;I changed my blog to my original domain. My blogs were split to some
 different domains due to my laziness. So I decided to merge them.&lt;/p&gt;
 &lt;p&gt;I was trying to change it to wordpress.com first. But it's not my
 taste :-p So, I decided to use &lt;a class="reference external" href="https://github.com/getpelican/pelican"&gt;pelican&lt;/a&gt;.&lt;/p&gt;
@@ -28,7 +31,8 @@ write the posts in the near future.&lt;/p&gt;
 &lt;p&gt;I really like this pelican blog system. But only one thing is that
 editor. I'd like to use text editors to write blog posts such as vim
 or emacs but they aren't on my smartphone...&lt;/p&gt;
-</content></entry><entry><title>Retrospective for PTG in Denver 2017</title><link href="https://igawa.io/posts/2017/09/retrospective-denver-ptg-2017/" rel="alternate"></link><published>2017-09-18T00:00:00+09:00</published><updated>2017-09-18T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-09-18:/posts/2017/09/retrospective-denver-ptg-2017/</id><summary type="html">&lt;div class="section" id="retrospective-for-ptg-in-denver-2017"&gt;
+&lt;/div&gt;
+</content><category term="oss"></category><category term="blog"></category></entry><entry><title>Retrospective for PTG in Denver 2017</title><link href="https://igawa.io/posts/2017/09/retrospective-denver-ptg-2017/" rel="alternate"></link><published>2017-09-18T00:00:00+09:00</published><updated>2017-09-18T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-09-18:/posts/2017/09/retrospective-denver-ptg-2017/</id><summary type="html">&lt;div class="section" id="retrospective-for-ptg-in-denver-2017"&gt;
 &lt;h2&gt;Retrospective for PTG in Denver 2017&lt;/h2&gt;
 &lt;p&gt;I'd like to run a retrospective myself against the PTG in Denver, briefly.&lt;/p&gt;
 &lt;div class="section" id="positive"&gt;
