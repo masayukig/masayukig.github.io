@@ -2,16 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/all.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2017-12-08T00:00:00+09:00</updated><entry><title>The architecture of this blog</title><link href="https://igawa.io/posts/2017/12/blog-architecture-and-tools/" rel="alternate"></link><published>2017-12-08T00:00:00+09:00</published><updated>2017-12-08T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-12-08:/posts/2017/12/blog-architecture-and-tools/</id><summary type="html">&lt;p&gt;I already &lt;a class="reference external" href="../11/migrated-my-blog-to-igawaio"&gt;posted&lt;/a&gt; about switching this blog to igawa.io. But I think
 it's good to share the information about the architecture of this blog
 for you and especially me :)&lt;/p&gt;
+&lt;div class="section" id="architecture-tools"&gt;
+&lt;h2&gt;Architecture/tools&lt;/h2&gt;
+&lt;div class="section" id="github-pages-cloudflare"&gt;
+&lt;h3&gt;GitHub Pages, CloudFlare&lt;/h3&gt;
 &lt;p&gt;So, currently, this blog uses &lt;a class="reference external" href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; which can be used as a
-free blog system. And I also use …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I already &lt;a class="reference external" href="../11/migrated-my-blog-to-igawaio"&gt;posted&lt;/a&gt; about switching this blog to igawa.io. But I think
+free blog …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;I already &lt;a class="reference external" href="../11/migrated-my-blog-to-igawaio"&gt;posted&lt;/a&gt; about switching this blog to igawa.io. But I think
 it's good to share the information about the architecture of this blog
 for you and especially me :)&lt;/p&gt;
+&lt;div class="section" id="architecture-tools"&gt;
+&lt;h2&gt;Architecture/tools&lt;/h2&gt;
+&lt;div class="section" id="github-pages-cloudflare"&gt;
+&lt;h3&gt;GitHub Pages, CloudFlare&lt;/h3&gt;
 &lt;p&gt;So, currently, this blog uses &lt;a class="reference external" href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; which can be used as a
 free blog system. And I also use it with my custom domain and HTTPS
 with &lt;a class="reference external" href="https://www.cloudflare.com/"&gt;CloudFlare&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pelican"&gt;
+&lt;h3&gt;Pelican&lt;/h3&gt;
 &lt;p&gt;And I'm using &lt;a class="reference external" href="https://github.com/getpelican/pelican"&gt;pelican&lt;/a&gt; as a blog system which is really powerful and
 written by python. That means I can improve and fix if I need it. And
 &lt;a class="reference external" href="https://github.com/masayukig/masayukig.github.io/issues"&gt;I've done it&lt;/a&gt; before.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="branches"&gt;
+&lt;h3&gt;Branches&lt;/h3&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/masayukig/masayukig.github.io/issues"&gt;Here&lt;/a&gt; is
 the repository of this blog. This has two main branches, one
 is master and the other is source. &lt;cite&gt;master&lt;/cite&gt; branch is for managing
@@ -20,29 +34,37 @@ as blog post rst/md, imange, files, etc. So, the two branches are
 completely different. I feel this is a bit weird, but I couldn't find
 a better solution so far. And It seems it works well. I don't need to
 change the workflow.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="retrospective"&gt;
+&lt;h2&gt;Retrospective&lt;/h2&gt;
 &lt;p&gt;I have some feelings with this system.&lt;/p&gt;
+&lt;div class="section" id="positive"&gt;
+&lt;h3&gt;Positive&lt;/h3&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Positive&lt;ul&gt;
 &lt;li&gt;I can use the issues and wiki on github for my ideas for my
 blog. And I can make them open.&lt;/li&gt;
 &lt;li&gt;I can keep and manage my blog posts as simple text files. That
 means I can use git to store the history.&lt;/li&gt;
 &lt;li&gt;I don't need the internet connection to writing blog posts.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="negative"&gt;
+&lt;h3&gt;Negative&lt;/h3&gt;
 &lt;p&gt;But some negative things are,&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Negative&lt;ul&gt;
 &lt;li&gt;I need a text editor to write blog post. Maybe, I can use a web
 browser instead, though.&lt;/li&gt;
 &lt;li&gt;It takes some time to generate HTML files everytime.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="summray"&gt;
+&lt;h2&gt;Summray&lt;/h2&gt;
 &lt;p&gt;Overall, I'm satisfied with this system so far. If you interested in
 like this things, feel free to contact me. And you can see and post an
 issue &lt;a class="reference external" href="https://github.com/masayukig/masayukig.github.io/issues"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
 </content><category term="oss"></category><category term="blog"></category></entry><entry><title>Switched my blog to igawa.io</title><link href="https://igawa.io/posts/2017/11/migrated-my-blog-to-igawaio/" rel="alternate"></link><published>2017-11-26T00:00:00+09:00</published><updated>2017-11-26T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-11-26:/posts/2017/11/migrated-my-blog-to-igawaio/</id><summary type="html">&lt;p&gt;I changed my blog to my original domain. My blogs were split to some
 different domains due to my laziness. So I decided to merge them.&lt;/p&gt;
 &lt;p&gt;I was trying to change it to wordpress.com first. But it's not my
