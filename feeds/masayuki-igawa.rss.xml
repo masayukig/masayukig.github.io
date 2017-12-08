@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Fri, 08 Dec 2017 00:00:00 +0900</lastBuildDate><item><title>The architecture of this blog</title><link>https://igawa.io/posts/2017/12/blog-architecture-and-tools/</link><description>&lt;p&gt;I already &lt;a class="reference external" href="../11/migrated-my-blog-to-igawaio"&gt;posted&lt;/a&gt; about switching this blog to igawa.io. But I think
+<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Fri, 08 Dec 2017 00:00:00 +0900</lastBuildDate><item><title>The architecture of this blog</title><link>https://igawa.io/posts/2017/12/blog-architecture-and-tools/</link><description>&lt;p&gt;I already &lt;a class="reference external" href="../../11/migrated-my-blog-to-igawaio"&gt;posted&lt;/a&gt; about switching this blog to igawa.io. But I think
 it's good to share the information about the architecture of this blog
 for you and especially me :)&lt;/p&gt;
 &lt;div class="section" id="architecture-tools"&gt;
