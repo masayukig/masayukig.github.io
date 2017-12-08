@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Sun, 26 Nov 2017 00:00:00 +0900</lastBuildDate><item><title>Switched my blog to igawa.io</title><link>https://igawa.io/posts/2017/11/migrated-my-blog-to-igawaio/</link><description>&lt;p&gt;I changed my blog to my original domain. My blogs were split to some
+<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Fri, 08 Dec 2017 00:00:00 +0900</lastBuildDate><item><title>The architecture of this blog</title><link>https://igawa.io/posts/2017/12/blog-architecture-and-tools/</link><description>&lt;p&gt;I already &lt;a class="reference external" href="../11/migrated-my-blog-to-igawaio"&gt;posted&lt;/a&gt; about switching this blog to igawa.io. But I think
+it's good to share the information about the architecture of this blog
+for you and especially me :)&lt;/p&gt;
+&lt;p&gt;So, currently, this blog uses &lt;a class="reference external" href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; which can be used as a
+free blog system. And I also use …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Fri, 08 Dec 2017 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:igawa.io,2017-12-08:/posts/2017/12/blog-architecture-and-tools/</guid><category>oss</category><category>blog</category></item><item><title>Switched my blog to igawa.io</title><link>https://igawa.io/posts/2017/11/migrated-my-blog-to-igawaio/</link><description>&lt;p&gt;I changed my blog to my original domain. My blogs were split to some
 different domains due to my laziness. So I decided to merge them.&lt;/p&gt;
 &lt;p&gt;I was trying to change it to wordpress.com first. But it's not my
 taste :-p So, I decided to use &lt;a class="reference external" href="https://github.com/getpelican/pelican"&gt;pelican&lt;/a&gt;.&lt;/p&gt;
