@@ -9,7 +9,7 @@ I already posted_ about switching this blog to igawa.io. But I think
 it's good to share the information about the architecture of this blog
 for you and especially me :)
 
-.. _posted: ../11/migrated-my-blog-to-igawaio
+.. _posted: ../../11/migrated-my-blog-to-igawaio
 
 Architecture/tools
 ==================
