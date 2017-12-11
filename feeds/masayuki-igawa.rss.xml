@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Fri, 08 Dec 2017 00:00:00 +0900</lastBuildDate><item><title>The architecture of this blog</title><link>https://igawa.io/posts/2017/12/blog-architecture-and-tools/</link><description>&lt;p&gt;I already &lt;a class="reference external" href="../../11/migrated-my-blog-to-igawaio"&gt;posted&lt;/a&gt; about switching this blog to igawa.io. But I think
+<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Mon, 11 Dec 2017 00:00:00 +0900</lastBuildDate><item><title>Learning English</title><link>https://igawa.io/posts/2017/12/learning-english/</link><description>&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This is an article for &lt;a class="reference external" href="https://adventar.org/calendars/2628"&gt;鰻 Advent Calendar 2017&lt;/a&gt;. Japanese version is after
+the English version.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr class="docutils" /&gt;
+&lt;p&gt;I need to, have to, must use English because of my work. It's not so
+easy for me. However, I'm thinking my English getting better with my
+effort, gradually. And I also think …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Mon, 11 Dec 2017 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:igawa.io,2017-12-11:/posts/2017/12/learning-english/</guid><category>oss</category><category>blog</category></item><item><title>The architecture of this blog</title><link>https://igawa.io/posts/2017/12/blog-architecture-and-tools/</link><description>&lt;p&gt;I already &lt;a class="reference external" href="../../11/migrated-my-blog-to-igawaio"&gt;posted&lt;/a&gt; about switching this blog to igawa.io. But I think
 it's good to share the information about the architecture of this blog
 for you and especially me :)&lt;/p&gt;
 &lt;div class="section" id="architecture-tools"&gt;

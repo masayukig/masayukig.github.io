@@ -1,5 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/all.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2017-12-08T00:00:00+09:00</updated><entry><title>The architecture of this blog</title><link href="https://igawa.io/posts/2017/12/blog-architecture-and-tools/" rel="alternate"></link><published>2017-12-08T00:00:00+09:00</published><updated>2017-12-08T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-12-08:/posts/2017/12/blog-architecture-and-tools/</id><summary type="html">&lt;p&gt;I already &lt;a class="reference external" href="../../11/migrated-my-blog-to-igawaio"&gt;posted&lt;/a&gt; about switching this blog to igawa.io. But I think
+<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/all.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2017-12-11T00:00:00+09:00</updated><entry><title>Learning English</title><link href="https://igawa.io/posts/2017/12/learning-english/" rel="alternate"></link><published>2017-12-11T00:00:00+09:00</published><updated>2017-12-11T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-12-11:/posts/2017/12/learning-english/</id><summary type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This is an article for &lt;a class="reference external" href="https://adventar.org/calendars/2628"&gt;鰻 Advent Calendar 2017&lt;/a&gt;. Japanese version is after
+the English version.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr class="docutils" /&gt;
+&lt;p&gt;I need to, have to, must use English because of my work. It's not so
+easy for me. However, I'm thinking my English getting better with my
+effort, gradually. And I also think …&lt;/p&gt;</summary><content type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This is an article for &lt;a class="reference external" href="https://adventar.org/calendars/2628"&gt;鰻 Advent Calendar 2017&lt;/a&gt;. Japanese version is after
+the English version.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr class="docutils" /&gt;
+&lt;p&gt;I need to, have to, must use English because of my work. It's not so
+easy for me. However, I'm thinking my English getting better with my
+effort, gradually. And I also think there are some tricks to achieve
+it. So I'm thinking for it.&lt;/p&gt;
+&lt;div class="section" id="tricks"&gt;
+&lt;h2&gt;Tricks&lt;/h2&gt;
+&lt;div class="section" id="use-english-everyday-as-possible"&gt;
+&lt;h3&gt;1. Use English everyday as possible&lt;/h3&gt;
+&lt;p&gt;This is the most important part. To do this, we need to find that fan
+things for you. For me, like the below.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Read and write emails and chat in English&lt;/li&gt;
+&lt;li&gt;Read English articles&lt;/li&gt;
+&lt;li&gt;Write English tweets/blog posts/articles&lt;/li&gt;
+&lt;li&gt;Listen to English podcasts
+* &lt;a class="reference external" href="https://www.allearsenglish.com/"&gt;https://www.allearsenglish.com/&lt;/a&gt;
+* &lt;a class="reference external" href="https://www.gcppodcast.com/"&gt;https://www.gcppodcast.com/&lt;/a&gt;
+* &lt;a class="reference external" href="https://talkpython.fm/"&gt;https://talkpython.fm/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Try to memorize English words
+* &lt;a class="reference external" href="https://iknow.jp"&gt;https://iknow.jp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, I actually don't have opportunities to speak English. I'd like to
+have that. It might be good to have an online English conversation
+class. It's not so expensive, around 5~6,000 JPY/month.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="try-to-have-opportunities-to-have-an-english-communication"&gt;
+&lt;h3&gt;2. Try to have opportunities to have an English communication&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Go to English school
+* There are a lot of online schools&lt;/li&gt;
+&lt;li&gt;Have English speaker friends
+* Not only native speakers but also ESL friends are nice&lt;/li&gt;
+&lt;li&gt;Go abroad
+* Attend conferences, and make friends
+* It might be good to have a chance as business trips rather than
+just sightseeings. Because it force you to use English.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="try-to-move-non-japanese-company"&gt;
+&lt;h3&gt;3. Try to move non-Japanese company&lt;/h3&gt;
+&lt;p&gt;This is very related to the above things. If you move to non-Japanese
+company (like me), you'll get a change to use English more. And your
+English skill should be improved, eventually. Otherwise, you'll need
+to quit the company because of your English skill, it really depends
+on your responsibility, though.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="summary"&gt;
+&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Personally, moving company is really happy decision, so far!(even if
+my previous team was dissapeared :-p). And if you have high skill of
+programming, infrastructure, or like the other IT area skills, that
+should be really helpful for your career.&lt;/p&gt;
+&lt;p&gt;For me, sometimes, it's really hard to understand the discussion in
+many English meeting. But I'll ask someone about the conclusion or
+have a another discussion if we want to have it.&lt;/p&gt;
+&lt;p&gt;I often feel my English and technical skill is not enough,
+actually. But I'm writing this article for the people who are
+hesitating to have an English conversation. And I also think this
+article should encourage and stimulate myself.&lt;/p&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;
+&lt;hr class="docutils" /&gt;
+&lt;p&gt;&lt;em&gt;Japanese version&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;私は、今、仕事で英語を使わなければならない状況です。それは、私の仕事の
+一つが OpenStack の upstream での開発であり、コミュニケーションに英語
+を使うからです。でも、それは、私にとって、そんなに簡単なことではありま
+せんでした。しかし、色々な努力によって、少しずつ改善してきていると思っ
+ています。それには、ちょっとしたコツらしきものがあるように思うので、コ
+コで少し考えてみたいと思います。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;コツ&lt;/h2&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h3&gt;1. 可能な限り英語を毎日使う&lt;/h3&gt;
+&lt;p&gt;これは、最も重要な部分です。これを続けるには、英語学習することの楽しみ・
+意義を見つけることが重要です。楽しくないことは続きません。。今、私がやっ
+ていることとしては、次のようなものがあります。&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Email/Chat を英語で行う&lt;/li&gt;
+&lt;li&gt;英語の記事（ニュース、ブログ, etc.）&lt;/li&gt;
+&lt;li&gt;英語でtweet/blog ポストしたり&lt;/li&gt;
+&lt;li&gt;英語ポッドキャストを聞く
+* &lt;a class="reference external" href="https://www.allearsenglish.com/"&gt;https://www.allearsenglish.com/&lt;/a&gt;
+* &lt;a class="reference external" href="https://www.gcppodcast.com/"&gt;https://www.gcppodcast.com/&lt;/a&gt;
+* &lt;a class="reference external" href="https://talkpython.fm/"&gt;https://talkpython.fm/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;英単語練習
+* &lt;a class="reference external" href="https://iknow.jp"&gt;https://iknow.jp&lt;/a&gt;
+* &lt;a class="reference external" href="https://www.vocabulary.com/"&gt;https://www.vocabulary.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;なので、今の所、英語を話す機会があんまり無い状況です。オンライン英会話
+を受講するとかして、英語を話す機会を増やそうかと思っています。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h3&gt;2. 可能な限り英語でのコミュニケーションをする機会を増やそう&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;英会話学校に行く
+* 今はオンライン英会話スクールもあるので、気軽に始めたいときには有用
+と思います。&lt;/li&gt;
+&lt;li&gt;英語を話す友だちを持つ
+* 必ずしもネイティブである必要はなく、（私たちと同じように）第2言語
+として英語を話す（English as a second language）人でも良い。むしろ、
+インターナショナルな中では、場面ではネイティブスピーカーが少ない場
+合もあり、色々なアクセントに慣れておくことは非常に重要。&lt;/li&gt;
+&lt;li&gt;外国に行く
+* カンファレンスに参加する。そこで友だちが作れればより良い。
+* 観光で行くよりは、出張で行くのがより効果的かもしれない。英語を使う
+ことを強要される確率が高いと思われるので。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h3&gt;3. 外資系企業に転職する&lt;/h3&gt;
+&lt;p&gt;これは、上記にも関連するのですが、もし、外資系に転職したら、より多くの
+英語を使う機会が出てくると思います。そうなれば、英語スキルも向上するは
+ずで、もし、上達しないようなら、やっていけない可能性もありますよね。も
+ちろん、どういうポジション・職務に着くかに依存するところも大きいと思い
+ます。（外資系にいても、ほとんど英語をやらなくても済む場合もあるので。）&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id5"&gt;
+&lt;h2&gt;まとめ&lt;/h2&gt;
+&lt;p&gt;個人的には、今でも、転職したことは良かったと思っています。（私がもとも
+と所属していたチームは解散になってしまっていますが、それでもです。）高
+い技術力、例えばプログラミングスキルとかインフラ技術とかがあれば、外資
+系企業に、エンジニアとして転職する道もあります。ある程度英語ができるこ
+とは求められると思いますが、エンジニアとしてなら、技術力のほうが重要で、
+英語が多少できなくとも、あとは頑張ればなんとかなるんじゃないかと思いま
+す。&lt;/p&gt;
+&lt;p&gt;会議中などでわからなないことがあったら聞き返せばいいし、多くの人がいて
+聞きづらいときには、会議後にもう一度聞いてみるとか色々やり方があるかと
+思います。&lt;/p&gt;
+&lt;p&gt;実のところ、私自身、まだまだ英語スキル・技術的なスキルがまだまだ足りな
+いなと感じる場面が多々あり、英語について、偉そうに話す立場には無いと思っ
+ています。が、それくらいのレベルでも頑張ってる人がいると知ってもらえれ
+ば幸いですし、自分自身への発破も込めて、この記事を書きました。&lt;/p&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="oss"></category><category term="blog"></category></entry><entry><title>The architecture of this blog</title><link href="https://igawa.io/posts/2017/12/blog-architecture-and-tools/" rel="alternate"></link><published>2017-12-08T00:00:00+09:00</published><updated>2017-12-08T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-12-08:/posts/2017/12/blog-architecture-and-tools/</id><summary type="html">&lt;p&gt;I already &lt;a class="reference external" href="../../11/migrated-my-blog-to-igawaio"&gt;posted&lt;/a&gt; about switching this blog to igawa.io. But I think
 it's good to share the information about the architecture of this blog
 for you and especially me :)&lt;/p&gt;
 &lt;div class="section" id="architecture-tools"&gt;
