@@ -23,6 +23,20 @@ Speaking
   * `SUSECon Prague in 2017
     <https://susecon17.smarteventscloud.com/connect/search.ww?searchPhrase=TUT122489>`_ (2017-09-26,29)
 
+* Better Testing Through Statistics
+
+  * `LinuxCon + ContainerCon Japan 2016
+    <https://lcccjapan2016.sched.com/event/7ES2/better-testing-through-statistics-matthew-treinish-hpe>`_
+    (2016-07-13)
+
+* Tempest Scenario Tests: An Introduction for Testing your OpenStack
+  Cloud
+
+  * `OpenStack Summit May 2014 Atlanta
+    <https://openstacksummitmay2014atlanta.sched.com/event/1lhQSmU/tempest-scenario-tests-an-introduction-for-testing-your-openstack-cloud>`_ (2014-05-12)
+  * `LinuxCon + CloudOpen Japan 2014
+    <https://linuxconcloudopenjp2014.sched.com/event/1eo96Ri/tempest-scenario-tests-an-introduction-for-testing-your-openstack-cloud-masayuki-igawa-nec-soft>`_ (2014-05-21)
+
 Writing
 =======
 
@@ -38,3 +52,18 @@ Writing
     <http://superuser.openstack.org/articles/esl-open-source-projects/>`_
     (2017-05-04)
 
+* OpenStackはどのようにテストしているのか？ (in Japanese)
+
+  * `@IT
+    <http://www.atmarkit.co.jp/ait/articles/1501/16/news012.html>`_
+    (2015-01-14)
+
+* OpenStackの品質を保つ仕組みとは？：QA/Infraプロジェクトの最新動向
+  (in Japanese)
+
+  * `ThinkIT <https://thinkit.co.jp/story/2015/11/10/6594>`_
+    (2015-11-10)
+
+* Book: `OpenStackクラウドインテグレーション オープンソースクラウドに
+  よるサービス構築入門 (in Japanese)
+  <https://www.shoeisha.co.jp/book/detail/9784798139784>`_ (2015-01-27)
