@@ -1,5 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done - Masayuki Igawa</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/masayuki-igawa.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2017-12-18T00:00:00+09:00</updated><entry><title>Simple HTTPServer in Python</title><link href="https://igawa.io/posts/2017/12/simple-httpserver-in-python/" rel="alternate"></link><published>2017-12-18T00:00:00+09:00</published><updated>2017-12-18T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-12-18:/posts/2017/12/simple-httpserver-in-python/</id><summary type="html">&lt;div class="admonition note"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done - Masayuki Igawa</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/masayuki-igawa.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2017-12-20T00:00:00+09:00</updated><entry><title>Comparing Online English Lesson</title><link href="https://igawa.io/posts/2017/12/comparing-online-english-lesson/" rel="alternate"></link><published>2017-12-20T00:00:00+09:00</published><updated>2017-12-20T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-12-20:/posts/2017/12/comparing-online-english-lesson/</id><summary type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This is an article for &lt;a class="reference external" href="https://adventar.org/calendars/2628"&gt;鰻 Advent Calendar 2017&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr class="docutils" /&gt;
+&lt;p&gt;I re-realized that I need to practice English more. I can probably
+polish my reading and writing skill with IRC, Twitter, ML, etc. If I
+want to polish my listening and speaking skill, there are some
+resources such as podcasts …&lt;/p&gt;</summary><content type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This is an article for &lt;a class="reference external" href="https://adventar.org/calendars/2628"&gt;鰻 Advent Calendar 2017&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr class="docutils" /&gt;
+&lt;p&gt;I re-realized that I need to practice English more. I can probably
+polish my reading and writing skill with IRC, Twitter, ML, etc. If I
+want to polish my listening and speaking skill, there are some
+resources such as podcasts, self online trainings, etc. And I keep
+listening to some English podcasts everyday. However, speaking part, I
+don't practice that much, actually.&lt;/p&gt;
+&lt;p&gt;So, I started to search the best online English lesson for me. I'll
+share the information here.&lt;/p&gt;
+&lt;div class="section" id="native-teachers"&gt;
+&lt;h2&gt;Native teachers&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.getspokenapp.com/spoken-course-pricing/"&gt;Spoken&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Private English Lessons, Anytime!&lt;/li&gt;
+&lt;li&gt;I can use any chat apps like LINE, WE CHAT, WHATS APP, etc.&lt;/li&gt;
+&lt;li&gt;The lessons are held during 8AM-10PM UTC-5 only. It's 10PM-12PM
+JST.&lt;/li&gt;
+&lt;li&gt;$69.99/month (depends on the frequency of the lesson and
+subscription length)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://promos.italki.com/allearsenglish/"&gt;iTalki&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;An easy way to find a qualified native English teacher fast!&lt;/li&gt;
+&lt;li&gt;This might cost over $100~200/month to get 3 lessons/week.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="non-native-english-teachers"&gt;
+&lt;h2&gt;Non native English teachers&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://nativecamp.net/"&gt;Native Camp&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Mostly, Filipina&lt;/li&gt;
+&lt;li&gt;I can get lesson anytime, like &lt;strong&gt;All we can get&lt;/strong&gt; system.&lt;/li&gt;
+&lt;li&gt;$49/month (very cheap)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://eikaiwa.dmm.com/plan/"&gt;DMM 英会話&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Teachers live in 89 countries.&lt;/li&gt;
+&lt;li&gt;There's a &lt;strong&gt;plus native&lt;/strong&gt; plan. I can get lessons of native
+speakers easier with this plan. But it's not fixed.&lt;/li&gt;
+&lt;li&gt;$50/month (standard plan)&lt;/li&gt;
+&lt;li&gt;$150/month (plus native plan)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="summary"&gt;
+&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;p&gt;I'm not decided to take a course yet. But I'm thinking to try
+&lt;a class="reference external" href="https://www.getspokenapp.com/spoken-course-pricing/"&gt;Spoken&lt;/a&gt; first. The lesson timeslots are bit tight. But I can fit
+that. Hope I will share the result of the lesson :)&lt;/p&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="english"></category><category term="education"></category></entry><entry><title>Simple HTTPServer in Python</title><link href="https://igawa.io/posts/2017/12/simple-httpserver-in-python/" rel="alternate"></link><published>2017-12-18T00:00:00+09:00</published><updated>2017-12-18T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-12-18:/posts/2017/12/simple-httpserver-in-python/</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;This is an article for &lt;a class="reference external" href="https://adventar.org/calendars/2628"&gt;鰻 Advent Calendar 2017&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;

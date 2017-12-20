@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0900</lastBuildDate><item><title>Simple HTTPServer in Python</title><link>https://igawa.io/posts/2017/12/simple-httpserver-in-python/</link><description>&lt;div class="admonition note"&gt;
+<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Wed, 20 Dec 2017 00:00:00 +0900</lastBuildDate><item><title>Comparing Online English Lesson</title><link>https://igawa.io/posts/2017/12/comparing-online-english-lesson/</link><description>&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This is an article for &lt;a class="reference external" href="https://adventar.org/calendars/2628"&gt;鰻 Advent Calendar 2017&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr class="docutils" /&gt;
+&lt;p&gt;I re-realized that I need to practice English more. I can probably
+polish my reading and writing skill with IRC, Twitter, ML, etc. If I
+want to polish my listening and speaking skill, there are some
+resources such as podcasts …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Wed, 20 Dec 2017 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:igawa.io,2017-12-20:/posts/2017/12/comparing-online-english-lesson/</guid><category>english</category><category>education</category></item><item><title>Simple HTTPServer in Python</title><link>https://igawa.io/posts/2017/12/simple-httpserver-in-python/</link><description>&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;This is an article for &lt;a class="reference external" href="https://adventar.org/calendars/2628"&gt;鰻 Advent Calendar 2017&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
