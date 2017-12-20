@@ -19,8 +19,8 @@ resources such as podcasts, self online trainings, etc. And I keep
 listening to some English podcasts everyday. However, speaking part, I
 don't practice that much, actually.
 
-So, I started to search the best online English lesson for me. I'll
-share the information here.
+So, I started to quick scan the best online English lesson for
+me. So, I'll share the information here.
 
 Native teachers
 ===============
@@ -56,6 +56,11 @@ Non native English teachers
   * $50/month (standard plan)
   * $150/month (plus native plan)
 
+* `kakaku.com: Comparison of online English lessons running by Japanese companies
+  <http://eikaiwa.kakaku.com/online_english/>`_ (NOTE: The information are written by Japanese.)
+
+  * This site information is really useful if you wanted to know
+    online English lessons running by Japanese companies.
 
 Summary
 =======
