@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Wed, 20 Dec 2017 00:00:00 +0900</lastBuildDate><item><title>Comparing Online English Lesson</title><link>https://igawa.io/posts/2017/12/comparing-online-english-lesson/</link><description>&lt;div class="admonition note"&gt;
+<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Mon, 25 Dec 2017 00:00:00 +0900</lastBuildDate><item><title>Keeping my contribution during a month</title><link>https://igawa.io/posts/2017/12/keep-contribution-during-a-month/</link><description>&lt;p&gt;I have some feelings about keeping my contribution through a month on
+&lt;a class="reference external" href="https://github.com/masayukig/"&gt;My GitHub profile&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="section" id="what-s-the-tricks"&gt;
+&lt;h2&gt;What's the tricks?&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Have your own github repositories and contribute them.&lt;/li&gt;
+&lt;li&gt;Dump out everything to the github repositories as possible.&lt;/li&gt;
+&lt;li&gt;Forget the limitation. We can commit everything to github repositories even if your blog posts …&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Mon, 25 Dec 2017 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:igawa.io,2017-12-25:/posts/2017/12/keep-contribution-during-a-month/</guid><category>oss</category><category>github</category></item><item><title>Comparing Online English Lesson</title><link>https://igawa.io/posts/2017/12/comparing-online-english-lesson/</link><description>&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;This is an article for &lt;a class="reference external" href="https://adventar.org/calendars/2628"&gt;鰻 Advent Calendar 2017&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
