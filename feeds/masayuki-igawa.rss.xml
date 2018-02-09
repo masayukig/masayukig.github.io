@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Mon, 25 Dec 2017 00:00:00 +0900</lastBuildDate><item><title>Keeping my contribution during a month</title><link>https://igawa.io/posts/2017/12/keep-contribution-during-a-month/</link><description>&lt;p&gt;I have some feelings about keeping my contribution through a month on
+<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Fri, 09 Feb 2018 00:00:00 +0900</lastBuildDate><item><title>Snapper</title><link>https://igawa.io/posts/2018/02/snapper/</link><description>&lt;p&gt;I found that &lt;a class="reference external" href="https://en.opensuse.org/openSUSE:Snapper_Tutorial"&gt;snapper&lt;/a&gt; of openSUSE is
+very useful! When I faced an update trouble, it worked very well
+without any trouble!&lt;/p&gt;
+&lt;p&gt;Basically, we tend to forget to make a  backup everyday every time by
+hand because it's not necessary normally. However, the thing is happen
+all of a sudden …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Fri, 09 Feb 2018 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:igawa.io,2018-02-09:/posts/2018/02/snapper/</guid><category>oss</category><category>opensuse</category></item><item><title>Keeping my contribution during a month</title><link>https://igawa.io/posts/2017/12/keep-contribution-during-a-month/</link><description>&lt;p&gt;I have some feelings about keeping my contribution through a month on
 &lt;a class="reference external" href="https://github.com/masayukig/"&gt;My GitHub profile&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="section" id="what-s-the-tricks"&gt;
 &lt;h2&gt;What's the tricks?&lt;/h2&gt;

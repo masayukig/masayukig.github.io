@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done - Masayuki Igawa</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/masayuki-igawa.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2017-12-25T00:00:00+09:00</updated><entry><title>Keeping my contribution during a month</title><link href="https://igawa.io/posts/2017/12/keep-contribution-during-a-month/" rel="alternate"></link><published>2017-12-25T00:00:00+09:00</published><updated>2017-12-25T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-12-25:/posts/2017/12/keep-contribution-during-a-month/</id><summary type="html">&lt;p&gt;I have some feelings about keeping my contribution through a month on
+<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done - Masayuki Igawa</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/masayuki-igawa.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2018-02-09T00:00:00+09:00</updated><entry><title>Snapper</title><link href="https://igawa.io/posts/2018/02/snapper/" rel="alternate"></link><published>2018-02-09T00:00:00+09:00</published><updated>2018-02-09T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2018-02-09:/posts/2018/02/snapper/</id><summary type="html">&lt;p&gt;I found that &lt;a class="reference external" href="https://en.opensuse.org/openSUSE:Snapper_Tutorial"&gt;snapper&lt;/a&gt; of openSUSE is
+very useful! When I faced an update trouble, it worked very well
+without any trouble!&lt;/p&gt;
+&lt;p&gt;Basically, we tend to forget to make a  backup everyday every time by
+hand because it's not necessary normally. However, the thing is happen
+all of a sudden …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I found that &lt;a class="reference external" href="https://en.opensuse.org/openSUSE:Snapper_Tutorial"&gt;snapper&lt;/a&gt; of openSUSE is
+very useful! When I faced an update trouble, it worked very well
+without any trouble!&lt;/p&gt;
+&lt;p&gt;Basically, we tend to forget to make a  backup everyday every time by
+hand because it's not necessary normally. However, the thing is happen
+all of a sudden!&lt;/p&gt;
+&lt;p&gt;This is the first time to use that tool. It worked very well without
+any trouble. So, I think snapper is a very good feature.&lt;/p&gt;
+&lt;p&gt;By default, openSUSE setups snapper on your root volume w/ btrfs. So
+you can use it like this, We can rollback where you want.&lt;/p&gt;
+&lt;p&gt;To use &lt;tt class="docutils literal"&gt;snapper&lt;/tt&gt;, it's very easy. By default, &lt;tt class="docutils literal"&gt;snapper&lt;/tt&gt; creates
+snapshots every zypper updates. So, if you want to rollback, you just
+need to select the option to rollback on the boot menu. Or you can
+specify a snapshot like this:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ sudo snapper rollback [snapshot number]
+&lt;/pre&gt;
+&lt;p&gt;You can see snapshot numbers by &lt;tt class="docutils literal"&gt;snapshot list&lt;/tt&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to get more information, please refer to &lt;tt class="docutils literal"&gt;man snapper&lt;/tt&gt;,
+&lt;tt class="docutils literal"&gt;snapper &lt;span class="pre"&gt;--help&lt;/span&gt;&lt;/tt&gt; or &lt;a class="reference external" href="https://en.opensuse.org/openSUSE:Snapper_Tutorial"&gt;snapper tutorial page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;
+</content><category term="oss"></category><category term="opensuse"></category></entry><entry><title>Keeping my contribution during a month</title><link href="https://igawa.io/posts/2017/12/keep-contribution-during-a-month/" rel="alternate"></link><published>2017-12-25T00:00:00+09:00</published><updated>2017-12-25T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-12-25:/posts/2017/12/keep-contribution-during-a-month/</id><summary type="html">&lt;p&gt;I have some feelings about keeping my contribution through a month on
 &lt;a class="reference external" href="https://github.com/masayukig/"&gt;My GitHub profile&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="section" id="what-s-the-tricks"&gt;
 &lt;h2&gt;What's the tricks?&lt;/h2&gt;
