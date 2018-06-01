@@ -12,6 +12,7 @@ Introduction
 This is a summary of the OpenStack Summit 2018 Vancouver from the QA
 perspective. I had three subject to attend the summit.
 
+0. To participate the OpenStack Upstream Institute
 1. To attend the forum sessions (mainly QA related) and have
    conversations with QA people
 2. To give talks at the lightning talk and the QA forum session
