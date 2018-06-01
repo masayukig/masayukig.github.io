@@ -5,7 +5,7 @@ Tags: Apple, iPad, ipad2
 Status: published
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [![](https://lh4.googleusercontent.com/-DjtpT99VSgU/TqsdSBEAd2I/AAAAAAAAoWU/N512e1upM-Y/s400/IMG_1202.jpg){width="400" height="300"}](https://picasaweb.google.com/lh/photo/8gHrPRHvlm78tLkx_IPZcw?feat=embedwebsite)
+  [![picture](https://lh4.googleusercontent.com/-DjtpT99VSgU/TqsdSBEAd2I/AAAAAAAAoWU/N512e1upM-Y/s400/IMG_1202.jpg){width="400" height="300"}](https://picasaweb.google.com/lh/photo/8gHrPRHvlm78tLkx_IPZcw?feat=embedwebsite)
   送信者 [for Blog](https://picasaweb.google.com/masayuki.igawa/ForBlog?authuser=0&feat=embedwebsite)
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -17,7 +17,7 @@ Status: published
 当然、モバイルデータ通信は「オフ」に設定しています。  
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [![](https://lh4.googleusercontent.com/-a9obLN-pbTk/TqsjNY3vnTI/AAAAAAAAoXI/6RwjLHfBBvA/s400/IMG_0002.jpg){width="300" height="400"}](https://picasaweb.google.com/lh/photo/e9YASe4zfhWXc0IrcXCEsw?feat=embedwebsite)
+  [![picture](https://lh4.googleusercontent.com/-a9obLN-pbTk/TqsjNY3vnTI/AAAAAAAAoXI/6RwjLHfBBvA/s400/IMG_0002.jpg){width="300" height="400"}](https://picasaweb.google.com/lh/photo/e9YASe4zfhWXc0IrcXCEsw?feat=embedwebsite)
   送信者 [for Blog](https://picasaweb.google.com/masayuki.igawa/ForBlog?authuser=0&feat=embedwebsite)
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -35,7 +35,7 @@ Keyboard (US)](http://store.apple.com/jp/product/MC184LL/B)
 また、液晶画面がむき出しなので、カバーとしては、  
 [iPad Smart Cover](http://store.apple.com/jp/product/MD303FE/A)と、[iPad
 2 PRO GUARD AF HD Grade Anti-Fingerprint・防指紋-プロガード ＡＦ /
-PGAF-IPAD2R](http://www.amazon.co.jp/gp/product/B004TXP34W/ref=as_li_ss_tl?ie=UTF8&tag=hughundercons-22&linkCode=as2&camp=247&creative=7399&creativeASIN=B004TXP34W)![](http://www.assoc-amazon.jp/e/ir?t=hughundercons-22&l=as2&o=9&a=B004TXP34W){width="1"
+PGAF-IPAD2R](http://www.amazon.co.jp/gp/product/B004TXP34W/ref=as_li_ss_tl?ie=UTF8&tag=hughundercons-22&linkCode=as2&camp=247&creative=7399&creativeASIN=B004TXP34W)![picture](http://www.assoc-amazon.jp/e/ir?t=hughundercons-22&l=as2&o=9&a=B004TXP34W){width="1"
 height="1"} あたりの購入を検討しています。
 
 <http://ad.jp.ap.valuecommerce.com/servlet/htmlbanner?sid=2127008&pid=880339669>

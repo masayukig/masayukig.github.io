@@ -5,7 +5,7 @@ Category: Uncategorized
 Status: published
 
 [  
-![](http://images-jp.amazon.com/images/P/4088737741.09.TZZZZZZZ.jpg)  
+![picture](http://images-jp.amazon.com/images/P/4088737741.09.TZZZZZZZ.jpg)  
 DEATH
 NOT第5巻](http://www.amazon.co.jp/exec/obidos/ASIN/4088737741/hughundercons-22/ref=nosim)  
 待望のDEATH NOTE第5巻が発売されました!  
@@ -14,7 +14,7 @@ bk1で買うなら、こっちでどうぞ。
 
 [ＤＥＡＴＨ　ＮＯＴＥ５(ジャンプコミックス)](http://www.bk1.co.jp/cgi-bin/srch/srch_detail.cgi?aid=p-hugh55881&bibid=02517339 "オンライン書店ｂｋ１：ＤＥＡＴＨ　ＮＯＴＥ５(ジャンプコミックス)")
 
-[![](http://www.bk1.co.jp/bookimages/02/51/73/39/025173390000.jpg)](http://www.bk1.co.jp/cgi-bin/srch/srch_detail.cgi?aid=p-hugh55881&bibid=02517339 "オンライン書店ｂｋ１：ＤＥＡＴＨ　ＮＯＴＥ５(ジャンプコミックス)")
+[![picture](http://www.bk1.co.jp/bookimages/02/51/73/39/025173390000.jpg)](http://www.bk1.co.jp/cgi-bin/srch/srch_detail.cgi?aid=p-hugh55881&bibid=02517339 "オンライン書店ｂｋ１：ＤＥＡＴＨ　ＮＯＴＥ５(ジャンプコミックス)")
 
 大場　つぐみ・小畑　健
 

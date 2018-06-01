@@ -14,4 +14,4 @@ v1.1.1:
 ウェブサイトでその問題点等の書き込みをしてくれると嬉しいです♪  
 <http://github.com/masayukig/Simple-Massager/issues>  
 ダウンロードは、以下を読み取っても可能です。  
-![](https://masayukig.files.wordpress.com/2010/10/47385-qrcode.gif)
+![picture](https://masayukig.files.wordpress.com/2010/10/47385-qrcode.gif)

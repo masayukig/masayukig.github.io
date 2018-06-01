@@ -5,7 +5,6 @@ Category: Uncategorized
 Status: published
 
 [  
-![](http://images-jp.amazon.com/images/P/4088736710.09.TZZZZZZZ.jpg)  
 DEATH NOTE 4巻
 (410円)](http://www.amazon.co.jp/exec/obidos/ASIN/4088736710/hughundercons-22/ref=nosim)
 

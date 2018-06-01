@@ -4,7 +4,7 @@ Author: masayukig
 Tags: Android, emobile
 Status: published
 
-[![](http://farm6.static.flickr.com/5162/5359055485_04cd25ea24.jpg)](http://www.flickr.com/photos/31362181@N08/5359055485/)
+[![picture](http://farm6.static.flickr.com/5162/5359055485_04cd25ea24.jpg)](http://www.flickr.com/photos/31362181@N08/5359055485/)
 
 ドコモのパケット料金が高いので、イー・モバイルを契約しました。  
 端末は[HTC Aria](http://emobile.jp/products/ht/s31ht/)にしました。  

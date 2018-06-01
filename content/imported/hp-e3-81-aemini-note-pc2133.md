@@ -4,9 +4,6 @@ Author: masayukig
 Tags: PC
 Status: published
 
-[![](http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=2127008&pid=877138311){width="1"
-height="1"}HP 2133 Mini-Note
-PC](http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2127008&pid=877138311)  
 
 HP 2133 Mini-Note PC  
 ハイパフォーマンスモデル

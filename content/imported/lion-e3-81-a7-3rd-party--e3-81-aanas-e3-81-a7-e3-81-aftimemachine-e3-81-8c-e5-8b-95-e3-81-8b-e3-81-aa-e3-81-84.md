@@ -6,7 +6,7 @@ Status: published
 
 昨日、Lionにアップデートしましたが、以下の様なエラーがでて  
 Time Machineでバックアップができなくなりました。  
-[![](https://lh5.googleusercontent.com/-eNFciYAVxnk/Tjr6xhXwX5I/AAAAAAAAg6M/p3ABUDEbpv8/s288/5964468227_f23fe1aabe_o.png){width="288"
+[![picture](https://lh5.googleusercontent.com/-eNFciYAVxnk/Tjr6xhXwX5I/AAAAAAAAg6M/p3ABUDEbpv8/s288/5964468227_f23fe1aabe_o.png){width="288"
 height="126"}](https://picasaweb.google.com/lh/photo/4ufmuZEyhHGTyu3bVo7Ysg?feat=embedwebsite)
 
 ググってみたところ、いくつかの情報が得られました。

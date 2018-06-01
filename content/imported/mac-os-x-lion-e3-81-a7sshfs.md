@@ -4,8 +4,6 @@ Author: masayukig
 Tags: Apple, lion, Mac, sshfs
 Status: published
 
-[![](https://lh4.googleusercontent.com/-Urhm5MNOlVs/Tjhnmvp9QUI/AAAAAAAAbe4/ScmmCXfJ4Sw/s288/%2525E3%252582%2525B9%2525E3%252582%2525AF%2525E3%252583%2525AA%2525E3%252583%2525BC%2525E3%252583%2525B3%2525E3%252582%2525B7%2525E3%252583%2525A7%2525E3%252583%252583%2525E3%252583%252588%2525202011-08-03%2525206.08.16.png){width="288"
-height="120"}](https://picasaweb.google.com/lh/photo/icK8B0wsoKpiknOi8Jcw5w?feat=embedwebsite)
 
 Mac OS X
 Lionでsshfsを使おうと思い、portでsshfs-guiインストールを行ったところ、  

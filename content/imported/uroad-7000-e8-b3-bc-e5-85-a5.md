@@ -4,9 +4,7 @@ Author: masayukig
 Tags: ケータイ, UROAD-7000
 Status: published
 
-[![](http://bn.my-affiliate.com/banner.php?s=00058590&p=00100225&bc=LB&url=http%3A%2F%2Fwww.sofmap.com%2Fimages%2Fproduct%2Flarge%2F4560327040197.jpg)  
-UROAD-7000 (WiMAX
-モバイルWiFiルータ)](http://tr.my-affiliate.com/click.php?s=00058590&p=00100225&bc=LB&url=http%3A%2F%2Fwww.sofmap.com%2Fproduct_detail%2Fexec%2F_%2Fsku%3D80014045%2F-%2Fgid%3DPL07030000&hid=)
+UROAD-7000 (WiMAX モバイルWiFiルータ)
 
 というのを購入してみた。  
 上記リンクでは、今のところ2800円で購入できる。  

@@ -4,8 +4,7 @@ Author: masayukig
 Tags: PC
 Status: published
 
-[![](http://lunatic.xrea.jp/mt/archives/DSCN1617-thumb.JPG){width="320"
-height="240"}](http://lunatic.xrea.jp/mt/archives/DSCN1617.html)  
+
 ＰｏｗｅｒＭａｃ Ｇ４を買いました。(今更ながら)  
 中古で49,800円(税込)くらいでした。  
 52,000円の値札がついていたのですが、サイドパネルの爪が折れているらしく、  
