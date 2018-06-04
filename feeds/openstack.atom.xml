@@ -3,38 +3,37 @@
 7にUbuntuをインストールできる&lt;/a&gt;というのをみて、&lt;br&gt;
 「もしかしたらOpenStackも動くかも？！」と思ってやってみたのですが、&lt;/p&gt;
 &lt;p&gt;あえなく撃沈。。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png"&gt;{width="640"
+height="240"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png"&gt;{width="640"
+height="144"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;具体的には、以下のような感じでインストールを行った。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;DevStackのインストール&lt;/li&gt;
+&lt;li&gt;stack.shの実行&lt;/li&gt;
+&lt;li&gt;Horizonの起動を確認&lt;/li&gt;
+&lt;li&gt;Dashboardへアクセス成功(だいぶ動作がとろいが)&lt;/li&gt;
+&lt;li&gt;いきなりDashboardからインスタンス起動&lt;/li&gt;
+&lt;li&gt;→ エラー&lt;/li&gt;
+&lt;li&gt;ログ確認(nova-compute)&lt;/li&gt;
+&lt;li&gt;最終的には起動時に以下の理由(ログ)で、nova-computeの起動に失敗している模様&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- --&gt;
 
-[![picture](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png){width="640"
-height="240"}](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png)
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;2013-01-02 06:10:42 TRACE nova libvirtError: internal error Cannot find suitable emulator for armv7l
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png){width="640"
-height="144"}](https://masayukig.files.wordpress.com/2013/01 …&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://wiki.ubuntu.com/Nexus7/Installation"&gt;Nexus
+&lt;p&gt;ARM＆libvirtdの対応が行われていないらしい。&lt;br&gt;
+libvirtのソースも多少読んだが、大枠の構造を理解してないので直せる力量をつけるにはまだまだ時間が掛かりそう。&lt;/p&gt;
+&lt;p&gt;このままだとさすがにNexus7使いづらいので …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://wiki.ubuntu.com/Nexus7/Installation"&gt;Nexus
 7にUbuntuをインストールできる&lt;/a&gt;というのをみて、&lt;br&gt;
 「もしかしたらOpenStackも動くかも？！」と思ってやってみたのですが、&lt;/p&gt;
 &lt;p&gt;あえなく撃沈。。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png){width="640"
-height="240"}](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png){width="640"
-height="144"}](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png"&gt;{width="640"
+height="240"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png"&gt;{width="640"
+height="144"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;具体的には、以下のような感じでインストールを行った。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;DevStackのインストール&lt;/li&gt;
@@ -57,22 +56,8 @@ libvirtのソースも多少読んだが、大枠の構造を理解してない�
 &lt;p&gt;このままだとさすがにNexus7使いづらいので、&lt;a href="https://wiki.ubuntu.com/Nexus7/Installation#Having_both_Android_and_Ubuntu_installed_for_dual_boot"&gt;Dual
 Boot&lt;/a&gt;できるようにしてから&lt;br&gt;
 再挑戦しようとおもいます。&lt;/p&gt;</content><category term="nexus7"></category></entry><entry><title>Mac に vagrant+devstack を入れてみる - その２ #openstack #devstack #vagrant</title><link href="https://igawa.io/posts/2012/10/mac-ni-vagrantdevstack-woru-retemiru-sono2-openstack-devstack-vagrant/" rel="alternate"></link><published>2012-10-04T21:13:00+09:00</published><updated>2012-10-04T21:13:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-10-04:/posts/2012/10/mac-ni-vagrantdevstack-woru-retemiru-sono2-openstack-devstack-vagrant/</id><summary type="html">&lt;h2&gt;続き&lt;/h2&gt;
-&lt;div&gt;
-
-無事ダウンロードは終了し、VMも起動したが、NFSでマウントできないってエラーが
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-発生。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
+&lt;p&gt;無事ダウンロードは終了し、VMも起動したが、NFSでマウントできないってエラーが&lt;/p&gt;
+&lt;p&gt;発生。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[vagrant] Downloading box: http://dl.dropbox.com/u/1537815/precise64.box
 [vagrant] Extracting box...
 [vagrant] Verifying box...
@@ -80,22 +65,8 @@ Boot&lt;/a&gt;できるようにしてから&lt;br&gt;
 [default] Importing base box &amp;#39;precise&amp;#39;...
 [default] The guest additions on this VM do not match the install version of
 VirtualBox! This may cause …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;続き&lt;/h2&gt;
-&lt;div&gt;
-
-無事ダウンロードは終了し、VMも起動したが、NFSでマウントできないってエラーが
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-発生。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
+&lt;p&gt;無事ダウンロードは終了し、VMも起動したが、NFSでマウントできないってエラーが&lt;/p&gt;
+&lt;p&gt;発生。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[vagrant] Downloading box: http://dl.dropbox.com/u/1537815/precise64.box
 [vagrant] Extracting box...
 [vagrant] Verifying box...
@@ -189,112 +160,42 @@ output above. Please fix your recipes so that they properly complete.
 &lt;p&gt;と、エラー終了orz.. 道のりは長そうだ。&lt;/p&gt;</content><category term="Mac"></category><category term="vagrant"></category></entry><entry><title>Mac に vagrant+devstack を入れてみる - その１ #openstack #devstack #vagrant</title><link href="https://igawa.io/posts/2012/10/mac-ni-vagrantdevstack-woru-retemiru-sono1-openstack-devstack-vagrant/" rel="alternate"></link><published>2012-10-03T15:06:00+09:00</published><updated>2012-10-03T15:06:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-10-03:/posts/2012/10/mac-ni-vagrantdevstack-woru-retemiru-sono1-openstack-devstack-vagrant/</id><summary type="html">&lt;h2&gt;何するのか?&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://github.com/bcwaldon/vagrant_devstack"&gt;vagrant_devstack&lt;/a&gt; っていうのを使って、vagrant+devstack
 という素敵な環境を、&lt;/p&gt;
-&lt;div&gt;
-
-Mac OS Mountain Lion(10.8.2)に 作ってみる。  
-一応、vagrant\_devstackのREADMEには、Macに対する言及があるので、  
-できるんじゃないかと妄想。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-はじめに
---------
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-まずは、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;https://github.com/bcwaldon/vagrant_devstack&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-のREADMEにしたがって、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-1.  Virtualboxインストール
-2.  gem update --system
-3.  gem install vagrant
-
-&lt;div&gt;
-
-を行った。。。。
-困ったこと発生
---------------
-
-が、「3.」で問題発生。
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
+&lt;p&gt;Mac OS Mountain Lion(10.8.2)に 作ってみる。&lt;br&gt;
+一応、vagrant_devstackのREADMEには、Macに対する言及があるので、&lt;br&gt;
+できるんじゃないかと妄想。&lt;/p&gt;
+&lt;h2&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;まずは、&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/bcwaldon/vagrant_devstack"&gt;https://github.com/bcwaldon/vagrant_devstack&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;のREADMEにしたがって、&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Virtualboxインストール&lt;/li&gt;
+&lt;li&gt;gem update --system&lt;/li&gt;
+&lt;li&gt;gem install vagrant&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;を行った。。。。
+困ったこと発生&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;が、「3.」で問題発生。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;% gem install vagrant  &lt;/span&gt;
-&lt;span class="n"&gt;Fetching&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;archive&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;minitar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;何するのか?&lt;/h2&gt;
+&lt;span class="n"&gt;Fetching&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;archive&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;minitar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="n"&gt;gem …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;何するのか?&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://github.com/bcwaldon/vagrant_devstack"&gt;vagrant_devstack&lt;/a&gt; っていうのを使って、vagrant+devstack
 という素敵な環境を、&lt;/p&gt;
-&lt;div&gt;
-
-Mac OS Mountain Lion(10.8.2)に 作ってみる。  
-一応、vagrant\_devstackのREADMEには、Macに対する言及があるので、  
-できるんじゃないかと妄想。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-はじめに
---------
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-まずは、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;https://github.com/bcwaldon/vagrant_devstack&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-のREADMEにしたがって、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-1.  Virtualboxインストール
-2.  gem update --system
-3.  gem install vagrant
-
-&lt;div&gt;
-
-を行った。。。。
-困ったこと発生
---------------
-
-が、「3.」で問題発生。
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
+&lt;p&gt;Mac OS Mountain Lion(10.8.2)に 作ってみる。&lt;br&gt;
+一応、vagrant_devstackのREADMEには、Macに対する言及があるので、&lt;br&gt;
+できるんじゃないかと妄想。&lt;/p&gt;
+&lt;h2&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;まずは、&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/bcwaldon/vagrant_devstack"&gt;https://github.com/bcwaldon/vagrant_devstack&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;のREADMEにしたがって、&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Virtualboxインストール&lt;/li&gt;
+&lt;li&gt;gem update --system&lt;/li&gt;
+&lt;li&gt;gem install vagrant&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;を行った。。。。
+困ったこと発生&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;が、「3.」で問題発生。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;% gem install vagrant  &lt;/span&gt;
 &lt;span class="n"&gt;Fetching&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;archive&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;minitar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="c"&gt;%)&lt;/span&gt;
 &lt;span class="n"&gt;Fetching&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;4.&lt;/span&gt;&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="c"&gt;%)&lt;/span&gt;
@@ -310,41 +211,20 @@ Mac OS Mountain Lion(10.8.2)に 作ってみる。
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div&gt;
-
-と、こんな感じのエラーが出力され、インストール出来ない。
-解決策
-------
-
-ググってみると、
-
-**[【Mac】【RubyGems】/usr/bin/gcc-4.2
-がない！](http://loveless-ainakimono.seesaa.net/article/232323709.html)**
-
-&lt;div class="p1"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="p1"&gt;
-
-という記事を見つけたので、それに習って、以下のようにシンボリックリンクを
-
-&lt;/div&gt;
-
-&lt;div class="p1"&gt;
-
-張ってみました。
-
-&lt;/div&gt;
-
+&lt;p&gt;と、こんな感じのエラーが出力され、インストール出来ない。
+解決策&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;ググってみると、&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://loveless-ainakimono.seesaa.net/article/232323709.html"&gt;【Mac】【RubyGems】/usr/bin/gcc-4.2
+がない！&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;という記事を見つけたので、それに習って、以下のようにシンボリックリンクを&lt;/p&gt;
+&lt;p&gt;張ってみました。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;% sudo ln -s /usr/bin/llvm-gcc-4.2 /usr/bin/gcc-4.2&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="p1"&gt;
-
-結果、
-    % gem install vagrant                              
+&lt;p&gt;結果、
+    % gem install vagrant                            &lt;br&gt;
     Building native extensions.  This could take a while...
     Fetching: log4r-1.1.10.gem (100%)
     Fetching: net-ssh-2.2.2.gem (100%)
@@ -355,17 +235,9 @@ Mac OS Mountain Lion(10.8.2)に 作ってみる。
     Successfully installed net-ssh-2.2.2
     Successfully installed net-scp-1.0.4
     Successfully installed vagrant-1.0.5
-    5 gems installed
-
-っていうように先に進めました。
-
-ようやく本番
-------------
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
+    5 gems installed&lt;/p&gt;
+&lt;p&gt;っていうように先に進めました。&lt;/p&gt;
+&lt;h2&gt;ようやく本番&lt;/h2&gt;
 &lt;p&gt;ようやく、本来やりたかったところに入れます。&lt;/p&gt;
 &lt;p&gt;で、更に、マニュアルに従い、&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone http://github.com/bcwaldon/vagrant_devstack.git

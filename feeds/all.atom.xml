@@ -1130,86 +1130,37 @@ testr run --parallel tempest.api.compute.servers.test_servers_negative.ServersNe
 一番目の方法では、全てのテストが実行されます。環境にも依存しますが、だいたい１時間程度はかかると思っておいたほうが良いでしょう。&lt;br&gt;
 二番目の方法では、指定したテストが実行されます。なおここは正規表現が使えるようです。&lt;/p&gt;
 &lt;p&gt;以下、実行例です。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png)](https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png)
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-一つのテストが3.512秒で実行されて、成功したことがわかります。
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一つのテストが3.512秒で実行されて、成功したことがわかります。&lt;/p&gt;
 &lt;p&gt;コレ以外にも、「run_tempest.sh」「tox」を使って実行する方法も示されていますので、それらを使ってみましょう。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2014/12/20ebc-executing_tempest.png)](https://masayukig.files.wordpress.com/2014/12/20ebc-executing_tempest.png)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2014/12/20ebc-executing_tempest.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2014/12/20ebc-executing_tempest.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;まとめ&lt;/h2&gt;
 &lt;p&gt;いずれも、同じテストケースを実行しているので、出力もほぼ同様です。好みに合わせて使い分ければ良いと思います。&lt;br&gt;
 個人的な好みとしては、toxを使ったときの出力がわかりやすく、親しみやすい（フェイスマークもあるし）感じられるので、toxを使っていこうかなと思います。&lt;/p&gt;
-&lt;p&gt;Happy testing!&lt;/p&gt;</content></entry><entry><title>Nexus7 に Android 4.2.2 System Updateが来ていたのでアップデートしてみることにする #nexus7 #android</title><link href="https://igawa.io/posts/2013/02/nexus7-ni-android-422-system-updategalai-teitanodeatsupudetoshitemirukotonisuru-nexus7-android/" rel="alternate"></link><published>2013-02-22T22:48:00+09:00</published><updated>2013-02-22T22:48:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2013-02-22:/posts/2013/02/nexus7-ni-android-422-system-updategalai-teitanodeatsupudetoshitemirukotonisuru-nexus7-android/</id><summary type="html">&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2013/02/22dcb-2013-02-2307-40-41.jpg?w=225){width="300"
-height="400"}](https://masayukig.files.wordpress.com/2013/02/22dcb-2013-02-2307-40-41.jpg)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2013/02/954fb-2013-02-2307-34-35.png?w=300){width="400"
-height="250"}](https://masayukig.files.wordpress.com/2013/02/954fb-2013-02-2307-34-35.png …&lt;/div&gt;</summary><content type="html">&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2013/02/22dcb-2013-02-2307-40-41.jpg?w=225){width="300"
-height="400"}](https://masayukig.files.wordpress.com/2013/02/22dcb-2013-02-2307-40-41.jpg)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2013/02/954fb-2013-02-2307-34-35.png?w=300){width="400"
-height="250"}](https://masayukig.files.wordpress.com/2013/02/954fb-2013-02-2307-34-35.png)
-
-&lt;/div&gt;
-
+&lt;p&gt;Happy testing!&lt;/p&gt;</content></entry><entry><title>Nexus7 に Android 4.2.2 System Updateが来ていたのでアップデートしてみることにする #nexus7 #android</title><link href="https://igawa.io/posts/2013/02/nexus7-ni-android-422-system-updategalai-teitanodeatsupudetoshitemirukotonisuru-nexus7-android/" rel="alternate"></link><published>2013-02-22T22:48:00+09:00</published><updated>2013-02-22T22:48:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2013-02-22:/posts/2013/02/nexus7-ni-android-422-system-updategalai-teitanodeatsupudetoshitemirukotonisuru-nexus7-android/</id><summary type="html">&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/02/22dcb-2013-02-2307-40-41.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/02/22dcb-2013-02-2307-40-41.jpg?w=225"&gt;{width="300"
+height="400"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/02/954fb-2013-02-2307-34-35.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/02/954fb-2013-02-2307-34-35.png?w=300"&gt;{width="400"
+height="250"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;「パフォーマンスの改善、安定性の向上、バグの修正」&lt;br&gt;
 といいことづくめな内容が並んでますｗ&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2013/02/b8765-2013-02-2307-42-46.jpg?w=225){width="240"
-height="320"}](https://masayukig.files.wordpress.com/2013/02/b8765-2013-02-2307-42-46.jpg)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-アップグレードは特に問題なく進み、
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2013/02/f3d5e-2013-02-2307-46-24.png?w=188){width="200"
-height="320"}](https://masayukig.files.wordpress.com/2013/02/f3d5e-2013-02-2307-46-24.png)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/02/b8765-2013-02-2307-42-46.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/02/b8765-2013-02-2307-42-46.jpg?w=225"&gt;{width="240"
+height="320"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;アップグレードは特に問題なく進み、&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/02/f3d5e-2013-02-2307-46-24.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/02/f3d5e-2013-02-2307-46-24.png?w=188"&gt;{width="200"
+height="320"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;アップデート完了。&lt;/p&gt;
+&lt;p&gt;特に問題なく使えています。&lt;br&gt;
+でも、アップデートの効果はいまいち実感できてません...&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/02/22dcb-2013-02-2307-40-41.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/02/22dcb-2013-02-2307-40-41.jpg?w=225"&gt;{width="300"
+height="400"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/02/954fb-2013-02-2307-34-35.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/02/954fb-2013-02-2307-34-35.png?w=300"&gt;{width="400"
+height="250"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「パフォーマンスの改善、安定性の向上、バグの修正」&lt;br&gt;
+といいことづくめな内容が並んでますｗ&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/02/b8765-2013-02-2307-42-46.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/02/b8765-2013-02-2307-42-46.jpg?w=225"&gt;{width="240"
+height="320"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;アップグレードは特に問題なく進み、&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/02/f3d5e-2013-02-2307-46-24.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/02/f3d5e-2013-02-2307-46-24.png?w=188"&gt;{width="200"
+height="320"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;アップデート完了。&lt;/p&gt;
 &lt;p&gt;特に問題なく使えています。&lt;br&gt;
 でも、アップデートの効果はいまいち実感できてません...&lt;/p&gt;</content><category term="Android"></category><category term="nexus7"></category></entry><entry><title>Raspberry Pi購入記＆到着したので、Macを使ってセットアップしてみる #raspberrypi</title><link href="https://igawa.io/posts/2013/02/raspberry-pigou-ru-ji-dao-zhao-shitanode-macwoshi-tsutesetsutoatsupushitemiru-raspberrypi/" rel="alternate"></link><published>2013-02-09T21:51:00+09:00</published><updated>2013-02-09T21:51:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2013-02-09:/posts/2013/02/raspberry-pigou-ru-ji-dao-zhao-shitanode-macwoshi-tsutesetsutoatsupushitemiru-raspberrypi/</id><summary type="html">&lt;h3&gt;履歴&lt;/h3&gt;
@@ -1332,63 +1283,48 @@ ANSI_COLOR=&amp;quot;1;31&amp;quot;
 
 
 &lt;p&gt;Raspberry Pi&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2013/02/5369f-2013-02-1005-21-49.jpg?w=300){width="320"
-height="240"}](https://masayukig.files.wordpress.com/2013/02/5369f-2013-02-1005-21-49.jpg)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/02/5369f-2013-02-1005-21-49.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/02/5369f-2013-02-1005-21-49.jpg?w=300"&gt;{width="320"
+height="240"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;100均で購入したmicroUSBケーブル&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2013/02/99946-2013-02-1005-46-46.jpg?w=300){width="320"
-height="240"}](https://masayukig.files.wordpress.com/2013/02/99946-2013-02-1005-46-46.jpg)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/02/99946-2013-02-1005-46-46.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/02/99946-2013-02-1005-46-46.jpg?w=300"&gt;{width="320"
+height="240"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Raspberry Piが送られてきた時のパッケージ&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2013/02/55100-2013-02-1005-42-50.jpg?w=300){width="320"
-height="240"}](https://masayukig.files.wordpress.com/2013/02/55100-2013-02-1005-42-50.jpg)
-
-&lt;/div&gt;</content><category term="Mac"></category><category term="raspberrypi"></category></entry><entry><title>Challenging OpenStack on Nexus 7... but failed #openstack #nexus7</title><link href="https://igawa.io/posts/2013/01/challenging-openstack-on-nexus-7-but-failed-openstack-nexus7/" rel="alternate"></link><published>2013-01-02T10:47:00+09:00</published><updated>2013-01-02T10:47:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2013-01-02:/posts/2013/01/challenging-openstack-on-nexus-7-but-failed-openstack-nexus7/</id><summary type="html">&lt;p&gt;&lt;a href="https://wiki.ubuntu.com/Nexus7/Installation"&gt;Nexus
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/02/55100-2013-02-1005-42-50.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/02/55100-2013-02-1005-42-50.jpg?w=300"&gt;{width="320"
+height="240"}&lt;/a&gt;&lt;/p&gt;</content><category term="Mac"></category><category term="raspberrypi"></category></entry><entry><title>Challenging OpenStack on Nexus 7... but failed #openstack #nexus7</title><link href="https://igawa.io/posts/2013/01/challenging-openstack-on-nexus-7-but-failed-openstack-nexus7/" rel="alternate"></link><published>2013-01-02T10:47:00+09:00</published><updated>2013-01-02T10:47:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2013-01-02:/posts/2013/01/challenging-openstack-on-nexus-7-but-failed-openstack-nexus7/</id><summary type="html">&lt;p&gt;&lt;a href="https://wiki.ubuntu.com/Nexus7/Installation"&gt;Nexus
 7にUbuntuをインストールできる&lt;/a&gt;というのをみて、&lt;br&gt;
 「もしかしたらOpenStackも動くかも？！」と思ってやってみたのですが、&lt;/p&gt;
 &lt;p&gt;あえなく撃沈。。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png"&gt;{width="640"
+height="240"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png"&gt;{width="640"
+height="144"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;具体的には、以下のような感じでインストールを行った。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;DevStackのインストール&lt;/li&gt;
+&lt;li&gt;stack.shの実行&lt;/li&gt;
+&lt;li&gt;Horizonの起動を確認&lt;/li&gt;
+&lt;li&gt;Dashboardへアクセス成功(だいぶ動作がとろいが)&lt;/li&gt;
+&lt;li&gt;いきなりDashboardからインスタンス起動&lt;/li&gt;
+&lt;li&gt;→ エラー&lt;/li&gt;
+&lt;li&gt;ログ確認(nova-compute)&lt;/li&gt;
+&lt;li&gt;最終的には起動時に以下の理由(ログ)で、nova-computeの起動に失敗している模様&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- --&gt;
 
-[![picture](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png){width="640"
-height="240"}](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png)
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;2013-01-02 06:10:42 TRACE nova libvirtError: internal error Cannot find suitable emulator for armv7l
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png){width="640"
-height="144"}](https://masayukig.files.wordpress.com/2013/01 …&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://wiki.ubuntu.com/Nexus7/Installation"&gt;Nexus
+&lt;p&gt;ARM＆libvirtdの対応が行われていないらしい。&lt;br&gt;
+libvirtのソースも多少読んだが、大枠の構造を理解してないので直せる力量をつけるにはまだまだ時間が掛かりそう。&lt;/p&gt;
+&lt;p&gt;このままだとさすがにNexus7使いづらいので …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://wiki.ubuntu.com/Nexus7/Installation"&gt;Nexus
 7にUbuntuをインストールできる&lt;/a&gt;というのをみて、&lt;br&gt;
 「もしかしたらOpenStackも動くかも？！」と思ってやってみたのですが、&lt;/p&gt;
 &lt;p&gt;あえなく撃沈。。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png){width="640"
-height="240"}](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png){width="640"
-height="144"}](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png"&gt;{width="640"
+height="240"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png"&gt;{width="640"
+height="144"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;具体的には、以下のような感じでインストールを行った。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;DevStackのインストール&lt;/li&gt;
@@ -1510,193 +1446,58 @@ is not correct.&lt;/p&gt;
 know what is the cause.&lt;/p&gt;
 &lt;p&gt;If somebody knows the cause, please let me know that.&lt;/p&gt;</content><category term="ifttt"></category><category term="withings"></category></entry><entry><title>iPhone5キタ!</title><link href="https://igawa.io/posts/2012/10/iphone5kita/" rel="alternate"></link><published>2012-10-07T19:48:00+09:00</published><updated>2012-10-07T19:48:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-10-07:/posts/2012/10/iphone5kita/</id><summary type="html">&lt;h2&gt;iPhone5来たよ&lt;/h2&gt;
 &lt;p&gt;というわけでiPhone5が来ました。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/10/87c64-iphone5allitems.jpeg?w=300){width="400"
-height="300"}](https://masayukig.files.wordpress.com/2012/10/87c64-iphone5allitems.jpeg)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-「プラチナバンドお父さんストラップ」
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-がついて来ましたが、つける場所はありませんｗ 
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/10/11feb-softbanke3818be38289e381aee6aeb5e3839be38299e383bce383abe7aeb1e6ada3e99da2.jpeg?w=225){width="300"
-height="400"}](https://masayukig.files.wordpress …&lt;/div&gt;</summary><content type="html">&lt;h2&gt;iPhone5来たよ&lt;/h2&gt;
-&lt;p&gt;というわけでiPhone5が来ました。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/10/87c64-iphone5allitems.jpeg?w=300){width="400"
-height="300"}](https://masayukig.files.wordpress.com/2012/10/87c64-iphone5allitems.jpeg)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-「プラチナバンドお父さんストラップ」
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-がついて来ましたが、つける場所はありませんｗ 
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/10/11feb-softbanke3818be38289e381aee6aeb5e3839be38299e383bce383abe7aeb1e6ada3e99da2.jpeg?w=225){width="300"
-height="400"}](https://masayukig.files.wordpress.com/2012/10/11feb-softbanke3818be38289e381aee6aeb5e3839be38299e383bce383abe7aeb1e6ada3e99da2.jpeg)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/10/87c64-iphone5allitems.jpeg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/10/87c64-iphone5allitems.jpeg?w=300"&gt;{width="400"
+height="300"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「プラチナバンドお父さんストラップ」&lt;/p&gt;
+&lt;p&gt;がついて来ましたが、つける場所はありませんｗ &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/10/11feb-softbanke3818be38289e381aee6aeb5e3839be38299e383bce383abe7aeb1e6ada3e99da2.jpeg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/10/11feb-softbanke3818be38289e381aee6aeb5e3839be38299e383bce383abe7aeb1e6ada3e99da2.jpeg?w=225"&gt;{width="300"
+height="400"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;佐川急便さんの配達でした。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/10/da168-iphone5onthebox-2.jpeg?w=236){width="313"
-height="400"}](https://masayukig.files.wordpress.com/2012/10/da168-iphone5onthebox-2.jpeg)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/10/da168-iphone5onthebox-2.jpeg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/10/da168-iphone5onthebox-2.jpeg?w=236"&gt;{width="313"
+height="400"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;中はこんな感じ。&lt;/p&gt;
 &lt;p&gt;現在、復元中。。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/10/e0a13-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-10-084-19-55.png?w=300){width="400"
-height="143"}](https://masayukig.files.wordpress.com/2012/10/e0a13-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-10-084-19-55.png)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/10/e0a13-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-10-084-19-55.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/10/e0a13-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-10-084-19-55.png?w=300"&gt;{width="400"
+height="143"}&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;エピソード&lt;/h2&gt;
-&lt;div&gt;
-
-16:00-18:00指定にしていたのですが、当日18時ちょい前に佐川さんからあり、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-その時は電話に出られなかったので、折り返し電話したところ、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-佐川さん「代引で9万ｘ千円となっていますが、大丈夫ですか?」
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-と、よくわからないことを言われたので、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-私「品物は何ですか?」
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-佐川さん「VAIO ほげほげ です」
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-(え、VAIOなんて注文してないよｗと思いつつ)
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-私「私、ほげほげ区ほげx-x-x のものですが」
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-佐川さん「あぁ、まちがってました。今日は配達が多くて16:00-18:00の指定だったのが
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-間に合わないということを伝えたかったんです。あと、15分くらいでつきます。」
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-とのこと。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-まぁ、無事届いて良かったです。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;</content><category term="iPhone"></category><category term="iPhone5"></category></entry><entry><title>Mac に vagrant+devstack を入れてみる - その２ #openstack #devstack #vagrant</title><link href="https://igawa.io/posts/2012/10/mac-ni-vagrantdevstack-woru-retemiru-sono2-openstack-devstack-vagrant/" rel="alternate"></link><published>2012-10-04T21:13:00+09:00</published><updated>2012-10-04T21:13:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-10-04:/posts/2012/10/mac-ni-vagrantdevstack-woru-retemiru-sono2-openstack-devstack-vagrant/</id><summary type="html">&lt;h2&gt;続き&lt;/h2&gt;
-&lt;div&gt;
-
-無事ダウンロードは終了し、VMも起動したが、NFSでマウントできないってエラーが
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-発生。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
+&lt;p&gt;16:00-18:00指定にしていたのですが、当日18時ちょい前に佐川さんからあり、&lt;/p&gt;
+&lt;p&gt;その時は電話に出られなかったので、折り返し電話したところ、&lt;/p&gt;
+&lt;p&gt;佐川さん「代引で9万ｘ千円となっていますが、大丈夫ですか?」&lt;/p&gt;
+&lt;p&gt;と、よくわからないことを言われたので、&lt;/p&gt;
+&lt;p&gt;私「品物は何ですか?」&lt;/p&gt;
+&lt;p&gt;佐川さん「VAIO ほげほげ です」&lt;/p&gt;
+&lt;p&gt;(え、VAIOなんて注文してないよｗと思いつつ)&lt;/p&gt;
+&lt;p&gt;私「私、ほげほげ区ほげx-x-x のものですが」&lt;/p&gt;
+&lt;p&gt;佐川さん …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;iPhone5来たよ&lt;/h2&gt;
+&lt;p&gt;というわけでiPhone5が来ました。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/10/87c64-iphone5allitems.jpeg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/10/87c64-iphone5allitems.jpeg?w=300"&gt;{width="400"
+height="300"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「プラチナバンドお父さんストラップ」&lt;/p&gt;
+&lt;p&gt;がついて来ましたが、つける場所はありませんｗ &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/10/11feb-softbanke3818be38289e381aee6aeb5e3839be38299e383bce383abe7aeb1e6ada3e99da2.jpeg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/10/11feb-softbanke3818be38289e381aee6aeb5e3839be38299e383bce383abe7aeb1e6ada3e99da2.jpeg?w=225"&gt;{width="300"
+height="400"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;佐川急便さんの配達でした。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/10/da168-iphone5onthebox-2.jpeg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/10/da168-iphone5onthebox-2.jpeg?w=236"&gt;{width="313"
+height="400"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;中はこんな感じ。&lt;/p&gt;
+&lt;p&gt;現在、復元中。。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/10/e0a13-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-10-084-19-55.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/10/e0a13-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-10-084-19-55.png?w=300"&gt;{width="400"
+height="143"}&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;エピソード&lt;/h2&gt;
+&lt;p&gt;16:00-18:00指定にしていたのですが、当日18時ちょい前に佐川さんからあり、&lt;/p&gt;
+&lt;p&gt;その時は電話に出られなかったので、折り返し電話したところ、&lt;/p&gt;
+&lt;p&gt;佐川さん「代引で9万ｘ千円となっていますが、大丈夫ですか?」&lt;/p&gt;
+&lt;p&gt;と、よくわからないことを言われたので、&lt;/p&gt;
+&lt;p&gt;私「品物は何ですか?」&lt;/p&gt;
+&lt;p&gt;佐川さん「VAIO ほげほげ です」&lt;/p&gt;
+&lt;p&gt;(え、VAIOなんて注文してないよｗと思いつつ)&lt;/p&gt;
+&lt;p&gt;私「私、ほげほげ区ほげx-x-x のものですが」&lt;/p&gt;
+&lt;p&gt;佐川さん「あぁ、まちがってました。今日は配達が多くて16:00-18:00の指定だったのが&lt;/p&gt;
+&lt;p&gt;間に合わないということを伝えたかったんです。あと、15分くらいでつきます。」&lt;/p&gt;
+&lt;p&gt;とのこと。&lt;/p&gt;
+&lt;p&gt;まぁ、無事届いて良かったです。&lt;/p&gt;</content><category term="iPhone"></category><category term="iPhone5"></category></entry><entry><title>Mac に vagrant+devstack を入れてみる - その２ #openstack #devstack #vagrant</title><link href="https://igawa.io/posts/2012/10/mac-ni-vagrantdevstack-woru-retemiru-sono2-openstack-devstack-vagrant/" rel="alternate"></link><published>2012-10-04T21:13:00+09:00</published><updated>2012-10-04T21:13:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-10-04:/posts/2012/10/mac-ni-vagrantdevstack-woru-retemiru-sono2-openstack-devstack-vagrant/</id><summary type="html">&lt;h2&gt;続き&lt;/h2&gt;
+&lt;p&gt;無事ダウンロードは終了し、VMも起動したが、NFSでマウントできないってエラーが&lt;/p&gt;
+&lt;p&gt;発生。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[vagrant] Downloading box: http://dl.dropbox.com/u/1537815/precise64.box
 [vagrant] Extracting box...
 [vagrant] Verifying box...
@@ -1704,22 +1505,8 @@ height="143"}](https://masayukig.files.wordpress.com/2012/10/e0a13-e382b9e382afe
 [default] Importing base box &amp;#39;precise&amp;#39;...
 [default] The guest additions on this VM do not match the install version of
 VirtualBox! This may cause …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;続き&lt;/h2&gt;
-&lt;div&gt;
-
-無事ダウンロードは終了し、VMも起動したが、NFSでマウントできないってエラーが
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-発生。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
+&lt;p&gt;無事ダウンロードは終了し、VMも起動したが、NFSでマウントできないってエラーが&lt;/p&gt;
+&lt;p&gt;発生。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[vagrant] Downloading box: http://dl.dropbox.com/u/1537815/precise64.box
 [vagrant] Extracting box...
 [vagrant] Verifying box...
@@ -1813,112 +1600,42 @@ output above. Please fix your recipes so that they properly complete.
 &lt;p&gt;と、エラー終了orz.. 道のりは長そうだ。&lt;/p&gt;</content><category term="Mac"></category><category term="vagrant"></category></entry><entry><title>Mac に vagrant+devstack を入れてみる - その１ #openstack #devstack #vagrant</title><link href="https://igawa.io/posts/2012/10/mac-ni-vagrantdevstack-woru-retemiru-sono1-openstack-devstack-vagrant/" rel="alternate"></link><published>2012-10-03T15:06:00+09:00</published><updated>2012-10-03T15:06:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-10-03:/posts/2012/10/mac-ni-vagrantdevstack-woru-retemiru-sono1-openstack-devstack-vagrant/</id><summary type="html">&lt;h2&gt;何するのか?&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://github.com/bcwaldon/vagrant_devstack"&gt;vagrant_devstack&lt;/a&gt; っていうのを使って、vagrant+devstack
 という素敵な環境を、&lt;/p&gt;
-&lt;div&gt;
-
-Mac OS Mountain Lion(10.8.2)に 作ってみる。  
-一応、vagrant\_devstackのREADMEには、Macに対する言及があるので、  
-できるんじゃないかと妄想。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-はじめに
---------
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-まずは、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;https://github.com/bcwaldon/vagrant_devstack&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-のREADMEにしたがって、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-1.  Virtualboxインストール
-2.  gem update --system
-3.  gem install vagrant
-
-&lt;div&gt;
-
-を行った。。。。
-困ったこと発生
---------------
-
-が、「3.」で問題発生。
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
+&lt;p&gt;Mac OS Mountain Lion(10.8.2)に 作ってみる。&lt;br&gt;
+一応、vagrant_devstackのREADMEには、Macに対する言及があるので、&lt;br&gt;
+できるんじゃないかと妄想。&lt;/p&gt;
+&lt;h2&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;まずは、&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/bcwaldon/vagrant_devstack"&gt;https://github.com/bcwaldon/vagrant_devstack&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;のREADMEにしたがって、&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Virtualboxインストール&lt;/li&gt;
+&lt;li&gt;gem update --system&lt;/li&gt;
+&lt;li&gt;gem install vagrant&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;を行った。。。。
+困ったこと発生&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;が、「3.」で問題発生。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;% gem install vagrant  &lt;/span&gt;
-&lt;span class="n"&gt;Fetching&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;archive&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;minitar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;何するのか?&lt;/h2&gt;
+&lt;span class="n"&gt;Fetching&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;archive&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;minitar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="n"&gt;gem …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;何するのか?&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://github.com/bcwaldon/vagrant_devstack"&gt;vagrant_devstack&lt;/a&gt; っていうのを使って、vagrant+devstack
 という素敵な環境を、&lt;/p&gt;
-&lt;div&gt;
-
-Mac OS Mountain Lion(10.8.2)に 作ってみる。  
-一応、vagrant\_devstackのREADMEには、Macに対する言及があるので、  
-できるんじゃないかと妄想。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-はじめに
---------
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-まずは、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;https://github.com/bcwaldon/vagrant_devstack&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-のREADMEにしたがって、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-1.  Virtualboxインストール
-2.  gem update --system
-3.  gem install vagrant
-
-&lt;div&gt;
-
-を行った。。。。
-困ったこと発生
---------------
-
-が、「3.」で問題発生。
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
+&lt;p&gt;Mac OS Mountain Lion(10.8.2)に 作ってみる。&lt;br&gt;
+一応、vagrant_devstackのREADMEには、Macに対する言及があるので、&lt;br&gt;
+できるんじゃないかと妄想。&lt;/p&gt;
+&lt;h2&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;まずは、&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/bcwaldon/vagrant_devstack"&gt;https://github.com/bcwaldon/vagrant_devstack&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;のREADMEにしたがって、&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Virtualboxインストール&lt;/li&gt;
+&lt;li&gt;gem update --system&lt;/li&gt;
+&lt;li&gt;gem install vagrant&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;を行った。。。。
+困ったこと発生&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;が、「3.」で問題発生。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;% gem install vagrant  &lt;/span&gt;
 &lt;span class="n"&gt;Fetching&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;archive&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;minitar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="c"&gt;%)&lt;/span&gt;
 &lt;span class="n"&gt;Fetching&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;4.&lt;/span&gt;&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="c"&gt;%)&lt;/span&gt;
@@ -1934,41 +1651,20 @@ Mac OS Mountain Lion(10.8.2)に 作ってみる。
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div&gt;
-
-と、こんな感じのエラーが出力され、インストール出来ない。
-解決策
-------
-
-ググってみると、
-
-**[【Mac】【RubyGems】/usr/bin/gcc-4.2
-がない！](http://loveless-ainakimono.seesaa.net/article/232323709.html)**
-
-&lt;div class="p1"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="p1"&gt;
-
-という記事を見つけたので、それに習って、以下のようにシンボリックリンクを
-
-&lt;/div&gt;
-
-&lt;div class="p1"&gt;
-
-張ってみました。
-
-&lt;/div&gt;
-
+&lt;p&gt;と、こんな感じのエラーが出力され、インストール出来ない。
+解決策&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;ググってみると、&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://loveless-ainakimono.seesaa.net/article/232323709.html"&gt;【Mac】【RubyGems】/usr/bin/gcc-4.2
+がない！&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;という記事を見つけたので、それに習って、以下のようにシンボリックリンクを&lt;/p&gt;
+&lt;p&gt;張ってみました。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;% sudo ln -s /usr/bin/llvm-gcc-4.2 /usr/bin/gcc-4.2&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="p1"&gt;
-
-結果、
-    % gem install vagrant                              
+&lt;p&gt;結果、
+    % gem install vagrant                            &lt;br&gt;
     Building native extensions.  This could take a while...
     Fetching: log4r-1.1.10.gem (100%)
     Fetching: net-ssh-2.2.2.gem (100%)
@@ -1979,17 +1675,9 @@ Mac OS Mountain Lion(10.8.2)に 作ってみる。
     Successfully installed net-ssh-2.2.2
     Successfully installed net-scp-1.0.4
     Successfully installed vagrant-1.0.5
-    5 gems installed
-
-っていうように先に進めました。
-
-ようやく本番
-------------
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
+    5 gems installed&lt;/p&gt;
+&lt;p&gt;っていうように先に進めました。&lt;/p&gt;
+&lt;h2&gt;ようやく本番&lt;/h2&gt;
 &lt;p&gt;ようやく、本来やりたかったところに入れます。&lt;/p&gt;
 &lt;p&gt;で、更に、マニュアルに従い、&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone http://github.com/bcwaldon/vagrant_devstack.git
@@ -2034,13 +1722,8 @@ vim Vagrantfile
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;結構時間が掛かる。待ってられないので、一眠り。。。。&lt;/p&gt;</content><category term="vagrant"></category></entry><entry><title>Windows8 Release PreviewをVMware Fusion5 on Mac miniにインストールしてパフォーマンスの評価をしてみた</title><link href="https://igawa.io/posts/2012/09/windows8-release-previewwovmware-fusion5-on-mac-mininiinsutorushitepahuomansunoping-jia-woshitemita/" rel="alternate"></link><published>2012-09-26T14:45:00+09:00</published><updated>2012-09-26T14:45:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-09-26:/posts/2012/09/windows8-release-previewwovmware-fusion5-on-mac-mininiinsutorushitepahuomansunoping-jia-woshitemita/</id><summary type="html">&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png?w=300){width="640"
-height="228"}](https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png)
-
-&lt;/div&gt;
-
+&lt;p&gt;結構時間が掛かる。待ってられないので、一眠り。。。。&lt;/p&gt;</content><category term="vagrant"></category></entry><entry><title>Windows8 Release PreviewをVMware Fusion5 on Mac miniにインストールしてパフォーマンスの評価をしてみた</title><link href="https://igawa.io/posts/2012/09/windows8-release-previewwovmware-fusion5-on-mac-mininiinsutorushitepahuomansunoping-jia-woshitemita/" rel="alternate"></link><published>2012-09-26T14:45:00+09:00</published><updated>2012-09-26T14:45:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-09-26:/posts/2012/09/windows8-release-previewwovmware-fusion5-on-mac-mininiinsutorushitepahuomansunoping-jia-woshitemita/</id><summary type="html">&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png?w=300"&gt;{width="640"
+height="228"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;というわけで、題名の通り&lt;br&gt;
 Window8 Release PreviewをVMware Fusion5 on Mac mini(10.8.2)に&lt;br&gt;
 インストールして、パフォーマンスの評価をしてみました。&lt;/p&gt;
@@ -2053,15 +1736,11 @@ Window8 Release PreviewをVMware Fusion5 on Mac mini(10.8.2)に&lt;br&gt;
 &lt;li&gt;使い続けるとどうなるのか?&lt;/li&gt;
 &lt;li&gt;色々とインストールしてもサクサク動くのか?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div&gt;
-
-など、気になる点は多々ありますが …&lt;/div&gt;</summary><content type="html">&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png?w=300){width="640"
-height="228"}](https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png)
-
-&lt;/div&gt;
-
+&lt;p&gt;など、気になる点は多々ありますが。&lt;/p&gt;
+&lt;p&gt;また、スタート画面(?)から「デスクトップ」か「エクスプローラー」を選択すると、&lt;/p&gt;
+&lt;p&gt;まるでWindow7な画面になってしまうのも、ちょっとイタダケナイ感じが&lt;/p&gt;
+&lt;p&gt;しないでもない今日この頃。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png?w=300"&gt;{width="640"
+height="228"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;というわけで、題名の通り&lt;br&gt;
 Window8 Release PreviewをVMware Fusion5 on Mac mini(10.8.2)に&lt;br&gt;
 インストールして、パフォーマンスの評価をしてみました。&lt;/p&gt;
@@ -2074,87 +1753,23 @@ Window8 Release PreviewをVMware Fusion5 on Mac mini(10.8.2)に&lt;br&gt;
 &lt;li&gt;使い続けるとどうなるのか?&lt;/li&gt;
 &lt;li&gt;色々とインストールしてもサクサク動くのか?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div&gt;
-
-など、気になる点は多々ありますが。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-また、スタート画面(?)から「デスクトップ」か「エクスプローラー」を選択すると、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-まるでWindow7な画面になってしまうのも、ちょっとイタダケナイ感じが
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-しないでもない今日この頃。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;</content><category term="windows8"></category></entry><entry><title>細胞採取、送付準備完了。結果は2〜3週間後らしい。</title><link href="https://igawa.io/posts/2012/09/xi-bao-cai-qu-song-fu-zhun-bei-wan-liao-jie-guo-ha2-3zhou-jian-hou-rashii/" rel="alternate"></link><published>2012-09-24T19:39:00+09:00</published><updated>2012-09-24T19:39:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-09-24:/posts/2012/09/xi-bao-cai-qu-song-fu-zhun-bei-wan-liao-jie-guo-ha2-3zhou-jian-hou-rashii/</id><summary type="html">&lt;p&gt;というわけで、&lt;a href="http://br.0r2.info/2012/09/part-1.html"&gt;先日到着した&lt;/a&gt;遺伝子検査キットを使って細胞採取完了しました。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/09/6e6b0-genetictesting.jpg?w=300){width="400"
-height="300"}](https://masayukig.files.wordpress.com/2012/09/6e6b0-genetictesting.jpg)
-
-&lt;/div&gt;
-
+&lt;p&gt;など、気になる点は多々ありますが。&lt;/p&gt;
+&lt;p&gt;また、スタート画面(?)から「デスクトップ」か「エクスプローラー」を選択すると、&lt;/p&gt;
+&lt;p&gt;まるでWindow7な画面になってしまうのも、ちょっとイタダケナイ感じが&lt;/p&gt;
+&lt;p&gt;しないでもない今日この頃。&lt;/p&gt;</content><category term="windows8"></category></entry><entry><title>細胞採取、送付準備完了。結果は2〜3週間後らしい。</title><link href="https://igawa.io/posts/2012/09/xi-bao-cai-qu-song-fu-zhun-bei-wan-liao-jie-guo-ha2-3zhou-jian-hou-rashii/" rel="alternate"></link><published>2012-09-24T19:39:00+09:00</published><updated>2012-09-24T19:39:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-09-24:/posts/2012/09/xi-bao-cai-qu-song-fu-zhun-bei-wan-liao-jie-guo-ha2-3zhou-jian-hou-rashii/</id><summary type="html">&lt;p&gt;というわけで、&lt;a href="http://br.0r2.info/2012/09/part-1.html"&gt;先日到着した&lt;/a&gt;遺伝子検査キットを使って細胞採取完了しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/09/6e6b0-genetictesting.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/09/6e6b0-genetictesting.jpg?w=300"&gt;{width="400"
+height="300"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;うまく採取できたのかどうかよくわかりませんが、&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/09/e6638-img_3576.jpg?w=300){width="400"
-height="300"}](https://masayukig.files.wordpress.com …&lt;/div&gt;</summary><content type="html">&lt;p&gt;というわけで、&lt;a href="http://br.0r2.info/2012/09/part-1.html"&gt;先日到着した&lt;/a&gt;遺伝子検査キットを使って細胞採取完了しました。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/09/6e6b0-genetictesting.jpg?w=300){width="400"
-height="300"}](https://masayukig.files.wordpress.com/2012/09/6e6b0-genetictesting.jpg)
-
-&lt;/div&gt;
-
-&lt;p&gt;うまく採取できたのかどうかよくわかりませんが、&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/09/e6638-img_3576.jpg?w=300){width="400"
-height="300"}](https://masayukig.files.wordpress.com/2012/09/e6638-img_3576.jpg)
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-説明書に書いてあった通り、
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/09/e6638-img_3576.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/09/e6638-img_3576.jpg?w=300"&gt;{width="400"
+height="300"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;説明書に書いてあった通り、&lt;/p&gt;
 &lt;p&gt;両方の頬の内側をそれぞれ20回ずつ回転させて採取したつもり。&lt;/p&gt;
 &lt;p&gt;遺伝子検査サービス申込書にも記入をして、&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/09/68d0d-img_3578.jpg?w=225){width="300"
-height="400"}](https://masayukig.files.wordpress.com/2012/09/68d0d-img_3578.jpg)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/09/68d0d-img_3578.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/09/68d0d-img_3578.jpg?w=225"&gt;{width="300"
+height="400"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;封筒に詰めたので、後は送付するだけ。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/09/d0d09-img_3579.jpg?w=225){width="300"
-height="400"}](https://masayukig.files.wordpress.com/2012/09/d0d09-img_3579.jpg)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/09/d0d09-img_3579.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/09/d0d09-img_3579.jpg?w=225"&gt;{width="300"
+height="400"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;結果は2〜3週間後に到着するらしい。&lt;/p&gt;
 &lt;p&gt;どういう結果になるのか楽しみでもあり、不安でもあり。&lt;/p&gt;
 &lt;p&gt;なお、普通に売られているキット&lt;/p&gt;
@@ -2166,94 +1781,52 @@ height="400"}](https://masayukig.files.wordpress.com/2012/09/d0d09-img_3579.jpg)
 &lt;p&gt;今回、私が利用したのは&lt;br&gt;
 &lt;a href="http://health-mark.jp/"&gt;health mark&lt;/a&gt; というサイトの商品です。&lt;/p&gt;
 &lt;p&gt;これは、51種類というまさに桁違いの種類の遺伝子を調べるとのこと。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/09/b8d3d-skitch-1.png?w=300){width="400"
-height="130"}](https://masayukig.files.wordpress.com/2012/09/b8d3d-skitch-1.png)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/09/b8d3d-skitch-1.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/09/b8d3d-skitch-1.png?w=300"&gt;{width="400"
+height …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;というわけで、&lt;a href="http://br.0r2.info/2012/09/part-1.html"&gt;先日到着した&lt;/a&gt;遺伝子検査キットを使って細胞採取完了しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/09/6e6b0-genetictesting.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/09/6e6b0-genetictesting.jpg?w=300"&gt;{width="400"
+height="300"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;うまく採取できたのかどうかよくわかりませんが、&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/09/e6638-img_3576.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/09/e6638-img_3576.jpg?w=300"&gt;{width="400"
+height="300"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;説明書に書いてあった通り、&lt;/p&gt;
+&lt;p&gt;両方の頬の内側をそれぞれ20回ずつ回転させて採取したつもり。&lt;/p&gt;
+&lt;p&gt;遺伝子検査サービス申込書にも記入をして、&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/09/68d0d-img_3578.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/09/68d0d-img_3578.jpg?w=225"&gt;{width="300"
+height="400"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;封筒に詰めたので、後は送付するだけ。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/09/d0d09-img_3579.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/09/d0d09-img_3579.jpg?w=225"&gt;{width="300"
+height="400"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;結果は2〜3週間後に到着するらしい。&lt;/p&gt;
+&lt;p&gt;どういう結果になるのか楽しみでもあり、不安でもあり。&lt;/p&gt;
+&lt;p&gt;なお、普通に売られているキット&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://genelife.jp/about/lp_metabo.html"&gt;ＧｅｎｅＬｉｆｅ（ジーンライフ）メタボ遺伝子検査キット&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.dhc.co.jp/goods/catop14.jsp"&gt;DHC 遺伝子検査&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;だと5〜6,000円程度で2,3種類の遺伝子を調べるらしいのですが、&lt;/p&gt;
+&lt;p&gt;今回、私が利用したのは&lt;br&gt;
+&lt;a href="http://health-mark.jp/"&gt;health mark&lt;/a&gt; というサイトの商品です。&lt;/p&gt;
+&lt;p&gt;これは、51種類というまさに桁違いの種類の遺伝子を調べるとのこと。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/09/b8d3d-skitch-1.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/09/b8d3d-skitch-1.png?w=300"&gt;{width="400"
+height="130"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;数が多けりゃいいってもんでも無いと思いますが、そこはそれ、そういう気分な&lt;br&gt;
 時もあるでしょうｗ&lt;/p&gt;
 &lt;p&gt;なお、「9/30まで限定50セット9,800円」とのことです。&lt;br&gt;
 (が、「本当に限定50セットなのか?」「本当に9/30までなのか?」はよくわかりませんｗ)&lt;/p&gt;
-&lt;div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-こんなサービス一度も利用したことが無いので、相場はよくわかりませんが、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-サイトの情報を読み進めていくと、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-「パーソナルサプリメントのご提案」
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-というのがあるので、こういうところから収益を上げていくビジネス
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-なのかもしれないなーと思いました。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/09/e29e7-skitch.png?w=300){width="400"
-height="265"}](https://masayukig.files.wordpress.com/2012/09/e29e7-skitch.png)
-
-&lt;/div&gt;
-
-&lt;/div&gt;</content><category term="bio"></category><category term="物欲"></category><category term="生物"></category><category term="DNA"></category><category term="遺伝子"></category><category term="gene"></category><category term="散財"></category></entry><entry><title>OS X Mountain Lionにはしたけれど…</title><link href="https://igawa.io/posts/2012/07/os-x-mountain-lionnihashitakeredo/" rel="alternate"></link><published>2012-07-27T14:27:00+09:00</published><updated>2012-07-27T14:27:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-07-27:/posts/2012/07/os-x-mountain-lionnihashitakeredo/</id><summary type="html">&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/07/cb3ec-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-2723-21-55.png)](https://masayukig.files.wordpress.com/2012/07/cb3ec-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-2723-21-55.png)
-
-&lt;/div&gt;
-
+&lt;p&gt;こんなサービス一度も利用したことが無いので、相場はよくわかりませんが、&lt;/p&gt;
+&lt;p&gt;サイトの情報を読み進めていくと、&lt;/p&gt;
+&lt;p&gt;「パーソナルサプリメントのご提案」&lt;/p&gt;
+&lt;p&gt;というのがあるので、こういうところから収益を上げていくビジネス&lt;/p&gt;
+&lt;p&gt;なのかもしれないなーと思いました。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/09/e29e7-skitch.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/09/e29e7-skitch.png?w=300"&gt;{width="400"
+height="265"}&lt;/a&gt;&lt;/p&gt;</content><category term="bio"></category><category term="物欲"></category><category term="生物"></category><category term="DNA"></category><category term="遺伝子"></category><category term="gene"></category><category term="散財"></category></entry><entry><title>OS X Mountain Lionにはしたけれど…</title><link href="https://igawa.io/posts/2012/07/os-x-mountain-lionnihashitakeredo/" rel="alternate"></link><published>2012-07-27T14:27:00+09:00</published><updated>2012-07-27T14:27:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-07-27:/posts/2012/07/os-x-mountain-lionnihashitakeredo/</id><summary type="html">&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/07/cb3ec-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-2723-21-55.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/07/cb3ec-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-2723-21-55.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;まぁ、大した違いは感じられないわけです…&lt;br&gt;
 &lt;a href="http://www.apple.com/jp/osx/whats-new/features.html"&gt;http://www.apple.com/jp/osx/whats-new/features.html&lt;/a&gt;&lt;br&gt;
 にあるのは、結構細かい点が多く感じ、&lt;br&gt;
 「これがあるからMountain Lionにして良かった!」と感じられるものが、&lt;br&gt;
 私には思い浮かびません。&lt;/p&gt;
 &lt;p&gt;たぶん、「ジワジワ来る」んじゃないか?と、期待してます。&lt;br&gt;
-(勝手な期待ですが)&lt;/p&gt;</summary><content type="html">&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/07/cb3ec-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-2723-21-55.png)](https://masayukig.files.wordpress.com/2012/07/cb3ec-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-2723-21-55.png)
-
-&lt;/div&gt;
-
+(勝手な期待ですが)&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/07/cb3ec-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-2723-21-55.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/07/cb3ec-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-2723-21-55.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;まぁ、大した違いは感じられないわけです…&lt;br&gt;
 &lt;a href="http://www.apple.com/jp/osx/whats-new/features.html"&gt;http://www.apple.com/jp/osx/whats-new/features.html&lt;/a&gt;&lt;br&gt;
 にあるのは、結構細かい点が多く感じ、&lt;br&gt;
@@ -2275,9 +1848,8 @@ height="265"}](https://masayukig.files.wordpress.com/2012/09/e29e7-skitch.png)
 &lt;p&gt;無事(?)、準備は終わったようなので、これから、再起動します。&lt;/p&gt;</content><category term="Mac"></category></entry><entry><title>SonicGardenさんが開発されているMessageleafのサービスをサイトに導入してみた</title><link href="https://igawa.io/posts/2012/07/sonicgardensangakai-fa-sareteirumessageleafnosabisuwosaitonidao-ru-shitemita/" rel="alternate"></link><published>2012-07-23T18:37:00+09:00</published><updated>2012-07-23T18:37:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-07-23:/posts/2012/07/sonicgardensangakai-fa-sareteirumessageleafnosabisuwosaitonidao-ru-shitemita/</id><summary type="html">&lt;p&gt;右下に出ている「MessageLeaf」がそれです。
 入力された内容は、私にしか届きません。&lt;/p&gt;</summary><content type="html">&lt;p&gt;右下に出ている「MessageLeaf」がそれです。
 入力された内容は、私にしか届きません。&lt;/p&gt;</content></entry><entry><title>コボちゃんを購入した! #kobo</title><link href="https://igawa.io/posts/2012/07/kobochiyanwogou-ru-shita-kobo/" rel="alternate"></link><published>2012-07-20T16:59:00+09:00</published><updated>2012-07-20T16:59:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-07-20:/posts/2012/07/kobochiyanwogou-ru-shita-kobo/</id><summary type="html">&lt;p&gt;+-----------------------------------------------------------------------+
-| &lt;div                                                                  |
 | style="border:1px solid;float:left;margin:0;padding:6px 0;text-align: |
-| center;width:320px;"&gt;                                                 |
+| center;width:320px;"&amp;gt;                                                 |
 |                                                                       |
 | &lt;a href="http://hb.afl.rakuten.co.jp/ |
 | hgc/0fd45d5a.fa990b8c.0fd45d5b.cf37d4c8/?pc=http%3a%2f%2fitem.rakuten |
@@ -2285,12 +1857,9 @@ height="265"}](https://masayukig.files.wordpress.com/2012/09/e29e7-skitch.png)
 | =http%3a%2f%2fm.rakuten.co.jp%2frakuten24-kobo%2fi%2f10000042%2f"&gt;![電子ブック楽天＜kobo＞　kobo Touch                                 |
 | 【販売：楽天kobo】【今なら送料無料】](http://hbb.afl.rakuten.co.jp/hgb/?pc=http%3a%2f |
 | %2fthumbnail.image.rakuten.co.jp%2f%400_mall%2frakuten24-kobo%2fcabin |
-| et%2fitem02%2fkobotouch_high.jpg%3f_ex%3d300x300&amp;amp;m=http%3a%2f%2fthumb |
-| nail.image.rakuten.co.jp%2f%400_mall%2frakuten24-kobo%2fcabinet%2fite |
-| m02%2fkobotouch_high …&lt;/a&gt;&lt;/div&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;+-----------------------------------------------------------------------+
-| &lt;div                                                                  |
+| et%2fitem02%2fkobotouch_high.jpg%3f_ex%3d300x300&amp;amp;m=http …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;+-----------------------------------------------------------------------+
 | style="border:1px solid;float:left;margin:0;padding:6px 0;text-align: |
-| center;width:320px;"&gt;                                                 |
+| center;width:320px;"&amp;gt;                                                 |
 |                                                                       |
 | &lt;a href="http://hb.afl.rakuten.co.jp/ |
 | hgc/0fd45d5a.fa990b8c.0fd45d5b.cf37d4c8/?pc=http%3a%2f%2fitem.rakuten |
@@ -2301,9 +1870,8 @@ height="265"}](https://masayukig.files.wordpress.com/2012/09/e29e7-skitch.png)
 | et%2fitem02%2fkobotouch_high.jpg%3f_ex%3d300x300&amp;amp;m=http%3a%2f%2fthumb |
 | nail.image.rakuten.co.jp%2f%400_mall%2frakuten24-kobo%2fcabinet%2fite |
 | m02%2fkobotouch_high.jpg%3f_ex%3d80x80)&lt;/a&gt;     |
-| &lt;div                                                                  |
 | style="font-size:12px;line-height:1.4em;margin:0;padding:2px 6px;text |
-| -align:left;"&gt;                                                        |
+| -align:left;"&amp;gt;                                                        |
 |                                                                       |
 | &lt;a href="http://hb.afl.rakuten.co.jp/hgc/0fd45d5a.fa990b |
 | 8c.0fd45d5b.cf37d4c8/?pc=http%3a%2f%2fitem.rakuten.co.jp%2frakuten24- |
@@ -2312,9 +1880,7 @@ height="265"}](https://masayukig.files.wordpress.com/2012/09/e29e7-skitch.png)
 | 【販売：楽天kobo】【今なら送料無料】&lt;/a&gt;\                       |
 | 価格：7,980円（税込、送料別）                                         |
 |                                                                       |
-| &lt;/div&gt;                                                                |
 |                                                                       |
-| &lt;/div&gt;                                                                |
 +-----------------------------------------------------------------------+&lt;/p&gt;
 &lt;p&gt;楽天のコボちゃんを購入しました!
 今まで持っていたのが、古いKindleだったので、
@@ -2324,185 +1890,46 @@ height="265"}](https://masayukig.files.wordpress.com/2012/09/e29e7-skitch.png)
 自前のPDFやEPUBファイルを、Koboへインポートできない -
 一度再起動する必要があった模様。再起動後は、 適当なディレクトリへ、PDF,
 EPUBを置けば、使用できるようになっている。 以下、各種写真。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/07/3f0a5-dsc02417.jpg?w=300){width="320"
-height="212"}](https://masayukig.files.wordpress.com/2012/07/3f0a5-dsc02417.jpg)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/07/1dd3e-dsc02418.jpg?w=300){width="320"
-height="212"}](https://masayukig.files.wordpress.com/2012/07/1dd3e-dsc02418.jpg)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/07/a2678-dsc02419.jpg?w=300){width="320"
-height="212"}](https://masayukig.files.wordpress.com/2012/07/a2678-dsc02419.jpg)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/07/dae48-dsc02421.jpg?w=300){width="320"
-height="212"}](https://masayukig.files.wordpress.com/2012/07/dae48-dsc02421.jpg)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/07/e11b9-dsc02422.jpg?w=300){width="320"
-height="212"}](https://masayukig.files.wordpress.com/2012/07/e11b9-dsc02422.jpg)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/07/32b76-dsc02423.jpg?w=300){width="320"
-height="212"}](https://masayukig.files.wordpress.com/2012/07/32b76-dsc02423.jpg)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/07/01cb2-dsc02424.jpg?w=300){width="320"
-height="212"}](https://masayukig.files.wordpress.com/2012/07/01cb2-dsc02424.jpg)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/07/beebc-dsc02425.jpg?w=300){width="320"
-height="212"}](https://masayukig.files.wordpress.com/2012/07/beebc-dsc02425.jpg)
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;</content><category term="kobo"></category><category term="rakuten"></category></entry><entry><title>「リーダブルコード」を買った! #readablecode</title><link href="https://igawa.io/posts/2012/07/ridaburukodo-womai-tsuta-readablecode/" rel="alternate"></link><published>2012-07-20T16:42:00+09:00</published><updated>2012-07-20T16:42:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-07-20:/posts/2012/07/ridaburukodo-womai-tsuta-readablecode/</id><summary type="html">&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/07/94f03-dsc02428.jpg?w=300){width="320"
-height="212"}](https://masayukig.files.wordpress.com/2012/07/94f03-dsc02428.jpg)
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-Amazonでは、一時的に在庫切れになっているほどの人気書籍、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-「[リーダブルコード](http://www.oreilly.co.jp/books/9784873115658/)」を買いました。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-でも、まだ、中身は全く読んでいないｗ
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-電子書籍版は2,016円だが、紙書籍を購入した人向けに、  
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/07/3f0a5-dsc02417.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/07/3f0a5-dsc02417.jpg?w=300"&gt;{width="320"
+height="212"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/07/1dd3e-dsc02418.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/07/1dd3e-dsc02418.jpg?w=300"&gt;{width="320"
+height="212"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/07/a2678-dsc02419.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/07/a2678-dsc02419.jpg?w=300"&gt;{width="320"
+height="212"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/07/dae48-dsc02421.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/07/dae48-dsc02421.jpg?w=300"&gt;{width="320"
+height="212"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/07/e11b9-dsc02422.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/07/e11b9-dsc02422.jpg?w=300"&gt;{width="320"
+height="212"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/07/32b76-dsc02423.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/07/32b76-dsc02423.jpg?w=300"&gt;{width="320"
+height="212"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/07/01cb2-dsc02424.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/07/01cb2-dsc02424.jpg?w=300"&gt;{width="320"
+height="212"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/07/beebc-dsc02425.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/07/beebc-dsc02425.jpg?w=300"&gt;{width="320"
+height="212"}&lt;/a&gt;&lt;/p&gt;</content><category term="kobo"></category><category term="rakuten"></category></entry><entry><title>「リーダブルコード」を買った! #readablecode</title><link href="https://igawa.io/posts/2012/07/ridaburukodo-womai-tsuta-readablecode/" rel="alternate"></link><published>2012-07-20T16:42:00+09:00</published><updated>2012-07-20T16:42:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-07-20:/posts/2012/07/ridaburukodo-womai-tsuta-readablecode/</id><summary type="html">&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/07/94f03-dsc02428.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/07/94f03-dsc02428.jpg?w=300"&gt;{width="320"
+height="212"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Amazonでは、一時的に在庫切れになっているほどの人気書籍、&lt;/p&gt;
+&lt;p&gt;「&lt;a href="http://www.oreilly.co.jp/books/9784873115658/"&gt;リーダブルコード&lt;/a&gt;」を買いました。&lt;/p&gt;
+&lt;p&gt;でも、まだ、中身は全く読んでいないｗ&lt;/p&gt;
+&lt;p&gt;電子書籍版は2,016円だが、紙書籍を購入した人向けに、&lt;br&gt;
 安く販売してくれたりする仕組みないかなー。
-&lt;http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=hughundercons-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=4873115655&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;[slideshare id=13563604&amp;amp;w=427&amp;amp;h=356 …&lt;/p&gt;</summary><content type="html">&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/07/94f03-dsc02428.jpg?w=300){width="320"
-height="212"}](https://masayukig.files.wordpress.com/2012/07/94f03-dsc02428.jpg)
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-Amazonでは、一時的に在庫切れになっているほどの人気書籍、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-「[リーダブルコード](http://www.oreilly.co.jp/books/9784873115658/)」を買いました。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-でも、まだ、中身は全く読んでいないｗ
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-電子書籍版は2,016円だが、紙書籍を購入した人向けに、  
+&lt;a href="http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as4&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;ref=ss_til&amp;amp;asins=4873115655"&gt;http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as4&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;ref=ss_til&amp;amp;asins=4873115655 …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/07/94f03-dsc02428.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/07/94f03-dsc02428.jpg?w=300"&gt;{width="320"
+height="212"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Amazonでは、一時的に在庫切れになっているほどの人気書籍、&lt;/p&gt;
+&lt;p&gt;「&lt;a href="http://www.oreilly.co.jp/books/9784873115658/"&gt;リーダブルコード&lt;/a&gt;」を買いました。&lt;/p&gt;
+&lt;p&gt;でも、まだ、中身は全く読んでいないｗ&lt;/p&gt;
+&lt;p&gt;電子書籍版は2,016円だが、紙書籍を購入した人向けに、&lt;br&gt;
 安く販売してくれたりする仕組みないかなー。
-&lt;http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=hughundercons-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=4873115655&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
+&lt;a href="http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as4&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;ref=ss_til&amp;amp;asins=4873115655"&gt;http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as4&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;ref=ss_til&amp;amp;asins=4873115655&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;[slideshare id=13563604&amp;amp;w=427&amp;amp;h=356&amp;amp;fb=0&amp;amp;mw=0&amp;amp;mh=0&amp;amp;style=border-width:
 1px 1px 0; border: 1px solid #CCC; margin-bottom: 5px;&amp;amp;sc=no]&lt;/p&gt;
-&lt;div style="margin-bottom:5px;"&gt;
-
-**[20120706-readablecode](http://www.slideshare.net/kdmsnr/20120706readablecode "20120706-readablecode")**
-from **[Masanori Kado](http://www.slideshare.net/kdmsnr)**
-
-&lt;/div&gt;</content><category term="book"></category></entry><entry><title>FireWire800外付けHDDケース(G-S350SUAB2)を米Amazon.comで購入 #mac #hdd #firewire</title><link href="https://igawa.io/posts/2012/04/firewire800wai-fu-kehddkesug-s350suab2womi-amazoncomdegou-ru-mac-hdd-firewire/" rel="alternate"></link><published>2012-04-28T07:00:00+09:00</published><updated>2012-04-28T07:00:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-04-28:/posts/2012/04/firewire800wai-fu-kehddkesug-s350suab2womi-amazoncomdegou-ru-mac-hdd-firewire/</id><summary type="html">&lt;h3&gt;はじめに&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://www.slideshare.net/kdmsnr/20120706readablecode" title="20120706-readablecode"&gt;20120706-readablecode&lt;/a&gt;&lt;/strong&gt;
+from &lt;strong&gt;&lt;a href="http://www.slideshare.net/kdmsnr"&gt;Masanori Kado&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><category term="book"></category></entry><entry><title>FireWire800外付けHDDケース(G-S350SUAB2)を米Amazon.comで購入 #mac #hdd #firewire</title><link href="https://igawa.io/posts/2012/04/firewire800wai-fu-kehddkesug-s350suab2womi-amazoncomdegou-ru-mac-hdd-firewire/" rel="alternate"></link><published>2012-04-28T07:00:00+09:00</published><updated>2012-04-28T07:00:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-04-28:/posts/2012/04/firewire800wai-fu-kehddkesug-s350suab2womi-amazoncomdegou-ru-mac-hdd-firewire/</id><summary type="html">&lt;h3&gt;はじめに&lt;/h3&gt;
 &lt;p&gt;Mac mini(HDD 500GB)の残り容量が、10GBを下回る様になってきて、&lt;br&gt;
 ちょっと危機感が出てきたので、HDDを増設することにしました。&lt;/p&gt;
 &lt;p&gt;ただ、HDD自体は、別PCについていた1TBのHDDが余っている状況であり、&lt;br&gt;
 それを有効活用したいと思ったので、外付けケースを買うことにしました。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg?w=199){width="212"
-height="320"}](https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg?w=199"&gt;{width="212"
+height="320"}&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;前提&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Macに取り付ける&lt;/li&gt;
@@ -2511,18 +1938,18 @@ height="320"}](https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg)
 &lt;/ol&gt;
 &lt;h3&gt;選択肢&lt;/h3&gt;
 &lt;p&gt;手頃な商品を探していたのですが、「3. 」の条件が結構ハードルが高く、&lt;br&gt;
-選択肢としては …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;はじめに&lt;/h3&gt;
+選択肢としては、以下のようなものでした。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2127008&amp;amp;pid=880926134&amp;amp;vc_url=http%3A%2F%2Fwww.enet-japan.com%2Ffront%2Fcommodity%2F1%2F4936014962484%2F"&gt;&lt;img alt="picture" src="http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=2127008&amp;amp;pid=880926134"&gt;{width="1px"
+    height="1px"}センチュリー CRIS35EUF(2012-04-28現在 9,534円(税込)
+    送料無料)&lt;/a&gt;[&lt;img alt="picture" src="http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=2127008&amp;amp;pid=880926134"&gt;{width="1px"
+    height="1px"}&lt;img alt="picture" src="http://www.enet-japan.com/image/shop/1/commodity/4936014962484.jpg"&gt;](http://ck.jp.ap.valuecommerce …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;h3&gt;はじめに&lt;/h3&gt;
 &lt;p&gt;Mac mini(HDD 500GB)の残り容量が、10GBを下回る様になってきて、&lt;br&gt;
 ちょっと危機感が出てきたので、HDDを増設することにしました。&lt;/p&gt;
 &lt;p&gt;ただ、HDD自体は、別PCについていた1TBのHDDが余っている状況であり、&lt;br&gt;
 それを有効活用したいと思ったので、外付けケースを買うことにしました。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg?w=199){width="212"
-height="320"}](https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg?w=199"&gt;{width="212"
+height="320"}&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;前提&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Macに取り付ける&lt;/li&gt;
@@ -2551,16 +1978,11 @@ height="320"}](https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg)
 値段も1,000円程度しか違いはないので、「2.
 CROSFU3」を国内で購入することでも良かったかもしれません。&lt;/p&gt;
 &lt;h3&gt;どんな感じ？&lt;/h3&gt;
-&lt;div&gt;
-
-注文：2012-04-20 5:40頃(priority international courier というので注文)  
-到着：2012-04-23 11:40頃  
-(不在だったので、実際の受け取りは翌日の夜になりましたが)  
+&lt;p&gt;注文：2012-04-20 5:40頃(priority international courier というので注文)&lt;br&gt;
+到着：2012-04-23 11:40頃&lt;br&gt;
+(不在だったので、実際の受け取りは翌日の夜になりましたが)&lt;br&gt;
 大体まる3日で到着しました！スゴイ！
-今のところ、概ね満足です。
-
-&lt;/div&gt;
-
+今のところ、概ね満足です。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;動作すると、金属フレームがかなり熱を持つ&lt;/li&gt;
 &lt;li&gt;正面の青い電源ボタン兼HDD動作確認ランプが、Macっぽくて良い感じ&lt;/li&gt;
@@ -2674,426 +2096,204 @@ part2(結果編)"&lt;/a&gt;を参照して下さい。&lt;/p&gt;
 さらに、HDD容量2倍以上(200GB)、メモリ512MBアップで、お値段そのままなので、乗り換える価値大と思います。&lt;/p&gt;
 &lt;p&gt;ただし、まだ、サービス開始直後なので、今後、他のVMの使用状況によっては、
 この結果が維持されるとは限らないので、注意が必要と思います。&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://px.a8.net/svt/ejp?a8mat=1O2ZNX+BN58YY+D8Y+C3BAP"&gt;&lt;img alt="picture" height="300" src="http://www20.a8.net/svt/bgt?aid=100916493704&amp;amp;wid=004&amp;amp;eno=01&amp;amp;mid=s00000001717002031000&amp;amp;mc=1" width="300"&gt;&lt;/a&gt;&lt;img alt="picture" height="1" src="http://www16.a8.net/0.gif?a8mat=1O2ZNX+BN58YY+D8Y+C3BAP" width="1"&gt;&lt;/p&gt;</content><category term="さくら"></category><category term="benchmark"></category><category term="unixbench"></category><category term="VPS"></category></entry><entry><title>さくらインターネットから「詫び状」キター</title><link href="https://igawa.io/posts/2012/04/sakuraintanetsutokaracha-bizhuang-kita/" rel="alternate"></link><published>2012-04-02T21:06:00+09:00</published><updated>2012-04-02T21:06:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-04-02:/posts/2012/04/sakuraintanetsutokaracha-bizhuang-kita/</id><summary type="html">&lt;div&gt;
-
-昨日、さくらVPS
-の2Gを申し込んだのですが、うまく申し込めなかったようです。  
-で、(´・ω・\`)な感じだったのですが、昨夜以下のようなメールが来たので、  
-申し込んでみました。
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/04/8d385-apology_from_sakura.png?w=285){width="303"
-height="320"}](https://masayukig.files.wordpress.com/2012/04/8d385-apology_from_sakura.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-で、申し込んだ結果が以下。
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/04/98ba7-sakura_2g_vps.png?w=300){width="320 …&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div&gt;
-
-昨日、さくらVPS
-の2Gを申し込んだのですが、うまく申し込めなかったようです。  
-で、(´・ω・\`)な感じだったのですが、昨夜以下のようなメールが来たので、  
-申し込んでみました。
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/04/8d385-apology_from_sakura.png?w=285){width="303"
-height="320"}](https://masayukig.files.wordpress.com/2012/04/8d385-apology_from_sakura.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-で、申し込んだ結果が以下。
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/04/98ba7-sakura_2g_vps.png?w=300){width="320"
-height="128"}](https://masayukig.files.wordpress.com/2012/04/98ba7-sakura_2g_vps.png)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="http://px.a8.net/svt/ejp?a8mat=1O2ZNX+BN58YY+D8Y+C3BAP"&gt;&lt;img alt="picture" height="300" src="http://www20.a8.net/svt/bgt?aid=100916493704&amp;amp;wid=004&amp;amp;eno=01&amp;amp;mid=s00000001717002031000&amp;amp;mc=1" width="300"&gt;&lt;/a&gt;&lt;img alt="picture" height="1" src="http://www16.a8.net/0.gif?a8mat=1O2ZNX+BN58YY+D8Y+C3BAP" width="1"&gt;&lt;/p&gt;</content><category term="さくら"></category><category term="benchmark"></category><category term="unixbench"></category><category term="VPS"></category></entry><entry><title>さくらインターネットから「詫び状」キター</title><link href="https://igawa.io/posts/2012/04/sakuraintanetsutokaracha-bizhuang-kita/" rel="alternate"></link><published>2012-04-02T21:06:00+09:00</published><updated>2012-04-02T21:06:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-04-02:/posts/2012/04/sakuraintanetsutokaracha-bizhuang-kita/</id><summary type="html">&lt;p&gt;昨日、さくらVPS
+の2Gを申し込んだのですが、うまく申し込めなかったようです。&lt;br&gt;
+で、(´・ω・`)な感じだったのですが、昨夜以下のようなメールが来たので、&lt;br&gt;
+申し込んでみました。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/04/8d385-apology_from_sakura.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/04/8d385-apology_from_sakura.png?w=285"&gt;{width="303"
+height="320"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;で、申し込んだ結果が以下。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/04/98ba7-sakura_2g_vps.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/04/98ba7-sakura_2g_vps.png?w=300"&gt;{width="320"
+height="128"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;上の方は、中途半端な申し込みとなっていて、削除される予定のもの。&lt;br&gt;
 で、下側が今回申し込んだもの。&lt;br&gt;
 IPアドレスが出ているのが、申し込みが最後まで進んだ証拠なんだと思います。&lt;/p&gt;
 &lt;p&gt;無事、新しいサーバへアクセスすることができたので、&lt;br&gt;
-これからOS(Fedora16)を再インストール予定。&lt;/p&gt;
-&lt;/div&gt;</content><category term="sakura"></category><category term="VPS"></category></entry><entry><title>Eye-Fi Pro X2を購入しました。で、オススメの購入方法や、Macでの設定方法について</title><link href="https://igawa.io/posts/2012/03/eye-fi-pro-x2wogou-ru-shimashita-de-osusumenogou-ru-fang-fa-ya-macdenoshe-ding-fang-fa-nitsuite/" rel="alternate"></link><published>2012-03-29T20:50:00+09:00</published><updated>2012-03-29T20:50:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-29:/posts/2012/03/eye-fi-pro-x2wogou-ru-shimashita-de-osusumenogou-ru-fang-fa-ya-macdenoshe-ding-fang-fa-nitsuite/</id><summary type="html">&lt;h2&gt;はじめに&lt;/h2&gt;
+これからOS(Fedora16)を再インストール予定。&lt;/p&gt;</summary><content type="html">&lt;p&gt;昨日、さくらVPS
+の2Gを申し込んだのですが、うまく申し込めなかったようです。&lt;br&gt;
+で、(´・ω・`)な感じだったのですが、昨夜以下のようなメールが来たので、&lt;br&gt;
+申し込んでみました。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/04/8d385-apology_from_sakura.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/04/8d385-apology_from_sakura.png?w=285"&gt;{width="303"
+height="320"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;で、申し込んだ結果が以下。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/04/98ba7-sakura_2g_vps.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/04/98ba7-sakura_2g_vps.png?w=300"&gt;{width="320"
+height="128"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;上の方は、中途半端な申し込みとなっていて、削除される予定のもの。&lt;br&gt;
+で、下側が今回申し込んだもの。&lt;br&gt;
+IPアドレスが出ているのが、申し込みが最後まで進んだ証拠なんだと思います。&lt;/p&gt;
+&lt;p&gt;無事、新しいサーバへアクセスすることができたので、&lt;br&gt;
+これからOS(Fedora16)を再インストール予定。&lt;/p&gt;</content><category term="sakura"></category><category term="VPS"></category></entry><entry><title>Eye-Fi Pro X2を購入しました。で、オススメの購入方法や、Macでの設定方法について</title><link href="https://igawa.io/posts/2012/03/eye-fi-pro-x2wogou-ru-shimashita-de-osusumenogou-ru-fang-fa-ya-macdenoshe-ding-fang-fa-nitsuite/" rel="alternate"></link><published>2012-03-29T20:50:00+09:00</published><updated>2012-03-29T20:50:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-29:/posts/2012/03/eye-fi-pro-x2wogou-ru-shimashita-de-osusumenogou-ru-fang-fa-ya-macdenoshe-ding-fang-fa-nitsuite/</id><summary type="html">&lt;h2&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.eyefi.co.jp/products/prox2"&gt;Eye-Fi Pro X2&lt;/a&gt; を購入しました。&lt;/p&gt;
-&lt;div style="margin:0;"&gt;
-
-というわけで、購入方法、設定方法について。
-
-&lt;/div&gt;
-
+&lt;p&gt;というわけで、購入方法、設定方法について。&lt;/p&gt;
 &lt;h2&gt;オススメ購入方法&lt;/h2&gt;
-&lt;div&gt;
-
-**Evernoteプレミアム会員になっていて今後も使い続ける予定**、  
-　あるいは、  
-**GMOとくとくポイントが余っている **ならば、  
-　[Eye-Fi公式オンラインストア](http://eyefi.shop-pro.jp/)  
+&lt;p&gt;&lt;strong&gt;Evernoteプレミアム会員になっていて今後も使い続ける予定&lt;/strong&gt;、&lt;br&gt;
+　あるいは、&lt;br&gt;
+&lt;strong&gt;GMOとくとくポイントが余っている &lt;/strong&gt;ならば、&lt;br&gt;
+&lt;a href="http://eyefi.shop-pro.jp/"&gt;Eye-Fi公式オンラインストア&lt;/a&gt;&lt;br&gt;
 がオススメです。
-なぜなら、2012/03/30現在、Eye-Fi公式オンラインストアでは、  
-Eye-Fi Mobile X2、または、Pro X2を購入すると、  
-**　Evernoteプレミアム会員1年分**  
-が、無料でバンドルされるキャンペーンを実施中だからです。  
-(Evernoteプレミアム1年分特典は、2012/4/10 16:00購入分までなので注意)
-
-GMOとくとくポイントに関しては、あまり使い所が見つからなくて、  
-個人的にちょっと持て余していたところだったので、調度良かっただけです。(\^\^;
-
-どちらにも特に当てはまらない場合は、
-
--   [価格.comで最安値を検索](http://kakaku.com/search_results …&lt;/div&gt;</summary><content type="html">&lt;h2&gt;はじめに&lt;/h2&gt;
-&lt;p&gt;&lt;a href="http://www.eyefi.co.jp/products/prox2"&gt;Eye-Fi Pro X2&lt;/a&gt; を購入しました。&lt;/p&gt;
-&lt;div style="margin:0;"&gt;
-
-というわけで、購入方法、設定方法について。
-
-&lt;/div&gt;
-
-&lt;h2&gt;オススメ購入方法&lt;/h2&gt;
-&lt;div&gt;
-
-**Evernoteプレミアム会員になっていて今後も使い続ける予定**、  
-　あるいは、  
-**GMOとくとくポイントが余っている **ならば、  
-　[Eye-Fi公式オンラインストア](http://eyefi.shop-pro.jp/)  
-がオススメです。
-なぜなら、2012/03/30現在、Eye-Fi公式オンラインストアでは、  
-Eye-Fi Mobile X2、または、Pro X2を購入すると、  
-**　Evernoteプレミアム会員1年分**  
-が、無料でバンドルされるキャンペーンを実施中だからです。  
-(Evernoteプレミアム1年分特典は、2012/4/10 16:00購入分までなので注意)
-
-GMOとくとくポイントに関しては、あまり使い所が見つからなくて、  
-個人的にちょっと持て余していたところだったので、調度良かっただけです。(\^\^;
-
-どちらにも特に当てはまらない場合は、
-
--   [価格.comで最安値を検索](http://kakaku.com/search_results/Eye-Fi/)
--   [カメラ量販店等](http://www.yodobashi.com/ec/product/100000001001230441/index.html)
-
-&lt;div&gt;
-
-で、購入することで良いと思います。
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
+なぜなら、2012/03/30現在、Eye-Fi公式オンラインストアでは、&lt;br&gt;
+Eye-Fi Mobile X2、または、Pro X2を購入すると、&lt;br&gt;
+&lt;strong&gt;　Evernoteプレミアム会員1年分&lt;/strong&gt;&lt;br&gt;
+が、無料でバンドルされるキャンペーンを実施中だからです。&lt;br&gt;
+(Evernoteプレミアム1年分特典は、2012/4/10 16:00購入分までなので注意)&lt;/p&gt;
+&lt;p&gt;GMOとくとくポイントに関しては、あまり使い所が見つからなくて、&lt;br&gt;
+個人的にちょっと持て余していたところだったので、調度良かっただけです。(\^\^;&lt;/p&gt;
+&lt;p&gt;どちらにも特に当てはまらない場合は、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://kakaku.com/search_results/Eye-Fi/"&gt;価格.comで最安値を検索&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.yodobashi.com/ec/product/100000001001230441/index.html"&gt;カメラ量販店等&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;で、購入することで良いと思います。&lt;/p&gt;
 &lt;h2&gt;設定方法&lt;/h2&gt;
-&lt;div&gt;
-
-#### 初めてEye-Fiを使う場合
-
-&lt;div&gt;
-
-&lt;http://eyefi.co.jp/support/download/&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-より、Eye-Fi Softwareセンターをダウンロードし、インストールする。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-特に迷うような点はないはず。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
+&lt;h4&gt;初めてEye-Fiを使う場合&lt;/h4&gt;
+&lt;p&gt;&lt;a href="http://eyefi.co.jp/support/download/"&gt;http://eyefi.co …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.eyefi.co.jp/products/prox2"&gt;Eye-Fi Pro X2&lt;/a&gt; を購入しました。&lt;/p&gt;
+&lt;p&gt;というわけで、購入方法、設定方法について。&lt;/p&gt;
+&lt;h2&gt;オススメ購入方法&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Evernoteプレミアム会員になっていて今後も使い続ける予定&lt;/strong&gt;、&lt;br&gt;
+　あるいは、&lt;br&gt;
+&lt;strong&gt;GMOとくとくポイントが余っている &lt;/strong&gt;ならば、&lt;br&gt;
+&lt;a href="http://eyefi.shop-pro.jp/"&gt;Eye-Fi公式オンラインストア&lt;/a&gt;&lt;br&gt;
+がオススメです。
+なぜなら、2012/03/30現在、Eye-Fi公式オンラインストアでは、&lt;br&gt;
+Eye-Fi Mobile X2、または、Pro X2を購入すると、&lt;br&gt;
+&lt;strong&gt;　Evernoteプレミアム会員1年分&lt;/strong&gt;&lt;br&gt;
+が、無料でバンドルされるキャンペーンを実施中だからです。&lt;br&gt;
+(Evernoteプレミアム1年分特典は、2012/4/10 16:00購入分までなので注意)&lt;/p&gt;
+&lt;p&gt;GMOとくとくポイントに関しては、あまり使い所が見つからなくて、&lt;br&gt;
+個人的にちょっと持て余していたところだったので、調度良かっただけです。(\^\^;&lt;/p&gt;
+&lt;p&gt;どちらにも特に当てはまらない場合は、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://kakaku.com/search_results/Eye-Fi/"&gt;価格.comで最安値を検索&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.yodobashi.com/ec/product/100000001001230441/index.html"&gt;カメラ量販店等&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;で、購入することで良いと思います。&lt;/p&gt;
+&lt;h2&gt;設定方法&lt;/h2&gt;
+&lt;h4&gt;初めてEye-Fiを使う場合&lt;/h4&gt;
+&lt;p&gt;&lt;a href="http://eyefi.co.jp/support/download/"&gt;http://eyefi.co.jp/support/download/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;より、Eye-Fi Softwareセンターをダウンロードし、インストールする。&lt;/p&gt;
+&lt;p&gt;特に迷うような点はないはず。&lt;/p&gt;
 &lt;h4&gt;以前にEye-Fiを使用したことがあり、Eye-Fi Softwareセンターをインストール済み&lt;/h4&gt;
 &lt;p&gt;こちらの場合も簡単でした。&lt;br&gt;
 Eye-FiカードをMacに接続すると、以下のような画面が表示されます。&lt;br&gt;
 (表示されない場合は、Eye-Fi Centerを開きます)&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/085aa-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-02-20.png?w=300){width="320"
-height="254"}](https://masayukig.files.wordpress.com/2012/03/085aa-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-02-20.png)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/085aa-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-02-20.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/085aa-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-02-20.png?w=300"&gt;{width="320"
+height="254"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;今回は、「Eye-Fiファームウェアの更新」が案内されたので、&lt;br&gt;
 それに従い、更新してみます。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/ec6dd-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-04.png?w=300){width="320"
-height="113"}](https://masayukig.files.wordpress.com/2012/03/ec6dd-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-04.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/5f989-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-19.png?w=300){width="320"
-height="112"}](https://masayukig.files.wordpress.com/2012/03/5f989-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-19.png)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/ec6dd-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-04.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/ec6dd-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-04.png?w=300"&gt;{width="320"
+height="113"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/5f989-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-19.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/5f989-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-19.png?w=300"&gt;{width="320"
+height="112"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;更新されるかとおもいきや、失敗しました。。orz&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/d3d95-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-39.png?w=300){width="320"
-height="62"}](https://masayukig.files.wordpress.com/2012/03/d3d95-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-39.png)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/d3d95-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-39.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/d3d95-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-39.png?w=300"&gt;{width="320"
+height="62"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;ちょっと悪い予感がしましたが、上記に従い、一度Eye-Fiを取り外してから、&lt;br&gt;
 再度、接続しなおしてみます。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/9c7bc-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-17-19.png?w=300){width="320"
-height="240"}](https://masayukig.files.wordpress.com/2012/03/9c7bc-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-17-19.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-&lt;/div&gt;
-
-&lt;div style="text-align:left;margin:0;"&gt;
-
-特に、エラーは出ること無く、使えるようになっていました。
-
-&lt;/div&gt;
-
-&lt;div style="text-align:left;"&gt;
-
-後は、以下の画面からネットワークの設定やアップロードの設定を行えば完了です。
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/4cc6c-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-08-34.png?w=300){width="320"
-height="239"}](https://masayukig.files.wordpress.com/2012/03/4cc6c-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-08-34.png)
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-まとめ
-------
-
-#### 購入方法
-
--   [Evernoteを今後も使い続ける予定、または、[GMOとくとくポイント](http://point.gmo.jp/)が余っている]{.Apple-style-span
-    style="font-size:small;font-weight:normal;"}
-
-&lt;div&gt;
-
-[[　　→　[Eye-Fiオンラインストア](http://eyefi.shop-pro.jp/)で購入(ただし、Evernoteプレミアム1年分特典は、2012/4/10
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/9c7bc-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-17-19.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/9c7bc-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-17-19.png?w=300"&gt;{width="320"
+height="240"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;特に、エラーは出ること無く、使えるようになっていました。&lt;/p&gt;
+&lt;p&gt;後は、以下の画面からネットワークの設定やアップロードの設定を行えば完了です。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/4cc6c-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-08-34.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/4cc6c-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-08-34.png?w=300"&gt;{width="320"
+height="239"}&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;まとめ&lt;/h2&gt;
+&lt;h4&gt;購入方法&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;[Evernoteを今後も使い続ける予定、または、&lt;a href="http://point.gmo.jp/"&gt;GMOとくとくポイント&lt;/a&gt;が余っている]{.Apple-style-span
+    style="font-size:small;font-weight:normal;"}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[[　　→　&lt;a href="http://eyefi.shop-pro.jp/"&gt;Eye-Fiオンラインストア&lt;/a&gt;で購入(ただし、Evernoteプレミアム1年分特典は、2012/4/10
 16:00購入分までなので注意)。GMOとくとくポイントがあるならそれを使用する。]{.Apple-style-span
 style="font-weight:normal;"}]{.Apple-style-span
-style="font-size:small;"}
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
+style="font-size:small;"}&lt;/p&gt;
 &lt;h4&gt;設定方法&lt;/h4&gt;
-&lt;div&gt;
-
--   [[基本的にはとても簡単。ただし、ちょっと残念な動作になることもあるので、期待はしすぎないほうが良い。]{.Apple-style-span
+&lt;ul&gt;
+&lt;li&gt;[[基本的にはとても簡単。ただし、ちょっと残念な動作になることもあるので、期待はしすぎないほうが良い。]{.Apple-style-span
     style="font-weight:normal;"}]{.Apple-style-span
-    style="font-size:small;"}
-
-&lt;div&gt;
-
-[[  
+    style="font-size:small;"}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[[&lt;br&gt;
 ]{.Apple-style-span style="font-weight:normal;"}]{.Apple-style-span
-style="font-size:small;"}
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-[[  
+style="font-size:small;"}&lt;/p&gt;
+&lt;p&gt;[[&lt;br&gt;
 ]{.Apple-style-span style="font-weight:normal;"}]{.Apple-style-span
-style="font-size:small;"}
-
-&lt;/div&gt;
-
-&lt;/div&gt;</content><category term="camera"></category><category term="evernote"></category><category term="eye-fi"></category><category term="gadget"></category><category term="nex-5n"></category><category term="picasa"></category></entry><entry><title>Evernoteで月間アップロード量がリミットに達した場合の対応方法 #evernote</title><link href="https://igawa.io/posts/2012/03/evernotedeyue-jian-atsupurodoliang-garimitsutonida-shitachang-he-nodui-ying-fang-fa-evernote/" rel="alternate"></link><published>2012-03-29T09:51:00+09:00</published><updated>2012-03-29T09:51:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-29:/posts/2012/03/evernotedeyue-jian-atsupurodoliang-garimitsutonida-shitachang-he-nodui-ying-fang-fa-evernote/</id><summary type="html">&lt;p&gt;先日、Evernoteで月間アップロード量がリミットに達してしまい、&lt;br&gt;
+style="font-size:small;"}&lt;/p&gt;</content><category term="camera"></category><category term="evernote"></category><category term="eye-fi"></category><category term="gadget"></category><category term="nex-5n"></category><category term="picasa"></category></entry><entry><title>Evernoteで月間アップロード量がリミットに達した場合の対応方法 #evernote</title><link href="https://igawa.io/posts/2012/03/evernotedeyue-jian-atsupurodoliang-garimitsutonida-shitachang-he-nodui-ying-fang-fa-evernote/" rel="alternate"></link><published>2012-03-29T09:51:00+09:00</published><updated>2012-03-29T09:51:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-29:/posts/2012/03/evernotedeyue-jian-atsupurodoliang-garimitsutonida-shitachang-he-nodui-ying-fang-fa-evernote/</id><summary type="html">&lt;p&gt;先日、Evernoteで月間アップロード量がリミットに達してしまい、&lt;br&gt;
 かなりショボンな感じだったのですが、(一時的に)回避する方法がありました。&lt;br&gt;
 &lt;strong&gt;450円を支払うと、1ヶ月だけ1GBアップロード容量が増える&lt;/strong&gt;&lt;br&gt;
 というものです。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/b7ea3-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-29-10.png?w=300){width="400"
-height="101"}](https://masayukig.files.wordpress.com/2012/03/b7ea3-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-29-10.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-WebでEvernoteにアクセスして、上記をクリックすると、以下のような画面になるので、 
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/b13ac-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-38-01.png?w=300){width="400 …&lt;/div&gt;</summary><content type="html">&lt;p&gt;先日、Evernoteで月間アップロード量がリミットに達してしまい、&lt;br&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/b7ea3-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-29-10.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/b7ea3-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-29-10.png?w=300"&gt;{width="400"
+height="101"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;WebでEvernoteにアクセスして、上記をクリックすると、以下のような画面になるので、 &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/b13ac-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-38-01.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/b13ac-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-38-01.png?w=300"&gt;{width="400"
+height="282"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;必要事項を入力すれば、即時で1GBアップロード容量が増えます。&lt;/p&gt;
+&lt;p&gt;公式アナウンスもされているようですし、&lt;br&gt;
+WebでEvernoteを使っていれば、まるわかりだったのですね。。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blog.evernote.com/2011/11/23/new-premium-feature-increase-your-monthly-allowance/"&gt;http://blog.evernote.com/2011/11/23/new-premium-feature-increase-your-monthly-allowance/&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://support.evernote.com/link/portal/16051/16058/Article/2173/Increased-Upload-Allowance-Overview"&gt;https://support.evernote.com/link/portal/16051/16058/Article/2173/Increased-Upload-Allowance-Overview&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;先日、Evernoteで月間アップロード量がリミットに達してしまい、&lt;br&gt;
 かなりショボンな感じだったのですが、(一時的に)回避する方法がありました。&lt;br&gt;
 &lt;strong&gt;450円を支払うと、1ヶ月だけ1GBアップロード容量が増える&lt;/strong&gt;&lt;br&gt;
 というものです。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/b7ea3-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-29-10.png?w=300){width="400"
-height="101"}](https://masayukig.files.wordpress.com/2012/03/b7ea3-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-29-10.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-WebでEvernoteにアクセスして、上記をクリックすると、以下のような画面になるので、 
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/b13ac-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-38-01.png?w=300){width="400"
-height="282"}](https://masayukig.files.wordpress.com/2012/03/b13ac-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-38-01.png)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/b7ea3-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-29-10.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/b7ea3-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-29-10.png?w=300"&gt;{width="400"
+height="101"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;WebでEvernoteにアクセスして、上記をクリックすると、以下のような画面になるので、 &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/b13ac-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-38-01.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/b13ac-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-38-01.png?w=300"&gt;{width="400"
+height="282"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;必要事項を入力すれば、即時で1GBアップロード容量が増えます。&lt;/p&gt;
 &lt;p&gt;公式アナウンスもされているようですし、&lt;br&gt;
 WebでEvernoteを使っていれば、まるわかりだったのですね。。&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://blog.evernote.com/2011/11/23/new-premium-feature-increase-your-monthly-allowance/"&gt;http://blog.evernote.com/2011/11/23/new-premium-feature-increase-your-monthly-allowance/&lt;/a&gt;&lt;br&gt;
 &lt;a href="https://support.evernote.com/link/portal/16051/16058/Article/2173/Increased-Upload-Allowance-Overview"&gt;https://support.evernote.com/link/portal/16051/16058/Article/2173/Increased-Upload-Allowance-Overview&lt;/a&gt;&lt;/p&gt;</content><category term="evernote"></category></entry><entry><title>というわけで、NEX-5Nにつけるアクセサリを買ってみた</title><link href="https://igawa.io/posts/2012/03/toiuwakede-nex-5nnitsukeruakusesariwomai-tsutemita/" rel="alternate"></link><published>2012-03-28T21:05:00+09:00</published><updated>2012-03-28T21:05:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-28:/posts/2012/03/toiuwakede-nex-5nnitsukeruakusesariwomai-tsutemita/</id><summary type="html">&lt;p&gt;このままでは、NEX-5Nのレンズや液晶がむき出しになってしまうので、&lt;/p&gt;
-&lt;div&gt;
-
-保護シートやレンズキャップを買ってみました。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-#### 購入したもの
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/8dcd2-2012-03-2904-37-46.jpg?w=300){width="400"
-height="265"}](https://masayukig.files.wordpress.com/2012/03/8dcd2-2012-03-2904-37-46.jpg)
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;div&gt;
-
-左から、
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
--   [ハクバ DGF-SANEX5N/SONY
-    NEX-5N用液晶保護フィルム](http://www.yodobashi.com/%E3%83%8F%E3%82%AF%E3%83%90-DGF-SANEX5N-SONY-SONY-NEX-5N%E7%94%A8 …&lt;/div&gt;</summary><content type="html">&lt;p&gt;このままでは、NEX-5Nのレンズや液晶がむき出しになってしまうので、&lt;/p&gt;
-&lt;div&gt;
-
-保護シートやレンズキャップを買ってみました。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-#### 購入したもの
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/8dcd2-2012-03-2904-37-46.jpg?w=300){width="400"
-height="265"}](https://masayukig.files.wordpress.com/2012/03/8dcd2-2012-03-2904-37-46.jpg)
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;div&gt;
-
-左から、
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
--   [ハクバ DGF-SANEX5N/SONY
-    NEX-5N用液晶保護フィルム](http://www.yodobashi.com/%E3%83%8F%E3%82%AF%E3%83%90-DGF-SANEX5N-SONY-SONY-NEX-5N%E7%94%A8%E6%B6%B2%E6%99%B6%E4%BF%9D%E8%AD%B7%E3%83%95%E3%82%A3%E3%83%AB%E3%83%A0/pd/100000001001414236/)
--   [ケンコーレンズキャップ(KLC-49)](http://www.yodobashi.com/%E3%82%B1%E3%83%B3%E3%82%B3%E3%83%BC-%E3%83%AC%E3%83%B3%E3%82%BA%E3%82%AD%E3%83%A4%E3%83%84%E3%83%97-KLC-49/pd/100000001001457532/)
--   [ケンコー \[コンパクトデジタルカメラ用フィルター\] MCプロテクター
+&lt;p&gt;保護シートやレンズキャップを買ってみました。&lt;/p&gt;
+&lt;h4&gt;購入したもの&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/8dcd2-2012-03-2904-37-46.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/8dcd2-2012-03-2904-37-46.jpg?w=300"&gt;{width="400"
+height="265"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;左から、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.yodobashi.com/%E3%83%8F%E3%82%AF%E3%83%90-DGF-SANEX5N-SONY-SONY-NEX-5N%E7%94%A8%E6%B6%B2%E6%99%B6%E4%BF%9D%E8%AD%B7%E3%83%95%E3%82%A3%E3%83%AB%E3%83%A0/pd/100000001001414236/"&gt;ハクバ DGF-SANEX5N/SONY
+    NEX-5N用液晶保護フィルム&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.yodobashi.com/%E3%82%B1%E3%83%B3%E3%82%B3%E3%83%BC-%E3%83%AC%E3%83%B3%E3%82%BA%E3%82%AD%E3%83%A4%E3%83%84%E3%83%97-KLC-49/pd/100000001001457532/"&gt;ケンコーレンズキャップ(KLC-49)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.amazon.co.jp/gp/product/B00161959Y/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=hughundercons-22&amp;amp;linkCode=as2&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=B00161959Y"&gt;ケンコー [コンパクトデジタルカメラ用フィルター] MCプロテクター
     シルバー枠
-    49mm](http://www.amazon.co.jp/gp/product/B00161959Y/ref=as_li_ss_tl?ie=UTF8&amp;tag=hughundercons-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=B00161959Y)![picture](http://www.assoc-amazon.jp/e/ir?t=hughundercons-22&amp;l=as2&amp;o=9&amp;a=B00161959Y){width="1"
-    height="1"}
-
-&lt;div&gt;
-
-です。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-私はすべて、ヨドバシカメラ(yodobashi.com)で購入しました。
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-Amazonで購入しても良かったのですが、高いものでも100円程度しか差がなく、  
+    49mm&lt;/a&gt;&lt;img alt="picture" src="http://www.assoc-amazon.jp/e/ir?t=hughundercons-22&amp;amp;l=as2&amp;amp;o=9&amp;amp;a=B00161959Y"&gt;{width="1"
+    height="1"}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;です。&lt;/p&gt;
+&lt;p&gt;私はすべて、ヨドバシカメラ(yodobashi.com)で購入しました。&lt;/p&gt;
+&lt;p&gt;Amazonで購入しても良かったのですが、高いものでも100円程度しか差がなく、&lt;br&gt;
 ヨドバシポイントも貯まっていたので。
-これで安心して外へ持っていくことができそうです。
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/6b4af-2012-03-2905-48-43.jpg?w=300){width="400"
-height="300"}](https://masayukig.files.wordpress.com/2012/03/6b4af-2012-03-2905-48-43.jpg)
-
-&lt;/div&gt;
-
+これで安心して外へ持っていくことができそうです。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/6b4af-2012-03-2905-48-43.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/6b4af-2012-03-2905-48-43.jpg?w=300"&gt;{width="400"
+height="300"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;各種アイテム装着後の写真。(液晶保護フィルムは見た目に差が無いのでパス)&lt;/p&gt;
+&lt;h3&gt;各アイテム雑感&lt;/h3&gt;
+&lt;h4&gt;液晶保護フィルム&lt;/h4&gt;
+&lt;p&gt;300円で購入。&lt;br&gt;
+貼るときに若干気泡が入ってしまったものの、&lt;br&gt;
+添付されていた不織布の液晶クリーニングペーパーをあてて、&lt;br&gt;
+上からカードでゆっくり押していたら、消えました。&lt;br&gt;
+NEX-5Nは、液晶タッチパネルですが、保護フィルムを貼っても特にタッチ感度が …&lt;/p&gt;</summary><content type="html">&lt;p&gt;このままでは、NEX-5Nのレンズや液晶がむき出しになってしまうので、&lt;/p&gt;
+&lt;p&gt;保護シートやレンズキャップを買ってみました。&lt;/p&gt;
+&lt;h4&gt;購入したもの&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/8dcd2-2012-03-2904-37-46.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/8dcd2-2012-03-2904-37-46.jpg?w=300"&gt;{width="400"
+height="265"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;左から、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.yodobashi.com/%E3%83%8F%E3%82%AF%E3%83%90-DGF-SANEX5N-SONY-SONY-NEX-5N%E7%94%A8%E6%B6%B2%E6%99%B6%E4%BF%9D%E8%AD%B7%E3%83%95%E3%82%A3%E3%83%AB%E3%83%A0/pd/100000001001414236/"&gt;ハクバ DGF-SANEX5N/SONY
+    NEX-5N用液晶保護フィルム&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.yodobashi.com/%E3%82%B1%E3%83%B3%E3%82%B3%E3%83%BC-%E3%83%AC%E3%83%B3%E3%82%BA%E3%82%AD%E3%83%A4%E3%83%84%E3%83%97-KLC-49/pd/100000001001457532/"&gt;ケンコーレンズキャップ(KLC-49)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.amazon.co.jp/gp/product/B00161959Y/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=hughundercons-22&amp;amp;linkCode=as2&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=B00161959Y"&gt;ケンコー [コンパクトデジタルカメラ用フィルター] MCプロテクター
+    シルバー枠
+    49mm&lt;/a&gt;&lt;img alt="picture" src="http://www.assoc-amazon.jp/e/ir?t=hughundercons-22&amp;amp;l=as2&amp;amp;o=9&amp;amp;a=B00161959Y"&gt;{width="1"
+    height="1"}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;です。&lt;/p&gt;
+&lt;p&gt;私はすべて、ヨドバシカメラ(yodobashi.com)で購入しました。&lt;/p&gt;
+&lt;p&gt;Amazonで購入しても良かったのですが、高いものでも100円程度しか差がなく、&lt;br&gt;
+ヨドバシポイントも貯まっていたので。
+これで安心して外へ持っていくことができそうです。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/6b4af-2012-03-2905-48-43.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/6b4af-2012-03-2905-48-43.jpg?w=300"&gt;{width="400"
+height="300"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;各種アイテム装着後の写真。(液晶保護フィルムは見た目に差が無いのでパス)&lt;/p&gt;
 &lt;h3&gt;各アイテム雑感&lt;/h3&gt;
 &lt;h4&gt;液晶保護フィルム&lt;/h4&gt;
@@ -3110,55 +2310,12 @@ NEX-5NDには、もちろん、レンズごとにキャップがついている�
 ひも付きのレンズキャップにしてみました。&lt;br&gt;
 ひもは邪魔にも感じますが、とりあえず、これで持ち歩いて見ることにします。&lt;/p&gt;
 &lt;h4&gt;MCプロテクター&lt;/h4&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-
-1,320円で購入。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-NEX-5NDには、2つのレンズがついていますが、ひとまず1つだけ購入。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-レンズがシルバーなので、MCプロテクターもシルバーにしてみたのですが、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-レンズ先端部分は黒だったので、黒でも良かったかも。。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-ひとまず、18-55mmレンズに装着。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-16mmレンズも持ち歩くようになったら、追加購入を考えます。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;</content><category term="gadget"></category><category term="nex-5n"></category><category term="nex-5nd"></category><category term="sony"></category></entry><entry><title>#fbというhashtagをつけて#twitter へtweetしたら、#fbのハッシュタグは取り除いて、#Facebook へ投稿</title><link href="https://igawa.io/posts/2012/03/fbtoiuhashtagwotsuketetwitter-hetweetshitara-fbnohatsushiyutaguhaqu-richu-ite-facebook-hetou-gao/" rel="alternate"></link><published>2012-03-27T20:06:00+09:00</published><updated>2012-03-27T20:06:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-27:/posts/2012/03/fbtoiuhashtagwotsuketetwitter-hetweetshitara-fbnohatsushiyutaguhaqu-richu-ite-facebook-hetou-gao/</id><summary type="html">&lt;p&gt;というiftttのレシピを作りました。&lt;br&gt;
+&lt;p&gt;1,320円で購入。&lt;/p&gt;
+&lt;p&gt;NEX-5NDには、2つのレンズがついていますが、ひとまず1つだけ購入。&lt;/p&gt;
+&lt;p&gt;レンズがシルバーなので、MCプロテクターもシルバーにしてみたのですが、&lt;/p&gt;
+&lt;p&gt;レンズ先端部分は黒だったので、黒でも良かったかも。。&lt;/p&gt;
+&lt;p&gt;ひとまず、18-55mmレンズに装着。&lt;/p&gt;
+&lt;p&gt;16mmレンズも持ち歩くようになったら、追加購入を考えます。&lt;/p&gt;</content><category term="gadget"></category><category term="nex-5n"></category><category term="nex-5nd"></category><category term="sony"></category></entry><entry><title>#fbというhashtagをつけて#twitter へtweetしたら、#fbのハッシュタグは取り除いて、#Facebook へ投稿</title><link href="https://igawa.io/posts/2012/03/fbtoiuhashtagwotsuketetwitter-hetweetshitara-fbnohatsushiyutaguhaqu-richu-ite-facebook-hetou-gao/" rel="alternate"></link><published>2012-03-27T20:06:00+09:00</published><updated>2012-03-27T20:06:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-27:/posts/2012/03/fbtoiuhashtagwotsuketetwitter-hetweetshitara-fbnohatsushiyutaguhaqu-richu-ite-facebook-hetou-gao/</id><summary type="html">&lt;p&gt;というiftttのレシピを作りました。&lt;br&gt;
 &lt;a href="http://ifttt.com/recipes/26782"&gt;http://ifttt.com/recipes/26782&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;今までは、Twitter -&amp;gt; Facebookを自動連携していましたが、&lt;br&gt;
 最近、Twitterに情報を流すことが多くなり、ちょっと後ろめたさがあったので、&lt;br&gt;
@@ -3166,17 +2323,8 @@ NEX-5NDには、2つのレンズがついていますが、ひとまず1つだ�
 &lt;a href="http://ifttt.com/recipes/26782"&gt;http://ifttt.com/recipes/26782&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;今までは、Twitter -&amp;gt; Facebookを自動連携していましたが、&lt;br&gt;
 最近、Twitterに情報を流すことが多くなり、ちょっと後ろめたさがあったので、&lt;br&gt;
-こんなことにしてみました。&lt;/p&gt;</content><category term="facebook"></category><category term="ifttt"></category><category term="twitter"></category></entry><entry><title>NEX-5NDを買った！安い買い方について</title><link href="https://igawa.io/posts/2012/03/nex-5ndwomai-tsutaan-imai-ifang-nitsuite/" rel="alternate"></link><published>2012-03-25T21:09:00+09:00</published><updated>2012-03-25T21:09:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-25:/posts/2012/03/nex-5ndwomai-tsutaan-imai-ifang-nitsuite/</id><summary type="html">&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/c2af8-2012-03-2605-38-33.jpg?w=300){width="400"
-height="300"}](https://masayukig.files.wordpress.com/2012/03/c2af8-2012-03-2605-38-33.jpg)
-
-&lt;/div&gt;
-
+こんなことにしてみました。&lt;/p&gt;</content><category term="facebook"></category><category term="ifttt"></category><category term="twitter"></category></entry><entry><title>NEX-5NDを買った！安い買い方について</title><link href="https://igawa.io/posts/2012/03/nex-5ndwomai-tsutaan-imai-ifang-nitsuite/" rel="alternate"></link><published>2012-03-25T21:09:00+09:00</published><updated>2012-03-25T21:09:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-25:/posts/2012/03/nex-5ndwomai-tsutaan-imai-ifang-nitsuite/</id><summary type="html">&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/c2af8-2012-03-2605-38-33.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/c2af8-2012-03-2605-38-33.jpg?w=300"&gt;{width="400"
+height="300"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;という訳で、NEX-5NDを買ったのです。(写真には写ってませんが、もうひとつレンズ(16mm
 F2.8)があります)&lt;br&gt;
 近くのノジマ店舗で67,000円でしたが、実質、50,300円で購入しました。&lt;/p&gt;
@@ -3185,19 +2333,11 @@ F2.8)があります)&lt;br&gt;
 &lt;li&gt;&lt;a href="http://www.nojima.co.jp/ir/stockholder.html"&gt;ノジマの株主優待券&lt;/a&gt;を使った(10%オフ)&lt;/li&gt;
 &lt;li&gt;Ario店舗入っている店舗だったので、プレミアムチケット(※)を使い、購入。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div&gt;
-
-※6 …&lt;/div&gt;</summary><content type="html">&lt;div class="separator" style="clear:both;text-align:left;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/c2af8-2012-03-2605-38-33.jpg?w=300){width="400"
-height="300"}](https://masayukig.files.wordpress.com/2012/03/c2af8-2012-03-2605-38-33.jpg)
-
-&lt;/div&gt;
-
+&lt;p&gt;※6,000円分の商品券が5,000円で購入できる、期間・数量限定チケット。今回は60,000円分使用しました。&lt;/p&gt;
+&lt;p&gt;という訳で、実質、50,300円で購入できたことになります。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://kakaku.com/item/K0000281279/"&gt;価格.comの最安値&lt;/a&gt;よりも1万円以上安く、ヨドバシ・ビックでは、&lt;/p&gt;
+&lt;p&gt;70,000円でポイント10%なので、まぁ、お得だったと思っています。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/c2af8-2012-03-2605-38-33.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/c2af8-2012-03-2605-38-33.jpg?w=300"&gt;{width="400"
+height="300"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;という訳で、NEX-5NDを買ったのです。(写真には写ってませんが、もうひとつレンズ(16mm
 F2.8)があります)&lt;br&gt;
 近くのノジマ店舗で67,000円でしたが、実質、50,300円で購入しました。&lt;/p&gt;
@@ -3206,37 +2346,10 @@ F2.8)があります)&lt;br&gt;
 &lt;li&gt;&lt;a href="http://www.nojima.co.jp/ir/stockholder.html"&gt;ノジマの株主優待券&lt;/a&gt;を使った(10%オフ)&lt;/li&gt;
 &lt;li&gt;Ario店舗入っている店舗だったので、プレミアムチケット(※)を使い、購入。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div&gt;
-
-※6,000円分の商品券が5,000円で購入できる、期間・数量限定チケット。今回は60,000円分使用しました。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-という訳で、実質、50,300円で購入できたことになります。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-[価格.comの最安値](http://kakaku.com/item/K0000281279/)よりも1万円以上安く、ヨドバシ・ビックでは、
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-70,000円でポイント10%なので、まぁ、お得だったと思っています。
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-&lt;/div&gt;</content><category term="カメラ"></category><category term="camera"></category><category term="nex-5n"></category><category term="nex-5nd"></category><category term="shopping"></category></entry><entry><title>Bloggerをリキッドレイアウトにする方法</title><link href="https://igawa.io/posts/2012/03/bloggerworikitsudoreiautonisurufang-fa/" rel="alternate"></link><published>2012-03-23T21:57:00+09:00</published><updated>2012-03-23T21:57:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-23:/posts/2012/03/bloggerworikitsudoreiautonisurufang-fa/</id><summary type="html">&lt;p&gt;Bloggerを使い始めたのですが、「動的レイアウト」以外は、横幅固定のテンプレートしか&lt;br&gt;
+&lt;p&gt;※6,000円分の商品券が5,000円で購入できる、期間・数量限定チケット。今回は60,000円分使用しました。&lt;/p&gt;
+&lt;p&gt;という訳で、実質、50,300円で購入できたことになります。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://kakaku.com/item/K0000281279/"&gt;価格.comの最安値&lt;/a&gt;よりも1万円以上安く、ヨドバシ・ビックでは、&lt;/p&gt;
+&lt;p&gt;70,000円でポイント10%なので、まぁ、お得だったと思っています。&lt;/p&gt;</content><category term="カメラ"></category><category term="camera"></category><category term="nex-5n"></category><category term="nex-5nd"></category><category term="shopping"></category></entry><entry><title>Bloggerをリキッドレイアウトにする方法</title><link href="https://igawa.io/posts/2012/03/bloggerworikitsudoreiautonisurufang-fa/" rel="alternate"></link><published>2012-03-23T21:57:00+09:00</published><updated>2012-03-23T21:57:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-23:/posts/2012/03/bloggerworikitsudoreiautonisurufang-fa/</id><summary type="html">&lt;p&gt;Bloggerを使い始めたのですが、「動的レイアウト」以外は、横幅固定のテンプレートしか&lt;br&gt;
 無い様で、若干ガッカリでした。&lt;/p&gt;
 &lt;p&gt;で、ググってみたところ、&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://hibilig.blogspot.jp/2011/06/blogger.html"&gt;bloggerでリキッドレイアウト（横幅可変）にするには&lt;/a&gt;  &lt;/p&gt;
@@ -3244,29 +2357,18 @@ F2.8)があります)&lt;br&gt;
 &lt;p&gt;HTMLの編集で「content.width」を設定している行を根こそぎ削除。 &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;というのが見つかったので、やってみました。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div class="separator" style="clear:both;text-align:left;margin:0;"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;「テンプレート」-&amp;amp;gt; 「HTMLの編集」を選択
 
-&lt;p&gt;「テンプレート」-&amp;gt; 「HTMLの編集」を選択&lt;/p&gt;
-&lt;/div&gt;
 
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div class="separator" style="clear:both;text-align:left;margin:0;"&gt;
 
-&lt;p&gt;警告が出ますが、無視して「続行」&lt;/p&gt;
-&lt;/div&gt;
+警告が出ますが、無視して「続行」
 
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div class="separator" style="clear:both;text-align:left;margin:0;"&gt;
 
-&lt;p&gt;「content.width」がある行を根こそぎ、コメントアウト。プレビューして問題なければテンプレートを保存します。&lt;/p&gt;
-&lt;/div&gt;
 
-&lt;/li&gt;
-&lt;/ol&gt;
+「content.width」がある行を根こそぎ、コメントアウト。プレビューして問題なければテンプレートを保存します。
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;以上。やってみれば、簡単でした。&lt;/p&gt;</summary><content type="html">&lt;p&gt;Bloggerを使い始めたのですが、「動的レイアウト」以外は、横幅固定のテンプレートしか&lt;br&gt;
 無い様で、若干ガッカリでした。&lt;/p&gt;
 &lt;p&gt;で、ググってみたところ、&lt;/p&gt;
@@ -3275,145 +2377,78 @@ F2.8)があります)&lt;br&gt;
 &lt;p&gt;HTMLの編集で「content.width」を設定している行を根こそぎ削除。 &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;というのが見つかったので、やってみました。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;「テンプレート」-&amp;amp;gt; 「HTMLの編集」を選択
+
+
+
+警告が出ますが、無視して「続行」
+
+
+
+「content.width」がある行を根こそぎ、コメントアウト。プレビューして問題なければテンプレートを保存します。
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;以上。やってみれば、簡単でした。&lt;/p&gt;</content><category term="blogger"></category><category term="customize"></category><category term="html"></category></entry><entry><title>Dropbox Automatorを使って写真を全自動でEvernoteへアップロードする(若干注意が必要) #evernote #dropbox</title><link href="https://igawa.io/posts/2012/03/dropbox-automatorwoshi-tsutexie-zhen-woquan-zi-dong-deevernoteheatsupurodosururuo-gan-zhu-yi-gabi-yao-evernote-dropbox/" rel="alternate"></link><published>2012-03-20T20:28:00+09:00</published><updated>2012-03-20T20:28:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-20:/posts/2012/03/dropbox-automatorwoshi-tsutexie-zhen-woquan-zi-dong-deevernoteheatsupurodosururuo-gan-zhu-yi-gabi-yao-evernote-dropbox/</id><summary type="html">&lt;p&gt;[はじめに]{.Apple-style-span style="font-size:large;"}
+&lt;a href="http://wappwolf.com/dropboxautomator/"&gt;Dropbox
+Automator&lt;/a&gt;というのを使って、iPhone,
+iPad, Android, デジカメで&lt;br&gt;
+撮影した写真を全自動でEvernoteへアップロードする方法を記します。&lt;/p&gt;
+&lt;p&gt;ただし、注意点があるので、それは最後に書きます。&lt;/p&gt;
+&lt;p&gt;[前提条件]{.Apple-style-span style="font-size:large;"}&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;div class="separator" style="clear:both;text-align:left;margin:0;"&gt;
-
-&lt;p&gt;「テンプレート」-&amp;gt; 「HTMLの編集」を選択&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div class="separator" style="clear:both;text-align:left;margin:0;"&gt;
-
-&lt;p&gt;警告が出ますが、無視して「続行」&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div class="separator" style="clear:both;text-align:left;margin:0;"&gt;
-
-&lt;p&gt;「content.width」がある行を根こそぎ、コメントアウト。プレビューして問題なければテンプレートを保存します。&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/1202/24/news092.html"&gt;Dropboxの写真や動画の自動アップロードサービス&lt;/a&gt;が有効になっていること&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;以上。やってみれば、簡単でした。&lt;/p&gt;</content><category term="blogger"></category><category term="customize"></category><category term="html"></category></entry><entry><title>Dropbox Automatorを使って写真を全自動でEvernoteへアップロードする(若干注意が必要) #evernote #dropbox</title><link href="https://igawa.io/posts/2012/03/dropbox-automatorwoshi-tsutexie-zhen-woquan-zi-dong-deevernoteheatsupurodosururuo-gan-zhu-yi-gabi-yao-evernote-dropbox/" rel="alternate"></link><published>2012-03-20T20:28:00+09:00</published><updated>2012-03-20T20:28:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-20:/posts/2012/03/dropbox-automatorwoshi-tsutexie-zhen-woquan-zi-dong-deevernoteheatsupurodosururuo-gan-zhu-yi-gabi-yao-evernote-dropbox/</id><summary type="html">&lt;div&gt;
-
-[はじめに]{.Apple-style-span style="font-size:large;"}
-[Dropbox
-Automator](http://wappwolf.com/dropboxautomator/)というのを使って、iPhone,
-iPad, Android, デジカメで  
-撮影した写真を全自動でEvernoteへアップロードする方法を記します。
-
-ただし、注意点があるので、それは最後に書きます。
-
-[前提条件]{.Apple-style-span style="font-size:large;"}
-
-1.  [Dropboxの写真や動画の自動アップロードサービス](http://www.itmedia.co.jp/news/articles/1202/24/news092.html)が有効になっていること
-
-[方法]{.Apple-style-span style="font-size:large;"}  
-[[Dropbox
-Automator](http://wappwolf.com/dropboxautomator …&lt;/div&gt;</summary><content type="html">&lt;div&gt;
-
-[はじめに]{.Apple-style-span style="font-size:large;"}
-[Dropbox
-Automator](http://wappwolf.com/dropboxautomator/)というのを使って、iPhone,
-iPad, Android, デジカメで  
-撮影した写真を全自動でEvernoteへアップロードする方法を記します。
-
-ただし、注意点があるので、それは最後に書きます。
-
-[前提条件]{.Apple-style-span style="font-size:large;"}
-
-1.  [Dropboxの写真や動画の自動アップロードサービス](http://www.itmedia.co.jp/news/articles/1202/24/news092.html)が有効になっていること
-
-[方法]{.Apple-style-span style="font-size:large;"}  
-[[Dropbox
-Automator](http://wappwolf.com/dropboxautomator/) にアクセスし、あとは以下の画像の通り進めます。]{.Apple-style-span
-style="font-size:small;"}
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/9556c-dropboxautomator-01.png?w=300){width="320"
-height="255"}](https://masayukig.files.wordpress.com/2012/03/9556c-dropboxautomator-01.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/8a791-dropboxautomator-02.png?w=300){width="320"
-height="255"}](https://masayukig.files.wordpress.com/2012/03/8a791-dropboxautomator-02.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/10778-dropboxautomator-03.png?w=300){width="320"
-height="255"}](https://masayukig.files.wordpress.com/2012/03/10778-dropboxautomator-03.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/ac3fe-dropboxautomator-04.png?w=300){width="320"
-height="221"}](https://masayukig.files.wordpress.com/2012/03/ac3fe-dropboxautomator-04.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/fbad5-dropboxautomator-05.png?w=300){width="320"
-height="99"}](https://masayukig.files.wordpress.com/2012/03/fbad5-dropboxautomator-05.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/5a13c-dropboxautomator-06.png?w=300){width="320"
-height="75"}](https://masayukig.files.wordpress.com/2012/03/5a13c-dropboxautomator-06.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/72eb7-dropboxautomator-07.png?w=300){width="320"
-height="126"}](https://masayukig.files.wordpress.com/2012/03/72eb7-dropboxautomator-07.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/ac0c5-dropboxautomator-08.png?w=300){width="320"
-height="277"}](https://masayukig.files.wordpress.com/2012/03/ac0c5-dropboxautomator-08.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/019bc-dropboxautomator-10.png?w=300){width="320"
-height="203"}](https://masayukig.files.wordpress.com/2012/03/019bc-dropboxautomator-10.png)
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/dcb4a-dropboxautomator-11.png?w=241){width="257"
-height="320"}](https://masayukig.files.wordpress.com/2012/03/dcb4a-dropboxautomator-11.png)
-
-&lt;/div&gt;
-
+&lt;p&gt;[方法]{.Apple-style-span style="font-size:large;"}&lt;br&gt;
+[&lt;a href="http://wappwolf.com/dropboxautomator/"&gt;Dropbox
+Automator&lt;/a&gt; にアクセスし、あとは以下の画像の通り進めます。]{.Apple-style-span
+style="font-size:small;"}&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/9556c-dropboxautomator-01.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/9556c-dropboxautomator-01.png?w=300"&gt;{width="320"
+height="255"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/8a791-dropboxautomator-02.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/8a791-dropboxautomator-02.png?w=300"&gt;{width="320"
+height="255"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/10778-dropboxautomator-03.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/10778-dropboxautomator-03.png?w=300"&gt;{width="320"
+height="255"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/ac3fe-dropboxautomator-04.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/ac3fe-dropboxautomator-04.png?w=300"&gt;{width="320 …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;[はじめに]{.Apple-style-span style="font-size:large;"}
+&lt;a href="http://wappwolf.com/dropboxautomator/"&gt;Dropbox
+Automator&lt;/a&gt;というのを使って、iPhone,
+iPad, Android, デジカメで&lt;br&gt;
+撮影した写真を全自動でEvernoteへアップロードする方法を記します。&lt;/p&gt;
+&lt;p&gt;ただし、注意点があるので、それは最後に書きます。&lt;/p&gt;
+&lt;p&gt;[前提条件]{.Apple-style-span style="font-size:large;"}&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/1202/24/news092.html"&gt;Dropboxの写真や動画の自動アップロードサービス&lt;/a&gt;が有効になっていること&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;[方法]{.Apple-style-span style="font-size:large;"}&lt;br&gt;
+[&lt;a href="http://wappwolf.com/dropboxautomator/"&gt;Dropbox
+Automator&lt;/a&gt; にアクセスし、あとは以下の画像の通り進めます。]{.Apple-style-span
+style="font-size:small;"}&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/9556c-dropboxautomator-01.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/9556c-dropboxautomator-01.png?w=300"&gt;{width="320"
+height="255"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/8a791-dropboxautomator-02.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/8a791-dropboxautomator-02.png?w=300"&gt;{width="320"
+height="255"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/10778-dropboxautomator-03.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/10778-dropboxautomator-03.png?w=300"&gt;{width="320"
+height="255"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/ac3fe-dropboxautomator-04.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/ac3fe-dropboxautomator-04.png?w=300"&gt;{width="320"
+height="221"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/fbad5-dropboxautomator-05.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/fbad5-dropboxautomator-05.png?w=300"&gt;{width="320"
+height="99"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/5a13c-dropboxautomator-06.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/5a13c-dropboxautomator-06.png?w=300"&gt;{width="320"
+height="75"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/72eb7-dropboxautomator-07.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/72eb7-dropboxautomator-07.png?w=300"&gt;{width="320"
+height="126"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/ac0c5-dropboxautomator-08.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/ac0c5-dropboxautomator-08.png?w=300"&gt;{width="320"
+height="277"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/019bc-dropboxautomator-10.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/019bc-dropboxautomator-10.png?w=300"&gt;{width="320"
+height="203"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/dcb4a-dropboxautomator-11.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/dcb4a-dropboxautomator-11.png?w=241"&gt;{width="257"
+height="320"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;[注意点]{.Apple-style-span style="font-size:large;"}&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Evernoteの月間最大アップロードは、60MB(無料アカウント)または1GB(プレミアムアカウント)です。既に、Camera
     Uploadsフォルダにある程度の枚数写真がある場合、月間最大アップロード量を超えてしまうかもしれません。(その場合、次の月までアップロードできなくなります。。)&lt;/li&gt;
 &lt;li&gt;Evernoteへアップロード処理されると、「processed」というフォルダに勝手に移動されてしまうようです。これで、今後もDropbox的にうまく動作するのか？はよくわかっていません。。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</content><category term="dropbox"></category><category term="evernote"></category><category term="iPad"></category><category term="iPhone"></category><category term="picture"></category></entry><entry><title>気になる話題: Amazon S3のパフォーマンスをあげるコツ - Amazon Web Services ブログ</title><link href="https://igawa.io/posts/2012/03/qi-ninaruhua-ti-amazon-s3nopahuomansuwoagerukotsu-amazon-web-services-burogu/" rel="alternate"></link><published>2012-03-16T20:16:00+09:00</published><updated>2012-03-16T20:16:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-16:/posts/2012/03/qi-ninaruhua-ti-amazon-s3nopahuomansuwoagerukotsu-amazon-web-services-burogu/</id><summary type="html">&lt;p&gt;気になる話題: &lt;a href="http://aws.typepad.com/aws_japan/2012/03/amazon-s3-performance-tips-tricks-.html"&gt;Amazon S3のパフォーマンスをあげるコツ - Amazon Web
+&lt;/ol&gt;</content><category term="dropbox"></category><category term="evernote"></category><category term="iPad"></category><category term="iPhone"></category><category term="picture"></category></entry><entry><title>気になる話題: Amazon S3のパフォーマンスをあげるコツ - Amazon Web Services ブログ</title><link href="https://igawa.io/posts/2012/03/qi-ninaruhua-ti-amazon-s3nopahuomansuwoagerukotsu-amazon-web-services-burogu/" rel="alternate"></link><published>2012-03-16T20:16:00+09:00</published><updated>2012-03-16T20:16:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-16:/posts/2012/03/qi-ninaruhua-ti-amazon-s3nopahuomansuwoagerukotsu-amazon-web-services-burogu/</id><summary type="html">&lt;p&gt;気になる話題: &lt;a href="http://aws.typepad.com/aws_japan/2012/03/amazon-s3-performance-tips-tricks-.html"&gt;Amazon S3のパフォーマンスをあげるコツ - Amazon Web
 Services
 ブログ&lt;/a&gt;&lt;br&gt;
 from はてなブックマーク - タグ - lifehack
@@ -3505,12 +2540,8 @@ from はてなブックマーク - タグ - lifehack
 &lt;li&gt;その他パンフレット(0円)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;です。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/c6631-2012-03-1609-52-13.jpg?w=300){width="320"
-height="240"}](https://masayukig.files.wordpress.com/2012/03/c6631-2012-03-1609-52-13.jpg)
-
-&lt;/div&gt;</content></entry><entry><title>気になる話題: ＜CNET Japan＞新しい「iPad」は買うべきか--ユーザータイプ別に考える</title><link href="https://igawa.io/posts/2012/03/qi-ninaruhua-ti-cnet-japanxin-shiiipad-hamai-ubekika-yuzataipubie-nikao-eru/" rel="alternate"></link><published>2012-03-15T23:45:00+09:00</published><updated>2012-03-15T23:45:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-15:/posts/2012/03/qi-ninaruhua-ti-cnet-japanxin-shiiipad-hamai-ubekika-yuzataipubie-nikao-eru/</id><summary type="html">&lt;p&gt;気になる話題:
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/c6631-2012-03-1609-52-13.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/c6631-2012-03-1609-52-13.jpg?w=300"&gt;{width="320"
+height="240"}&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>気になる話題: ＜CNET Japan＞新しい「iPad」は買うべきか--ユーザータイプ別に考える</title><link href="https://igawa.io/posts/2012/03/qi-ninaruhua-ti-cnet-japanxin-shiiipad-hamai-ubekika-yuzataipubie-nikao-eru/" rel="alternate"></link><published>2012-03-15T23:45:00+09:00</published><updated>2012-03-15T23:45:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-15:/posts/2012/03/qi-ninaruhua-ti-cnet-japanxin-shiiipad-hamai-ubekika-yuzataipubie-nikao-eru/</id><summary type="html">&lt;p&gt;気になる話題:
 &lt;a href="http://japan.cnet.com/news/commentary/35015145/?tag=as.rss"&gt;http://japan.cnet.com/news/commentary/35015145/?tag=as.rss&lt;/a&gt;&lt;br&gt;
 from 朝日新聞デジタル &lt;a href="http://www.asahi.com/"&gt;http://www.asahi.com/&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;気になる話題:
 &lt;a href="http://japan.cnet.com/news/commentary/35015145/?tag=as.rss"&gt;http://japan.cnet.com/news/commentary/35015145/?tag=as.rss&lt;/a&gt;&lt;br&gt;
@@ -3558,19 +2589,9 @@ height="1"}&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;コクヨS&amp;amp;Tは2012年3月14日、スマートフォンのアプリケーションで手書きメモをデジタル化できるノート「CamiApp」シリーズにA4ヨコ型タイプなどを追加した。A4サイズのツインリングノートが840円、見開きでA4サイズになるA5ノートが241円。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;from ITpro総合 &lt;a href="http://itpro.nikkeibp.co.jp/"&gt;http://itpro.nikkeibp.co.jp/&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>気になる話題: Using Cloud Foundry Services with Ruby: Part 2 – Run-time Support for Ruby Applications</title><link href="https://igawa.io/posts/2012/03/qi-ninaruhua-ti-using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications/" rel="alternate"></link><published>2012-03-15T22:15:00+09:00</published><updated>2012-03-15T22:15:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-15:/posts/2012/03/qi-ninaruhua-ti-using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications/</id><summary type="html">&lt;div&gt;
-
-&lt;http://blog.cloudfoundry.com/post/13481010778/using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications&gt;  
-
-from Blog &lt;http://blog.cloudfoundry.com&gt;
-
-&lt;/div&gt;</summary><content type="html">&lt;div&gt;
-
-&lt;http://blog.cloudfoundry.com/post/13481010778/using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications&gt;  
-
-from Blog &lt;http://blog.cloudfoundry.com&gt;
-
-&lt;/div&gt;</content></entry><entry><title>Google Readerでスターをつけた記事を自動的にブログ投稿する</title><link href="https://igawa.io/posts/2012/03/google-readerdesutawotsuketaji-shi-wozi-dong-de-niburogutou-gao-suru/" rel="alternate"></link><published>2012-03-07T20:34:00+09:00</published><updated>2012-03-07T20:34:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-07:/posts/2012/03/google-readerdesutawotsuketaji-shi-wozi-dong-de-niburogutou-gao-suru/</id><summary type="html">&lt;p&gt;Google
+&lt;p&gt;from ITpro総合 &lt;a href="http://itpro.nikkeibp.co.jp/"&gt;http://itpro.nikkeibp.co.jp/&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>気になる話題: Using Cloud Foundry Services with Ruby: Part 2 – Run-time Support for Ruby Applications</title><link href="https://igawa.io/posts/2012/03/qi-ninaruhua-ti-using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications/" rel="alternate"></link><published>2012-03-15T22:15:00+09:00</published><updated>2012-03-15T22:15:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-15:/posts/2012/03/qi-ninaruhua-ti-using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications/</id><summary type="html">&lt;p&gt;&lt;a href="http://blog.cloudfoundry.com/post/13481010778/using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications"&gt;http://blog.cloudfoundry.com/post/13481010778/using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;from Blog &lt;a href="http://blog.cloudfoundry.com"&gt;http://blog.cloudfoundry.com&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://blog.cloudfoundry.com/post/13481010778/using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications"&gt;http://blog.cloudfoundry.com/post/13481010778/using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;from Blog &lt;a href="http://blog.cloudfoundry.com"&gt;http://blog.cloudfoundry.com&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>Google Readerでスターをつけた記事を自動的にブログ投稿する</title><link href="https://igawa.io/posts/2012/03/google-readerdesutawotsuketaji-shi-wozi-dong-de-niburogutou-gao-suru/" rel="alternate"></link><published>2012-03-07T20:34:00+09:00</published><updated>2012-03-07T20:34:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-07:/posts/2012/03/google-readerdesutawotsuketaji-shi-wozi-dong-de-niburogutou-gao-suru/</id><summary type="html">&lt;p&gt;Google
 Readerでスターをつけた記事を、自動的にブログ投稿するようにしてみた。&lt;/p&gt;
 &lt;h3&gt;どんな仕組み？&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://ifttt.com/"&gt;http://ifttt.com/&lt;/a&gt; を利用しています。これ、スゴい便利。&lt;br&gt;
@@ -3632,12 +2653,7 @@ Sam Biddle（米版／湯木進悟）&lt;/p&gt;
 &lt;a href="http://japanese.engadget.com/2012/03/07/1080p-apple-tv/"&gt;http://japanese.engadget.com/2012/03/07/1080p-apple-tv/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;日本のAppleストアでも予約開始してる。8,800円。まぁ、様子見かな。&lt;br&gt;
 &lt;a href="http://store.apple.com/jp/browse/home/shop_ipod/family/apple_tv"&gt;http://store.apple.com/jp/browse/home/shop_ipod/family/apple_tv&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>アップル 新 iPad 発表：2048x1536 解像度、A5X 搭載、LTE 対応、3月16日発売</title><link href="https://igawa.io/posts/2012/03/atsupuru-xin-ipad-fa-biao-2048x1536-jie-xiang-du-a5x-da-zai-lte-dui-ying-3yue-16ri-fa-mai/" rel="alternate"></link><published>2012-03-07T19:31:00+09:00</published><updated>2012-03-07T19:31:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-07:/posts/2012/03/atsupuru-xin-ipad-fa-biao-2048x1536-jie-xiang-du-a5x-da-zai-lte-dui-ying-3yue-16ri-fa-mai/</id><summary type="html">&lt;p&gt;&lt;a href="http://japanese.engadget.com/2012/03/07/new-ipad/"&gt;http://japanese.engadget.com/2012/03/07/new-ipad/&lt;/a&gt;&lt;/p&gt;
-&lt;div style="text-align:center;"&gt;
-
-![iPad](http://www.blogcdn.com/www.engadget.com/media/2012/03/apple-ipad-3-ipad-hd-liveblog-2926.jpg)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;img alt="iPad" src="http://www.blogcdn.com/www.engadget.com/media/2012/03/apple-ipad-3-ipad-hd-liveblog-2926.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;アップルの&lt;a href="http://japanese.engadget.com/2012/03/07/ipad/"&gt;発表イベント&lt;/a&gt;にて、新
 iPad が発表されました。主な特長は：&lt;/p&gt;
 &lt;ul&gt;
@@ -3646,13 +2662,10 @@ iPad が発表されました。主な特長は：&lt;/p&gt;
     ほどではありませんが、十分に精細です。彩度も40%向上。&lt;/li&gt;
 &lt;li&gt;Apple A5X：クアッドコアプロセッサ。A5 の倍高速（アップル比）。&lt;/li&gt;
 &lt;li&gt;iSight
-    カメラ：5メガピクセル …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://japanese.engadget.com/2012/03/07/new-ipad/"&gt;http://japanese.engadget.com/2012/03/07/new-ipad/&lt;/a&gt;&lt;/p&gt;
-&lt;div style="text-align:center;"&gt;
-
-![iPad](http://www.blogcdn.com/www.engadget.com/media/2012/03/apple-ipad-3-ipad-hd-liveblog-2926.jpg)
-
-&lt;/div&gt;
-
+    カメラ：5メガピクセル、裏面照射型の新しい背面カメラ。動画撮影は1080pに対応します。そのほか赤外線フィルタ、オートフォーカス、顔認識など。&lt;/li&gt;
+&lt;li&gt;音声入力：iPhone
+    同様、キーボードのマイクボタンから音声入力機能が利用できるように。英語（米、英、豪 …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://japanese.engadget.com/2012/03/07/new-ipad/"&gt;http://japanese.engadget.com/2012/03/07/new-ipad/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="iPad" src="http://www.blogcdn.com/www.engadget.com/media/2012/03/apple-ipad-3-ipad-hd-liveblog-2926.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;アップルの&lt;a href="http://japanese.engadget.com/2012/03/07/ipad/"&gt;発表イベント&lt;/a&gt;にて、新
 iPad が発表されました。主な特長は：&lt;/p&gt;
 &lt;ul&gt;
@@ -3877,67 +2890,23 @@ height="1"}こちらから&lt;/a&gt;どうぞ。&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;ということをすれば、なんとか使っていけそうです。&lt;/p&gt;
 &lt;p&gt;公式に認められた手段ではなく、私が勝手に行っていることなので、実行は自己責任でお願いいたします
-:-P&lt;/p&gt;</content><category term="backup"></category><category term="crashplan"></category><category term="Mac"></category><category term="PC"></category><category term="Software"></category></entry><entry><title>今日は東京タワーに行ってみることにします♪</title><link href="https://igawa.io/posts/2011/09/jin-ri-hadong-jing-tawanixing-tsutemirukotonishimasu/" rel="alternate"></link><published>2011-09-11T10:22:00+09:00</published><updated>2011-09-11T10:22:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-09-11:/posts/2011/09/jin-ri-hadong-jing-tawanixing-tsutemirukotonishimasu/</id><summary type="html">&lt;div class="posterous_autopost"&gt;
-
-&lt;div class="p_embed p_image_embed"&gt;
-
-[![Nec\_0413](http://posterous.com/getfile/files.posterous.com/masayukig/Ttqf0hkE3OpzBZjXp5fViBRdUgSnxoyIs9NbaRGEA4skkqXo8BFW2dRrIFFD/NEC_0413.jpg.scaled.500.jpg){width="500"
-height="667"}](http://posterous.com/getfile/files.posterous.com/masayukig/qOq9QLyVfymXz6xdR7tpPwgE80PoXmBtJBELrU5f6GpBLTMGGMYd3cfCKDnE/NEC_0413.jpg.scaled.1000.jpg)
-
-&lt;/div&gt;
-
--- masayuki
-
-&lt;/div&gt;</summary><content type="html">&lt;div class="posterous_autopost"&gt;
-
-&lt;div class="p_embed p_image_embed"&gt;
-
-[![Nec\_0413](http://posterous.com/getfile/files.posterous.com/masayukig/Ttqf0hkE3OpzBZjXp5fViBRdUgSnxoyIs9NbaRGEA4skkqXo8BFW2dRrIFFD/NEC_0413.jpg.scaled.500.jpg){width="500"
-height="667"}](http://posterous.com/getfile/files.posterous.com/masayukig/qOq9QLyVfymXz6xdR7tpPwgE80PoXmBtJBELrU5f6GpBLTMGGMYd3cfCKDnE/NEC_0413.jpg.scaled.1000.jpg)
-
-&lt;/div&gt;
-
--- masayuki
-
-&lt;/div&gt;</content></entry><entry><title>Posterousを今までのブログと連携してみたら...</title><link href="https://igawa.io/posts/2011/09/posterouswojin-madenoburogutolian-xi-shitemitara/" rel="alternate"></link><published>2011-09-11T08:14:00+09:00</published><updated>2011-09-11T08:14:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-09-11:/posts/2011/09/posterouswojin-madenoburogutolian-xi-shitemitara/</id><summary type="html">&lt;div class="posterous_autopost"&gt;
-
-今までのブログ(b.0r2.info)にも投稿されるようになった(みたい)。
-
-そういうサービスなのか。。全然知らなかったｗ
-
-だとすると、「Twitter以上、ブログ未満」っていう使い分けにならないな。
-
-とりあえず、あまり気にせずこのまま使ってみることにします。
-
- 
-
-&lt;/div&gt;</summary><content type="html">&lt;div class="posterous_autopost"&gt;
-
-今までのブログ(b.0r2.info)にも投稿されるようになった(みたい)。
-
-そういうサービスなのか。。全然知らなかったｗ
-
-だとすると、「Twitter以上、ブログ未満」っていう使い分けにならないな。
-
-とりあえず、あまり気にせずこのまま使ってみることにします。
-
- 
-
-&lt;/div&gt;</content></entry><entry><title>Posterousを使ってみることにする</title><link href="https://igawa.io/posts/2011/09/posterouswoshi-tsutemirukotonisuru/" rel="alternate"></link><published>2011-09-11T06:58:00+09:00</published><updated>2011-09-11T06:58:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-09-11:/posts/2011/09/posterouswoshi-tsutemirukotonisuru/</id><summary type="html">&lt;div class="posterous_autopost"&gt;
-
-いろんなブログを使ってて、  
-使い分けがイマイチわからないが、  
-「Twitter以上、Blog未満」なものをPosterousに使ってみることに  
-しようと考えています。
-
-&lt;/div&gt;</summary><content type="html">&lt;div class="posterous_autopost"&gt;
-
-いろんなブログを使ってて、  
-使い分けがイマイチわからないが、  
-「Twitter以上、Blog未満」なものをPosterousに使ってみることに  
-しようと考えています。
-
-&lt;/div&gt;</content></entry><entry><title>X PLATE × DELL Streak を購入 ＆ DELL Streakを通信費0円で運用する方法</title><link href="https://igawa.io/posts/2011/08/x-plate-x-dell-streak-wogou-ru-dell-streakwotong-xin-fei-0yuan-deyun-yong-surufang-fa/" rel="alternate"></link><published>2011-08-23T05:06:00+09:00</published><updated>2011-08-23T05:06:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-08-23:/posts/2011/08/x-plate-x-dell-streak-wogou-ru-dell-streakwotong-xin-fei-0yuan-deyun-yong-surufang-fa/</id><summary type="html">&lt;p&gt;&lt;a href="https://picasaweb.google.com/lh/photo/6XhEF0OrKA8qpnPHgSvQ-w?feat=embedwebsite"&gt;&lt;img alt="picture" src="https://lh3.googleusercontent.com/-OADIxzA_oOU/TlKnIAnYWWI/AAAAAAAAmQU/gWwZAoWygs8/s400/NEC_0322.JPG"&gt;{width="400"
+:-P&lt;/p&gt;</content><category term="backup"></category><category term="crashplan"></category><category term="Mac"></category><category term="PC"></category><category term="Software"></category></entry><entry><title>今日は東京タワーに行ってみることにします♪</title><link href="https://igawa.io/posts/2011/09/jin-ri-hadong-jing-tawanixing-tsutemirukotonishimasu/" rel="alternate"></link><published>2011-09-11T10:22:00+09:00</published><updated>2011-09-11T10:22:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-09-11:/posts/2011/09/jin-ri-hadong-jing-tawanixing-tsutemirukotonishimasu/</id><summary type="html">&lt;p&gt;&lt;a href="http://posterous.com/getfile/files.posterous.com/masayukig/qOq9QLyVfymXz6xdR7tpPwgE80PoXmBtJBELrU5f6GpBLTMGGMYd3cfCKDnE/NEC_0413.jpg.scaled.1000.jpg"&gt;&lt;img alt="Nec_0413" src="http://posterous.com/getfile/files.posterous.com/masayukig/Ttqf0hkE3OpzBZjXp5fViBRdUgSnxoyIs9NbaRGEA4skkqXo8BFW2dRrIFFD/NEC_0413.jpg.scaled.500.jpg"&gt;{width="500"
+height="667"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;-- masayuki&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://posterous.com/getfile/files.posterous.com/masayukig/qOq9QLyVfymXz6xdR7tpPwgE80PoXmBtJBELrU5f6GpBLTMGGMYd3cfCKDnE/NEC_0413.jpg.scaled.1000.jpg"&gt;&lt;img alt="Nec_0413" src="http://posterous.com/getfile/files.posterous.com/masayukig/Ttqf0hkE3OpzBZjXp5fViBRdUgSnxoyIs9NbaRGEA4skkqXo8BFW2dRrIFFD/NEC_0413.jpg.scaled.500.jpg"&gt;{width="500"
+height="667"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;-- masayuki&lt;/p&gt;</content></entry><entry><title>Posterousを今までのブログと連携してみたら...</title><link href="https://igawa.io/posts/2011/09/posterouswojin-madenoburogutolian-xi-shitemitara/" rel="alternate"></link><published>2011-09-11T08:14:00+09:00</published><updated>2011-09-11T08:14:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-09-11:/posts/2011/09/posterouswojin-madenoburogutolian-xi-shitemitara/</id><summary type="html">&lt;p&gt;今までのブログ(b.0r2.info)にも投稿されるようになった(みたい)。&lt;/p&gt;
+&lt;p&gt;そういうサービスなのか。。全然知らなかったｗ&lt;/p&gt;
+&lt;p&gt;だとすると、「Twitter以上、ブログ未満」っていう使い分けにならないな。&lt;/p&gt;
+&lt;p&gt;とりあえず、あまり気にせずこのまま使ってみることにします。&lt;/p&gt;</summary><content type="html">&lt;p&gt;今までのブログ(b.0r2.info)にも投稿されるようになった(みたい)。&lt;/p&gt;
+&lt;p&gt;そういうサービスなのか。。全然知らなかったｗ&lt;/p&gt;
+&lt;p&gt;だとすると、「Twitter以上、ブログ未満」っていう使い分けにならないな。&lt;/p&gt;
+&lt;p&gt;とりあえず、あまり気にせずこのまま使ってみることにします。&lt;/p&gt;</content></entry><entry><title>Posterousを使ってみることにする</title><link href="https://igawa.io/posts/2011/09/posterouswoshi-tsutemirukotonisuru/" rel="alternate"></link><published>2011-09-11T06:58:00+09:00</published><updated>2011-09-11T06:58:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-09-11:/posts/2011/09/posterouswoshi-tsutemirukotonisuru/</id><summary type="html">&lt;p&gt;いろんなブログを使ってて、&lt;br&gt;
+使い分けがイマイチわからないが、&lt;br&gt;
+「Twitter以上、Blog未満」なものをPosterousに使ってみることに&lt;br&gt;
+しようと考えています。&lt;/p&gt;</summary><content type="html">&lt;p&gt;いろんなブログを使ってて、&lt;br&gt;
+使い分けがイマイチわからないが、&lt;br&gt;
+「Twitter以上、Blog未満」なものをPosterousに使ってみることに&lt;br&gt;
+しようと考えています。&lt;/p&gt;</content></entry><entry><title>X PLATE × DELL Streak を購入 ＆ DELL Streakを通信費0円で運用する方法</title><link href="https://igawa.io/posts/2011/08/x-plate-x-dell-streak-wogou-ru-dell-streakwotong-xin-fei-0yuan-deyun-yong-surufang-fa/" rel="alternate"></link><published>2011-08-23T05:06:00+09:00</published><updated>2011-08-23T05:06:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-08-23:/posts/2011/08/x-plate-x-dell-streak-wogou-ru-dell-streakwotong-xin-fei-0yuan-deyun-yong-surufang-fa/</id><summary type="html">&lt;p&gt;&lt;a href="https://picasaweb.google.com/lh/photo/6XhEF0OrKA8qpnPHgSvQ-w?feat=embedwebsite"&gt;&lt;img alt="picture" src="https://lh3.googleusercontent.com/-OADIxzA_oOU/TlKnIAnYWWI/AAAAAAAAmQU/gWwZAoWygs8/s400/NEC_0322.JPG"&gt;{width="400"
 height="300"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;というわけで、&lt;a href="http://www.willcom-inc.com/ja/lineup/sp/streak_xplate/"&gt;X PLATE × DELL
 Streak&lt;/a&gt;を購入しました。&lt;/p&gt;
@@ -6815,40 +5784,40 @@ Electronics; $259.00
 &lt;/ul&gt;
 &lt;p&gt;ということで、iPadはしばらく(半年くらい)様子見(の予定は未定)。&lt;/p&gt;</content><category term="読書"></category><category term="Kindle"></category></entry><entry><title>サイトのデザイン(テーマ)をシンプルなものに変えてみました</title><link href="https://igawa.io/posts/2010/06/saitonodezaintemawoshinpurunamononibian-etemimashita/" rel="alternate"></link><published>2010-06-12T07:11:00+09:00</published><updated>2010-06-12T07:11:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2010-06-12:/posts/2010/06/saitonodezaintemawoshinpurunamononibian-etemimashita/</id><summary type="html">&lt;p&gt;サイトのデザイン(テーマ)をシンプルなものに変えてみました。&lt;/p&gt;
 &lt;p&gt;どうだろうか。。&lt;/p&gt;</summary><content type="html">&lt;p&gt;サイトのデザイン(テーマ)をシンプルなものに変えてみました。&lt;/p&gt;
-&lt;p&gt;どうだろうか。。&lt;/p&gt;</content><category term="このサイト"></category><category term="このサイトの事"></category></entry><entry><title>Xperiaソフトウェアアップデートした(R1EA025)</title><link href="https://igawa.io/posts/2010/06/xperiasohutoueaatsupudetoshitar1ea025/" rel="alternate"></link><published>2010-06-11T06:03:00+09:00</published><updated>2010-06-11T06:03:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2010-06-11:/posts/2010/06/xperiasohutoueaatsupudetoshitar1ea025/</id><summary type="html">&lt;div id="kwout_8st3x5az" class="kwout" style="text-align:center;"&gt;
-
-[![http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html](http://kwout.com/cutout/8/st/3x/5az_bor.jpg "POBox Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で - ITmedia +D モバイル"){width="506"
-height="127"}](http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html)
-[POBox
-Touchが「2 …&lt;/div&gt;</summary><content type="html">&lt;div id="kwout_8st3x5az" class="kwout" style="text-align:center;"&gt;
-
-[![http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html](http://kwout.com/cutout/8/st/3x/5az_bor.jpg "POBox Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で - ITmedia +D モバイル"){width="506"
-height="127"}](http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html)
-[POBox
+&lt;p&gt;どうだろうか。。&lt;/p&gt;</content><category term="このサイト"></category><category term="このサイトの事"></category></entry><entry><title>Xperiaソフトウェアアップデートした(R1EA025)</title><link href="https://igawa.io/posts/2010/06/xperiasohutoueaatsupudetoshitar1ea025/" rel="alternate"></link><published>2010-06-11T06:03:00+09:00</published><updated>2010-06-11T06:03:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2010-06-11:/posts/2010/06/xperiasohutoueaatsupudetoshitar1ea025/</id><summary type="html">&lt;p&gt;&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html"&gt;&lt;img alt="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html" src="http://kwout.com/cutout/8/st/3x/5az_bor.jpg" title="POBox Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で - ITmedia +D モバイル"&gt;{width="506"
+height="127"}&lt;/a&gt;
+&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html"&gt;POBox
 Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で
 - ITmedia +D
-モバイル](http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html)
-via [kwout](http://itmedia.kwout.com/quote/8st3x5az)
-
-&lt;/div&gt;
-
+モバイル&lt;/a&gt;
+via &lt;a href="http://itmedia.kwout.com/quote/8st3x5az"&gt;kwout&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://kwout.com/cutout/8/st/3x/5az_bor.js"&gt;http://kwout.com/cutout/8/st/3x/5az_bor.js&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Xperiaソフトウェアアップデートが再開されたので、アップデートしました。&lt;/p&gt;
 &lt;p&gt;POBoxのフリック入力は、iPhoneのソレよりも良い感じですね。&lt;br&gt;
 私の場合、フリックする方向と、入力される文字の対応が体に染み込んでないので、&lt;br&gt;
 POBoxの表示方式(押したキーの上側に候補が表示される方式)が、いい感じです。&lt;/p&gt;
-&lt;div id="kwout_7xjqnife" class="kwout" style="text-align:center;"&gt;
-
-[![http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html](http://kwout.com/cutout/7/xj/qn/ife_bor.jpg "POBox Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で - ITmedia +D モバイル"){width="226"
-height="222"}](http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html)
-[POBox
+&lt;p&gt;&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html"&gt;&lt;img alt="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html" src="http://kwout.com/cutout/7/xj/qn/ife_bor.jpg" title="POBox Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で - ITmedia +D モバイル"&gt;{width="226"
+height="222"}&lt;/a&gt;
+&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html"&gt;POBox
+Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始 …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html"&gt;&lt;img alt="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html" src="http://kwout.com/cutout/8/st/3x/5az_bor.jpg" title="POBox Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で - ITmedia +D モバイル"&gt;{width="506"
+height="127"}&lt;/a&gt;
+&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html"&gt;POBox
 Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で
 - ITmedia +D
-モバイル](http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html)
-via [kwout](http://itmedia.kwout.com/quote/7xjqnife)
-
-&lt;/div&gt;
-
+モバイル&lt;/a&gt;
+via &lt;a href="http://itmedia.kwout.com/quote/8st3x5az"&gt;kwout&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://kwout.com/cutout/8/st/3x/5az_bor.js"&gt;http://kwout.com/cutout/8/st/3x/5az_bor.js&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Xperiaソフトウェアアップデートが再開されたので、アップデートしました。&lt;/p&gt;
+&lt;p&gt;POBoxのフリック入力は、iPhoneのソレよりも良い感じですね。&lt;br&gt;
+私の場合、フリックする方向と、入力される文字の対応が体に染み込んでないので、&lt;br&gt;
+POBoxの表示方式(押したキーの上側に候補が表示される方式)が、いい感じです。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html"&gt;&lt;img alt="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html" src="http://kwout.com/cutout/7/xj/qn/ife_bor.jpg" title="POBox Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で - ITmedia +D モバイル"&gt;{width="226"
+height="222"}&lt;/a&gt;
+&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html"&gt;POBox
+Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で
+- ITmedia +D
+モバイル&lt;/a&gt;
+via &lt;a href="http://itmedia.kwout.com/quote/7xjqnife"&gt;kwout&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://kwout.com/cutout/7/xj/qn/ife_bor.js"&gt;http://kwout.com/cutout/7/xj/qn/ife_bor.js&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;また、タッチパネルの感度が向上しているということなので、ちょっと期待してます。&lt;/p&gt;
 &lt;p&gt;PC経由か、あるいは、Xperia単体でのアップデートも可能になっています。&lt;br&gt;
@@ -8220,21 +7189,28 @@ iPhone3G(S無し)は、使ったことが無いので、それとの比較は、
 17  NatsuLion for iPhone, v1.51, 販売業者: 琢磨 Mori (4+)
 レビューを書く 問題を報告する    無料
 注文合計:   ¥0
-&lt;/pre&gt;&lt;/div&gt;</content><category term="アプリ"></category><category term="iPhone"></category><category term="PC"></category></entry><entry><title>iPhone OS 3.0.1アップデート</title><link href="https://igawa.io/posts/2009/08/iphone-os-301atsupudeto/" rel="alternate"></link><published>2009-08-02T04:50:00+09:00</published><updated>2009-08-02T04:50:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-08-02:/posts/2009/08/iphone-os-301atsupudeto/</id><summary type="html">&lt;div id="kwout_mginpmv7" class="kwout" style="text-align:center;"&gt;
-
-[![http://www.itmedia.co.jp/news/articles/0908/01/news009.html](http://kwout.com/cutout/m/gi/np/mv7_bor.jpg "iPhone OS 3.0.1ソフトウェア・アップデートがリリース　SMSの脆弱性を修正 - ITmedia News"){width="516"
-height="108"}](http://www.itmedia.co.jp/news/articles/0908/01/news009.html)
-[iPhone OS 3.0.1ソフトウェア・アップデートがリリース …&lt;/div&gt;</summary><content type="html">&lt;div id="kwout_mginpmv7" class="kwout" style="text-align:center;"&gt;
-
-[![http://www.itmedia.co.jp/news/articles/0908/01/news009.html](http://kwout.com/cutout/m/gi/np/mv7_bor.jpg "iPhone OS 3.0.1ソフトウェア・アップデートがリリース　SMSの脆弱性を修正 - ITmedia News"){width="516"
-height="108"}](http://www.itmedia.co.jp/news/articles/0908/01/news009.html)
-[iPhone OS 3.0.1ソフトウェア・アップデートがリリース　SMSの脆弱性を修正
+&lt;/pre&gt;&lt;/div&gt;</content><category term="アプリ"></category><category term="iPhone"></category><category term="PC"></category></entry><entry><title>iPhone OS 3.0.1アップデート</title><link href="https://igawa.io/posts/2009/08/iphone-os-301atsupudeto/" rel="alternate"></link><published>2009-08-02T04:50:00+09:00</published><updated>2009-08-02T04:50:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-08-02:/posts/2009/08/iphone-os-301atsupudeto/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0908/01/news009.html"&gt;&lt;img alt="http://www.itmedia.co.jp/news/articles/0908/01/news009.html" src="http://kwout.com/cutout/m/gi/np/mv7_bor.jpg" title="iPhone OS 3.0.1ソフトウェア・アップデートがリリース SMSの脆弱性を修正 - ITmedia News"&gt;{width="516"
+height="108"}&lt;/a&gt;
+&lt;a href="http://www.itmedia.co.jp/news/articles/0908/01/news009.html"&gt;iPhone OS 3.0.1ソフトウェア・アップデートがリリース　SMSの脆弱性を修正
 - ITmedia
-News](http://www.itmedia.co.jp/news/articles/0908/01/news009.html) via
-[kwout](http://itmedia.kwout.com/quote/mginpmv7)
-
-&lt;/div&gt;
-
+News&lt;/a&gt; via
+&lt;a href="http://itmedia.kwout.com/quote/mginpmv7"&gt;kwout&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://kwout.com/cutout/m/gi/np/mv7_bor.js"&gt;http://kwout.com/cutout/m/gi/np/mv7_bor.js&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「&lt;a href="http://hidehiro.asablo.jp/blog/2009/08/01/4471963"&gt;Hidehiro's
+Blog&lt;/a&gt;」で知ったのですが、&lt;br&gt;
+&lt;a href="http://support.apple.com/kb/HT3754"&gt;iPhone OS
+3.0.1アップデート&lt;/a&gt;が出た様です。&lt;/p&gt;
+&lt;p&gt;iPhone持っている方は、可能な限りアップデートしておいた方が良さそうです。&lt;br&gt;
+なぜならば...&lt;br&gt;
+&lt;a href="http://www.gizmodo.jp/common/img/head_main_siteid.jpg"&gt;GIZMODO
+Japan&lt;/a&gt;にあった、&lt;br&gt;
+&lt;a href="http://www.gizmodo.jp/2009/07/iphonesms.html"&gt;「「世界中のiPhoneがSMS経由で乗っ取れる」セキュリティの脆弱性」&lt;/a&gt;という&lt;br&gt;
+記事にあった脆弱性の修正のようです。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0908/01/news009.html"&gt;&lt;img alt="http://www.itmedia.co.jp/news/articles/0908/01/news009.html" src="http://kwout.com/cutout/m/gi/np/mv7_bor.jpg" title="iPhone OS 3.0.1ソフトウェア・アップデートがリリース SMSの脆弱性を修正 - ITmedia News"&gt;{width="516"
+height="108"}&lt;/a&gt;
+&lt;a href="http://www.itmedia.co.jp/news/articles/0908/01/news009.html"&gt;iPhone OS 3.0.1ソフトウェア・アップデートがリリース　SMSの脆弱性を修正
+- ITmedia
+News&lt;/a&gt; via
+&lt;a href="http://itmedia.kwout.com/quote/mginpmv7"&gt;kwout&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://kwout.com/cutout/m/gi/np/mv7_bor.js"&gt;http://kwout.com/cutout/m/gi/np/mv7_bor.js&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;「&lt;a href="http://hidehiro.asablo.jp/blog/2009/08/01/4471963"&gt;Hidehiro's
 Blog&lt;/a&gt;」で知ったのですが、&lt;br&gt;
@@ -8250,42 +7226,41 @@ Japan&lt;/a&gt;にあった、&lt;br&gt;
 &lt;a href="http://blogging.from.tv/wp/2009/07/27/2460"&gt;http://blogging.from.tv/wp/2009/07/27/2460&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;最近、Twitterを始めたのですが、色々なお作法がある様なのですが、&lt;br&gt;
 いまいち分かりませんでした。以下のページを読んで、身につけたいと思います。&lt;br&gt;
 &lt;a href="http://blogging.from.tv/wp/2009/07/27/2460"&gt;http://blogging.from.tv/wp/2009/07/27/2460&lt;/a&gt;&lt;/p&gt;</content><category term="net"></category></entry><entry><title>twitter2mixi.rbの改良は、後回しにしようかな(Twitter対抗、mixi「エコー」 正式サービスに APIも公開へ)</title><link href="https://igawa.io/posts/2009/08/twitter2mixirbnogai-liang-ha-hou-hui-shinishiyoukanatwitterdui-kang-mixieko-zheng-shi-sabisuni-apimogong-kai-he/" rel="alternate"></link><published>2009-08-01T04:48:00+09:00</published><updated>2009-08-01T04:48:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-08-01:/posts/2009/08/twitter2mixirbnogai-liang-ha-hou-hui-shinishiyoukanatwitterdui-kang-mixieko-zheng-shi-sabisuni-apimogong-kai-he/</id><summary type="html">&lt;p&gt;「Twitter対抗、mixi「エコー」正式サービスに　APIも公開へ」&lt;/p&gt;
-&lt;div id="kwout_7gkfz8pm" class="kwout" style="text-align:center;"&gt;
-
-[![http://www.itmedia.co.jp/news/articles/0907/31/news085.html](http://kwout.com/cutout/7/gk/fz/8pm_bor.jpg "Twitter対抗、mixi「エコー」正式サービスに　APIも公開へ - ITmedia News"){width="423"
-height="116"}](http://www.itmedia.co.jp/news/articles/0907/31/news085.html)
-[Twitter対抗、mixi「エコー …&lt;/div&gt;</summary><content type="html">&lt;p&gt;「Twitter対抗、mixi「エコー」正式サービスに　APIも公開へ」&lt;/p&gt;
-&lt;div id="kwout_7gkfz8pm" class="kwout" style="text-align:center;"&gt;
-
-[![http://www.itmedia.co.jp/news/articles/0907/31/news085.html](http://kwout.com/cutout/7/gk/fz/8pm_bor.jpg "Twitter対抗、mixi「エコー」正式サービスに　APIも公開へ - ITmedia News"){width="423"
-height="116"}](http://www.itmedia.co.jp/news/articles/0907/31/news085.html)
-[Twitter対抗、mixi「エコー」正式サービスに　APIも公開へ - ITmedia
-News](http://www.itmedia.co.jp/news/articles/0907/31/news085.html) via
-[kwout](http://itmedia.kwout.com/quote/7gkfz8pm)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0907/31/news085.html"&gt;&lt;img alt="http://www.itmedia.co.jp/news/articles/0907/31/news085.html" src="http://kwout.com/cutout/7/gk/fz/8pm_bor.jpg" title="Twitter対抗、mixi「エコー」正式サービスに APIも公開へ - ITmedia News"&gt;{width="423"
+height="116"}&lt;/a&gt;
+&lt;a href="http://www.itmedia.co.jp/news/articles/0907/31/news085.html"&gt;Twitter対抗、mixi「エコー」正式サービスに　APIも公開へ - ITmedia
+News&lt;/a&gt; via
+&lt;a href="http://itmedia.kwout.com/quote/7gkfz8pm"&gt;kwout&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://kwout.com/cutout/7/gk/fz/8pm_bor.js"&gt;http://kwout.com/cutout/7/gk/fz/8pm_bor.js&lt;/a&gt;&lt;br&gt;
 ということらしいです。&lt;/p&gt;
 &lt;p&gt;今、twitter2mixi.rbというスクリプトをcronで動かして、twitterつぶやきをmixiエコーへ投げているのですが、&lt;br&gt;
 このスクリプトは、最新の1件だけ取ってきて、mixiエコーへ投げています。&lt;br&gt;
 これを、最新つぶやき全部を取ってきて、全部投げることができるようにしようかなと&lt;br&gt;
 思っていたのですが、APIが公開されるのであれば、それを待ってからの方が良いかなと、&lt;br&gt;
-思ったり、思わなかったり。&lt;/p&gt;</content><category term="開発"></category><category term="mixi"></category><category term="net"></category><category term="Software"></category><category term="twitter"></category></entry><entry><title>「ペンギンのイラスト付きLinuxクレジットカード登場」！</title><link href="https://igawa.io/posts/2009/07/penginnoirasutofu-kilinuxkurezitsutokadodeng-chang/" rel="alternate"></link><published>2009-07-31T04:53:00+09:00</published><updated>2009-07-31T04:53:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-07-31:/posts/2009/07/penginnoirasutofu-kilinuxkurezitsutokadodeng-chang/</id><summary type="html">&lt;div id="kwout_n7kfz8pm" class="kwout" style="text-align:center;"&gt;
-
-[![http://www.itmedia.co.jp/news/articles/0907/30/news005.html](http://kwout.com/cutout/n/7k/fz/8pm_bor.jpg "ペンギンのイラスト付きLinuxクレジットカード登場 - ITmedia News"){width="511"
-height="246"}](http://www.itmedia.co.jp/news/articles/0907/30/news005.html)
-[ペンギンのイラスト付きLinuxクレジットカード登場 - ITmedia
-News](http://www.itmedia.co.jp/news/articles/0907/30 …&lt;/div&gt;</summary><content type="html">&lt;div id="kwout_n7kfz8pm" class="kwout" style="text-align:center;"&gt;
-
-[![http://www.itmedia.co.jp/news/articles/0907/30/news005.html](http://kwout.com/cutout/n/7k/fz/8pm_bor.jpg "ペンギンのイラスト付きLinuxクレジットカード登場 - ITmedia News"){width="511"
-height="246"}](http://www.itmedia.co.jp/news/articles/0907/30/news005.html)
-[ペンギンのイラスト付きLinuxクレジットカード登場 - ITmedia
-News](http://www.itmedia.co.jp/news/articles/0907/30/news005.html) via
-[kwout](http://itmedia.kwout.com/quote/n7kfz8pm)
-
-&lt;/div&gt;
-
+思ったり、思わなかったり。&lt;/p&gt;</summary><content type="html">&lt;p&gt;「Twitter対抗、mixi「エコー」正式サービスに　APIも公開へ」&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0907/31/news085.html"&gt;&lt;img alt="http://www.itmedia.co.jp/news/articles/0907/31/news085.html" src="http://kwout.com/cutout/7/gk/fz/8pm_bor.jpg" title="Twitter対抗、mixi「エコー」正式サービスに APIも公開へ - ITmedia News"&gt;{width="423"
+height="116"}&lt;/a&gt;
+&lt;a href="http://www.itmedia.co.jp/news/articles/0907/31/news085.html"&gt;Twitter対抗、mixi「エコー」正式サービスに　APIも公開へ - ITmedia
+News&lt;/a&gt; via
+&lt;a href="http://itmedia.kwout.com/quote/7gkfz8pm"&gt;kwout&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://kwout.com/cutout/7/gk/fz/8pm_bor.js"&gt;http://kwout.com/cutout/7/gk/fz/8pm_bor.js&lt;/a&gt;&lt;br&gt;
+ということらしいです。&lt;/p&gt;
+&lt;p&gt;今、twitter2mixi.rbというスクリプトをcronで動かして、twitterつぶやきをmixiエコーへ投げているのですが、&lt;br&gt;
+このスクリプトは、最新の1件だけ取ってきて、mixiエコーへ投げています。&lt;br&gt;
+これを、最新つぶやき全部を取ってきて、全部投げることができるようにしようかなと&lt;br&gt;
+思っていたのですが、APIが公開されるのであれば、それを待ってからの方が良いかなと、&lt;br&gt;
+思ったり、思わなかったり。&lt;/p&gt;</content><category term="開発"></category><category term="mixi"></category><category term="net"></category><category term="Software"></category><category term="twitter"></category></entry><entry><title>「ペンギンのイラスト付きLinuxクレジットカード登場」！</title><link href="https://igawa.io/posts/2009/07/penginnoirasutofu-kilinuxkurezitsutokadodeng-chang/" rel="alternate"></link><published>2009-07-31T04:53:00+09:00</published><updated>2009-07-31T04:53:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-07-31:/posts/2009/07/penginnoirasutofu-kilinuxkurezitsutokadodeng-chang/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0907/30/news005.html"&gt;&lt;img alt="http://www.itmedia.co.jp/news/articles/0907/30/news005.html" src="http://kwout.com/cutout/n/7k/fz/8pm_bor.jpg" title="ペンギンのイラスト付きLinuxクレジットカード登場 - ITmedia News"&gt;{width="511"
+height="246"}&lt;/a&gt;
+&lt;a href="http://www.itmedia.co.jp/news/articles/0907/30/news005.html"&gt;ペンギンのイラスト付きLinuxクレジットカード登場 - ITmedia
+News&lt;/a&gt; via
+&lt;a href="http://itmedia.kwout.com/quote/n7kfz8pm"&gt;kwout&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://kwout.com/cutout/n/7k/fz/8pm_bor.js"&gt;http://kwout.com/cutout/n/7k/fz/8pm_bor.js&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ちょっと欲しいかも。今のところ、このカードを作れるのは米国在住者のみらしいです。&lt;br&gt;
+日本での提供が開始されたら、検討してみたいと思います。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0907/30/news005.html"&gt;&lt;img alt="http://www.itmedia.co.jp/news/articles/0907/30/news005.html" src="http://kwout.com/cutout/n/7k/fz/8pm_bor.jpg" title="ペンギンのイラスト付きLinuxクレジットカード登場 - ITmedia News"&gt;{width="511"
+height="246"}&lt;/a&gt;
+&lt;a href="http://www.itmedia.co.jp/news/articles/0907/30/news005.html"&gt;ペンギンのイラスト付きLinuxクレジットカード登場 - ITmedia
+News&lt;/a&gt; via
+&lt;a href="http://itmedia.kwout.com/quote/n7kfz8pm"&gt;kwout&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://kwout.com/cutout/n/7k/fz/8pm_bor.js"&gt;http://kwout.com/cutout/n/7k/fz/8pm_bor.js&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;ちょっと欲しいかも。今のところ、このカードを作れるのは米国在住者のみらしいです。&lt;br&gt;
 日本での提供が開始されたら、検討してみたいと思います。&lt;/p&gt;</content><category term="お金"></category></entry><entry><title>friendfeed</title><link href="https://igawa.io/posts/2009/07/friendfeed/" rel="alternate"></link><published>2009-07-29T06:06:00+09:00</published><updated>2009-07-29T06:06:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-07-29:/posts/2009/07/friendfeed/</id><summary type="html">&lt;p&gt;ブログ更新をtwitterへつぶやくのに、wordpressのプラグインを使っていたが、&lt;br&gt;
@@ -8673,21 +7648,24 @@ Sを予約しました！（ヨドバシカメラにしました。一括で購�
 単に、カゼひいて寝込んでるのが原因ですがw&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.0r2.info/blog/2009/06/17/iphone-3g-s%E4%BA%88%E7%B4%84%E9%96%8B%E5%A7%8B%EF%BC%81618%E6%9C%A8%E3%81%8B%E3%82%89/"&gt;先日のエントリー&lt;/a&gt;で、「iPhone予約開始！」と言った割には、&lt;br&gt;
 私自身まだ、予約できてません。0r2..だけですけど。&lt;br&gt;
 それは、私に原因があります。&lt;br&gt;
-単に、カゼひいて寝込んでるのが原因ですがw&lt;/p&gt;</content><category term="iPhone"></category><category term="iPhone 3G S"></category><category term="PHS-Mobile-Phone"></category></entry><entry><title>iPhone 3G S予約開始！(6/18(木)から)</title><link href="https://igawa.io/posts/2009/06/iphone-3g-syu-yue-kai-shi-618mu-kara/" rel="alternate"></link><published>2009-06-17T02:52:00+09:00</published><updated>2009-06-17T02:52:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-06-17:/posts/2009/06/iphone-3g-syu-yue-kai-shi-618mu-kara/</id><summary type="html">&lt;div id="kwout_sfx7rwdc" class="kwout" style="text-align:center;"&gt;
-
-[![http://plusd.itmedia.co.jp/mobile/articles/0906/16/news086.html](http://kwout.com/cutout/s/fx/7r/wdc_bor.jpg "「iPhone 3G S」、6月18日から予約受付開始 - ITmedia +D モバイル"){width="522"
-height="82"}](http://plusd.itmedia.co.jp/mobile/articles/0906/16/news086.html)
-[「iPhone 3G S」、6月18日から予約受付開始 - ITmedia +D
-モバイル](http …&lt;/div&gt;</summary><content type="html">&lt;div id="kwout_sfx7rwdc" class="kwout" style="text-align:center;"&gt;
-
-[![http://plusd.itmedia.co.jp/mobile/articles/0906/16/news086.html](http://kwout.com/cutout/s/fx/7r/wdc_bor.jpg "「iPhone 3G S」、6月18日から予約受付開始 - ITmedia +D モバイル"){width="522"
-height="82"}](http://plusd.itmedia.co.jp/mobile/articles/0906/16/news086.html)
-[「iPhone 3G S」、6月18日から予約受付開始 - ITmedia +D
-モバイル](http://plusd.itmedia.co.jp/mobile/articles/0906/16/news086.html)
-via [kwout](http://itmedia.kwout.com/quote/sfx7rwdc)
-
-&lt;/div&gt;
-
+単に、カゼひいて寝込んでるのが原因ですがw&lt;/p&gt;</content><category term="iPhone"></category><category term="iPhone 3G S"></category><category term="PHS-Mobile-Phone"></category></entry><entry><title>iPhone 3G S予約開始！(6/18(木)から)</title><link href="https://igawa.io/posts/2009/06/iphone-3g-syu-yue-kai-shi-618mu-kara/" rel="alternate"></link><published>2009-06-17T02:52:00+09:00</published><updated>2009-06-17T02:52:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-06-17:/posts/2009/06/iphone-3g-syu-yue-kai-shi-618mu-kara/</id><summary type="html">&lt;p&gt;&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/0906/16/news086.html"&gt;&lt;img alt="http://plusd.itmedia.co.jp/mobile/articles/0906/16/news086.html" src="http://kwout.com/cutout/s/fx/7r/wdc_bor.jpg" title="「iPhone 3G S」、6月18日から予約受付開始 - ITmedia +D モバイル"&gt;{width="522"
+height="82"}&lt;/a&gt;
+&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/0906/16/news086.html"&gt;「iPhone 3G S」、6月18日から予約受付開始 - ITmedia +D
+モバイル&lt;/a&gt;
+via &lt;a href="http://itmedia.kwout.com/quote/sfx7rwdc"&gt;kwout&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://kwout.com/cutout/s/fx/7r/wdc_bor.js"&gt;http://kwout.com/cutout/s/fx/7r/wdc_bor.js&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;6/18(木)からiPhone 3G Sが予約受付開始になるそうです。&lt;br&gt;
+やっぱり、予約しないと発売日の購入は難しいんでしょうか。。?&lt;br&gt;
+もう、欲しい人はとっくに持っているんだと思っていたんですが、&lt;br&gt;
+私みたいな人や、「iPhone
+3Gは持っているけど、新しいのが出たら、そっちが欲しいに決まってる！w」な&lt;br&gt;
+人もたくさんいるということでしょうか。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://mb.softbank.jp/mb/iphone/iphone_3g_s/reservation.html"&gt;「iPhone 3G
+S」予約受付について(ソフトバンクモバイル)&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/0906/16/news086.html"&gt;&lt;img alt="http://plusd.itmedia.co.jp/mobile/articles/0906/16/news086.html" src="http://kwout.com/cutout/s/fx/7r/wdc_bor.jpg" title="「iPhone 3G S」、6月18日から予約受付開始 - ITmedia +D モバイル"&gt;{width="522"
+height="82"}&lt;/a&gt;
+&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/0906/16/news086.html"&gt;「iPhone 3G S」、6月18日から予約受付開始 - ITmedia +D
+モバイル&lt;/a&gt;
+via &lt;a href="http://itmedia.kwout.com/quote/sfx7rwdc"&gt;kwout&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://kwout.com/cutout/s/fx/7r/wdc_bor.js"&gt;http://kwout.com/cutout/s/fx/7r/wdc_bor.js&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;6/18(木)からiPhone 3G Sが予約受付開始になるそうです。&lt;br&gt;
 やっぱり、予約しないと発売日の購入は難しいんでしょうか。。?&lt;br&gt;
@@ -8814,23 +7792,24 @@ EN-EL3&lt;br&gt;
 には、表示されていないので、もしかしたら、正式なものではないのかも。&lt;/p&gt;
 &lt;p&gt;私は、50GBプランを契約中なのですが、既に90%以上の使用率になっているので、
 さらなる容量のプランが出てくるのは、非常にうれしいです。&lt;/p&gt;</content><category term="dropbox"></category><category term="life hack"></category><category term="PC"></category><category term="Software"></category></entry><entry><title>仕事中にネットで遊ぶのは、仕事の生産性に有効？？</title><link href="https://igawa.io/posts/2009/04/shi-shi-zhong-ninetsutodeyou-bunoha-shi-shi-nosheng-chan-xing-niyou-xiao/" rel="alternate"></link><published>2009-04-06T04:50:00+09:00</published><updated>2009-04-06T04:50:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-04-06:/posts/2009/04/shi-shi-zhong-ninetsutodeyou-bunoha-shi-shi-nosheng-chan-xing-niyou-xiao/</id><summary type="html">&lt;p&gt;仕事中に（適度に）ネットで遊ぶのは、仕事の生産性向上に有効かもしれないという結果が出たそうだ。&lt;/p&gt;
-&lt;div id="kwout_64me8pmv" class="kwout" style="text-align:center;"&gt;
-
-![http://www.itmedia.co.jp/news/articles/0904/03/news056.html](http://kwout.com/cutout/6/4m/e8/pmv_bor.jpg "仕事中にネットで遊ぶと生産性が高まる——豪大学調査 - ITmedia News"){width="515"
-height="112"}  
-[仕事中にネットで遊ぶと生産性が高まる——豪大学調査 - ITmedia
-News](http://www.itmedia.co.jp/news/articles/0904/03/news056.html) via
-[kwout](http …&lt;/div&gt;</summary><content type="html">&lt;p&gt;仕事中に（適度に）ネットで遊ぶのは、仕事の生産性向上に有効かもしれないという結果が出たそうだ。&lt;/p&gt;
-&lt;div id="kwout_64me8pmv" class="kwout" style="text-align:center;"&gt;
-
-![http://www.itmedia.co.jp/news/articles/0904/03/news056.html](http://kwout.com/cutout/6/4m/e8/pmv_bor.jpg "仕事中にネットで遊ぶと生産性が高まる——豪大学調査 - ITmedia News"){width="515"
-height="112"}  
-[仕事中にネットで遊ぶと生産性が高まる——豪大学調査 - ITmedia
-News](http://www.itmedia.co.jp/news/articles/0904/03/news056.html) via
-[kwout](http://itmedia.kwout.com/quote/64me8pmv)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;img alt="http://www.itmedia.co.jp/news/articles/0904/03/news056.html" src="http://kwout.com/cutout/6/4m/e8/pmv_bor.jpg" title="仕事中にネットで遊ぶと生産性が高まる——豪大学調査 - ITmedia News"&gt;{width="515"
+height="112"}&lt;br&gt;
+&lt;a href="http://www.itmedia.co.jp/news/articles/0904/03/news056.html"&gt;仕事中にネットで遊ぶと生産性が高まる——豪大学調査 - ITmedia
+News&lt;/a&gt; via
+&lt;a href="http://itmedia.kwout.com/quote/64me8pmv"&gt;kwout&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://kwout.com/cutout/6/4m/e8/pmv_bor.js"&gt;http://kwout.com/cutout/6/4m/e8/pmv_bor.js&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ただし、  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;仕事中にネットで遊んでいる人は、そうでない人より約9％生産性が高いことが示された&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;とかいてあるだけなので、どのような調査がおこなわれたのかは、&lt;br&gt;
+情報元：&lt;a href="http://uninews.unimelb.edu.au/news/5750/"&gt;http://uninews.unimelb.edu.au/news/5750/&lt;/a&gt;&lt;br&gt;
+あたりから探っていく必要があると思います。&lt;/p&gt;</summary><content type="html">&lt;p&gt;仕事中に（適度に）ネットで遊ぶのは、仕事の生産性向上に有効かもしれないという結果が出たそうだ。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="http://www.itmedia.co.jp/news/articles/0904/03/news056.html" src="http://kwout.com/cutout/6/4m/e8/pmv_bor.jpg" title="仕事中にネットで遊ぶと生産性が高まる——豪大学調査 - ITmedia News"&gt;{width="515"
+height="112"}&lt;br&gt;
+&lt;a href="http://www.itmedia.co.jp/news/articles/0904/03/news056.html"&gt;仕事中にネットで遊ぶと生産性が高まる——豪大学調査 - ITmedia
+News&lt;/a&gt; via
+&lt;a href="http://itmedia.kwout.com/quote/64me8pmv"&gt;kwout&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://kwout.com/cutout/6/4m/e8/pmv_bor.js"&gt;http://kwout.com/cutout/6/4m/e8/pmv_bor.js&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;ただし、  &lt;/p&gt;
 &lt;blockquote&gt;
@@ -8842,21 +7821,13 @@ News](http://www.itmedia.co.jp/news/articles/0904/03/news056.html) via
 &lt;a href="http://guide.fund-no-umi.com/tools/pgraph.html"&gt;ポートフォリオグラフ
 メーカー&lt;/a&gt;&lt;br&gt;
 ちょっと、普通預金が多すぎる気がするので、ETFへと移行予定。&lt;/p&gt;
-&lt;div style="width:390px;"&gt;
-
-[by
-投資信託のガイド：ポートフォリオグラフメーカー](http://guide.fund-no-umi.com/tools/pgraph.html)
-
-&lt;/div&gt;</summary><content type="html">&lt;p&gt;ポートフォリオのグラフを作ることができるサイト。&lt;br&gt;
+&lt;p&gt;&lt;a href="http://guide.fund-no-umi.com/tools/pgraph.html"&gt;by
+投資信託のガイド：ポートフォリオグラフメーカー&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;ポートフォリオのグラフを作ることができるサイト。&lt;br&gt;
 &lt;a href="http://guide.fund-no-umi.com/tools/pgraph.html"&gt;ポートフォリオグラフ
 メーカー&lt;/a&gt;&lt;br&gt;
 ちょっと、普通預金が多すぎる気がするので、ETFへと移行予定。&lt;/p&gt;
-&lt;div style="width:390px;"&gt;
-
-[by
-投資信託のガイド：ポートフォリオグラフメーカー](http://guide.fund-no-umi.com/tools/pgraph.html)
-
-&lt;/div&gt;</content><category term="お金"></category><category term="ポートフォリオ"></category><category term="生活"></category></entry><entry><title>一般ユーザ権限でrpmbuildを実行</title><link href="https://igawa.io/posts/2009/03/yi-ban-yuzaquan-xian-derpmbuildwoshi-xing/" rel="alternate"></link><published>2009-03-21T13:53:00+09:00</published><updated>2009-03-21T13:53:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-03-21:/posts/2009/03/yi-ban-yuzaquan-xian-derpmbuildwoshi-xing/</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;%_topdir &lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;&lt;span class="s2"&gt;/src/rpms&amp;quot;&lt;/span&gt; &amp;gt; &lt;span class="nv"&gt;$HOME&lt;/span&gt;/.rpmmacros
+&lt;p&gt;&lt;a href="http://guide.fund-no-umi.com/tools/pgraph.html"&gt;by
+投資信託のガイド：ポートフォリオグラフメーカー&lt;/a&gt;&lt;/p&gt;</content><category term="お金"></category><category term="ポートフォリオ"></category><category term="生活"></category></entry><entry><title>一般ユーザ権限でrpmbuildを実行</title><link href="https://igawa.io/posts/2009/03/yi-ban-yuzaquan-xian-derpmbuildwoshi-xing/" rel="alternate"></link><published>2009-03-21T13:53:00+09:00</published><updated>2009-03-21T13:53:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-03-21:/posts/2009/03/yi-ban-yuzaquan-xian-derpmbuildwoshi-xing/</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;%_topdir &lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;&lt;span class="s2"&gt;/src/rpms&amp;quot;&lt;/span&gt; &amp;gt; &lt;span class="nv"&gt;$HOME&lt;/span&gt;/.rpmmacros
 $ mkdir -p &lt;span class="nv"&gt;$HOME&lt;/span&gt;/src/rpms/&lt;span class="o"&gt;{&lt;/span&gt;BUILD,RPMS,SOURCES,SPECS,SRPMS&lt;span class="o"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -12218,70 +11189,26 @@ KDDI、携帯電話上で読書でき、オンラインで本も買えるポー�
 メガスター家庭用&lt;/a&gt;&lt;br&gt;
 ピンホール式じゃなくて、ちゃんとレンズを使った投影方式の様です。&lt;br&gt;
 今まで良くあった、ちゃっちー奴じゃない！&lt;br&gt;
-やべー。欲しい〜（笑）。&lt;/p&gt;</content><category term="science"></category></entry><entry><title>Death note(デスノート) 第６巻発売！</title><link href="https://igawa.io/posts/2005/04/death-notedesunoto-di-6juan-fa-mai/" rel="alternate"></link><published>2005-04-15T00:09:00+09:00</published><updated>2005-04-15T00:09:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-04-15:/posts/2005/04/death-notedesunoto-di-6juan-fa-mai/</id><summary type="html">&lt;div class="bk1-box" style="margin-bottom:0;"&gt;
-
-&lt;div class="bk1-image" style="float:left;"&gt;
-
-[![Ｄｅａｔｈ　ｎｏｔｅ](http://img.bk1.co.jp/bookimages/0253/025371090000.jpg)](http://www.bk1.co.jp/product/2537109/p-hugh55881 "オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"){#bk1link}
-
-&lt;/div&gt;
-
-&lt;div class="bk1-info"
-style="float:left;margin-left:15px;line-height:120%;"&gt;
-
-&lt;div class="bk1-name" style="margin-bottom:10px;line-height:120%;"&gt;
-
-[Ｄｅａｔｈ　ｎｏｔｅ第６巻](http://www.bk1.co.jp/product/2537109/p-hugh55881 "オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"){#bk1link}
-&lt;div class="bk1-powered-date"
-style="font-size:7pt;margin-top:5px;font-family:verdana;line-height:120%;"&gt;
-
-posted with
-[簡単リンクくん](http://breeder.bk1.jp/cgi-bin/link/create.cgi?bibid=2537109 …&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="bk1-box" style="margin-bottom:0;"&gt;
-
-&lt;div class="bk1-image" style="float:left;"&gt;
-
-[![Ｄｅａｔｈ　ｎｏｔｅ](http://img.bk1.co.jp/bookimages/0253/025371090000.jpg)](http://www.bk1.co.jp/product/2537109/p-hugh55881 "オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"){#bk1link}
-
-&lt;/div&gt;
-
-&lt;div class="bk1-info"
-style="float:left;margin-left:15px;line-height:120%;"&gt;
-
-&lt;div class="bk1-name" style="margin-bottom:10px;line-height:120%;"&gt;
-
-[Ｄｅａｔｈ　ｎｏｔｅ第６巻](http://www.bk1.co.jp/product/2537109/p-hugh55881 "オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"){#bk1link}
-&lt;div class="bk1-powered-date"
-style="font-size:7pt;margin-top:5px;font-family:verdana;line-height:120%;"&gt;
-
-posted with
-[簡単リンクくん](http://breeder.bk1.jp/cgi-bin/link/create.cgi?bibid=2537109&amp;aid=p-hugh55881 "簡単リンクくん")
-at 2005. 4.15
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div class="bk1-detail"&gt;
-
-集英社 (2005.4)  
-通常24時間以内に発送します。
-
-&lt;/div&gt;
-
-&lt;div class="bk1-link" style="margin-top:5px;"&gt;
-
-[オンライン書店ビーケーワンで詳細を見る](http://www.bk1.co.jp/product/2537109/p-hugh55881 "オンライン書店ビーケーワン"){#bk1link}
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div class="bk1-footer" style="clear:left;"&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
+やべー。欲しい〜（笑）。&lt;/p&gt;</content><category term="science"></category></entry><entry><title>Death note(デスノート) 第６巻発売！</title><link href="https://igawa.io/posts/2005/04/death-notedesunoto-di-6juan-fa-mai/" rel="alternate"></link><published>2005-04-15T00:09:00+09:00</published><updated>2005-04-15T00:09:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-04-15:/posts/2005/04/death-notedesunoto-di-6juan-fa-mai/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.bk1.co.jp/product/2537109/p-hugh55881" id="bk1link" title="オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"&gt;&lt;img alt="Ｄｅａｔｈ　ｎｏｔｅ" src="http://img.bk1.co.jp/bookimages/0253/025371090000.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;style="float:left;margin-left:15px;line-height:120%;"&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/product/2537109/p-hugh55881" id="bk1link" title="オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"&gt;Ｄｅａｔｈ　ｎｏｔｅ第６巻&lt;/a&gt;
+style="font-size:7pt;margin-top:5px;font-family:verdana;line-height:120%;"&amp;gt;&lt;/p&gt;
+&lt;p&gt;posted with
+&lt;a href="http://breeder.bk1.jp/cgi-bin/link/create.cgi?bibid=2537109&amp;amp;aid=p-hugh55881" title="簡単リンクくん"&gt;簡単リンクくん&lt;/a&gt;
+at 2005. 4.15&lt;/p&gt;
+&lt;p&gt;集英社 (2005.4)&lt;br&gt;
+通常24時間以内に発送します。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/product/2537109/p-hugh55881" id="bk1link" title="オンライン書店ビーケーワン"&gt;オンライン書店ビーケーワンで詳細を見る&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;うわー。買わなきゃ〜。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.bk1.co.jp/product/2537109/p-hugh55881" id="bk1link" title="オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"&gt;&lt;img alt="Ｄｅａｔｈ　ｎｏｔｅ" src="http://img.bk1.co.jp/bookimages/0253/025371090000.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;style="float:left;margin-left:15px;line-height:120%;"&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/product/2537109/p-hugh55881" id="bk1link" title="オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"&gt;Ｄｅａｔｈ　ｎｏｔｅ第６巻&lt;/a&gt;
+style="font-size:7pt;margin-top:5px;font-family:verdana;line-height:120%;"&amp;gt;&lt;/p&gt;
+&lt;p&gt;posted with
+&lt;a href="http://breeder.bk1.jp/cgi-bin/link/create.cgi?bibid=2537109&amp;amp;aid=p-hugh55881" title="簡単リンクくん"&gt;簡単リンクくん&lt;/a&gt;
+at 2005. 4.15&lt;/p&gt;
+&lt;p&gt;集英社 (2005.4)&lt;br&gt;
+通常24時間以内に発送します。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/product/2537109/p-hugh55881" id="bk1link" title="オンライン書店ビーケーワン"&gt;オンライン書店ビーケーワンで詳細を見る&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;うわー。買わなきゃ〜。&lt;/p&gt;</content></entry><entry><title>ボーステック、「銀河英雄伝説 VII」の正式サービスを中止停止の理由は版権元 の版権許諾契約の解除</title><link href="https://igawa.io/posts/2005/04/bosutetsuku-yin-he-ying-xiong-chuan-shuo-vii-nozheng-shi-sabisuwozhong-zhi-ting-zhi-noli-you-haban-quan-yuan-noban-quan-xu-nuo-qi-yue-nojie-chu/" rel="alternate"></link><published>2005-04-14T23:54:00+09:00</published><updated>2005-04-14T23:54:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-04-14:/posts/2005/04/bosutetsuku-yin-he-ying-xiong-chuan-shuo-vii-nozheng-shi-sabisuwozhong-zhi-ting-zhi-noli-you-haban-quan-yuan-noban-quan-xu-nuo-qi-yue-nojie-chu/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.watch.impress.co.jp/game/docs/20050414/ginga.htm"&gt;http://www.watch.impress.co.jp/game/docs/20050414/ginga.htm&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;銀英〜！&lt;br&gt;
 なんか、原作をもう一回読みたくなって来たような、そうでもないような。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.watch.impress.co.jp/game/docs/20050414/ginga.htm"&gt;http://www.watch.impress.co.jp/game/docs/20050414/ginga.htm&lt;/a&gt;&lt;/p&gt;
@@ -13023,13 +11950,8 @@ FreeBSDやMacなどを導入してもいいのではないか？&lt;br&gt;
 発売日　&lt;strong&gt;2004.08&lt;/strong&gt;&lt;br&gt;
 価格 　&lt;strong&gt;￥ 4,725（￥ 4,500）&lt;/strong&gt;&lt;br&gt;
 ISBN 　&lt;strong&gt;4797327014&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="info"&gt;
-
-Ｌｉｎｕｘでのプログラミングを網羅した本格的・体系的な入門書。シェルスクリプトやｇｃｃの基本から、高度なネットワークプログラミングまで、ＵＮＩＸプログラミングの真髄を学ぶ。９９年刊の改訂第２版。
-\[ｂｋ１の内容紹介\]
-
-&lt;/div&gt;
-
+&lt;p&gt;Ｌｉｎｕｘでのプログラミングを網羅した本格的・体系的な入門書。シェルスクリプトやｇｃｃの基本から、高度なネットワークプログラミングまで、ＵＮＩＸプログラミングの真髄を学ぶ。９９年刊の改訂第２版。
+[ｂｋ１の内容紹介]&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_detail.cgi?aid=p-hugh55881&amp;amp;bibid=02467533" title="オンライン書店ｂｋ１：Ｌｉｎｕｘプログラミング 改訂第２版"&gt;ｂｋ１で詳しく見る&lt;/a&gt;
 &lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_top.cgi?aid=p-hugh55881" title="オンライン書店ｂｋ１"&gt;&lt;img alt="オンライン書店ｂｋ１" src="http://www.bk1.co.jp/images/breeder/banner/button.gif"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Linuxプログラミングしたいなと思っているので。&lt;/p&gt;</summary><content type="html">&lt;p&gt;最近ちょっと気になっている本。  &lt;/p&gt;
@@ -13041,13 +11963,8 @@ ISBN 　&lt;strong&gt;4797327014&lt;/strong&gt;&lt;/p&gt;
 発売日　&lt;strong&gt;2004.08&lt;/strong&gt;&lt;br&gt;
 価格 　&lt;strong&gt;￥ 4,725（￥ 4,500）&lt;/strong&gt;&lt;br&gt;
 ISBN 　&lt;strong&gt;4797327014&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="info"&gt;
-
-Ｌｉｎｕｘでのプログラミングを網羅した本格的・体系的な入門書。シェルスクリプトやｇｃｃの基本から、高度なネットワークプログラミングまで、ＵＮＩＸプログラミングの真髄を学ぶ。９９年刊の改訂第２版。
-\[ｂｋ１の内容紹介\]
-
-&lt;/div&gt;
-
+&lt;p&gt;Ｌｉｎｕｘでのプログラミングを網羅した本格的・体系的な入門書。シェルスクリプトやｇｃｃの基本から、高度なネットワークプログラミングまで、ＵＮＩＸプログラミングの真髄を学ぶ。９９年刊の改訂第２版。
+[ｂｋ１の内容紹介]&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_detail.cgi?aid=p-hugh55881&amp;amp;bibid=02467533" title="オンライン書店ｂｋ１：Ｌｉｎｕｘプログラミング 改訂第２版"&gt;ｂｋ１で詳しく見る&lt;/a&gt;
 &lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_top.cgi?aid=p-hugh55881" title="オンライン書店ｂｋ１"&gt;&lt;img alt="オンライン書店ｂｋ１" src="http://www.bk1.co.jp/images/breeder/banner/button.gif"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Linuxプログラミングしたいなと思っているので。&lt;/p&gt;</content></entry><entry><title>Suicaがケータイに - モバイルSuica、来年1月から、ドコモとauで</title><link href="https://igawa.io/posts/2005/02/suicagaketaini-mobairusuica-lai-nian-1yue-kara-dokomotoaude/" rel="alternate"></link><published>2005-02-25T22:57:00+09:00</published><updated>2005-02-25T22:57:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-02-25:/posts/2005/02/suicagaketaini-mobairusuica-lai-nian-1yue-kara-dokomotoaude/</id><summary type="html">&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2005/02/22/002.html"&gt;http://pcweb.mycom.co.jp/news/2005/02/22/002.html&lt;/a&gt;&lt;/p&gt;

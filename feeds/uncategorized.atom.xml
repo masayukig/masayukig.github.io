@@ -60,29 +60,10 @@ testr run --parallel tempest.api.compute.servers.test_servers_negative.ServersNe
 一番目の方法では、全てのテストが実行されます。環境にも依存しますが、だいたい１時間程度はかかると思っておいたほうが良いでしょう。&lt;br&gt;
 二番目の方法では、指定したテストが実行されます。なおここは正規表現が使えるようです。&lt;/p&gt;
 &lt;p&gt;以下、実行例です。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-&lt;/div&gt;
-
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png)](https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png)
-
-&lt;/div&gt;
-
-&lt;div&gt;
-
-一つのテストが3.512秒で実行されて、成功したことがわかります。
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一つのテストが3.512秒で実行されて、成功したことがわかります。&lt;/p&gt;
 &lt;p&gt;コレ以外にも、「run_tempest.sh」「tox」を使って実行する方法も示されていますので、それらを使ってみましょう。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2014/12/20ebc-executing_tempest.png)](https://masayukig.files.wordpress.com/2014/12/20ebc-executing_tempest.png)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2014/12/20ebc-executing_tempest.png"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2014/12/20ebc-executing_tempest.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;まとめ&lt;/h2&gt;
 &lt;p&gt;いずれも、同じテストケースを実行しているので、出力もほぼ同様です。好みに合わせて使い分ければ良いと思います。&lt;br&gt;
 個人的な好みとしては、toxを使ったときの出力がわかりやすく、親しみやすい（フェイスマークもあるし）感じられるので、toxを使っていこうかなと思います。&lt;/p&gt;
@@ -180,12 +161,8 @@ from はてなブックマーク - タグ - lifehack
 &lt;li&gt;その他パンフレット(0円)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;です。&lt;/p&gt;
-&lt;div class="separator" style="clear:both;text-align:center;"&gt;
-
-[![picture](https://masayukig.files.wordpress.com/2012/03/c6631-2012-03-1609-52-13.jpg?w=300){width="320"
-height="240"}](https://masayukig.files.wordpress.com/2012/03/c6631-2012-03-1609-52-13.jpg)
-
-&lt;/div&gt;</content></entry><entry><title>気になる話題: ＜CNET Japan＞新しい「iPad」は買うべきか--ユーザータイプ別に考える</title><link href="https://igawa.io/posts/2012/03/qi-ninaruhua-ti-cnet-japanxin-shiiipad-hamai-ubekika-yuzataipubie-nikao-eru/" rel="alternate"></link><published>2012-03-15T23:45:00+09:00</published><updated>2012-03-15T23:45:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-15:/posts/2012/03/qi-ninaruhua-ti-cnet-japanxin-shiiipad-hamai-ubekika-yuzataipubie-nikao-eru/</id><summary type="html">&lt;p&gt;気になる話題:
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/c6631-2012-03-1609-52-13.jpg"&gt;&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2012/03/c6631-2012-03-1609-52-13.jpg?w=300"&gt;{width="320"
+height="240"}&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>気になる話題: ＜CNET Japan＞新しい「iPad」は買うべきか--ユーザータイプ別に考える</title><link href="https://igawa.io/posts/2012/03/qi-ninaruhua-ti-cnet-japanxin-shiiipad-hamai-ubekika-yuzataipubie-nikao-eru/" rel="alternate"></link><published>2012-03-15T23:45:00+09:00</published><updated>2012-03-15T23:45:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-15:/posts/2012/03/qi-ninaruhua-ti-cnet-japanxin-shiiipad-hamai-ubekika-yuzataipubie-nikao-eru/</id><summary type="html">&lt;p&gt;気になる話題:
 &lt;a href="http://japan.cnet.com/news/commentary/35015145/?tag=as.rss"&gt;http://japan.cnet.com/news/commentary/35015145/?tag=as.rss&lt;/a&gt;&lt;br&gt;
 from 朝日新聞デジタル &lt;a href="http://www.asahi.com/"&gt;http://www.asahi.com/&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;気になる話題:
 &lt;a href="http://japan.cnet.com/news/commentary/35015145/?tag=as.rss"&gt;http://japan.cnet.com/news/commentary/35015145/?tag=as.rss&lt;/a&gt;&lt;br&gt;
@@ -233,19 +210,9 @@ height="1"}&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;コクヨS&amp;amp;Tは2012年3月14日、スマートフォンのアプリケーションで手書きメモをデジタル化できるノート「CamiApp」シリーズにA4ヨコ型タイプなどを追加した。A4サイズのツインリングノートが840円、見開きでA4サイズになるA5ノートが241円。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;from ITpro総合 &lt;a href="http://itpro.nikkeibp.co.jp/"&gt;http://itpro.nikkeibp.co.jp/&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>気になる話題: Using Cloud Foundry Services with Ruby: Part 2 – Run-time Support for Ruby Applications</title><link href="https://igawa.io/posts/2012/03/qi-ninaruhua-ti-using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications/" rel="alternate"></link><published>2012-03-15T22:15:00+09:00</published><updated>2012-03-15T22:15:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-15:/posts/2012/03/qi-ninaruhua-ti-using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications/</id><summary type="html">&lt;div&gt;
-
-&lt;http://blog.cloudfoundry.com/post/13481010778/using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications&gt;  
-
-from Blog &lt;http://blog.cloudfoundry.com&gt;
-
-&lt;/div&gt;</summary><content type="html">&lt;div&gt;
-
-&lt;http://blog.cloudfoundry.com/post/13481010778/using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications&gt;  
-
-from Blog &lt;http://blog.cloudfoundry.com&gt;
-
-&lt;/div&gt;</content></entry><entry><title>Apple TV 新モデル発表！</title><link href="https://igawa.io/posts/2012/03/apple-tv-xin-moderufa-biao/" rel="alternate"></link><published>2012-03-07T19:31:00+09:00</published><updated>2012-03-07T19:31:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-07:/posts/2012/03/apple-tv-xin-moderufa-biao/</id><summary type="html">&lt;p&gt;［ #iPad3 ］より美しくカッコよくなった「Apple TV」の新モデルが出たよ！&lt;br&gt;
+&lt;p&gt;from ITpro総合 &lt;a href="http://itpro.nikkeibp.co.jp/"&gt;http://itpro.nikkeibp.co.jp/&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>気になる話題: Using Cloud Foundry Services with Ruby: Part 2 – Run-time Support for Ruby Applications</title><link href="https://igawa.io/posts/2012/03/qi-ninaruhua-ti-using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications/" rel="alternate"></link><published>2012-03-15T22:15:00+09:00</published><updated>2012-03-15T22:15:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-15:/posts/2012/03/qi-ninaruhua-ti-using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications/</id><summary type="html">&lt;p&gt;&lt;a href="http://blog.cloudfoundry.com/post/13481010778/using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications"&gt;http://blog.cloudfoundry.com/post/13481010778/using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;from Blog &lt;a href="http://blog.cloudfoundry.com"&gt;http://blog.cloudfoundry.com&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://blog.cloudfoundry.com/post/13481010778/using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications"&gt;http://blog.cloudfoundry.com/post/13481010778/using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;from Blog &lt;a href="http://blog.cloudfoundry.com"&gt;http://blog.cloudfoundry.com&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>Apple TV 新モデル発表！</title><link href="https://igawa.io/posts/2012/03/apple-tv-xin-moderufa-biao/" rel="alternate"></link><published>2012-03-07T19:31:00+09:00</published><updated>2012-03-07T19:31:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-07:/posts/2012/03/apple-tv-xin-moderufa-biao/</id><summary type="html">&lt;p&gt;［ #iPad3 ］より美しくカッコよくなった「Apple TV」の新モデルが出たよ！&lt;br&gt;
 &lt;a href="http://www.gizmodo.jp/2012/03/_ipad3_apple_tv.html"&gt;http://www.gizmodo.jp/2012/03/_ipad3_apple_tv.html&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;img alt="picture" src="http://www.gizmodo.jp/upload_files2/120308appletvhd.jpg"&gt;{width="640"
@@ -279,12 +246,7 @@ Sam Biddle（米版／湯木進悟）&lt;/p&gt;
 &lt;a href="http://japanese.engadget.com/2012/03/07/1080p-apple-tv/"&gt;http://japanese.engadget.com/2012/03/07/1080p-apple-tv/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;日本のAppleストアでも予約開始してる。8,800円。まぁ、様子見かな。&lt;br&gt;
 &lt;a href="http://store.apple.com/jp/browse/home/shop_ipod/family/apple_tv"&gt;http://store.apple.com/jp/browse/home/shop_ipod/family/apple_tv&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>アップル 新 iPad 発表：2048x1536 解像度、A5X 搭載、LTE 対応、3月16日発売</title><link href="https://igawa.io/posts/2012/03/atsupuru-xin-ipad-fa-biao-2048x1536-jie-xiang-du-a5x-da-zai-lte-dui-ying-3yue-16ri-fa-mai/" rel="alternate"></link><published>2012-03-07T19:31:00+09:00</published><updated>2012-03-07T19:31:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2012-03-07:/posts/2012/03/atsupuru-xin-ipad-fa-biao-2048x1536-jie-xiang-du-a5x-da-zai-lte-dui-ying-3yue-16ri-fa-mai/</id><summary type="html">&lt;p&gt;&lt;a href="http://japanese.engadget.com/2012/03/07/new-ipad/"&gt;http://japanese.engadget.com/2012/03/07/new-ipad/&lt;/a&gt;&lt;/p&gt;
-&lt;div style="text-align:center;"&gt;
-
-![iPad](http://www.blogcdn.com/www.engadget.com/media/2012/03/apple-ipad-3-ipad-hd-liveblog-2926.jpg)
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;img alt="iPad" src="http://www.blogcdn.com/www.engadget.com/media/2012/03/apple-ipad-3-ipad-hd-liveblog-2926.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;アップルの&lt;a href="http://japanese.engadget.com/2012/03/07/ipad/"&gt;発表イベント&lt;/a&gt;にて、新
 iPad が発表されました。主な特長は：&lt;/p&gt;
 &lt;ul&gt;
@@ -293,13 +255,10 @@ iPad が発表されました。主な特長は：&lt;/p&gt;
     ほどではありませんが、十分に精細です。彩度も40%向上。&lt;/li&gt;
 &lt;li&gt;Apple A5X：クアッドコアプロセッサ。A5 の倍高速（アップル比）。&lt;/li&gt;
 &lt;li&gt;iSight
-    カメラ：5メガピクセル …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://japanese.engadget.com/2012/03/07/new-ipad/"&gt;http://japanese.engadget.com/2012/03/07/new-ipad/&lt;/a&gt;&lt;/p&gt;
-&lt;div style="text-align:center;"&gt;
-
-![iPad](http://www.blogcdn.com/www.engadget.com/media/2012/03/apple-ipad-3-ipad-hd-liveblog-2926.jpg)
-
-&lt;/div&gt;
-
+    カメラ：5メガピクセル、裏面照射型の新しい背面カメラ。動画撮影は1080pに対応します。そのほか赤外線フィルタ、オートフォーカス、顔認識など。&lt;/li&gt;
+&lt;li&gt;音声入力：iPhone
+    同様、キーボードのマイクボタンから音声入力機能が利用できるように。英語（米、英、豪 …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://japanese.engadget.com/2012/03/07/new-ipad/"&gt;http://japanese.engadget.com/2012/03/07/new-ipad/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="iPad" src="http://www.blogcdn.com/www.engadget.com/media/2012/03/apple-ipad-3-ipad-hd-liveblog-2926.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;アップルの&lt;a href="http://japanese.engadget.com/2012/03/07/ipad/"&gt;発表イベント&lt;/a&gt;にて、新
 iPad が発表されました。主な特長は：&lt;/p&gt;
 &lt;ul&gt;
@@ -365,67 +324,23 @@ from スラッシュドット・ジャパン &lt;a href="http://slashdot.jp/"&gt
 &lt;img alt="picture" height="1" src="http://rss.rssad.jp/rss/artimg/T7he30zk4qYy/401117ac96803f93891b534c7febe7ba" width="1"&gt;&lt;/p&gt;
 &lt;p&gt;from ギズモード・ジャパン &lt;a href="http://www.gizmodo.jp/"&gt;http://www.gizmodo.jp/&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;日本語でどの程度の認識をしてくれるのか、楽しみ。&lt;/p&gt;</content></entry><entry><title>今日は東京タワーに行ってみることにします♪</title><link href="https://igawa.io/posts/2011/09/jin-ri-hadong-jing-tawanixing-tsutemirukotonishimasu/" rel="alternate"></link><published>2011-09-11T10:22:00+09:00</published><updated>2011-09-11T10:22:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-09-11:/posts/2011/09/jin-ri-hadong-jing-tawanixing-tsutemirukotonishimasu/</id><summary type="html">&lt;div class="posterous_autopost"&gt;
-
-&lt;div class="p_embed p_image_embed"&gt;
-
-[![Nec\_0413](http://posterous.com/getfile/files.posterous.com/masayukig/Ttqf0hkE3OpzBZjXp5fViBRdUgSnxoyIs9NbaRGEA4skkqXo8BFW2dRrIFFD/NEC_0413.jpg.scaled.500.jpg){width="500"
-height="667"}](http://posterous.com/getfile/files.posterous.com/masayukig/qOq9QLyVfymXz6xdR7tpPwgE80PoXmBtJBELrU5f6GpBLTMGGMYd3cfCKDnE/NEC_0413.jpg.scaled.1000.jpg)
-
-&lt;/div&gt;
-
--- masayuki
-
-&lt;/div&gt;</summary><content type="html">&lt;div class="posterous_autopost"&gt;
-
-&lt;div class="p_embed p_image_embed"&gt;
-
-[![Nec\_0413](http://posterous.com/getfile/files.posterous.com/masayukig/Ttqf0hkE3OpzBZjXp5fViBRdUgSnxoyIs9NbaRGEA4skkqXo8BFW2dRrIFFD/NEC_0413.jpg.scaled.500.jpg){width="500"
-height="667"}](http://posterous.com/getfile/files.posterous.com/masayukig/qOq9QLyVfymXz6xdR7tpPwgE80PoXmBtJBELrU5f6GpBLTMGGMYd3cfCKDnE/NEC_0413.jpg.scaled.1000.jpg)
-
-&lt;/div&gt;
-
--- masayuki
-
-&lt;/div&gt;</content></entry><entry><title>Posterousを今までのブログと連携してみたら...</title><link href="https://igawa.io/posts/2011/09/posterouswojin-madenoburogutolian-xi-shitemitara/" rel="alternate"></link><published>2011-09-11T08:14:00+09:00</published><updated>2011-09-11T08:14:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-09-11:/posts/2011/09/posterouswojin-madenoburogutolian-xi-shitemitara/</id><summary type="html">&lt;div class="posterous_autopost"&gt;
-
-今までのブログ(b.0r2.info)にも投稿されるようになった(みたい)。
-
-そういうサービスなのか。。全然知らなかったｗ
-
-だとすると、「Twitter以上、ブログ未満」っていう使い分けにならないな。
-
-とりあえず、あまり気にせずこのまま使ってみることにします。
-
- 
-
-&lt;/div&gt;</summary><content type="html">&lt;div class="posterous_autopost"&gt;
-
-今までのブログ(b.0r2.info)にも投稿されるようになった(みたい)。
-
-そういうサービスなのか。。全然知らなかったｗ
-
-だとすると、「Twitter以上、ブログ未満」っていう使い分けにならないな。
-
-とりあえず、あまり気にせずこのまま使ってみることにします。
-
- 
-
-&lt;/div&gt;</content></entry><entry><title>Posterousを使ってみることにする</title><link href="https://igawa.io/posts/2011/09/posterouswoshi-tsutemirukotonisuru/" rel="alternate"></link><published>2011-09-11T06:58:00+09:00</published><updated>2011-09-11T06:58:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-09-11:/posts/2011/09/posterouswoshi-tsutemirukotonisuru/</id><summary type="html">&lt;div class="posterous_autopost"&gt;
-
-いろんなブログを使ってて、  
-使い分けがイマイチわからないが、  
-「Twitter以上、Blog未満」なものをPosterousに使ってみることに  
-しようと考えています。
-
-&lt;/div&gt;</summary><content type="html">&lt;div class="posterous_autopost"&gt;
-
-いろんなブログを使ってて、  
-使い分けがイマイチわからないが、  
-「Twitter以上、Blog未満」なものをPosterousに使ってみることに  
-しようと考えています。
-
-&lt;/div&gt;</content></entry><entry><title>MacBook AirにLinux(Fedora)をインストール</title><link href="https://igawa.io/posts/2011/02/macbook-airnilinuxfedorawoinsutoru/" rel="alternate"></link><published>2011-02-06T06:40:00+09:00</published><updated>2011-02-06T06:40:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-02-06:/posts/2011/02/macbook-airnilinuxfedorawoinsutoru/</id><summary type="html">&lt;p&gt;MacBook AirにLinuxをインストールした。&lt;/p&gt;
+&lt;p&gt;日本語でどの程度の認識をしてくれるのか、楽しみ。&lt;/p&gt;</content></entry><entry><title>今日は東京タワーに行ってみることにします♪</title><link href="https://igawa.io/posts/2011/09/jin-ri-hadong-jing-tawanixing-tsutemirukotonishimasu/" rel="alternate"></link><published>2011-09-11T10:22:00+09:00</published><updated>2011-09-11T10:22:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-09-11:/posts/2011/09/jin-ri-hadong-jing-tawanixing-tsutemirukotonishimasu/</id><summary type="html">&lt;p&gt;&lt;a href="http://posterous.com/getfile/files.posterous.com/masayukig/qOq9QLyVfymXz6xdR7tpPwgE80PoXmBtJBELrU5f6GpBLTMGGMYd3cfCKDnE/NEC_0413.jpg.scaled.1000.jpg"&gt;&lt;img alt="Nec_0413" src="http://posterous.com/getfile/files.posterous.com/masayukig/Ttqf0hkE3OpzBZjXp5fViBRdUgSnxoyIs9NbaRGEA4skkqXo8BFW2dRrIFFD/NEC_0413.jpg.scaled.500.jpg"&gt;{width="500"
+height="667"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;-- masayuki&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://posterous.com/getfile/files.posterous.com/masayukig/qOq9QLyVfymXz6xdR7tpPwgE80PoXmBtJBELrU5f6GpBLTMGGMYd3cfCKDnE/NEC_0413.jpg.scaled.1000.jpg"&gt;&lt;img alt="Nec_0413" src="http://posterous.com/getfile/files.posterous.com/masayukig/Ttqf0hkE3OpzBZjXp5fViBRdUgSnxoyIs9NbaRGEA4skkqXo8BFW2dRrIFFD/NEC_0413.jpg.scaled.500.jpg"&gt;{width="500"
+height="667"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;-- masayuki&lt;/p&gt;</content></entry><entry><title>Posterousを今までのブログと連携してみたら...</title><link href="https://igawa.io/posts/2011/09/posterouswojin-madenoburogutolian-xi-shitemitara/" rel="alternate"></link><published>2011-09-11T08:14:00+09:00</published><updated>2011-09-11T08:14:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-09-11:/posts/2011/09/posterouswojin-madenoburogutolian-xi-shitemitara/</id><summary type="html">&lt;p&gt;今までのブログ(b.0r2.info)にも投稿されるようになった(みたい)。&lt;/p&gt;
+&lt;p&gt;そういうサービスなのか。。全然知らなかったｗ&lt;/p&gt;
+&lt;p&gt;だとすると、「Twitter以上、ブログ未満」っていう使い分けにならないな。&lt;/p&gt;
+&lt;p&gt;とりあえず、あまり気にせずこのまま使ってみることにします。&lt;/p&gt;</summary><content type="html">&lt;p&gt;今までのブログ(b.0r2.info)にも投稿されるようになった(みたい)。&lt;/p&gt;
+&lt;p&gt;そういうサービスなのか。。全然知らなかったｗ&lt;/p&gt;
+&lt;p&gt;だとすると、「Twitter以上、ブログ未満」っていう使い分けにならないな。&lt;/p&gt;
+&lt;p&gt;とりあえず、あまり気にせずこのまま使ってみることにします。&lt;/p&gt;</content></entry><entry><title>Posterousを使ってみることにする</title><link href="https://igawa.io/posts/2011/09/posterouswoshi-tsutemirukotonisuru/" rel="alternate"></link><published>2011-09-11T06:58:00+09:00</published><updated>2011-09-11T06:58:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-09-11:/posts/2011/09/posterouswoshi-tsutemirukotonisuru/</id><summary type="html">&lt;p&gt;いろんなブログを使ってて、&lt;br&gt;
+使い分けがイマイチわからないが、&lt;br&gt;
+「Twitter以上、Blog未満」なものをPosterousに使ってみることに&lt;br&gt;
+しようと考えています。&lt;/p&gt;</summary><content type="html">&lt;p&gt;いろんなブログを使ってて、&lt;br&gt;
+使い分けがイマイチわからないが、&lt;br&gt;
+「Twitter以上、Blog未満」なものをPosterousに使ってみることに&lt;br&gt;
+しようと考えています。&lt;/p&gt;</content></entry><entry><title>MacBook AirにLinux(Fedora)をインストール</title><link href="https://igawa.io/posts/2011/02/macbook-airnilinuxfedorawoinsutoru/" rel="alternate"></link><published>2011-02-06T06:40:00+09:00</published><updated>2011-02-06T06:40:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-02-06:/posts/2011/02/macbook-airnilinuxfedorawoinsutoru/</id><summary type="html">&lt;p&gt;MacBook AirにLinuxをインストールした。&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.flickr.com/photos/masayun/5419108725/" title="Fedora14 on MacBook Air by masayukig, on Flickr"&gt;&lt;img alt="Fedora14 on MacBook
 Air" src="http://farm6.static.flickr.com/5133/5419108725_0289d42b50_m.jpg"&gt;{width="240"
 height="160"}&lt;/a&gt;&lt;/p&gt;
@@ -1153,70 +1068,26 @@ Linux好きの阪神ファン？？&lt;/p&gt;</content></entry><entry><title>「
 &lt;p&gt;ガンダムに一歩近づいたか？&lt;br&gt;
 後は腕が欲しいですね。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.yomiuri.co.jp/main/news/20050421i505.htm"&gt;http://www.yomiuri.co.jp/main/news/20050421i505.htm&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;ガンダムに一歩近づいたか？&lt;br&gt;
-後は腕が欲しいですね。&lt;/p&gt;</content></entry><entry><title>Death note(デスノート) 第６巻発売！</title><link href="https://igawa.io/posts/2005/04/death-notedesunoto-di-6juan-fa-mai/" rel="alternate"></link><published>2005-04-15T00:09:00+09:00</published><updated>2005-04-15T00:09:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-04-15:/posts/2005/04/death-notedesunoto-di-6juan-fa-mai/</id><summary type="html">&lt;div class="bk1-box" style="margin-bottom:0;"&gt;
-
-&lt;div class="bk1-image" style="float:left;"&gt;
-
-[![Ｄｅａｔｈ　ｎｏｔｅ](http://img.bk1.co.jp/bookimages/0253/025371090000.jpg)](http://www.bk1.co.jp/product/2537109/p-hugh55881 "オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"){#bk1link}
-
-&lt;/div&gt;
-
-&lt;div class="bk1-info"
-style="float:left;margin-left:15px;line-height:120%;"&gt;
-
-&lt;div class="bk1-name" style="margin-bottom:10px;line-height:120%;"&gt;
-
-[Ｄｅａｔｈ　ｎｏｔｅ第６巻](http://www.bk1.co.jp/product/2537109/p-hugh55881 "オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"){#bk1link}
-&lt;div class="bk1-powered-date"
-style="font-size:7pt;margin-top:5px;font-family:verdana;line-height:120%;"&gt;
-
-posted with
-[簡単リンクくん](http://breeder.bk1.jp/cgi-bin/link/create.cgi?bibid=2537109 …&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="bk1-box" style="margin-bottom:0;"&gt;
-
-&lt;div class="bk1-image" style="float:left;"&gt;
-
-[![Ｄｅａｔｈ　ｎｏｔｅ](http://img.bk1.co.jp/bookimages/0253/025371090000.jpg)](http://www.bk1.co.jp/product/2537109/p-hugh55881 "オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"){#bk1link}
-
-&lt;/div&gt;
-
-&lt;div class="bk1-info"
-style="float:left;margin-left:15px;line-height:120%;"&gt;
-
-&lt;div class="bk1-name" style="margin-bottom:10px;line-height:120%;"&gt;
-
-[Ｄｅａｔｈ　ｎｏｔｅ第６巻](http://www.bk1.co.jp/product/2537109/p-hugh55881 "オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"){#bk1link}
-&lt;div class="bk1-powered-date"
-style="font-size:7pt;margin-top:5px;font-family:verdana;line-height:120%;"&gt;
-
-posted with
-[簡単リンクくん](http://breeder.bk1.jp/cgi-bin/link/create.cgi?bibid=2537109&amp;aid=p-hugh55881 "簡単リンクくん")
-at 2005. 4.15
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div class="bk1-detail"&gt;
-
-集英社 (2005.4)  
-通常24時間以内に発送します。
-
-&lt;/div&gt;
-
-&lt;div class="bk1-link" style="margin-top:5px;"&gt;
-
-[オンライン書店ビーケーワンで詳細を見る](http://www.bk1.co.jp/product/2537109/p-hugh55881 "オンライン書店ビーケーワン"){#bk1link}
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div class="bk1-footer" style="clear:left;"&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
+後は腕が欲しいですね。&lt;/p&gt;</content></entry><entry><title>Death note(デスノート) 第６巻発売！</title><link href="https://igawa.io/posts/2005/04/death-notedesunoto-di-6juan-fa-mai/" rel="alternate"></link><published>2005-04-15T00:09:00+09:00</published><updated>2005-04-15T00:09:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-04-15:/posts/2005/04/death-notedesunoto-di-6juan-fa-mai/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.bk1.co.jp/product/2537109/p-hugh55881" id="bk1link" title="オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"&gt;&lt;img alt="Ｄｅａｔｈ　ｎｏｔｅ" src="http://img.bk1.co.jp/bookimages/0253/025371090000.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;style="float:left;margin-left:15px;line-height:120%;"&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/product/2537109/p-hugh55881" id="bk1link" title="オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"&gt;Ｄｅａｔｈ　ｎｏｔｅ第６巻&lt;/a&gt;
+style="font-size:7pt;margin-top:5px;font-family:verdana;line-height:120%;"&amp;gt;&lt;/p&gt;
+&lt;p&gt;posted with
+&lt;a href="http://breeder.bk1.jp/cgi-bin/link/create.cgi?bibid=2537109&amp;amp;aid=p-hugh55881" title="簡単リンクくん"&gt;簡単リンクくん&lt;/a&gt;
+at 2005. 4.15&lt;/p&gt;
+&lt;p&gt;集英社 (2005.4)&lt;br&gt;
+通常24時間以内に発送します。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/product/2537109/p-hugh55881" id="bk1link" title="オンライン書店ビーケーワン"&gt;オンライン書店ビーケーワンで詳細を見る&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;うわー。買わなきゃ〜。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.bk1.co.jp/product/2537109/p-hugh55881" id="bk1link" title="オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"&gt;&lt;img alt="Ｄｅａｔｈ　ｎｏｔｅ" src="http://img.bk1.co.jp/bookimages/0253/025371090000.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;style="float:left;margin-left:15px;line-height:120%;"&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/product/2537109/p-hugh55881" id="bk1link" title="オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"&gt;Ｄｅａｔｈ　ｎｏｔｅ第６巻&lt;/a&gt;
+style="font-size:7pt;margin-top:5px;font-family:verdana;line-height:120%;"&amp;gt;&lt;/p&gt;
+&lt;p&gt;posted with
+&lt;a href="http://breeder.bk1.jp/cgi-bin/link/create.cgi?bibid=2537109&amp;amp;aid=p-hugh55881" title="簡単リンクくん"&gt;簡単リンクくん&lt;/a&gt;
+at 2005. 4.15&lt;/p&gt;
+&lt;p&gt;集英社 (2005.4)&lt;br&gt;
+通常24時間以内に発送します。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/product/2537109/p-hugh55881" id="bk1link" title="オンライン書店ビーケーワン"&gt;オンライン書店ビーケーワンで詳細を見る&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;うわー。買わなきゃ〜。&lt;/p&gt;</content></entry><entry><title>ＧＰＳ付き通学服を発売 刃物に備えて強力繊維</title><link href="https://igawa.io/posts/2005/04/gpsfu-kitong-xue-fu-wofa-mai-ren-wu-nibei-eteqiang-li-sem-wei/" rel="alternate"></link><published>2005-04-14T23:06:00+09:00</published><updated>2005-04-14T23:06:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-04-14:/posts/2005/04/gpsfu-kitong-xue-fu-wofa-mai-ren-wu-nibei-eteqiang-li-sem-wei/</id><summary type="html">&lt;p&gt;&lt;a href="http://news.goo.ne.jp/news/kyodo/keizai/20050413/20050413a2280.html"&gt;http://news.goo.ne.jp/news/kyodo/keizai/20050413/20050413a2280.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;「いじめられっ子」に最適？&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://news.goo.ne.jp/news/kyodo/keizai/20050413/20050413a2280.html"&gt;http://news.goo.ne.jp/news/kyodo/keizai/20050413/20050413a2280.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;「いじめられっ子」に最適？&lt;/p&gt;</content></entry><entry><title>アドビ、Linux対応「Adobe Reader」を間もなくリリースへ</title><link href="https://igawa.io/posts/2005/04/adobi-linuxdui-ying-adobe-reader-wojian-monakuririsuhe/" rel="alternate"></link><published>2005-04-12T21:43:00+09:00</published><updated>2005-04-12T21:43:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-04-12:/posts/2005/04/adobi-linuxdui-ying-adobe-reader-wojian-monakuririsuhe/</id><summary type="html">&lt;p&gt;&lt;a href="http://japan.cnet.com/news/ent/story/0,2000047623,20082615,00.htm"&gt;http://japan.cnet.com/news/ent/story/0,2000047623,20082615,00.htm&lt;/a&gt;&lt;/p&gt;
@@ -1438,13 +1309,8 @@ FreeBSDやMacなどを導入してもいいのではないか？&lt;br&gt;
 発売日　&lt;strong&gt;2004.08&lt;/strong&gt;&lt;br&gt;
 価格 　&lt;strong&gt;￥ 4,725（￥ 4,500）&lt;/strong&gt;&lt;br&gt;
 ISBN 　&lt;strong&gt;4797327014&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="info"&gt;
-
-Ｌｉｎｕｘでのプログラミングを網羅した本格的・体系的な入門書。シェルスクリプトやｇｃｃの基本から、高度なネットワークプログラミングまで、ＵＮＩＸプログラミングの真髄を学ぶ。９９年刊の改訂第２版。
-\[ｂｋ１の内容紹介\]
-
-&lt;/div&gt;
-
+&lt;p&gt;Ｌｉｎｕｘでのプログラミングを網羅した本格的・体系的な入門書。シェルスクリプトやｇｃｃの基本から、高度なネットワークプログラミングまで、ＵＮＩＸプログラミングの真髄を学ぶ。９９年刊の改訂第２版。
+[ｂｋ１の内容紹介]&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_detail.cgi?aid=p-hugh55881&amp;amp;bibid=02467533" title="オンライン書店ｂｋ１：Ｌｉｎｕｘプログラミング 改訂第２版"&gt;ｂｋ１で詳しく見る&lt;/a&gt;
 &lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_top.cgi?aid=p-hugh55881" title="オンライン書店ｂｋ１"&gt;&lt;img alt="オンライン書店ｂｋ１" src="http://www.bk1.co.jp/images/breeder/banner/button.gif"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Linuxプログラミングしたいなと思っているので。&lt;/p&gt;</summary><content type="html">&lt;p&gt;最近ちょっと気になっている本。  &lt;/p&gt;
@@ -1456,13 +1322,8 @@ ISBN 　&lt;strong&gt;4797327014&lt;/strong&gt;&lt;/p&gt;
 発売日　&lt;strong&gt;2004.08&lt;/strong&gt;&lt;br&gt;
 価格 　&lt;strong&gt;￥ 4,725（￥ 4,500）&lt;/strong&gt;&lt;br&gt;
 ISBN 　&lt;strong&gt;4797327014&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="info"&gt;
-
-Ｌｉｎｕｘでのプログラミングを網羅した本格的・体系的な入門書。シェルスクリプトやｇｃｃの基本から、高度なネットワークプログラミングまで、ＵＮＩＸプログラミングの真髄を学ぶ。９９年刊の改訂第２版。
-\[ｂｋ１の内容紹介\]
-
-&lt;/div&gt;
-
+&lt;p&gt;Ｌｉｎｕｘでのプログラミングを網羅した本格的・体系的な入門書。シェルスクリプトやｇｃｃの基本から、高度なネットワークプログラミングまで、ＵＮＩＸプログラミングの真髄を学ぶ。９９年刊の改訂第２版。
+[ｂｋ１の内容紹介]&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_detail.cgi?aid=p-hugh55881&amp;amp;bibid=02467533" title="オンライン書店ｂｋ１：Ｌｉｎｕｘプログラミング 改訂第２版"&gt;ｂｋ１で詳しく見る&lt;/a&gt;
 &lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_top.cgi?aid=p-hugh55881" title="オンライン書店ｂｋ１"&gt;&lt;img alt="オンライン書店ｂｋ１" src="http://www.bk1.co.jp/images/breeder/banner/button.gif"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Linuxプログラミングしたいなと思っているので。&lt;/p&gt;</content></entry><entry><title>Linuxとのセキュリティ対決でWindows Server 2003が勝利</title><link href="https://igawa.io/posts/2005/02/linuxtonosekiyuriteidui-jue-dewindows-server-2003gasheng-li/" rel="alternate"></link><published>2005-02-22T23:53:00+09:00</published><updated>2005-02-22T23:53:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-02-22:/posts/2005/02/linuxtonosekiyuriteidui-jue-dewindows-server-2003gasheng-li/</id><summary type="html">&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/NT/NEWS/20050221/3/"&gt;http://itpro.nikkeibp.co.jp/free/NT/NEWS/20050221/3/&lt;/a&gt;&lt;/p&gt;
