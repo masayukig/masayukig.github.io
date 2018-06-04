@@ -4,8 +4,6 @@ Author: masayukig
 Tags: PC
 Status: published
 
-[![](http://lunatic.xrea.jp/mt/archives/sl-c3000-thumb.jpg){width="160"
-height="120"}](http://lunatic.xrea.jp/mt/archives/sl-c3000.html)  
 とりあえず、無線LANカードは買って来た。  
 AirH"を解約して、bitWarpを契約しようかなと思ってます。  
 で、  

@@ -4,23 +4,14 @@ Author: masayukig
 Tags: お名前.com, DTI, VPS
 Status: published
 
-現在、このサイトは[お名前.comのVPS](http://px.a8.net/svt/ejp?a8mat=1NUO6C+EAG2I+50+35IPWY)![](http://www13.a8.net/0.gif?a8mat=1NUO6C+EAG2I+50+35IPWY){width="1"
-height="1"}上で動作しているが、  
-[DTIのServersMan
-VPS](http://dream.jp/vps/)が期間限定ながら無料で試せるようだったので、  
+現在、このサイトは お名前.comのVPS 上で動作しているが、  
+[DTIのServersMan VPS](http://dream.jp/vps/)が期間限定ながら無料で試せるようだったので、  
 試してみた。
 
 結論から言うと、お名前.comの方が私は好みです。  
 お名前.com
 VPS：x86\_64カーネル、CPU:16コア、(下記の単純なベンチマークで)２倍程度早い  
 DTI VPS：x86カーネル、CPU:2コア、お名前.comの半分程度のスピード
-
-というわけで、お名前.comのVPSを使ってみようと思った方は、  
-下記のリンクから、どうぞお申し込みください。  
-[  
-![](http://www29.a8.net/svt/bgt?aid=100528356024&wid=002&eno=01&mid=s00000000018019040000&mc=1){width="350"
-height="80"}](http://px.a8.net/svt/ejp?a8mat=1NUO6C+EAG2I+50+35CXKX)![](http://www.0r2.info/blog/wp-content/uploads/2011/01/01.gif){width="1"
-height="1"}
 
 以下、計測ログ等。
 
