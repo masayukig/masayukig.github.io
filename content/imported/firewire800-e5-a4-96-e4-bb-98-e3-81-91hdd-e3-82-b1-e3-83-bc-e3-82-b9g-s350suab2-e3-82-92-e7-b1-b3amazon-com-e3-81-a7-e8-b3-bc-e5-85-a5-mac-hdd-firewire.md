@@ -13,12 +13,10 @@ Mac mini(HDD 500GB)の残り容量が、10GBを下回る様になってきて、
 ただ、HDD自体は、別PCについていた1TBのHDDが余っている状況であり、  
 それを有効活用したいと思ったので、外付けケースを買うことにしました。
 
-<div class="separator" style="clear:both;text-align:center;">
 
 [![picture](https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg?w=199){width="212"
 height="320"}](https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg)
 
-</div>
 
 ### 前提
 
@@ -52,7 +50,6 @@ CROSFU3」を国内で購入することでも良かったかもしれません�
 
 ### どんな感じ？
 
-<div>
 
 注文：2012-04-20 5:40頃(priority international courier というので注文)  
 到着：2012-04-23 11:40頃  
@@ -60,7 +57,6 @@ CROSFU3」を国内で購入することでも良かったかもしれません�
 大体まる3日で到着しました！スゴイ！
 今のところ、概ね満足です。
 
-</div>
 
 1.  動作すると、金属フレームがかなり熱を持つ
 2.  正面の青い電源ボタン兼HDD動作確認ランプが、Macっぽくて良い感じ

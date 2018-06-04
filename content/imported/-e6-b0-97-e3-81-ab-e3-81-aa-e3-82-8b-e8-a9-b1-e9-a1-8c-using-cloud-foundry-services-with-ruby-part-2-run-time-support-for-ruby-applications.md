@@ -4,10 +4,8 @@ Author: masayukig
 Category: Uncategorized
 Status: published
 
-<div>
 
 <http://blog.cloudfoundry.com/post/13481010778/using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications>  
   
 from Blog <http://blog.cloudfoundry.com>
 
-</div>

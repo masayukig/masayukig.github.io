@@ -5,12 +5,10 @@ Tags: windows8
 Status: published
 Attachments: 2012/09/e7f3a-skitch.png
 
-<div class="separator" style="clear:both;text-align:center;">
 
 [![picture](https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png?w=300){width="640"
 height="228"}](https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png)
 
-</div>
 
 というわけで、題名の通り  
 Window8 Release PreviewをVMware Fusion5 on Mac mini(10.8.2)に  
@@ -27,34 +25,22 @@ Window8 Release PreviewをVMware Fusion5 on Mac mini(10.8.2)に
 -   使い続けるとどうなるのか?
 -   色々とインストールしてもサクサク動くのか?
 
-<div>
 
 など、気になる点は多々ありますが。
 
-</div>
 
-<div>
 
-</div>
 
-<div>
 
 また、スタート画面(?)から「デスクトップ」か「エクスプローラー」を選択すると、
 
-</div>
 
-<div>
 
 まるでWindow7な画面になってしまうのも、ちょっとイタダケナイ感じが
 
-</div>
 
-<div>
 
 しないでもない今日この頃。
 
-</div>
 
-<div>
 
-</div>

@@ -59,29 +59,21 @@ master）にブランチなしで対応していますので、基本的には�
 
 以下、実行例です。
 
-<div class="separator" style="clear:both;text-align:center;">
 
-</div>
 
-<div class="separator" style="clear:both;text-align:center;">
 
 [![picture](https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png)](https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png)
 
-</div>
 
-<div>
 
 一つのテストが3.512秒で実行されて、成功したことがわかります。
 
-</div>
 
 コレ以外にも、「run\_tempest.sh」「tox」を使って実行する方法も示されていますので、それらを使ってみましょう。
 
-<div class="separator" style="clear:both;text-align:center;">
 
 [![picture](https://masayukig.files.wordpress.com/2014/12/20ebc-executing_tempest.png)](https://masayukig.files.wordpress.com/2014/12/20ebc-executing_tempest.png)
 
-</div>
 
 まとめ
 ------

@@ -11,46 +11,34 @@ Status: published
 [vagrant\_devstack](https://github.com/bcwaldon/vagrant_devstack) っていうのを使って、vagrant+devstack
 という素敵な環境を、
 
-<div>
 
 Mac OS Mountain Lion(10.8.2)に 作ってみる。  
 一応、vagrant\_devstackのREADMEには、Macに対する言及があるので、  
 できるんじゃないかと妄想。
 
-</div>
 
-<div>
 
 はじめに
 --------
 
-</div>
 
-<div>
 
 まずは、
 
-</div>
 
-<div>
 
 <https://github.com/bcwaldon/vagrant_devstack>
 
-</div>
 
-<div>
 
 のREADMEにしたがって、
 
-</div>
 
-<div>
 
 1.  Virtualboxインストール
 2.  gem update --system
 3.  gem install vagrant
 
-<div>
 
 を行った。。。。
 困ったこと発生
@@ -58,9 +46,7 @@ Mac OS Mountain Lion(10.8.2)に 作ってみる。
 
 が、「3.」で問題発生。
 
-</div>
 
-</div>
 
     % gem install vagrant  
     Fetching: archive-tar-minitar-0.5.2.gem (100%)
@@ -75,7 +61,6 @@ Mac OS Mountain Lion(10.8.2)に 作ってみる。
     necessary libraries and/or headers.  Check the mkmf.log file for more
     details.  You may need configuration options.
 
-<div>
 
 と、こんな感じのエラーが出力され、インストール出来ない。
 解決策
@@ -86,25 +71,18 @@ Mac OS Mountain Lion(10.8.2)に 作ってみる。
 **[【Mac】【RubyGems】/usr/bin/gcc-4.2
 がない！](http://loveless-ainakimono.seesaa.net/article/232323709.html)**
 
-<div class="p1">
 
-</div>
 
-<div class="p1">
 
 という記事を見つけたので、それに習って、以下のようにシンボリックリンクを
 
-</div>
 
-<div class="p1">
 
 張ってみました。
 
-</div>
 
     % sudo ln -s /usr/bin/llvm-gcc-4.2 /usr/bin/gcc-4.2
 
-<div class="p1">
 
 結果、
     % gem install vagrant                              
@@ -125,9 +103,7 @@ Mac OS Mountain Lion(10.8.2)に 作ってみる。
 ようやく本番
 ------------
 
-</div>
 
-</div>
 
 ようやく、本来やりたかったところに入れます。
 

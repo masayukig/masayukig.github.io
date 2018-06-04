@@ -8,21 +8,15 @@ Status: published
 続き
 ----
 
-<div>
 
 無事ダウンロードは終了し、VMも起動したが、NFSでマウントできないってエラーが
 
-</div>
 
-<div>
 
 発生。
 
-</div>
 
-<div>
 
-</div>
 
     [vagrant] Downloading box: http://dl.dropbox.com/u/1537815/precise64.box
     [vagrant] Extracting box...
