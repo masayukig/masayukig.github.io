@@ -139,7 +139,6 @@ vagrant@precise64:~$ uptime
 
 &lt;p&gt;でも、OpenStack関連のサービスは全く起動していないようだったので、
 vagrant reloadをやってみた&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-&amp;gt; % vagrant reload       
 [default] Attempting graceful shutdown of VM...
 [default] Clearing any previously set forwarded ports...

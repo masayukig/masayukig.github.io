@@ -697,7 +697,6 @@ vagrant@precise64:~$ uptime
 
 &lt;p&gt;でも、OpenStack関連のサービスは全く起動していないようだったので、
 vagrant reloadをやってみた&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-&amp;gt; % vagrant reload       
 [default] Attempting graceful shutdown of VM...
 [default] Clearing any previously set forwarded ports...
@@ -1989,7 +1988,6 @@ height="282"}](https://masayukig.files.wordpress.com/2012/03/b13ac-e382b9e382afe
 &lt;/div&gt;
 
 &lt;p&gt;必要事項を入力すれば、即時で1GBアップロード容量が増えます。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;p&gt;公式アナウンスもされているようですし、&lt;br&gt;
 WebでEvernoteを使っていれば、まるわかりだったのですね。。&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://blog.evernote.com/2011/11/23/new-premium-feature-increase-your-monthly-allowance/"&gt;http://blog.evernote.com/2011/11/23/new-premium-feature-increase-your-monthly-allowance/&lt;/a&gt;&lt;br&gt;
@@ -5378,7 +5376,6 @@ height="375"}&lt;/a&gt;&lt;/p&gt;
 &lt;a href="http://www.flickr.com/photos/masayun/4721124482/" title="Amazon Kindle2 Box by masayukig, on Flickr"&gt;&lt;img alt="Amazon Kindle2
 Box" src="http://farm2.static.flickr.com/1388/4721124482_e40c153b5d.jpg"&gt;{width="500"
 height="375"}&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;p&gt;中国生まれ、アメリカ留学、日本へ帰化w&lt;br&gt;
 &lt;a href="http://www.flickr.com/photos/masayun/4720474865/" title="Amazon Kindle2 Box by masayukig, on Flickr"&gt;&lt;img alt="Amazon Kindle2
 Box" src="http://farm2.static.flickr.com/1427/4720474865_c46f9a333f.jpg"&gt;{width="500"
@@ -5398,7 +5395,8 @@ height="375"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;シンプルでかっこいいけど、押しづらいキーボード&lt;br&gt;
 &lt;a href="http://www.flickr.com/photos/masayun/4720541787/" title="kindle's keyboard by masayukig, on Flickr"&gt;&lt;img alt="kindle's
 keyboard" src="http://farm2.static.flickr.com/1416/4720541787_c0655c16f7.jpg"&gt;{width="500"
-height="375 …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Kindle2を買って、\$189に値下げされて、無事返金されそうなこともあり、&lt;br&gt;
+height="375"}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;左側のボタン …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Kindle2を買って、\$189に値下げされて、無事返金されそうなこともあり、&lt;br&gt;
 ちょっとホットなウチにレビューしたいと思います。&lt;/p&gt;
 &lt;p&gt;Once upon a time....&lt;br&gt;
 &lt;a href="http://www.flickr.com/photos/masayun/4721123354/" title="Amazon Kindle2 Box by masayukig, on Flickr"&gt;&lt;img alt="Amazon Kindle2
@@ -5408,7 +5406,6 @@ height="375"}&lt;/a&gt;&lt;/p&gt;
 &lt;a href="http://www.flickr.com/photos/masayun/4721124482/" title="Amazon Kindle2 Box by masayukig, on Flickr"&gt;&lt;img alt="Amazon Kindle2
 Box" src="http://farm2.static.flickr.com/1388/4721124482_e40c153b5d.jpg"&gt;{width="500"
 height="375"}&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;p&gt;中国生まれ、アメリカ留学、日本へ帰化w&lt;br&gt;
 &lt;a href="http://www.flickr.com/photos/masayun/4720474865/" title="Amazon Kindle2 Box by masayukig, on Flickr"&gt;&lt;img alt="Amazon Kindle2
 Box" src="http://farm2.static.flickr.com/1427/4720474865_c46f9a333f.jpg"&gt;{width="500"
@@ -5628,7 +5625,6 @@ Oracleではちょっと考えられませんが、この辺がsqliteらしい�
     2に戻る。これは何度でもできるし、やらなくても良い。&lt;/li&gt;
 &lt;li&gt;sqlite3_finalize()を使ってオブジェクトを破棄する。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;p&gt;というわけで、いきなりサンプルコードw&lt;br&gt;
 便利だなーと思ったのは、sqlite3_errmsg()関数。dbを引数にすると、&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ gcc -o sqlite_test sqlite_test.c -lsqlite3
@@ -5636,7 +5632,7 @@ $ chmod &lt;span class="m"&gt;000&lt;/span&gt; test.db
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;と、DBファイルを読み書き出来ないようにして …&lt;/p&gt;</summary><content type="html">&lt;p&gt;SQLiteのC言語APIを使ってprepared statementで、BLOBを使ってみます。&lt;/p&gt;
+&lt;p&gt;と、DBファイルを読み書き出来ないようにして、実行すると …&lt;/p&gt;</summary><content type="html">&lt;p&gt;SQLiteのC言語APIを使ってprepared statementで、BLOBを使ってみます。&lt;/p&gt;
 &lt;p&gt;基本的には、以下のサイトに書いてある方法ですが、日本語で書いてみることにします。&lt;br&gt;
 &lt;a href="http://www.sqlite.org/capi3ref.html#sqlite3_stmt"&gt;http://www.sqlite.org/capi3ref.html#sqlite3_stmt&lt;/a&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -5647,7 +5643,6 @@ $ chmod &lt;span class="m"&gt;000&lt;/span&gt; test.db
     2に戻る。これは何度でもできるし、やらなくても良い。&lt;/li&gt;
 &lt;li&gt;sqlite3_finalize()を使ってオブジェクトを破棄する。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;p&gt;というわけで、いきなりサンプルコードw&lt;br&gt;
 便利だなーと思ったのは、sqlite3_errmsg()関数。dbを引数にすると、&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ gcc -o sqlite_test sqlite_test.c -lsqlite3
@@ -5872,9 +5867,7 @@ Xperia単体で手動でアップデートする場合は、&lt;br&gt;
 &lt;li&gt;&lt;a href="http://h-scp10.blog.so-net.ne.jp/2010-06-10"&gt;http://h-scp10.blog.so-net.ne.jp/2010-06-10&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://d.hatena.ne.jp/Sapphire/20100610/1276175119"&gt;http://d.hatena.ne.jp/Sapphire/20100610/1276175119&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><category term="Android"></category><category term="Linux"></category><category term="PHS-Mobile-Phone"></category><category term="Software"></category><category term="Xperia"></category></entry><entry><title>iPhone4とiPadの仕様比較</title><link href="https://igawa.io/posts/2010/06/iphone4toipadnoshi-yang-bi-jiao/" rel="alternate"></link><published>2010-06-09T10:01:00+09:00</published><updated>2010-06-09T10:01:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2010-06-09:/posts/2010/06/iphone4toipadnoshi-yang-bi-jiao/</id><summary type="html">&lt;p&gt;iPhone4とiPadの仕様を比較してみることにします。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;p&gt;[table id=3 /]&lt;/p&gt;</summary><content type="html">&lt;p&gt;iPhone4とiPadの仕様を比較してみることにします。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;p&gt;[table id=3 /]&lt;/p&gt;</content><category term="Apple"></category><category term="iPad"></category><category term="iPhone"></category></entry><entry><title>iPhone4発表！そして、iPadを買うかどうか悩む。。</title><link href="https://igawa.io/posts/2010/06/iphone4fa-biao-soshite-ipadwomai-ukadoukanao-mu/" rel="alternate"></link><published>2010-06-09T01:10:00+09:00</published><updated>2010-06-09T01:10:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2010-06-09:/posts/2010/06/iphone4fa-biao-soshite-ipadwomai-ukadoukanao-mu/</id><summary type="html">&lt;p&gt;昨日、iPhone4が発表されました。&lt;br&gt;
 http://www.apple.com/jp/iphone/&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.apple.com/jp/iphone/specs.html"&gt;仕様&lt;/a&gt;を見ると、&lt;br&gt;
@@ -5956,8 +5949,7 @@ kernelのmakeのターゲットでありそうな気もするんですが、見�
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;[]{#more}&lt;br&gt;
-見てわかるとおり、expectを使って、"]
+&lt;p&gt;見てわかるとおり、expectを使って、"]
 (NEW)"というのが出てきたら、Enter入力。&lt;br&gt;
 "# configuration written to .config"が出てきたらおしまい。&lt;/p&gt;
 &lt;p&gt;というスクリプトです。&lt;/p&gt;</summary><content type="html">&lt;p&gt;Linux
@@ -5978,8 +5970,7 @@ kernelのmakeのターゲットでありそうな気もするんですが、見�
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;[]{#more}&lt;br&gt;
-見てわかるとおり、expectを使って、"]
+&lt;p&gt;見てわかるとおり、expectを使って、"]
 (NEW)"というのが出てきたら、Enter入力。&lt;br&gt;
 "# configuration written to .config"が出てきたらおしまい。&lt;/p&gt;
 &lt;p&gt;というスクリプトです。&lt;/p&gt;</content><category term="開発"></category><category term="kernel"></category><category term="OS"></category><category term="tips"></category></entry><entry><title>ShareMyApps: インストールしているAndroidアプリの一覧を取得してメール送信 するアプリ ( #Xperia #Android )</title><link href="https://igawa.io/posts/2010/06/sharemyapps-insutorushiteiruandroidapurinoyi-lan-woqu-de-shitemerusong-xin-suruapuri-xperia-android/" rel="alternate"></link><published>2010-06-05T05:56:00+09:00</published><updated>2010-06-05T05:56:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2010-06-05:/posts/2010/06/sharemyapps-insutorushiteiruandroidapurinoyi-lan-woqu-de-shitemerusong-xin-suruapuri-xperia-android/</id><summary type="html">&lt;p&gt;たくさんアプリをインストールしたので、&lt;br&gt;
@@ -5993,13 +5984,13 @@ kernelのmakeのターゲットでありそうな気もするんですが、見�
 &lt;ul&gt;
 &lt;li&gt;3000 Viewer&lt;br&gt;
 &lt;a href="http://market.android.com/search?q=com.matsumo.sankviewer"&gt;http://market.android.com/search?q=com.matsumo.sankviewer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;ACV&lt;br&gt;
-&lt;a href="http://market.android.com/search?q=net.androidcomics.acv"&gt;http://market.android.com/search?q=net.androidcomics.acv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Advanced Task Killer Free&lt;br&gt;
-&lt;a href="http://market.android.com/search?q=com.rechild.advancedtaskkiller"&gt;http://market.android.com …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;たくさんアプリをインストールしたので、&lt;br&gt;
+&lt;li&gt;
+&lt;p&gt;ACV&lt;br&gt;
+&lt;a href="http://market.android.com/search?q=net.androidcomics.acv"&gt;http://market.android.com/search?q=net.androidcomics.acv&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Advanced Task Killer Free&lt;br&gt;
+&lt;a href="http://market.android.com/search?q=com.rechild.advancedtaskkiller"&gt;http://market.android.com/search …&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;たくさんアプリをインストールしたので、&lt;br&gt;
 「今いったいどれだけのアプリをインストールしているのだろうか？」と&lt;br&gt;
 疑問に思い、「インストールしているアプリの一覧が欲しいなぁ」と思ったので、&lt;br&gt;
 そういうアプリを作ろうかなと思ったら、既にありました。 :-)&lt;br&gt;
@@ -6010,13 +6001,14 @@ kernelのmakeのターゲットでありそうな気もするんですが、見�
 &lt;ul&gt;
 &lt;li&gt;3000 Viewer&lt;br&gt;
 &lt;a href="http://market.android.com/search?q=com.matsumo.sankviewer"&gt;http://market.android.com/search?q=com.matsumo.sankviewer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;ACV&lt;br&gt;
-&lt;a href="http://market.android.com/search?q=net.androidcomics.acv"&gt;http://market.android.com/search?q=net.androidcomics.acv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Advanced Task Killer Free&lt;br&gt;
-&lt;a href="http://market.android.com/search?q=com.rechild.advancedtaskkiller"&gt;http://market.android.com/search?q=com.rechild.advancedtaskkiller&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ACV&lt;br&gt;
+&lt;a href="http://market.android.com/search?q=net.androidcomics.acv"&gt;http://market.android.com/search?q=net.androidcomics.acv&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Advanced Task Killer Free&lt;br&gt;
+&lt;a href="http://market.android.com/search?q=com.rechild.advancedtaskkiller"&gt;http://market.android.com/search?q=com.rechild.advancedtaskkiller&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;AK Notepad&lt;br&gt;
 &lt;a href="http://market.android.com/search?q=com.akproduction.notepad"&gt;http://market.android.com/search?q=com.akproduction.notepad&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;AmbientTime Lite&lt;br&gt;
@@ -6402,13 +6394,12 @@ height="500"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;/proc/config.gzにもアクセスできたので、とりあえず張り付けてみる。&lt;br&gt;
 &lt;a href="http://www.0r2.info/blog/wp-content/uploads/2010/04/config.gz"&gt;Xperiaの.config&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;で、それ以外の情報ですが、/proc配下から適当に取ってきてみました。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/proc/version:
 Linux version 2.6.29-rel (semc-android@SEMC) (gcc version 4.2.1) #2 PREEMPT Sun Feb 21 11:47:54 JST 2010
 
 /proc/meminfo:
 MemTotal:         274608 kB
-MemFree …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;iPhoneを持ってるのに、Xperiaを買っちゃいましたw&lt;br&gt;
+MemFree:            6048 …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;iPhoneを持ってるのに、Xperiaを買っちゃいましたw&lt;br&gt;
 &lt;a href="http://www.flickr.com/photos/masayun/4562523183/" title="xperia by masayukig, on Flickr"&gt;&lt;img alt="xperia" src="http://www.0r2.info/blog//0r2.info/3035/4562523183_cc0be3d31d.jpg"&gt;{width="375"
 height="500"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;なんか、ケータイ電話とは程遠い気がします。&lt;br&gt;
@@ -6416,7 +6407,6 @@ height="500"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;/proc/config.gzにもアクセスできたので、とりあえず張り付けてみる。&lt;br&gt;
 &lt;a href="http://www.0r2.info/blog/wp-content/uploads/2010/04/config.gz"&gt;Xperiaの.config&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;で、それ以外の情報ですが、/proc配下から適当に取ってきてみました。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/proc/version:
 Linux version 2.6.29-rel (semc-android@SEMC) (gcc version 4.2.1) #2 PREEMPT Sun Feb 21 11:47:54 JST 2010
 
@@ -6555,8 +6545,7 @@ height="375"}&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Amazonで5,410円(送料込み)でした。&lt;br&gt;
 まだ、取り付けてませんが、一人で取り付けられるだろうか。。。？&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as1&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;md=1X69VDGQCMF7Z30FM082&amp;amp;asins=B002B3MWE6"&gt;http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as1&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;md=1X69VDGQCMF7Z30FM082&amp;amp;asins=B002B3MWE6&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;br&gt;
-2010/03/07追記&lt;/p&gt;
+&lt;p&gt;2010/03/07追記&lt;/p&gt;
 &lt;p&gt;無事、取り付け終わった。&lt;br&gt;
 もともと、テレビとベランダがとても近い位置だったので、&lt;br&gt;
 テレビで受信強度を見ながらの調整がとても楽にできました。&lt;/p&gt;
@@ -6592,8 +6581,7 @@ mm(実際には角度だが)単位の位置調整作業なので。&lt;/p&gt;</c
 &lt;a href="http://www.sonyericsson.co.jp/product/docomo/so-01b/special/"&gt;http://www.sonyericsson.co.jp/product/docomo/so-01b/special/&lt;/a&gt;&lt;/p&gt;</content><category term="ソニエリ"></category><category term="docomo"></category><category term="PHS-Mobile-Phone"></category><category term="Xperia"></category></entry><entry><title>iPhone(MMS)迷惑メールブロック設定</title><link href="https://igawa.io/posts/2010/01/iphonemmsmi-huo-meruburotsukushe-ding/" rel="alternate"></link><published>2010-01-17T09:35:00+09:00</published><updated>2010-01-17T09:35:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2010-01-17:/posts/2010/01/iphonemmsmi-huo-meruburotsukushe-ding/</id><summary type="html">&lt;p&gt;最近、iPhoneのMMSメールアドレス宛の迷惑メールがやたらと増えてきたので対策をしました。&lt;br&gt;
 「対策」とは言っても、「yahoo.com」「yahoo.co.jp」からの迷惑メールが大半だったので、&lt;br&gt;
 それを「受信拒否」する設定をしただけですが。&lt;/p&gt;
-&lt;p&gt;設定は簡単でしたが、備忘録もかねて、方法を記しておきます。&lt;br&gt;
-[]{#more}&lt;/p&gt;
+&lt;p&gt;設定は簡単でしたが、備忘録もかねて、方法を記しておきます。  &lt;/p&gt;
 &lt;p&gt;&lt;a href="https://mb.softbank.jp/scripts/japanese/mysoftbank/top.jsp"&gt;My
 Softbank&lt;/a&gt;ページより、&lt;/p&gt;
 &lt;ol&gt;
@@ -6609,11 +6597,11 @@ Softbank&lt;/a&gt;ページより、&lt;/p&gt;
 &lt;a href="http://210.253.99.206/blog/wp-content/uploads/2010/01/MySoftbank_mail_indivisual_setting.png"&gt;&lt;img alt="" src="http://www.0r2.info/blog/wp-content/uploads/2010/01/MySoftbank_mail_indivisual_setting-252x300.png" title="MySoftbank_mail_indivisual_setting"&gt;{.alignnone
     .size-medium .wp-image-936 width="252"
     height="300"}&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;「受信許可・拒否設定」-「個別に拒否設定して受信する」-「拒否設定のリストを設定/確認する …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;最近、iPhoneのMMSメールアドレス宛の迷惑メールがやたらと増えてきたので対策をしました。&lt;br&gt;
+&lt;li&gt;「受信許可・拒否設定」-「個別に拒否設定して受信する」-「拒否設定のリストを設定/確認する」&lt;br&gt;
+&lt;a href="http://210.253.99.206/blog/wp-content/uploads/2010/01/MySoftbank_mail_indivisual_reject_setting.png"&gt;&lt;img alt="" src="http://www.0r2.info/blog/wp-content/uploads/2010/01/MySoftbank_mail_indivisual_reject_setting-300x233.png" title="MySoftbank_mail_indivisual_reject_setting"&gt;{.alignnone …&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;最近、iPhoneのMMSメールアドレス宛の迷惑メールがやたらと増えてきたので対策をしました。&lt;br&gt;
 「対策」とは言っても、「yahoo.com」「yahoo.co.jp」からの迷惑メールが大半だったので、&lt;br&gt;
 それを「受信拒否」する設定をしただけですが。&lt;/p&gt;
-&lt;p&gt;設定は簡単でしたが、備忘録もかねて、方法を記しておきます。&lt;br&gt;
-[]{#more}&lt;/p&gt;
+&lt;p&gt;設定は簡単でしたが、備忘録もかねて、方法を記しておきます。  &lt;/p&gt;
 &lt;p&gt;&lt;a href="https://mb.softbank.jp/scripts/japanese/mysoftbank/top.jsp"&gt;My
 Softbank&lt;/a&gt;ページより、&lt;/p&gt;
 &lt;ol&gt;
@@ -6652,8 +6640,7 @@ Adobe Reader等で検索すると、&lt;br&gt;
 １ページ目に見つかります。（が、文字列自体は表示されてません。）&lt;br&gt;
 選択された文字列をコピーして、適当にどこかに貼付けをすると、&lt;br&gt;
 「いいのね」という文字列を確認できました。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;br&gt;
-この文書ファイルを作るときに、１ページ目の画像ファイルを貼り付ける前に、&lt;br&gt;
+&lt;p&gt;この文書ファイルを作るときに、１ページ目の画像ファイルを貼り付ける前に、&lt;br&gt;
 女性（もしくはオカマ）が、入力した確認の文章を消さずにPDF化してしまったのでしょうか。&lt;/p&gt;
 &lt;p&gt;まぁ、こんなことにならない様、気を付けましょう。&lt;/p&gt;</summary><content type="html">&lt;p&gt;Microsoftのボリュームライセンスについて調べていたら、おかしなPDFを見つけた。&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://download.microsoft.com/download/7/B/0/7B06D41B-7CFD-4E76-B000-A28786113BA0/spla_mvls_user_guide.pdf"&gt;http://download.microsoft.com/download/7/B/0/7B06D41B-7CFD-4E76-B000-A28786113BA0/spla_mvls_user_guide.pdf&lt;/a&gt;&lt;br&gt;
@@ -6664,8 +6651,7 @@ Adobe Reader等で検索すると、&lt;br&gt;
 １ページ目に見つかります。（が、文字列自体は表示されてません。）&lt;br&gt;
 選択された文字列をコピーして、適当にどこかに貼付けをすると、&lt;br&gt;
 「いいのね」という文字列を確認できました。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;br&gt;
-この文書ファイルを作るときに、１ページ目の画像ファイルを貼り付ける前に、&lt;br&gt;
+&lt;p&gt;この文書ファイルを作るときに、１ページ目の画像ファイルを貼り付ける前に、&lt;br&gt;
 女性（もしくはオカマ）が、入力した確認の文章を消さずにPDF化してしまったのでしょうか。&lt;/p&gt;
 &lt;p&gt;まぁ、こんなことにならない様、気を付けましょう。&lt;/p&gt;</content><category term="net"></category><category term="変なモノ"></category></entry><entry><title>Vimから投稿するテスト</title><link href="https://igawa.io/posts/2009/11/vimkaratou-gao-surutesuto/" rel="alternate"></link><published>2009-11-21T05:30:00+09:00</published><updated>2009-11-21T05:30:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-11-21:/posts/2009/11/vimkaratou-gao-surutesuto/</id><summary type="html">&lt;p&gt;&lt;a href="http://mattn.kaoriya.net/software/vim/20070831122307.htm"&gt;http://mattn.kaoriya.net/software/vim/20070831122307.htm&lt;/a&gt;&lt;br&gt;
 の記事を参考に、vimから投稿してみます。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://mattn.kaoriya.net/software/vim/20070831122307.htm"&gt;http://mattn.kaoriya.net/software/vim/20070831122307.htm&lt;/a&gt;&lt;br&gt;
@@ -6679,7 +6665,6 @@ iPhoneの場合、全世界のアプリを使用することができ、開発�
 Storeでダウンロードができないため、&lt;br&gt;
 基本的には「勝手アプリ」はあまり無い様に思います。&lt;/p&gt;
 &lt;p&gt;個人的に、「役に立つ／面白い」と思う無料アプリは、次のものです。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Natsu Lion&lt;/li&gt;
 &lt;li&gt;産經新聞&lt;/li&gt;
@@ -6700,7 +6685,6 @@ iPhoneの場合、全世界のアプリを使用することができ、開発�
 Storeでダウンロードができないため、&lt;br&gt;
 基本的には「勝手アプリ」はあまり無い様に思います。&lt;/p&gt;
 &lt;p&gt;個人的に、「役に立つ／面白い」と思う無料アプリは、次のものです。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Natsu Lion&lt;/li&gt;
 &lt;li&gt;産經新聞&lt;/li&gt;
@@ -6719,7 +6703,6 @@ PCサイトを閲覧できるのは当たり前の状況です。&lt;/p&gt;
 &lt;p&gt;ただ、それが、「使いやすいか？」（使う気になるか？）は、別問題です。&lt;br&gt;
 私の持っている他機種のケータイでも、フルブラウザは搭載されておりますが、&lt;br&gt;
 ほとんど使った記憶がありません。。それには３つの理由があります。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;フルブラウザの動作が鈍い&lt;/li&gt;
 &lt;li&gt;画面が小さく、見づらい&lt;/li&gt;
@@ -6741,13 +6724,13 @@ iPhoneでは、気軽にズームイン／ズームアウトできるので、&l
 上記のような状況がまるで気になりません。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;ポインタ操作がやりづらい&lt;br&gt;
-タッチパネルを搭載していない場合、なんらかのポインタ操作が必要になりますが …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.0r2.info/blog/2009/08/09/iphone3gs%E3%81%AE%E7%B4%A0%E6%99%B4%E3%82%89%E3%81%97%E3%81%84%E3%81%A8%E3%81%93%E3%82%8D%E3%82%92%EF%BC%91%EF%BC%90%E5%80%8B%E6%8C%99%E3%81%92%E3%82%8B/"&gt;iPhone(3GS)の素晴らしいところを１０個挙げる&lt;/a&gt;のその5:「PCサイトを見ることをあまりためらわなくて済む」について、記したいと思います。&lt;/p&gt;
+タッチパネルを搭載していない場合、なんらかのポインタ操作が必要になりますが、&lt;br&gt;
+これもまた …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.0r2.info/blog/2009/08/09/iphone3gs%E3%81%AE%E7%B4%A0%E6%99%B4%E3%82%89%E3%81%97%E3%81%84%E3%81%A8%E3%81%93%E3%82%8D%E3%82%92%EF%BC%91%EF%BC%90%E5%80%8B%E6%8C%99%E3%81%92%E3%82%8B/"&gt;iPhone(3GS)の素晴らしいところを１０個挙げる&lt;/a&gt;のその5:「PCサイトを見ることをあまりためらわなくて済む」について、記したいと思います。&lt;/p&gt;
 &lt;p&gt;もちろん、最近の普通のケータイには、ほぼ全てフルブラウザが搭載されており、&lt;br&gt;
 PCサイトを閲覧できるのは当たり前の状況です。&lt;/p&gt;
 &lt;p&gt;ただ、それが、「使いやすいか？」（使う気になるか？）は、別問題です。&lt;br&gt;
 私の持っている他機種のケータイでも、フルブラウザは搭載されておりますが、&lt;br&gt;
 ほとんど使った記憶がありません。。それには３つの理由があります。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;フルブラウザの動作が鈍い&lt;/li&gt;
 &lt;li&gt;画面が小さく、見づらい&lt;/li&gt;
@@ -6777,8 +6760,7 @@ iPhoneでは、気軽にズームイン／ズームアウトできるので、&l
 使い勝手を向上させているかもしれませんので、あしからず。&lt;/p&gt;</content><category term="iPhone"></category><category term="iPhone 3G S"></category><category term="PHS-Mobile-Phone"></category></entry><entry><title>KernelOrgBotを作ってみた</title><link href="https://igawa.io/posts/2009/09/kernelorgbotwozuo-tsutemita/" rel="alternate"></link><published>2009-09-08T03:43:00+09:00</published><updated>2009-09-08T03:43:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-09-08:/posts/2009/09/kernelorgbotwozuo-tsutemita/</id><summary type="html">&lt;p&gt;Twitterで「KernelOrgBot」なるものを作ってみた。&lt;br&gt;
 &lt;a href="http://twitter.com/KernelOrgBot"&gt;http://twitter.com/KernelOrgBot&lt;/a&gt;&lt;br&gt;
 ちょっと探してみた限りでは、それっぽいものが無かったので。&lt;br&gt;
-ただ、「作った」とは言っても...&lt;br&gt;
-[]{#more}&lt;/p&gt;
+ただ、「作った」とは言っても...  &lt;/p&gt;
 &lt;p&gt;&lt;a href="https://twitterfeed.com/"&gt;https://twitterfeed.com/&lt;/a&gt;&lt;br&gt;
 で、&lt;br&gt;
 &lt;a href="http://kernel.org/kdist/rss.xml"&gt;http://kernel.org/kdist/rss.xml&lt;/a&gt;&lt;br&gt;
@@ -6789,8 +6771,7 @@ iPhoneでは、気軽にズームイン／ズームアウトできるので、&l
 フォローしてみることにする。&lt;/p&gt;</summary><content type="html">&lt;p&gt;Twitterで「KernelOrgBot」なるものを作ってみた。&lt;br&gt;
 &lt;a href="http://twitter.com/KernelOrgBot"&gt;http://twitter.com/KernelOrgBot&lt;/a&gt;&lt;br&gt;
 ちょっと探してみた限りでは、それっぽいものが無かったので。&lt;br&gt;
-ただ、「作った」とは言っても...&lt;br&gt;
-[]{#more}&lt;/p&gt;
+ただ、「作った」とは言っても...  &lt;/p&gt;
 &lt;p&gt;&lt;a href="https://twitterfeed.com/"&gt;https://twitterfeed.com/&lt;/a&gt;&lt;br&gt;
 で、&lt;br&gt;
 &lt;a href="http://kernel.org/kdist/rss.xml"&gt;http://kernel.org/kdist/rss.xml&lt;/a&gt;&lt;br&gt;
@@ -6803,7 +6784,6 @@ iPhoneでは、気軽にズームイン／ズームアウトできるので、&l
 使えるのは当たり前の状況です。&lt;/p&gt;
 &lt;p&gt;ただ、それが、「使いやすいか？」（使う気になるか？）は、別問題です。&lt;br&gt;
 最近の携帯電話は、高機能化により、どんどん動作が鈍くなってきています。&lt;br&gt;
-[]{#more}&lt;br&gt;
 「ケータイ電話のカメラ起動ボタンを押してから、写真をとるまでに10秒位かかる」&lt;br&gt;
 ということもしばしばあります。&lt;br&gt;
 また、シャッターボタンを押してから、実際に写真がとられるまでのタイムラグが大きかったり、&lt;br&gt;
@@ -6814,12 +6794,12 @@ iPhoneでは、気軽にズームイン／ズームアウトできるので、&l
 &lt;p&gt;iPhone 3GSでは、上記の問題をかなり改善できていると思います。&lt;br&gt;
 また、ボタンを押したら、即何らかの反応があるので、&lt;br&gt;
 使っている方としては「ちゃんと動いてる」というのが分かるので安心です。&lt;/p&gt;
-&lt;p&gt;私が使っている某社のケータイは、ボタンを押しても、ちょっと反応が鈍く …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.0r2.info/blog/2009/08/09/iphone3gs%E3%81%AE%E7%B4%A0%E6%99%B4%E3%82%89%E3%81%97%E3%81%84%E3%81%A8%E3%81%93%E3%82%8D%E3%82%92%EF%BC%91%EF%BC%90%E5%80%8B%E6%8C%99%E3%81%92%E3%82%8B/"&gt;iPhone(3GS)の素晴らしいところを１０個挙げる&lt;/a&gt;のその4:「カメラが使い物になる」について、記したいと思います。&lt;/p&gt;
+&lt;p&gt;私が使っている某社のケータイは、ボタンを押しても、ちょっと反応が鈍く、&lt;br&gt;
+で …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.0r2.info/blog/2009/08/09/iphone3gs%E3%81%AE%E7%B4%A0%E6%99%B4%E3%82%89%E3%81%97%E3%81%84%E3%81%A8%E3%81%93%E3%82%8D%E3%82%92%EF%BC%91%EF%BC%90%E5%80%8B%E6%8C%99%E3%81%92%E3%82%8B/"&gt;iPhone(3GS)の素晴らしいところを１０個挙げる&lt;/a&gt;のその4:「カメラが使い物になる」について、記したいと思います。&lt;/p&gt;
 &lt;p&gt;もちろん、最近の普通のケータイには、ほぼ全てカメラが内蔵されており、&lt;br&gt;
 使えるのは当たり前の状況です。&lt;/p&gt;
 &lt;p&gt;ただ、それが、「使いやすいか？」（使う気になるか？）は、別問題です。&lt;br&gt;
 最近の携帯電話は、高機能化により、どんどん動作が鈍くなってきています。&lt;br&gt;
-[]{#more}&lt;br&gt;
 「ケータイ電話のカメラ起動ボタンを押してから、写真をとるまでに10秒位かかる」&lt;br&gt;
 ということもしばしばあります。&lt;br&gt;
 また、シャッターボタンを押してから、実際に写真がとられるまでのタイムラグが大きかったり、&lt;br&gt;
@@ -6860,8 +6840,7 @@ hogehuga.txt.bak20090825&lt;br&gt;
 通常のWebページは、まず見られません。&lt;/p&gt;
 &lt;p&gt;正確に言うと、最近の機種では、フルブラウザを装備しているので、&lt;br&gt;
 見られることは見られますが、&lt;br&gt;
-以下の理由により、見る気になれません....&lt;br&gt;
-[]{#more}&lt;/p&gt;
+以下の理由により、見る気になれません....  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;フルブラウザ起動に時間がかかる&lt;/li&gt;
 &lt;li&gt;フルブラウザの操作がしづらい&lt;/li&gt;
@@ -6879,14 +6858,14 @@ hogehuga.txt.bak20090825&lt;br&gt;
 そのうち「ケータイ」も追いつくと思いますが、&lt;br&gt;
 バランスをうまくとるのは、かなり難しいと思います。&lt;br&gt;
 他社の様に、比較的短い間隔で新製品を出しまくっていると、&lt;br&gt;
-そういうバランスを取る作業が、はしょられてしまう気もしますし …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.0r2.info/blog/2009/08/09/iphone3gs%E3%81%AE%E7%B4%A0%E6%99%B4%E3%82%89%E3%81%97%E3%81%84%E3%81%A8%E3%81%93%E3%82%8D%E3%82%92%EF%BC%91%EF%BC%90%E5%80%8B%E6%8C%99%E3%81%92%E3%82%8B/"&gt;iPhone(3GS)の素晴らしいところを１０個挙げる&lt;/a&gt;のその3：「ネットにすぐつながる」について、記したいと思います。&lt;/p&gt;
+そういうバランスを取る作業が、はしょられてしまう気もしますし、&lt;br&gt;
+既存への積み上げで …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.0r2.info/blog/2009/08/09/iphone3gs%E3%81%AE%E7%B4%A0%E6%99%B4%E3%82%89%E3%81%97%E3%81%84%E3%81%A8%E3%81%93%E3%82%8D%E3%82%92%EF%BC%91%EF%BC%90%E5%80%8B%E6%8C%99%E3%81%92%E3%82%8B/"&gt;iPhone(3GS)の素晴らしいところを１０個挙げる&lt;/a&gt;のその3：「ネットにすぐつながる」について、記したいと思います。&lt;/p&gt;
 &lt;p&gt;もちろん、通常のケータイでも、ネットにすぐつながります。&lt;br&gt;
 ただし、つながるのは「ケータイネット」とも言えるもので、&lt;br&gt;
 通常のWebページは、まず見られません。&lt;/p&gt;
 &lt;p&gt;正確に言うと、最近の機種では、フルブラウザを装備しているので、&lt;br&gt;
 見られることは見られますが、&lt;br&gt;
-以下の理由により、見る気になれません....&lt;br&gt;
-[]{#more}&lt;/p&gt;
+以下の理由により、見る気になれません....  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;フルブラウザ起動に時間がかかる&lt;/li&gt;
 &lt;li&gt;フルブラウザの操作がしづらい&lt;/li&gt;
@@ -6936,7 +6915,6 @@ iPhone並になるのは、かなり先のことかもしれません。&lt;br&g
 &lt;p&gt;Apple製品専用言語なのかと思ったが、ググったら、Linuxでも動きそうだったので、&lt;br&gt;
 挑戦してみる。&lt;/p&gt;
 &lt;p&gt;以下、その内容。&lt;br&gt;
-[]{#more}&lt;br&gt;
 まずは、Objective-Cの環境をインストール。&lt;br&gt;
 &lt;a href="http://d.hatena.ne.jp/elm200/20080426/1209211127"&gt;Linux で Objective C
 を走らせてみた&lt;/a&gt;&lt;br&gt;
@@ -7049,7 +7027,6 @@ I&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;m &lt;span class="m"&gt;23&lt;/sp
 切り替えの際、使用しない日本語テンキーが表示されるので、&lt;br&gt;
 「ちょっと邪魔だなぁ。。」と思っていました。&lt;/p&gt;
 &lt;p&gt;以下の設定で、この日本語キーボードを表示しないようにすることが出来ます。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;p&gt;「設定」-「一般」-「キーボード」-「各国のキーボード」-「日本語」&lt;br&gt;
 で、以下の画面になると思います。&lt;br&gt;
 &amp;lt;img
@@ -7064,7 +7041,6 @@ src="http://farm4.static.flickr.com/3583/3821471356_1aef52fc04.jpg"&lt;br&gt;
 切り替えの際、使用しない日本語テンキーが表示されるので、&lt;br&gt;
 「ちょっと邪魔だなぁ。。」と思っていました。&lt;/p&gt;
 &lt;p&gt;以下の設定で、この日本語キーボードを表示しないようにすることが出来ます。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;p&gt;「設定」-「一般」-「キーボード」-「各国のキーボード」-「日本語」&lt;br&gt;
 で、以下の画面になると思います。&lt;br&gt;
 &amp;lt;img
@@ -7075,7 +7051,6 @@ src="http://farm4.static.flickr.com/3583/3821471356_1aef52fc04.jpg"&lt;br&gt;
 &lt;p&gt;どのようにするかは、マニュアルに書いてあるとは思いますが、&lt;br&gt;
 マニュアルをきちんと読んだことが無いので色々手探りです(笑)&lt;/p&gt;
 &lt;p&gt;以下に、その設定方法を記述します。&lt;br&gt;
-[]{#more}&lt;br&gt;
 &lt;strong&gt;ホームボタンダブルクリックでカメラ起動設定&lt;/strong&gt;&lt;br&gt;
 デフォルト設定では、ホームボタンをダブルクリックしても、何もおきません。&lt;br&gt;
 (ホーム画面が表示されたままです)&lt;br&gt;
@@ -7101,7 +7076,6 @@ height="480"}&lt;/a&gt;&lt;br&gt;
 &lt;p&gt;どのようにするかは、マニュアルに書いてあるとは思いますが、&lt;br&gt;
 マニュアルをきちんと読んだことが無いので色々手探りです(笑)&lt;/p&gt;
 &lt;p&gt;以下に、その設定方法を記述します。&lt;br&gt;
-[]{#more}&lt;br&gt;
 &lt;strong&gt;ホームボタンダブルクリックでカメラ起動設定&lt;/strong&gt;&lt;br&gt;
 デフォルト設定では、ホームボタンをダブルクリックしても、何もおきません。&lt;br&gt;
 (ホーム画面が表示されたままです)&lt;br&gt;
@@ -7203,16 +7177,14 @@ iPhone3G(S無し)は、使ったことが無いので、それとの比較は、
 &lt;li&gt;iPhone内の全文検索が出来る&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;あれ、10個よりも多くなった気がしますが、細かいことは気にしない方が良いです(笑)&lt;/p&gt;</content><category term="iPhone"></category><category term="iPhone 3GS"></category><category term="PHS-Mobile-Phone"></category></entry><entry><title>最近購入したiPhoneアプリ</title><link href="https://igawa.io/posts/2009/08/zui-jin-gou-ru-shitaiphoneapuri/" rel="alternate"></link><published>2009-08-06T04:33:00+09:00</published><updated>2009-08-06T04:33:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-08-06:/posts/2009/08/zui-jin-gou-ru-shitaiphoneapuri/</id><summary type="html">&lt;p&gt;Appleから最近購入したiPhoneアプリの請求書が来たので、&lt;br&gt;
-載せてみます。(「購入」とは言っても、すべて無料ですが。。)&lt;br&gt;
-[]{#more}&lt;/p&gt;
+載せてみます。(「購入」とは言っても、すべて無料ですが。。)  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;アイテム番号   詳細      単価
 1   TweetDeck for iPhone, v1.0.1, 販売業者: Iain Dodsworth (4+)
 レビューを書く 問題を報告する    無料
 2   USA TODAY, v1.1.1, 販売業者: Tallent Communications, Inc. (4+)
 レビューを書く 問題を報告する     無料
-3   WSJ – The Wall Street Journal, v1.1.0, 販売業者: Wall Street Journal …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Appleから最近購入したiPhoneアプリの請求書が来たので、&lt;br&gt;
-載せてみます。(「購入」とは言っても、すべて無料ですが。。)&lt;br&gt;
-[]{#more}&lt;/p&gt;
+3   WSJ – The Wall Street Journal, v1.1.0, 販売業者: Wall Street Journal (4 …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Appleから最近購入したiPhoneアプリの請求書が来たので、&lt;br&gt;
+載せてみます。(「購入」とは言っても、すべて無料ですが。。)  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;アイテム番号   詳細      単価
 1   TweetDeck for iPhone, v1.0.1, 販売業者: Iain Dodsworth (4+)
 レビューを書く 問題を報告する    無料
@@ -7271,7 +7243,6 @@ Blog&lt;/a&gt;」で知ったのですが、&lt;br&gt;
 3.0.1アップデート&lt;/a&gt;が出た様です。&lt;/p&gt;
 &lt;p&gt;iPhone持っている方は、可能な限りアップデートしておいた方が良さそうです。&lt;br&gt;
 なぜならば...&lt;br&gt;
-[]{#more}&lt;br&gt;
 &lt;a href="http://www.gizmodo.jp/common/img/head_main_siteid.jpg"&gt;GIZMODO
 Japan&lt;/a&gt;にあった、&lt;br&gt;
 &lt;a href="http://www.gizmodo.jp/2009/07/iphonesms.html"&gt;「「世界中のiPhoneがSMS経由で乗っ取れる」セキュリティの脆弱性」&lt;/a&gt;という&lt;br&gt;
@@ -7327,8 +7298,7 @@ friendfeedというのが良さそうだったので、使ってみる。&lt;/p&
 &lt;p&gt;mixiの微妙な閉鎖感が若干嫌で、ちょっと足が遠のきつつあったが、&lt;br&gt;
 辛うじてつなぎ止まったかも。&lt;/p&gt;
 &lt;p&gt;上記のスクリプトを使用する上で、私の環境だといくつかつまづいたことがあったので、&lt;br&gt;
-とりあえず、以下に記しておくことにする...&lt;br&gt;
-[]{#more}&lt;/p&gt;
+とりあえず、以下に記しておくことにする...  &lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;文字コードの問題&lt;/li&gt;
 &lt;li&gt;依存ライブラリの問題&lt;/li&gt;
@@ -7345,13 +7315,12 @@ friendfeedというのが良さそうだったので、使ってみる。&lt;/p&
 &lt;p&gt;と、よく分からないエラーとなる。&lt;br&gt;
 これは、実行時のrubyのKCODEとソースの文字コードが異なると発生する（？）様で、&lt;br&gt;
 twitter2mixi.rbソースの先頭の記述を以下の様に変更して対応。&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1 …&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://cyberwave.jp/nashiki/2009/04/twitter%E3%81%97%E3%81%9F%E3%82%89%E3%80%81%E8%87%AA%E5%8B%95%E3%81%A7mixi%E3%82%A8%E3%82%B3%E3%83%BC%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%88%E3%80%80%E3%80%8Etwitter2mixirb%E3%80%8F/comment-page-1/"&gt;Twitterしたら、自動でMixiエコー作ったよ!!　『twitter2mixi.rb』&lt;/a&gt;&lt;br&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/usr …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://cyberwave.jp/nashiki/2009/04/twitter%E3%81%97%E3%81%9F%E3%82%89%E3%80%81%E8%87%AA%E5%8B%95%E3%81%A7mixi%E3%82%A8%E3%82%B3%E3%83%BC%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%88%E3%80%80%E3%80%8Etwitter2mixirb%E3%80%8F/comment-page-1/"&gt;Twitterしたら、自動でMixiエコー作ったよ!!　『twitter2mixi.rb』&lt;/a&gt;&lt;br&gt;
 の記事を参考に(というかほぼそのままだが)、Twitterから、mixiエコーへ送信するようにしてみた。&lt;/p&gt;
 &lt;p&gt;mixiの微妙な閉鎖感が若干嫌で、ちょっと足が遠のきつつあったが、&lt;br&gt;
 辛うじてつなぎ止まったかも。&lt;/p&gt;
 &lt;p&gt;上記のスクリプトを使用する上で、私の環境だといくつかつまづいたことがあったので、&lt;br&gt;
-とりあえず、以下に記しておくことにする...&lt;br&gt;
-[]{#more}&lt;/p&gt;
+とりあえず、以下に記しておくことにする...  &lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;文字コードの問題&lt;/li&gt;
 &lt;li&gt;依存ライブラリの問題&lt;/li&gt;
@@ -7579,7 +7548,6 @@ iPhone買いました！&lt;br&gt;
 「信長の野望」とか「三国志」のようなゲームのWeb版といった感じです。&lt;br&gt;
 ただし、ネットワークのゲームなので、当然対戦相手などは人間相手となります。&lt;/p&gt;
 &lt;p&gt;ただし...&lt;br&gt;
-[]{#more}&lt;br&gt;
 このゲーム、争い事に巻き込まれることは(少なくとも初期段階では)少なく、&lt;br&gt;
 比較的ゆったりプレー出来ます。&lt;br&gt;
 というか、最初のうちは出きることが少ないので、ゆったりプレーするしかありません。&lt;/p&gt;
@@ -7590,7 +7558,6 @@ iPhone買いました！&lt;br&gt;
 「信長の野望」とか「三国志」のようなゲームのWeb版といった感じです。&lt;br&gt;
 ただし、ネットワークのゲームなので、当然対戦相手などは人間相手となります。&lt;/p&gt;
 &lt;p&gt;ただし...&lt;br&gt;
-[]{#more}&lt;br&gt;
 このゲーム、争い事に巻き込まれることは(少なくとも初期段階では)少なく、&lt;br&gt;
 比較的ゆったりプレー出来ます。&lt;br&gt;
 というか、最初のうちは出きることが少ないので、ゆったりプレーするしかありません。&lt;/p&gt;
@@ -7605,7 +7572,6 @@ id="attachment_796" align="alignnone" width="225"
 caption="android(W-ZERO3-2)"]&lt;a href="http://www.0r2.info/blog/2009/06/21/w-zero3%e3%81%a7android%e3%81%8c%e5%8b%95%e3%81%8f%ef%bc%81/nec_0042/"&gt;&lt;img alt="android(W-ZERO3-2)" src="http://www.0r2.info/blog/wp-content/uploads/2009/06/NEC_0042-225x300.jpg" title="android(W-ZERO3-2)"&gt;{.size-medium
 .wp-image-796 width="225"
 height="300"}&lt;/a&gt;[/caption]&lt;br&gt;
-[]{#more}&lt;br&gt;
 毎日、進展があってすごいです!&lt;/p&gt;
 &lt;p&gt;ちゃんと、カーソルキーも使えました。&lt;br&gt;
 動きも、思った以上にサクサクです。&lt;br&gt;
@@ -7619,7 +7585,6 @@ id="attachment_796" align="alignnone" width="225"
 caption="android(W-ZERO3-2)"]&lt;a href="http://www.0r2.info/blog/2009/06/21/w-zero3%e3%81%a7android%e3%81%8c%e5%8b%95%e3%81%8f%ef%bc%81/nec_0042/"&gt;&lt;img alt="android(W-ZERO3-2)" src="http://www.0r2.info/blog/wp-content/uploads/2009/06/NEC_0042-225x300.jpg" title="android(W-ZERO3-2)"&gt;{.size-medium
 .wp-image-796 width="225"
 height="300"}&lt;/a&gt;[/caption]&lt;br&gt;
-[]{#more}&lt;br&gt;
 毎日、進展があってすごいです!&lt;/p&gt;
 &lt;p&gt;ちゃんと、カーソルキーも使えました。&lt;br&gt;
 動きも、思った以上にサクサクです。&lt;br&gt;
@@ -7697,8 +7662,7 @@ Sを予約しました！（ヨドバシカメラにしました。一括で購�
 02:39:36 up 9 days, 17:24, 11 users, load average: 21.77, 21.45, 23.54&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;で、かなーりもっさり(だけなら我慢できるが、時々、PHPやMySQLにつながらないことも。。)&lt;br&gt;
-で、coreserver.jpへ乗り換えてみた。&lt;br&gt;
-[]{#more}  &lt;/p&gt;
+で、coreserver.jpへ乗り換えてみた。  &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;masayun@s133:\~&amp;gt; uptime&lt;br&gt;
 9:27pm up 9 days 17:36, 2 users, load average: 0.27, 0.18, 0.17&lt;/p&gt;
@@ -7707,11 +7671,9 @@ Sを予約しました！（ヨドバシカメラにしました。一括で購�
 体感速度も、結構向上したと思います。&lt;/p&gt;</content><category term="サーバ管理"></category><category term="coreserver.jp"></category><category term="dreamhost"></category></entry><entry><title>iPhone 3G S 未だ予約できず..(自分のせい)</title><link href="https://igawa.io/posts/2009/06/iphone-3g-s-wei-dayu-yue-dekizuzi-fen-nosei/" rel="alternate"></link><published>2009-06-19T20:47:00+09:00</published><updated>2009-06-19T20:47:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-06-19:/posts/2009/06/iphone-3g-s-wei-dayu-yue-dekizuzi-fen-nosei/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.0r2.info/blog/2009/06/17/iphone-3g-s%E4%BA%88%E7%B4%84%E9%96%8B%E5%A7%8B%EF%BC%81618%E6%9C%A8%E3%81%8B%E3%82%89/"&gt;先日のエントリー&lt;/a&gt;で、「iPhone予約開始！」と言った割には、&lt;br&gt;
 私自身まだ、予約できてません。0r2..だけですけど。&lt;br&gt;
 それは、私に原因があります。&lt;br&gt;
-[]{#more}&lt;br&gt;
 単に、カゼひいて寝込んでるのが原因ですがw&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.0r2.info/blog/2009/06/17/iphone-3g-s%E4%BA%88%E7%B4%84%E9%96%8B%E5%A7%8B%EF%BC%81618%E6%9C%A8%E3%81%8B%E3%82%89/"&gt;先日のエントリー&lt;/a&gt;で、「iPhone予約開始！」と言った割には、&lt;br&gt;
 私自身まだ、予約できてません。0r2..だけですけど。&lt;br&gt;
 それは、私に原因があります。&lt;br&gt;
-[]{#more}&lt;br&gt;
 単に、カゼひいて寝込んでるのが原因ですがw&lt;/p&gt;</content><category term="iPhone"></category><category term="iPhone 3G S"></category><category term="PHS-Mobile-Phone"></category></entry><entry><title>iPhone 3G S予約開始！(6/18(木)から)</title><link href="https://igawa.io/posts/2009/06/iphone-3g-syu-yue-kai-shi-618mu-kara/" rel="alternate"></link><published>2009-06-17T02:52:00+09:00</published><updated>2009-06-17T02:52:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-06-17:/posts/2009/06/iphone-3g-syu-yue-kai-shi-618mu-kara/</id><summary type="html">&lt;div id="kwout_sfx7rwdc" class="kwout" style="text-align:center;"&gt;
 
 [![http://plusd.itmedia.co.jp/mobile/articles/0906/16/news086.html](http://kwout.com/cutout/s/fx/7r/wdc_bor.jpg "「iPhone 3G S」、6月18日から予約受付開始 - ITmedia +D モバイル"){width="522"
@@ -7792,7 +7754,6 @@ S&lt;/a&gt;が発表されました！(6月19日発売予定)&lt;br&gt;
 従来のiPhone(8GB)：\$100&lt;/p&gt;
 &lt;p&gt;で販売されるそうです。どうせなら、&lt;br&gt;
 従来モデルは\$99にすれば良かったんじゃないのって思うけど。。&lt;br&gt;
-[]{#more}&lt;br&gt;
 ちなみに、「S」はSpeedの「S」のことらしいです。&lt;/p&gt;</content><category term="3G"></category><category term="Apple"></category><category term="iPhone"></category><category term="PHS-Mobile-Phone"></category><category term="sbm"></category></entry><entry><title>Fedora11間もなくリリース</title><link href="https://igawa.io/posts/2009/06/fedora11jian-monakuririsu/" rel="alternate"></link><published>2009-06-08T22:59:00+09:00</published><updated>2009-06-08T22:59:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-06-08:/posts/2009/06/fedora11jian-monakuririsu/</id><summary type="html">&lt;p&gt;&lt;a href="http://fedoraproject.org/static/js/release-counter-ext.js?lang=ja"&gt;http://fedoraproject.org/static/js/release-counter-ext.js?lang=ja&lt;/a&gt;&lt;br&gt;
 というわけで、Fedora11が何度もリリース延期となったようですが、&lt;br&gt;
 2009-06-09にリリース予定です。&lt;/p&gt;
@@ -7803,14 +7764,12 @@ S&lt;/a&gt;が発表されました！(6月19日発売予定)&lt;br&gt;
 いつの間にか、正式に追加された様です。&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.getdropbox.com/plans"&gt;https://www.getdropbox.com/plans&lt;/a&gt;&lt;br&gt;
 に、「100GB」のプランが表示されています。&lt;br&gt;
-[]{#more}&lt;br&gt;
 ただ、&lt;strong&gt;\$199/year&lt;/strong&gt;は、ちょっと高いので、&lt;br&gt;
 100GBプランへのアップグレードは躊躇しています。。&lt;br&gt;
 より良い方法はないだろうか。。&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.0r2.info/blog/2009/04/20/dropbox-100gb%e3%83%97%e3%83%a9%e3%83%b3%e7%99%bb%e5%a0%b4%ef%bc%9f/"&gt;先日のエントリー&lt;/a&gt;で、「Dropboxに100GBのプランが追加されたかも」と書いたのですが、&lt;br&gt;
 いつの間にか、正式に追加された様です。&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.getdropbox.com/plans"&gt;https://www.getdropbox.com/plans&lt;/a&gt;&lt;br&gt;
 に、「100GB」のプランが表示されています。&lt;br&gt;
-[]{#more}&lt;br&gt;
 ただ、&lt;strong&gt;\$199/year&lt;/strong&gt;は、ちょっと高いので、&lt;br&gt;
 100GBプランへのアップグレードは躊躇しています。。&lt;br&gt;
 より良い方法はないだろうか。。&lt;/p&gt;</content><category term="dropbox"></category><category term="life hack"></category></entry><entry><title>Nikon バッテリー(充電池) EN-EL3リコール</title><link href="https://igawa.io/posts/2009/05/nikon-batsuterichong-dian-chi-en-el3rikoru/" rel="alternate"></link><published>2009-05-04T12:18:00+09:00</published><updated>2009-05-04T12:18:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-05-04:/posts/2009/05/nikon-batsuterichong-dian-chi-en-el3rikoru/</id><summary type="html">&lt;p&gt;[caption id="attachment_750" align="alignnone" width="225"
@@ -7874,8 +7833,7 @@ News](http://www.itmedia.co.jp/news/articles/0904/03/news056.html) via
 &lt;/div&gt;
 
 &lt;p&gt;&lt;a href="http://kwout.com/cutout/6/4m/e8/pmv_bor.js"&gt;http://kwout.com/cutout/6/4m/e8/pmv_bor.js&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;ただし、&lt;br&gt;
-[]{#more}  &lt;/p&gt;
+&lt;p&gt;ただし、  &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;仕事中にネットで遊んでいる人は、そうでない人より約9％生産性が高いことが示された&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -7971,8 +7929,7 @@ $ mkdir -p &lt;span class="nv"&gt;$HOME&lt;/span&gt;/src/rpms/&lt;span class="o"
 &lt;li&gt;&lt;a href="http://ja.wikipedia.org/wiki/%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF%E3%83%BB%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%A0"&gt;最低限所得保証&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://d.hatena.ne.jp/keyword/%A5%D9%A1%BC%A5%B7%A5%C3%A5%AF%A1%A6%A5%A4%A5%F3%A5%AB%A5%E0"&gt;ベーシック・インカム(はてなキーワード)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;ベーシック・インカムに対する私の感想。
-[]{#more}&lt;/p&gt;
+&lt;p&gt;ベーシック・インカムに対する私の感想。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;導入すれば、ホームレス・ワーキングプアの人数もだいぶ減るんじゃないかと思う。&lt;/li&gt;
 &lt;li&gt;収入が確保されることによって、心穏やかになる人が増えるのではないか？&lt;/li&gt;
@@ -7992,7 +7949,6 @@ Can&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;t remove open logical volume &l
 
 
 &lt;p&gt;と、言われて削除できなかったので、その解決方法など。&lt;br&gt;
-[]{#more}&lt;br&gt;
 結論を言うと、&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo dmsetup ls
 vg01-iscsip3  &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;254&lt;/span&gt;, &lt;span class="m"&gt;4&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
@@ -8001,7 +7957,7 @@ vg01-iscsi    &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;254&lt;/
 $ sudo dmsetup remove vg01-iscsip1
 $ sudo dmsetup remove vg01-iscsip3
 $ sudo dmsetup remove vg01-iscsi
-$ sudo lvremove …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;lvmを使っていて、必要なくなったlvを削除するためのコマンドである、&lt;br&gt;
+$ sudo lvremove  /dev …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;lvmを使っていて、必要なくなったlvを削除するためのコマンドである、&lt;br&gt;
 lvremove&lt;br&gt;
 というのがあります。&lt;br&gt;
 先日、iscsiテスト用に作ったlvを、これを使って削除しようとしたら、&lt;/p&gt;
@@ -8011,7 +7967,6 @@ Can&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;t remove open logical volume &l
 
 
 &lt;p&gt;と、言われて削除できなかったので、その解決方法など。&lt;br&gt;
-[]{#more}&lt;br&gt;
 結論を言うと、&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo dmsetup ls
 vg01-iscsip3  &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;254&lt;/span&gt;, &lt;span class="m"&gt;4&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
@@ -8207,14 +8162,12 @@ height="1"}&lt;/p&gt;
 &lt;p&gt;エントリをファイルに書き出す。しばらく待つと、ファイル保存のダイアログがでるので、&lt;/p&gt;
 &lt;p&gt;適当に名前をつけて保存。&lt;/p&gt;
 &lt;p&gt;その後は、Wordpressの「Tools」-&amp;gt;「インポート」で、先ほど保存したファイルをインポートするだけ。&lt;/p&gt;
-&lt;p&gt;[]{#more}実は、インポート途中でブラウザの画面が真っ白になってしまったが、一通りインポートされた様なので、&lt;/p&gt;
 &lt;p&gt;良しとする。w&lt;/p&gt;</summary><content type="html">&lt;p&gt;以前、MovableTypeで書いていた記事を、wordpressにインポートしました。&lt;/p&gt;
 &lt;p&gt;方法は、至って簡単。&lt;/p&gt;
 &lt;p&gt;MovableTypeの「ユーティリティ」-&amp;gt;「読み込み/書き出し」-&amp;gt;「エントリの書き出し」で、&lt;/p&gt;
 &lt;p&gt;エントリをファイルに書き出す。しばらく待つと、ファイル保存のダイアログがでるので、&lt;/p&gt;
 &lt;p&gt;適当に名前をつけて保存。&lt;/p&gt;
 &lt;p&gt;その後は、Wordpressの「Tools」-&amp;gt;「インポート」で、先ほど保存したファイルをインポートするだけ。&lt;/p&gt;
-&lt;p&gt;[]{#more}実は、インポート途中でブラウザの画面が真っ白になってしまったが、一通りインポートされた様なので、&lt;/p&gt;
 &lt;p&gt;良しとする。w&lt;/p&gt;</content><category term="export"></category><category term="import"></category><category term="movabletype"></category><category term="Software"></category><category term="tips"></category></entry><entry><title>Fedoraにuuencode, uudecodeをインストールしたいとき</title><link href="https://igawa.io/posts/2008/11/fedoraniuuencode-uudecodewoinsutorushitaitoki/" rel="alternate"></link><published>2008-11-03T15:35:00+09:00</published><updated>2008-11-03T15:35:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2008-11-03:/posts/2008/11/fedoraniuuencode-uudecodewoinsutorushitaitoki/</id><summary type="html">&lt;p&gt;Fedoraにuuencode, uudecodeをインストールしたいときは、&lt;br&gt;
 &lt;code&gt;# yum install sharutils&lt;/code&gt;&lt;br&gt;
 と、実行する。&lt;/p&gt;
@@ -8324,19 +8277,17 @@ fetchmail/procmailでダウンロードして、IMAP(courier-imap)経由で見�
 (以前は、これを、「主」としていたのですが。。)&lt;br&gt;
 というわけで、courier-imapをインストールする方法を記しておきます。&lt;/p&gt;
 &lt;p&gt;とは言っても、RPMパッケージを作ってインストールするだけなので、とても簡単です。&lt;br&gt;
-[]{#more}&lt;br&gt;
 &lt;a href="http://www.courier-mta.org/download.php"&gt;http://www.courier-mta.org/download.php&lt;/a&gt;&lt;br&gt;
 から、&lt;/p&gt;
 &lt;p&gt;Package: Courier-IMAP&lt;br&gt;
 Version: 4.3.1 (23-Mar-2008)&lt;br&gt;
 Filename: courier-imap-4.3.1.tar.bz2 (3.2M)&lt;/p&gt;
 &lt;p&gt;Package: Courier authentication library&lt;br&gt;
-Version: 0.60.6 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;メールは今は、ほぼ、Gmailしか使って無いのですが、たまに、ローカルPC上でも見たい事があるので、&lt;br&gt;
+Version: 0.60.6 (08-Jun-2008 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;メールは今は、ほぼ、Gmailしか使って無いのですが、たまに、ローカルPC上でも見たい事があるので、&lt;br&gt;
 fetchmail/procmailでダウンロードして、IMAP(courier-imap)経由で見ることがたまにあります。&lt;br&gt;
 (以前は、これを、「主」としていたのですが。。)&lt;br&gt;
 というわけで、courier-imapをインストールする方法を記しておきます。&lt;/p&gt;
 &lt;p&gt;とは言っても、RPMパッケージを作ってインストールするだけなので、とても簡単です。&lt;br&gt;
-[]{#more}&lt;br&gt;
 &lt;a href="http://www.courier-mta.org/download.php"&gt;http://www.courier-mta.org/download.php&lt;/a&gt;&lt;br&gt;
 から、&lt;/p&gt;
 &lt;p&gt;Package: Courier-IMAP&lt;br&gt;
@@ -8355,13 +8306,12 @@ Filename: courier-authlib-0.60.6.tar.bz2 (2.1M)&lt;/p&gt;
 で、大丈夫でしょう。&lt;/p&gt;</content><category term="imap"></category><category term="rpm"></category></entry><entry><title>Fedora 8から9にバージョンアップした</title><link href="https://igawa.io/posts/2008/07/fedora-8kara9nibaziyonatsupushita/" rel="alternate"></link><published>2008-07-13T21:39:00+09:00</published><updated>2008-07-13T21:39:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2008-07-13:/posts/2008/07/fedora-8kara9nibaziyonatsupushita/</id><summary type="html">&lt;p&gt;自宅ではLinuxを使っていて、&lt;br&gt;
 Fedora 8を使っていたんですが、それを9にバージョンアップしました。&lt;/p&gt;
 &lt;p&gt;バージョンアップ方法は、以下のとおり。&lt;br&gt;
-[]{#more}&lt;br&gt;
 &lt;code&gt;# rpm -Uhv ftp://ftp.riken.jp/Linux/fedora/releases/9/Fedora/i386/os/Packages/fedora-release-*.noarch.rpm# yum remove thunderbird# yum clean all# yum update rpm\* yum\* gamin# yum -y upgrade# reboot# yum install yum-utils# package-cleanup --cleandupes&lt;/code&gt;&lt;br&gt;
 途中、上記のupdate/upgradeの時に、依存関係のエラーが何個か出たのですが、&lt;br&gt;
-特に問題無さそうな既存パッケージのエラーだったので、既存パッケージを削除した …&lt;/p&gt;</summary><content type="html">&lt;p&gt;自宅ではLinuxを使っていて、&lt;br&gt;
+特に問題無さそうな既存パッケージのエラーだったので、既存パッケージを削除した。&lt;/p&gt;
+&lt;p&gt;後は …&lt;/p&gt;</summary><content type="html">&lt;p&gt;自宅ではLinuxを使っていて、&lt;br&gt;
 Fedora 8を使っていたんですが、それを9にバージョンアップしました。&lt;/p&gt;
 &lt;p&gt;バージョンアップ方法は、以下のとおり。&lt;br&gt;
-[]{#more}&lt;br&gt;
 &lt;code&gt;# rpm -Uhv ftp://ftp.riken.jp/Linux/fedora/releases/9/Fedora/i386/os/Packages/fedora-release-*.noarch.rpm# yum remove thunderbird# yum clean all# yum update rpm\* yum\* gamin# yum -y upgrade# reboot# yum install yum-utils# package-cleanup --cleandupes&lt;/code&gt;&lt;br&gt;
 途中、上記のupdate/upgradeの時に、依存関係のエラーが何個か出たのですが、&lt;br&gt;
 特に問題無さそうな既存パッケージのエラーだったので、既存パッケージを削除した。&lt;/p&gt;
@@ -8397,8 +8347,7 @@ Fedora8ではサスペンドが出来なかったのですが、9にバージョ
 height="300"}&lt;/a&gt;[/caption]&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://ja.wikipedia.org/wiki/%E3%82%B4%E3%83%BC%E3%82%A4%E3%83%B3%E3%82%B0%E3%83%A1%E3%83%AA%E3%83%BC%E5%8F%B7"&gt;ゴーイングメリー号&lt;/a&gt;の船首です。
 道を歩いてたら、ふと目にとまりました。ビックリ。
 [caption id="attachment_25" align="alignnone" width="240" caption="ゴーイングメリー号の船首"]&lt;a href="http://b.0r2.info/wp-content/uploads/2008/07/080429-090719.jpg"&gt;&lt;img alt="" src="http://b.0r2.info/wp-content/uploads/2008/07/080429-090719-240x300.jpg" title="ゴーイングメリー号の船首"&gt;{.size-medium .wp-image-25 width="240"
-height="300"}&lt;/a&gt;[/caption]&lt;/p&gt;</content><category term="写真"></category><category term="変な写真"></category></entry><entry><title>独習C++ 改訂版日記 P.52 練習問題2.2 2.〜</title><link href="https://igawa.io/posts/2008/07/du-xi-c-gai-ding-ban-ri-ji-p52-lian-xi-wen-ti-22-2/" rel="alternate"></link><published>2008-07-04T00:15:00+09:00</published><updated>2008-07-04T00:15:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2008-07-04:/posts/2008/07/du-xi-c-gai-ding-ban-ri-ji-p52-lian-xi-wen-ti-22-2/</id><summary type="html">&lt;p&gt;2.(こんなコードで良いのか？)&lt;br&gt;
-[]{#more}  &lt;/p&gt;
+height="300"}&lt;/a&gt;[/caption]&lt;/p&gt;</content><category term="写真"></category><category term="変な写真"></category></entry><entry><title>独習C++ 改訂版日記 P.52 練習問題2.2 2.〜</title><link href="https://igawa.io/posts/2008/07/du-xi-c-gai-ding-ban-ri-ji-p52-lian-xi-wen-ti-22-2/" rel="alternate"></link><published>2008-07-04T00:15:00+09:00</published><updated>2008-07-04T00:15:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2008-07-04:/posts/2008/07/du-xi-c-gai-ding-ban-ri-ji-p52-lian-xi-wen-ti-22-2/</id><summary type="html">&lt;p&gt;2.(こんなコードで良いのか？)  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="nx"&gt;include&lt;/span&gt; 
 &lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="nx"&gt;include&lt;/span&gt;
 
@@ -8429,8 +8378,7 @@ height="300"}&lt;/a&gt;[/caption]&lt;/p&gt;</content><category term="写真"></c
   &lt;span class="nx"&gt;time_t&lt;/span&gt; &lt;span class="nx"&gt;n&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;time&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
   &lt;span class="nx"&gt;t_and_d&lt;/span&gt; &lt;span class="nx"&gt;td&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;n&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
-  &lt;span class="nx"&gt;td …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;2.(こんなコードで良いのか？)&lt;br&gt;
-[]{#more}  &lt;/p&gt;
+  &lt;span class="nx"&gt;td&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;disp …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;2.(こんなコードで良いのか？)  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="nx"&gt;include&lt;/span&gt; 
 &lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="nx"&gt;include&lt;/span&gt;
 
@@ -8506,7 +8454,6 @@ height="300"}&lt;/a&gt;[/caption]&lt;/p&gt;</content><category term="写真"></c
   &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</content><category term="C++"></category></entry><entry><title>独習C++ 改訂版日記2</title><link href="https://igawa.io/posts/2008/07/du-xi-c-gai-ding-ban-ri-ji-2/" rel="alternate"></link><published>2008-07-02T01:36:00+09:00</published><updated>2008-07-02T01:36:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2008-07-02:/posts/2008/07/du-xi-c-gai-ding-ban-ri-ji-2/</id><summary type="html">&lt;p&gt;というわけで、P.52 練習問題2.2&lt;br&gt;
-[]{#more}&lt;br&gt;
 1.  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="nx"&gt;include&lt;/span&gt; 
 &lt;span class="nx"&gt;using&lt;/span&gt; &lt;span class="nx"&gt;namespace&lt;/span&gt; &lt;span class="nx"&gt;std&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -8528,8 +8475,7 @@ height="300"}&lt;/a&gt;[/caption]&lt;/p&gt;</content><category term="写真"></c
   &lt;span class="nx"&gt;stck&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kr"&gt;char&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="nx"&gt;malloc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;size&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
   &lt;span class="nx"&gt;tos&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
   &lt;span class="nx"&gt;who&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;c&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="nx"&gt;cout …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;というわけで、P.52 練習問題2.2&lt;br&gt;
-[]{#more}&lt;br&gt;
+  &lt;span class="nx"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Constructing …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;というわけで、P.52 練習問題2.2&lt;br&gt;
 1.  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="nx"&gt;include&lt;/span&gt; 
 &lt;span class="nx"&gt;using&lt;/span&gt; &lt;span class="nx"&gt;namespace&lt;/span&gt; &lt;span class="nx"&gt;std&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -8605,16 +8551,14 @@ height="300"}&lt;/a&gt;[/caption]&lt;/p&gt;</content><category term="写真"></c
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</content><category term="C++"></category></entry><entry><title>独習C++ 改訂版日記</title><link href="https://igawa.io/posts/2008/06/du-xi-c-gai-ding-ban-ri-ji/" rel="alternate"></link><published>2008-06-29T23:07:00+09:00</published><updated>2008-06-29T23:07:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2008-06-29:/posts/2008/06/du-xi-c-gai-ding-ban-ri-ji/</id><summary type="html">&lt;p&gt;「&lt;a href="http://www.amazon.co.jp/gp/redirect.html?ie=UTF8&amp;amp;location=http%3A%2F%2Fwww.amazon.co.jp%2F%25E7%258B%25AC%25E7%25BF%2592C-%25E3%2583%258F%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2583%2588%25E3%2583%25BB%25E3%2582%25B7%25E3%2583%25AB%25E3%2583%2588%2Fdp%2F4798103187&amp;amp;tag=hughundercons-22&amp;amp;linkCode=ur2&amp;amp;camp=247&amp;amp;creative=1211"&gt;独習C++&lt;/a&gt;
 (改訂版)を(本自体は、ずいぶん前に買ったんですが)やり始めているので、書いていくことにしてみようと思う。(いつまで続くやらw)&lt;/p&gt;
-&lt;p&gt;いきなりだが、P.46 練習問題2.1から。&lt;br&gt;
-[]{#more}&lt;/p&gt;
+&lt;p&gt;いきなりだが、P.46 練習問題2.1から。  &lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;キュークラスを改良して、初期化関数をコンストラクタに置き換え。&lt;/li&gt;
 &lt;li&gt;stopwatchクラスの作成&lt;/li&gt;
 &lt;li&gt;次に示すコンストラクタの誤りは?&lt;/li&gt;
 &lt;/ol&gt;</summary><content type="html">&lt;p&gt;「&lt;a href="http://www.amazon.co.jp/gp/redirect.html?ie=UTF8&amp;amp;location=http%3A%2F%2Fwww.amazon.co.jp%2F%25E7%258B%25AC%25E7%25BF%2592C-%25E3%2583%258F%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2583%2588%25E3%2583%25BB%25E3%2582%25B7%25E3%2583%25AB%25E3%2583%2588%2Fdp%2F4798103187&amp;amp;tag=hughundercons-22&amp;amp;linkCode=ur2&amp;amp;camp=247&amp;amp;creative=1211"&gt;独習C++&lt;/a&gt;
 (改訂版)を(本自体は、ずいぶん前に買ったんですが)やり始めているので、書いていくことにしてみようと思う。(いつまで続くやらw)&lt;/p&gt;
-&lt;p&gt;いきなりだが、P.46 練習問題2.1から。&lt;br&gt;
-[]{#more}&lt;/p&gt;
+&lt;p&gt;いきなりだが、P.46 練習問題2.1から。  &lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;キュークラスを改良して、初期化関数をコンストラクタに置き換え。&lt;/li&gt;
 &lt;li&gt;stopwatchクラスの作成&lt;/li&gt;
@@ -8623,7 +8567,6 @@ height="300"}&lt;/a&gt;[/caption]&lt;/p&gt;</content><category term="写真"></c
 まだ、コンテンツ数も少ないので、ざっくり見れば、目的のページがすぐに見つかるでしょう。&lt;/p&gt;</summary><content type="html">&lt;p&gt;検索エンジンからたどってきた場合は、ちゃんと表示されないことがあるかも。&lt;br&gt;
 まだ、コンテンツ数も少ないので、ざっくり見れば、目的のページがすぐに見つかるでしょう。&lt;/p&gt;</content><category term="このサイトの事"></category></entry><entry><title>Firefox3にアップデート</title><link href="https://igawa.io/posts/2008/06/firefox3niatsupudeto/" rel="alternate"></link><published>2008-06-26T00:01:00+09:00</published><updated>2008-06-26T00:01:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2008-06-26:/posts/2008/06/firefox3niatsupudeto/</id><summary type="html">&lt;p&gt;いつも使ってるWebブラウザはFirefoxなのですが、&lt;/p&gt;
 &lt;p&gt;Firefox3が出たことなので、アップデートしました。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;p&gt;会社ではWindows、家ではMacBookとLinux(Fedora8)を使用していて、&lt;/p&gt;
 &lt;p&gt;Bookmarkなどの同期のため、Google Browser Syncを使用していました。&lt;/p&gt;
 &lt;p&gt;でも、どうやら&lt;/p&gt;
@@ -8637,9 +8580,8 @@ Synchronizer&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;というやつが使えることがわかり、しばらくは、これで行ってみることにしました。&lt;/p&gt;
 &lt;p&gt;なお、Tab Mix PlusもFirefox3では使えなくなっているのですが、&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://addons.mozilla.org/ja/firefox/addon/1122"&gt;https://addons.mozilla.org/ja/firefox/addon/1122&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;には、「A version for Firefox 3 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;いつも使ってるWebブラウザはFirefoxなのですが、&lt;/p&gt;
+&lt;p&gt;には、「A version for Firefox 3 is …&lt;/p&gt;</summary><content type="html">&lt;p&gt;いつも使ってるWebブラウザはFirefoxなのですが、&lt;/p&gt;
 &lt;p&gt;Firefox3が出たことなので、アップデートしました。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;p&gt;会社ではWindows、家ではMacBookとLinux(Fedora8)を使用していて、&lt;/p&gt;
 &lt;p&gt;Bookmarkなどの同期のため、Google Browser Syncを使用していました。&lt;/p&gt;
 &lt;p&gt;でも、どうやら&lt;/p&gt;
@@ -8720,7 +8662,6 @@ here:http://tmp.garyr.net/forum/viewtopic.php?t=7031 」&lt;/p&gt;
 milk&lt;/a&gt;」(通称:RTM)。&lt;/p&gt;
 &lt;p&gt;最近、かなりお気に入りのWebアプリです。&lt;/p&gt;
 &lt;p&gt;何が良いのかといえば...&lt;/p&gt;
-&lt;p&gt;[]{#more}普通、「TODOリスト」と言うと、&lt;/p&gt;
 &lt;p&gt;TODO項目が箇条書きにされていて、&lt;/p&gt;
 &lt;p&gt;それを消化したらチェックをして、おしまい。&lt;/p&gt;
 &lt;p&gt;を、繰り返すわけですが、RTMはもうちょっと便利な機能がついてます。&lt;/p&gt;
@@ -8732,11 +8673,12 @@ milk&lt;/a&gt;」(通称:RTM)。&lt;/p&gt;
 &lt;p&gt;一旦「完了」としても、定期的なアイテムの場合は、次のアイテムが&lt;strong&gt;自動的に&lt;/strong&gt;現れるのです。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;やった感&lt;/strong&gt;を得られられつつ、定期的なTODOにも対応できる、&lt;/p&gt;
 &lt;p&gt;非常に優れものだと思います。&lt;/p&gt;
-&lt;p&gt;それ以外にも、日付を「今日」とか「明日 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;と、言えば、「&lt;a href="http://www.rememberthemilk.com/" title="remember the milk"&gt;remember the
+&lt;p&gt;それ以外にも、日付を「今日」とか「明日」などで指定出来たり、&lt;/p&gt;
+&lt;p&gt;繰り返しパターンもある程度、日本語で設定出来て、&lt;/p&gt;
+&lt;p&gt;かなり直感的なI …&lt;/p&gt;</summary><content type="html">&lt;p&gt;と、言えば、「&lt;a href="http://www.rememberthemilk.com/" title="remember the milk"&gt;remember the
 milk&lt;/a&gt;」(通称:RTM)。&lt;/p&gt;
 &lt;p&gt;最近、かなりお気に入りのWebアプリです。&lt;/p&gt;
 &lt;p&gt;何が良いのかといえば...&lt;/p&gt;
-&lt;p&gt;[]{#more}普通、「TODOリスト」と言うと、&lt;/p&gt;
 &lt;p&gt;TODO項目が箇条書きにされていて、&lt;/p&gt;
 &lt;p&gt;それを消化したらチェックをして、おしまい。&lt;/p&gt;
 &lt;p&gt;を、繰り返すわけですが、RTMはもうちょっと便利な機能がついてます。&lt;/p&gt;
@@ -8761,7 +8703,6 @@ milk&lt;/a&gt;」(通称:RTM)。&lt;/p&gt;
 &lt;p&gt;例えば、東京ガスなら、以下のURLからクレジットカード払いの手続きができる。&lt;br&gt;
 &lt;a href="http://www.tokyo-gas.co.jp/trans_apply/credit_application.html"&gt;http://www.tokyo-gas.co.jp/trans_apply/credit_application.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;ただし、気をつけないといけない点もある。それは、&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;p&gt;クレジットカードや口座引落しにすると、「使ってる感」が薄まるってこと。&lt;/p&gt;
 &lt;p&gt;自分で、コンビニとかで現金で払うと&lt;/p&gt;
 &lt;p&gt;「あー、今月こんなに使ったから、来月は気をつけなきゃ。」とか思うが、&lt;/p&gt;
@@ -8772,14 +8713,12 @@ milk&lt;/a&gt;」(通称:RTM)。&lt;/p&gt;
 &lt;p&gt;例えば、東京ガスなら、以下のURLからクレジットカード払いの手続きができる。&lt;br&gt;
 &lt;a href="http://www.tokyo-gas.co.jp/trans_apply/credit_application.html"&gt;http://www.tokyo-gas.co.jp/trans_apply/credit_application.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;ただし、気をつけないといけない点もある。それは、&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;p&gt;クレジットカードや口座引落しにすると、「使ってる感」が薄まるってこと。&lt;/p&gt;
 &lt;p&gt;自分で、コンビニとかで現金で払うと&lt;/p&gt;
 &lt;p&gt;「あー、今月こんなに使ったから、来月は気をつけなきゃ。」とか思うが、&lt;/p&gt;
 &lt;p&gt;クレジットカードや口座引落しだと、そういう感覚が薄まる気がする。&lt;/p&gt;
 &lt;p&gt;というわけで、気をつけよう。&lt;/p&gt;</content><category term="お金"></category><category term="クレジットカード"></category><category term="生活"></category></entry><entry><title>Linuxカーネルのコンパイル(ビルド)方法</title><link href="https://igawa.io/posts/2008/06/linuxkanerunokonpairubirudofang-fa/" rel="alternate"></link><published>2008-06-20T23:45:00+09:00</published><updated>2008-06-20T23:45:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2008-06-20:/posts/2008/06/linuxkanerunokonpairubirudofang-fa/</id><summary type="html">&lt;p&gt;突然だが、Linuxカーネルのコンパイル方法を書いてみる。&lt;/p&gt;
 &lt;p&gt;とは言っても、とても簡単です。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;p&gt;Linuxのディストリビューションは、とりあえず、Fedora8を基準に書きますが、&lt;/p&gt;
 &lt;p&gt;他のディストリビューションでも大きな違いはないでしょう。  &lt;/p&gt;
 &lt;h3&gt;手順：(比較的新しい(2.6.18〜)を想定)&lt;/h3&gt;
@@ -8797,7 +8736,6 @@ milk&lt;/a&gt;」(通称:RTM)。&lt;/p&gt;
 &lt;li&gt;再起動。(再起動時のGRUBの選択画面で、インストールしたカーネルを選ぶ。)&lt;/li&gt;
 &lt;/ol&gt;</summary><content type="html">&lt;p&gt;突然だが、Linuxカーネルのコンパイル方法を書いてみる。&lt;/p&gt;
 &lt;p&gt;とは言っても、とても簡単です。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;/p&gt;
 &lt;p&gt;Linuxのディストリビューションは、とりあえず、Fedora8を基準に書きますが、&lt;/p&gt;
 &lt;p&gt;他のディストリビューションでも大きな違いはないでしょう。  &lt;/p&gt;
 &lt;h3&gt;手順：(比較的新しい(2.6.18〜)を想定)&lt;/h3&gt;
@@ -8853,12 +8791,10 @@ milk&lt;/a&gt;」(通称:RTM)。&lt;/p&gt;
 &lt;p&gt;以前のデータはあえて引き継がず、新たな気持ちで。&lt;/p&gt;</summary><content type="html">&lt;p&gt;ブログシステムを、wordpressにしてみました。&lt;/p&gt;
 &lt;p&gt;以前のデータはあえて引き継がず、新たな気持ちで。&lt;/p&gt;</content></entry><entry><title>x-w.jpの公告つけてみました</title><link href="https://igawa.io/posts/2007/05/x-wjpnogong-gao-tsuketemimashita/" rel="alternate"></link><published>2007-05-19T15:31:00+09:00</published><updated>2007-05-19T15:31:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2007-05-19:/posts/2007/05/x-wjpnogong-gao-tsuketemimashita/</id><summary type="html">&lt;p&gt;Willcom(シャープ)の話題の新端末(スマートフォン)の公告「x-w.jp」のブログ公告パーツを&lt;br&gt;
 つけてみました。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;br&gt;
-#いつ発売されるのかさっぱりわからないし、端末の仕様もさっぱりわかりませんが。(笑)&lt;br&gt;
+&lt;p&gt;#いつ発売されるのかさっぱりわからないし、端末の仕様もさっぱりわかりませんが。(笑)&lt;br&gt;
 まぁ、色々な意味でも話題になるのは良い事なのかもしれませんね。&lt;/p&gt;</summary><content type="html">&lt;p&gt;Willcom(シャープ)の話題の新端末(スマートフォン)の公告「x-w.jp」のブログ公告パーツを&lt;br&gt;
 つけてみました。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;br&gt;
-#いつ発売されるのかさっぱりわからないし、端末の仕様もさっぱりわかりませんが。(笑)&lt;br&gt;
+&lt;p&gt;#いつ発売されるのかさっぱりわからないし、端末の仕様もさっぱりわかりませんが。(笑)&lt;br&gt;
 まぁ、色々な意味でも話題になるのは良い事なのかもしれませんね。&lt;/p&gt;</content><category term="PHS-Mobile-Phone"></category></entry><entry><title>MacBookが起動しない！</title><link href="https://igawa.io/posts/2007/05/macbookgaqi-dong-shinai/" rel="alternate"></link><published>2007-05-13T21:15:00+09:00</published><updated>2007-05-13T21:15:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2007-05-13:/posts/2007/05/macbookgaqi-dong-shinai/</id><summary type="html">&lt;p&gt;１年度ほど前、&lt;br&gt;
 &lt;a href="http://lunatic.xrea.jp/mt/2006/08/macbook.html"&gt;http://lunatic.xrea.jp/mt/2006/08/macbook.html&lt;/a&gt;&lt;br&gt;
 のエントリーにあるように、MacBookを購入したのですが、&lt;br&gt;
@@ -8867,15 +8803,14 @@ milk&lt;/a&gt;」(通称:RTM)。&lt;/p&gt;
 旅行から帰ってきたら、起動しなくなっていました(泣)&lt;br&gt;
 &lt;a href="http://www.apple.com/jp/support/panther/startup/index.html"&gt;http://www.apple.com/jp/support/panther/startup/index.html&lt;/a&gt;&lt;br&gt;
 の、情報なんかを参考に色々と、やってみたのですが全然ダメで。。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;br&gt;
-状態としては、&lt;br&gt;
+&lt;p&gt;状態としては、&lt;br&gt;
 「電源を入れると、真っ暗な画面(ブラックアウト状態)になったままで、&lt;br&gt;
 　うんともすんとも言わない。時々、スリープランプが素早く点滅する事がある&lt;br&gt;
 　(点滅しない事もある)」&lt;br&gt;
 という感じです。&lt;/p&gt;
 &lt;p&gt;もう、全くお手上げだったので、Appleのサポートに電話しました。&lt;br&gt;
 そのときのやり取りは、以下のような感じ。&lt;br&gt;
-私「すいません …&lt;/p&gt;</summary><content type="html">&lt;p&gt;１年度ほど前、&lt;br&gt;
+私「すいません。MacBookが起動しなくなっちゃったんですが …&lt;/p&gt;</summary><content type="html">&lt;p&gt;１年度ほど前、&lt;br&gt;
 &lt;a href="http://lunatic.xrea.jp/mt/2006/08/macbook.html"&gt;http://lunatic.xrea.jp/mt/2006/08/macbook.html&lt;/a&gt;&lt;br&gt;
 のエントリーにあるように、MacBookを購入したのですが、&lt;br&gt;
 つい最近、ゴールデンウィーク中（旅行に行っていたので）、&lt;br&gt;
@@ -8883,8 +8818,7 @@ milk&lt;/a&gt;」(通称:RTM)。&lt;/p&gt;
 旅行から帰ってきたら、起動しなくなっていました(泣)&lt;br&gt;
 &lt;a href="http://www.apple.com/jp/support/panther/startup/index.html"&gt;http://www.apple.com/jp/support/panther/startup/index.html&lt;/a&gt;&lt;br&gt;
 の、情報なんかを参考に色々と、やってみたのですが全然ダメで。。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;br&gt;
-状態としては、&lt;br&gt;
+&lt;p&gt;状態としては、&lt;br&gt;
 「電源を入れると、真っ暗な画面(ブラックアウト状態)になったままで、&lt;br&gt;
 　うんともすんとも言わない。時々、スリープランプが素早く点滅する事がある&lt;br&gt;
 　(点滅しない事もある)」&lt;br&gt;
@@ -14367,8 +14301,7 @@ ITProの「栗原」様。&lt;br&gt;
 ラFLOPSの性能を達成を達成した。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;だったのに、一気に「65TFLOPS」だからね。。。すげ〜。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;br&gt;
-関連の話題&lt;/p&gt;
+&lt;p&gt;関連の話題&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0410/20/news068.html"&gt;迫る米国勢、ベクターで立ち向かうNEC&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0410/20/news023.html"&gt;ITmedia&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;なんだか、とてつもなくすごい値。&lt;/p&gt;
 &lt;p&gt;つい最近、&lt;br&gt;
@@ -14379,8 +14312,7 @@ ITProの「栗原」様。&lt;br&gt;
 ラFLOPSの性能を達成を達成した。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;だったのに、一気に「65TFLOPS」だからね。。。すげ〜。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;br&gt;
-関連の話題&lt;/p&gt;
+&lt;p&gt;関連の話題&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0410/20/news068.html"&gt;迫る米国勢、ベクターで立ち向かうNEC&lt;/a&gt;&lt;/p&gt;</content><category term="PC"></category></entry><entry><title>そういえば、PHSの番号ポータビリティって？(こうさぎ)</title><link href="https://igawa.io/posts/2004/10/souieba-phsnofan-hao-potabiriteitsutekousagi/" rel="alternate"></link><published>2004-10-19T10:50:00+09:00</published><updated>2004-10-19T10:50:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2004-10-19:/posts/2004/10/souieba-phsnofan-hao-potabiriteitsutekousagi/</id><summary type="html">&lt;p&gt;きょううさこは6しなかったー。&lt;br&gt;
 きょうは、hughはここまでhughとプロがDしたよ♪&lt;br&gt;
 きのううさこが、ここにhughとプロはITmediaしないです。&lt;/p&gt;
@@ -15446,8 +15378,7 @@ PSPが４万円近い値段だと予想されているので、それと比べ�
 &lt;p&gt;&lt;a href="http://www.watch.impress.co.jp/av/docs/20040722/dg36.htm"&gt;Watch&lt;/a&gt;：画面をデジカメで取った画像やインプレッションがあります。参考になります。&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.itmedia.co.jp/lifestyle/articles/0407/23/news081.html"&gt;プラズマを超える大画面TVへ??ビクター「D-ILAリアプロTV」&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.nikkei.co.jp/style/ad/epson/li1.html"&gt;NIKKEIの広告記事&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;br&gt;
-2004/07/28 追記&lt;br&gt;
+&lt;p&gt;2004/07/28 追記&lt;br&gt;
 &lt;a href="http://artifact-jp.com/mt/archives/200406/rearprojectiontv.html"&gt;ARTIFACTさんのサイト&lt;/a&gt;&lt;br&gt;
 では、  &lt;/p&gt;
 &lt;blockquote&gt;
@@ -15461,12 +15392,12 @@ PSPが４万円近い値段だと予想されているので、それと比べ�
 &lt;a href="http://www.epson.co.jp/osirase/2004/040531.htm"&gt;エプソンのリアプロ&lt;/a&gt;を見て着ました！&lt;br&gt;
 MOTへ「&lt;a href="http://www.ntv.co.jp/mangaeiga/"&gt;日本漫画映画の全貌&lt;/a&gt;」を見に行ったのですが、一番最後の場所に追手ありました。&lt;br&gt;
 うちの奥さんは、「ハウルの動く城」の模型の方に興味をもっていました(あたりまえ)が、&lt;br&gt;
-私は、エプソンのリアプロ「LIVINGSTATION」の方に興味をもってしまいました …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://artifact-jp.com/mt/archives/200406/rearprojectiontv.html"&gt;ARTIFACTさんのサイト&lt;/a&gt;&lt;/p&gt;
+私は、エプソンのリアプロ「LIVINGSTATION」の方に興味をもってしまいました。。&lt;br&gt;
+確かに …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://artifact-jp.com/mt/archives/200406/rearprojectiontv.html"&gt;ARTIFACTさんのサイト&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.watch.impress.co.jp/av/docs/20040722/dg36.htm"&gt;Watch&lt;/a&gt;：画面をデジカメで取った画像やインプレッションがあります。参考になります。&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.itmedia.co.jp/lifestyle/articles/0407/23/news081.html"&gt;プラズマを超える大画面TVへ??ビクター「D-ILAリアプロTV」&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.nikkei.co.jp/style/ad/epson/li1.html"&gt;NIKKEIの広告記事&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;br&gt;
-2004/07/28 追記&lt;br&gt;
+&lt;p&gt;2004/07/28 追記&lt;br&gt;
 &lt;a href="http://artifact-jp.com/mt/archives/200406/rearprojectiontv.html"&gt;ARTIFACTさんのサイト&lt;/a&gt;&lt;br&gt;
 では、  &lt;/p&gt;
 &lt;blockquote&gt;
@@ -15930,13 +15861,12 @@ NVIDIA GeForce FX 5200 Ultra
 コンボドライブ（スロットローディング方式）&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;で、157,290円だそうです。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;br&gt;
-2004/09/01 追記&lt;br&gt;
+&lt;p&gt;2004/09/01 追記&lt;br&gt;
 &lt;a href="http://www.apple.com/jp/imac/"&gt;appleのiMacのページ&lt;/a&gt;を見ればわかるとおり、新iMac(G5
 CPU搭載)はiPodをかなり強く意識したデザインのようだ。&lt;br&gt;
 &lt;a href="http://japan.cnet.com/news/tech/story/0,2000047674,20071544,00.htm"&gt;CNetの記事&lt;/a&gt;にもあるとおり、iPod人気にあやかりたい気持ちもあったのだろう。&lt;br&gt;
 でも、PCの寿命なんてあっという間だから、出来ることなら、このiMacを&lt;br&gt;
-&lt;strong&gt;ただのLCDディスプレイ …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.apple.com/jp/imac/"&gt;apple&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;ただのLCDディスプレイ&lt;/strong&gt;としても使用できるようになっているとありがたいね …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.apple.com/jp/imac/"&gt;apple&lt;/a&gt;&lt;br&gt;
 最小構成  &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;17インチワイドスクリーンLCD
@@ -15950,8 +15880,7 @@ NVIDIA GeForce FX 5200 Ultra
 コンボドライブ（スロットローディング方式）&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;で、157,290円だそうです。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;br&gt;
-2004/09/01 追記&lt;br&gt;
+&lt;p&gt;2004/09/01 追記&lt;br&gt;
 &lt;a href="http://www.apple.com/jp/imac/"&gt;appleのiMacのページ&lt;/a&gt;を見ればわかるとおり、新iMac(G5
 CPU搭載)はiPodをかなり強く意識したデザインのようだ。&lt;br&gt;
 &lt;a href="http://japan.cnet.com/news/tech/story/0,2000047674,20071544,00.htm"&gt;CNetの記事&lt;/a&gt;にもあるとおり、iPod人気にあやかりたい気持ちもあったのだろう。&lt;br&gt;
@@ -17543,8 +17472,7 @@ Watch&lt;/a&gt;)&lt;br&gt;
 私の考え方は古いんだろうか。&lt;br&gt;
 所詮、ケータイ電話ではいろいろな制約があって、&lt;br&gt;
 いろいろなことがちゃんとしたゲームはやりにくいと思うんだけどね。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;br&gt;
-2004/08/03追記&lt;br&gt;
+&lt;p&gt;2004/08/03追記&lt;br&gt;
 &lt;a href="http://www.famitsu.com/game/news/2004/07/12/103,1089627356,28497,0,0.html"&gt;PSPのタイトル(59タイトル)&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;(&lt;a href="http://www.itmedia.co.jp/lifestyle/articles/0407/13/news005.html"&gt;ITmedia&lt;/a&gt;)(&lt;a href="http://www.itmedia.co.jp/lifestyle/articles/0407/13/news019.html"&gt;ITmedia2&lt;/a&gt;)(&lt;a href="http://internet.watch.impress.co.jp/cda/news/2004/07/12/3872.html"&gt;INTERNET
 Watch&lt;/a&gt;)&lt;br&gt;
 うをー。&lt;strong&gt;PSP&lt;/strong&gt;ほし\~。&lt;br&gt;
@@ -17552,8 +17480,7 @@ Watch&lt;/a&gt;)&lt;br&gt;
 私の考え方は古いんだろうか。&lt;br&gt;
 所詮、ケータイ電話ではいろいろな制約があって、&lt;br&gt;
 いろいろなことがちゃんとしたゲームはやりにくいと思うんだけどね。&lt;/p&gt;
-&lt;p&gt;[]{#more}&lt;br&gt;
-2004/08/03追記&lt;br&gt;
+&lt;p&gt;2004/08/03追記&lt;br&gt;
 &lt;a href="http://www.famitsu.com/game/news/2004/07/12/103,1089627356,28497,0,0.html"&gt;PSPのタイトル(59タイトル)&lt;/a&gt;&lt;/p&gt;</content><category term="game"></category><category term="PICKUP"></category><category term="PSP"></category></entry><entry><title>ＵＦＪ、三菱東京と統合へ 総資産１９０兆円、世界最大</title><link href="https://igawa.io/posts/2004/07/ufj-san-ling-dong-jing-totong-he-he-zong-zi-chan-190zhao-yuan-shi-jie-zui-da/" rel="alternate"></link><published>2004-07-14T12:27:00+09:00</published><updated>2004-07-14T12:27:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2004-07-14:/posts/2004/07/ufj-san-ling-dong-jing-totong-he-he-zong-zi-chan-190zhao-yuan-shi-jie-zui-da/</id><summary type="html">&lt;p&gt;何でもアリだな。。。&lt;br&gt;
 このままだと、最終的には一つになっちゃったりして。&lt;br&gt;
 でも、そうなったら消費者(利用者)にとってはマイナスだ。&lt;br&gt;
