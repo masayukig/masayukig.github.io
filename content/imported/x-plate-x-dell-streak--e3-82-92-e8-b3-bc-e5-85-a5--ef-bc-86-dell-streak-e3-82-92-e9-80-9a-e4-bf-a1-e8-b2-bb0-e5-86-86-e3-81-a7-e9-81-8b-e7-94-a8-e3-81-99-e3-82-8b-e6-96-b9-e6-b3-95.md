@@ -4,7 +4,7 @@ Author: masayukig
 Tags: Android, dell, PHS-Mobile-Phone, streak, willcom, x plate
 Status: published
 
-[![](https://lh3.googleusercontent.com/-OADIxzA_oOU/TlKnIAnYWWI/AAAAAAAAmQU/gWwZAoWygs8/s400/NEC_0322.JPG){width="400"
+[![picture](https://lh3.googleusercontent.com/-OADIxzA_oOU/TlKnIAnYWWI/AAAAAAAAmQU/gWwZAoWygs8/s400/NEC_0322.JPG){width="400"
 height="300"}](https://picasaweb.google.com/lh/photo/6XhEF0OrKA8qpnPHgSvQ-w?feat=embedwebsite)
 
 というわけで、[X PLATE × DELL

@@ -11,7 +11,7 @@ Attachments: 2012/07/cb3ec-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e3838
 
 <div class="separator" style="clear:both;text-align:center;">
 
-[![](https://masayukig.files.wordpress.com/2012/07/cb3ec-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-2723-21-55.png)](https://masayukig.files.wordpress.com/2012/07/cb3ec-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-2723-21-55.png)
+[![picture](https://masayukig.files.wordpress.com/2012/07/cb3ec-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-2723-21-55.png)](https://masayukig.files.wordpress.com/2012/07/cb3ec-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-2723-21-55.png)
 
 </div>
 

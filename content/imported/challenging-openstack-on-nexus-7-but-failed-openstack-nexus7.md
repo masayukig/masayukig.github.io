@@ -14,14 +14,14 @@ Attachments: 2013/01/93fbd-dashboard.png, 2013/01/21730-errorlog.png
 
 <div class="separator" style="clear:both;text-align:center;">
 
-[![](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png){width="640"
+[![picture](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png){width="640"
 height="240"}](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png)
 
 </div>
 
 <div class="separator" style="clear:both;text-align:center;">
 
-[![](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png){width="640"
+[![picture](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png){width="640"
 height="144"}](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png)
 
 </div>

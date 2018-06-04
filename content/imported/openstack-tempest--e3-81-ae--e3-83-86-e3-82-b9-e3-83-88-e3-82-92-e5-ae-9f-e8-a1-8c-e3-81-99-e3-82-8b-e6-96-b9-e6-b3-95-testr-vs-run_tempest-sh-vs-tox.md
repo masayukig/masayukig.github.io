@@ -65,7 +65,7 @@ master）にブランチなしで対応していますので、基本的には�
 
 <div class="separator" style="clear:both;text-align:center;">
 
-[![](https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png)](https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png)
+[![picture](https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png)](https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png)
 
 </div>
 
@@ -79,7 +79,7 @@ master）にブランチなしで対応していますので、基本的には�
 
 <div class="separator" style="clear:both;text-align:center;">
 
-[![](https://masayukig.files.wordpress.com/2014/12/20ebc-executing_tempest.png)](https://masayukig.files.wordpress.com/2014/12/20ebc-executing_tempest.png)
+[![picture](https://masayukig.files.wordpress.com/2014/12/20ebc-executing_tempest.png)](https://masayukig.files.wordpress.com/2014/12/20ebc-executing_tempest.png)
 
 </div>
 

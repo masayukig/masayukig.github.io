@@ -7,7 +7,7 @@ Attachments: 2012/09/e7f3a-skitch.png
 
 <div class="separator" style="clear:both;text-align:center;">
 
-[![](https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png?w=300){width="640"
+[![picture](https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png?w=300){width="640"
 height="228"}](https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png)
 
 </div>
