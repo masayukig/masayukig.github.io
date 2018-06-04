@@ -9,8 +9,7 @@ Attachments: 2012/07/adce7-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e3838
 
 <div class="separator" style="clear:both;text-align:center;">
 
-[![picture](https://masayukig.files.wordpress.com/2012/07/adce7-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-36-54.png?w=300){width="320"
-height="247"}](https://masayukig.files.wordpress.com/2012/07/adce7-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-36-54.png)
+[![picture](https://masayukig.files.wordpress.com/2012/07/adce7-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-36-54.png?w=300){width="320" height="247"}](https://masayukig.files.wordpress.com/2012/07/adce7-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-36-54.png)
 
 </div>
 
@@ -20,29 +19,25 @@ height="247"}](https://masayukig.files.wordpress.com/2012/07/adce7-e382b9e382afe
 
 <div class="separator" style="clear:both;text-align:center;">
 
-[![picture](https://masayukig.files.wordpress.com/2012/07/7c400-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-37-21.png?w=300){width="320"
-height="247"}](https://masayukig.files.wordpress.com/2012/07/7c400-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-37-21.png)
+[![picture](https://masayukig.files.wordpress.com/2012/07/7c400-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-37-21.png?w=300){width="320" height="247"}](https://masayukig.files.wordpress.com/2012/07/7c400-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-37-21.png)
 
 </div>
 
 <div class="separator" style="clear:both;text-align:center;">
 
-[![picture](https://masayukig.files.wordpress.com/2012/07/5ca3b-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-37-40.png?w=300){width="320"
-height="248"}](https://masayukig.files.wordpress.com/2012/07/5ca3b-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-37-40.png)
+[![picture](https://masayukig.files.wordpress.com/2012/07/5ca3b-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-37-40.png?w=300){width="320" height="248"}](https://masayukig.files.wordpress.com/2012/07/5ca3b-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-37-40.png)
 
 </div>
 
 <div class="separator" style="clear:both;text-align:center;">
 
-[![picture](https://masayukig.files.wordpress.com/2012/07/d8649-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-38-05.png?w=300){width="320"
-height="248"}](https://masayukig.files.wordpress.com/2012/07/d8649-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-38-05.png)
+[![picture](https://masayukig.files.wordpress.com/2012/07/d8649-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-38-05.png?w=300){width="320" height="248"}](https://masayukig.files.wordpress.com/2012/07/d8649-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-38-05.png)
 
 </div>
 
 <div class="separator" style="clear:both;text-align:center;">
 
-[![picture](https://masayukig.files.wordpress.com/2012/07/b2c57-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-41-52.png?w=300){width="320"
-height="250"}](https://masayukig.files.wordpress.com/2012/07/b2c57-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-41-52.png)
+[![picture](https://masayukig.files.wordpress.com/2012/07/b2c57-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-41-52.png?w=300){width="320" height="250"}](https://masayukig.files.wordpress.com/2012/07/b2c57-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-41-52.png)
 
 </div>
 
