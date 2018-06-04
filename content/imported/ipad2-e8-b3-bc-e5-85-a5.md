@@ -5,7 +5,7 @@ Tags: Apple, iPad, ipad2
 Status: published
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [![picture](https://lh4.googleusercontent.com/-DjtpT99VSgU/TqsdSBEAd2I/AAAAAAAAoWU/N512e1upM-Y/s400/IMG_1202.jpg){width="400" height="300"}](https://picasaweb.google.com/lh/photo/8gHrPRHvlm78tLkx_IPZcw?feat=embedwebsite)
+  [![picture](https://lh4.googleusercontent.com/-DjtpT99VSgU/TqsdSBEAd2I/AAAAAAAAoWU/N512e1upM-Y/s400/IMG_1202.jpg)](https://picasaweb.google.com/lh/photo/8gHrPRHvlm78tLkx_IPZcw?feat=embedwebsite)
   送信者 [for Blog](https://picasaweb.google.com/masayuki.igawa/ForBlog?authuser=0&feat=embedwebsite)
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -17,7 +17,7 @@ Status: published
 当然、モバイルデータ通信は「オフ」に設定しています。  
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [![picture](https://lh4.googleusercontent.com/-a9obLN-pbTk/TqsjNY3vnTI/AAAAAAAAoXI/6RwjLHfBBvA/s400/IMG_0002.jpg){width="300" height="400"}](https://picasaweb.google.com/lh/photo/e9YASe4zfhWXc0IrcXCEsw?feat=embedwebsite)
+  [![picture](https://lh4.googleusercontent.com/-a9obLN-pbTk/TqsjNY3vnTI/AAAAAAAAoXI/6RwjLHfBBvA/s400/IMG_0002.jpg)](https://picasaweb.google.com/lh/photo/e9YASe4zfhWXc0IrcXCEsw?feat=embedwebsite)
   送信者 [for Blog](https://picasaweb.google.com/masayuki.igawa/ForBlog?authuser=0&feat=embedwebsite)
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
