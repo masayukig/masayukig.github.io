@@ -16,7 +16,6 @@ SQLiteのC言語APIを使ってprepared statementで、BLOBを使ってみます
     2に戻る。これは何度でもできるし、やらなくても良い。
 5.  sqlite3\_finalize()を使ってオブジェクトを破棄する。
 
-[]{#more}
 
 というわけで、いきなりサンプルコードw  
 便利だなーと思ったのは、sqlite3\_errmsg()関数。dbを引数にすると、

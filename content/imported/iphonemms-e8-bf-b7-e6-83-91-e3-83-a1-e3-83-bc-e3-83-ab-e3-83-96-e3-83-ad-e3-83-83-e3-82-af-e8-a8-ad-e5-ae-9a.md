@@ -9,7 +9,6 @@ Status: published
 それを「受信拒否」する設定をしただけですが。
 
 設定は簡単でしたが、備忘録もかねて、方法を記しておきます。  
-[]{#more}
 
 [My
 Softbank](https://mb.softbank.jp/scripts/japanese/mysoftbank/top.jsp)ページより、

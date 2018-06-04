@@ -13,7 +13,6 @@ id="attachment\_796" align="alignnone" width="225"
 caption="android(W-ZERO3-2)"\][![android(W-ZERO3-2)](http://www.0r2.info/blog/wp-content/uploads/2009/06/NEC_0042-225x300.jpg "android(W-ZERO3-2)"){.size-medium
 .wp-image-796 width="225"
 height="300"}](http://www.0r2.info/blog/2009/06/21/w-zero3%e3%81%a7android%e3%81%8c%e5%8b%95%e3%81%8f%ef%bc%81/nec_0042/)\[/caption\]  
-[]{#more}  
 毎日、進展があってすごいです!
 
 ちゃんと、カーソルキーも使えました。  

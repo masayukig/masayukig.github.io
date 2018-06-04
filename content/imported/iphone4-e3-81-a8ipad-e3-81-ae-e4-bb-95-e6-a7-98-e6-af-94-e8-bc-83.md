@@ -6,6 +6,5 @@ Status: published
 
 iPhone4とiPadの仕様を比較してみることにします。
 
-[]{#more}
 
 \[table id=3 /\]

@@ -65,7 +65,6 @@ Status: published
 でも、OpenStack関連のサービスは全く起動していないようだったので、
 vagrant reloadをやってみた
 
-[]{#more}
 
     -> % vagrant reload       
     [default] Attempting graceful shutdown of VM...

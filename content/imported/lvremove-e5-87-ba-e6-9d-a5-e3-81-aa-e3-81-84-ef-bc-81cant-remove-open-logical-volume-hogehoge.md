@@ -13,7 +13,6 @@ lvremove
     Can't remove open logical volume "iscsi"
 
 と、言われて削除できなかったので、その解決方法など。  
-[]{#more}  
 結論を言うと、
 
     $ sudo dmsetup ls

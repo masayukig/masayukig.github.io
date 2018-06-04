@@ -8,7 +8,6 @@ Twitterで「KernelOrgBot」なるものを作ってみた。
 <http://twitter.com/KernelOrgBot>  
 ちょっと探してみた限りでは、それっぽいものが無かったので。  
 ただ、「作った」とは言っても...  
-[]{#more}
 
 <https://twitterfeed.com/>  
 で、  

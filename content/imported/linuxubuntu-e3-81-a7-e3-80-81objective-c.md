@@ -16,7 +16,6 @@ Apple製品専用言語なのかと思ったが、ググったら、Linuxでも�
 挑戦してみる。
 
 以下、その内容。  
-[]{#more}  
 まずは、Objective-Cの環境をインストール。  
 [Linux で Objective C
 を走らせてみた](http://d.hatena.ne.jp/elm200/20080426/1209211127)  

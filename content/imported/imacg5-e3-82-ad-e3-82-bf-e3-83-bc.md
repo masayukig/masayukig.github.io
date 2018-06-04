@@ -19,7 +19,6 @@ Status: published
 
 で、157,290円だそうです。
 
-[]{#more}  
 2004/09/01 追記  
 [appleのiMacのページ](http://www.apple.com/jp/imac/)を見ればわかるとおり、新iMac(G5
 CPU搭載)はiPodをかなり強く意識したデザインのようだ。  
