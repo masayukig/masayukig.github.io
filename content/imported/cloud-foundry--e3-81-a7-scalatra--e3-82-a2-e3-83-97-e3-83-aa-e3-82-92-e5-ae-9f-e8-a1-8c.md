@@ -4,8 +4,8 @@ Author: masayukig
 Tags: cloud, scala, scalatra, Software
 Status: published
 
-[![picture](https://lh3.googleusercontent.com/-FMIXumcTAV0/Tjr6wfSrWEI/AAAAAAAAg6M/d80dUsZSc_A/s800/5892056768_b3f93f8618_o.png){width="269"
-height="151"}](https://picasaweb.google.com/lh/photo/yZtdpG7qkZc_OfWy78PCPw?feat=embedwebsite)
+[![picture](https://lh3.googleusercontent.com/-FMIXumcTAV0/Tjr6wfSrWEI/AAAAAAAAg6M/d80dUsZSc_A/s800/5892056768_b3f93f8618_o.png)
+](https://picasaweb.google.com/lh/photo/yZtdpG7qkZc_OfWy78PCPw?feat=embedwebsite)
 
 Cloud Foundry で [Scalatra](https://github.com/scalatra/scalatra)
 アプリを実行してみます。  
@@ -83,7 +83,7 @@ Scalatra
    「hello to
     Scalate」リンクをクリックして、以下の画面が表示されれば成功です。
 
-    [![picture](https://lh5.googleusercontent.com/-DXDGAlUBxGs/Tjr6wX1tfBI/AAAAAAAAg6M/KDKduMtW-1k/s288/5892086172_ca7c68dbd7_o.png){width="288"
-    height="105"}](https://picasaweb.google.com/lh/photo/ZGgEZWkKrKmPl5X89-p1cQ?feat=embedwebsite)
+    [![picture](https://lh5.googleusercontent.com/-DXDGAlUBxGs/Tjr6wX1tfBI/AAAAAAAAg6M/KDKduMtW-1k/s288/5892086172_ca7c68dbd7_o.png)
+    ](https://picasaweb.google.com/lh/photo/ZGgEZWkKrKmPl5X89-p1cQ?feat=embedwebsite)
 
 

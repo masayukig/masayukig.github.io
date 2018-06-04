@@ -13,13 +13,13 @@ Attachments: 2013/01/93fbd-dashboard.png, 2013/01/21730-errorlog.png
 あえなく撃沈。。
 
 
-[![picture](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png){width="640"
-height="240"}](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png)
+[![picture](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png)
+](https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png)
 
 
 
-[![picture](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png){width="640"
-height="144"}](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png)
+[![picture](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png)
+](https://masayukig.files.wordpress.com/2013/01/21730-errorlog.png)
 
 
 

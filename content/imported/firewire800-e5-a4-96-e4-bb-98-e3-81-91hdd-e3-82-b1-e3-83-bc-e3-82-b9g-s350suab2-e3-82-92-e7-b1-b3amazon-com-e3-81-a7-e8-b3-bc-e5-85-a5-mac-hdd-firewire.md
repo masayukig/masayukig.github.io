@@ -14,8 +14,8 @@ Mac mini(HDD 500GB)の残り容量が、10GBを下回る様になってきて、
 それを有効活用したいと思ったので、外付けケースを買うことにしました。
 
 
-[![picture](https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg?w=199){width="212"
-height="320"}](https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg)
+[![picture](https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg?w=199)
+](https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg)
 
 
 ### 前提
@@ -29,14 +29,14 @@ height="320"}](https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg)
 手頃な商品を探していたのですが、「3. 」の条件が結構ハードルが高く、  
 選択肢としては、以下のようなものでした。
 
-1.  [![picture](http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=2127008&pid=880926134){width="1px"
-    height="1px"}センチュリー CRIS35EUF(2012-04-28現在 9,534円(税込)
-    送料無料)](http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2127008&pid=880926134&vc_url=http%3A%2F%2Fwww.enet-japan.com%2Ffront%2Fcommodity%2F1%2F4936014962484%2F)[![picture](http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=2127008&pid=880926134){width="1px"
-    height="1px"}![picture](http://www.enet-japan.com/image/shop/1/commodity/4936014962484.jpg)](http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2127008&pid=880926134&vc_url=http%3A%2F%2Fwww.enet-japan.com%2Ffront%2Fcommodity%2F1%2F4936014962484%2F)
-2.  [![picture](http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=2127008&pid=880926134){width="1px"
-    height="1px"}センチュリー CROSFU3(2012-04-28現在 8,331円(税込)
-    送料無料)](http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2127008&pid=880926134&vc_url=http%3A%2F%2Fwww.enet-japan.com%2Ffront%2Fcommodity%2F1%2F4936014911741%2F)[![picture](http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=2127008&pid=880926134){width="1px"
-    height="1px"}![picture](http://www.enet-japan.com/image/shop/1/commodity/4936014911741.jpg)](http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2127008&pid=880926134&vc_url=http%3A%2F%2Fwww.enet-japan.com%2Ffront%2Fcommodity%2F1%2F4936014911741%2F) 
+1.  [![picture](http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=2127008&pid=880926134)
+    センチュリー CRIS35EUF(2012-04-28現在 9,534円(税込)
+    送料無料)](http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2127008&pid=880926134&vc_url=http%3A%2F%2Fwww.enet-japan.com%2Ffront%2Fcommodity%2F1%2F4936014962484%2F)[![picture](http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=2127008&pid=880926134)
+    ![picture](http://www.enet-japan.com/image/shop/1/commodity/4936014962484.jpg)](http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2127008&pid=880926134&vc_url=http%3A%2F%2Fwww.enet-japan.com%2Ffront%2Fcommodity%2F1%2F4936014962484%2F)
+2.  [![picture](http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=2127008&pid=880926134)
+    センチュリー CROSFU3(2012-04-28現在 8,331円(税込)
+    送料無料)](http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2127008&pid=880926134&vc_url=http%3A%2F%2Fwww.enet-japan.com%2Ffront%2Fcommodity%2F1%2F4936014911741%2F)[![picture](http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=2127008&pid=880926134)
+    ![picture](http://www.enet-japan.com/image/shop/1/commodity/4936014911741.jpg)](http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2127008&pid=880926134&vc_url=http%3A%2F%2Fwww.enet-japan.com%2Ffront%2Fcommodity%2F1%2F4936014911741%2F) 
 3.  G-S350SUAB2(Macally)
     <http://rcm.amazon.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=pcorktamophbl-20&o=1&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=B003VTZFN4>
 

@@ -5,10 +5,10 @@ Tags: eneloop, KBC-L2AS, UROAD-7000
 Status: published
 
 [![URoad-7000's
-back](http://farm5.static.flickr.com/4081/4822168678_28b3a0c594.jpg){width="500"
-height="375"}](http://www.flickr.com/photos/masayun/4822168678/ "URoad-7000's back by masayukig, on Flickr")  
-[![URoad-7000](http://farm5.static.flickr.com/4134/4822170934_7aaac61ee6.jpg){width="500"
-height="375"}](http://www.flickr.com/photos/masayun/4822170934/ "URoad-7000 by masayukig, on Flickr")
+back](http://farm5.static.flickr.com/4081/4822168678_28b3a0c594.jpg)
+](http://www.flickr.com/photos/masayun/4822168678/ "URoad-7000's back by masayukig, on Flickr")  
+[![URoad-7000](http://farm5.static.flickr.com/4134/4822170934_7aaac61ee6.jpg)
+](http://www.flickr.com/photos/masayun/4822170934/ "URoad-7000 by masayukig, on Flickr")
 
 URoad-7000を購入しました。で、WiMaxも契約しました。(ソフマップ・ドットコムで購入契約しました。)  
 今なら、7月、8月の基本料金が無料なので、  

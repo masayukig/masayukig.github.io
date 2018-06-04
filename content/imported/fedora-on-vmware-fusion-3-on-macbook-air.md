@@ -5,8 +5,8 @@ Tags: Apple, Fedora, Mac, OS, partition, PC, vmware, vmware fusion
 Status: published
 
 [![Fedora14 on VMware Fusion on MacBook
-Air](http://farm6.static.flickr.com/5297/5422904210_999389cb72_m.jpg){width="240"
-height="150"}](http://www.flickr.com/photos/masayun/5422904210/ "Fedora14 on VMware Fusion on MacBook Air by masayukig, on Flickr")
+Air](http://farm6.static.flickr.com/5297/5422904210_999389cb72_m.jpg)
+](http://www.flickr.com/photos/masayun/5422904210/ "Fedora14 on VMware Fusion on MacBook Air by masayukig, on Flickr")
 
 [先日のエントリー](http://www.0r2.info/blog/2011/02/06/macbook-air%E3%81%ABlinuxfedora%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/)で、MacBook
 AirにFedoraをインストールしたことを書きましたが、  

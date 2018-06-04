@@ -19,8 +19,8 @@ Status: published
 
 ~~今のところ、0.5Mbps程度のバックアップ速度なので、40GBのバックアップに１週間以上かかる計算ですw~~  
 よく見たら、設定で通信速度を変更可能でした。  
-[![picture](https://lh5.googleusercontent.com/-1UcmzXXeulA/TkBLJxBRKNI/AAAAAAAAhWU/k-4PLl2o6Jc/s400/%2525E3%252582%2525B9%2525E3%252582%2525AF%2525E3%252583%2525AA%2525E3%252583%2525BC%2525E3%252583%2525B3%2525E3%252582%2525B7%2525E3%252583%2525A7%2525E3%252583%252583%2525E3%252583%252588%2525202011-08-09%2525205.43.08.jpg){width="400"
-height="300"}](https://picasaweb.google.com/lh/photo/WaQQ9d7MYGD0x2AW8OBPWQ?feat=embedwebsite)  
+[![picture](https://lh5.googleusercontent.com/-1UcmzXXeulA/TkBLJxBRKNI/AAAAAAAAhWU/k-4PLl2o6Jc/s400/%2525E3%252582%2525B9%2525E3%252582%2525AF%2525E3%252583%2525AA%2525E3%252583%2525BC%2525E3%252583%2525B3%2525E3%252582%2525B7%2525E3%252583%2525A7%2525E3%252583%252583%2525E3%252583%252588%2525202011-08-09%2525205.43.08.jpg)
+](https://picasaweb.google.com/lh/photo/WaQQ9d7MYGD0x2AW8OBPWQ?feat=embedwebsite)  
 上記のように制限無しに変更したら、3.5Mbps程度出ています。これなら1日程度で終わる計算ですね
 :-)
 

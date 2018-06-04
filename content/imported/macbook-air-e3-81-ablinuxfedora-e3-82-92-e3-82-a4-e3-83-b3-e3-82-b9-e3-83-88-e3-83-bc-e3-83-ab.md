@@ -7,8 +7,8 @@ Status: published
 MacBook AirにLinuxをインストールした。
 
 [![Fedora14 on MacBook
-Air](http://farm6.static.flickr.com/5133/5419108725_0289d42b50_m.jpg){width="240"
-height="160"}](http://www.flickr.com/photos/masayun/5419108725/ "Fedora14 on MacBook Air by masayukig, on Flickr")
+Air](http://farm6.static.flickr.com/5133/5419108725_0289d42b50_m.jpg)
+](http://www.flickr.com/photos/masayun/5419108725/ "Fedora14 on MacBook Air by masayukig, on Flickr")
 
 参考にしたページは、  
 <http://d.hatena.ne.jp/masami256/20110115/1295104000>  

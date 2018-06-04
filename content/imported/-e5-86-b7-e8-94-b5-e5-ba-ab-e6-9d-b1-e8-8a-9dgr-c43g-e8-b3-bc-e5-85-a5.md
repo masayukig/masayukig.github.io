@@ -4,8 +4,8 @@ Author: masayukig
 Tags: 生活, 冷蔵庫, 家電, 東芝
 Status: published
 
-[![DSC00342.JPG](http://farm5.static.flickr.com/4123/4804432674_d5d3672f20.jpg){width="375"
-height="500"}](http://www.flickr.com/photos/masayun/4804432674/ "DSC00342.JPG by masayukig, on Flickr")
+[![DSC00342.JPG](http://farm5.static.flickr.com/4123/4804432674_d5d3672f20.jpg)
+](http://www.flickr.com/photos/masayun/4804432674/ "DSC00342.JPG by masayukig, on Flickr")
 
 というわけで、[東芝のGR-C43G](http://www.toshiba.co.jp/living/refrigerators/gr_c43g/)という冷蔵庫を買いました。
 

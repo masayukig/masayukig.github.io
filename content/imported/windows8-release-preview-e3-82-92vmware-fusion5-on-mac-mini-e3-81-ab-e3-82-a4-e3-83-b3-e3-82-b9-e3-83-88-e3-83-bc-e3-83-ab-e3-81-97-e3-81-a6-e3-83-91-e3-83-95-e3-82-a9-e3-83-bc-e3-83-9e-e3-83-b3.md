@@ -6,8 +6,8 @@ Status: published
 Attachments: 2012/09/e7f3a-skitch.png
 
 
-[![picture](https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png?w=300){width="640"
-height="228"}](https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png)
+[![picture](https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png?w=300)
+](https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png)
 
 
 というわけで、題名の通り  

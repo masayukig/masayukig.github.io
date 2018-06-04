@@ -7,8 +7,8 @@ Status: published
 ［ \#iPad3 ］より美しくカッコよくなった「Apple TV」の新モデルが出たよ！  
 <http://www.gizmodo.jp/2012/03/_ipad3_apple_tv.html>
 
-> ![picture](http://www.gizmodo.jp/upload_files2/120308appletvhd.jpg){width="640"
-> height="360"}  
+> ![picture](http://www.gizmodo.jp/upload_files2/120308appletvhd.jpg)
+>   
 > まずは「Apple TV」が「HD」でキター！
 > 期待のアップル発表会の先陣を切って登場したのは、新たに1080pのHD動画に対応したApple
 > TVでしたね。iTunesでも1080pの動画配信がスタートしますよ。

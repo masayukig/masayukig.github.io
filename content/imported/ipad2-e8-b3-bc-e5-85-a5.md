@@ -35,7 +35,7 @@ Keyboard (US)](http://store.apple.com/jp/product/MC184LL/B)
 また、液晶画面がむき出しなので、カバーとしては、  
 [iPad Smart Cover](http://store.apple.com/jp/product/MD303FE/A)と、[iPad
 2 PRO GUARD AF HD Grade Anti-Fingerprint・防指紋-プロガード ＡＦ /
-PGAF-IPAD2R](http://www.amazon.co.jp/gp/product/B004TXP34W/ref=as_li_ss_tl?ie=UTF8&tag=hughundercons-22&linkCode=as2&camp=247&creative=7399&creativeASIN=B004TXP34W)![picture](http://www.assoc-amazon.jp/e/ir?t=hughundercons-22&l=as2&o=9&a=B004TXP34W){width="1"
-height="1"} あたりの購入を検討しています。
+PGAF-IPAD2R](http://www.amazon.co.jp/gp/product/B004TXP34W/ref=as_li_ss_tl?ie=UTF8&tag=hughundercons-22&linkCode=as2&camp=247&creative=7399&creativeASIN=B004TXP34W)![picture](http://www.assoc-amazon.jp/e/ir?t=hughundercons-22&l=as2&o=9&a=B004TXP34W)
+ あたりの購入を検討しています。
 
 <http://ad.jp.ap.valuecommerce.com/servlet/htmlbanner?sid=2127008&pid=880339669>
