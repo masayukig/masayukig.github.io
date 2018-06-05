@@ -120,11 +120,11 @@ What's done is done            </a>
 	<a href="https://igawa.io/tag/fedora.html">Fedora</a>
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>自宅ではLinuxを使っていて、<br>
+                <div class="summary"><p>自宅ではLinuxを使っていて、
 Fedora 8を使っていたんですが、それを9にバージョンアップしました。</p>
-<p>バージョンアップ方法は、以下のとおり。<br>
-<code># rpm -Uhv ftp://ftp.riken.jp/Linux/fedora/releases/9/Fedora/i386/os/Packages/fedora-release-*.noarch.rpm# yum remove thunderbird# yum clean all# yum update rpm\* yum\* gamin# yum -y upgrade# reboot# yum install yum-utils# package-cleanup --cleandupes</code><br>
-途中、上記のupdate/upgradeの時に、依存関係のエラーが何個か出たのですが、<br>
+<p>バージョンアップ方法は、以下のとおり。
+<code># rpm -Uhv ftp://ftp.riken.jp/Linux/fedora/releases/9/Fedora/i386/os/Packages/fedora-release-*.noarch.rpm# yum remove thunderbird# yum clean all# yum update rpm\* yum\* gamin# yum -y upgrade# reboot# yum install yum-utils# package-cleanup --cleandupes</code>
+途中、上記のupdate/upgradeの時に、依存関係のエラーが何個か出たのですが、
 特に問題無さそうな既存パッケージのエラーだったので、既存パッケージを削除した。</p>
 <p>後は …</p>
 <p><small><a href="https://igawa.io/posts/2008/07/fedora-8kara9nibaziyonatsupushita/#disqus_thread" data-disqus-identifier="fedora-8kara9nibaziyonatsupushita">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2008/07/fedora-8kara9nibaziyonatsupushita/">more ...</a>
@@ -156,7 +156,7 @@ Fedora 8を使っていたんですが、それを9にバージョンアップ�
 </footer><!-- /.post-info -->                    </div>
                 <div class="summary"><p>Java野郎(私)が、C/C++でメンドイものの一つに、</p>
 <p><strong>「malloc()したらfree()しなきゃならん」</strong>というものがある。</p>
-<p>大体、誰も参照しなくなったら、もはや、誰も触れないんだから、勝手に開放してほしいのだ。  </p>
+<p>大体、誰も参照しなくなったら、もはや、誰も触れないんだから、勝手に開放してほしいのだ。</p>
 <h6>でも、それをC言語自体に望むのは無理だって言うのもわかってる。</h6>
 <p>どうにかなんないの？と思っていたら、C/C++でGCするためのライブラリがあるということを知りました。</p>
 <p><a href="http://www.hpl.hp.com/personal/Hans_Boehm/gc/">http://www.hpl.hp.com/personal/Hans_Boehm/gc/</a></p>
@@ -214,8 +214,8 @@ Fedora 8を使っていたんですが、それを9にバージョンアップ�
 	<a href="https://igawa.io/tag/c.html">C++</a>
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>2.(こんなコードで良いのか？)  </p>
-<div class="highlight"><pre><span></span><span class="err">#</span><span class="nx">include</span> 
+                <div class="summary"><p>2.(こんなコードで良いのか？)</p>
+<div class="highlight"><pre><span></span><span class="err">#</span><span class="nx">include</span>
 <span class="err">#</span><span class="nx">include</span>
 
 <span class="nx">using</span> <span class="nx">namespace</span> <span class="nx">std</span><span class="p">;</span>
@@ -269,9 +269,9 @@ Fedora 8を使っていたんですが、それを9にバージョンアップ�
 	<a href="https://igawa.io/tag/c.html">C++</a>
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>というわけで、P.52 練習問題2.2<br>
-1.  </p>
-<div class="highlight"><pre><span></span><span class="err">#</span><span class="nx">include</span> 
+                <div class="summary"><p>というわけで、P.52 練習問題2.2
+1.</p>
+<div class="highlight"><pre><span></span><span class="err">#</span><span class="nx">include</span>
 <span class="nx">using</span> <span class="nx">namespace</span> <span class="nx">std</span><span class="p">;</span>
 
 <span class="kr">class</span> <span class="nx">stack</span> <span class="p">{</span>
@@ -319,7 +319,7 @@ Fedora 8を使っていたんですが、それを9にバージョンアップ�
 </footer><!-- /.post-info -->                    </div>
                 <div class="summary"><p>「<a href="http://www.amazon.co.jp/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.co.jp%2F%25E7%258B%25AC%25E7%25BF%2592C-%25E3%2583%258F%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2583%2588%25E3%2583%25BB%25E3%2582%25B7%25E3%2583%25AB%25E3%2583%2588%2Fdp%2F4798103187&amp;tag=hughundercons-22&amp;linkCode=ur2&amp;camp=247&amp;creative=1211">独習C++</a>
 (改訂版)を(本自体は、ずいぶん前に買ったんですが)やり始めているので、書いていくことにしてみようと思う。(いつまで続くやらw)</p>
-<p>いきなりだが、P.46 練習問題2.1から。  </p>
+<p>いきなりだが、P.46 練習問題2.1から。</p>
 <ol>
 <li>キュークラスを改良して、初期化関数をコンストラクタに置き換え。</li>
 <li>stopwatchクラスの作成</li>
@@ -348,7 +348,7 @@ Fedora 8を使っていたんですが、それを9にバージョンアップ�
 	<a href="https://igawa.io/tag/konosaitonoshi.html">このサイトの事</a>
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>検索エンジンからたどってきた場合は、ちゃんと表示されないことがあるかも。<br>
+                <div class="summary"><p>検索エンジンからたどってきた場合は、ちゃんと表示されないことがあるかも。
 まだ、コンテンツ数も少ないので、ざっくり見れば、目的のページがすぐに見つかるでしょう。</p>
 <p><small><a href="https://igawa.io/posts/2008/06/permlinknourlwobian-geng-shimashita/#disqus_thread" data-disqus-identifier="permlinknourlwobian-geng-shimashita">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2008/06/permlinknourlwobian-geng-shimashita/">more ...</a>
                 </div>
@@ -382,7 +382,7 @@ Fedora 8を使っていたんですが、それを9にバージョンアップ�
 Syncは、Firefox3へは対応しない」(<a href="http://netafull.net/firefox-addon/026281.html" title="http://netafull.net/firefox-addon/026281.html">netafull.net</a>),
 (<a href="http://lifehacker.com/396112/google-browser-sync-discontinued-no-firefox-3-support" title="http://lifehacker.com/396112/google-browser-sync-discontinued-no-firefox-3-support">lifehacker.com</a>)</p>
 <p>ということらしく、Firefox3へのアップデートは躊躇していました。</p>
-<p>が、Bookmarkの同期だけなら、<br>
+<p>が、Bookmarkの同期だけなら、
 <a href="https://addons.mozilla.org/en-US/firefox/addon/2410" title="https://addons.mozilla.org/en-US/firefox/addon/2410">Foxmarks Bookmark
 Synchronizer</a></p>
 <p>というやつが使えることがわかり、しばらくは、これで行ってみることにしました。</p>
@@ -412,7 +412,7 @@ Synchronizer</a></p>
 	<a href="https://igawa.io/tag/pc.html">PC</a>
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>HP 2133 Mini-Note PC<br>
+                <div class="summary"><p>HP 2133 Mini-Note PC
 ハイパフォーマンスモデル</p>
 <hr>
 <p>Windows Vista Business（32bit）</p>
@@ -422,7 +422,7 @@ Synchronizer</a></p>
 <p>160GB HDD</p>
 <p>Broadcom製 802.11a/b/g 内蔵無線LAN＋Bluetooth v2.0</p>
 <p>リチウムイオンバッテリ 標準3セル＋大容量6セル</p>
-<p>というスペックで、79,800円。<br>
+<p>というスペックで、79,800円。
 かなりのお買い得だと思うんですが・・・ノートPCも安くなったもんですね。</p>
 <p><small><a href="https://igawa.io/posts/2008/06/hpnomini-note-pc2133/#disqus_thread" data-disqus-identifier="hpnomini-note-pc2133">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2008/06/hpnomini-note-pc2133/">more ...</a>
                 </div>
@@ -454,7 +454,7 @@ Synchronizer</a></p>
 <p><a href="http://plusd.itmedia.co.jp/mobile/articles/0806/23/news073.html" title="ITmedia">ITmedia:「iPhone
 3G」は実質2万3040円から──月額5985円のデータ定額プランも新設</a></p>
 <p><strong>ホワイトプラン(i)</strong>などの「(i)」がつくプランが新設されて、iPhoneユーザはそれを使用しなければならない模様。</p>
-<p>普通に使おうと思うと、結局、  </p>
+<p>普通に使おうと思うと、結局、</p>
 <p>ホワイトプラン（i）に加入した場合の月額料金イメージ</p>
 <p>ホワイトプラン（i）基本使用料</p>
 <p>980円</p>
@@ -693,58 +693,55 @@ Synchronizer</a></p>
       <a href="https://igawa.io/tag/phs-mobile-phone.html">PHS-Mobile-Phone</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/kai-fa.html">開発</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/os.html">OS</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/iphone-3gs.html">iPhone 3GS</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/life_health.html">life_health</a>
-    </li>
-    <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/spam.html">SPAM</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/ojin.html">お金</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/android.html">Android</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/tips.html">tips</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/lion.html">lion</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/kindle.html">Kindle</a>
+      <a href="https://igawa.io/tag/psp.html">PSP</a>
     </li>
     <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/wei-fen-lei.html">未分類</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/xperia.html">Xperia</a>
+      <a href="https://igawa.io/tag/net.html">net</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/life_health.html">life_health</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/kindle.html">Kindle</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/tips.html">tips</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/apple.html">Apple</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/c.html">C++</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/openstack.html">openstack</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/game.html">game</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/linux.html">Linux</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/work.html">work</a>
     </li>
     <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/iphone-3g-s.html">iPhone 3G S</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/sakura.html">さくら</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/fedora.html">Fedora</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/net.html">net</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/oss.html">oss</a>
-    </li>
-    <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/mac.html">Mac</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/android.html">Android</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/xie-zhen.html">写真</a>
     </li>
     <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/software.html">Software</a>
@@ -753,238 +750,241 @@ Synchronizer</a></p>
       <a href="https://igawa.io/tag/ipad.html">iPad</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/iphone.html">iPhone</a>
+      <a href="https://igawa.io/tag/vps.html">VPS</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/science.html">science</a>
+      <a href="https://igawa.io/tag/sakura.html">さくら</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/ojin.html">お金</a>
     </li>
     <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/entertainments.html">entertainments</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/apple.html">Apple</a>
+      <a href="https://igawa.io/tag/science.html">science</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/work.html">work</a>
+      <a href="https://igawa.io/tag/oss.html">oss</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/openstack.html">openstack</a>
+      <a href="https://igawa.io/tag/iphone-3gs.html">iPhone 3GS</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/c.html">C++</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/psp.html">PSP</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/vps.html">VPS</a>
+      <a href="https://igawa.io/tag/kai-fa.html">開発</a>
     </li>
     <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/twitter.html">twitter</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/linux.html">Linux</a>
+      <a href="https://igawa.io/tag/xperia.html">Xperia</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/game.html">game</a>
+      <a href="https://igawa.io/tag/os.html">OS</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/xie-zhen.html">写真</a>
+      <a href="https://igawa.io/tag/lion.html">lion</a>
     </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/blog.html">blog</a>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/iphone.html">iPhone</a>
     </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/english.html">english</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/wu-yu.html">物欲</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/nex-5n.html">nex-5n</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/unixbench.html">unixbench</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/ifttt.html">ifttt</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/she-ding.html">設定</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/evernote.html">evernote</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/backup.html">backup</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/firefox.html">Firefox</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/du-shu.html">読書</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/saba.html">サーバ</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/apache.html">apache</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/vim.html">vim</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/she-hui.html">社会</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/github.html">github</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/konosaito.html">このサイト</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/lvm.html">LVM</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/benchmark.html">benchmark</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/camera.html">camera</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/life-hack.html">life hack</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/vagrant.html">vagrant</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/kvm.html">KVM</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/mixi.html">mixi</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/nex-5nd.html">nex-5nd</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/gmail.html">Gmail</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/oming-qian-com.html">お名前.com</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/rpm.html">rpm</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/konosaitonoshi.html">このサイトの事</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/xfs.html">xfs</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/book.html">book</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/scala.html">scala</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/sheng-huo.html">生活</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/development.html">development</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/career.html">career</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/blogger.html">blogger</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/food.html">food</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/crashplan.html">crashplan</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/simple-massager.html">Simple-Massager</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/pickup.html">PICKUP</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/gadget.html">gadget</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/hua-xiang.html">画像</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/konosaitonokoto.html">このサイトのこと</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/lift.html">lift</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/hdd.html">HDD</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/kamera.html">カメラ</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/bian-naxie-zhen.html">変な写真</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/spmodo.html">SPモード</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/gps.html">GPS</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/dropbox.html">dropbox</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/kernel.html">kernel</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/sabaguan-li.html">サーバ管理</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/shi-shi.html">仕事</a>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/fedora.html">Fedora</a>
     </li>
     <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/apuri.html">アプリ</a>
     </li>
     <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/unixbench.html">unixbench</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/sabaguan-li.html">サーバ管理</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/konosaitonoshi.html">このサイトの事</a>
+    </li>
+    <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/uroad-7000.html">UROAD-7000</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/timemachine.html">timemachine</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/ipad2.html">ipad2</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/sony.html">sony</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/nexus7.html">nexus7</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/coreserverjp.html">coreserver.jp</a>
     </li>
     <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/cyan-yu.html">C言語</a>
     </li>
     <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/backup.html">backup</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/konosaito.html">このサイト</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/book.html">book</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/shi-shi.html">仕事</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/du-shu.html">読書</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/mixi.html">mixi</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/spmodo.html">SPモード</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/nex-5n.html">nex-5n</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/saba.html">サーバ</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/wu-yu.html">物欲</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/food.html">food</a>
+    </li>
+    <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/ubuntu.html">Ubuntu</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/gps.html">GPS</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/lvm.html">LVM</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/konosaitonokoto.html">このサイトのこと</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/she-ding.html">設定</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/ifttt.html">ifttt</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/timemachine.html">timemachine</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/english.html">english</a>
     </li>
     <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/fedora11.html">Fedora11</a>
     </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/opensuse.html">opensuse</a>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/coreserverjp.html">coreserver.jp</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/bian-naxie-zhen.html">変な写真</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/camera.html">camera</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/lift.html">lift</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/vim.html">vim</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/apache.html">apache</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/scala.html">scala</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/sony.html">sony</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/gadget.html">gadget</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/ipad2.html">ipad2</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/hua-xiang.html">画像</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/benchmark.html">benchmark</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/nex-5nd.html">nex-5nd</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/oming-qian-com.html">お名前.com</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/career.html">career</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/nexus7.html">nexus7</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/kernel.html">kernel</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/hdd.html">HDD</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/development.html">development</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/gmail.html">Gmail</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/kvm.html">KVM</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/xfs.html">xfs</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/crashplan.html">crashplan</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/vagrant.html">vagrant</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/pickup.html">PICKUP</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/evernote.html">evernote</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/sheng-huo.html">生活</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/blogger.html">blogger</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/she-hui.html">社会</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/kamera.html">カメラ</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/simple-massager.html">Simple-Massager</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/github.html">github</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/blog.html">blog</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/dropbox.html">dropbox</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/firefox.html">Firefox</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/life-hack.html">life hack</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/rpm.html">rpm</a>
     </li>
     <li class="list-group-item tag-4">
       <a href="https://igawa.io/tag/retrospective.html">retrospective</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/opensuse.html">opensuse</a>
     </li>
   </ul>
 </li>
