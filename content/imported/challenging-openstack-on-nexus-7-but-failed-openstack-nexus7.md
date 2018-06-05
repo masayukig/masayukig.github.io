@@ -7,7 +7,7 @@ Status: published
 Attachments: 2013/01/93fbd-dashboard.png, 2013/01/21730-errorlog.png
 
 [Nexus
-7にUbuntuをインストールできる](https://wiki.ubuntu.com/Nexus7/Installation)というのをみて、  
+7にUbuntuをインストールできる](https://wiki.ubuntu.com/Nexus7/Installation)というのをみて、
 「もしかしたらOpenStackも動くかも？！」と思ってやってみたのですが、
 
 あえなく撃沈。。
@@ -39,9 +39,9 @@ Attachments: 2013/01/93fbd-dashboard.png, 2013/01/21730-errorlog.png
 
     2013-01-02 06:10:42 TRACE nova libvirtError: internal error Cannot find suitable emulator for armv7l
 
-ARM＆libvirtdの対応が行われていないらしい。  
+ARM＆libvirtdの対応が行われていないらしい。
 libvirtのソースも多少読んだが、大枠の構造を理解してないので直せる力量をつけるにはまだまだ時間が掛かりそう。
 
 このままだとさすがにNexus7使いづらいので、[Dual
-Boot](https://wiki.ubuntu.com/Nexus7/Installation#Having_both_Android_and_Ubuntu_installed_for_dual_boot)できるようにしてから  
+Boot](https://wiki.ubuntu.com/Nexus7/Installation#Having_both_Android_and_Ubuntu_installed_for_dual_boot)できるようにしてから
 再挑戦しようとおもいます。

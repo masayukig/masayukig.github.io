@@ -4,11 +4,11 @@ Author: masayukig
 Tags: LVM, snapshot, xfs
 Status: published
 
-xfsではsnapshotをとる場合に、整合性を保つために  
-`xfs_freeze`  
+xfsではsnapshotをとる場合に、整合性を保つために
+`xfs_freeze`
 というコマンドがある。
 
-が、これは、Linux2.6系では実行してはいけないらしい。  
+が、これは、Linux2.6系では実行してはいけないらしい。
 (最近の2.6.27とかでも同様かは不明。)
 
 情報元：

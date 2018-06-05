@@ -4,13 +4,13 @@ Author: masayukig
 Tags: お名前.com, DTI, VPS
 Status: published
 
-現在、このサイトは お名前.comのVPS 上で動作しているが、  
-[DTIのServersMan VPS](http://dream.jp/vps/)が期間限定ながら無料で試せるようだったので、  
+現在、このサイトは お名前.comのVPS 上で動作しているが、
+[DTIのServersMan VPS](http://dream.jp/vps/)が期間限定ながら無料で試せるようだったので、
 試してみた。
 
-結論から言うと、お名前.comの方が私は好みです。  
+結論から言うと、お名前.comの方が私は好みです。
 お名前.com
-VPS：x86\_64カーネル、CPU:16コア、(下記の単純なベンチマークで)２倍程度早い  
+VPS：x86\_64カーネル、CPU:16コア、(下記の単純なベンチマークで)２倍程度早い
 DTI VPS：x86カーネル、CPU:2コア、お名前.comの半分程度のスピード
 
 以下、計測ログ等。
@@ -36,7 +36,7 @@ DTI VPS：x86カーネル、CPU:2コア、お名前.comの半分程度のスピ�
     sys     0m0.421s
     $ uname -a
     Linux 0r2.info 2.6.18-028stab068.9 #1 SMP Tue Mar 30 17:22:31 MSD 2010 x86_64 x86_64 x86_64 GNU/Linux
-    $ cat /etc/redhat-release 
+    $ cat /etc/redhat-release
     CentOS release 5.5 (Final)
 
 DTI VPS
@@ -59,8 +59,8 @@ DTI VPS
     user    0m1.045s
     sys     0m0.405s
 
-    $ 
+    $
     $ uname -a
     Linux localhost 2.6.18-194.3.1.el5.028stab069.6 #1 SMP Wed May 26 18:31:05 MSD 2010 i686 i686 i386 GNU/Linux
-    $ cat /etc/redhat-release 
+    $ cat /etc/redhat-release
     CentOS release 5.5 (Final)

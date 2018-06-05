@@ -18,9 +18,9 @@ Status: published
 
 日本の銀行ではそんなことありえないので、若干不安。
 
-一応、[シティバンクのサイト](http://www.citibank.co.jp/ja/bankingservice/citibankonline/services.html "シティバンクのサイト")には、  
+一応、[シティバンクのサイト](http://www.citibank.co.jp/ja/bankingservice/citibankonline/services.html "シティバンクのサイト")には、
 
-> ●営業日の16：50以降、および土日祝日の取引は、翌営業日の取扱いとなります。また、取引後の残高をATMで残高照会した場合には、翌営業日に反映されます。  
+> ●営業日の16：50以降、および土日祝日の取引は、翌営業日の取扱いとなります。また、取引後の残高をATMで残高照会した場合には、翌営業日に反映されます。
 > ●ATM、J-Debit等での取引も同様に取引後の残高は、翌営業日にシティバンク オンラインに反映されます。
 
 と、書いてあるから、大丈夫だとは思うんですが。

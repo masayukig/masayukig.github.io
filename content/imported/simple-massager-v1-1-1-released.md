@@ -6,12 +6,12 @@ Tags: Android, 開発, Simple-Massager, Software
 Status: published
 
 [Simple Massager
-v1.1.1](//details?id=org.orzlabs.android.massage)をリリースしました。  
-v1.1.1:  
-- 画面表示をよりシンプルにわかりやすくしたつもりです。  
-もし、バグを見つけたり、ご意見などありましたら、  
+v1.1.1](//details?id=org.orzlabs.android.massage)をリリースしました。
+v1.1.1:
+- 画面表示をよりシンプルにわかりやすくしたつもりです。
+もし、バグを見つけたり、ご意見などありましたら、
 下記のgithub
-ウェブサイトでその問題点等の書き込みをしてくれると嬉しいです♪  
-<http://github.com/masayukig/Simple-Massager/issues>  
-ダウンロードは、以下を読み取っても可能です。  
+ウェブサイトでその問題点等の書き込みをしてくれると嬉しいです♪
+<http://github.com/masayukig/Simple-Massager/issues>
+ダウンロードは、以下を読み取っても可能です。
 ![picture](https://masayukig.files.wordpress.com/2010/10/47385-qrcode.gif)

@@ -4,7 +4,7 @@ Author: masayukig
 Tags: PHS-Mobile-Phone
 Status: published
 
-<https://store.willcom-inc.com/ec/faces/lstlscp000306/>によると、  
+<https://store.willcom-inc.com/ec/faces/lstlscp000306/>によると、
 W-ZERO3の価格は、
 
 新規 年間契約あり：39,800円

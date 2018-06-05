@@ -8,7 +8,7 @@ Status: published
 X10](http://farm6.static.flickr.com/5142/5561883791_27e69b885d_m.jpg){.alignnone}](http://www.flickr.com/photos/31362181@N08/5561883791/ "update on Xperia X10")
 
 ソニエリからビッグニュース。Xperia
-X10をAndroid2.3へアップデートさせるとのこと。  
+X10をAndroid2.3へアップデートさせるとのこと。
 [Update on Xperia™
 X10](http://blogs.sonyericsson.com/products/2011/03/25/update-on-xperia%E2%84%A2-x10/)
 

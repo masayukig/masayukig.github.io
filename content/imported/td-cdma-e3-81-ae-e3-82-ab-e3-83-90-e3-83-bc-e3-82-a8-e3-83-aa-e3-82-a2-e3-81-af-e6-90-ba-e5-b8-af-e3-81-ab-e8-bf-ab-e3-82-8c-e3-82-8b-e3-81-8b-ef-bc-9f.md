@@ -4,10 +4,10 @@ Author: masayukig
 Tags: PHS-Mobile-Phone
 Status: published
 
-[ITmedia](http://www.itmedia.co.jp/mobile/articles/0408/04/news003.html)  
-TD-CDMAのセル半径は  
+[ITmedia](http://www.itmedia.co.jp/mobile/articles/0408/04/news003.html)
+TD-CDMAのセル半径は
 
 > 　「理論上は、最大48キロのセル半径を実現できる。こんな半径のセルを用意することはないから、基本的に制約はない」
 
-らしいです。  
+らしいです。
 これなら期待できるかも。

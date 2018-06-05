@@ -6,7 +6,7 @@ Status: published
 
 SQLiteのC言語APIを使ってprepared statementで、BLOBを使ってみます。
 
-基本的には、以下のサイトに書いてある方法ですが、日本語で書いてみることにします。  
+基本的には、以下のサイトに書いてある方法ですが、日本語で書いてみることにします。
 <http://www.sqlite.org/capi3ref.html#sqlite3_stmt>
 
 1.  sqlite3\_prepare\_v2()(あるいはそれに類するもの)を使って、sqlite3\_stmtのオブジェクトを作る。
@@ -17,15 +17,15 @@ SQLiteのC言語APIを使ってprepared statementで、BLOBを使ってみます
 5.  sqlite3\_finalize()を使ってオブジェクトを破棄する。
 
 
-というわけで、いきなりサンプルコードw  
+というわけで、いきなりサンプルコードw
 便利だなーと思ったのは、sqlite3\_errmsg()関数。dbを引数にすると、
 
     $ gcc -o sqlite_test sqlite_test.c -lsqlite3
-    $ chmod 000 test.db 
+    $ chmod 000 test.db
 
 と、DBファイルを読み書き出来ないようにして、実行すると、
 
-    $ ./sqlite_test 
+    $ ./sqlite_test
     open error:14, unable to open database file
 
 と、何でエラーになったのかが表示されます。
@@ -33,10 +33,10 @@ SQLiteのC言語APIを使ってprepared statementで、BLOBを使ってみます
 さらに、このDBファイルをsqlite3コマンドで見たときの話は次回のエントリに書きたいと思います。
 
 ``` {.c}
-#include 
-#include 
-#include 
-#include 
+#include
+#include
+#include
+#include
 
 struct human {
   char name[256];
@@ -138,7 +138,7 @@ int main(int argc, char *argv[])
   sqlite3_finalize(insertStmt);
   sqlite3_finalize(createStmt);
   sqlite3_finalize(dropStmt);
-  
+
   return exitcode;
 }
 ```

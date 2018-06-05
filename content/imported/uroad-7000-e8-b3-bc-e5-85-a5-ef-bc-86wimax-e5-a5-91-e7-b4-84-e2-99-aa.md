@@ -6,19 +6,19 @@ Status: published
 
 [![URoad-7000's
 back](http://farm5.static.flickr.com/4081/4822168678_28b3a0c594.jpg)
-](http://www.flickr.com/photos/masayun/4822168678/ "URoad-7000's back by masayukig, on Flickr")  
+](http://www.flickr.com/photos/masayun/4822168678/ "URoad-7000's back by masayukig, on Flickr")
 [![URoad-7000](http://farm5.static.flickr.com/4134/4822170934_7aaac61ee6.jpg)
 ](http://www.flickr.com/photos/masayun/4822170934/ "URoad-7000 by masayukig, on Flickr")
 
-URoad-7000を購入しました。で、WiMaxも契約しました。(ソフマップ・ドットコムで購入契約しました。)  
-今なら、7月、8月の基本料金が無料なので、  
+URoad-7000を購入しました。で、WiMaxも契約しました。(ソフマップ・ドットコムで購入契約しました。)
+今なら、7月、8月の基本料金が無料なので、
 端末代金(4,000円前後) + 契約手数料(2,835円) =
-7,000円程度の初期投資で、1ヶ月以上無料で使用でき、  
+7,000円程度の初期投資で、1ヶ月以上無料で使用でき、
 さらに、1年間、月額3,780円でネットつなぎ放題です。
 
-私は、ドコモの料金に嫌気がさして、こっちに統一しようかなと思っています。  
-ドコモのFOMAカードは、以前使ってたガラケーにさし、Xperiaは[wosim](http://siter.jp/android/wosim/)で使用してます。  
-現在、[タイプシンプルバリューで、メール使いホーダイ](http://www.nttdocomo.co.jp/charge/bill_plan/plan/value/mail/)なので、  
+私は、ドコモの料金に嫌気がさして、こっちに統一しようかなと思っています。
+ドコモのFOMAカードは、以前使ってたガラケーにさし、Xperiaは[wosim](http://siter.jp/android/wosim/)で使用してます。
+現在、[タイプシンプルバリューで、メール使いホーダイ](http://www.nttdocomo.co.jp/charge/bill_plan/plan/value/mail/)なので、
 ドコモの料金月額が780円になる(はず)。
 
 今は、
@@ -29,15 +29,15 @@ URoad-7000を購入しました。で、WiMaxも契約しました。(ソフマ�
 
 と言う感じにしています。
 
-この方がリアルタイム性が高いし、Xperiaの電池の持ちも良い。  
+この方がリアルタイム性が高いし、Xperiaの電池の持ちも良い。
 まぁ、難点は持ち物が増えるということでしょうか。。
 
-ちょっと心配だったエリアも、まぁ、満足。  
+ちょっと心配だったエリアも、まぁ、満足。
 (職場内での電波の入りがイマイチなのですが、まぁ、「ちゃんと仕事しろ」ってコトだと思って我慢しますw)
 
 若干不満な電池の持ちについては、eneloop(KBC-L2AS)を購入して解決予定です。
 
-なお、eneloop(KBC-L2AS)は以下で購入しました。  
+なお、eneloop(KBC-L2AS)は以下で購入しました。
 [eneloop(KBC-L2AS)](http://pt.afl.rakuten.co.jp/c/000f5254.872e6b72/?url=http%3a%2f%2fitem.rakuten.co.jp%2fappleby%2f10000739%2f)
 
 -   ポイント5倍であったことと

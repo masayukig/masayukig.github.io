@@ -12,8 +12,8 @@ Status: published
 という素敵な環境を、
 
 
-Mac OS Mountain Lion(10.8.2)に 作ってみる。  
-一応、vagrant\_devstackのREADMEには、Macに対する言及があるので、  
+Mac OS Mountain Lion(10.8.2)に 作ってみる。
+一応、vagrant\_devstackのREADMEには、Macに対する言及があるので、
 できるんじゃないかと妄想。
 
 
@@ -48,7 +48,7 @@ Mac OS Mountain Lion(10.8.2)に 作ってみる。
 
 
 
-    % gem install vagrant  
+    % gem install vagrant
     Fetching: archive-tar-minitar-0.5.2.gem (100%)
     Fetching: json-1.5.4.gem (100%)
     Building native extensions.  This could take a while...
@@ -85,7 +85,7 @@ Mac OS Mountain Lion(10.8.2)に 作ってみる。
 
 
 結果、
-    % gem install vagrant                              
+    % gem install vagrant
     Building native extensions.  This could take a while...
     Fetching: log4r-1.1.10.gem (100%)
     Fetching: net-ssh-2.2.2.gem (100%)
@@ -110,11 +110,11 @@ Mac OS Mountain Lion(10.8.2)に 作ってみる。
 で、更に、マニュアルに従い、
 
     git clone http://github.com/bcwaldon/vagrant_devstack.git
-    cd vagrant_devstack 
+    cd vagrant_devstack
     git submodule init
     git submodule update
     cp etc/vagrant.yaml.sample etc/vagrant.yaml
-    vim Vagrantfile 
+    vim Vagrantfile
 
 を実行。Vagrantfileは、以下の様な感じに修正。
 

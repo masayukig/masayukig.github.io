@@ -6,6 +6,6 @@ Status: published
 
 [pc.watch.impress.co.jp](http://pc.watch.impress.co.jp/docs/2004/1124/pclabo27.htm)
 
-「従来の玄箱」とも比較しているようです。  
-CPUも早くなって、Webサーバやらperlやらいろいろ入っているようなので、  
+「従来の玄箱」とも比較しているようです。
+CPUも早くなって、Webサーバやらperlやらいろいろ入っているようなので、
 これをサーバにしたら面白そうだなと思ったり。思わなかったり。

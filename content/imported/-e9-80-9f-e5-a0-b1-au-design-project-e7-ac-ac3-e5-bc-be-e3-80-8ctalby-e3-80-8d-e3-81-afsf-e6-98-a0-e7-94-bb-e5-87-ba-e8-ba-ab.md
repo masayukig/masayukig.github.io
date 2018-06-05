@@ -4,11 +4,11 @@ Author: masayukig
 Tags: PHS-Mobile-Phone
 Status: published
 
-[PCWEB](http://pcweb.mycom.co.jp/news/2004/10/13/009.html)  
+[PCWEB](http://pcweb.mycom.co.jp/news/2004/10/13/009.html)
 [Impress](http://k-tai.impress.co.jp/cda/article/news_toppage/20960.html)
 
-「au design project」モデルの第3弾となる携帯電話「talby」発表。  
-カラーバリエーションは、「黒」「緑」「オレンジ」の3色。  
+「au design project」モデルの第3弾となる携帯電話「talby」発表。
+カラーバリエーションは、「黒」「緑」「オレンジ」の3色。
 本体外寸 約45×132×13mm
 
 QVGA液晶

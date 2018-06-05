@@ -6,7 +6,7 @@ Status: published
 
 [pc.watch.impress.co.jp](http://pc.watch.impress.co.jp/docs/2005/0908/nano.htm)
 
-PC Watch恒例(笑)の分解レポートです。  
+PC Watch恒例(笑)の分解レポートです。
 主な内容は、
 
 外箱は「厚い部分」と「薄い部分」に分かれており、本体は薄いほうに入っている。

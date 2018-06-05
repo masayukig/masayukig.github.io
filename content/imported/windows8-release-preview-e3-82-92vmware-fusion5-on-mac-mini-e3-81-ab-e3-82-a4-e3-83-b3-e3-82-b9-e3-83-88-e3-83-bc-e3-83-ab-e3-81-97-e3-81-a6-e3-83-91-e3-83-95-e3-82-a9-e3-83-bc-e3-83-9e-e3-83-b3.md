@@ -10,14 +10,14 @@ Attachments: 2012/09/e7f3a-skitch.png
 ](https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png)
 
 
-というわけで、題名の通り  
-Window8 Release PreviewをVMware Fusion5 on Mac mini(10.8.2)に  
+というわけで、題名の通り
+Window8 Release PreviewをVMware Fusion5 on Mac mini(10.8.2)に
 インストールして、パフォーマンスの評価をしてみました。
 
 結果は上記の通り。
 
-思ったよりもパフォーマンスは良い印象。  
-サクサク動きます。  
+思ったよりもパフォーマンスは良い印象。
+サクサク動きます。
 画面もシンプルで好印象。
 
 まぁ、ちょろっと触っただけなので、

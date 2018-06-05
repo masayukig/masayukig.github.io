@@ -4,6 +4,6 @@ Author: masayukig
 Tags: C言語, 開発
 Status: published
 
-<http://kzk9.net/column/valgrind-memcheck.html>  
-自分用にメモメモ。  
+<http://kzk9.net/column/valgrind-memcheck.html>
+自分用にメモメモ。
 メモリリークを検出出来るらしい。

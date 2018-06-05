@@ -6,7 +6,7 @@ Status: published
 
 <http://www.withings.com/ja>
 
-インターネット接続の体重計。  
+インターネット接続の体重計。
 自動的にTweetする機能もついてるらしい。
 
 ちょっと欲しいかもｗ

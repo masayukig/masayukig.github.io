@@ -7,7 +7,7 @@ Status: published
 ssh git@github.comで「Agent admitted failure to sign using the key.
 」となったら、
 
-`ssh-add ~/.ssh/id_rsa`  
+`ssh-add ~/.ssh/id_rsa`
 と、するとうまくいくかもしれない。
 
 参考サイト：<http://ripan27.wordpress.com/2010/04/01/ssh-gitgithub-com-agent-admitted-failure-to-sign-using-the-key-permission-denied-publickey/>

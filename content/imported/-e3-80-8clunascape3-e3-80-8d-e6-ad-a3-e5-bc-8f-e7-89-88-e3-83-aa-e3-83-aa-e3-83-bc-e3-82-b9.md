@@ -6,10 +6,10 @@ Status: published
 
 [www.itmedia.co.jp](http://www.itmedia.co.jp/news/articles/0509/12/news053.html)
 
-と、紹介してみたものの、  
-最近、自宅でのメインPCはMac  
-会社ではWindowsだが、ブラウザはFirefox。  
+と、紹介してみたものの、
+最近、自宅でのメインPCはMac
+会社ではWindowsだが、ブラウザはFirefox。
 なので、利用機会は全然ないんです。
 
-まぁ、奥さんはLunascape使っているが、「Lite」を使っているみたいなので、  
+まぁ、奥さんはLunascape使っているが、「Lite」を使っているみたいなので、
 やはり関係ないですね。。

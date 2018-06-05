@@ -4,21 +4,21 @@ Author: masayukig
 Tags: 開発, Linux, Objective-C, Software
 Status: published
 
-iPhoneアプリを作るなら、Objective-Cという言語を知っておく必要が  
-ありそうなので、とりあえず、LinuxでObjective-Cをやってみる。  
-参考にしている書籍は、以下。  
-<http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=hughundercons-22&o=9&p=8&l=as1&m=amazon&f=ifr&md=1X69VDGQCMF7Z30FM082&asins=4797346809>  
-私は、とりあえず、図書館で借りました。  
+iPhoneアプリを作るなら、Objective-Cという言語を知っておく必要が
+ありそうなので、とりあえず、LinuxでObjective-Cをやってみる。
+参考にしている書籍は、以下。
+<http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=hughundercons-22&o=9&p=8&l=as1&m=amazon&f=ifr&md=1X69VDGQCMF7Z30FM082&asins=4797346809>
+私は、とりあえず、図書館で借りました。
 が、図書館に無かったり、近くに図書館が内容な場合は、上記からご購入ください
 :-)
 
-Apple製品専用言語なのかと思ったが、ググったら、Linuxでも動きそうだったので、  
+Apple製品専用言語なのかと思ったが、ググったら、Linuxでも動きそうだったので、
 挑戦してみる。
 
-以下、その内容。  
-まずは、Objective-Cの環境をインストール。  
+以下、その内容。
+まずは、Objective-Cの環境をインストール。
 [Linux で Objective C
-を走らせてみた](http://d.hatena.ne.jp/elm200/20080426/1209211127)  
+を走らせてみた](http://d.hatena.ne.jp/elm200/20080426/1209211127)
 の記事を参照して、以下の様にインストール。
 
     $ sudo aptitude install gobjc
@@ -64,7 +64,7 @@ World"であふれているのだろうか..）
 test1.m というファイル名で以下のソースを記述。
 
 ``` {.cpp}
-#import 
+#import
 
 int main() {
         printf("Hello World!\n");
@@ -83,7 +83,7 @@ int main() {
 というわけで、インターフェース、クラスを使ってみる。
 
 ``` {.cpp}
-#import 
+#import
 
 @interface Human : Object
 {
@@ -114,7 +114,7 @@ int main() {
     $ ./a.out
     I'm 23 years old.
 
-インターフェースにないメソッド(メッセージ？)を、実装で追加しても良いらしい。。  
+インターフェースにないメソッド(メッセージ？)を、実装で追加しても良いらしい。。
 というわけで、なんとなく雰囲気をつかんだので、今のところは、まぁ良しとします。
 
 参考サイト：

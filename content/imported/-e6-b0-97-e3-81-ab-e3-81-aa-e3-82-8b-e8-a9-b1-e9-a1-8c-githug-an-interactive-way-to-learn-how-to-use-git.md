@@ -4,5 +4,5 @@ Author: masayukig
 Category: Uncategorized
 Status: published
 
-気になる話題: <https://github.com/Gazler/githug>  
+気になる話題: <https://github.com/Gazler/githug>
 from Hacker News <http://news.ycombinator.com/>

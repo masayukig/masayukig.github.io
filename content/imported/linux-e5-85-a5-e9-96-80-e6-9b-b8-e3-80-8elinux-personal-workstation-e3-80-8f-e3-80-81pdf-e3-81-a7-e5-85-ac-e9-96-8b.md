@@ -6,5 +6,5 @@ Status: published
 
 <http://slashdot.jp/article.pl?sid=05/03/17/0657232&topic=2>
 
-Vine Linuxを前提にして書かれているらしいが、  
+Vine Linuxを前提にして書かれているらしいが、
 Linux全般で役に立ちそう。

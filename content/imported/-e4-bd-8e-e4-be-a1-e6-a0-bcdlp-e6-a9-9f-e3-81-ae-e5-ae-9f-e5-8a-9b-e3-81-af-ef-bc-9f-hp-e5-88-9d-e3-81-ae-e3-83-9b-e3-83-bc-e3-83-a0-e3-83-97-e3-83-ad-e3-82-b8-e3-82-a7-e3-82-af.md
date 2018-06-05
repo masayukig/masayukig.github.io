@@ -4,5 +4,5 @@ Author: masayukig
 Category: Uncategorized
 Status: published
 
-[itmedia.co.jp](http://www.itmedia.co.jp/lifestyle/articles/0411/26/news025.html)  
+[itmedia.co.jp](http://www.itmedia.co.jp/lifestyle/articles/0411/26/news025.html)
 ちょっと私が注目中のホームプロジェクタep7100シリーズのレビュー。

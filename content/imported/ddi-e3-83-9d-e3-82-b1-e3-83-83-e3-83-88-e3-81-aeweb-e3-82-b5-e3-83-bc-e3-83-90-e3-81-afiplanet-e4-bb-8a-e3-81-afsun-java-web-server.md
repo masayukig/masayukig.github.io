@@ -6,6 +6,6 @@ Status: published
 
 [DDIpocketのページ](http://www.ddipocket.co.jp/)
 
-ＤＤＩポケットのページを見ると、  
-[favicon.ico](http://www.ddipocket.co.jp/favicon.ico)  
+ＤＤＩポケットのページを見ると、
+[favicon.ico](http://www.ddipocket.co.jp/favicon.ico)
 がiPlanetのやつだ。

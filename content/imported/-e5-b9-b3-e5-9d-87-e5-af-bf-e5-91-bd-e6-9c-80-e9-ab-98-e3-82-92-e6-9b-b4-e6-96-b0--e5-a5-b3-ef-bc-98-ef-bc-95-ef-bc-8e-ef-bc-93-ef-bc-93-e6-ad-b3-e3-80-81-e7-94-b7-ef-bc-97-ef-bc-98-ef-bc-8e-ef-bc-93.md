@@ -4,12 +4,12 @@ Author: masayukig
 Category: Uncategorized
 Status: published
 
-([asahi.com](http://www.asahi.com/national/update/0717/001.html?2004))  
-私はあと、50年以上生きるかも。  
-それにしても、女性と男性の平均寿命の差が開いていきますね。  
+([asahi.com](http://www.asahi.com/national/update/0717/001.html?2004))
+私はあと、50年以上生きるかも。
+それにしても、女性と男性の平均寿命の差が開いていきますね。
 
 > 男性の延びが女性より低かった要因として、約２万３千人と統計史上最悪を記録した自殺者の多いことが原因
 
-のひとつのようだ。  
-男のほうが自殺しやすいんだね。  
+のひとつのようだ。
+男のほうが自殺しやすいんだね。
 ストレスに弱いんだろうか？

@@ -10,9 +10,9 @@ Status: published
 
 -32400=GMTからの時差。(JSTなら-0900なので-60\*60\*9)
 
-必要なもの：  
-[gpsPhoto.pl](http://www.carto.net/projects/photoTools/gpsPhoto/)  
-Image-ExifTool-7.51(CPANでインストール可能)  
+必要なもの：
+[gpsPhoto.pl](http://www.carto.net/projects/photoTools/gpsPhoto/)
+Image-ExifTool-7.51(CPANでインストール可能)
 ...?
 
 参考URL:

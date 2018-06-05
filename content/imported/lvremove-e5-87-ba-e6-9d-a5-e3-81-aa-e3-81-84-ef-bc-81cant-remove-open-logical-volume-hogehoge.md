@@ -4,15 +4,15 @@ Author: masayukig
 Tags: サーバ管理, dm, LVM, lvremove
 Status: published
 
-lvmを使っていて、必要なくなったlvを削除するためのコマンドである、  
-lvremove  
-というのがあります。  
+lvmを使っていて、必要なくなったlvを削除するためのコマンドである、
+lvremove
+というのがあります。
 先日、iscsiテスト用に作ったlvを、これを使って削除しようとしたら、
 
     $ sudo lvremove  /dev/vg01/iscsi
     Can't remove open logical volume "iscsi"
 
-と、言われて削除できなかったので、その解決方法など。  
+と、言われて削除できなかったので、その解決方法など。
 結論を言うと、
 
     $ sudo dmsetup ls
@@ -25,7 +25,7 @@ lvremove
     $ sudo lvremove  /dev/vg01/iscsi
       Logical volume "iscsi" successfully removed
 
-と、すれば良い模様。  
+と、すれば良い模様。
 最初、
 
     $ sudo dmsetup remove vg01-iscsi
@@ -37,7 +37,7 @@ lvremove
 
 と、言われて削除できませんでした。
 
-vg01-iscsip1,3というのが(多分)勝手に作られていて、  
+vg01-iscsip1,3というのが(多分)勝手に作られていて、
 それがあったために、vg01-iscsiを削除できなかったのではないかと思っています。
 
 \#記憶は若干あやふやなので、参考程度に。。

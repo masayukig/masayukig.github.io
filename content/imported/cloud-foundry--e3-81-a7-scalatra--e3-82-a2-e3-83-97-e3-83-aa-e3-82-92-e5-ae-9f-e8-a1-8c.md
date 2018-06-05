@@ -8,18 +8,18 @@ Status: published
 ](https://picasaweb.google.com/lh/photo/yZtdpG7qkZc_OfWy78PCPw?feat=embedwebsite)
 
 Cloud Foundry で [Scalatra](https://github.com/scalatra/scalatra)
-アプリを実行してみます。  
+アプリを実行してみます。
 Scalatra
 自体については、[ググって](http://www.google.co.jp/search?q=scalatra)ください。
 :-P
 
-1.  ~~sbtをインストール  
+1.  ~~sbtをインストール
    インストール方法は、[Mac で Scala と Lift を使ってみる(1)
-    インストール編](http://b.0r2.info/?p=1508)に記載した通りです。  
-   Linuxならばapt-getやyum等でインストールできるかもしれません。  
-   Windowsはわかりませんw~~  
+    インストール編](http://b.0r2.info/?p=1508)に記載した通りです。
+   Linuxならばapt-getやyum等でインストールできるかもしれません。
+   Windowsはわかりませんw~~
    下記のgit cloneでsbtも取得できるので不要
-2.  sbtアプリ作成＆テスト実行  
+2.  sbtアプリ作成＆テスト実行
    [Quick start (SBT
     0.7.x)](https://github.com/scalatra/scalatra)に書かれている方法を実行します。
 
@@ -38,24 +38,24 @@ Scalatra
         $ sbt package
         $ vmc push --path target/scala_2.8.1
         Application Name: 好きなアプリケーション名を入力
-        Application Deployed URL: 'アプリケーション名.cloudfoundry.com'? 
-        Detected a Java Web Application, is this correct? [Yn]: 
-        Memory Reservation [Default:512M] (64M, 128M, 256M, 512M or 1G) 
+        Application Deployed URL: 'アプリケーション名.cloudfoundry.com'?
+        Detected a Java Web Application, is this correct? [Yn]:
+        Memory Reservation [Default:512M] (64M, 128M, 256M, 512M or 1G)
         Creating Application: OK
-        Would you like to bind any services to '好きなアプリケーション名'? [yN]: 
+        Would you like to bind any services to '好きなアプリケーション名'? [yN]:
         Uploading Application:
           Checking for available resources: OK
           Processing resources: OK
           Packing application: OK
-          Uploading (9K): OK   
+          Uploading (9K): OK
         Push Status: OK
-        Staging Application: OK                                                         
-        Starting Application: OK                                                        
+        Staging Application: OK
+        Starting Application: OK
 
-    とすれば、warファイルが作成され、Cloud Foundryへpushできますが、  
-   １点注意点があります。デフォルトでは、scala-compiler.jarがwarファイルに含まれないらしく、  
-   このwarファイルをvmc pushしても実行時にエラーとなります。  
-   <http://d.hatena.ne.jp/fits/20110521/1305942644>  
+    とすれば、warファイルが作成され、Cloud Foundryへpushできますが、
+   １点注意点があります。デフォルトでは、scala-compiler.jarがwarファイルに含まれないらしく、
+   このwarファイルをvmc pushしても実行時にエラーとなります。
+   <http://d.hatena.ne.jp/fits/20110521/1305942644>
    というわけで、以下の修正を加えた後、
 
         $ git diff
@@ -66,7 +66,7 @@ Scalatra
         @@ -15,6 +15,9 @@ class MyProject(info: ProjectInfo) extends DefaultWebProject(info) {
            // http://groups.google.com/group/simple-build-tool/msg/1f17b43807d06cda
            override def testClasspath = super.testClasspath +++ buildCompilerJar
-         
+
         +  // http://d.hatena.ne.jp/fits/20110521/1305942644
         +  override def webappClasspath = super.webappClasspath +++ buildCompilerJar
         +
@@ -78,8 +78,8 @@ Scalatra
 
     します。
 
-4.  Cloud Foundryで動作確認  
-   http://好きなアプリケーション名.cloudfoundry.com/へアクセスし、  
+4.  Cloud Foundryで動作確認
+   http://好きなアプリケーション名.cloudfoundry.com/へアクセスし、
    「hello to
     Scalate」リンクをクリックして、以下の画面が表示されれば成功です。
 

@@ -6,6 +6,6 @@ Status: published
 
 <http://www.turbolinux.co.jp/products/tigerspc/>
 
-なんか、なにげにこんなの発売されていたんですね。  
-でも、誰が買うんだろう。。。？  
+なんか、なにげにこんなの発売されていたんですね。
+でも、誰が買うんだろう。。。？
 Linux好きの阪神ファン？？

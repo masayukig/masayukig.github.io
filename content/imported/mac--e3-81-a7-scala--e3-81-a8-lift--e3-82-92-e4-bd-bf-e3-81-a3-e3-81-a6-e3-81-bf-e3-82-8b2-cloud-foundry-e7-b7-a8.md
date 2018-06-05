@@ -6,12 +6,12 @@ Status: published
 
 「Mac で Scala と Lift を使ってみる」の2回目
 
-今度は、作成したアプリをCloud Foundryへpushしてみます。  
+今度は、作成したアプリをCloud Foundryへpushしてみます。
 つい最近、[Cloud
 Foundry](http://cloudfoundry.com/)が[Scala-Liftに対応した](http://blog.cloudfoundry.com/post/6109591023/cloud-foundry-now-supporting-scala)ので可能になりました。
 
-今度は、「ゆろよろ日記」さんのサイト：  
-<http://d.hatena.ne.jp/yuroyoro/20080808/1218168453>  
+今度は、「ゆろよろ日記」さんのサイト：
+<http://d.hatena.ne.jp/yuroyoro/20080808/1218168453>
 記述を参考にしました。
 
 1.  アプリを作成
@@ -26,7 +26,7 @@ Foundry](http://cloudfoundry.com/)が[Scala-Liftに対応した](http://blog.clo
 
     warファイルが作成されていることを確認します。
 
-3.  Cloud Foundryへpush  
+3.  Cloud Foundryへpush
    以下手順からは、事前に、[Cloud
     Foundry](http://cloudfoundry.com/)にて、sign
     upを済ませておく必要があります。
@@ -46,10 +46,10 @@ Foundry](http://cloudfoundry.com/)が[Scala-Liftに対応した](http://blog.clo
           Checking for available resources: OK
           Processing resources: OK
           Packing application: OK
-          Uploading (7M): OK   
+          Uploading (7M): OK
         Push Status: OK
-        Staging Application: OK                                                         
-        Starting Application: OK                                                        
+        Staging Application: OK
+        Starting Application: OK
 
 4.  Webブラウザでアクセス
 

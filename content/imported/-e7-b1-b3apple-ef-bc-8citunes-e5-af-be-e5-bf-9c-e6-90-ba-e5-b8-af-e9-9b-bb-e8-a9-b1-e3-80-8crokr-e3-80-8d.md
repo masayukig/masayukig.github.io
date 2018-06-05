@@ -6,5 +6,5 @@ Status: published
 
 [itpro.nikkeibp.co.jp](http://itpro.nikkeibp.co.jp/article/USNEWS/20050908/220780/)
 
-iTunesから，音楽を最大100曲「しか」転送できないらしい。  
+iTunesから，音楽を最大100曲「しか」転送できないらしい。
 まぁ、「Shuffle」的な使い方ってことね。。

@@ -5,7 +5,7 @@ Tags: 3G, Apple, iPhone, PHS-Mobile-Phone, sbm
 Status: published
 
 新しい[iPhone - iPhone 3G
-S](http://www.apple.com/jp/iphone/iphone-3g-s/)が発表されました！(6月19日発売予定)  
+S](http://www.apple.com/jp/iphone/iphone-3g-s/)が発表されました！(6月19日発売予定)
 日本語記事：
 
 -   <http://japanese.engadget.com/2009/06/08/iphone-3gs/>
@@ -22,10 +22,10 @@ S](http://www.apple.com/jp/iphone/iphone-3g-s/)が発表されました！(6月1
 
 といったあたりでしょうか。
 
-32GBモデル：\$299  
-16GBモデル：\$199  
+32GBモデル：\$299
+16GBモデル：\$199
 従来のiPhone(8GB)：\$100
 
-で販売されるそうです。どうせなら、  
-従来モデルは\$99にすれば良かったんじゃないのって思うけど。。  
+で販売されるそうです。どうせなら、
+従来モデルは\$99にすれば良かったんじゃないのって思うけど。。
 ちなみに、「S」はSpeedの「S」のことらしいです。
