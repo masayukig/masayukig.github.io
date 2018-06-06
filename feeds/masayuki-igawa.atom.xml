@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done - Masayuki Igawa</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/masayuki-igawa.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2018-05-10T00:00:00+09:00</updated><entry><title>Retrospective 2018-05-10</title><link href="https://igawa.io/posts/2018/05/retrospective-2018-05-10/" rel="alternate"></link><published>2018-05-10T00:00:00+09:00</published><updated>2018-05-10T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2018-05-10:/posts/2018/05/retrospective-2018-05-10/</id><summary type="html">&lt;div class="section" id="introduction"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done - Masayuki Igawa</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/masayuki-igawa.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2018-06-06T00:00:00+09:00</updated><entry><title>Restore Gemini PDA Firmware</title><link href="https://igawa.io/posts/2018/06/restore-gemini-pda-firmware/" rel="alternate"></link><published>2018-06-06T00:00:00+09:00</published><updated>2018-06-06T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2018-06-06:/posts/2018/06/restore-gemini-pda-firmware/</id><summary type="html">&lt;img alt="Gemini PDA" src="https://photos.app.goo.gl/n0nD0O5Ulc7uPBlj1" /&gt;
+&lt;div class="section" id="problem"&gt;
+&lt;h2&gt;Problem&lt;/h2&gt;
+&lt;p&gt;I had updated my Gemini PDA firmware which was showed in the
+setting. However, after the updating, my gemini never booted with the
+planets rotating screen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how-to-solve-it"&gt;
+&lt;h2&gt;How to solve it&lt;/h2&gt;
+&lt;p&gt;First, I sent an email it to the support. They replied me very quickly
+and said &amp;quot;We are aware …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;img alt="Gemini PDA" src="https://photos.app.goo.gl/n0nD0O5Ulc7uPBlj1" /&gt;
+&lt;div class="section" id="problem"&gt;
+&lt;h2&gt;Problem&lt;/h2&gt;
+&lt;p&gt;I had updated my Gemini PDA firmware which was showed in the
+setting. However, after the updating, my gemini never booted with the
+planets rotating screen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how-to-solve-it"&gt;
+&lt;h2&gt;How to solve it&lt;/h2&gt;
+&lt;p&gt;First, I sent an email it to the support. They replied me very quickly
+and said &amp;quot;We are aware of the issue. We are investigating the issue
+with our firmware over the air (FOTA) ....&amp;quot;&lt;/p&gt;
+&lt;p&gt;However, I don't want to wait for that :-p. And my friend who has also
+a gemini pda told me &lt;a class="reference external" href="http://support.planetcom.co.uk/index.php/Gemini_Firmware"&gt;Gemini Firmware&lt;/a&gt; and &lt;a class="reference external" href="http://support.planetcom.co.uk/index.php/Flashing_Guide"&gt;Flashing Guide&lt;/a&gt; pages.&lt;/p&gt;
+&lt;p&gt;To do this, I had to install &lt;a class="reference external" href="http://packman.links2linux.org/download/nas/2455730/libaudio2-1.9.4-1.27.x86_64.rpm"&gt;libaudio2 rpm package&lt;/a&gt; manually to use
+&lt;tt class="docutils literal"&gt;flash_tool.sh&lt;/tt&gt; .&lt;/p&gt;
+&lt;p&gt;And, the flashing part was also tricky. I needed to reboot(press
+power + silver button) after pressing &amp;quot;Download&amp;quot; button on the tool. I
+didn't notice that for a long time. But finally, I could have flashed
+my gemini firmware.&lt;/p&gt;
+&lt;p&gt;So, I need to setup from the beginning, though...&lt;/p&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="gadget"></category><category term="oss"></category><category term="gemini"></category></entry><entry><title>Retrospective 2018-05-10</title><link href="https://igawa.io/posts/2018/05/retrospective-2018-05-10/" rel="alternate"></link><published>2018-05-10T00:00:00+09:00</published><updated>2018-05-10T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2018-05-10:/posts/2018/05/retrospective-2018-05-10/</id><summary type="html">&lt;div class="section" id="introduction"&gt;
 &lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This is a retrospective about this blog mainly.&lt;/p&gt;
 &lt;/div&gt;

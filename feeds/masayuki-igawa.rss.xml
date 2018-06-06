@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Thu, 10 May 2018 00:00:00 +0900</lastBuildDate><item><title>Retrospective 2018-05-10</title><link>https://igawa.io/posts/2018/05/retrospective-2018-05-10/</link><description>&lt;div class="section" id="introduction"&gt;
+<rss version="2.0"><channel><title>What's done is done - Masayuki Igawa</title><link>https://igawa.io/</link><description></description><lastBuildDate>Wed, 06 Jun 2018 00:00:00 +0900</lastBuildDate><item><title>Restore Gemini PDA Firmware</title><link>https://igawa.io/posts/2018/06/restore-gemini-pda-firmware/</link><description>&lt;img alt="Gemini PDA" src="https://photos.app.goo.gl/n0nD0O5Ulc7uPBlj1" /&gt;
+&lt;div class="section" id="problem"&gt;
+&lt;h2&gt;Problem&lt;/h2&gt;
+&lt;p&gt;I had updated my Gemini PDA firmware which was showed in the
+setting. However, after the updating, my gemini never booted with the
+planets rotating screen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how-to-solve-it"&gt;
+&lt;h2&gt;How to solve it&lt;/h2&gt;
+&lt;p&gt;First, I sent an email it to the support. They replied me very quickly
+and said &amp;quot;We are aware …&lt;/p&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Masayuki Igawa</dc:creator><pubDate>Wed, 06 Jun 2018 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:igawa.io,2018-06-06:/posts/2018/06/restore-gemini-pda-firmware/</guid><category>gadget</category><category>oss</category><category>gemini</category></item><item><title>Retrospective 2018-05-10</title><link>https://igawa.io/posts/2018/05/retrospective-2018-05-10/</link><description>&lt;div class="section" id="introduction"&gt;
 &lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This is a retrospective about this blog mainly.&lt;/p&gt;
 &lt;/div&gt;
