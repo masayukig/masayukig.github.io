@@ -6,7 +6,7 @@
 :Status: published
 
 
-.. image:: https://photos.app.goo.gl/6A5tPXRdicmUx2gl2
+.. image:: https://lh3.googleusercontent.com/A68ov2kKQgJmQLoJUeQGsbCulq_bBCfHZpt8kzkY4eQQv5MTsUJ_Txf0Xt8jFr6egW7ygxhHuGknHT3os_lqPlkxwwXAgtYTFPdpGvCAVkniUqhoxGg6temcF6n8f7KLS83UWBvIndA=w2400
    :alt: X-Bows Keyboard
 
 
