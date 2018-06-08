@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/all.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2018-06-06T00:00:00+09:00</updated><entry><title>Restore Gemini PDA Firmware</title><link href="https://igawa.io/posts/2018/06/restore-gemini-pda-firmware/" rel="alternate"></link><published>2018-06-06T00:00:00+09:00</published><updated>2018-06-06T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2018-06-06:/posts/2018/06/restore-gemini-pda-firmware/</id><summary type="html">&lt;img alt="Gemini PDA" src="https://photos.app.goo.gl/n0nD0O5Ulc7uPBlj1" /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/all.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2018-06-08T00:00:00+09:00</updated><entry><title>X-BOWS Keyboard first impression</title><link href="https://igawa.io/posts/2018/06/x-bows-keyboard-first-impression/" rel="alternate"></link><published>2018-06-08T00:00:00+09:00</published><updated>2018-06-08T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2018-06-08:/posts/2018/06/x-bows-keyboard-first-impression/</id><summary type="html">&lt;img alt="X-Bows Keyboard" src="https://photos.app.goo.gl/6A5tPXRdicmUx2gl2" /&gt;
+&lt;p&gt;I just got the &lt;a class="reference external" href="http://www.x-bows.com/"&gt;X-Bows Mechanical Ergonomic Keyboard&lt;/a&gt;, yeah, the
+shape is a bit weird and it's a bit annoying to get use to, actually..&lt;/p&gt;
+&lt;p&gt;However, it realized me that my hands position was really bad. And,
+I think/believe doing new things are really good for my brain.&lt;/p&gt;
+&lt;p&gt;And …&lt;/p&gt;</summary><content type="html">&lt;img alt="X-Bows Keyboard" src="https://photos.app.goo.gl/6A5tPXRdicmUx2gl2" /&gt;
+&lt;p&gt;I just got the &lt;a class="reference external" href="http://www.x-bows.com/"&gt;X-Bows Mechanical Ergonomic Keyboard&lt;/a&gt;, yeah, the
+shape is a bit weird and it's a bit annoying to get use to, actually..&lt;/p&gt;
+&lt;p&gt;However, it realized me that my hands position was really bad. And,
+I think/believe doing new things are really good for my brain.&lt;/p&gt;
+&lt;p&gt;And also, this keyboard is silent compare to normal mechanical
+keyboards. Touch feeling is also good to me, not so heavy, not so
+light. I feel this is really good for my health.&lt;/p&gt;
+&lt;p&gt;But not sure, someone might say &amp;quot;your key typing is very noisy&amp;quot;
+someday. If I get like that thing, I need to re-think my keyboard
+strategy.&lt;/p&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;
+</content><category term="gadget"></category><category term="keyboard"></category><category term="x-bows"></category></entry><entry><title>Restore Gemini PDA Firmware</title><link href="https://igawa.io/posts/2018/06/restore-gemini-pda-firmware/" rel="alternate"></link><published>2018-06-06T00:00:00+09:00</published><updated>2018-06-06T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2018-06-06:/posts/2018/06/restore-gemini-pda-firmware/</id><summary type="html">&lt;img alt="Gemini PDA" src="https://photos.app.goo.gl/n0nD0O5Ulc7uPBlj1" /&gt;
 &lt;div class="section" id="problem"&gt;
 &lt;h2&gt;Problem&lt;/h2&gt;
 &lt;p&gt;I had updated my Gemini PDA firmware which was showed in the
