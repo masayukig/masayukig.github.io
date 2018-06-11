@@ -1,4 +1,4 @@
-:title: X-BOWS Keyboard first impression
+:title: X-Bows Keyboard first impression
 :slug: x-bows-keyboard-first-impression
 :tags: gadget, keyboard, x-bows
 :category: gadget
