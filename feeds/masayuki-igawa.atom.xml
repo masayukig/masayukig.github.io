@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done - Masayuki Igawa</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/masayuki-igawa.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2018-06-08T00:00:00+09:00</updated><entry><title>X-BOWS Keyboard first impression</title><link href="https://igawa.io/posts/2018/06/x-bows-keyboard-first-impression/" rel="alternate"></link><published>2018-06-08T00:00:00+09:00</published><updated>2018-06-08T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2018-06-08:/posts/2018/06/x-bows-keyboard-first-impression/</id><summary type="html">&lt;img alt="X-Bows Keyboard" src="https://lh3.googleusercontent.com/A68ov2kKQgJmQLoJUeQGsbCulq_bBCfHZpt8kzkY4eQQv5MTsUJ_Txf0Xt8jFr6egW7ygxhHuGknHT3os_lqPlkxwwXAgtYTFPdpGvCAVkniUqhoxGg6temcF6n8f7KLS83UWBvIndA=w2400" /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done - Masayuki Igawa</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/masayuki-igawa.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2018-06-11T00:00:00+09:00</updated><entry><title>X-Bows Keyboard first impression (day 2)</title><link href="https://igawa.io/posts/2018/06/x-bows-keyboard-first-impression-2/" rel="alternate"></link><published>2018-06-11T00:00:00+09:00</published><updated>2018-06-11T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2018-06-11:/posts/2018/06/x-bows-keyboard-first-impression-2/</id><summary type="html">&lt;img alt="X-Bows Keyboard" src="https://lh3.googleusercontent.com/A68ov2kKQgJmQLoJUeQGsbCulq_bBCfHZpt8kzkY4eQQv5MTsUJ_Txf0Xt8jFr6egW7ygxhHuGknHT3os_lqPlkxwwXAgtYTFPdpGvCAVkniUqhoxGg6temcF6n8f7KLS83UWBvIndA=w2400" /&gt;
+&lt;p&gt;I've got the &lt;a class="reference external" href="http://www.x-bows.com/"&gt;X-Bows Mechanical Ergonomic Keyboard&lt;/a&gt;, and I'm still
+using and confusing about it now.
+Almost keys are good for me, but I'm struggle with some keys such as
+&lt;cite&gt;-, =, ), [], space, backslash, enter, backspace and B, Z, etc&lt;/cite&gt; keys
+are really annoying for me right now.&lt;/p&gt;
+&lt;p&gt;I'm using Emacs and …&lt;/p&gt;</summary><content type="html">&lt;img alt="X-Bows Keyboard" src="https://lh3.googleusercontent.com/A68ov2kKQgJmQLoJUeQGsbCulq_bBCfHZpt8kzkY4eQQv5MTsUJ_Txf0Xt8jFr6egW7ygxhHuGknHT3os_lqPlkxwwXAgtYTFPdpGvCAVkniUqhoxGg6temcF6n8f7KLS83UWBvIndA=w2400" /&gt;
+&lt;p&gt;I've got the &lt;a class="reference external" href="http://www.x-bows.com/"&gt;X-Bows Mechanical Ergonomic Keyboard&lt;/a&gt;, and I'm still
+using and confusing about it now.
+Almost keys are good for me, but I'm struggle with some keys such as
+&lt;cite&gt;-, =, ), [], space, backslash, enter, backspace and B, Z, etc&lt;/cite&gt; keys
+are really annoying for me right now.&lt;/p&gt;
+&lt;p&gt;I'm using Emacs and Ctrl+B key a lot, but I often push the Enter
+key... :(&lt;/p&gt;
+&lt;p&gt;Anyway, I need to practice to get used to it more.&lt;/p&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;
+</content><category term="gadget"></category><category term="keyboard"></category><category term="x-bows"></category></entry><entry><title>X-Bows Keyboard first impression</title><link href="https://igawa.io/posts/2018/06/x-bows-keyboard-first-impression/" rel="alternate"></link><published>2018-06-08T00:00:00+09:00</published><updated>2018-06-08T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2018-06-08:/posts/2018/06/x-bows-keyboard-first-impression/</id><summary type="html">&lt;img alt="X-Bows Keyboard" src="https://lh3.googleusercontent.com/A68ov2kKQgJmQLoJUeQGsbCulq_bBCfHZpt8kzkY4eQQv5MTsUJ_Txf0Xt8jFr6egW7ygxhHuGknHT3os_lqPlkxwwXAgtYTFPdpGvCAVkniUqhoxGg6temcF6n8f7KLS83UWBvIndA=w2400" /&gt;
 &lt;p&gt;I just got the &lt;a class="reference external" href="http://www.x-bows.com/"&gt;X-Bows Mechanical Ergonomic Keyboard&lt;/a&gt;, yeah, the
 shape is a bit weird and it's a bit annoying to get use to, actually..&lt;/p&gt;
 &lt;p&gt;However, it realized me that my hands position was really bad. And,
