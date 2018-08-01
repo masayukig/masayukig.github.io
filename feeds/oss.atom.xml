@@ -157,7 +157,7 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 続行しますか &lt;span class="o"&gt;[&lt;/span&gt;Y/n&lt;span class="o"&gt;]&lt;/span&gt;?
 取得:1 http://jp.archive.ubuntu.com/ubuntu/ maverick/main vim-runtime all &lt;span class="m"&gt;2&lt;/span&gt;:7.2.330-1ubuntu4 &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;,707kB&lt;span class="o"&gt;]&lt;/span&gt;
 取得:2 http://jp.archive.ubuntu.com/ubuntu/ maverick/main vim i386 &lt;span class="m"&gt;2&lt;/span&gt;:7.2.330-1ubuntu4 &lt;span class="o"&gt;[&lt;/span&gt;856kB&lt;span class="o"&gt;]&lt;/span&gt;
-&lt;span class="m"&gt;6&lt;/span&gt;,563kB を 4秒 で取得しました &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;,315kB/s&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="m"&gt;6&lt;/span&gt;,563kB を &lt;span class="m"&gt;4&lt;/span&gt;秒 で取得しました &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;,315kB/s&lt;span class="o"&gt;)&lt;/span&gt;
 未選択パッケージ vim-runtime を選択しています。
 &lt;span class="o"&gt;(&lt;/span&gt;データベースを読み込んでいます ... 現在 &lt;span class="m"&gt;153356&lt;/span&gt; 個のファイルとディレクトリがインストールされています。&lt;span class="o"&gt;)&lt;/span&gt;
 &lt;span class="o"&gt;(&lt;/span&gt;.../vim-runtime_2%3a7.2.330-1ubuntu4_all.deb から&lt;span class="o"&gt;)&lt;/span&gt; vim-runtime を展開しています...
