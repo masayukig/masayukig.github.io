@@ -77,9 +77,6 @@ What's done is done            </a>
                             <a href="https://igawa.io/category/misc.html">Misc</a>
                         </li>
                         <li >
-                            <a href="https://igawa.io/category/openstack.html">Openstack</a>
-                        </li>
-                        <li >
                             <a href="https://igawa.io/category/oss.html">Oss</a>
                         </li>
                         <li >
@@ -103,111 +100,6 @@ What's done is done            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            <article>
-                <h2><a href="https://igawa.io/posts/2011/07/cloud-foundry-de-scalatra-apuriwoshi-xing/">Cloud Foundry で Scalatra アプリを実行</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2011-07-02T05:43:00+09:00"> 2011-07-02</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
-
-
-
-<span class="label label-default">Tags</span>
-	<a href="https://igawa.io/tag/cloud.html">cloud</a>
-        /
-	<a href="https://igawa.io/tag/scala.html">scala</a>
-        /
-	<a href="https://igawa.io/tag/scalatra.html">scalatra</a>
-        /
-	<a href="https://igawa.io/tag/software.html">Software</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p><a href="https://picasaweb.google.com/lh/photo/yZtdpG7qkZc_OfWy78PCPw?feat=embedwebsite"><img alt="picture" src="https://lh3.googleusercontent.com/-FMIXumcTAV0/Tjr6wfSrWEI/AAAAAAAAg6M/d80dUsZSc_A/s800/5892056768_b3f93f8618_o.png">
-</a></p>
-<p>Cloud Foundry で <a href="https://github.com/scalatra/scalatra">Scalatra</a>
-アプリを実行してみます。
-Scalatra
-自体については、<a href="http://www.google.co.jp/search?q=scalatra">ググって</a>ください。
-:-P</p>
-<ol>
-<li>~~sbtをインストール
-   インストール方法は、<a href="http://b.0r2.info/?p=1508">Mac で Scala と Lift を使ってみる(1)
-    インストール編</a>に記載した通りです。
-   Linuxならばapt-getやyum等でインストールできるかもしれません。
-   Windowsはわかりませんw~~
-   下記のgit cloneでsbtも取得できるので不要</li>
-<li>
-<p>sbtアプリ作成＆テスト実行
-   <a href="https://github.com/scalatra/scalatra">Quick start (SBT
-    0.7.x)</a>に書かれている方法を実行します。</p>
-<div class="highlight"><pre><span></span>$ git clone git://github.com/scalatra/scalatra-sbt-prototype.git my-app
-$ <span class="nb">cd</span> my-app
-$ ./sbt
-&gt; update
-&gt; jetty-run
-&gt; ~prepare-webapp
-</pre></div>
-
-
-<p>で …</p></li></ol>
-<p><small><a href="https://igawa.io/posts/2011/07/cloud-foundry-de-scalatra-apuriwoshi-xing/#disqus_thread" data-disqus-identifier="cloud-foundry-de-scalatra-apuriwoshi-xing">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2011/07/cloud-foundry-de-scalatra-apuriwoshi-xing/">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://igawa.io/posts/2011/06/play-framework-de-scala-wo-shi-shitemiru/">Play framework で Scala を 試してみる</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2011-06-18T05:19:00+09:00"> 2011-06-18</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
-
-
-
-<span class="label label-default">Tags</span>
-	<a href="https://igawa.io/tag/play.html">play</a>
-        /
-	<a href="https://igawa.io/tag/scala.html">scala</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p><a href="http://www.flickr.com/photos/31362181@N08/5843344046/" title="Scala Play"><img alt="Scala
-Play" class="alignnone" src="http://farm4.static.flickr.com/3010/5843344046_490f31de82.jpg"></a></p>
-<p><a href="http://typesafe.com/">Typesafe.com</a>のページを見ていたところ、右下に、</p>
-<p><a href="http://www.flickr.com/photos/31362181@N08/5843344316/" title="for Play"><img alt="for
-Play" class="alignnone" src="http://farm4.static.flickr.com/3102/5843344316_86b19cf8ae_m.jpg"></a></p>
-<p>の、アイコン＆リンクがあるのに気づき、クリックしたところ、前述の<a href="http://scala.playframework.org/">scala.playframework.org</a>の
-Play framework Scala ページにたどり着きました。
-なんだか面白そうなので、試してみることにしました。</p>
-<p>バイナリダウンロード
-<a href="http://www.playframework.org/download">http://www.playframework.org/download</a>より、Play
-frameworkバイナリをダウンロードします。</p>
-<p><a href="http://www.flickr.com/photos/31362181@N08/5843344188/" title="Play download"><img alt="Play
-download" class="alignnone" src="http://farm6.static.flickr.com/5075/5843344188_57d2960417.jpg"></a></p>
-<p>ダウンロードファイル解凍</p>
-<div class="highlight"><pre><span></span>$ unzip Downloads/play-1.2.1.zip
-Archive:  Downloads/play-1.2.1.zip
-Play! <span class="m">1</span>.2.1
-<span class="o">(</span>省略<span class="o">)</span>
-</pre></div>
-
-
-<p>リンク作成</p>
-<div class="highlight"><pre><span></span>$ ln -s play-1 …</pre></div>
-<p><small><a href="https://igawa.io/posts/2011/06/play-framework-de-scala-wo-shi-shitemiru/#disqus_thread" data-disqus-identifier="play-framework-de-scala-wo-shi-shitemiru">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2011/06/play-framework-de-scala-wo-shi-shitemiru/">more ...</a>
-                </div>
-            </article>
-            <hr/>
             <article>
                 <h2><a href="https://igawa.io/posts/2011/06/scalasukeraburupuroguramingukotsupuben-gou-ru/">Scalaスケーラブルプログラミング（コップ本）購入</a></h2>
                     <div class="well well-sm">
@@ -249,90 +141,6 @@ Scala)</a><img alt="picture" src="http://www.assoc-amazon.jp/e/ir?t=&amp;l=as2&a
                 </div>
             </article>
             <hr/>
-            <article>
-                <h2><a href="https://igawa.io/posts/2011/06/mac-de-scala-to-lift-woshi-tsutemiru2-cloud-foundrybian/">Mac で Scala と Lift を使ってみる(2) Cloud Foundry編</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2011-06-11T06:00:00+09:00"> 2011-06-11</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
-
-
-
-<span class="label label-default">Tags</span>
-	<a href="https://igawa.io/tag/cloudfoundry.html">cloudfoundry</a>
-        /
-	<a href="https://igawa.io/tag/lift.html">lift</a>
-        /
-	<a href="https://igawa.io/tag/mac.html">Mac</a>
-        /
-	<a href="https://igawa.io/tag/scala.html">scala</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>「Mac で Scala と Lift を使ってみる」の2回目</p>
-<p>今度は、作成したアプリをCloud Foundryへpushしてみます。
-つい最近、<a href="http://cloudfoundry.com/">Cloud
-Foundry</a>が<a href="http://blog.cloudfoundry.com/post/6109591023/cloud-foundry-now-supporting-scala">Scala-Liftに対応した</a>ので可能になりました。</p>
-<p>今度は、「ゆろよろ日記」さんのサイト：
-<a href="http://d.hatena.ne.jp/yuroyoro/20080808/1218168453">http://d.hatena.ne.jp/yuroyoro/20080808/1218168453</a>
-記述を参考にしました。</p>
-<ol>
-<li>
-<p>アプリを作成</p>
-<div class="highlight"><pre><span></span>$ mvn archetype:create -U  -DarchetypeGroupId<span class="o">=</span>net.liftweb  -DarchetypeArtifactId<span class="o">=</span>lift-archetype-basic -DarchetypeVersion<span class="o">=</span><span class="m">0</span>.9  -DremoteRepositories<span class="o">=</span>http://scala-tools.org/repo-releases  -DgroupId<span class="o">=</span>org.orzlabs -DartifactId …</pre></div></li></ol>
-<p><small><a href="https://igawa.io/posts/2011/06/mac-de-scala-to-lift-woshi-tsutemiru2-cloud-foundrybian/#disqus_thread" data-disqus-identifier="mac-de-scala-to-lift-woshi-tsutemiru2-cloud-foundrybian">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2011/06/mac-de-scala-to-lift-woshi-tsutemiru2-cloud-foundrybian/">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://igawa.io/posts/2011/06/mac-de-scala-to-lift-woshi-tsutemiru1-insutorubian/">Mac で Scala と Lift を使ってみる(1) インストール編</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2011-06-10T06:06:00+09:00"> 2011-06-10</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="https://igawa.io/author/masayukig.html"><i class="fa fa-user"></i> masayukig</a>
-
-
-
-<span class="label label-default">Tags</span>
-	<a href="https://igawa.io/tag/lift.html">lift</a>
-        /
-	<a href="https://igawa.io/tag/linux.html">Linux</a>
-        /
-	<a href="https://igawa.io/tag/mac.html">Mac</a>
-        /
-	<a href="https://igawa.io/tag/scala.html">scala</a>
-        /
-	<a href="https://igawa.io/tag/software.html">Software</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>Scala と Lift が気になってきたので、インストール。
-くろだろぐさん： <a href="http://kuroda.exblog.jp/12093277/">http://kuroda.exblog.jp/12093277/</a> の記述を参考に、
-最新版っぽいscala29をインストールした。</p>
-<div class="highlight"><pre><span></span>sudo port selfupdate
-sudo port upgrade outdated
-sudo port install scala28 scala29 maven2
-sudo port select --set maven maven2
-sudo scala_select scala29
-scala -version
-sudo port install sbt
-mvn archetype:generate -U
--DarchetypeGroupId=net.liftweb
--DarchetypeArtifactId=lift-archetype-basic_2 …</pre></div>
-<p><small><a href="https://igawa.io/posts/2011/06/mac-de-scala-to-lift-woshi-tsutemiru1-insutorubian/#disqus_thread" data-disqus-identifier="mac-de-scala-to-lift-woshi-tsutemiru1-insutorubian">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://igawa.io/posts/2011/06/mac-de-scala-to-lift-woshi-tsutemiru1-insutorubian/">more ...</a>
-                </div>
-            </article>
-            <hr/>
 
         </div>
         <div class="col-sm-3" id="sidebar">
@@ -363,7 +171,7 @@ mvn archetype:generate -U
 <li class="list-group-item">
   <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
   <ul class="list-group" id="recentposts">
-    <li class="list-group-item"><a href="https://igawa.io/posts/2011/07/cloud-foundry-de-scalatra-apuriwoshi-xing/">Cloud Foundry で Scalatra アプリを実行</a></li>
+    <li class="list-group-item"><a href="https://igawa.io/posts/2011/06/scalasukeraburupuroguramingukotsupuben-gou-ru/">Scalaスケーラブルプログラミング（コップ本）購入</a></li>
   </ul>
 </li>
 <!-- End Sidebar/Recent Posts -->
@@ -379,43 +187,82 @@ mvn archetype:generate -U
       <a href="https://igawa.io/tag/pc.html">PC</a>
     </li>
     <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/mac.html">Mac</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/work.html">work</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/iphone-3gs.html">iPhone 3GS</a>
+    </li>
+    <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/wei-fen-lei.html">未分類</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/apple.html">Apple</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/linux.html">Linux</a>
     </li>
     <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/ipad.html">iPad</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/entertainments.html">entertainments</a>
+      <a href="https://igawa.io/tag/iphone-3g-s.html">iPhone 3G S</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/game.html">game</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/net.html">net</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/twitter.html">twitter</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/apple.html">Apple</a>
     </li>
     <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/iphone.html">iPhone</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/android.html">Android</a>
+      <a href="https://igawa.io/tag/xie-zhen.html">写真</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/sakura.html">さくら</a>
+      <a href="https://igawa.io/tag/sakura.html">sakura</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/vps.html">VPS</a>
+      <a href="https://igawa.io/tag/entertainments.html">entertainments</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/xperia.html">Xperia</a>
+      <a href="https://igawa.io/tag/software.html">Software</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/oss.html">oss</a>
+      <a href="https://igawa.io/tag/lion.html">lion</a>
     </li>
     <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/ojin.html">お金</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/net.html">net</a>
+      <a href="https://igawa.io/tag/xperia.html">Xperia</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/openstack.html">openstack</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/os.html">OS</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/spam.html">SPAM</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/life_health.html">life_health</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/vps.html">VPS</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/oss.html">oss</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/linux.html">Linux</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://igawa.io/tag/android.html">Android</a>
     </li>
     <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/kindle.html">Kindle</a>
@@ -429,59 +276,53 @@ mvn archetype:generate -U
     <li class="list-group-item tag-2">
       <a href="https://igawa.io/tag/science.html">science</a>
     </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/life_health.html">life_health</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/iphone-3g-s.html">iPhone 3G S</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/game.html">game</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/work.html">work</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/software.html">Software</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/fedora.html">Fedora</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/iphone-3gs.html">iPhone 3GS</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/spam.html">SPAM</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/twitter.html">twitter</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/os.html">OS</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/mac.html">Mac</a>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/x-bows.html">x-bows</a>
     </li>
     <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/lvm.html">LVM</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/life-hack.html">life hack</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/nex-5n.html">nex-5n</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/konosaito.html">このサイト</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/scala.html">scala</a>
+      <a href="https://igawa.io/tag/nex-5nd.html">nex-5nd</a>
     </li>
     <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/kvm.html">KVM</a>
     </li>
     <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/crashplan.html">crashplan</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/sony.html">sony</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/tips.html">tips</a>
+    </li>
+    <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/ifttt.html">ifttt</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/book.html">book</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/konosaitonoshi.html">このサイトの事</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/backup.html">backup</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/english.html">english</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/lvm.html">LVM</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/c.html">C++</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/gps.html">GPS</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/nex-5n.html">nex-5n</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/development.html">development</a>
     </li>
     <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/ubuntu.html">Ubuntu</a>
@@ -493,184 +334,151 @@ mvn archetype:generate -U
       <a href="https://igawa.io/tag/dropbox.html">dropbox</a>
     </li>
     <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/du-shu.html">読書</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/food.html">food</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/blogger.html">blogger</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/backup.html">backup</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/lion.html">lion</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/crashplan.html">crashplan</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/tips.html">tips</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/wu-yu.html">物欲</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/gadget.html">gadget</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/konosaitonoshi.html">このサイトの事</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/english.html">english</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/apuri.html">アプリ</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/spmodo.html">SPモード</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/cyan-yu.html">C言語</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/evernote.html">evernote</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/unixbench.html">unixbench</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/hua-xiang.html">画像</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/openstack.html">openstack</a>
+      <a href="https://igawa.io/tag/career.html">career</a>
     </li>
     <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/blog.html">blog</a>
     </li>
     <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/c.html">C++</a>
+      <a href="https://igawa.io/tag/evernote.html">evernote</a>
     </li>
     <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/benchmark.html">benchmark</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/career.html">career</a>
+      <a href="https://igawa.io/tag/shi-shi.html">仕事</a>
     </li>
     <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/she-hui.html">社会</a>
     </li>
     <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/life-hack.html">life hack</a>
+    </li>
+    <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/she-ding.html">設定</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/fedora11.html">Fedora11</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/du-shu.html">読書</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/sheng-huo.html">生活</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/konosaito.html">このサイト</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/ipad2.html">ipad2</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/opensuse.html">opensuse</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/blogger.html">blogger</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/camera.html">camera</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/food.html">food</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/fedora.html">Fedora</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/wu-yu.html">物欲</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/apuri.html">アプリ</a>
     </li>
     <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/kamera.html">カメラ</a>
     </li>
     <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/xie-zhen.html">写真</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/sheng-huo.html">生活</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/bian-naxie-zhen.html">変な写真</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/vim.html">vim</a>
-    </li>
-    <li class="list-group-item tag-4">
       <a href="https://igawa.io/tag/xfs.html">xfs</a>
     </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/nex-5nd.html">nex-5nd</a>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/github.html">github</a>
     </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/sony.html">sony</a>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/simple-massager.html">Simple-Massager</a>
     </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/shi-shi.html">仕事</a>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/gmail.html">Gmail</a>
     </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/opensuse.html">opensuse</a>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/cyan-yu.html">C言語</a>
     </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/keyboard.html">keyboard</a>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/firefox.html">Firefox</a>
     </li>
-    <li class="list-group-item tag-4">
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/gadget.html">gadget</a>
+    </li>
+    <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/uroad-7000.html">UROAD-7000</a>
     </li>
-    <li class="list-group-item tag-4">
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/coreserverjp.html">coreserver.jp</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/keyboard.html">keyboard</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/bian-naxie-zhen.html">変な写真</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/hua-xiang.html">画像</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://igawa.io/tag/spmodo.html">SPモード</a>
+    </li>
+    <li class="list-group-item tag-3">
       <a href="https://igawa.io/tag/saba.html">サーバ</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/konosaitonokoto.html">このサイトのこと</a>
+      <a href="https://igawa.io/tag/talk.html">talk</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/retrospective.html">retrospective</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/team.html">team</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/iphone5.html">iPhone5</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/openstack-health.html">openstack-health</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/python.html">python</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/sheng-wu.html">生物</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/conference.html">conference</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/gemini.html">gemini</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/education.html">education</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://igawa.io/tag/ptg.html">ptg</a>
     </li>
     <li class="list-group-item tag-4">
       <a href="https://igawa.io/tag/nexus7.html">nexus7</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/rpm.html">rpm</a>
+      <a href="https://igawa.io/tag/withings.html">withings</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/camera.html">camera</a>
+      <a href="https://igawa.io/tag/bio.html">bio</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/oming-qian-com.html">お名前.com</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/kernel.html">kernel</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/gmail.html">Gmail</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/vagrant.html">vagrant</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/hdd.html">HDD</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/x-bows.html">x-bows</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/fedora11.html">Fedora11</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/simple-massager.html">Simple-Massager</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/lift.html">lift</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/apache.html">apache</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/sabaguan-li.html">サーバ管理</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/gps.html">GPS</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/book.html">book</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/firefox.html">Firefox</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/ipad2.html">ipad2</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/coreserverjp.html">coreserver.jp</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/development.html">development</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/github.html">github</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/timemachine.html">timemachine</a>
+      <a href="https://igawa.io/tag/windows8.html">windows8</a>
     </li>
   </ul>
 </li>
