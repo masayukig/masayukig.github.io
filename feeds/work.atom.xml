@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done - Work</title><link href="/" rel="alternate"></link><link href="https://igawa.io/feeds/work.atom.xml" rel="self"></link><id>/</id><updated>2017-09-18T00:00:00+09:00</updated><entry><title>Retrospective for PTG in Denver 2017</title><link href="/posts/2017/09/retrospective-denver-ptg-2017/" rel="alternate"></link><published>2017-09-18T00:00:00+09:00</published><updated>2017-09-18T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:None,2017-09-18:/posts/2017/09/retrospective-denver-ptg-2017/</id><summary type="html">&lt;p&gt;I'd like to run a retrospective myself against the PTG in Denver, briefly.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>What's done is done - Work</title><link href="https://igawa.io/" rel="alternate"></link><link href="https://igawa.io/feeds/work.atom.xml" rel="self"></link><id>https://igawa.io/</id><updated>2017-09-18T00:00:00+09:00</updated><entry><title>Retrospective for PTG in Denver 2017</title><link href="https://igawa.io/posts/2017/09/retrospective-denver-ptg-2017/" rel="alternate"></link><published>2017-09-18T00:00:00+09:00</published><updated>2017-09-18T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-09-18:/posts/2017/09/retrospective-denver-ptg-2017/</id><summary type="html">&lt;p&gt;I'd like to run a retrospective myself against the PTG in Denver, briefly.&lt;/p&gt;
 &lt;div class="section" id="positive"&gt;
 &lt;h2&gt;Positive&lt;/h2&gt;
 &lt;ul class="simple"&gt;
@@ -42,10 +42,10 @@
 &lt;li&gt;book more relaxing flights next&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</content><category term="Work"></category><category term="work"></category><category term="oss"></category><category term="openstack"></category><category term="development"></category><category term="conference"></category><category term="ptg"></category></entry><entry><title>初めてのOpenStackリポジトリ追加</title><link href="/posts/2016/12/adding-a-new-repo-to-openstack/" rel="alternate"></link><published>2016-12-17T00:00:00+09:00</published><updated>2016-12-17T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:None,2016-12-17:/posts/2016/12/adding-a-new-repo-to-openstack/</id><summary type="html">&lt;p&gt;これは、 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; のエントリです。&lt;/p&gt;
+</content><category term="Work"></category><category term="work"></category><category term="oss"></category><category term="openstack"></category><category term="development"></category><category term="conference"></category><category term="ptg"></category></entry><entry><title>初めてのOpenStackリポジトリ追加</title><link href="https://igawa.io/posts/2016/12/adding-a-new-repo-to-openstack/" rel="alternate"></link><published>2016-12-17T00:00:00+09:00</published><updated>2016-12-17T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2016-12-17:/posts/2016/12/adding-a-new-repo-to-openstack/</id><summary type="html">&lt;p&gt;これは、 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; のエントリです。&lt;/p&gt;
 &lt;p&gt;先日、OpenStack に新たなリポジトリを追加したので、そのときに感じたことや経験を共有し …&lt;/p&gt;</summary><content type="html">&lt;p&gt;これは、 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; のエントリです。&lt;/p&gt;
 &lt;p&gt;先日、OpenStack に新たなリポジトリを追加したので、そのときに感じたことや経験を共有してみたいと思います。&lt;/p&gt;
-&lt;div class="section" id="section-1"&gt;
+&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;ナニを追加したのか？&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://launchpad.net/coverage2sql"&gt;coverage2sql&lt;/a&gt;&lt;/li&gt;
@@ -63,7 +63,7 @@
 思いますが、新しいリポジトリを追加した経験は、もしかしたら誰かの役に立つかもしれないと思い、共有します。&lt;/p&gt;
 &lt;p&gt;なお、似たようなツールとして &lt;a class="reference external" href="https://launchpad.net/subunit2sql"&gt;subunit2sql&lt;/a&gt; と言うものがあるのですが、それにインスパイアされて作りました。&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-2"&gt;
+&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;新しいリポジトリの追加方法&lt;/h2&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://docs.openstack.org/infra/manual/creators.html"&gt;Project Creator's Guide&lt;/a&gt; をまずは読みます。ステップ・バイ・ステップで丁寧に説明された
 ドキュメントです。このとおりやっていれば、あまり迷うことも無いと思います。&lt;/p&gt;
@@ -78,7 +78,7 @@
 # ...&lt;/p&gt;
 &lt;p&gt;という感じになると思います。&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-3"&gt;
+&lt;div class="section" id="id3"&gt;
 &lt;h2&gt;ドキュメントに書いてないこと&lt;/h2&gt;
 &lt;p&gt;ドキュメントのとおりに進んでいって、特に困ったことにはならなかったので、あまりないですね。強いて言えば、&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -90,7 +90,7 @@
 &lt;/ul&gt;
 &lt;p&gt;くらいでしょうか。&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-4"&gt;
+&lt;div class="section" id="id5"&gt;
 &lt;h2&gt;感想・まとめ&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;リポジトリ追加は比較的カンタン&lt;/li&gt;
@@ -111,7 +111,7 @@
 &lt;/ul&gt;
 &lt;p&gt;Happy Hacking!&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="Work"></category><category term="work"></category><category term="oss"></category><category term="openstack"></category><category term="development"></category></entry><entry><title>転職は良い選択だった</title><link href="/posts/2016/12/moving-company-is-better-choice/" rel="alternate"></link><published>2016-12-05T00:00:00+09:00</published><updated>2016-12-05T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:None,2016-12-05:/posts/2016/12/moving-company-is-better-choice/</id><summary type="html">&lt;p&gt;本エントリは「 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; 」の 12/5 分です。&lt;/p&gt;
+</content><category term="Work"></category><category term="work"></category><category term="oss"></category><category term="openstack"></category><category term="development"></category></entry><entry><title>転職は良い選択だった</title><link href="https://igawa.io/posts/2016/12/moving-company-is-better-choice/" rel="alternate"></link><published>2016-12-05T00:00:00+09:00</published><updated>2016-12-05T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2016-12-05:/posts/2016/12/moving-company-is-better-choice/</id><summary type="html">&lt;p&gt;本エントリは「 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; 」の 12/5 分です。&lt;/p&gt;
 &lt;p&gt;先日(2ヶ月弱前)、 &lt;a class="reference external" href="../../10/dps-forever"&gt;少々刺激的なエントリ&lt;/a&gt; を投下しましたが、現在の気持ちを少し述 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;本エントリは「 &lt;a class="reference external" href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; 」の 12/5 分です。&lt;/p&gt;
 &lt;p&gt;先日(2ヶ月弱前)、 &lt;a class="reference external" href="../../10/dps-forever"&gt;少々刺激的なエントリ&lt;/a&gt; を投下しましたが、現在の気持ちを少し述べてみたいと思います。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;結論：転職は良い選択だった&lt;/strong&gt;&lt;/p&gt;
@@ -138,7 +138,7 @@
 &lt;li&gt;技術・英語スキルを伸ばせば、次に繋げることができる。&lt;/li&gt;
 &lt;li&gt;今いる会社でやりたいことをやるには、そのために色々と動く必要があり、自分のやりたいことをやるまでに、色々大変そう。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="section" id="section-1"&gt;
+&lt;div class="section" id="id3"&gt;
 &lt;h2&gt;ヨカッタと思うこと&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;英語スキルが多少上がった（気がする）&lt;/li&gt;
@@ -150,7 +150,7 @@
 &lt;li&gt;給料(微)増&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-2"&gt;
+&lt;div class="section" id="id4"&gt;
 &lt;h2&gt;イマイチだったと思うこと&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;英語スキルを想定よりも向上できてない&lt;/li&gt;
@@ -161,7 +161,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-3"&gt;
+&lt;div class="section" id="id5"&gt;
 &lt;h2&gt;まとめ&lt;/h2&gt;
 &lt;p&gt;総合的には、転職して「良かった」と思っています。&lt;/p&gt;
 &lt;p&gt;確かに、想定外のことや「イマイチだったなー」と思うことはあるものの、
@@ -174,7 +174,7 @@
 &lt;/ul&gt;
 &lt;p&gt;もっと詳しく聞きたいという方がいたら、ご連絡ください :)&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="Work"></category><category term="work"></category><category term="oss"></category><category term="team"></category><category term="career"></category></entry><entry><title>OpenStack-Health updates</title><link href="/posts/2016/10/openstack-health-updates/" rel="alternate"></link><published>2016-10-19T00:00:00+09:00</published><updated>2016-10-19T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:None,2016-10-19:/posts/2016/10/openstack-health-updates/</id><summary type="html">&lt;p&gt;本日、&lt;a class="reference external" href="http://git.openstack.org/cgit/openstack/openstack-health"&gt;OpenStack-Health&lt;/a&gt; のパッチをいくつかApproveしました。&lt;/p&gt;
+</content><category term="Work"></category><category term="work"></category><category term="oss"></category><category term="team"></category><category term="career"></category></entry><entry><title>OpenStack-Health updates</title><link href="https://igawa.io/posts/2016/10/openstack-health-updates/" rel="alternate"></link><published>2016-10-19T00:00:00+09:00</published><updated>2016-10-19T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2016-10-19:/posts/2016/10/openstack-health-updates/</id><summary type="html">&lt;p&gt;本日、&lt;a class="reference external" href="http://git.openstack.org/cgit/openstack/openstack-health"&gt;OpenStack-Health&lt;/a&gt; のパッチをいくつかApproveしました。&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://review.openstack.org/#/c/363934/"&gt;Add base utilities for canvas charts&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://review.openstack.org/#/c/380884/"&gt;Add canvas line chart&lt;/a&gt;&lt;/li&gt;
@@ -202,17 +202,17 @@
 &lt;p&gt;以下が OpenStack-Health の画面です。って、&lt;a class="reference external" href="http://status.openstack.org/openstack-health/"&gt;http://status.openstack.org/openstack-health/&lt;/a&gt; にアクセスすれば、
 誰でも見られます :)&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
-&lt;img alt="OpenStack-Health" src="/images/openstack-health-2016-10-19.png" /&gt;
+&lt;img alt="OpenStack-Health" src="https://igawa.io/images/openstack-health-2016-10-19.png" /&gt;
 &lt;p&gt;Happy Hacking!&lt;/p&gt;
-</content><category term="Work"></category><category term="work"></category><category term="oss"></category><category term="openstack"></category><category term="openstack-health"></category></entry><entry><title>チーム解散?!</title><link href="/posts/2016/10/dps-forever/" rel="alternate"></link><published>2016-10-18T00:00:00+09:00</published><updated>2016-10-22T15:41:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:None,2016-10-18:/posts/2016/10/dps-forever/</id><summary type="html">&lt;div class="section" id="section-1"&gt;
+</content><category term="Work"></category><category term="work"></category><category term="oss"></category><category term="openstack"></category><category term="openstack-health"></category></entry><entry><title>チーム解散?!</title><link href="https://igawa.io/posts/2016/10/dps-forever/" rel="alternate"></link><published>2016-10-18T00:00:00+09:00</published><updated>2016-10-22T15:41:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2016-10-18:/posts/2016/10/dps-forever/</id><summary type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;追記&lt;/h2&gt;
 &lt;p&gt;以下は、あくまで私が所属しているチーム(OpenStack, OSSをアップストリームで開発)についてのみ言及しています。
-それ以 …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+それ以 …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;追記&lt;/h2&gt;
 &lt;p&gt;以下は、あくまで私が所属しているチーム(OpenStack, OSSをアップストリームで開発)についてのみ言及しています。
 それ以外のHelion開発その他については言及していません。誤解のなきよう。&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-2"&gt;
+&lt;div class="section" id="id3"&gt;
 &lt;h2&gt;オリジナル&lt;/h2&gt;
 &lt;p&gt;&lt;a class="reference external" href="../../10/oss-programmer-part2"&gt;oss-programmer-part2&lt;/a&gt; にて:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -252,7 +252,7 @@ Upstream活動を継続したりしています。ただし、チームの活動
 &lt;p&gt;そのため、今後の身の振り方も含めて考えなきゃいけないな、と思っています。&lt;/p&gt;
 &lt;p&gt;では、最後の気分転換にコスモスの写真をご覧ください。&lt;/p&gt;
 &lt;a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/masayun/30296689256/in/datetaken/" title="#cosmos #flowers"&gt;&lt;img src="https://c1.staticflickr.com/9/8269/30296689256_973a38e686_n.jpg" width="320" height="320" alt="#cosmos #flowers"&gt;&lt;/a&gt;&lt;script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/div&gt;
-</content><category term="Work"></category><category term="work"></category><category term="oss"></category><category term="english"></category><category term="career"></category><category term="openstack"></category></entry><entry><title>あなたの知らないOSSプログラマの世界 - part 2</title><link href="/posts/2016/10/oss-programmer-part2/" rel="alternate"></link><published>2016-10-18T00:00:00+09:00</published><updated>2016-10-18T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:None,2016-10-18:/posts/2016/10/oss-programmer-part2/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="../../06/oss-programmer-part1"&gt;oss-programmer-part1&lt;/a&gt; の続き&lt;/p&gt;
+</content><category term="Work"></category><category term="work"></category><category term="oss"></category><category term="english"></category><category term="career"></category><category term="openstack"></category></entry><entry><title>あなたの知らないOSSプログラマの世界 - part 2</title><link href="https://igawa.io/posts/2016/10/oss-programmer-part2/" rel="alternate"></link><published>2016-10-18T00:00:00+09:00</published><updated>2016-10-18T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2016-10-18:/posts/2016/10/oss-programmer-part2/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="../../06/oss-programmer-part1"&gt;oss-programmer-part1&lt;/a&gt; の続き&lt;/p&gt;
 &lt;p&gt;前回:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 次回は仕事内容、コミュニケーションの様子などを書きたいと思います。
@@ -264,7 +264,7 @@ Upstream活動を継続したりしています。ただし、チームの活動
 &lt;/pre&gt;
 &lt;p&gt;と、書いておいてしばらく経ってしまいました。
 気になってる人がいないとも限らないので、書いてみたいと思います。&lt;/p&gt;
-&lt;div class="section" id="section-1"&gt;
+&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;コミュニケーションの様子&lt;/h2&gt;
 &lt;p&gt;HPEは外資系の会社なので、社内のシステムやメールなどは英語が主ですが、日本にいる社員の大半は日本人なので、
 日本オフィスは、日本語が共通語になっているようです。&lt;/p&gt;
@@ -278,7 +278,7 @@ Upstream活動を継続したりしています。ただし、チームの活動
 &lt;p&gt;また、もともと人見知り(!)でコミュニケーションは苦手な部分があるので、なかなか会話に入っていけません。
 それでも、どうにかなってるのは、テキストでの会話（IRC, E-mail）のお陰かなと思います。&lt;/p&gt;
 &lt;p&gt;この辺は、自分の中の要改善項目です。&lt;/p&gt;
-&lt;div class="section" id="section-2"&gt;
+&lt;div class="section" id="id2"&gt;
 &lt;h3&gt;テキスト&lt;/h3&gt;
 &lt;p&gt;というわけで私はテキストでの会話が主です。タイムゾーン問題、英語力、などのことを考慮すると、
 テキストでの会話が便利です。&lt;/p&gt;
@@ -315,16 +315,16 @@ IRCはリアルタイム性が高いので、やり取りがけっこう大変�
 &lt;p&gt;「重要な通知」は、メールやIRCだけで伝えるべき内容ではないものですね。チームの行く末とか。
 こちらについてはまた別途。&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-3"&gt;
+&lt;div class="section" id="id3"&gt;
 &lt;h4&gt;各種イベント&lt;/h4&gt;
 &lt;p&gt;OpenStack Summit等、各種イベントで各国に散らばってるメンバーが集まることもあるので、
 一緒にお昼ごはんに行ったり、夜飲んだりとかありました。&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-4"&gt;
+&lt;div class="section" id="id4"&gt;
 &lt;h2&gt;仕事内容について&lt;/h2&gt;
-&lt;div class="section" id="section-5"&gt;
+&lt;div class="section" id="id5"&gt;
 &lt;h3&gt;体制&lt;/h3&gt;
 &lt;p&gt;チームには日本人は私しかおらず、日本で作業しているのも私のみです。
 直属のマネージャはオーストラリアにおり、タイムゾーンが近いこともあって、IRCなどで会話をすることが多いです。
@@ -334,7 +334,7 @@ IRCはリアルタイム性が高いので、やり取りがけっこう大変�
 ですね。ただ、IRCのミーティングに参加したりすることもあり、非常に上下の風通しは良いんじゃないかと感じます。
 変な上下意識が見えないのが心地よく感じます。（もちろん、役割はしっかり意識されています。）&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-6"&gt;
+&lt;div class="section" id="id6"&gt;
 &lt;h3&gt;外資系企業について&lt;/h3&gt;
 &lt;p&gt;当初思っていたよりも、ずっと個人を重視してくれているように思います。
 (身の回りの10ヶ月弱くらいの感想です。)&lt;/p&gt;
@@ -347,14 +347,14 @@ IRCはリアルタイム性が高いので、やり取りがけっこう大変�
 &lt;p&gt;(でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。
 が、それはまた別途書きたいと思います。)&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-7"&gt;
+&lt;div class="section" id="id7"&gt;
 &lt;h3&gt;作業内容&lt;/h3&gt;
 &lt;p&gt;基本的にはOpenStack関連コードの読み書き・レビューしてます。
 イベントでの発表などがあれば、その準備も。&lt;/p&gt;
 &lt;p&gt;最近はopenstack-healthというコンポーネントに注力して作業してます。フロントエンドがAngularJSなので、
 かなり刺激的。悪戦苦闘の日々です。&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-8"&gt;
+&lt;div class="section" id="id8"&gt;
 &lt;h3&gt;作業場所&lt;/h3&gt;
 &lt;p&gt;大島 日本法人本社８階 食堂で作業してます。景色がいいし、比較的静か（心地よいノイズ）があるのでいい感じで
 作業できてます。&lt;/p&gt;
@@ -368,15 +368,15 @@ IRCはリアルタイム性が高いので、やり取りがけっこう大変�
 &lt;p&gt;Happy Hacking!&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="Work"></category><category term="work"></category><category term="oss"></category><category term="english"></category><category term="career"></category><category term="openstack"></category></entry><entry><title>あなたの知らないOSSプログラマの世界 - part 1</title><link href="/posts/2016/06/oss-programmer-part1/" rel="alternate"></link><published>2016-06-03T00:00:00+09:00</published><updated>2016-06-03T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:None,2016-06-03:/posts/2016/06/oss-programmer-part1/</id><summary type="html">&lt;div class="section" id="section-1"&gt;
+</content><category term="Work"></category><category term="work"></category><category term="oss"></category><category term="english"></category><category term="career"></category><category term="openstack"></category></entry><entry><title>あなたの知らないOSSプログラマの世界 - part 1</title><link href="https://igawa.io/posts/2016/06/oss-programmer-part1/" rel="alternate"></link><published>2016-06-03T00:00:00+09:00</published><updated>2016-06-03T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2016-06-03:/posts/2016/06/oss-programmer-part1/</id><summary type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;概要&lt;/h2&gt;
 &lt;p&gt;　「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が
-多いか …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="section-1"&gt;
+多いか …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;概要&lt;/h2&gt;
 &lt;p&gt;　「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が
 多いかなと思い、こんなブログを書いてみました。&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-2"&gt;
+&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;想定読者&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;オープンソース開発で飯食っていけるの！？と思っている人&lt;/li&gt;
@@ -384,7 +384,7 @@ IRCはリアルタイム性が高いので、やり取りがけっこう大変�
 &lt;li&gt;「外資系」ってどういうところなのか知りたい&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-3"&gt;
+&lt;div class="section" id="id3"&gt;
 &lt;h2&gt;結論&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;技術力だけじゃない&lt;/li&gt;
@@ -392,7 +392,7 @@ IRCはリアルタイム性が高いので、やり取りがけっこう大変�
 &lt;li&gt;英語大事&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-4"&gt;
+&lt;div class="section" id="id4"&gt;
 &lt;h2&gt;自己紹介&lt;/h2&gt;
 &lt;p&gt;　現在Hewlett Packard Enterprise/日本ヒューレット・パッカード所属です。OpenStack開発者で、
 主にQAを担当しています。日本で作業していますが、日本人は私一人です。他のメンバーは全て海外にいます。
@@ -403,7 +403,7 @@ IRCはリアルタイム性が高いので、やり取りがけっこう大変�
 (ほぼマグレで)800点でした。最近は受けてませんが、そんなに大きな違いは無いかと思います。
 （TOEICをある程度知っている方はどの程度なのか想像がつくのではないでしょうか...）&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-5"&gt;
+&lt;div class="section" id="id5"&gt;
 &lt;h2&gt;技術力だけじゃない&lt;/h2&gt;
 &lt;p&gt;　まずはじめに。私はスーパー(ハカー|プログラマ|デベロッパ)と呼ばれるほどの技術は持ってません。技術力は
 「並」くらいはあるとは思いたいですが、突出しているわけではありません。周りのOpenStack開発者をざっと
@@ -433,7 +433,7 @@ IRCはリアルタイム性が高いので、やり取りがけっこう大変�
 有しておきたいこと、困ってることなどを相談する場になっています。もちろん、社内の必須教育、事務処理フォロ
 ーなどはありますが、それほど多いとは感じません。&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-6"&gt;
+&lt;div class="section" id="id6"&gt;
 &lt;h2&gt;４０歳でも（転職）初体験できる&lt;/h2&gt;
 &lt;p&gt;　私、今、４０歳です。日本のIT業界一般常識から考えると頭の良いキャリア選択ではなかったかなとも思っていま
 す。日本のIT業界的には、&lt;/p&gt;
@@ -465,7 +465,7 @@ IRCはリアルタイム性が高いので、やり取りがけっこう大変�
 敗退。自己主張、アピールが足りなかったんだろうなと思う。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-7"&gt;
+&lt;div class="section" id="id7"&gt;
 &lt;h2&gt;英語大事&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;学生のうちから本気で取り組むべき。&lt;/li&gt;
@@ -474,7 +474,7 @@ IRCはリアルタイム性が高いので、やり取りがけっこう大変�
 &lt;p&gt;まだまだ英語苦手なので、コミュニケーションに日本語の3倍以上の時間と労力がかかりますが、この労力をなんとか
 小さくしていくべく、トレーニングの毎日です。&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="section-8"&gt;
+&lt;div class="section" id="id8"&gt;
 &lt;h2&gt;次回予告&lt;/h2&gt;
 &lt;p&gt;次回は仕事内容、コミュニケーションの様子などを書きたいと思います。&lt;/p&gt;
 &lt;p&gt;Happy Hacking!&lt;/p&gt;
