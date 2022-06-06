@@ -1,4 +1,6 @@
-:title: オーストラリアメンバー最終日
+オーストラリアメンバー最終日
+============================
+
 :slug: never-say-goodbye
 :tags: work, oss, openstack, team
 :category: Work

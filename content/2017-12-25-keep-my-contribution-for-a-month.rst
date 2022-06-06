@@ -1,4 +1,6 @@
-:title: Keeping my contribution during a month
+Keeping my contribution during a month
+++++++++++++++++++++++++++++++++++++++
+
 :slug: keep-contribution-during-a-month
 :tags: oss, github
 :category: OSS

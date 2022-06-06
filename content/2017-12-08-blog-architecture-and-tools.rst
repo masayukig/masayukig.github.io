@@ -1,4 +1,6 @@
-:title: The architecture of this blog
+The architecture of this blog
++++++++++++++++++++++++++++++
+
 :slug: blog-architecture-and-tools
 :tags: oss, blog
 :category: Misc

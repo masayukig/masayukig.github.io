@@ -1,4 +1,6 @@
-:title: 初めてのOpenStackリポジトリ追加
+初めてのOpenStackリポジトリ追加
+===============================
+
 :slug: adding-a-new-repo-to-openstack
 :tags: work, oss, openstack, development
 :category: Work

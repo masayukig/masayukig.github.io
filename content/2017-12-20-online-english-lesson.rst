@@ -1,4 +1,6 @@
-:title: Comparing Online English Lesson
+Comparing Online English Lesson
++++++++++++++++++++++++++++++++
+
 :slug: comparing-online-english-lesson
 :tags: english, education
 :category: English

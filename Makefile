@@ -65,16 +65,18 @@ regenerate:
 
 serve:
 ifdef PORT
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server $(PORT)
+	$(PELICAN) -l $(PORT) -o $(OUTPUTDIR)
 else
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server
+	$(PELICAN) -l -o $(OUTPUTDIR)
 endif
 
 devserver:
 ifdef PORT
-	$(BASEDIR)/develop_server.sh restart $(PORT)
+	$(PELICAN) -lr $(PORT) -o $(OUTPUTDIR)
+#	$(BASEDIR)/develop_server.sh restart $(PORT)
 else
-	$(BASEDIR)/develop_server.sh restart
+#	$(BASEDIR)/develop_server.sh restart
+	$(PELICAN) -lr -o $(OUTPUTDIR)
 endif
 
 stopserver:

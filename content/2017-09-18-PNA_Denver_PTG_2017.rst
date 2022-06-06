@@ -1,4 +1,6 @@
-:title: Retrospective for PTG in Denver 2017
+Retrospective for PTG in Denver 2017
+++++++++++++++++++++++++++++++++++++
+
 :slug: retrospective-denver-ptg-2017
 :tags: work, oss, openstack, development, conference, ptg
 :category: Work

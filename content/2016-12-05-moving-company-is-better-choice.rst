@@ -1,4 +1,6 @@
-:title: 転職は良い選択だった
+転職は良い選択だった
+====================
+
 :slug: moving-company-is-better-choice
 :tags: work, oss, team, career
 :category: Work

@@ -1,4 +1,6 @@
-:title: Retrospective 2018-05-10
+Retrospective 2018-05-10
+========================
+
 :slug: retrospective-2018-05-10
 :tags: oss, retrospective
 :category: process

@@ -1,4 +1,6 @@
-:title: Low Carb Diet - part1
+Low Carb Diet - part1
+---------------------
+
 :slug: low-carb-diet-part1
 :tags: diet, diabetes, low-carb
 :category: health

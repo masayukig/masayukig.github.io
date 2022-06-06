@@ -1,4 +1,5 @@
-:title: Presentations
+Presentations
+-------------
 
 These are my public speaking/writing list.
 

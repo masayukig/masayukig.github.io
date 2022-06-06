@@ -1,4 +1,6 @@
-:title: Snapper
+Snapper
+=======
+
 :slug: snapper
 :tags: oss, opensuse
 :category: OSS

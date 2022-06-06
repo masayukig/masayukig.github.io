@@ -1,4 +1,6 @@
-:title: Learning English
+Learning English
+++++++++++++++++
+
 :slug: learning-english
 :tags: oss, blog
 :category: English

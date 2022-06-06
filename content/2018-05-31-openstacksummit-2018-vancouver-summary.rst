@@ -1,4 +1,6 @@
-:title: OpenStack Summit 2018 Vancouver Summary from QA perspective
+OpenStack Summit 2018 Vancouver Summary from QA perspective
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 :slug: openstack-summit-2018-yvr-qa
 :tags: oss, summary, openstack, summit
 :category: oss
@@ -12,11 +14,11 @@ Introduction
 This is a summary of the OpenStack Summit 2018 Vancouver from the QA
 perspective. I had three subject to attend the summit.
 
-0. To participate the OpenStack Upstream Institute
-1. To attend the forum sessions (mainly QA related) and have
+1. To participate the OpenStack Upstream Institute
+2. To attend the forum sessions (mainly QA related) and have
    conversations with QA people
-2. To give talks at the lightning talk and the QA forum session
-3. To meet and say hello in person and/or have lunch/dinner/drinks
+3. To give talks at the lightning talk and the QA forum session
+4. To meet and say hello in person and/or have lunch/dinner/drinks
 
 
 QA Summary

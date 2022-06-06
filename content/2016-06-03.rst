@@ -1,4 +1,6 @@
-:title: あなたの知らないOSSプログラマの世界 - part 1
+あなたの知らないOSSプログラマの世界 - part 1
+--------------------------------------------
+
 :slug: oss-programmer-part1
 :tags: work, oss, english, career, openstack
 :category: Work

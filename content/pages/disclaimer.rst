@@ -1,4 +1,5 @@
-:title: DISCLAIMER
+DISCLAIMER
+==========
 
 These blog posts are my own opinion.
 

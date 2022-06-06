@@ -1,4 +1,6 @@
-:title: チーム解散?!
+チーム解散?!
+============
+
 :slug: dps-forever
 :tags: work, oss, english, career, openstack
 :category: Work

@@ -1,4 +1,6 @@
-:title: Restore Gemini PDA Firmware
+Restore Gemini PDA Firmware
+===========================
+
 :slug: restore-gemini-pda-firmware
 :tags: gadget, oss, gemini
 :category: gadget

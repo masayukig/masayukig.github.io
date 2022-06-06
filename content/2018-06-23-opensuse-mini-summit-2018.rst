@@ -1,4 +1,6 @@
-:title: openSUSE mini Summit 2018
+openSUSE mini Summit 2018
+=========================
+
 :slug: opensuse-mini-summit-2018
 :tags: opensuse, oss, talk
 :category: oss

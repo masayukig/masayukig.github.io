@@ -6,7 +6,7 @@ AUTHOR = u'Masayuki Igawa'
 #SITENAME = u'What is essential is invisible to the eye'
 SITENAME = u"What's done is done"
 #SITEURL = ''
-#SITEURL = 'https://igawa.io'
+SITEURL = 'https://igawa.io'
 
 PATH = 'content'
 
@@ -24,12 +24,12 @@ DISQUS_SITENAME = 'afterstack'
 
 # Feed generation is usually not desired when developing
 FEED_DOMAIN = 'https://igawa.io'
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
+#FEED_ALL_ATOM = None
+#CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),

@@ -1,4 +1,6 @@
-:title: Simple HTTPServer in Python
+Simple HTTPServer in Python
++++++++++++++++++++++++++++
+
 :slug: simple-httpserver-in-python
 :tags: oss, python
 :category: OSS

@@ -1,4 +1,6 @@
-:title: OpenStack-Health updates
+OpenStack-Health updates
+========================
+
 :slug: openstack-health-updates
 :tags: work, oss, openstack, openstack-health
 :category: Work
@@ -37,7 +39,7 @@
 
 ----------------------------------------------------------------
 
-.. image:: {filename}/images/openstack-health-2016-10-19.png
+.. image:: {static}/images/openstack-health-2016-10-19.png
   :alt: OpenStack-Health
 
 Happy Hacking!

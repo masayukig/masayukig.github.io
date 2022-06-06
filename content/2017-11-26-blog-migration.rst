@@ -1,4 +1,6 @@
-:title: Switched my blog to igawa.io
+Switched my blog to igawa.io
+============================
+
 :slug: migrated-my-blog-to-igawaio
 :tags: oss, blog
 :category: Misc

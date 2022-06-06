@@ -1,4 +1,5 @@
-:title: Moving to ....?
+Moving to ....?
+===============
 :slug: transition
 :tags: work, oss, openstack, development
 :category: Work
