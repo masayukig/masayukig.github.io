@@ -117,4 +117,357 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 &lt;/pre&gt;
 &lt;p&gt;Happy Hacking!&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="OSS"></category><category term="oss"></category><category term="python"></category></entry></feed>
+</content><category term="OSS"></category><category term="oss"></category><category term="python"></category></entry><entry><title>Ubuntuでデフォルトのエディタをnanoからvimに変更</title><link href="https://igawa.io/posts/2011/01/ubuntudedehuorutonoedeitawonanokaravimnibian-geng/" rel="alternate"></link><published>2011-01-26T05:01:00+09:00</published><updated>2011-01-26T05:01:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-01-26:/posts/2011/01/ubuntudedehuorutonoedeitawonanokaravimnibian-geng/</id><summary type="html">&lt;p&gt;Ubuntuのデフォルトエディタはnanoというやつですが、
+操作方法がさっぱりわからんので、vimに変更します。
+参考にしたサイ …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Ubuntuのデフォルトエディタはnanoというやつですが、
+操作方法がさっぱりわからんので、vimに変更します。
+参考にしたサイトは、
+「&lt;a href="http://www.gabuchan.net/blog/archives/15"&gt;Ubuntu のデフォルトエディタを nano から vim
+に変更する方法&lt;/a&gt;」です。&lt;/p&gt;
+&lt;p&gt;まずは、vimのインストールから。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sudo apt-get install vim
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています
+状態情報を読み取っています... 完了
+以下の特別パッケージがインストールされます:
+  vim-runtime
+提案パッケージ:
+  ctags vim-doc vim-scripts
+以下のパッケージが新たにインストールされます:
+  vim vim-runtime
+アップグレード: &lt;span class="m"&gt;0&lt;/span&gt; 個、新規インストール: &lt;span class="m"&gt;2&lt;/span&gt; 個、削除: &lt;span class="m"&gt;0&lt;/span&gt; 個、保留: &lt;span class="m"&gt;10&lt;/span&gt; 個。
+&lt;span class="m"&gt;6&lt;/span&gt;,563kB のアーカイブを取得する必要があります。
+この操作後に追加で &lt;span class="m"&gt;27&lt;/span&gt;.1MB のディスク容量が消費されます。
+続行しますか &lt;span class="o"&gt;[&lt;/span&gt;Y/n&lt;span class="o"&gt;]&lt;/span&gt;?
+取得:1 http://jp.archive.ubuntu.com/ubuntu/ maverick/main vim-runtime all &lt;span class="m"&gt;2&lt;/span&gt;:7.2.330-1ubuntu4 &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;,707kB&lt;span class="o"&gt;]&lt;/span&gt;
+取得:2 http://jp.archive.ubuntu.com/ubuntu/ maverick/main vim i386 &lt;span class="m"&gt;2&lt;/span&gt;:7.2.330-1ubuntu4 &lt;span class="o"&gt;[&lt;/span&gt;856kB&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="m"&gt;6&lt;/span&gt;,563kB を 4秒 で取得しました &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;,315kB/s&lt;span class="o"&gt;)&lt;/span&gt;
+未選択パッケージ vim-runtime を選択しています。
+&lt;span class="o"&gt;(&lt;/span&gt;データベースを読み込んでいます ... 現在 &lt;span class="m"&gt;153356&lt;/span&gt; 個のファイルとディレクトリがインストールされています。&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;(&lt;/span&gt;.../vim-runtime_2%3a7.2.330-1ubuntu4_all.deb から&lt;span class="o"&gt;)&lt;/span&gt; vim-runtime を展開しています...
+Adding &lt;span class="s1"&gt;&amp;#39;diversion of /usr/share/vim/vim72/doc/help.txt to /usr/share/vim/vim72/doc/help.txt.vim-tiny by vim-runtime&amp;#39;&lt;/span&gt;
+Adding &lt;span class="s1"&gt;&amp;#39;diversion of /usr/share/vim/vim72/doc/tags to /usr/share/vim/vim72/doc/tags.vim-tiny by vim-runtime&amp;#39;&lt;/span&gt;
+未選択パッケージ vim を選択しています。
+&lt;span class="o"&gt;(&lt;/span&gt;.../vim_2%3a7.2.330-1ubuntu4_i386.deb から&lt;span class="o"&gt;)&lt;/span&gt; vim を展開しています...
+man-db のトリガを処理しています ...
+vim-runtime &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;:7.2.330-1ubuntu4&lt;span class="o"&gt;)&lt;/span&gt; を設定しています ...
+Processing /usr/share/vim/addons/doc
+vim &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;:7.2.330-1ubuntu4&lt;span class="o"&gt;)&lt;/span&gt; を設定しています ...
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vim &lt;span class="o"&gt;(&lt;/span&gt;vim&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; auto mode.
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vimdiff &lt;span class="o"&gt;(&lt;/span&gt;vimdiff&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; auto mode.
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rvim &lt;span class="o"&gt;(&lt;/span&gt;rvim&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; auto mode.
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rview &lt;span class="o"&gt;(&lt;/span&gt;rview&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; auto mode.
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vi &lt;span class="o"&gt;(&lt;/span&gt;vi&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; auto mode.
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/view &lt;span class="o"&gt;(&lt;/span&gt;view&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; auto mode.
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/ex &lt;span class="o"&gt;(&lt;/span&gt;ex&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; auto mode.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;そして、update-alternativesコマンドで変更。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sudo update-alternatives --config editor
+There are &lt;span class="m"&gt;4&lt;/span&gt; choices &lt;span class="k"&gt;for&lt;/span&gt; the alternative editor &lt;span class="o"&gt;(&lt;/span&gt;providing /usr/bin/editor&lt;span class="o"&gt;)&lt;/span&gt;.
+
+  Selection    Path                優        Status
+------------------------------------------------------------
+* &lt;span class="m"&gt;0&lt;/span&gt;            /bin/nano            &lt;span class="m"&gt;40&lt;/span&gt;        auto mode
+  &lt;span class="m"&gt;1&lt;/span&gt;            /bin/ed             -100       manual mode
+  &lt;span class="m"&gt;2&lt;/span&gt;            /bin/nano            &lt;span class="m"&gt;40&lt;/span&gt;        manual mode
+  &lt;span class="m"&gt;3&lt;/span&gt;            /usr/bin/vim.basic   &lt;span class="m"&gt;30&lt;/span&gt;        manual mode
+  &lt;span class="m"&gt;4&lt;/span&gt;            /usr/bin/vim.tiny    &lt;span class="m"&gt;10&lt;/span&gt;        manual mode
+
+Press enter to keep the current choice&lt;span class="o"&gt;[&lt;/span&gt;*&lt;span class="o"&gt;]&lt;/span&gt;, or &lt;span class="nb"&gt;type&lt;/span&gt; selection number: &lt;span class="m"&gt;3&lt;/span&gt;
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/editor &lt;span class="o"&gt;(&lt;/span&gt;editor&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; manual mode.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="OSS"></category><category term="nano"></category><category term="Software"></category><category term="Ubuntu"></category><category term="vim"></category></entry><entry><title>Ubuntu(10.10)で最新Kernelビルド</title><link href="https://igawa.io/posts/2011/01/ubuntu1010dezui-xin-kernelbirudo/" rel="alternate"></link><published>2011-01-22T07:30:00+09:00</published><updated>2011-01-22T07:30:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2011-01-22:/posts/2011/01/ubuntu1010dezui-xin-kernelbirudo/</id><summary type="html">&lt;p&gt;UbuntuでKernelをビルドしたくなり、そのときのメモ。
+&lt;a href="http://dogmap.jp/2009/06/19/rebuild-kernel/"&gt;http://dogmap.jp/2009/06/19/rebuild-kernel/&lt;/a&gt;
+を、参考に（ほぼそのままですが）しました。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;/*** カーネル再構築 …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;UbuntuでKernelをビルドしたくなり、そのときのメモ。
+&lt;a href="http://dogmap.jp/2009/06/19/rebuild-kernel/"&gt;http://dogmap.jp/2009/06/19/rebuild-kernel/&lt;/a&gt;
+を、参考に（ほぼそのままですが）しました。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;/*** カーネル再構築に必要なパッケージをインストール ***/
+$ sudo apt-get install build-essential
+$ sudo apt-get install kernel-package libncurses5-dev libqt3-mt-dev
+$ sudo apt-get install git git-core
+$ sudo apt-get install fakeroot
+
+/*** カーネルソースをインストールして展開 ***/
+$ mkdir ~/src&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; src
+$ git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux-2.6.git
+
+/*** .config ファイルの作成 ***/
+$ &lt;span class="nb"&gt;cd&lt;/span&gt; linux-2.6
+$ cp /boot/config-2.6.35-xx-generic .config
+
+/*** 好きなconfigをONにする。今回は、LGUESTと
+例のミラクルパッチwをONにしてみた
+http://gihyo.jp/admin/clip/01/linux_dt/201011/18
+ ***/
+$ make menuconfig
+
+/*** カーネルのリビルド ***/
+$ fakeroot make-kpkg clean
+$ fakeroot make-kpkg --initrd --revision&lt;span class="o"&gt;=&lt;/span&gt;.20110121 kernel_image kernel_headers
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;今はここまで。これが終わったら、以下を実行予定。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cm"&gt;/*** .deb ができるので dpkg でインストール ***/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;cd&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;..&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;dpkg&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;i&lt;span class="w"&gt; &lt;/span&gt;linux&lt;span class="o"&gt;-&lt;/span&gt;image&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="m"&gt;2.6&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;38&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;xx_20110121_x86&lt;span class="o"&gt;.&lt;/span&gt;deb&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;# スクリプト化しよう。。&lt;/p&gt;
+&lt;p&gt;(2011/01/30追記)だったが、うまくいかなかった。。が、
+試行錯誤し、以下のようなパッチをあててなんとかできるようになった。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="gd"&gt;--- /usr/share/kernel-package/ruleset/kernel_version.mk.orig 2008-05-02 07:06:28.000000000 +0200&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="gi"&gt;+++ /usr/share/kernel-package/ruleset/kernel_version.mk    2010-07-08 00:02:45.316669641 +0200&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="gu"&gt;@@ -62,7 +62,7 @@&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt; @echo &amp;quot;$(strip $(EXTRAVERSION))&amp;quot;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="w"&gt; &lt;/span&gt;debian_LOCALVERSION:&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="gd"&gt;-  @echo $(if $(strip $(localver-full)),&amp;quot;$(strip $(localver-full))&amp;quot;, &amp;quot;$(strip $(LOCALVERSION))&amp;quot;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="gi"&gt;+    @./scripts/setlocalversion&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="w"&gt; &lt;/span&gt;debian_TOPDIR:&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;# 2.6 kernels declared TOPDIR obsolete, so use srctree if it exists&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;参考サイト：&lt;a href="http://d.hatena.ne.jp/kinneko/20110111/p53"&gt;http://d.hatena.ne.jp/kinneko/20110111/p53&lt;/a&gt;&lt;/p&gt;</content><category term="OSS"></category><category term="build"></category><category term="開発"></category><category term="kernel"></category><category term="make"></category></entry><entry><title>Simple Massager v1.1.1 released!</title><link href="https://igawa.io/posts/2010/10/simple-massager-v111-released/" rel="alternate"></link><published>2010-10-29T05:19:00+09:00</published><updated>2010-10-29T05:19:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2010-10-29:/posts/2010/10/simple-massager-v111-released/</id><summary type="html">&lt;p&gt;&lt;a href="//details?id=org.orzlabs.android.massage"&gt;Simple Massager
+v1.1.1&lt;/a&gt;をリリースしました。
+v1.1.1:
+- 画面表示をよりシンプルにわかりやすくしたつもりです。
+もし、バグを見つけ …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="//details?id=org.orzlabs.android.massage"&gt;Simple Massager
+v1.1.1&lt;/a&gt;をリリースしました。
+v1.1.1:
+- 画面表示をよりシンプルにわかりやすくしたつもりです。
+もし、バグを見つけたり、ご意見などありましたら、
+下記のgithub
+ウェブサイトでその問題点等の書き込みをしてくれると嬉しいです♪
+&lt;a href="http://github.com/masayukig/Simple-Massager/issues"&gt;http://github.com/masayukig/Simple-Massager/issues&lt;/a&gt;
+ダウンロードは、以下を読み取っても可能です。
+&lt;img alt="picture" src="https://masayukig.files.wordpress.com/2010/10/47385-qrcode.gif"&gt;&lt;/p&gt;</content><category term="OSS"></category><category term="Android"></category><category term="開発"></category><category term="Simple-Massager"></category><category term="Software"></category></entry><entry><title>Androidアプリを作って公開してみた - Simple Massager</title><link href="https://igawa.io/posts/2010/10/androidapuriwozuo-tsutegong-kai-shitemita-simple-massager/" rel="alternate"></link><published>2010-10-13T05:59:00+09:00</published><updated>2010-10-13T05:59:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2010-10-13:/posts/2010/10/androidapuriwozuo-tsutegong-kai-shitemita-simple-massager/</id><summary type="html">&lt;p&gt;初めて、Androidアプリを作って公開してみた。
+"Simple Massager"
+というアプリです。&lt;/p&gt;
+&lt;p&gt;機能は非常に単純で、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;振動開始・停止&lt;/li&gt;
+&lt;li&gt;ランダム振動・ …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;初めて、Androidアプリを作って公開してみた。
+"Simple Massager"
+というアプリです。&lt;/p&gt;
+&lt;p&gt;機能は非常に単純で、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;振動開始・停止&lt;/li&gt;
+&lt;li&gt;ランダム振動・連続振動の選択&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;が出来るのみです。&lt;/p&gt;
+&lt;p&gt;最大の欠点は、
+「デバイスの振動が弱すぎてほとんど使いものにならない」
+というところですw&lt;/p&gt;
+&lt;p&gt;次のアプリのアイデアもあるので、それの開発に着手したいと思います。&lt;/p&gt;
+&lt;p&gt;なお、ソースコードは、以下で公開しています。
+&lt;a href="http://github.com/masayukig/Simple-Massager"&gt;http://github.com/masayukig/Simple-Massager&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;英語版ブログは&lt;a href="http://blog.orzlabs.org/"&gt;http://blog.orzlabs.org/&lt;/a&gt;&lt;/p&gt;</content><category term="OSS"></category><category term="Android"></category><category term="開発"></category><category term="Software"></category></entry><entry><title>Vimから投稿するテスト</title><link href="https://igawa.io/posts/2009/11/vimkaratou-gao-surutesuto/" rel="alternate"></link><published>2009-11-21T05:30:00+09:00</published><updated>2009-11-21T05:30:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2009-11-21:/posts/2009/11/vimkaratou-gao-surutesuto/</id><content type="html">&lt;p&gt;&lt;a href="http://mattn.kaoriya.net/software/vim/20070831122307.htm"&gt;http://mattn.kaoriya.net/software/vim/20070831122307.htm&lt;/a&gt;
+の記事を参考に、vimから投稿してみます。&lt;/p&gt;</content><category term="OSS"></category><category term="Software"></category><category term="vim"></category></entry><entry><title>Ubuntu(8.10)上のFirefoxで日本語フォントがおかしい（中国語フォント？）</title><link href="https://igawa.io/posts/2008/12/ubuntu810shang-nofirefoxderi-ben-yu-huontogaokashiizhong-guo-yu-huonto/" rel="alternate"></link><published>2008-12-13T06:55:00+09:00</published><updated>2008-12-13T06:55:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2008-12-13:/posts/2008/12/ubuntu810shang-nofirefoxderi-ben-yu-huontogaokashiizhong-guo-yu-huonto/</id><summary type="html">&lt;p&gt;Ubuntu(8.10)上のFirefoxで日本語フォントがおかしい（中国語フォント？）と言う現象に遭遇したので、
+解決するためのメモ。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://forum.ubuntulinux.jp/viewtopic.php?id=3124"&gt;http://forum.ubuntulinux …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Ubuntu(8.10)上のFirefoxで日本語フォントがおかしい（中国語フォント？）と言う現象に遭遇したので、
+解決するためのメモ。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://forum.ubuntulinux.jp/viewtopic.php?id=3124"&gt;http://forum.ubuntulinux.jp/viewtopic.php?id=3124&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bugs.launchpad.net/ubuntu-jp-improvement/+bug/272387"&gt;https://bugs.launchpad.net/ubuntu-jp-improvement/+bug/272387&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;を参考に(というかそのままだがw)、
+&lt;code&gt;$ sudo ln -s /etc/fonts/conf.avail/69-language-selector-ja-jp.conf /etc/fonts/conf.d/&lt;/code&gt;
+を、実行。ブラウザリロード(not リスタート)で、即解決。&lt;/p&gt;</content><category term="OSS"></category><category term="Firefox"></category><category term="Font"></category><category term="Linux"></category><category term="Software"></category><category term="Ubuntu"></category><category term="日本語"></category></entry><entry><title>古い記事をインポートしました(MovableType -&gt; Wordpress)</title><link href="https://igawa.io/posts/2008/11/gu-iji-shi-woinpotoshimashitamovabletype-wordpress/" rel="alternate"></link><published>2008-11-16T08:09:00+09:00</published><updated>2008-11-16T08:09:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2008-11-16:/posts/2008/11/gu-iji-shi-woinpotoshimashitamovabletype-wordpress/</id><summary type="html">&lt;p&gt;以前、MovableTypeで書いていた記事を、wordpressにインポートしました。&lt;/p&gt;
+&lt;p&gt;方法は、至って簡単。&lt;/p&gt;
+&lt;p&gt;MovableTypeの「ユーティリティ」-&amp;gt;「読み込み/書き出し」-&amp;gt;「エン …&lt;/p&gt;</summary><content type="html">&lt;p&gt;以前、MovableTypeで書いていた記事を、wordpressにインポートしました。&lt;/p&gt;
+&lt;p&gt;方法は、至って簡単。&lt;/p&gt;
+&lt;p&gt;MovableTypeの「ユーティリティ」-&amp;gt;「読み込み/書き出し」-&amp;gt;「エントリの書き出し」で、&lt;/p&gt;
+&lt;p&gt;エントリをファイルに書き出す。しばらく待つと、ファイル保存のダイアログがでるので、&lt;/p&gt;
+&lt;p&gt;適当に名前をつけて保存。&lt;/p&gt;
+&lt;p&gt;その後は、Wordpressの「Tools」-&amp;gt;「インポート」で、先ほど保存したファイルをインポートするだけ。&lt;/p&gt;
+&lt;p&gt;良しとする。w&lt;/p&gt;</content><category term="OSS"></category><category term="export"></category><category term="import"></category><category term="movabletype"></category><category term="Software"></category><category term="tips"></category></entry><entry><title>OpenOffice.org 2.0ベータ2の日本語版リリース，約400ページの解説書もPDFで 無償公開へ</title><link href="https://igawa.io/posts/2005/09/openofficeorg-20beta2nori-ben-yu-ban-ririsuyue-400pezinojie-shuo-shu-mopdfde-wu-chang-gong-kai-he/" rel="alternate"></link><published>2005-09-06T23:32:00+09:00</published><updated>2005-09-06T23:32:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-09-06:/posts/2005/09/openofficeorg-20beta2nori-ben-yu-ban-ririsuyue-400pezinojie-shuo-shu-mopdfde-wu-chang-gong-kai-he/</id><summary type="html">&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/article/NEWS/20050831/220381/"&gt;itpro.nikkeibp.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;解説書も無償公開とはすごいですね。
+まぁ、「約４００ページ」なので、家庭用のプリンターで印刷するのは、
+ちょっと躊 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/article/NEWS/20050831/220381/"&gt;itpro.nikkeibp.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;解説書も無償公開とはすごいですね。
+まぁ、「約４００ページ」なので、家庭用のプリンターで印刷するのは、
+ちょっと躊躇してしまいますが。。。
+(印刷しても、結局読みづらそうだし。持ち運びにも不便そうだし。。)&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>Mozilla/Mozilla Firefoxの脆弱性が再発</title><link href="https://igawa.io/posts/2005/06/mozillamozilla-firefoxnocui-ruo-xing-gazai-fa/" rel="alternate"></link><published>2005-06-07T22:06:00+09:00</published><updated>2005-06-07T22:06:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-06-07:/posts/2005/06/mozillamozilla-firefoxnocui-ruo-xing-gazai-fa/</id><content type="html">&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=05/06/06/1146249&amp;amp;topic=51"&gt;http://slashdot.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;最新版のFirefoxで脆弱性があるので注意が必要。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>Firefox 1.0.4キター</title><link href="https://igawa.io/posts/2005/05/firefox-104kita/" rel="alternate"></link><published>2005-05-21T01:27:00+09:00</published><updated>2005-05-21T01:27:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-05-21:/posts/2005/05/firefox-104kita/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.mozilla-japan.org/products/firefox/"&gt;http://www.mozilla-japan.org/products/firefox/
+&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2005/05/13
+いくつかの重大なセキュリティ脆弱性を修正した Firefox 1.0.4
+の日本語版をリリースいたしまし …&lt;/p&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.mozilla-japan.org/products/firefox/"&gt;http://www.mozilla-japan.org/products/firefox/
+&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2005/05/13
+いくつかの重大なセキュリティ脆弱性を修正した Firefox 1.0.4
+の日本語版をリリースいたしました。すべてのユーザにアップグレードを推奨します。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;だそうです。
+早速アップデート完了しました。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>Mozilla Firefox1.0.3に最高レベルの脆弱性</title><link href="https://igawa.io/posts/2005/05/mozilla-firefox103nizui-gao-reberunocui-ruo-xing/" rel="alternate"></link><published>2005-05-09T23:46:00+09:00</published><updated>2005-05-09T23:46:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-05-09:/posts/2005/05/mozilla-firefox103nizui-gao-reberunocui-ruo-xing/</id><summary type="html">&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=05/05/09/0327254&amp;amp;topic=51"&gt;http://slashdot.jp/article.pl?sid=05/05/09/0327254&amp;amp;topic=51&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;あらら。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Firefoxユーザがこの脆弱性を利用したページの任意の箇所をクリックしただ
+けで batch …&lt;/p&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=05/05/09/0327254&amp;amp;topic=51"&gt;http://slashdot.jp/article.pl?sid=05/05/09/0327254&amp;amp;topic=51&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;あらら。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Firefoxユーザがこの脆弱性を利用したページの任意の箇所をクリックしただ
+けで batch/exe 等攻撃コードが実行されてしまう&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいので、とりあえず、
+怪しいWebサイトに行かないようにするしか無いか？&lt;/p&gt;
+&lt;p&gt;怪しいサイトに行く場合には、JavaScriptは「無効」にするのが吉か？&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>Firefoxに危険なセキュリティ・ホール，最新版「Firefox 1.0.2」で解消</title><link href="https://igawa.io/posts/2005/03/firefoxniwei-xian-nasekiyuriteihoruzui-xin-ban-firefox-102-dejie-xiao/" rel="alternate"></link><published>2005-03-26T01:25:00+09:00</published><updated>2005-03-26T01:25:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-03-26:/posts/2005/03/firefoxniwei-xian-nasekiyuriteihoruzui-xin-ban-firefox-102-dejie-xiao/</id><summary type="html">&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050324/157958/"&gt;http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050324/157958/&lt;/a&gt;
+何があるか、わからない時代なので、1.0.2にさっさとバージョンアップしましょう。
+Mac OS
+Xな …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050324/157958/"&gt;http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050324/157958/&lt;/a&gt;
+何があるか、わからない時代なので、1.0.2にさっさとバージョンアップしましょう。
+Mac OS
+Xなら、ダウンロードしてFirefoxを終了後、アイコンをドラッグアンドドロップするだけだ。
+長い間Windowsを使っていた人間からすると、
+「こんなんで本当にいいの？！」
+と思ってしまうが、きっといいのだろう。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>Firefox 1.0.1日本語版リリース</title><link href="https://igawa.io/posts/2005/03/firefox-101ri-ben-yu-ban-ririsu/" rel="alternate"></link><published>2005-03-14T07:43:00+09:00</published><updated>2005-03-14T07:43:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-03-14:/posts/2005/03/firefox-101ri-ben-yu-ban-ririsu/</id><content type="html">&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=05/03/13/134244&amp;amp;topic=51"&gt;Firefox
+1.0.1日本語版リリース(スラド)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;いくつかのバグが修正されてるみたいだから、
+早速、ダウンロードしなくては!!!&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>オープンソースのオフィス・ソフトOpenOffice.org 2.0日本語版ベータが公開</title><link href="https://igawa.io/posts/2005/03/opunsosunoohuisusohutoopenofficeorg-20ri-ben-yu-ban-betagagong-kai/" rel="alternate"></link><published>2005-03-10T23:57:00+09:00</published><updated>2005-03-10T23:57:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-03-10:/posts/2005/03/opunsosunoohuisusohutoopenofficeorg-20ri-ben-yu-ban-betagagong-kai/</id><content type="html">&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050307/157078/"&gt;http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050307/157078/&lt;/a&gt;
+早速ダウンロード開始（ｗ&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>なぜウケる？ 汎用機世代にオープンソース</title><link href="https://igawa.io/posts/2005/03/nazeukeru-fan-yong-ji-shi-dai-niopunsosu/" rel="alternate"></link><published>2005-03-10T23:56:00+09:00</published><updated>2005-03-10T23:56:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-03-10:/posts/2005/03/nazeukeru-fan-yong-ji-shi-dai-niopunsosu/</id><content type="html">&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/OPINION/20050126/155299/"&gt;http://itpro.nikkeibp.co.jp/free/ITPro/OPINION/20050126/155299/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;汎用機世代は、ソースを見ることに慣れているそうです。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>CVSに変わるバージョン管理ツールSubversionの記事</title><link href="https://igawa.io/posts/2005/02/cvsnibian-warubaziyonguan-li-tsurusubversionnoji-shi/" rel="alternate"></link><published>2005-02-22T23:55:00+09:00</published><updated>2005-02-22T23:55:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-02-22:/posts/2005/02/cvsnibian-warubaziyonguan-li-tsurusubversionnoji-shi/</id><summary type="html">&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/members/ITPro/oss/20050215/156212/"&gt;http://itpro.nikkeibp.co.jp/members/ITPro/oss/20050215/156212/&lt;/a&gt;
+(なお、閲覧には無料のユーザ登録が必要)&lt;/p&gt;
+&lt;p&gt;たいしたソフトを使ってないので、今のところ
+管理す …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/members/ITPro/oss/20050215/156212/"&gt;http://itpro.nikkeibp.co.jp/members/ITPro/oss/20050215/156212/&lt;/a&gt;
+(なお、閲覧には無料のユーザ登録が必要)&lt;/p&gt;
+&lt;p&gt;たいしたソフトを使ってないので、今のところ
+管理する気も無いが、導入してみようかなぁ。。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>「Solaris 10」触ってみました!</title><link href="https://igawa.io/posts/2005/02/solaris-10-hong-tsutemimashita/" rel="alternate"></link><published>2005-02-19T00:00:00+09:00</published><updated>2005-02-19T00:00:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-02-19:/posts/2005/02/solaris-10-hong-tsutemimashita/</id><summary type="html">&lt;p&gt;&lt;a href="http://pc.watch.impress.co.jp/docs/2005/0216/nishikawa.htm"&gt;http://pc.watch.impress.co.jp/docs/2005/0216/nishikawa.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;初心者向けのレビュー記事。(ファーストインプレッション)
+私には最適な記事かも。
+ダウンロ …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://pc.watch.impress.co.jp/docs/2005/0216/nishikawa.htm"&gt;http://pc.watch.impress.co.jp/docs/2005/0216/nishikawa.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;初心者向けのレビュー記事。(ファーストインプレッション)
+私には最適な記事かも。
+ダウンロードしようかなぁ。。。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>Firefox用スパイウェア、年内にも登場か</title><link href="https://igawa.io/posts/2005/02/firefoxyong-supaiuea-nian-nei-nimodeng-chang-ka/" rel="alternate"></link><published>2005-02-13T20:43:00+09:00</published><updated>2005-02-13T20:43:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-02-13:/posts/2005/02/firefoxyong-supaiuea-nian-nei-nimodeng-chang-ka/</id><summary type="html">&lt;p&gt;&lt;a href="http://japan.linux.com/security/05/02/09/0347232.shtml?topic=1"&gt;http://japan.linux.com/security/05/02/09/0347232.shtml?topic=1&lt;/a&gt;
+まぁ、どんなソフトウェアにも穴はあるでしょう。
+問題は、その「穴」がどれくらいの速さで塞 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://japan.linux.com/security/05/02/09/0347232.shtml?topic=1"&gt;http://japan.linux.com/security/05/02/09/0347232.shtml?topic=1&lt;/a&gt;
+まぁ、どんなソフトウェアにも穴はあるでしょう。
+問題は、その「穴」がどれくらいの速さで塞がれるのかって事じゃないかね。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>モジラ、「Thunderbird 1.1」にフィッシング対策機能を追加か？</title><link href="https://igawa.io/posts/2005/02/mozira-thunderbird-11-nihuitsushingudui-ce-ji-neng-wozhui-jia-ka/" rel="alternate"></link><published>2005-02-02T02:03:00+09:00</published><updated>2005-02-02T02:03:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2005-02-02:/posts/2005/02/mozira-thunderbird-11-nihuitsushingudui-ce-ji-neng-wozhui-jia-ka/</id><summary type="html">&lt;p&gt;モジラ、「Thunderbird 1.1」にフィッシング対策機能を追加か？
+&lt;a href="http://japan.cnet.com/news/sec/story/0,2000050480,20080244,00.htm"&gt;http://japan.cnet.com/news/sec/story/0,2000050480,20080244,00.htm&lt;/a&gt;
+こういう機能がつくのはいいけど、この …&lt;/p&gt;</summary><content type="html">&lt;p&gt;モジラ、「Thunderbird 1.1」にフィッシング対策機能を追加か？
+&lt;a href="http://japan.cnet.com/news/sec/story/0,2000050480,20080244,00.htm"&gt;http://japan.cnet.com/news/sec/story/0,2000050480,20080244,00.htm&lt;/a&gt;
+こういう機能がつくのはいいけど、この機能に頼りっきりな人が出てこないか不安。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>Sun、Solaris 10を発表</title><link href="https://igawa.io/posts/2004/12/sun-solaris-10wofa-biao/" rel="alternate"></link><published>2004-12-03T23:53:00+09:00</published><updated>2004-12-03T23:53:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2004-12-03:/posts/2004/12/sun-solaris-10wofa-biao/</id><summary type="html">&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2004/11/30/009.html"&gt;pcweb.mycom.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;なんか、新しいオープンソースライセンスになるという噂のSolaris 10。
+どんな物なのか試して見ようと思って、只 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2004/11/30/009.html"&gt;pcweb.mycom.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;なんか、新しいオープンソースライセンスになるという噂のSolaris 10。
+どんな物なのか試して見ようと思って、只今ダウンロード中。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>Firefox 1.0発表--ファン殺到でモジラサイトは一時ダウン寸前に</title><link href="https://igawa.io/posts/2004/11/firefox-10fa-biao-huansha-dao-demozirasaitohayi-shi-dauncun-qian-ni/" rel="alternate"></link><published>2004-11-19T22:50:00+09:00</published><updated>2004-11-19T22:50:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2004-11-19:/posts/2004/11/firefox-10fa-biao-huansha-dao-demozirasaitohayi-shi-dauncun-qian-ni/</id><content type="html">&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20075667,00.htm"&gt;japan.cnet.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;すげ〜。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>Firefox1.0リリースで、再注目されるモジラとグーグルの関係</title><link href="https://igawa.io/posts/2004/11/firefox10ririsude-zai-zhu-mu-sarerumoziratogugurunoguan-xi/" rel="alternate"></link><published>2004-11-13T01:25:00+09:00</published><updated>2004-11-13T01:25:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2004-11-13:/posts/2004/11/firefox10ririsude-zai-zhu-mu-sarerumoziratogugurunoguan-xi/</id><summary type="html">&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20075726,00.htm"&gt;japan.cnet.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Firefoxのスタートページが、Googleだったので、
+「なんでかなぁ〜？」と思っていたのですが、
+いろいろ協力しているようですね …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20075726,00.htm"&gt;japan.cnet.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Firefoxのスタートページが、Googleだったので、
+「なんでかなぁ〜？」と思っていたのですが、
+いろいろ協力しているようですね。
+より良いサービスにつなげて欲しいです。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>日経にもFireFox1.0の話題が！</title><link href="https://igawa.io/posts/2004/11/ri-jing-nimofirefox10nohua-ti-ga/" rel="alternate"></link><published>2004-11-13T01:17:00+09:00</published><updated>2004-11-13T01:17:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2004-11-13:/posts/2004/11/ri-jing-nimofirefox10nohua-ti-ga/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.nikkei.co.jp/news/sangyo/20041110AT1D1003010112004.html"&gt;nikkei.co.jp&lt;/a&gt;
+現在、IEが9割強のシェアを握っているところを、
+FireFoxで「1割のシェアを確保したい」と考えているようです。
+今の …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.nikkei.co.jp/news/sangyo/20041110AT1D1003010112004.html"&gt;nikkei.co.jp&lt;/a&gt;
+現在、IEが9割強のシェアを握っているところを、
+FireFoxで「1割のシェアを確保したい」と考えているようです。
+今の勢いからすると、難しくも無い気もしますが、
+現在の人気は、IEのセキュリティ欠陥の多さに嫌気が指した人が
+乗り換えているケースが多いと思うので、
+もし、FireFoxでセキュリティ欠陥が多数見つかってきたりすると、
+この動きが鈍化することも十分考えられますね。&lt;/p&gt;
+&lt;p&gt;逆に、IEにさらにセキュリティ欠陥が見つかれば、
+この動きが加速されることも考えられますね。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>Firefox、待望のバージョン1.0がリリース!</title><link href="https://igawa.io/posts/2004/11/firefox-dai-wang-nobaziyon10garirisu/" rel="alternate"></link><published>2004-11-09T23:51:00+09:00</published><updated>2004-11-09T23:51:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2004-11-09:/posts/2004/11/firefox-dai-wang-nobaziyon10garirisu/</id><summary type="html">&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20075645,00.htm"&gt;japan.cnet.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;やったー！
+早速ダウンロードしたぞ！
+まぁ、RC版とはたいした違いは無いみたいだけど、
+「1.0」っていうのがうれし …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20075645,00.htm"&gt;japan.cnet.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;やったー！
+早速ダウンロードしたぞ！
+まぁ、RC版とはたいした違いは無いみたいだけど、
+「1.0」っていうのがうれしい感じ。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>ブラウザ市場、IE の独占時代にかげり？</title><link href="https://igawa.io/posts/2004/11/burauzashi-chang-ie-nodu-zhan-shi-dai-nikageri/" rel="alternate"></link><published>2004-11-06T21:14:00+09:00</published><updated>2004-11-06T21:14:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2004-11-06:/posts/2004/11/burauzashi-chang-ie-nodu-zhan-shi-dai-nikageri/</id><summary type="html">&lt;p&gt;&lt;a href="http://japan.internet.com/webtech/20041104/12.html"&gt;japan.internet.com&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;全バージョンを合計した IE
+の市場シェアが、2004年6月4日から10月29日の間に2.62ポイント下がったことが …&lt;/p&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://japan.internet.com/webtech/20041104/12.html"&gt;japan.internet.com&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;全バージョンを合計した IE
+の市場シェアが、2004年6月4日から10月29日の間に2.62ポイント下がったことが、同社の統計調査でわかった。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいです。&lt;/p&gt;
+&lt;p&gt;でも、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Netscape/Mozilla 系列の全バージョンの中で、評判の高い『Mozilla
+Firefox』のシェアは、現在ブラウザ全体のわずか3％でしかない&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしい。
+(,,ﾟДﾟ) ｶﾞﾝｶﾞﾚ!　「Firefox」&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>OpenOffice.org 1.1.3リリース -不具合の修正が中心</title><link href="https://igawa.io/posts/2004/11/openofficeorg-113ririsu-bu-ju-he-noxiu-zheng-gazhong-xin/" rel="alternate"></link><published>2004-11-03T12:05:00+09:00</published><updated>2004-11-03T12:05:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2004-11-03:/posts/2004/11/openofficeorg-113ririsu-bu-ju-he-noxiu-zheng-gazhong-xin/</id><summary type="html">&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2004/10/27/010.html"&gt;MYCOM PC WEB&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回のバージョンアップは不具合修正が中心で、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;112個の不具合を修正、安定度向上を実現している&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしい。&lt;/p&gt;
+&lt;p&gt;日本 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2004/10/27/010.html"&gt;MYCOM PC WEB&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回のバージョンアップは不具合修正が中心で、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;112個の不具合を修正、安定度向上を実現している&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしい。&lt;/p&gt;
+&lt;p&gt;日本語での利用に最適化したバイナリは、
+&lt;a href="http://ja.openoffice.org/1.1.3/"&gt;http://ja.openoffice.org/1.1.3/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;からダウンロードできる。&lt;/p&gt;
+&lt;p&gt;日ごろ、仕事ではMS-WordやMS-Excelなどを使用しているが、
+個人で買おうと思うと、非常に値段が高く二の足を踏んでしまう。
+しかも、2〜3年に一回バージョンアップするので、それについていこうと思う
+と、大変な出費を強いられる。&lt;/p&gt;
+&lt;p&gt;そんなものに金は払いたくない！
+とか、
+オープンソースのオフィススイートってどんなだろう？
+とか、
+友人にMS-WORD形式のファイルを渡さなきゃならないが、
+その友人はMS-WORDを持っていない！どうしよう！
+とか。
+いろいろ使おうかなと思える場面は想像できる。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>Firefox 1.0の最終テストバージョンがリリースに！</title><link href="https://igawa.io/posts/2004/10/firefox-10nozui-zhong-tesutobaziyongaririsuni/" rel="alternate"></link><published>2004-10-29T22:30:00+09:00</published><updated>2004-10-29T22:30:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2004-10-29:/posts/2004/10/firefox-10nozui-zhong-tesutobaziyongaririsuni/</id><summary type="html">&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20075471,00.htm"&gt;CNET
+Japan&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;とうとう、もうすぐで1.0がリリースされそう。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;9月にリリースされたプレビューバージョンで見つかったバグ …&lt;/p&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20075471,00.htm"&gt;CNET
+Japan&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;とうとう、もうすぐで1.0がリリースされそう。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;9月にリリースされたプレビューバージョンで見つかったバグ約250カ所が修正されている&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいので、非常に期待が持てる。&lt;/p&gt;
+&lt;p&gt;また、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;11月9日の同ブラウザの発表に合わせて予定される
+The New York Times紙への全面広告掲載に向け、
+支持者に寄付を呼びかけている。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいので、寄付してみてはどうか？&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>「抵抗と戦い自治体の『丸投げ意識』を変えた」——長崎県総務部参事監 島村秀 世氏</title><link href="https://igawa.io/posts/2004/10/di-kang-tozhan-izi-zhi-ti-nowan-tou-geyi-shi-wobian-eta-chang-qi-xian-zong-wu-bu-can-shi-jian-dao-cun-xiu-shi-shi/" rel="alternate"></link><published>2004-10-07T01:28:00+09:00</published><updated>2004-10-07T01:28:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2004-10-07:/posts/2004/10/di-kang-tozhan-izi-zhi-ti-nowan-tou-geyi-shi-wobian-eta-chang-qi-xian-zong-wu-bu-can-shi-jian-dao-cun-xiu-shi-shi/</id><summary type="html">&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/members/ITPro/oss/20041004/150747/"&gt;ITmedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;オープンソースで地方の中小企業が活躍できるようにしたそうです。
+商用ソフトは、地方の中小企業にとっては、&lt;/p&gt;
+&lt;p&gt;技 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/members/ITPro/oss/20041004/150747/"&gt;ITmedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;オープンソースで地方の中小企業が活躍できるようにしたそうです。
+商用ソフトは、地方の中小企業にとっては、&lt;/p&gt;
+&lt;p&gt;技術を習得するのに、時間もお金もかかる。&lt;/p&gt;
+&lt;p&gt;中小企業にそんなお金を払う余裕は無い。&lt;/p&gt;
+&lt;p&gt;オープンソースなら、無料でソフトを導入でき、どんどん試せる。
+などの理由があったようです。&lt;/p&gt;
+&lt;p&gt;また、丸投げじゃないので、業務を知っている人が設計をするので
+非常にいい感じなシステムになるようです。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/OPINION/20041004/150752/"&gt;「昨日と違う仕事のやり方」を実現する方法」&lt;/a&gt;
+同じ人にインタビューしてます。参考として。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>Firefox 1.0 プレビューリリースの日本語版が公開</title><link href="https://igawa.io/posts/2004/09/firefox-10-purebiyuririsunori-ben-yu-ban-gagong-kai/" rel="alternate"></link><published>2004-09-25T20:42:00+09:00</published><updated>2004-09-25T20:42:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2004-09-25:/posts/2004/09/firefox-10-purebiyuririsunori-ben-yu-ban-gagong-kai/</id><content type="html">&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2004/09/22/014.html"&gt;MYCOM PC&lt;/a&gt;
+現時点ではWindows版のみ。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>IEからFirefoxへの乗り換えユーザーが増加中--米報告</title><link href="https://igawa.io/posts/2004/09/iekarafirefoxhenocheng-rihuan-eyuzagazeng-jia-zhong-mi-bao-gao/" rel="alternate"></link><published>2004-09-17T00:03:00+09:00</published><updated>2004-09-17T00:03:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2004-09-17:/posts/2004/09/iekarafirefoxhenocheng-rihuan-eyuzagazeng-jia-zhong-mi-bao-gao/</id><content type="html">&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20074203,00.htm"&gt;CNET
+Japan&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;お。いいんじゃな〜い。
+一時的な現象とならないことを期待しています。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>Firefoxブラウザ、ついにバージョン1.0をリリースへ</title><link href="https://igawa.io/posts/2004/09/firefoxburauza-tsuinibaziyon10woririsuhe/" rel="alternate"></link><published>2004-09-15T23:29:00+09:00</published><updated>2004-09-15T23:29:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2004-09-15:/posts/2004/09/firefoxburauza-tsuinibaziyon10woririsuhe/</id><summary type="html">&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20073563,00.htm"&gt;CNET
+Japan&lt;/a&gt;
+ついに1.0になるそうだ。
+今、貧弱な環境でMacOSXを使っているので、なるべく軽いブラウザがいいんだけど、
+Firefoxと比べ …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20073563,00.htm"&gt;CNET
+Japan&lt;/a&gt;
+ついに1.0になるそうだ。
+今、貧弱な環境でMacOSXを使っているので、なるべく軽いブラウザがいいんだけど、
+Firefoxと比べるとSafariの方が軽いんだよね。
+う〜ん。&lt;/p&gt;</content><category term="OSS"></category></entry><entry><title>モジラ、バグ報告への懸賞金プログラムを発表</title><link href="https://igawa.io/posts/2004/08/mozira-bagubao-gao-henoxuan-shang-jin-puroguramuwofa-biao/" rel="alternate"></link><published>2004-08-03T22:57:00+09:00</published><updated>2004-08-03T22:57:00+09:00</updated><author><name>masayukig</name></author><id>tag:igawa.io,2004-08-03:/posts/2004/08/mozira-bagubao-gao-henoxuan-shang-jin-puroguramuwofa-biao/</id><content type="html">&lt;p&gt;&lt;a href="http://japan.cnet.com/news/sec/story/0,2000050480,20070200,00.htm"&gt;CNET
+Japan&lt;/a&gt;
+&lt;a href="http://slashdot.jp/articles/04/08/03/129257.shtml?topic=51"&gt;スラド&lt;/a&gt;
+面白い試みですね。
+成功するといいね。(C言語がわからんので他人事)&lt;/p&gt;</content><category term="OSS"></category></entry></feed>
