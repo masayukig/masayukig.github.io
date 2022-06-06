@@ -25,7 +25,7 @@ CLOUDFILES_CONTAINER=my_cloudfiles_container
 
 DROPBOX_DIR=~/Dropbox/Public/
 
-GITHUB_PAGES_BRANCH=master
+GITHUB_PAGES_BRANCH=main
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
@@ -104,6 +104,6 @@ cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
 
 github: html
-	ghp-import -b master output -c igawa.io -p
+	ghp-import -b $(GITHUB_PAGES_BRANCH) output -c igawa.io -p
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
