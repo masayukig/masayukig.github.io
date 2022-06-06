@@ -67,7 +67,7 @@ SOCIAL = (('Twitter', 'https://twitter.com/masayukig'),
           ('Flickr', 'https://flickr.com/masayun'),
           ('Instagram', 'https://instagram.com/masayukig'),)
 
-ABOUT_ME = '<a href="https://about.me/masayukig">about.me</a>'
+ABOUT_ME = '<a href="https://www.linkedin.com/in/masayukig">LinkedIn</a>'
 #DISPLAY_CATEGORIES_ON_SIDEBAR = True
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 RECENT_POST_COUNT = True
