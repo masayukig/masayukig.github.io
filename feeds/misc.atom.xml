@@ -65,7 +65,7 @@ browser instead, though.&lt;/li&gt;
 like this things, feel free to contact me. And you can see and post an
 issue &lt;a class="reference external" href="https://github.com/masayukig/masayukig.github.io/issues"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="oss"></category><category term="blog"></category></entry><entry><title>Switched my blog to igawa.io</title><link href="https://igawa.io/posts/2017/11/migrated-my-blog-to-igawaio/" rel="alternate"></link><published>2017-11-26T00:00:00+09:00</published><updated>2017-11-26T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-11-26:/posts/2017/11/migrated-my-blog-to-igawaio/</id><summary type="html">&lt;p&gt;I changed my blog to my original domain. My blogs were split to some
+</content><category term="Misc"></category><category term="oss"></category><category term="blog"></category></entry><entry><title>Switched my blog to igawa.io</title><link href="https://igawa.io/posts/2017/11/migrated-my-blog-to-igawaio/" rel="alternate"></link><published>2017-11-26T00:00:00+09:00</published><updated>2017-11-26T00:00:00+09:00</updated><author><name>Masayuki Igawa</name></author><id>tag:igawa.io,2017-11-26:/posts/2017/11/migrated-my-blog-to-igawaio/</id><summary type="html">&lt;p&gt;I changed my blog to my original domain. My blogs were split to some
 different domains due to my laziness. So I decided to merge them.&lt;/p&gt;
 &lt;p&gt;I was trying to change it to wordpress.com first. But it's not my
 taste :-p So, I decided to use &lt;a class="reference external" href="https://github.com/getpelican/pelican"&gt;pelican&lt;/a&gt;.&lt;/p&gt;
@@ -94,4 +94,4 @@ write the posts in the near future.&lt;/p&gt;
 &lt;p&gt;I really like this pelican blog system. But only one thing is that
 editor. I'd like to use text editors to write blog posts such as vim
 or emacs but they aren't on my smartphone...&lt;/p&gt;
-</content><category term="oss"></category><category term="blog"></category></entry></feed>
+</content><category term="Misc"></category><category term="oss"></category><category term="blog"></category></entry></feed>
