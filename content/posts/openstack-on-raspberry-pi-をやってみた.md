@@ -1,0 +1,121 @@
+---
+title: OpenStack on Raspberry Pi をやってみた
+date: '2014-12-16T22:10:00+09:00'
+slug: openstack-on-raspberry-pi-をやってみた
+categories:
+- Uncategorized
+draft: true
+---
+
+[Raspberry
+Pi](http://ja.wikipedia.org/wiki/Raspberry_Pi) はとても小さなコンピュータ。これでOpenStackが動いたら胸アツじゃないですか？
+というわけで、OpenStackを[Raspberry
+Pi](http://ja.wikipedia.org/wiki/Raspberry_Pi)の上で動かしてみたいと思います。
+
+
+なお、Raspberry PiはNova の compute-nodeとして使います。
+
+
+
+
+準備
+----
+
+### 必要なもの
+
+
+Raspberry Pi
+-   いくつかのタイプがありますが、Model
+    BもしくはB+などメモリは多め(512MB)のほうがよいでしょう
+-   OS：Raspbian
+
+
+### あるといいモノ
+
+
+母艦
+-   Raspberry Pi へターミナルでアクセスするためのマシン
+
+### やってみる
+
+
+#### OSアップデート
+
+
+ひとまず、最新版にアップデートします。
+
+
+
+
+
+    sudo apt-get update; sudo apt-get upgrade -y; sudo apt-get dist-upgrade -y
+
+
+#### screenの導入
+
+
+今回はOpenStackのハイパーバイザーとして、LXCをインストールします。Rasbianではlxcが有効になっていないため、カーネルコンパイルを行います。
+
+
+
+これには5時間くらいかかるようなので、screenを入れて、そこで行います。
+
+
+
+    sudo apt-get update; sudo apt-get install screen
+
+    screen
+
+
+
+
+
+やばい。何時間かかるのかわからんくらい時間がかかる。。
+
+
+
+
+
+
+実行
+----
+
+
+nova list
+
+
+
+nova boot
+
+
+
+nova show xxxx
+
+
+
+ssh xxxx
+
+
+
+cat /proc/cpuinfo
+
+
+
+
+感想
+----
+
+
+
+
+
+
+
+###  参考URL
+
+-   [OpenStack on Raspberry Pi: Part 2 – Getting
+    Started](http://openstack.prov12n.com/openstack-on-raspberry-pi-part-2-getting-started/)
+-   [LXC on raspberry pi
+    (Raspbian)](https://plus.google.com/+YoheiKuga/posts/8tYdBrbxu8i)
+-   [Building an LXC-friendly Kernel for the Raspberry
+    Pi](http://raspberrypicloud.wordpress.com/2013/03/12/building-an-lxc-friendly-kernel-for-the-raspberry-pi/)

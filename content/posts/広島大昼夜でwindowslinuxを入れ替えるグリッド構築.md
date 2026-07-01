@@ -1,0 +1,31 @@
+---
+title: 広島大、昼夜でWindows/Linuxを入れ替えるグリッド構築
+date: '2004-11-08T15:46:00+09:00'
+slug: 広島大昼夜でwindowslinuxを入れ替えるグリッド構築
+categories:
+- Uncategorized
+draft: false
+disqus_identifier: 2004-11-08-guang-dao-da-zhou-ye-dewindowslinuxworu-reti-eruguritsudogou-zhu
+---
+
+[slashdot.jp](http://slashdot.jp/article.pl?sid=04/11/07/0521243&topic=1)
+[asahi.com](http://www.asahi.com/tech/asahinews/TKY200411070072.html)
+
+面白い試みだ。
+いっそのこと、昼もLinuxにしたっていいんじゃないのか？
+と思う。
+
+私が大学の授業でPCを使ったのって、
+
+C言語の勉強
+
+Fortranの勉強
+
+電子メールとかWebブラウズの仕方
+など、今思えば
+別にWindowsじゃなくても全然OKな授業ばっかりだったんだよね。
+(使ってたのもWindows3.1とかだったしね。。)
+
+最近の大学の授業ってPC使ってなにやってるんだろうね？
+
+MS-AccessとかMS-WordとかMS-Excelなどの使い方を習っているのだろうか？

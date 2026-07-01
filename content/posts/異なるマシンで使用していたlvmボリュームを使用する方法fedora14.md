@@ -1,0 +1,40 @@
+---
+title: 異なるマシンで使用していたLVMボリュームを使用する方法(Fedora14)
+date: '2011-04-09T06:10:00+09:00'
+slug: 異なるマシンで使用していたlvmボリュームを使用する方法fedora14
+tags:
+- Fedora
+- PC
+draft: false
+disqus_identifier: 2011-04-09-yi-narumashindeshi-yong-shiteitalvmboriyumuwoshi-yong-surufang-fa-fedora14
+---
+
+[![before the
+end](http://farm3.static.flickr.com/2562/4016960283_a8dd425379_m.jpg)
+](http://www.flickr.com/photos/manchester-monkey/4016960283/ "before the end by Manchester-Monkey, on Flickr")
+
+異なるマシンで使用していたLVMのボリュームを使用する必要が出てきたので、
+ちょっと調べました。
+
+基本的には、以下のサイトに記述されている内容を参考に実施し特に問題はありませんでした。
+<http://l-w-i.net/t/fedora/lvm_006.txt>
+
+    $ sudo -s
+    # pvscan
+      PV /dev/sdd1   VG vg01     lvm2 [931.50 GiB / 50.00 GiB free]
+      PV /dev/sdc1   VG vgmisc   lvm2 [931.50 GiB / 512.00 MiB free]
+    # vgscan
+      Reading all physical volumes.  This may take a while...
+      Found volume group "vg01" using metadata type lvm2
+      Found volume group "vgmisc" using metadata type lvm2
+    # lvchange -ay /dev/vg01/backup
+      The link /dev/vg01/backup should had been created by udev but it was not found. Falling back to direct link creation.
+    # lvchange -ay /dev/vgmisc/lv_doc
+      The link /dev/vgmisc/lv_doc should had been created by udev but it was not found. Falling back to direct link creation.
+    # mount /dev/vg01/backup /mnt/backup/
+    # mount /dev/vgmisc/lv_doc /mnt/lv_doc/
+    # df -T |grep -e backup -e lv_doc
+    /dev/mapper/vg01-backup
+                   xfs   924188672 887058332  37130340  96% /mnt/backup
+    /dev/mapper/vgmisc-lv_doc
+                   xfs   976093184 686094968 289998216  71% /mnt/lv_doc

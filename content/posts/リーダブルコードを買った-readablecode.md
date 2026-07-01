@@ -1,0 +1,44 @@
+---
+title: '「リーダブルコード」を買った! #readablecode'
+date: '2012-07-20T16:42:00+09:00'
+slug: リーダブルコードを買った-readablecode
+tags:
+- book
+draft: false
+disqus_identifier: 2012-07-20-ridaburukodo-womai-tsuta-readablecode
+---
+
+[![picture](https://masayukig.files.wordpress.com/2012/07/94f03-dsc02428.jpg?w=300)
+](https://masayukig.files.wordpress.com/2012/07/94f03-dsc02428.jpg)
+
+
+
+
+
+Amazonでは、一時的に在庫切れになっているほどの人気書籍、
+
+
+
+「[リーダブルコード](http://www.oreilly.co.jp/books/9784873115658/)」を買いました。
+
+
+
+
+
+でも、まだ、中身は全く読んでいないｗ
+
+
+
+電子書籍版は2,016円だが、紙書籍を購入した人向けに、
+安く販売してくれたりする仕組みないかなー。
+<http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=hughundercons-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=4873115655>
+
+
+
+
+\[slideshare id=13563604&w=427&h=356&fb=0&mw=0&mh=0&style=border-width:
+1px 1px 0; border: 1px solid \#CCC; margin-bottom: 5px;&sc=no\]
+
+
+**[20120706-readablecode](http://www.slideshare.net/kdmsnr/20120706readablecode "20120706-readablecode")**
+from **[Masanori Kado](http://www.slideshare.net/kdmsnr)**

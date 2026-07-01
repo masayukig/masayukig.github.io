@@ -1,0 +1,43 @@
+---
+title: NEX-5NDを買った！安い買い方について
+date: '2012-03-25T21:09:00+09:00'
+slug: nex-5ndを買った安い買い方について
+tags:
+- カメラ
+- camera
+- nex-5n
+- nex-5nd
+- shopping
+draft: false
+disqus_identifier: 2012-03-25-nex-5ndwomai-tsutaan-imai-ifang-nitsuite
+---
+
+[![picture](https://masayukig.files.wordpress.com/2012/03/c2af8-2012-03-2605-38-33.jpg?w=300)
+](https://masayukig.files.wordpress.com/2012/03/c2af8-2012-03-2605-38-33.jpg)
+
+
+という訳で、NEX-5NDを買ったのです。(写真には写ってませんが、もうひとつレンズ(16mm
+F2.8)があります)
+近くのノジマ店舗で67,000円でしたが、実質、50,300円で購入しました。
+
+ただし、買い方はちょっと一手間、二手間入ってます。
+
+1.  [ノジマの株主優待券](http://www.nojima.co.jp/ir/stockholder.html)を使った(10%オフ)
+2.  Ario店舗入っている店舗だったので、プレミアムチケット(※)を使い、購入。
+
+
+※6,000円分の商品券が5,000円で購入できる、期間・数量限定チケット。今回は60,000円分使用しました。
+
+
+
+
+
+という訳で、実質、50,300円で購入できたことになります。
+
+
+
+[価格.comの最安値](http://kakaku.com/item/K0000281279/)よりも1万円以上安く、ヨドバシ・ビックでは、
+
+
+
+70,000円でポイント10%なので、まぁ、お得だったと思っています。

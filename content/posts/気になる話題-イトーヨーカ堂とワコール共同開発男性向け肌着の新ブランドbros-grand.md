@@ -1,0 +1,18 @@
+---
+title: '気になる話題: イトーヨーカ堂とワコール共同開発。男性向け肌着の新ブランド「BROS GRAND」'
+date: '2012-03-15T22:15:00+09:00'
+slug: 気になる話題-イトーヨーカ堂とワコール共同開発男性向け肌着の新ブランドbros-grand
+categories:
+- Uncategorized
+draft: false
+disqus_identifier: 2012-03-15-qi-ninaruhua-ti-itoyokatang-towakorugong-tong-kai-fa-nan-xing-xiang-keji-zhao-noxin-burandobros-grand
+---
+
+<http://news.mynavi.jp/news/2012/03/15/141/index.html>
+
+> イトーヨーカ堂とワコールが共同開発して生まれた男性用肌着の新ブランド「BROS(ブロス)
+> GRANDE(グランデ)」が22日に全国のイトーヨーカドー全102店舗で販売される。トップス2品、ボトム18品、ボディウォーマー1品番の合計21品を販売し、初年度で15万枚、約4億円の売り上げを目指すという。
+> ![picture](http://rss.rssad.jp/rss/artimg/RWFTmzjGxpl3/91bfab8ae6255809e95e78f38ecae37d)
+>
+
+from マイナビニュース [http://news.mynavi.jp](http://news.mynavi.jp/)

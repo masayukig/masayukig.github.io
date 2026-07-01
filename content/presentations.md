@@ -1,0 +1,45 @@
+---
+title: "Presentations"
+url: "/presentations/"
+---
+
+These are my public speaking/writing list.
+
+## Speaking
+
+* Non-native English Speakers In Open Source Communities: A True Story
+
+  * [Linux.conf.au 2017](https://lca2017.linux.org.au/schedule/presentation/70/) (2017-01-18)
+  * [FOSSAsia 2017](https://2017.fossasia.org/tracks.html#2937) (2017-03-18)
+  * [OpenStack Summit in Boston 2017](https://www.openstack.org/summit/boston-2017/summit-schedule/events/17571/non-native-english-speakers-in-the-openstack-community-a-true-story) (2017-05-10)
+  * [OpenStack Days Tokyo 2017](http://openstackdays.com/program-detail/#d1p8s6) (2017-07-20 in Japanese)
+  * [July Tech Festa 2017](http://2017.techfesta.jp/speakers#E30) (2017-08-27 in Japanese)
+  * [openSUSE Asia Summit](https://events.opensuse.org/conference/summitasia17/program/proposal/1540) (2017-10-21)
+  * [SUSECon Prague in 2017](https://susecon17.smarteventscloud.com/connect/search.ww?searchPhrase=TUT122489) (2017-09-26,29)
+
+* Better Testing Through Statistics
+
+  * [LinuxCon + ContainerCon Japan 2016](https://lcccjapan2016.sched.com/event/7ES2/better-testing-through-statistics-matthew-treinish-hpe) (2016-07-13)
+
+* Tempest Scenario Tests: An Introduction for Testing your OpenStack Cloud
+
+  * [OpenStack Summit May 2014 Atlanta](https://openstacksummitmay2014atlanta.sched.com/event/1lhQSmU/tempest-scenario-tests-an-introduction-for-testing-your-openstack-cloud) (2014-05-12)
+  * [LinuxCon + CloudOpen Japan 2014](https://linuxconcloudopenjp2014.sched.com/event/1eo96Ri/tempest-scenario-tests-an-introduction-for-testing-your-openstack-cloud-masayuki-igawa-nec-soft) (2014-05-21)
+
+## Writing
+
+* Tips for non-native English speakers working on open source projects
+
+  * [OpenSource.com](https://opensource.com/article/17/1/non-native-speakers-take-open-source-communities) (2017-01-13)
+  * [SUSE Blog](https://www.suse.com/communities/blog/tips-non-native-english-speakers-working-open-source-projects/) (2017-04-20)
+  * [OpenStack SuperUser blog](http://superuser.openstack.org/articles/esl-open-source-projects/) (2017-05-04)
+
+* OpenStackはどのようにテストしているのか？ (in Japanese)
+
+  * [@IT](http://www.atmarkit.co.jp/ait/articles/1501/16/news012.html) (2015-01-14)
+
+* OpenStackの品質を保つ仕組みとは？：QA/Infraプロジェクトの最新動向 (in Japanese)
+
+  * [ThinkIT](https://thinkit.co.jp/story/2015/11/10/6594) (2015-11-10)
+
+* Book: [OpenStackクラウドインテグレーション オープンソースクラウドによるサービス構築入門 (in Japanese)](https://www.shoeisha.co.jp/book/detail/9784798139784) (2015-01-27)

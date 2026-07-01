@@ -1,0 +1,60 @@
+---
+title: Xperiaソフトウェアアップデートした(R1EA025)
+date: '2010-06-11T06:03:00+09:00'
+slug: xperiaソフトウェアアップデートしたr1ea025
+tags:
+- Android
+- Linux
+- PHS-Mobile-Phone
+- Software
+- Xperia
+draft: false
+disqus_identifier: 2010-06-11-xperiasohutoueaatsupudetoshitar1ea025
+---
+
+[![http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html](http://kwout.com/cutout/8/st/3x/5az_bor.jpg "POBox Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で - ITmedia +D モバイル")
+](http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html)
+[POBox
+Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で
+- ITmedia +D
+モバイル](http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html)
+via [kwout](http://itmedia.kwout.com/quote/8st3x5az)
+
+
+<http://kwout.com/cutout/8/st/3x/5az_bor.js>
+
+Xperiaソフトウェアアップデートが再開されたので、アップデートしました。
+
+POBoxのフリック入力は、iPhoneのソレよりも良い感じですね。
+私の場合、フリックする方向と、入力される文字の対応が体に染み込んでないので、
+POBoxの表示方式(押したキーの上側に候補が表示される方式)が、いい感じです。
+
+
+[![http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html](http://kwout.com/cutout/7/xj/qn/ife_bor.jpg "POBox Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で - ITmedia +D モバイル")
+](http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html)
+[POBox
+Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で
+- ITmedia +D
+モバイル](http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html)
+via [kwout](http://itmedia.kwout.com/quote/7xjqnife)
+
+
+<http://kwout.com/cutout/7/xj/qn/ife_bor.js>
+
+また、タッチパネルの感度が向上しているということなので、ちょっと期待してます。
+
+PC経由か、あるいは、Xperia単体でのアップデートも可能になっています。
+Xperia単体で手動でアップデートする場合は、
+「設定」→「端末情報」→「ソフトウェア更新」
+で出来ると思います。
+
+参考リンク：
+
+-   <http://www.sonyericsson.co.jp/support/software/updateservice/>
+-   <http://japanese.engadget.com/2010/06/09/xperia/>
+-   <http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html>
+-   <http://av.watch.impress.co.jp/docs/news/20100609_373193.html>
+-   <http://ameblo.jp/moon-age/entry-10559165157.html>
+-   <http://saya.s145.xrea.com/archives/2010/06/xperia_4.html>
+-   <http://h-scp10.blog.so-net.ne.jp/2010-06-10>
+-   <http://d.hatena.ne.jp/Sapphire/20100610/1276175119>

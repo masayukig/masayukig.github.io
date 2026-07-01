@@ -1,0 +1,88 @@
+---
+title: 'Dropbox Automatorを使って写真を全自動でEvernoteへアップロードする(若干注意が必要) #evernote #dropbox'
+date: '2012-03-20T20:28:00+09:00'
+slug: dropbox-automatorを使って写真を全自動でevernoteへアップロードする若干注意が必要-evernote-dropbox
+tags:
+- dropbox
+- evernote
+- iPad
+- iPhone
+- picture
+draft: false
+disqus_identifier: 2012-03-20-dropbox-automatorwoshi-tsutexie-zhen-woquan-zi-dong-deevernoteheatsupurodosururuo-gan-zhu-yi-gabi-yao-evernote-dropbox
+---
+
+[はじめに]{.Apple-style-span style="font-size:large;"}
+[Dropbox
+Automator](http://wappwolf.com/dropboxautomator/)というのを使って、iPhone,
+iPad, Android, デジカメで
+撮影した写真を全自動でEvernoteへアップロードする方法を記します。
+
+ただし、注意点があるので、それは最後に書きます。
+
+[前提条件]{.Apple-style-span style="font-size:large;"}
+
+1.  [Dropboxの写真や動画の自動アップロードサービス](http://www.itmedia.co.jp/news/articles/1202/24/news092.html)が有効になっていること
+
+[方法]{.Apple-style-span style="font-size:large;"}
+[[Dropbox
+Automator](http://wappwolf.com/dropboxautomator/) にアクセスし、あとは以下の画像の通り進めます。]{.Apple-style-span
+style="font-size:small;"}
+
+
+[![picture](https://masayukig.files.wordpress.com/2012/03/9556c-dropboxautomator-01.png?w=300)
+](https://masayukig.files.wordpress.com/2012/03/9556c-dropboxautomator-01.png)
+
+
+
+[![picture](https://masayukig.files.wordpress.com/2012/03/8a791-dropboxautomator-02.png?w=300)
+](https://masayukig.files.wordpress.com/2012/03/8a791-dropboxautomator-02.png)
+
+
+
+[![picture](https://masayukig.files.wordpress.com/2012/03/10778-dropboxautomator-03.png?w=300)
+](https://masayukig.files.wordpress.com/2012/03/10778-dropboxautomator-03.png)
+
+
+
+[![picture](https://masayukig.files.wordpress.com/2012/03/ac3fe-dropboxautomator-04.png?w=300)
+](https://masayukig.files.wordpress.com/2012/03/ac3fe-dropboxautomator-04.png)
+
+
+
+[![picture](https://masayukig.files.wordpress.com/2012/03/fbad5-dropboxautomator-05.png?w=300)
+](https://masayukig.files.wordpress.com/2012/03/fbad5-dropboxautomator-05.png)
+
+
+
+[![picture](https://masayukig.files.wordpress.com/2012/03/5a13c-dropboxautomator-06.png?w=300)
+](https://masayukig.files.wordpress.com/2012/03/5a13c-dropboxautomator-06.png)
+
+
+
+[![picture](https://masayukig.files.wordpress.com/2012/03/72eb7-dropboxautomator-07.png?w=300)
+](https://masayukig.files.wordpress.com/2012/03/72eb7-dropboxautomator-07.png)
+
+
+
+[![picture](https://masayukig.files.wordpress.com/2012/03/ac0c5-dropboxautomator-08.png?w=300)
+](https://masayukig.files.wordpress.com/2012/03/ac0c5-dropboxautomator-08.png)
+
+
+
+
+
+[![picture](https://masayukig.files.wordpress.com/2012/03/019bc-dropboxautomator-10.png?w=300)
+](https://masayukig.files.wordpress.com/2012/03/019bc-dropboxautomator-10.png)
+
+
+
+[![picture](https://masayukig.files.wordpress.com/2012/03/dcb4a-dropboxautomator-11.png?w=241)
+](https://masayukig.files.wordpress.com/2012/03/dcb4a-dropboxautomator-11.png)
+
+
+[注意点]{.Apple-style-span style="font-size:large;"}
+
+1.  Evernoteの月間最大アップロードは、60MB(無料アカウント)または1GB(プレミアムアカウント)です。既に、Camera
+    Uploadsフォルダにある程度の枚数写真がある場合、月間最大アップロード量を超えてしまうかもしれません。(その場合、次の月までアップロードできなくなります。。)
+2.  Evernoteへアップロード処理されると、「processed」というフォルダに勝手に移動されてしまうようです。これで、今後もDropbox的にうまく動作するのか？はよくわかっていません。。
