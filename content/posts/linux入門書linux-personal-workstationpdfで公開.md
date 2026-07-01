@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-03-20-linuxru-men-shu-linux-personal-workstation-pdfdegong-kai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Linux入門書『Linux Personal Workstation』、PDFで公開
 ---
 
 <http://slashdot.jp/article.pl?sid=05/03/17/0657232&topic=2>

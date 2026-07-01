@@ -6,6 +6,11 @@ tags:
 - game
 draft: false
 disqus_identifier: 2004-07-30-huainaruhuantazi-iii-adobansu-fa-mai
+cover:
+  image: http://images-jp.amazon.com/images/P/B00029RW0A.09.MZZZZZZZ.jpg
+  alt: 'ファイナルファンタジーI・II
+
+    アドバンス'
 ---
 
 [![ファイナルファンタジーI・II

@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-02-16-kashio-zhe-ritatamixing-g-shockketaizhan-shi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: カシオ、折りたたみ型“G-SHOCK”ケータイ展示
 ---
 
 <http://www.itmedia.co.jp/mobile/articles/0501/07/news074.html>

@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2004-12-03-sun-solaris-10wofa-biao
+cover:
+  image: /images/covers/oss.png
+  alt: Sun、Solaris 10を発表
 ---
 
 [pcweb.mycom.co.jp](http://pcweb.mycom.co.jp/news/2004/11/30/009.html)

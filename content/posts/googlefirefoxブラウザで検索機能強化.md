@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-04-03-google-firefoxburauzadejian-suo-ji-neng-qiang-hua
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Google、Firefoxブラウザで検索機能強化
 ---
 
 <http://www.itmedia.co.jp/news/articles/0504/01/news014.html>

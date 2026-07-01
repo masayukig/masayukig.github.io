@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-09-26-jing-ponhuamu-ver15gong-kai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 京ぽんファーム Ver.1.5公開
 ---
 
 [京セラページ](http://www.kyocera.co.jp/prdct/telecom/consumer/ah-k3001v/catalog.html)

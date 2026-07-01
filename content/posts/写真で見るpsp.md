@@ -8,6 +8,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2004-07-14-xie-zhen-dejian-rupsp
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 写真で見る「PSP」
 ---
 
 ([ITmedia](http://www.itmedia.co.jp/lifestyle/articles/0407/13/news005.html))([ITmedia2](http://www.itmedia.co.jp/lifestyle/articles/0407/13/news019.html))([INTERNET

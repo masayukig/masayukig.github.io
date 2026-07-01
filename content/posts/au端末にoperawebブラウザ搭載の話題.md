@@ -7,6 +7,9 @@ tags:
 - PICKUP
 draft: false
 disqus_identifier: 2004-10-04-auduan-mo-nioperawebburauzada-zai-nohua-ti
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: au端末にOpera(Webブラウザ)搭載の話題
 ---
 
 [Impress](http://k-tai.impress.co.jp/cda/article/news_toppage/20285.html)

@@ -10,6 +10,9 @@ tags:
 - shopping
 draft: false
 disqus_identifier: 2012-03-25-nex-5ndwomai-tsutaan-imai-ifang-nitsuite
+cover:
+  image: https://masayukig.files.wordpress.com/2012/03/c2af8-2012-03-2605-38-33.jpg?w=300
+  alt: picture
 ---
 
 [![picture](https://masayukig.files.wordpress.com/2012/03/c2af8-2012-03-2605-38-33.jpg?w=300)

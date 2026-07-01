@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>twitterからmixiエコーへ送信 | What&#39;s done is done</title>
+<meta name="keywords" content="mixi, net, ruby, twitter">
+<meta name="description" content="Twitterしたら、自動でMixiエコー作ったよ!!　『twitter2mixi.rb』
+の記事を参考に(というかほぼそのままだが)、Twitterから、mixiエコーへ送信するようにしてみた。
+mixiの微妙な閉鎖感が若干嫌で、ちょっと足が遠のきつつあったが、
+辛うじてつなぎ止まったかも。
+上記のスクリプトを使用する上で、私の環境だといくつかつまづいたことがあったので、
+とりあえず、以下に記しておくことにする&hellip;
+
+文字コードの問題
+依存ライブラリの問題
+
+・文字コードの問題
+ソースをUTF-8-unixで書いたのだが、実行すると、
+hoge@unicorn:~/bin$ ./twitter2mixi.rb
+./twitter2mixi.rb:45: syntax error, unexpected tIDENTIFIER, expecting kEND
+  puts &quot;login to mixi by #{config[&#39;mixiusername&#39;]}&quot;
+             ^
+
+と、よく分からないエラーとなる。
+これは、実行時のrubyのKCODEとソースの文字コードが異なると発生する（？）様で、
+twitter2mixi.rbソースの先頭の記述を以下の様に変更して対応。
+#!/usr/bin/ruby -Ku
+
+また、最終行近くの
+  form.fields.find { |f| f.name == &#39;body&#39; }.value = twitterlaststatus.toeuc
+
+もうまく動作しなかったので、
+  form.fields.find { |f| f.name == &#39;body&#39; }.value = twitterlaststatus.toutf8
+
+に、変更。
+・依存ライブラリの問題
+
+Building native extensions. This could take a while&hellip;
+ERROR: Error installing mechanize:
+ERROR: Failed to build gem native extension.
+(snip)
+checking for libxslt/xslt.h in
+/opt/local/include/,/opt/local/include/libxml2,/opt/local/include,/opt/local/include,/opt/local/include/libxml2,/usr/local/include,/usr/local/include/libxml2,/usr/include,/usr/include/libxml2,/usr/include,/usr/include/libxml2&hellip;
+no
+libxslt is missing. try &lsquo;port install libxslt&rsquo; or &lsquo;yum install
+libxslt-devel&rsquo;
+(snip)
+
+というエラーが出たが、ubuntuにはそんなパッケージは無い。
+で、">
+<meta name="author" content="Masayuki Igawa">
+<link rel="canonical" href="http://localhost:1313/posts/2009/07/twitter%E3%81%8B%E3%82%89mixi%E3%82%A8%E3%82%B3%E3%83%BC%E3%81%B8%E9%80%81%E4%BF%A1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.68c62ef954d98b64015e3444e943bedbafc6461b357416b42e2caa6a6937032f.css" integrity="sha256-aMYu&#43;VTZi2QBXjRE6UO&#43;26/GRhs1dBa0Liyqamk3Ay8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="ja" href="http://localhost:1313/posts/2009/07/twitter%E3%81%8B%E3%82%89mixi%E3%82%A8%E3%82%B3%E3%83%BC%E3%81%B8%E9%80%81%E4%BF%A1/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="What&#39;s done is done (Alt + H)">What&#39;s done is done</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">ホーム</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/posts/">Posts</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      twitterからmixiエコーへ送信
+    </h1>
+    <div class="post-meta">
+
+<span title='2009-07-26 07:27:00 +0900 JST'>2009-07-26</span>&nbsp;·&nbsp;<span>1 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="http://localhost:1313/images/covers/uncategorized.jpg" alt="twitterからmixiエコーへ送信">
+        
+</figure>
+
+  <div class="post-content md-content"><p><a href="http://cyberwave.jp/nashiki/2009/04/twitter%E3%81%97%E3%81%9F%E3%82%89%E3%80%81%E8%87%AA%E5%8B%95%E3%81%A7mixi%E3%82%A8%E3%82%B3%E3%83%BC%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%88%E3%80%80%E3%80%8Etwitter2mixirb%E3%80%8F/comment-page-1/">Twitterしたら、自動でMixiエコー作ったよ!!　『twitter2mixi.rb』</a>
+の記事を参考に(というかほぼそのままだが)、Twitterから、mixiエコーへ送信するようにしてみた。</p>
+<p>mixiの微妙な閉鎖感が若干嫌で、ちょっと足が遠のきつつあったが、
+辛うじてつなぎ止まったかも。</p>
+<p>上記のスクリプトを使用する上で、私の環境だといくつかつまづいたことがあったので、
+とりあえず、以下に記しておくことにする&hellip;</p>
+<ol>
+<li>文字コードの問題</li>
+<li>依存ライブラリの問題</li>
+</ol>
+<p>・文字コードの問題
+ソースをUTF-8-unixで書いたのだが、実行すると、</p>
+<pre><code>hoge@unicorn:~/bin$ ./twitter2mixi.rb
+./twitter2mixi.rb:45: syntax error, unexpected tIDENTIFIER, expecting kEND
+  puts &quot;login to mixi by #{config['mixiusername']}&quot;
+             ^
+</code></pre>
+<p>と、よく分からないエラーとなる。
+これは、実行時のrubyのKCODEとソースの文字コードが異なると発生する（？）様で、
+twitter2mixi.rbソースの先頭の記述を以下の様に変更して対応。</p>
+<pre><code>#!/usr/bin/ruby -Ku
+</code></pre>
+<p>また、最終行近くの</p>
+<pre><code>  form.fields.find { |f| f.name == 'body' }.value = twitterlaststatus.toeuc
+</code></pre>
+<p>もうまく動作しなかったので、</p>
+<pre><code>  form.fields.find { |f| f.name == 'body' }.value = twitterlaststatus.toutf8
+</code></pre>
+<p>に、変更。</p>
+<p>・依存ライブラリの問題</p>
+<blockquote>
+<p>Building native extensions. This could take a while&hellip;
+ERROR: Error installing mechanize:
+ERROR: Failed to build gem native extension.
+(snip)
+checking for libxslt/xslt.h in
+/opt/local/include/,/opt/local/include/libxml2,/opt/local/include,/opt/local/include,/opt/local/include/libxml2,/usr/local/include,/usr/local/include/libxml2,/usr/include,/usr/include/libxml2,/usr/include,/usr/include/libxml2&hellip;
+no
+libxslt is missing. try &lsquo;port install libxslt&rsquo; or &lsquo;yum install
+libxslt-devel&rsquo;
+(snip)</p>
+</blockquote>
+<p>というエラーが出たが、ubuntuにはそんなパッケージは無い。
+で、</p>
+<pre><code>hoge@unicorn:~/bin$ sudo apt-cache pkgnames libxslt
+libxslt-dev
+libxslt1-dbg
+libxslt1-dev
+libxslt-ruby
+libxslt1.1
+libxslt1
+libxsltc-java
+libxslt-ruby1.8
+libxslt0-dev
+libxsltc-java-gcj
+と、出たので、
+hoge@unicorn:~/bin$ sudo apt-get install libxslt-dev libxslt-ruby1.8
+として、インストール。
+</code></pre>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/mixi/">Mixi</a></li>
+      <li><a href="http://localhost:1313/tags/net/">Net</a></li>
+      <li><a href="http://localhost:1313/tags/ruby/">Ruby</a></li>
+      <li><a href="http://localhost:1313/tags/twitter/">Twitter</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/2009/07/friendfeed/">
+    <span class="title">« 前へ</span>
+    <span>friendfeed</span>
+  </a>
+  <a class="next" href="http://localhost:1313/posts/2009/07/twitter%E5%A7%8B%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F/">
+    <span class="title">次へ »</span>
+    <span>Twitter始めてみた</span>
+  </a>
+</nav>
+
+  </footer>
+
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">What&#39;s done is done</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'コピー';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'コピーされました!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'コピー';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

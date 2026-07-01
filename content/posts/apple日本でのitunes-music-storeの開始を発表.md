@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-08-05-apple-ri-ben-denoitunes-music-store-nokai-shi-wofa-biao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Apple、日本での「iTunes Music Store」の開始を発表
 ---
 
 [slashdot.jp](http://slashdot.jp/article.pl?sid=05/08/04/0247259&topic=52)

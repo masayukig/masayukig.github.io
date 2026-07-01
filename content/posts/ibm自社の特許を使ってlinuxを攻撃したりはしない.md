@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-08-06-ibmzi-she-note-xu-woshi-tsute-linuxwogong-ji-shitarihashinai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: IBM：「自社の特許を使って、Linuxを攻撃したりはしない」
 ---
 
 同じような時に、同じような題材(ソフトウェア特許)の話です。

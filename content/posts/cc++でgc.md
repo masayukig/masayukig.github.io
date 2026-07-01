@@ -8,6 +8,9 @@ tags:
 - GC
 draft: false
 disqus_identifier: 2008-07-07-ccdegc
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: C/C++でGC
 ---
 
 Java野郎(私)が、C/C++でメンドイものの一つに、

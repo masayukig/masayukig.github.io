@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-04-14-uirukomu-ta-she-phskaranocheng-huan-you-yu-kiyanpen
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ウィルコム、他社PHSからの乗換優遇キャンペーン
 ---
 
 <http://slashdot.jp/article.pl?sid=05/04/13/1224212&topic=97>

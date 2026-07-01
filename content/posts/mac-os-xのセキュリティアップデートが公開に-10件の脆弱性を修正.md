@@ -6,6 +6,9 @@ tags:
 - Mac
 draft: false
 disqus_identifier: 2005-09-26-mac-os-xnosekiyuriteiatsupudetogagong-kai-ni-10jian-nocui-ruo-xing-woxiu-zheng
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Mac OS Xのセキュリティアップデートが公開に--10件の脆弱性を修正
 ---
 
 [japan.cnet.com](http://japan.cnet.com/news/sec/story/0,2000050480,20087532,00.htm)

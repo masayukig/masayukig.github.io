@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2005-01-16-mac-minihaomai-ide-haben-dang-ka
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「Mac miniはお買い得」は本当か
 ---
 
 <http://japan.cnet.com/news/tech/story/0,2000047674,20080051,00.htm>

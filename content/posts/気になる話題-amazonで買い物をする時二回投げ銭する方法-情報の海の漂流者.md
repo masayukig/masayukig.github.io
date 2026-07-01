@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-16-qi-ninaruhua-ti-amazondemai-iwu-wosurushi-er-hui-tou-geqian-surufang-fa-qing-bao-nohai-nopiao-liu-zhe
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: '気になる話題: amazonで買い物をする時二回投げ銭する方法 - 情報の海の漂流者'
 ---
 
 気になる話題: [amazonで買い物をする時二回投げ銭する方法 -

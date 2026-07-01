@@ -9,6 +9,9 @@ tags:
 - blog
 draft: false
 disqus_identifier: 2017-11-26-migrated-my-blog-to-igawaio
+cover:
+  image: /images/covers/misc.jpg
+  alt: Switched my blog to igawa.io
 ---
 
 I changed my blog to my original domain. My blogs were split to some

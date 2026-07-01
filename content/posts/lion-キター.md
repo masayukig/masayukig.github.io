@@ -10,6 +10,9 @@ tags:
 - Software
 draft: false
 disqus_identifier: 2011-07-21-lion-kita
+cover:
+  image: https://lh5.googleusercontent.com/-s0MrqtQ3NvE/Tjr6wxPPTII/AAAAAAAAg6M/TSiEM5ZQ2n8/s400/5958402445_f5f0496bfb_o.png
+  alt: picture
 ---
 
 [![picture](https://lh5.googleusercontent.com/-s0MrqtQ3NvE/Tjr6wxPPTII/AAAAAAAAg6M/TSiEM5ZQ2n8/s400/5958402445_f5f0496bfb_o.png)

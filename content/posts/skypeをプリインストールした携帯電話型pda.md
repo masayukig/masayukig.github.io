@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-02-13-skypewopuriinsutorushitaxi-dai-dian-hua-xing-pda
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Skypeをプリインストールした携帯電話型PDA
 ---
 
 <http://slashdot.jp/article.pl?sid=05/02/13/0916203&topic=97>

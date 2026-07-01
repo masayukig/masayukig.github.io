@@ -11,6 +11,9 @@ tags:
 - career
 draft: false
 disqus_identifier: 2016-12-05-moving-company-is-better-choice
+cover:
+  image: /images/covers/work.jpg
+  alt: 転職は良い選択だった
 ---
 
 本エントリは「 [OpenStack Advent Calendar 2016](http://www.adventar.org/calendars/1739) 」の 12/5 分です。

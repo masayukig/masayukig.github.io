@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Process on What&#39;s done is done</title>
+    <link>http://localhost:1313/categories/process/</link>
+    <description>Recent content in Process on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 10 May 2018 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/process/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Retrospective 2018-05-10</title>
+      <link>http://localhost:1313/posts/2018/05/retrospective-2018-05-10/</link>
+      <pubDate>Thu, 10 May 2018 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2018/05/retrospective-2018-05-10/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This is a retrospective about this blog mainly.&lt;/p&gt;
+&lt;h2 id=&#34;positive&#34;&gt;Positive&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;My eyes are still on this blog.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;negative&#34;&gt;Negative&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I couldn&amp;rsquo;t have continued to post regularly.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Language barrier&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I prefer to use Japanese rather than English&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tooling barrier&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Generate with Pelican is not so easy. Especially on smartphone?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;action&#34;&gt;Action&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Allow me to use not only English but also Japanese for my posts if
+it&amp;rsquo;s better. (I&amp;rsquo;m not sure about this..)&lt;/li&gt;
+&lt;li&gt;Use my smartphone to dump out my ideas.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;m waiting for my Gemini PDA :) It should be useful for writing texts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -6,6 +6,9 @@ tags:
 - Mac
 draft: false
 disqus_identifier: 2012-07-25-os-x-mountain-lion-ti-gong-kai-shi
+cover:
+  image: https://masayukig.files.wordpress.com/2012/07/adce7-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-36-54.png?w=600
+  alt: picture
 ---
 
 というわけで、OS X Mountain Lion インストール開始 。

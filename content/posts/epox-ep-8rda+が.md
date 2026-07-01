@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2005-07-04-epox-ep-8rdaga
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: EPoX EP-8RDA+が。。。
 ---
 
 使用していたマザーボード「EPoX EP-8RDA+」がお亡くなりになりました。

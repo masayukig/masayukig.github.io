@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2014-12-17-openstack-tempest-no-tesutowoshi-xing-surufang-fa-testr-vs-run_tempestsh-vs-tox
+cover:
+  image: https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png
+  alt: picture
 ---
 
 Tempest は OpenStackのテストスイートです。

@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-15-qi-ninaruhua-ti-atsupuru-aperturetodezitarukamerarawhu-huan-xing-atsupudetonozui-xin-ban-wogong-kai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: '気になる話題: アップル、ApertureとデジタルカメラRAW互換性アップデートの最新版を公開'
 ---
 
 気になる話題:

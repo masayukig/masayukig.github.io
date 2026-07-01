@@ -8,6 +8,9 @@ tags:
 - timemachine
 draft: false
 disqus_identifier: 2011-05-22-time-machinegamauntodekimasendeshita-deshi-bai-shitatokinishi-shitemirukoto
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Time Machineが「マウントできませんでした」で失敗したときに試してみること
 ---
 
 現在、Time MachineをNAS上のボリュームで使っているのですが、たまに、

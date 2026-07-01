@@ -7,6 +7,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2004-12-12-pspfa-mai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: PSP発売！
 ---
 
 [新宿ヨドバシカメラには早朝から1,000人を超える行列！](http://www.watch.impress.co.jp/game/docs/20041212/pspsin.htm)

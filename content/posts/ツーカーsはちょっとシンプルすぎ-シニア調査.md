@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-12-03-tsukas-hachiyotsutoshinpurusugi-shiniadiao-cha
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「ツーカーS」はちょっとシンプルすぎ？ シニア調査
 ---
 
 [itmedia.co.jp](http://www.itmedia.co.jp/news/articles/0411/30/news081.html)

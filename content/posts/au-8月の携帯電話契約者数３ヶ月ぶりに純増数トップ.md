@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-09-09-au-8yue-noxi-dai-dian-hua-qi-yue-zhe-shu-3keyue-burinichun-zeng-shu-totsupu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: au 8月の携帯電話契約者数、３ヶ月ぶりに純増数トップ
 ---
 
 [ITmedia](http://itpro.nikkeibp.co.jp/free/NNM/NEWS/20040907/149589/)

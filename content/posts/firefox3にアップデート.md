@@ -6,6 +6,9 @@ tags:
 - Firefox
 draft: false
 disqus_identifier: 2008-06-26-firefox3niatsupudeto
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Firefox3にアップデート
 ---
 
 いつも使ってるWebブラウザはFirefoxなのですが、

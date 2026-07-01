@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-10-24-j2menibytecodejian-zheng-nocui-ruo-xing
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: J2MEにBytecode検証の脆弱性
 ---
 
 [Slashdot.jp](http://slashdot.jp/security/04/10/23/061207.shtml?topic=43)

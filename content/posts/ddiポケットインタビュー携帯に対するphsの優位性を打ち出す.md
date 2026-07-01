@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-11-06-ddipoketsutointabiyuxi-dai-nidui-suruphsnoyou-wei-xing-woda-chichu-su
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: (DDIポケットインタビュー)携帯に対するPHSの優位性を打ち出す
 ---
 
 [ITmedia](http://www.itmedia.co.jp/mobile/articles/0411/04/news059.html)

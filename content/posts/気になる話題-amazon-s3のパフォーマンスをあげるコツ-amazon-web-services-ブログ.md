@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-16-qi-ninaruhua-ti-amazon-s3nopahuomansuwoagerukotsu-amazon-web-services-burogu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: '気になる話題: Amazon S3のパフォーマンスをあげるコツ - Amazon Web Services ブログ'
 ---
 
 気になる話題: [Amazon S3のパフォーマンスをあげるコツ - Amazon Web

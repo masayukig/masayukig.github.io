@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-02-22-linuxtonosekiyuriteidui-jue-dewindows-server-2003gasheng-li
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Linuxとのセキュリティ対決でWindows Server 2003が勝利
 ---
 
 <http://itpro.nikkeibp.co.jp/free/NT/NEWS/20050221/3/>

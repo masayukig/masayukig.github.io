@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-07-21-tong-chang-no3bei-gao-su-hua-shitagandamuusbmemori
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: “通常の3倍”高速化したガンダムUSBメモリ
 ---
 
 [PC Watch](http://pc.watch.impress.co.jp/docs/2004/0721/iodata2.htm)

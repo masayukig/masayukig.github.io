@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-09-25-xin-shikunatsutaimac-g5nihong-reru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 新しくなったiMac G5に触れる
 ---
 
 [MYCOM PC](http://pcweb.mycom.co.jp/articles/2004/09/22/imacg5/)

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Team on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/team/</link>
+    <description>Recent content in Team on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 05 Dec 2016 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/team/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>転職は良い選択だった</title>
+      <link>http://localhost:1313/posts/2016/12/moving-company-is-better-choice/</link>
+      <pubDate>Mon, 05 Dec 2016 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2016/12/moving-company-is-better-choice/</guid>
+      <description>&lt;p&gt;本エントリは「 &lt;a href=&#34;http://www.adventar.org/calendars/1739&#34;&gt;OpenStack Advent Calendar 2016&lt;/a&gt; 」の 12/5 分です。&lt;/p&gt;
+&lt;p&gt;先日(2ヶ月弱前)、 &lt;a href=&#34;../../10/dps-forever&#34;&gt;少々刺激的なエントリ&lt;/a&gt; を投下しましたが、現在の気持ちを少し述べてみたいと思います。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;結論：転職は良い選択だった&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;今年１月に転職し、あらたな環境で働くことになりました。前職は、新卒で入社しずっと働いてきた会社で、
+かれこれ17年以上勤めた事になります。そのような会社を辞めることはとても、非常に、たくさん考えましたし、
+迷いました。&lt;/p&gt;
+&lt;p&gt;迷った理由は色々あります。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;インターナショナルなチームで英語が標準語なのにやっていけるのか？&lt;/li&gt;
+&lt;li&gt;外資系ってことでかんたんにクビを切られるんじゃないか？&lt;/li&gt;
+&lt;li&gt;技術的なスキルが追いついていかないんじゃないか？&lt;/li&gt;
+&lt;li&gt;今までのキャリア捨てるの？&lt;/li&gt;
+&lt;li&gt;今やってること、中途半端じゃないの？&lt;/li&gt;
+&lt;li&gt;OSS「プログラマ」ってオマエ何歳だと思ってるんだ？&lt;/li&gt;
+&lt;li&gt;主体的に動けば今いる会社でも、自分のやりたいことができるんじゃないの？受動的に動いてない？&lt;/li&gt;
+&lt;li&gt;今はOpenStackが流行ってて良いけど、ブームが去った後どうするの？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;などなど。&lt;/p&gt;
+&lt;p&gt;でも、最終的には「転職」を選びました。&lt;/p&gt;
+&lt;p&gt;その選択理由として、以下のようなことを考えてました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;英語が標準語なので、英語スキルを高められる。&lt;/li&gt;
+&lt;li&gt;あと1.5〜2年くらいはブーム(バブル)が続くだろう。&lt;/li&gt;
+&lt;li&gt;技術・英語スキルを伸ばせば、次に繋げることができる。&lt;/li&gt;
+&lt;li&gt;今いる会社でやりたいことをやるには、そのために色々と動く必要があり、自分のやりたいことをやるまでに、色々大変そう。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ヨカッタと思うこと&#34;&gt;ヨカッタと思うこと&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;英語スキルが多少上がった（気がする）&lt;/li&gt;
+&lt;li&gt;視野が広がった(国内だけではなく、海外に目を向けるようになった)&lt;/li&gt;
+&lt;li&gt;社外の人との交流が増えた&lt;/li&gt;
+&lt;li&gt;「次」を考えることができるようになった&lt;/li&gt;
+&lt;li&gt;ストレスが減った&lt;/li&gt;
+&lt;li&gt;やりたいことに集中できる環境を手に入れた&lt;/li&gt;
+&lt;li&gt;給料(微)増&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;イマイチだったと思うこと&#34;&gt;イマイチだったと思うこと&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;英語スキルを想定よりも向上できてない&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;技術スキルも想定よりも向上できてない&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;想定よりも早くブーム(バブル)が下火になってきた&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;100% upstream オープンソース開発 というのも難しくなってきた（かもしれない）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+&lt;p&gt;総合的には、転職して「良かった」と思っています。&lt;/p&gt;
+&lt;p&gt;確かに、想定外のことや「イマイチだったなー」と思うことはあるものの、
+今の所はヨカッタと思うことの方が上回っています。&lt;/p&gt;
+&lt;p&gt;なので、以下のような場合には、転職を考えても良いと思う。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自分がやりたいと思うことが出来ていない＆社内にそういう環境を見いだせない&lt;/li&gt;
+&lt;li&gt;今よりも良い環境が他の会社にある&lt;/li&gt;
+&lt;li&gt;その企業からのオファーを受け取った&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;もっと詳しく聞きたいという方がいたら、ご連絡ください :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>オーストラリアメンバー最終日</title>
+      <link>http://localhost:1313/posts/2016/10/never-say-goodbye/</link>
+      <pubDate>Fri, 21 Oct 2016 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2016/10/never-say-goodbye/</guid>
+      <description>&lt;p&gt;本日は、オーストラリアチームメンバーの最終日でした。&lt;/p&gt;
+&lt;p&gt;日本とタイムゾーンが近く、私のマネージャ(James)もオーストラリアにいましたが、彼も含めて本日が最終日と
+なりました。&lt;/p&gt;
+&lt;p&gt;Jamesとは、東京でOpenStack Summitがあったときに初めて会いましたが、非常に明るく、気さくで
+とても助けられました。&lt;/p&gt;
+&lt;p&gt;特に、HPEに移ってすぐにあったイベント - Linux.conf.au 2016 に参加した際、私は体調を崩してしまい
+（たぶん、インフルエンザ的な何か。。）、オーストラリアで２，３日寝込むことになってしまいました。その際に、
+水・フルーツ・マスク等を持ってきてくれたり、気にかけてくれて非常に助けられました。&lt;/p&gt;
+&lt;p&gt;それ以外でも、マネージャ（上司）ではありましたが、私のことを非常にサポートしてくれました。&lt;/p&gt;
+&lt;p&gt;「スゴい！」&lt;/p&gt;
+&lt;p&gt;と思う反面、私が前職でマネージャだったときは、メンバーに色々「アレやって・コレやって」と言ってたよな・・・
+と、反省していました ^^;&lt;/p&gt;
+&lt;p&gt;元々彼は、エンジニアとしてHP(E)に移って、TripleO関連のアップストリーム開発に参画していましたが、
+方針転換などもあり、マネージャへ転向したそうです。&lt;/p&gt;
+&lt;p&gt;なお、彼は、（少なくともしばらくは）OpenStack関係の仕事はしないとのこと。&lt;/p&gt;
+&lt;p&gt;そのようなこともあり、エンジニアとしても非常に優秀だったと思うのですが、どのような思いからマネージャに
+転向したのかまでは聞けていないので、今度機会があったら聞いてみたいと思います。&lt;/p&gt;
+&lt;p&gt;来年1月に開催される &lt;a href=&#34;https://linux.conf.au/&#34;&gt;Linux.conf.au 2017&lt;/a&gt; (タスマニアで開催！)には是非とも参加して、
+オーストラリアのメンバーとの再開を果たしたいと思っています。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://linux.conf.au/schedule/presentation/70/&#34;&gt;セッション提案は通った&lt;/a&gt; ので旅費が出るかどうかが、今一番の心配。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

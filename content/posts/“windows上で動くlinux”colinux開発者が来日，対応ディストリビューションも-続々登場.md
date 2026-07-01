@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-09-15-windowsshang-dedong-kulinuxcolinuxkai-fa-zhe-galai-ri-dui-ying-deisutoribiyushiyonmo-sok-deng-chang
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: “Windows上で動くLinux”coLinux開発者が来日，対応ディストリビューションも 続々登場
 ---
 
 [ITPro](http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20040914/149921/)

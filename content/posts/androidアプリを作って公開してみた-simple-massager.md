@@ -10,6 +10,9 @@ tags:
 - Software
 draft: false
 disqus_identifier: 2010-10-13-androidapuriwozuo-tsutegong-kai-shitemita-simple-massager
+cover:
+  image: /images/covers/oss.png
+  alt: Androidアプリを作って公開してみた - Simple Massager
 ---
 
 初めて、Androidアプリを作って公開してみた。

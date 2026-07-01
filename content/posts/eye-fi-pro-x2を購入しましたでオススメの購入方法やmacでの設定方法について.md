@@ -11,6 +11,9 @@ tags:
 - picasa
 draft: false
 disqus_identifier: 2012-03-29-eye-fi-pro-x2wogou-ru-shimashita-de-osusumenogou-ru-fang-fa-ya-macdenoshe-ding-fang-fa-nitsuite
+cover:
+  image: https://masayukig.files.wordpress.com/2012/03/085aa-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-02-20.png?w=300
+  alt: picture
 ---
 
 はじめに

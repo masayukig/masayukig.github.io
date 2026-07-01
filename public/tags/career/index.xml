@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Career on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/career/</link>
+    <description>Recent content in Career on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 05 Dec 2016 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/career/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>転職は良い選択だった</title>
+      <link>http://localhost:1313/posts/2016/12/moving-company-is-better-choice/</link>
+      <pubDate>Mon, 05 Dec 2016 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2016/12/moving-company-is-better-choice/</guid>
+      <description>&lt;p&gt;本エントリは「 &lt;a href=&#34;http://www.adventar.org/calendars/1739&#34;&gt;OpenStack Advent Calendar 2016&lt;/a&gt; 」の 12/5 分です。&lt;/p&gt;
+&lt;p&gt;先日(2ヶ月弱前)、 &lt;a href=&#34;../../10/dps-forever&#34;&gt;少々刺激的なエントリ&lt;/a&gt; を投下しましたが、現在の気持ちを少し述べてみたいと思います。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;結論：転職は良い選択だった&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;今年１月に転職し、あらたな環境で働くことになりました。前職は、新卒で入社しずっと働いてきた会社で、
+かれこれ17年以上勤めた事になります。そのような会社を辞めることはとても、非常に、たくさん考えましたし、
+迷いました。&lt;/p&gt;
+&lt;p&gt;迷った理由は色々あります。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;インターナショナルなチームで英語が標準語なのにやっていけるのか？&lt;/li&gt;
+&lt;li&gt;外資系ってことでかんたんにクビを切られるんじゃないか？&lt;/li&gt;
+&lt;li&gt;技術的なスキルが追いついていかないんじゃないか？&lt;/li&gt;
+&lt;li&gt;今までのキャリア捨てるの？&lt;/li&gt;
+&lt;li&gt;今やってること、中途半端じゃないの？&lt;/li&gt;
+&lt;li&gt;OSS「プログラマ」ってオマエ何歳だと思ってるんだ？&lt;/li&gt;
+&lt;li&gt;主体的に動けば今いる会社でも、自分のやりたいことができるんじゃないの？受動的に動いてない？&lt;/li&gt;
+&lt;li&gt;今はOpenStackが流行ってて良いけど、ブームが去った後どうするの？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;などなど。&lt;/p&gt;
+&lt;p&gt;でも、最終的には「転職」を選びました。&lt;/p&gt;
+&lt;p&gt;その選択理由として、以下のようなことを考えてました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;英語が標準語なので、英語スキルを高められる。&lt;/li&gt;
+&lt;li&gt;あと1.5〜2年くらいはブーム(バブル)が続くだろう。&lt;/li&gt;
+&lt;li&gt;技術・英語スキルを伸ばせば、次に繋げることができる。&lt;/li&gt;
+&lt;li&gt;今いる会社でやりたいことをやるには、そのために色々と動く必要があり、自分のやりたいことをやるまでに、色々大変そう。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ヨカッタと思うこと&#34;&gt;ヨカッタと思うこと&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;英語スキルが多少上がった（気がする）&lt;/li&gt;
+&lt;li&gt;視野が広がった(国内だけではなく、海外に目を向けるようになった)&lt;/li&gt;
+&lt;li&gt;社外の人との交流が増えた&lt;/li&gt;
+&lt;li&gt;「次」を考えることができるようになった&lt;/li&gt;
+&lt;li&gt;ストレスが減った&lt;/li&gt;
+&lt;li&gt;やりたいことに集中できる環境を手に入れた&lt;/li&gt;
+&lt;li&gt;給料(微)増&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;イマイチだったと思うこと&#34;&gt;イマイチだったと思うこと&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;英語スキルを想定よりも向上できてない&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;技術スキルも想定よりも向上できてない&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;想定よりも早くブーム(バブル)が下火になってきた&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;100% upstream オープンソース開発 というのも難しくなってきた（かもしれない）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+&lt;p&gt;総合的には、転職して「良かった」と思っています。&lt;/p&gt;
+&lt;p&gt;確かに、想定外のことや「イマイチだったなー」と思うことはあるものの、
+今の所はヨカッタと思うことの方が上回っています。&lt;/p&gt;
+&lt;p&gt;なので、以下のような場合には、転職を考えても良いと思う。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自分がやりたいと思うことが出来ていない＆社内にそういう環境を見いだせない&lt;/li&gt;
+&lt;li&gt;今よりも良い環境が他の会社にある&lt;/li&gt;
+&lt;li&gt;その企業からのオファーを受け取った&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;もっと詳しく聞きたいという方がいたら、ご連絡ください :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>あなたの知らないOSSプログラマの世界 - part 2</title>
+      <link>http://localhost:1313/posts/2016/10/oss-programmer-part2/</link>
+      <pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2016/10/oss-programmer-part2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;../../06/oss-programmer-part1&#34;&gt;oss-programmer-part1&lt;/a&gt; の続き&lt;/p&gt;
+&lt;p&gt;前回:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;次回は仕事内容、コミュニケーションの様子などを書きたいと思います。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;と、書いておいてしばらく経ってしまいました。
+気になってる人がいないとも限らないので、書いてみたいと思います。&lt;/p&gt;
+&lt;h2 id=&#34;コミュニケーションの様子&#34;&gt;コミュニケーションの様子&lt;/h2&gt;
+&lt;p&gt;HPEは外資系の会社なので、社内のシステムやメールなどは英語が主ですが、日本にいる社員の大半は日本人なので、
+日本オフィスは、日本語が共通語になっているようです。&lt;/p&gt;
+&lt;p&gt;ただし、私の仕事内容はOpenStackというオープンソースのクラウド基盤ソフトウェアを、コミュニティの中で開発
+することです。また、会社のチームはインターナショナルチームなのでチームメンバー・上司が英語が母国語の
+人たちが大多数で共通語は英語という状況。そのため、英語が必須な状況ですが、10ヶ月近く経った今も、
+英語スキルは以前とあまり変わりがありません orz&amp;hellip;&lt;/p&gt;
+&lt;p&gt;もちろん「前から英語ができてた」わけではなく「今もあまりできません」という有様です。
+気心知れた人との１対１での会話ならなんとかなります(「あ、こいつ英語苦手なんだね」と相手がある程度手加減
+してくれることが多いのです)が、ネイティブあるいはそれに近い同士が議論をし始めると、なかなか入っていけません。&lt;/p&gt;
+&lt;p&gt;また、もともと人見知り(!)でコミュニケーションは苦手な部分があるので、なかなか会話に入っていけません。
+それでも、どうにかなってるのは、テキストでの会話（IRC, E-mail）のお陰かなと思います。&lt;/p&gt;
+&lt;p&gt;この辺は、自分の中の要改善項目です。&lt;/p&gt;
+&lt;h3 id=&#34;テキスト&#34;&gt;テキスト&lt;/h3&gt;
+&lt;p&gt;というわけで私はテキストでの会話が主です。タイムゾーン問題、英語力、などのことを考慮すると、
+テキストでの会話が便利です。&lt;/p&gt;
+&lt;h4 id=&#34;e-mail&#34;&gt;E-mail&lt;/h4&gt;
+&lt;p&gt;テキストでのコミュニケーションというとコレが思い浮かぶと思います。ただ、あまり使ってないです。
+正式な通知とか、後述のものでは伝えにくいもの（言うことがたくさんあったり、添付ファイルとか）で
+使う感じ。&lt;/p&gt;
+&lt;h4 id=&#34;irc&#34;&gt;IRC&lt;/h4&gt;
+&lt;p&gt;E-mailはリアルタイム性が低いので、結構やりやすいですが、どうしても時間がかかってしまいがちです。
+IRCはリアルタイム性が高いので、やり取りがけっこう大変ですが、くだけた会話でもどうにかなります。
+一長一短ありますが、IRCの方が気楽なことが多いと思います。
+今だと、SlackやHipChatなどのツールもありますが、私のチームではできるだけ「オープン」なものが
+好まれる印象です。&lt;/p&gt;
+&lt;h3 id=&#34;face-to-face&#34;&gt;Face to Face&lt;/h3&gt;
+&lt;p&gt;Face to Faceのやり取りがないのかというと、そうでもありません。&lt;/p&gt;
+&lt;h4 id=&#34;google-hangouts-skype&#34;&gt;Google Hangouts, Skype&lt;/h4&gt;
+&lt;p&gt;これらのツールを使う機会もあって、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Happy Hour&lt;/li&gt;
+&lt;li&gt;重要な通知&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;といったタイミングで使ってきました。&lt;/p&gt;
+&lt;p&gt;「Happy Hour」はチーム内のコミュニケーションを活性化して、風通しを良くするような効果があったと思います。&lt;/p&gt;
+&lt;p&gt;その名の通り、就業時間後のバーチャル飲み会風な感じなのですが、日本時間だと朝９時とかなので、
+こちらはさすがにお酒を飲むわけにはいかないのがつらいところでしたｗ&lt;/p&gt;
+&lt;p&gt;また、雑談が高速で行われるので、あんまりついていけない感じなのも残念でした＞自分&lt;/p&gt;
+&lt;p&gt;「重要な通知」は、メールやIRCだけで伝えるべき内容ではないものですね。チームの行く末とか。
+こちらについてはまた別途。&lt;/p&gt;
+&lt;h4 id=&#34;各種イベント&#34;&gt;各種イベント&lt;/h4&gt;
+&lt;p&gt;OpenStack Summit等、各種イベントで各国に散らばってるメンバーが集まることもあるので、
+一緒にお昼ごはんに行ったり、夜飲んだりとかありました。&lt;/p&gt;
+&lt;h2 id=&#34;仕事内容について&#34;&gt;仕事内容について&lt;/h2&gt;
+&lt;h3 id=&#34;体制&#34;&gt;体制&lt;/h3&gt;
+&lt;p&gt;チームには日本人は私しかおらず、日本で作業しているのも私のみです。
+直属のマネージャはオーストラリアにおり、タイムゾーンが近いこともあって、IRCなどで会話をすることが多いです。
+さらにその上の上司は、 &lt;a href=&#34;http://allisonrandal.com/&#34;&gt;Allison Randal&lt;/a&gt; (&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AA%E3%82%BD%E3%83%B3%E3%83%BB%E3%83%A9%E3%83%B3%E3%83%80%E3%83%AB&#34;&gt;Wikipedia JA&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/Allison_Randal&#34;&gt;Wikipedia EN&lt;/a&gt;) さんで、
+やはりIRCで会話をすることが多いです。(タイムゾーンが違うこともあり、なかなか会話はないですが)&lt;/p&gt;
+&lt;p&gt;さらに上の方になってくると、HPE のクラウドを統括している人になってきますが、なかなか話をする機会はない
+ですね。ただ、IRCのミーティングに参加したりすることもあり、非常に上下の風通しは良いんじゃないかと感じます。
+変な上下意識が見えないのが心地よく感じます。（もちろん、役割はしっかり意識されています。）&lt;/p&gt;
+&lt;h3 id=&#34;外資系企業について&#34;&gt;外資系企業について&lt;/h3&gt;
+&lt;p&gt;当初思っていたよりも、ずっと個人を重視してくれているように思います。
+(身の回りの10ヶ月弱くらいの感想です。)&lt;/p&gt;
+&lt;p&gt;外資系企業に対する私の印象は、&lt;/p&gt;
+&lt;p&gt;「キミ、最近パフォーマンスが良くないから、改善策を検討して実施するように。特になければこの改善策を実施
+　して、1ヶ月で改善されないようならクビね。」&lt;/p&gt;
+&lt;p&gt;くらい厳しいものだったのですが、少なくとも今いるチームではそのようなことはありません。
+この辺は、上司に依存するところが大きいと思います。&lt;/p&gt;
+&lt;p&gt;(でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。
+が、それはまた別途書きたいと思います。)&lt;/p&gt;
+&lt;h3 id=&#34;作業内容&#34;&gt;作業内容&lt;/h3&gt;
+&lt;p&gt;基本的にはOpenStack関連コードの読み書き・レビューしてます。
+イベントでの発表などがあれば、その準備も。&lt;/p&gt;
+&lt;p&gt;最近はopenstack-healthというコンポーネントに注力して作業してます。フロントエンドがAngularJSなので、
+かなり刺激的。悪戦苦闘の日々です。&lt;/p&gt;
+&lt;h3 id=&#34;作業場所&#34;&gt;作業場所&lt;/h3&gt;
+&lt;p&gt;大島 日本法人本社８階 食堂で作業してます。景色がいいし、比較的静か（心地よいノイズ）があるのでいい感じで
+作業できてます。&lt;/p&gt;
+&lt;p&gt;参考URL:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html&#34;&gt;http://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.shashoku.com/shashoku/012.html&#34;&gt;http://www.shashoku.com/shashoku/012.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.pc-ninki.net/about/hp-oshima.html&#34;&gt;http://www.pc-ninki.net/about/hp-oshima.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://job.career-tasu.jp/2017/guide/study/shashoku/01.html&#34;&gt;https://job.career-tasu.jp/2017/guide/study/shashoku/01.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>チーム解散?!</title>
+      <link>http://localhost:1313/posts/2016/10/dps-forever/</link>
+      <pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2016/10/dps-forever/</guid>
+      <description>&lt;h2 id=&#34;追記&#34;&gt;追記&lt;/h2&gt;
+&lt;p&gt;以下は、あくまで私が所属しているチーム(OpenStack, OSSをアップストリームで開発)についてのみ言及しています。
+それ以外のHelion開発その他については言及していません。誤解のなきよう。&lt;/p&gt;
+&lt;h2 id=&#34;オリジナル&#34;&gt;オリジナル&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;../../10/oss-programmer-part2&#34;&gt;oss-programmer-part2&lt;/a&gt; にて:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;(でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。
+が、それはまた別途書きたいと思います。)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;と書きました。が、それについて書きたいと思います。&lt;/p&gt;
+&lt;p&gt;連投になってしまって申し訳ないです。もう少し気を静めてから書こうかとも思ったのですが、
+今の気持ちも含めて記録しておきたいなと思い。&lt;/p&gt;
+&lt;p&gt;まずは、関連Tweetをいくつか。&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Today I laid off my entire team. I&amp;#39;m completely gutted. They&amp;#39;re the best w/whom I&amp;#39;ve ever worked. They humble me daily. Hire them, please.&lt;/p&gt;&amp;mdash; VM Brasseur (@vmbrasseur) &lt;a href=&#34;https://twitter.com/vmbrasseur/status/788052309225902080&#34;&gt;October 17, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Today I was notified that my position at HPE is affected by layoffs so I am looking for a new role — &lt;a href=&#34;https://t.co/A9XLekuX25&#34;&gt;https://t.co/A9XLekuX25&lt;/a&gt; &lt;br&gt;&lt;br&gt;Please share!&lt;/p&gt;&amp;mdash; Donald Stufft (@dstufft) &lt;a href=&#34;https://twitter.com/dstufft/status/788051252592648192&#34;&gt;October 17, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I&amp;#39;m seeking a new ops or evangelist role! Must haves: Open source, travel for speaking and work from home. Details: &lt;a href=&#34;https://t.co/PDD6HGPsuz&#34;&gt;https://t.co/PDD6HGPsuz&lt;/a&gt;&lt;/p&gt;&amp;mdash; Elizabeth K. Joseph (@pleia2) &lt;a href=&#34;https://twitter.com/pleia2/status/788159332521086977&#34;&gt;October 17, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;All of my US-based team-mates got laid off today. Each and every one would be a stellar hire. Hire them.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>あなたの知らないOSSプログラマの世界 - part 1</title>
+      <link>http://localhost:1313/posts/2016/06/oss-programmer-part1/</link>
+      <pubDate>Fri, 03 Jun 2016 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2016/06/oss-programmer-part1/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;　「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が
+多いかなと思い、こんなブログを書いてみました。&lt;/p&gt;
+&lt;h2 id=&#34;想定読者&#34;&gt;想定読者&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;オープンソース開発で飯食っていけるの！？と思っている人&lt;/li&gt;
+&lt;li&gt;なんとなく、OSSとかプログラマに興味がある&lt;/li&gt;
+&lt;li&gt;「外資系」ってどういうところなのか知りたい&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;結論&#34;&gt;結論&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;技術力だけじゃない&lt;/li&gt;
+&lt;li&gt;４０歳でも（転職）初体験できる&lt;/li&gt;
+&lt;li&gt;英語大事&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;自己紹介&#34;&gt;自己紹介&lt;/h2&gt;
+&lt;p&gt;　現在Hewlett Packard Enterprise/日本ヒューレット・パッカード所属です。OpenStack開発者で、
+主にQAを担当しています。日本で作業していますが、日本人は私一人です。他のメンバーは全て海外にいます。
+（正確な人数は把握してませんが、多分2-30人弱くらいかと思います。）&lt;/p&gt;
+&lt;p&gt;　インターナショナルで分散チームで、大半は、アメリカ・欧州・オーストラリアにいて、アジア人は中国人1名と
+私の合計2名です。チームの中にマネージャが数名おり、１マネージャあたり、数名を管理するような体制です。
+なお、私のマネージャはオーストラリアに在住していますが、私は英語はそれほどしゃべれません。TOEIC最高点は
+(ほぼマグレで)800点でした。最近は受けてませんが、そんなに大きな違いは無いかと思います。
+（TOEICをある程度知っている方はどの程度なのか想像がつくのではないでしょうか&amp;hellip;）&lt;/p&gt;
+&lt;h2 id=&#34;技術力だけじゃない&#34;&gt;技術力だけじゃない&lt;/h2&gt;
+&lt;p&gt;　まずはじめに。私はスーパー(ハカー|プログラマ|デベロッパ)と呼ばれるほどの技術は持ってません。技術力は
+「並」くらいはあるとは思いたいですが、突出しているわけではありません。周りのOpenStack開発者をざっと
+見回しても「あいつには勝てないな・・・」と思うことが多々あります。&lt;/p&gt;
+&lt;p&gt;　そんな状況なのに「プログラマとして転職してやっていけるだろうか・・・」と自問自答している日々ではあります
+が、最近は「技術力だけではない」と思うようにしています。自分の役割としては&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OpenStack開発
+-&amp;gt; もちろん、これが一番重要。早い・遅いはそれほど重視されていない様に感じる。知らないことがあれば、
+どうやって解決していくのかが重要。&lt;/li&gt;
+&lt;li&gt;自分の持っている知識・技術・経験を使って、ほかの人に伝える・手伝う/助ける。&lt;/li&gt;
+&lt;li&gt;あまり他の人がやっていない分野に貢献する。&lt;/li&gt;
+&lt;li&gt;盛り上げ役（苦手ダケド）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;などなど、色々貢献できる領域があると思うようになってきました。逆に、技術力だけ非常に高くても、
+コミュニケーション能力が圧倒的に低いと厳しいだろうなと思います。（という意味でも英語大事）&lt;/p&gt;
+&lt;p&gt;また、転職するときに今のチームメンバーの一人から、&lt;/p&gt;
+&lt;p&gt;「人から言われて動くようだと、今のチームではうまくやっていけないと思う。だから、自分でやるべきことを
+考え・ 探してやっていくようにしたほうが良いよ。」&lt;/p&gt;
+&lt;p&gt;というようなことを言われました。
+　実際、今のマネージャやその上の上司などからは「アレやれ、コレやれ」という指示は無く、週1のマネージャと
+のミーティングも、IRCでチャットしてるだけで、特にノルマ（ｘ件/月パッチマージとか）もありません。情報共
+有しておきたいこと、困ってることなどを相談する場になっています。もちろん、社内の必須教育、事務処理フォロ
+ーなどはありますが、それほど多いとは感じません。&lt;/p&gt;
+&lt;h2 id=&#34;４０歳でも転職初体験できる&#34;&gt;４０歳でも（転職）初体験できる&lt;/h2&gt;
+&lt;p&gt;　私、今、４０歳です。日本のIT業界一般常識から考えると頭の良いキャリア選択ではなかったかなとも思っていま
+す。日本のIT業界的には、&lt;/p&gt;
+&lt;p&gt;「マネージャになって、デカイプロジェクトをガンガンさばいて、コンサル系に転職してウハウハ」&lt;/p&gt;
+&lt;p&gt;みたいなのを思い描いている人もいると思いますが、私は、そういうところに「楽しみ」を見いだせませんでした。
+なので、「技術者」として生きていく道をずっと考えていたので、今回、縁があって転職することになりました。
+転職した先では、比較的長く「技術者」として働ける環境ができているとは思います。
+　今、思っていることなどを以下に列挙してみます。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;見極めはもっと早くすべき。年齢を重ねて、地位が上がるにつれ、関係各所に色々と迷惑をかけることが増えて
+きて、身動きが取りづらくなる。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;記憶力、スピードなどはどうしても年々衰えてくるのでそういう意味でも若いうちにやれることはどんどん
+やっておくべき。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;とは言え、それなりのオファーがないと転職は難しいので、私としては最速に近いくらいのタイミングだった。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;自分のキャリアパスはきちんと考えて、流されずに主張しよう。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;思い描いたキャリアパスが今の会社に無いのなら、それがあるところに移ることも考えよう。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;もちろん「自分の道を作っていく」という選択肢もあり、それをやりたい人ならそこで頑張るのが良いと思い
+ます。私の場合はそうではありませんでした。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;自分が「面白そう」と思う分野に進んだほうが、全体最適化から考えても有意義。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自らやる気になって動く時が一番力を発揮できると思います。個々人が「面白そう」と思ったことに
+全力を傾けるのが、結果、全体最適になるはず。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;実は、数年前にも転職活動していた時期があります。その時はいくつか面接まで行きましたが、ことごとく
+敗退。自己主張、アピールが足りなかったんだろうなと思う。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;英語大事&#34;&gt;英語大事&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;学生のうちから本気で取り組むべき。&lt;/li&gt;
+&lt;li&gt;と、後悔だけしても意味が無いので、これから頑張ることにします。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;まだまだ英語苦手なので、コミュニケーションに日本語の3倍以上の時間と労力がかかりますが、この労力をなんとか
+小さくしていくべく、トレーニングの毎日です。&lt;/p&gt;
+&lt;h2 id=&#34;次回予告&#34;&gt;次回予告&lt;/h2&gt;
+&lt;p&gt;次回は仕事内容、コミュニケーションの様子などを書きたいと思います。&lt;/p&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

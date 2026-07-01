@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-11-27-ictagudexiao-xue-sheng-nodeng-xia-xiao-wojian-shi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ICタグで小学生の登下校を監視？
 ---
 
 [takagi-hiromitsu.jp](http://takagi-hiromitsu.jp/diary/20041123.html#p02)

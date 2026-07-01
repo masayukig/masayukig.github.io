@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-08-22-aruzekaralinuxbesunoye-wu-yong-gemushisutemu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: アルゼからLinuxベースの業務用ゲームシステム
 ---
 
 [スラド](http://slashdot.jp/article.pl?sid=04/08/14/1518253&topic=31)

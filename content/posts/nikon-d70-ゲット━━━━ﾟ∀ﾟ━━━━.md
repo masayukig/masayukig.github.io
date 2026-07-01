@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-03-15-nikon-d70-getsuto-
+cover:
+  image: http://lunatic.xrea.jp/mt/archives/D70_box-thumb.jpg
+  alt: picture
 ---
 
 かな〜り前からトップページの右側に広告リンクを貼っていて、

@@ -13,6 +13,9 @@ tags:
 - openstack
 draft: false
 disqus_identifier: 2016-10-18-dps-forever
+cover:
+  image: /images/covers/work.jpg
+  alt: チーム解散?!
 ---
 
 ## 追記

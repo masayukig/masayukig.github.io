@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-02-18-sconozheng-ju-haquan-kubu-shi-fen-pan-shi-gaduan-ding
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: SCOの証拠は全く不十分——判事が断定
 ---
 
 <http://www.itmedia.co.jp/enterprise/articles/0502/14/news094.html>

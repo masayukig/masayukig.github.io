@@ -11,6 +11,9 @@ tags:
 - Software
 draft: false
 disqus_identifier: 2010-10-29-simple-massager-v111-released
+cover:
+  image: https://masayukig.files.wordpress.com/2010/10/47385-qrcode.gif
+  alt: picture
 ---
 
 [Simple Massager

@@ -5,6 +5,9 @@ slug: ubuntu-1310-で-bcacheを使ってみる-linux-ubuntu-ssd
 categories:
 - Uncategorized
 draft: true
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 'Ubuntu 13.10 で bcacheを使ってみる #linux #ubuntu #ssd'
 ---
 
 $ sudo add-apt-repository ppa:g2p/storage

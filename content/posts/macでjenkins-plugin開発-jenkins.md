@@ -5,6 +5,9 @@ slug: macでjenkins-plugin開発-jenkins
 categories:
 - Uncategorized
 draft: true
+cover:
+  image: https://masayukig.files.wordpress.com/2012/08/e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-315-44-59.png?w=300
+  alt: picture
 ---
 
 Jenkins の pluginを作ってみたくなったので、いろいろ調べながら開始。

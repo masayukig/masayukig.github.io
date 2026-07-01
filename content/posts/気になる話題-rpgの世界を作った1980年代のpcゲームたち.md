@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-15-qi-ninaruhua-ti-rpgnoshi-jie-wozuo-tsuta1980nian-dai-nopcgemutachi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: '気になる話題: RPGの世界を作った1980年代のPCゲームたち'
 ---
 
 気になる話題: <http://slashdot.jp/story/12/03/15/1844235/>

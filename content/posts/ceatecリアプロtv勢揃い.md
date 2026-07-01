@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-10-19-ceatecriapurotvshi-jian-i
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: CEATECリアプロTV勢揃い
 ---
 
 [ITmedia](http://www.itmedia.co.jp/lifestyle/articles/0410/06/news040.html)

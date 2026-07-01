@@ -6,6 +6,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2004-10-11-kddi-operada-zai-duan-mo-woti-gong-demoding-e-nihafei-dui-ying-orzkousagi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: KDDI、Opera搭載端末を提供でも定額には非対応orz(こうさぎ)
 ---
 
 きょうは、&lt;しなかった。

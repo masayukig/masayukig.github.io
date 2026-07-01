@@ -9,6 +9,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2009-08-15-iphonenokicao-zuo-wokasutamaizushita2ri-ben-yu-tenkiwobiao-shi-shinaiyounishi-ta
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhoneのキー操作をカスタマイズした2(日本語テンキーを表示しないようにし た)
 ---
 
 今度は、日本語テンキーを表示しないようにするカスタマイズです。

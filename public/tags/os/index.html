@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ja" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>OS | What&#39;s done is done</title>
+<meta name="keywords" content="">
+<meta name="description" content="Masayuki Igawa&#39;s blog">
+<meta name="author" content="Masayuki Igawa">
+<link rel="canonical" href="http://localhost:1313/tags/os/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.68c62ef954d98b64015e3444e943bedbafc6461b357416b42e2caa6a6937032f.css" integrity="sha256-aMYu&#43;VTZi2QBXjRE6UO&#43;26/GRhs1dBa0Liyqamk3Ay8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/os/index.xml" title="rss">
+<link rel="alternate" hreflang="ja" href="http://localhost:1313/tags/os/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="What&#39;s done is done (Alt + H)">What&#39;s done is done</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">ホーム</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/tags/">Tags</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+  <h1>
+    OS
+    <a href="/tags/os/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry thumb-entry">
+  <div class="entry-thumb">
+    <img loading="lazy" src="https://lh5.googleusercontent.com/-eNFciYAVxnk/Tjr6xhXwX5I/AAAAAAAAg6M/p3ABUDEbpv8/s288/5964468227_f23fe1aabe_o.png" alt="OS">
+  </div>
+  <div class="entry-body">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">Lionで 3rd party なNASではTimeMachineが動かない
+      </h2>
+    </header>
+    <div class="entry-content">
+      <p>昨日、Lionにアップデートしましたが、以下の様なエラーがでて Time Machineでバックアップができなくなりました。 ググってみたところ、いくつかの情報が得られました。
+http://slashdot.jp/apple/comments.pl?sid=539273&amp;cid=1989826 http://amiens2009.tumblr.com/post/7886573873/timemachine-apple-nas-lion なお、今回のバックアップ失敗では、以下の様なログが/var/log/syslog.log に出力されていました。 https://gist.github.com/1100364.js?file=Time-Machine-backup-failed-system.log
+</p>
+    </div>
+    <footer class="entry-footer">
+
+<span title='2011-07-23 05:33:00 +0900 JST'>2011-07-23</span>&nbsp;·&nbsp;<span>1 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span></footer>
+  </div>
+  <a class="entry-link" aria-label="post link to Lionで 3rd party なNASではTimeMachineが動かない" href="http://localhost:1313/posts/2011/07/lion%E3%81%A7-3rd-party-%E3%81%AAnas%E3%81%A7%E3%81%AFtimemachine%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/"></a>
+</article>
+
+<article class="post-entry tag-entry thumb-entry">
+  <div class="entry-thumb">
+    <img loading="lazy" src="https://lh6.googleusercontent.com/-f9NaPsKenmo/Tjr6xcCGivI/AAAAAAAAg6M/GW4ygmcTaqw/s288/5958547975_802fe61e7b_o.png" alt="OS">
+  </div>
+  <div class="entry-body">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">Mac OS X Lion インストールしました！
+      </h2>
+    </header>
+    <div class="entry-content">
+      <p>というわけで、Mac OS X Lionをインストールしました。
+今のところ、トラックパッドによるスクロールが、上下逆さまになったことに慣れるのに必死ですw (もちろん、設定で変更可能ですが、この方がiPad/iPhoneみたいで、きっと良いんだと思うことにします)
+システム環境設定の「トラックパッド」のところ では、 どのようなジェスチャーが使えるのか？がわかるので、便利です。
+</p>
+    </div>
+    <footer class="entry-footer">
+
+<span title='2011-07-21 05:43:00 +0900 JST'>2011-07-21</span>&nbsp;·&nbsp;<span>1 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span></footer>
+  </div>
+  <a class="entry-link" aria-label="post link to Mac OS X Lion インストールしました！" href="http://localhost:1313/posts/2011/07/mac-os-x-lion-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/"></a>
+</article>
+
+<article class="post-entry tag-entry thumb-entry">
+  <div class="entry-thumb">
+    <img loading="lazy" src="http://farm6.static.flickr.com/5092/5436912432_e26d889434.jpg" alt="OS">
+  </div>
+  <div class="entry-body">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">Fedora14 on さくらVPS
+      </h2>
+    </header>
+    <div class="entry-content">
+      <p>このサイトのサーバは、[さくらのVPS]で動作していますが、今まで、CentOS5だったのを、Fedora14に変更しました。
+以下、その時につまずいたところなどを、記してみたいと思います。
+OSのインストール自体は、 カスタムOSインストールガイド ： Fedora 13に従って行えば、特に困るところは無いと思います。
+ただし、私の環境だと、 「[STEP 13] VPSの停止と起動」で、VNCコンソール(QEMUコンソール)の ウィンドウが消えてしまうことがあったのですが、その場合には、 VPSコントロールパネルのリモートコンソール の、「VNCコンソールを開く」をやれば大丈夫だと思います。
+また、「[STEP 10] インストールタイプの選択」では、私は「Webサーバ」を選択しました。 特に問題はありません。
+Fedora13がインストールできたら、次は、このブログ記事のタイトル 「Fedora14」へアップグレードします。(まだ道半ばです(笑))
+Fedora14のインストールは簡単です。
+Fedora 13 → Fedora 14 へ preupgrade-cli でアップグレード Fedora 13から14へアップグレードする方法 あたりの記事を参考に、アップグレードします。
+要は、 [bash] # yum update rpm # yum -y update # yum clean all # reboot [/bash] てな感じで、ひとまず(Fedora13の)最新版にしておき、
+preupgradeをインストール。(既にインストールされている場合もあり) [bash] # yum install preupgrade [/bash]
+preupgrade-cliを実行。 [bash] # LANG=C preupgrade-cli “Fedora 14 (Laughlin)” [/bash] LANG=Cで実行しないと、エラーが発生するらしいです。
+で、これでFedora14になりました。
+あとは、必要な設定を随時行っていきます。 ちょっとつまずいたのは、パーマリンクの設定。
+以下のように、httpd.confのAllowOverride NoneをAllowOverride Allに 変更してやる必要がありました。 パーマリンクの使い方:その他の問題点
+また、Webサーバとして使うので、GUIでのログインは不要なので、 /etc/inittabを以下のように変更し、ランレベル３で動作するようにします。 [text] diff –git a/inittab b/inittab index a8ab066..b6a0b26 100644 — a/inittab &#43;&#43;&#43; b/inittab @@ -23,4 &#43;23,5 @@ # 5 - X11 # 6 - reboot (Do NOT set initdefault to this) # -id:5:initdefault: &#43;#id:5:initdefault: &#43;id:3:initdefault: [/text]
+...</p>
+    </div>
+    <footer class="entry-footer">
+
+<span title='2011-02-12 04:44:00 +0900 JST'>2011-02-12</span>&nbsp;·&nbsp;<span>2 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span></footer>
+  </div>
+  <a class="entry-link" aria-label="post link to Fedora14 on さくらVPS" href="http://localhost:1313/posts/2011/02/fedora14-on-%E3%81%95%E3%81%8F%E3%82%89vps/"></a>
+</article>
+
+<article class="post-entry tag-entry thumb-entry">
+  <div class="entry-thumb">
+    <img loading="lazy" src="http://farm6.static.flickr.com/5297/5422904210_999389cb72_m.jpg" alt="OS">
+  </div>
+  <div class="entry-body">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">Fedora on VMWare Fusion 3 on MacBook Air
+      </h2>
+    </header>
+    <div class="entry-content">
+      <p> 先日のエントリーで、MacBook AirにFedoraをインストールしたことを書きましたが、 やはり、Mac OS X上からもLinuxを使いたいので試行錯誤して、 VMWare Fusion 3上から使うことができました。
+以下、その方法。
+まずは、普通に別パーティション(私の場合/dev/disk0s3(Mac表記))へFedora14(x86_64)をインストール。 なお、swapパーティションは、とりあえず作らない。必要なら後からswapファイルを作ってそれをswapにする。 (無駄なディスク領域は作りたくないので) また、MacのUSキーボードの場合、キーボードは無印の「アメリカ合衆国」を選んだ方がいいようだ。 「日本語入力するから国際版(International)」かな？と思ってそれを選んだら、 「~, `, “, ‘」 などのキーがまともに入力できなくなってしまいました。
+なお、設定は/etc/sysconfig/keyboardの
+KEYBOARD=&#34;acentos-us&#34; となっているところを
+KEYBOARD=&#34;us&#34; とすれば、普通のUSキーボードになるようです。 2011/02/08追記： どうやらこれではダメだったみたいです。。もうちょっと解決策を探してみます。 で、肝心の別パーティションのディスクイメージを使用してのLinux起動ですが、 以下の手順でできました。 なお、http://fearandloath.us/vmware-fusion-bootcamp-partition.htmlのサイトの情報を 参考（というかほぼそのまま）にさせてもらいました。
+$ cd &#34;/Library/Application Support/VMware Fusion/&#34; $ ./vmware-rawdiskCreator print /dev/disk0 Nr Start Size Type Id Sytem -- ---------- ---------- ---- -- ------------------------ 1 1 409639 BIOS EE Unknown 2 409640 196982744 BIOS AF HFS&#43; 3 197654528 39321600 BIOS 83 Linux (という感じの出力がされるので、インストールするパーティションの「Nr」を確認しておく 私の場合は「３」) $ ./vmware-rawdiskCreator create /dev/disk0 3 /Users/igawa/Documents/Virtual\ Machines.localized/rawfedora_x86_64.vmwarevm/bootcamp_partition ide $ vim /Users/igawa/Documents/Virtual\ Machines.localized/rawfedora_x86_64.vmwarevm/rawfedora_x86_64.vmx ====== ide0:0.present = &#34;TRUE&#34; ide0:0.fileName = &#34;bootcamp_partition.vmdk&#34; ====== を適当なところに追加 or 置換する。 これでOKでした。
+</p>
+    </div>
+    <footer class="entry-footer">
+
+<span title='2011-02-07 05:21:00 +0900 JST'>2011-02-07</span>&nbsp;·&nbsp;<span>1 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span></footer>
+  </div>
+  <a class="entry-link" aria-label="post link to Fedora on VMWare Fusion 3 on MacBook Air" href="http://localhost:1313/posts/2011/02/fedora-on-vmware-fusion-3-on-macbook-air/"></a>
+</article>
+
+<article class="post-entry tag-entry thumb-entry">
+  <div class="entry-thumb">
+    <img loading="lazy" src="http://localhost:1313/images/covers/uncategorized.jpg" alt="OS">
+  </div>
+  <div class="entry-body">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">make oldconfigで全ての問い合わせ項目にEnterするスクリプト #Linux
+      </h2>
+    </header>
+    <div class="entry-content">
+      <p>Linux kernelのmakeのターゲットでありそうな気もするんですが、見つからなかったので。
+$ cat make_oldconfig_auto.sh
+#!/usr/bin/env expect set timeout 10 spawn make oldconfig while {1} { expect { &#34;] (NEW)&#34; { send &#34;\n&#34; } &#34;# configuration written to .config&#34; {break} } } interact 見てわかるとおり、expectを使って、&#34;] (NEW)“というのが出てきたら、Enter入力。 “# configuration written to .config&#34;が出てきたらおしまい。
+というスクリプトです。
+</p>
+    </div>
+    <footer class="entry-footer">
+
+<span title='2010-06-05 14:25:00 +0900 JST'>2010-06-05</span>&nbsp;·&nbsp;<span>1 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span></footer>
+  </div>
+  <a class="entry-link" aria-label="post link to make oldconfigで全ての問い合わせ項目にEnterするスクリプト #Linux" href="http://localhost:1313/posts/2010/06/make-oldconfig%E3%81%A7%E5%85%A8%E3%81%A6%E3%81%AE%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E9%A0%85%E7%9B%AE%E3%81%ABenter%E3%81%99%E3%82%8B%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88-linux/"></a>
+</article>
+
+<article class="post-entry tag-entry thumb-entry">
+  <div class="entry-thumb">
+    <img loading="lazy" src="http://www.0r2.info/blog//0r2.info/3035/4562523183_cc0be3d31d.jpg" alt="OS">
+  </div>
+  <div class="entry-body">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">Xperia買っちゃったw
+      </h2>
+    </header>
+    <div class="entry-content">
+      <p>iPhoneを持ってるのに、Xperiaを買っちゃいましたw なんか、ケータイ電話とは程遠い気がします。 普通に、/proc配下のディレクトリにアクセスできたりしますし。
+/proc/config.gzにもアクセスできたので、とりあえず張り付けてみる。 Xperiaの.config
+で、それ以外の情報ですが、/proc配下から適当に取ってきてみました。
+/proc/version: Linux version 2.6.29-rel (semc-android@SEMC) (gcc version 4.2.1) #2 PREEMPT Sun Feb 21 11:47:54 JST 2010 /proc/meminfo: MemTotal: 274608 kB MemFree: 6048 kB Buffers: 116 kB Cached: 27148 kB SwapCached: 0 kB Active: 111936 kB Inactive: 125948 kB Active(anon): 100964 kB Inactive(anon): 111256 kB Active(file): 10972 kB Inactive(file): 14692 kB Unevictable: 1124 kB Mlocked: 0 kB SwapTotal: 0 kB SwapFree: 0 kB Dirty: 0 kB Writeback: 0 kB AnonPages: 211760 kB Mapped: 24620 kB Slab: 7920 kB SReclaimable: 1764 kB SUnreclaim: 6156 kB PageTables: 11080 kB NFS_Unstable: 0 kB Bounce: 0 kB WritebackTmp: 0 kB CommitLimit: 137304 kB Committed_AS: 3801756 kB VmallocTotal: 1179648 kB VmallocUsed: 132756 kB VmallocChunk: 939004 kB /proc/cpuinfo: Processor : ARMv7 Processor rev 2 (v7l) BogoMIPS : 383.38 Features : swp half thumb fastmult vfp edsp neon CPU implementer : 0x51 CPU architecture: 7 CPU variant : 0x0 CPU part : 0x00f CPU revision : 2 Hardware : ES209RA Revision : 0000 Serial : 0000000000000000 /proc/iomem: 03000000-031fffff : kgsl_phys_memory 03000000-031fffff : kgsl 20000000-2dffffff : System RAM 2002b000-20485fff : Kernel text 20486000-205bea43 : Kernel data 30000000-37efffff : System RAM 37fe0000-37ffffff : ram_console a0000000-a001ffff : kgsl_reg_memory a0000000-a001ffff : kgsl a0300000-a0300fff : msm_sdcc.1 a0400000-a0400fff : msm_sdcc.2 a0700000-a0700004 : audio_base_addr a0800000-a08003ff : msm_hsusb_periphera a0900000-a0900fff : msm_serial_hs.1 a0a00000-a0a007ff : msm_nand_phys a1200000-a1200fff : spi_base a1200000-a1200fff : spi_qsd a9900000-a9900fff : msm_i2c.0 a9900000-a9900fff : msm_i2c a9a00000-a9a00fff : msm_serial.0 a9a00000-a9a00fff : msm_serial aa200000-aa2effff : mdp aa300000-aa300fff : tssc aa400000-aa400fff : tvenc aa600000-aa600fff : pmdh aa700000-aa700fff : emdh /proc/mounts: rootfs / rootfs rw 0 0 tmpfs /dev tmpfs rw,mode=755 0 0 devpts /dev/pts devpts rw,mode=600 0 0 proc /proc proc rw 0 0 sysfs /sys sysfs rw 0 0 tmpfs /sqlite_stmt_journals tmpfs rw,size=4096k 0 0 /dev/block/mtdblock2 /system yaffs2 ro 0 0 /dev/block/mtdblock3 /data yaffs2 rw,nosuid,nodev 0 0 /dev/block/mtdblock1 /cache yaffs2 rw,nosuid,nodev 0 0 /dev/block/loop0 /cdrom iso9660 ro 0 0 DxDrmServerIpc /data/DxDrm/fuse fuse.DxDrmServerIpc rw,nosuid,nodev,user_id=0,group_id=0,allow_other 0 0 /dev/block//vold/179:1 /sdcard vfat rw,dirsync,nosuid,nodev,noexec,uid=1000,gid=1015,fmask=0702,dmask=0702,allow_utime=0020,codepage=cp437,iocharset=iso8859-1,shortname=mixed,utf8 0 0 </p>
+    </div>
+    <footer class="entry-footer">
+
+<span title='2010-04-29 22:10:00 +0900 JST'>2010-04-29</span>&nbsp;·&nbsp;<span>2 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span></footer>
+  </div>
+  <a class="entry-link" aria-label="post link to Xperia買っちゃったw" href="http://localhost:1313/posts/2010/04/xperia%E8%B2%B7%E3%81%A3%E3%81%A1%E3%82%83%E3%81%A3%E3%81%9Fw/"></a>
+</article>
+
+<article class="post-entry tag-entry thumb-entry">
+  <div class="entry-thumb">
+    <img loading="lazy" src="http://localhost:1313/images/covers/uncategorized.jpg" alt="OS">
+  </div>
+  <div class="entry-body">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">W-ZERO3でAndroidが動く！
+      </h2>
+    </header>
+    <div class="entry-content">
+      <p>.h2o2のお気楽日記で開発されているものですが、 W-ZERO3(私はWS011SH)で、Androidが動きました！ {.alignnone .size-medium .wp-image-795 width=“225” [caption id=“attachment_796” align=“alignnone” width=“225” caption=“android(W-ZERO3-2)”]{.size-medium .wp-image-796 width=“225” [/caption] 毎日、進展があってすごいです!
+ちゃんと、カーソルキーも使えました。 動きも、思った以上にサクサクです。 後は、無線LANと正常な停止が出来れば、結構使えそうです。 (でも、iPhoneかったら、そっちがメインかも。。:-P)
+</p>
+    </div>
+    <footer class="entry-footer">
+
+<span title='2009-06-21 06:47:00 +0900 JST'>2009-06-21</span>&nbsp;·&nbsp;<span>1 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span></footer>
+  </div>
+  <a class="entry-link" aria-label="post link to W-ZERO3でAndroidが動く！" href="http://localhost:1313/posts/2009/06/w-zero3%E3%81%A7android%E3%81%8C%E5%8B%95%E3%81%8F/"></a>
+</article>
+
+<article class="post-entry tag-entry thumb-entry">
+  <div class="entry-thumb">
+    <img loading="lazy" src="http://localhost:1313/images/covers/uncategorized.jpg" alt="OS">
+  </div>
+  <div class="entry-body">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">Fedora11リリース
+      </h2>
+    </header>
+    <div class="entry-content">
+      <p>先日Fedora11間もなくリリースというエントリーを書きましたが、 無事(ようやく)Fedora11がリリースされました。
+ただいま、ダウンロード中です。
+</p>
+    </div>
+    <footer class="entry-footer">
+
+<span title='2009-06-10 05:47:00 +0900 JST'>2009-06-10</span>&nbsp;·&nbsp;<span>1 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span></footer>
+  </div>
+  <a class="entry-link" aria-label="post link to Fedora11リリース" href="http://localhost:1313/posts/2009/06/fedora11%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/"></a>
+</article>
+
+<article class="post-entry tag-entry thumb-entry">
+  <div class="entry-thumb">
+    <img loading="lazy" src="http://localhost:1313/images/covers/uncategorized.jpg" alt="OS">
+  </div>
+  <div class="entry-body">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">Fedora11間もなくリリース
+      </h2>
+    </header>
+    <div class="entry-content">
+      <p>http://fedoraproject.org/static/js/release-counter-ext.js?lang=ja というわけで、Fedora11が何度もリリース延期となったようですが、 2009-06-09にリリース予定です。
+個人的には、Btrfsに期待。
+</p>
+    </div>
+    <footer class="entry-footer">
+
+<span title='2009-06-08 22:59:00 +0900 JST'>2009-06-08</span>&nbsp;·&nbsp;<span>1 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span></footer>
+  </div>
+  <a class="entry-link" aria-label="post link to Fedora11間もなくリリース" href="http://localhost:1313/posts/2009/06/fedora11%E9%96%93%E3%82%82%E3%81%AA%E3%81%8F%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/"></a>
+</article>
+
+<article class="post-entry tag-entry thumb-entry">
+  <div class="entry-thumb">
+    <img loading="lazy" src="http://localhost:1313/images/covers/uncategorized.jpg" alt="OS">
+  </div>
+  <div class="entry-body">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">Mac OS X向けのiSCSI イニシエーター(無料)
+      </h2>
+    </header>
+    <div class="entry-content">
+      <p>Mac OS X向けのiSCSI イニシエーターです。 Studio Network Solutions - Download iSCSI Initiator for Mac OS X.
+適当な(Linuxとかの)サーバでiSCSIターゲット作っておけば、 Leopardなら、iSCSIで、Time Machineが使えるようになるので、 Time Capsuleは買わなくても良いらしい。
+でも、うちはまだTigerなので、将来のためのメモw
+</p>
+    </div>
+    <footer class="entry-footer">
+
+<span title='2008-12-15 04:52:00 +0900 JST'>2008-12-15</span>&nbsp;·&nbsp;<span>1 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span></footer>
+  </div>
+  <a class="entry-link" aria-label="post link to Mac OS X向けのiSCSI イニシエーター(無料)" href="http://localhost:1313/posts/2008/12/mac-os-x%E5%90%91%E3%81%91%E3%81%AEiscsi-%E3%82%A4%E3%83%8B%E3%82%B7%E3%82%A8%E3%83%BC%E3%82%BF%E3%83%BC%E7%84%A1%E6%96%99/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">What&#39;s done is done</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

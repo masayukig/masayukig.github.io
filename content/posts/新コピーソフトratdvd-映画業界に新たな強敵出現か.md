@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-06-07-xin-kopisohutoratdvd-ying-hua-ye-jie-nixin-tanaqiang-di-chu-xian-ka
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 新コピーソフト「RatDVD」--映画業界に新たな強敵出現か
 ---
 
 [http://japan.cnet.com/](http://japan.cnet.com/news/media/story/0,2000047715,20084182,00.htm)

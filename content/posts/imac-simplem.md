@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-09-02-imac-simplem
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iMac ？ Simplem ？
 ---
 
 何処かで見かけた話題だけど、

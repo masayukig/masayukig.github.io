@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-09-22-guo-nei-shi-chang-nihabi-zuli-tsutekimasu-soninoriapurotvzhan-lue
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「国内市場には必ず戻ってきます」——ソニーのリアプロTV戦略
 ---
 
 [ITmedia](http://www.itmedia.co.jp/lifestyle/articles/0409/17/news082.html)

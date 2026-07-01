@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-04-04-kddi-acadaputawow31s-karagong-tong-hua
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: KDDI、ACアダプターを「W31S」から共通化
 ---
 
 <http://www.itmedia.co.jp/mobile/articles/0504/04/news060.html>

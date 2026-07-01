@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-04-03-pencknohuontowozuo-tsutanohasi-desu-zhen-nozuo-zhe-nikddigaxie-zui
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「PENCKのフォントを作ったのは私です」──真の作者にKDDIが謝罪
 ---
 
 <http://www.itmedia.co.jp/mobile/articles/0503/29/news044.html>

@@ -8,6 +8,9 @@ tags:
 - html
 draft: false
 disqus_identifier: 2012-03-23-bloggerworikitsudoreiautonisurufang-fa
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Bloggerをリキッドレイアウトにする方法
 ---
 
 Bloggerを使い始めたのですが、「動的レイアウト」以外は、横幅固定のテンプレートしか

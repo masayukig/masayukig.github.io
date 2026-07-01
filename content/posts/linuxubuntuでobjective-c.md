@@ -9,6 +9,9 @@ tags:
 - Software
 draft: false
 disqus_identifier: 2009-08-15-linuxubuntude-objective-c
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Linux(Ubuntu)で、Objective-C
 ---
 
 iPhoneアプリを作るなら、Objective-Cという言語を知っておく必要が

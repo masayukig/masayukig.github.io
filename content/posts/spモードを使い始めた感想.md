@@ -7,6 +7,9 @@ tags:
 - Xperia
 draft: false
 disqus_identifier: 2010-09-11-spmodowoshi-ishi-metagan-xiang
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: SPモードを使い始めた(感想)
 ---
 
 先日より、「[SPモード](http://www.nttdocomo.co.jp/service/provider/spmode/)」と言うサービスが始まったので、

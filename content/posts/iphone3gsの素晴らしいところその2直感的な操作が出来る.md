@@ -8,6 +8,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2009-08-14-iphone3gsnosu-qing-rashiitokorosono2zhi-gan-de-nacao-zuo-gachu-lai-ru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhone(3GS)の素晴らしいところ(その2):直感的な操作が出来る
 ---
 
 前回の、[「iPhone(3GS)の素晴らしいところ(その1):動作がキビキビしている」](http://www.0r2.info/blog/2009/08/12/iphone3gs%e3%81%ae%e7%b4%a0%e6%99%b4%e3%82%89%e3%81%97%e3%81%84%e3%81%a8%e3%81%93%e3%82%8d%e3%81%9d%e3%81%ae1%e5%8b%95%e4%bd%9c%e3%81%8c%e3%82%ad%e3%83%93%e3%82%ad%e3%83%93%e3%81%97%e3%81%a6/)に引き続き、

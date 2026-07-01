@@ -11,6 +11,9 @@ tags:
 - Software
 draft: false
 disqus_identifier: 2010-06-19-sqlitedeprepared-statementtoblobwoshi-tsutegou-zao-ti-wobao-cun-cyan-yu-sono1-sqlite
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 'SQLiteでprepared statementとBLOBを使って構造体を保存(C言語)その1 #sqlite'
 ---
 
 SQLiteのC言語APIを使ってprepared statementで、BLOBを使ってみます。

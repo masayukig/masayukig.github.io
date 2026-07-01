@@ -10,6 +10,9 @@ tags:
 - safesync
 draft: false
 disqus_identifier: 2011-08-09-crashplanwoshi-tsutemiru
+cover:
+  image: https://lh5.googleusercontent.com/-1UcmzXXeulA/TkBLJxBRKNI/AAAAAAAAhWU/k-4PLl2o6Jc/s400/%2525E3%252582%2525B9%2525E3%252582%2525AF%2525E3%252583%2525AA%2525E3%252583%2525BC%2525E3%252583%2525B3%2525E3%252582%2525B7%2525E3%252583%2525A7%2525E3%252583%252583%2525E3%252583%252588%2525202011-08-09%2525205.43.08.jpg
+  alt: picture
 ---
 
 日頃から、PCにデータは出来るだけ持たないようにしているのですが、

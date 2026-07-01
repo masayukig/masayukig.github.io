@@ -5,6 +5,9 @@ slug: スマートフォン向けアプリvim検定登場
 categories:
 - Uncategorized
 draft: true
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: スマートフォン向けアプリ「Vim検定」登場
 ---
 
 <http://apple.slashdot.jp/story/12/03/15/1834258/>

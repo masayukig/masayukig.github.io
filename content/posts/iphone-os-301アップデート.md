@@ -7,6 +7,9 @@ tags:
 - Software
 draft: false
 disqus_identifier: 2009-08-02-iphone-os-301atsupudeto
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhone OS 3.0.1アップデート
 ---
 
 [![http://www.itmedia.co.jp/news/articles/0908/01/news009.html](http://kwout.com/cutout/m/gi/np/mv7_bor.jpg "iPhone OS 3.0.1ソフトウェア・アップデートがリリース　SMSの脆弱性を修正 - ITmedia News")

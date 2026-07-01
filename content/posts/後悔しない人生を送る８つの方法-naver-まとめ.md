@@ -5,6 +5,9 @@ slug: 後悔しない人生を送る８つの方法-naver-まとめ
 categories:
 - Uncategorized
 draft: true
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 後悔しない人生を送る８つの方法 - NAVER まとめ
 ---
 
 <http://matome.naver.jp/odai/2133173312344376601>

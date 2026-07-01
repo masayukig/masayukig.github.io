@@ -8,6 +8,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2009-08-06-zui-jin-gou-ru-shitaiphoneapuri
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 最近購入したiPhoneアプリ
 ---
 
 Appleから最近購入したiPhoneアプリの請求書が来たので、

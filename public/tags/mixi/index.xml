@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mixi on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/mixi/</link>
+    <description>Recent content in Mixi on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 01 Aug 2009 04:48:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mixi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>twitter2mixi.rbの改良は、後回しにしようかな(Twitter対抗、mixi「エコー」 正式サービスに APIも公開へ)</title>
+      <link>http://localhost:1313/posts/2009/08/twitter2mixirb%E3%81%AE%E6%94%B9%E8%89%AF%E3%81%AF%E5%BE%8C%E5%9B%9E%E3%81%97%E3%81%AB%E3%81%97%E3%82%88%E3%81%86%E3%81%8B%E3%81%AAtwitter%E5%AF%BE%E6%8A%97mixi%E3%82%A8%E3%82%B3%E3%83%BC-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AB-api%E3%82%82%E5%85%AC%E9%96%8B%E3%81%B8/</link>
+      <pubDate>Sat, 01 Aug 2009 04:48:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2009/08/twitter2mixirb%E3%81%AE%E6%94%B9%E8%89%AF%E3%81%AF%E5%BE%8C%E5%9B%9E%E3%81%97%E3%81%AB%E3%81%97%E3%82%88%E3%81%86%E3%81%8B%E3%81%AAtwitter%E5%AF%BE%E6%8A%97mixi%E3%82%A8%E3%82%B3%E3%83%BC-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AB-api%E3%82%82%E5%85%AC%E9%96%8B%E3%81%B8/</guid>
+      <description>&lt;p&gt;「Twitter対抗、mixi「エコー」正式サービスに　APIも公開へ」&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.itmedia.co.jp/news/articles/0907/31/news085.html&#34;&gt;&lt;img alt=&#34;http://www.itmedia.co.jp/news/articles/0907/31/news085.html&#34; loading=&#34;lazy&#34; src=&#34;http://kwout.com/cutout/7/gk/fz/8pm_bor.jpg&#34; title=&#34;Twitter対抗、mixi「エコー」正式サービスに\u3000APIも公開へ - ITmedia News&#34;&gt;
+&lt;/a&gt;
+&lt;a href=&#34;http://www.itmedia.co.jp/news/articles/0907/31/news085.html&#34;&gt;Twitter対抗、mixi「エコー」正式サービスに　APIも公開へ - ITmedia
+News&lt;/a&gt; via
+&lt;a href=&#34;http://itmedia.kwout.com/quote/7gkfz8pm&#34;&gt;kwout&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://kwout.com/cutout/7/gk/fz/8pm_bor.js&#34;&gt;http://kwout.com/cutout/7/gk/fz/8pm_bor.js&lt;/a&gt;
+ということらしいです。&lt;/p&gt;
+&lt;p&gt;今、twitter2mixi.rbというスクリプトをcronで動かして、twitterつぶやきをmixiエコーへ投げているのですが、
+このスクリプトは、最新の1件だけ取ってきて、mixiエコーへ投げています。
+これを、最新つぶやき全部を取ってきて、全部投げることができるようにしようかなと
+思っていたのですが、APIが公開されるのであれば、それを待ってからの方が良いかなと、
+思ったり、思わなかったり。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>twitterからmixiエコーへ送信</title>
+      <link>http://localhost:1313/posts/2009/07/twitter%E3%81%8B%E3%82%89mixi%E3%82%A8%E3%82%B3%E3%83%BC%E3%81%B8%E9%80%81%E4%BF%A1/</link>
+      <pubDate>Sun, 26 Jul 2009 07:27:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2009/07/twitter%E3%81%8B%E3%82%89mixi%E3%82%A8%E3%82%B3%E3%83%BC%E3%81%B8%E9%80%81%E4%BF%A1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://cyberwave.jp/nashiki/2009/04/twitter%E3%81%97%E3%81%9F%E3%82%89%E3%80%81%E8%87%AA%E5%8B%95%E3%81%A7mixi%E3%82%A8%E3%82%B3%E3%83%BC%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%88%E3%80%80%E3%80%8Etwitter2mixirb%E3%80%8F/comment-page-1/&#34;&gt;Twitterしたら、自動でMixiエコー作ったよ!!　『twitter2mixi.rb』&lt;/a&gt;
+の記事を参考に(というかほぼそのままだが)、Twitterから、mixiエコーへ送信するようにしてみた。&lt;/p&gt;
+&lt;p&gt;mixiの微妙な閉鎖感が若干嫌で、ちょっと足が遠のきつつあったが、
+辛うじてつなぎ止まったかも。&lt;/p&gt;
+&lt;p&gt;上記のスクリプトを使用する上で、私の環境だといくつかつまづいたことがあったので、
+とりあえず、以下に記しておくことにする&amp;hellip;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;文字コードの問題&lt;/li&gt;
+&lt;li&gt;依存ライブラリの問題&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;・文字コードの問題
+ソースをUTF-8-unixで書いたのだが、実行すると、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hoge@unicorn:~/bin$ ./twitter2mixi.rb
+./twitter2mixi.rb:45: syntax error, unexpected tIDENTIFIER, expecting kEND
+  puts &amp;quot;login to mixi by #{config[&#39;mixiusername&#39;]}&amp;quot;
+             ^
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;と、よく分からないエラーとなる。
+これは、実行時のrubyのKCODEとソースの文字コードが異なると発生する（？）様で、
+twitter2mixi.rbソースの先頭の記述を以下の様に変更して対応。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/ruby -Ku
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;また、最終行近くの&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  form.fields.find { |f| f.name == &#39;body&#39; }.value = twitterlaststatus.toeuc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;もうまく動作しなかったので、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  form.fields.find { |f| f.name == &#39;body&#39; }.value = twitterlaststatus.toutf8
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;に、変更。&lt;/p&gt;
+&lt;p&gt;・依存ライブラリの問題&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Building native extensions. This could take a while&amp;hellip;
+ERROR: Error installing mechanize:
+ERROR: Failed to build gem native extension.
+(snip)
+checking for libxslt/xslt.h in
+/opt/local/include/,/opt/local/include/libxml2,/opt/local/include,/opt/local/include,/opt/local/include/libxml2,/usr/local/include,/usr/local/include/libxml2,/usr/include,/usr/include/libxml2,/usr/include,/usr/include/libxml2&amp;hellip;
+no
+libxslt is missing. try &amp;lsquo;port install libxslt&amp;rsquo; or &amp;lsquo;yum install
+libxslt-devel&amp;rsquo;
+(snip)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;というエラーが出たが、ubuntuにはそんなパッケージは無い。
+で、&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

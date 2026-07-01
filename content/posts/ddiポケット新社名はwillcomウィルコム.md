@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-10-15-ddipoketsuto-xin-she-ming-hawillcom-uirukomu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: DDIポケット、新社名は「WILLCOM」(ウィルコム)
 ---
 
 [Impress](http://k-tai.impress.co.jp/cda/article/news_toppage/20978.html)

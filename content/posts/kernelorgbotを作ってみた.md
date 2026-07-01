@@ -7,6 +7,9 @@ tags:
 - twitter
 draft: false
 disqus_identifier: 2009-09-08-kernelorgbotwozuo-tsutemita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: KernelOrgBotを作ってみた
 ---
 
 Twitterで「KernelOrgBot」なるものを作ってみた。

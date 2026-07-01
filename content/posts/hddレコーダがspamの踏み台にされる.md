@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-09-22-hddrekodagaspamnota-mitai-nisareru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: HDDレコーダがSPAMの踏み台にされる
 ---
 
 [スラド](http://slashdot.jp/article.pl?sid=04/09/20/2213218&topic=66)

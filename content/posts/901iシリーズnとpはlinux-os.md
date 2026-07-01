@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-11-19-901ishirizu-n-top-halinux-os
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 901iシリーズ、「N」と「P」はLinux OS
 ---
 
 [itmedia.co.jp](http://www.itmedia.co.jp/mobile/articles/0411/18/news051.html)

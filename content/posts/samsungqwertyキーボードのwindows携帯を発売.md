@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-06-25-samsung-qwertykibodonowindowsxi-dai-wofa-mai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Samsung、QWERTYキーボードのWindows携帯を発売
 ---
 
 [http://www.itmedia.co.jp/](http://www.itmedia.co.jp/news/articles/0506/24/news102.html)

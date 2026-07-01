@@ -10,6 +10,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2011-10-09-iphone4syu-yue-shen-shiip-nda
+cover:
+  image: https://lh4.googleusercontent.com/-u_uNEMVPZnk/TpC7P5bsMpI/AAAAAAAAoII/rQJIVGdAbyc/s400/%2525E3%252582%2525B9%2525E3%252582%2525AF%2525E3%252583%2525AA%2525E3%252583%2525BC%2525E3%252583%2525B3%2525E3%252582%2525B7%2525E3%252583%2525A7%2525E3%252583%252583%2525E3%252583%252588%2525202011-10-09%2525205.41.22.png
+  alt: picture
 ---
 
 というわけで、iPhone4Sを申し込みました！

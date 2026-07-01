@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-11-08-guang-dao-da-zhou-ye-dewindowslinuxworu-reti-eruguritsudogou-zhu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 広島大、昼夜でWindows/Linuxを入れ替えるグリッド構築
 ---
 
 [slashdot.jp](http://slashdot.jp/article.pl?sid=04/11/07/0521243&topic=1)

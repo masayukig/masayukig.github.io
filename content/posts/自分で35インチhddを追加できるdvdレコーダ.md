@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-08-04-zi-fen-de35inchihddwozhui-jia-dekirudvdrekoda
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 自分で3.5インチHDDを追加できるDVDレコーダ
 ---
 
 [AV Watch](http://www.watch.impress.co.jp/av/docs/20040804/quixun.htm)

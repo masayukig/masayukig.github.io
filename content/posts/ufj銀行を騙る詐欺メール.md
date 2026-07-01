@@ -6,6 +6,9 @@ tags:
 - SPAM
 draft: false
 disqus_identifier: 2005-03-17-ufjyin-xing-wopian-ruzha-qi-meru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: UFJ銀行を騙る詐欺メール
 ---
 
 [スラッシュドット

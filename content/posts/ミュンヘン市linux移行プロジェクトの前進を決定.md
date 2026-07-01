@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-10-04-miyunhenshi-linuxyi-xing-puroziekutonoqian-jin-wojue-ding
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ミュンヘン市、Linux移行プロジェクトの前進を決定
 ---
 
 [linux.com](http://japan.linux.com/news/04/10/01/0550254.shtml?topic=1)

@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-02-21-w31sa-fa-mai-kiyanpen-sdkadoguan-lian-gutsuzuwopurezento
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「W31SA」発売キャンペーン、SDカード関連グッズをプレゼント
 ---
 
 <http://k-tai.impress.co.jp/cda/article/news_toppage/22586.html>

@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-08-06-ddipoketsutonotong-hua-xian-xian-ding-sabisu-emerunofa-xin-xian-deng-lu-wobu-yao-ni
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: DDIポケットの通話先限定サービス、Eメールの発信先登録を不要に
 ---
 
 [ＤＤＩ

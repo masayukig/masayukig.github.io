@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-06-25-toransuueagaoperafan-mai-quan-woxun-tsuteraibudoawodong-jing-di-cai-niti-su
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: トランスウエアがOpera販売権を巡ってライブドアを東京地裁に提訴
 ---
 
 [http://itpro.nikkeibp.co.jp/](http://itpro.nikkeibp.co.jp/free/NC/NEWS/20050622/163216/)

@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-12-14-w-zero3fa-mai-ri
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: W-ZERO3発売日！
 ---
 
 W-ZERO3の発売日！

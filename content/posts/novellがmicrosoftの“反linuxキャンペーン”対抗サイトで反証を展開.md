@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-11-06-novellgamicrosoftnofan-linuxkiyanpendui-kang-saitodefan-zheng-wozhan-kai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: NovellがMicrosoftの“反Linuxキャンペーン”対抗サイトで反証を展開
 ---
 
 [NIKKEI

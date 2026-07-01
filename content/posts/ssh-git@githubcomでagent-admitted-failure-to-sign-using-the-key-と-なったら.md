@@ -8,6 +8,9 @@ tags:
 - github
 draft: false
 disqus_identifier: 2010-10-11-ssh-gitgithubcomdeagent-admitted-failure-to-sign-using-the-key-to-natsutara
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ssh git@github.comで「Agent admitted failure to sign using the key. 」と なったら...
 ---
 
 ssh git@github.comで「Agent admitted failure to sign using the key.

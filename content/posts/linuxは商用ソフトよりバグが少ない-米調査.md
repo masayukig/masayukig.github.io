@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-12-15-linuxhashang-yong-sohutoyoribagugashao-nai-mi-diao-cha
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「Linuxは商用ソフトよりバグが少ない」--米調査
 ---
 
 [japan.cnet.com](http://japan.cnet.com/news/sec/story/0,2000050480,20079664,00.htm)

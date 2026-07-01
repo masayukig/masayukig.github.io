@@ -6,6 +6,9 @@ tags:
 - game
 draft: false
 disqus_identifier: 2004-12-03-nintendodsfa-mai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ニンテンドーDS発売！
 ---
 
 [pc.watch.impress.co.jp](http://pc.watch.impress.co.jp/docs/2004/1202/nintendo.htm)

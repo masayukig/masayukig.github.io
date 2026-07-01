@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-05-30-ri-ben-hpsolariskaralinuxhenoyi-zhi-zhi-yuan-tsuruwowu-chang-ti-gong
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 日本HP，SolarisからLinuxへの移植支援ツールを無償提供
 ---
 
 <http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050527/161644/>

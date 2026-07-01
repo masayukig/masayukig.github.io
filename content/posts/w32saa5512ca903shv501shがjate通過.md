@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-05-17-w32sa-a5512ca-903sh-v501sh-gajatetong-guo
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「W32SA」「A5512CA」「903SH」「V501SH」がJATE通過
 ---
 
 <http://www.itmedia.co.jp/mobile/articles/0505/16/news026.html>

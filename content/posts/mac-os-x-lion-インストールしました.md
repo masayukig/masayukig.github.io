@@ -9,6 +9,9 @@ tags:
 - OS
 draft: false
 disqus_identifier: 2011-07-21-mac-os-x-lion-insutorushimashita
+cover:
+  image: https://lh6.googleusercontent.com/-f9NaPsKenmo/Tjr6xcCGivI/AAAAAAAAg6M/GW4ygmcTaqw/s288/5958547975_802fe61e7b_o.png
+  alt: picture
 ---
 
 というわけで、Mac OS X Lionをインストールしました。

@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2008-06-24-hpnomini-note-pc2133
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: HPのMini-Note PC(2133)
 ---
 
 HP 2133 Mini-Note PC

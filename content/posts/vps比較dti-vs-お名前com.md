@@ -8,6 +8,9 @@ tags:
 - VPS
 draft: false
 disqus_identifier: 2010-07-17-vpsbi-jiao-dti-vs-oming-qian-com
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: VPS比較(DTI vs お名前.com)
 ---
 
 現在、このサイトは お名前.comのVPS 上で動作しているが、

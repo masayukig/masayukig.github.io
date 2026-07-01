@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ja" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Xperia買っちゃったw | What&#39;s done is done</title>
+<meta name="keywords" content="Linux, OS, Xperia">
+<meta name="description" content="iPhoneを持ってるのに、Xperiaを買っちゃいましたw
+
+
+なんか、ケータイ電話とは程遠い気がします。
+普通に、/proc配下のディレクトリにアクセスできたりしますし。
+/proc/config.gzにもアクセスできたので、とりあえず張り付けてみる。
+Xperiaの.config
+で、それ以外の情報ですが、/proc配下から適当に取ってきてみました。
+/proc/version:
+Linux version 2.6.29-rel (semc-android@SEMC) (gcc version 4.2.1) #2 PREEMPT Sun Feb 21 11:47:54 JST 2010
+
+/proc/meminfo:
+MemTotal:         274608 kB
+MemFree:            6048 kB
+Buffers:             116 kB
+Cached:            27148 kB
+SwapCached:            0 kB
+Active:           111936 kB
+Inactive:         125948 kB
+Active(anon):     100964 kB
+Inactive(anon):   111256 kB
+Active(file):      10972 kB
+Inactive(file):    14692 kB
+Unevictable:        1124 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        211760 kB
+Mapped:            24620 kB
+Slab:               7920 kB
+SReclaimable:       1764 kB
+SUnreclaim:         6156 kB
+PageTables:        11080 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      137304 kB
+Committed_AS:    3801756 kB
+VmallocTotal:    1179648 kB
+VmallocUsed:      132756 kB
+VmallocChunk:     939004 kB
+
+/proc/cpuinfo:
+Processor   : ARMv7 Processor rev 2 (v7l)
+BogoMIPS : 383.38
+Features  : swp half thumb fastmult vfp edsp neon
+CPU implementer    : 0x51
+CPU architecture: 7
+CPU variant    : 0x0
+CPU part : 0x00f
+CPU revision   : 2
+
+Hardware : ES209RA
+Revision : 0000
+Serial   : 0000000000000000
+
+/proc/iomem:
+03000000-031fffff : kgsl_phys_memory
+  03000000-031fffff : kgsl
+20000000-2dffffff : System RAM
+  2002b000-20485fff : Kernel text
+  20486000-205bea43 : Kernel data
+30000000-37efffff : System RAM
+37fe0000-37ffffff : ram_console
+a0000000-a001ffff : kgsl_reg_memory
+  a0000000-a001ffff : kgsl
+a0300000-a0300fff : msm_sdcc.1
+a0400000-a0400fff : msm_sdcc.2
+a0700000-a0700004 : audio_base_addr
+a0800000-a08003ff : msm_hsusb_periphera
+a0900000-a0900fff : msm_serial_hs.1
+a0a00000-a0a007ff : msm_nand_phys
+a1200000-a1200fff : spi_base
+  a1200000-a1200fff : spi_qsd
+a9900000-a9900fff : msm_i2c.0
+  a9900000-a9900fff : msm_i2c
+a9a00000-a9a00fff : msm_serial.0
+  a9a00000-a9a00fff : msm_serial
+aa200000-aa2effff : mdp
+aa300000-aa300fff : tssc
+aa400000-aa400fff : tvenc
+aa600000-aa600fff : pmdh
+aa700000-aa700fff : emdh
+
+/proc/mounts:
+rootfs / rootfs rw 0 0
+tmpfs /dev tmpfs rw,mode=755 0 0
+devpts /dev/pts devpts rw,mode=600 0 0
+proc /proc proc rw 0 0
+sysfs /sys sysfs rw 0 0
+tmpfs /sqlite_stmt_journals tmpfs rw,size=4096k 0 0
+/dev/block/mtdblock2 /system yaffs2 ro 0 0
+/dev/block/mtdblock3 /data yaffs2 rw,nosuid,nodev 0 0
+/dev/block/mtdblock1 /cache yaffs2 rw,nosuid,nodev 0 0
+/dev/block/loop0 /cdrom iso9660 ro 0 0
+DxDrmServerIpc /data/DxDrm/fuse fuse.DxDrmServerIpc rw,nosuid,nodev,user_id=0,group_id=0,allow_other 0 0
+/dev/block//vold/179:1 /sdcard vfat rw,dirsync,nosuid,nodev,noexec,uid=1000,gid=1015,fmask=0702,dmask=0702,allow_utime=0020,codepage=cp437,iocharset=iso8859-1,shortname=mixed,utf8 0 0
+">
+<meta name="author" content="Masayuki Igawa">
+<link rel="canonical" href="http://localhost:1313/posts/2010/04/xperia%E8%B2%B7%E3%81%A3%E3%81%A1%E3%82%83%E3%81%A3%E3%81%9Fw/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.68c62ef954d98b64015e3444e943bedbafc6461b357416b42e2caa6a6937032f.css" integrity="sha256-aMYu&#43;VTZi2QBXjRE6UO&#43;26/GRhs1dBa0Liyqamk3Ay8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="ja" href="http://localhost:1313/posts/2010/04/xperia%E8%B2%B7%E3%81%A3%E3%81%A1%E3%82%83%E3%81%A3%E3%81%9Fw/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="What&#39;s done is done (Alt + H)">What&#39;s done is done</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">ホーム</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/posts/">Posts</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      Xperia買っちゃったw
+    </h1>
+    <div class="post-meta">
+
+<span title='2010-04-29 22:10:00 +0900 JST'>2010-04-29</span>&nbsp;·&nbsp;<span>2 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="http://www.0r2.info/blog//0r2.info/3035/4562523183_cc0be3d31d.jpg" alt="xperia">
+        
+</figure>
+
+  <div class="post-content md-content"><p>iPhoneを持ってるのに、Xperiaを買っちゃいましたw
+<a href="http://www.flickr.com/photos/masayun/4562523183/" title="xperia by masayukig, on Flickr"><img alt="xperia" loading="lazy" src="http://www.0r2.info/blog//0r2.info/3035/4562523183_cc0be3d31d.jpg">
+</a></p>
+<p>なんか、ケータイ電話とは程遠い気がします。
+普通に、/proc配下のディレクトリにアクセスできたりしますし。</p>
+<p>/proc/config.gzにもアクセスできたので、とりあえず張り付けてみる。
+<a href="http://www.0r2.info/blog/wp-content/uploads/2010/04/config.gz">Xperiaの.config</a></p>
+<p>で、それ以外の情報ですが、/proc配下から適当に取ってきてみました。</p>
+<pre><code>/proc/version:
+Linux version 2.6.29-rel (semc-android@SEMC) (gcc version 4.2.1) #2 PREEMPT Sun Feb 21 11:47:54 JST 2010
+
+/proc/meminfo:
+MemTotal:         274608 kB
+MemFree:            6048 kB
+Buffers:             116 kB
+Cached:            27148 kB
+SwapCached:            0 kB
+Active:           111936 kB
+Inactive:         125948 kB
+Active(anon):     100964 kB
+Inactive(anon):   111256 kB
+Active(file):      10972 kB
+Inactive(file):    14692 kB
+Unevictable:        1124 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        211760 kB
+Mapped:            24620 kB
+Slab:               7920 kB
+SReclaimable:       1764 kB
+SUnreclaim:         6156 kB
+PageTables:        11080 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      137304 kB
+Committed_AS:    3801756 kB
+VmallocTotal:    1179648 kB
+VmallocUsed:      132756 kB
+VmallocChunk:     939004 kB
+
+/proc/cpuinfo:
+Processor   : ARMv7 Processor rev 2 (v7l)
+BogoMIPS : 383.38
+Features  : swp half thumb fastmult vfp edsp neon
+CPU implementer    : 0x51
+CPU architecture: 7
+CPU variant    : 0x0
+CPU part : 0x00f
+CPU revision   : 2
+
+Hardware : ES209RA
+Revision : 0000
+Serial   : 0000000000000000
+
+/proc/iomem:
+03000000-031fffff : kgsl_phys_memory
+  03000000-031fffff : kgsl
+20000000-2dffffff : System RAM
+  2002b000-20485fff : Kernel text
+  20486000-205bea43 : Kernel data
+30000000-37efffff : System RAM
+37fe0000-37ffffff : ram_console
+a0000000-a001ffff : kgsl_reg_memory
+  a0000000-a001ffff : kgsl
+a0300000-a0300fff : msm_sdcc.1
+a0400000-a0400fff : msm_sdcc.2
+a0700000-a0700004 : audio_base_addr
+a0800000-a08003ff : msm_hsusb_periphera
+a0900000-a0900fff : msm_serial_hs.1
+a0a00000-a0a007ff : msm_nand_phys
+a1200000-a1200fff : spi_base
+  a1200000-a1200fff : spi_qsd
+a9900000-a9900fff : msm_i2c.0
+  a9900000-a9900fff : msm_i2c
+a9a00000-a9a00fff : msm_serial.0
+  a9a00000-a9a00fff : msm_serial
+aa200000-aa2effff : mdp
+aa300000-aa300fff : tssc
+aa400000-aa400fff : tvenc
+aa600000-aa600fff : pmdh
+aa700000-aa700fff : emdh
+
+/proc/mounts:
+rootfs / rootfs rw 0 0
+tmpfs /dev tmpfs rw,mode=755 0 0
+devpts /dev/pts devpts rw,mode=600 0 0
+proc /proc proc rw 0 0
+sysfs /sys sysfs rw 0 0
+tmpfs /sqlite_stmt_journals tmpfs rw,size=4096k 0 0
+/dev/block/mtdblock2 /system yaffs2 ro 0 0
+/dev/block/mtdblock3 /data yaffs2 rw,nosuid,nodev 0 0
+/dev/block/mtdblock1 /cache yaffs2 rw,nosuid,nodev 0 0
+/dev/block/loop0 /cdrom iso9660 ro 0 0
+DxDrmServerIpc /data/DxDrm/fuse fuse.DxDrmServerIpc rw,nosuid,nodev,user_id=0,group_id=0,allow_other 0 0
+/dev/block//vold/179:1 /sdcard vfat rw,dirsync,nosuid,nodev,noexec,uid=1000,gid=1015,fmask=0702,dmask=0702,allow_utime=0020,codepage=cp437,iocharset=iso8859-1,shortname=mixed,utf8 0 0
+</code></pre>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/linux/">Linux</a></li>
+      <li><a href="http://localhost:1313/tags/os/">OS</a></li>
+      <li><a href="http://localhost:1313/tags/xperia/">Xperia</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/2010/05/ipad%E4%BA%88%E7%B4%84%E9%96%8B%E5%A7%8B510-1000-%E6%9C%80%E5%AE%89%E3%81%AF48800%E5%86%8616gb-wi-fi%E3%83%A2%E3%83%87%E3%83%AB/">
+    <span class="title">« 前へ</span>
+    <span>iPad予約開始(5/10 10:00-)。最安は48,800円(16GB Wi-Fiモデル)</span>
+  </a>
+  <a class="next" href="http://localhost:1313/posts/2010/04/linux-kernel%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%92make%E3%81%97%E3%81%A6%E7%B5%90%E6%9E%9C%E3%82%92%E3%83%96%E3%83%AD%E3%82%B0%E3%81%B8%E6%8A%95%E7%A8%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/">
+    <span class="title">次へ »</span>
+    <span>Linux kernelソースをmakeして、結果をブログへ投稿スクリプト</span>
+  </a>
+</nav>
+
+  </footer>
+
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">What&#39;s done is done</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'コピー';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'コピーされました!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'コピー';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

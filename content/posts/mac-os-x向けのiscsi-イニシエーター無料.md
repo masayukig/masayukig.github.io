@@ -11,6 +11,9 @@ tags:
 - Time Machine
 draft: false
 disqus_identifier: 2008-12-15-mac-os-xxiang-kenoiscsi-inishietawu-liao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Mac OS X向けのiSCSI イニシエーター(無料)
 ---
 
 Mac OS X向けのiSCSI イニシエーターです。

@@ -6,6 +6,9 @@ tags:
 - windows8
 draft: false
 disqus_identifier: 2012-09-26-windows8-release-previewwovmware-fusion5-on-mac-mininiinsutorushitepahuomansunoping-jia-woshitemita
+cover:
+  image: https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png?w=300
+  alt: picture
 ---
 
 [![picture](https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png?w=300)

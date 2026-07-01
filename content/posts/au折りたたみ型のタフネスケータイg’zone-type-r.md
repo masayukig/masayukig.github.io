@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-05-26-au-zhe-ritatamixing-notahunesuketaigzone-type-r
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: au、折りたたみ型のタフネスケータイ「G’zOne TYPE-R」
 ---
 
 <http://k-tai.impress.co.jp/cda/article/news_toppage/24014.html>

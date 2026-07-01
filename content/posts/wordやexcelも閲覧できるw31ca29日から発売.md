@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-07-28-wordyaexcelmoyue-lan-dekiruw31ca-29ri-karafa-mai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: WordやExcelも閲覧できる「W31CA」、29日から発売
 ---
 
 [http://www.itmedia.co.jp/](http://www.itmedia.co.jp/mobile/articles/0507/28/news041.html)

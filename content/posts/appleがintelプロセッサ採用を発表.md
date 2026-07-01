@@ -6,6 +6,9 @@ tags:
 - Mac
 draft: false
 disqus_identifier: 2005-06-07-applegaintelpurosetsusacai-yong-wofa-biao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: AppleがIntelプロセッサ採用を発表
 ---
 
 [http://slashdot.jp/](http://slashdot.jp/article.pl?sid=05/06/06/1853207&topic=40)

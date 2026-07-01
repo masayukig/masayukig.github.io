@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-06-20-yodobashikamera-felicaji-neng-da-zai-noxin-xing-gorudopointokado
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ヨドバシカメラ、FeliCa機能搭載の新型ゴールドポイントカード
 ---
 
 [picture](http://pc.watch.impress.co.jp/docs/2005/0620/yodobashi.htm)

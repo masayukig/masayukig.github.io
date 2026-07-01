@@ -10,6 +10,9 @@ tags:
 - openstack
 - summit
 draft: true
+cover:
+  image: /images/covers/oss.png
+  alt: OpenStack Summit 2018 Vancouver Summary from QA perspective
 ---
 
 ## Introduction

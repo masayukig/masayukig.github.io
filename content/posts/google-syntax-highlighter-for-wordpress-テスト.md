@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2009-08-15-google-syntax-highlighter-for-wordpress-tesuto
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Google Syntax Highlighter for WordPress テスト
 ---
 
 うまくいきそう！

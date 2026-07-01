@@ -9,6 +9,9 @@ tags:
 - lvremove
 draft: false
 disqus_identifier: 2009-03-20-lvremovechu-lai-naicant-remove-open-logical-volume-hogehoge
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: lvremove出来ない！(Can't remove open logical volume "hogehoge")
 ---
 
 lvmを使っていて、必要なくなったlvを削除するためのコマンドである、

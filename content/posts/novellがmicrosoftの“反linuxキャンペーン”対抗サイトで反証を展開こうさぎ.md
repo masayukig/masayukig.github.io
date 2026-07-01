@@ -6,6 +6,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2004-11-10-novellgamicrosoftnofan-linuxkiyanpendui-kang-saitodefan-zheng-wozhan-kai-kousagi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: NovellがMicrosoftの“反Linuxキャンペーン”対抗サイトで反証を展開(こうさぎ)
 ---
 
 きのううさこが、ひまがblogするつもりだった。

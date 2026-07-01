@@ -7,6 +7,9 @@ tags:
 - Mac
 draft: false
 disqus_identifier: 2012-11-09-getting-crashplan-to-work-on-mac-after-upgraded-to-jdk17
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 'Getting #CrashPlan to work on #Mac after upgraded to JDK1.7'
 ---
 
 I got an error of CrashPlan a few days ago. That is

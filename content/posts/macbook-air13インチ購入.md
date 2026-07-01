@@ -9,6 +9,9 @@ tags:
 - Mac
 draft: false
 disqus_identifier: 2011-01-04-macbook-air13inchigou-ru
+cover:
+  image: http://farm6.static.flickr.com/5125/5321142285_6164911975.jpg
+  alt: apple-store-macbook\_air\_screenshot\_m
 ---
 
 MacBook Air(13インチ)を購入した！

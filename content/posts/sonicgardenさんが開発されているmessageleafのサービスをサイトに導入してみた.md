@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-07-23-sonicgardensangakai-fa-sareteirumessageleafnosabisuwosaitonidao-ru-shitemita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: SonicGardenさんが開発されているMessageleafのサービスをサイトに導入してみた
 ---
 
 右下に出ている「MessageLeaf」がそれです。

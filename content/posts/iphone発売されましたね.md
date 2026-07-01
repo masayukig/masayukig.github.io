@@ -7,6 +7,11 @@ tags:
 - iPhone
 draft: false
 disqus_identifier: 2008-07-13-iphonefa-mai-saremashitane
+cover:
+  image: http://ad.linksynergy.com/fs-bin/show?id=6ZMj3qNtbOQ&bids=102056.10001930&subid=0&type=4&gridnum=-1
+  alt: 'Apple
+
+    Store（Japan）'
 ---
 
 iPhone発売されましたね。

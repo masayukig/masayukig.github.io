@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-11-10-death-note-di-4juan-fa-mai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: DEATH NOTE 第4巻発売！
 ---
 
 [

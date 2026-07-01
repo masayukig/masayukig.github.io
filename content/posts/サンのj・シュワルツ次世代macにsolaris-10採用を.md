@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2005-06-07-sannojshiyuwarutsuci-shi-dai-macnisolaris-10cai-yong-wo
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: サンのJ・シュワルツ：「次世代MacにSolaris 10採用を」
 ---
 
 [http://japan.cnet.com/](http://japan.cnet.com/news/ent/story/0,2000047623,20084188,00.htm)

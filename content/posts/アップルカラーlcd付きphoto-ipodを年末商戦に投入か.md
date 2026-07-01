@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-10-13-atsupuru-karalcdfu-kiphoto-ipod-wonian-mo-shang-zhan-nitou-ru-ka
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: アップル、カラーLCD付き「Photo iPod」を年末商戦に投入か？
 ---
 
 [CNET

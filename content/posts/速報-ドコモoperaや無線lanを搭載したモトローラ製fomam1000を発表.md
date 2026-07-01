@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-04-14-su-bao-dokomo-operayawu-xian-lanwoda-zai-shitamotororazhi-fomam1000-wofa-biao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 速報 - ドコモ、Operaや無線LANを搭載したモトローラ製FOMA「M1000」を発表
 ---
 
 <http://pcweb.mycom.co.jp/news/2005/04/14/014.html>

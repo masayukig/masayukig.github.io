@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-04-03-manshiyonniictagu-bu-shen-zhe-noqin-ru-fang-zhi-ni-ri-li-tosan-ling-di-suo-she-ji
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: マンションにICタグ、不審者の侵入防止に--日立と三菱地所設計
 ---
 
 <http://japan.cnet.com/news/sec/story/0,2000050480,20081528,00.htm>

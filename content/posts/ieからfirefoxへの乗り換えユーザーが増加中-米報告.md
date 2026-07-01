@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2004-09-17-iekarafirefoxhenocheng-rihuan-eyuzagazeng-jia-zhong-mi-bao-gao
+cover:
+  image: /images/covers/oss.png
+  alt: IEからFirefoxへの乗り換えユーザーが増加中--米報告
 ---
 
 [CNET

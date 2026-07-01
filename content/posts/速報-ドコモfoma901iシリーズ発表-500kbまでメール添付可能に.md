@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-11-19-su-bao-dokomo-foma901i-shirizufa-biao-500kbmademerutian-fu-ke-neng-ni
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 速報 - ドコモ、FOMA「901i」シリーズ発表 - 500KBまでメール添付可能に
 ---
 
 [pcweb.mycom.co.jp](http://pcweb.mycom.co.jp/news/2004/11/17/007.html)

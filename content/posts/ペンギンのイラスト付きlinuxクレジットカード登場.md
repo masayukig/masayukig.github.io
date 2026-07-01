@@ -6,6 +6,9 @@ tags:
 - お金
 draft: false
 disqus_identifier: 2009-07-31-penginnoirasutofu-kilinuxkurezitsutokadodeng-chang
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「ペンギンのイラスト付きLinuxクレジットカード登場」！
 ---
 
 [![http://www.itmedia.co.jp/news/articles/0907/30/news005.html](http://kwout.com/cutout/n/7k/fz/8pm_bor.jpg "ペンギンのイラスト付きLinuxクレジットカード登場 - ITmedia News")

@@ -7,6 +7,9 @@ tags:
 - iPhone5
 draft: false
 disqus_identifier: 2012-10-07-iphone5kita
+cover:
+  image: https://masayukig.files.wordpress.com/2012/10/87c64-iphone5allitems.jpeg?w=300
+  alt: picture
 ---
 
 iPhone5来たよ

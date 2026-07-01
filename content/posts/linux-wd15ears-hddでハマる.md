@@ -7,6 +7,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2010-04-14-linux-wd15ears-hdddehamaru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Linux WD15EARS HDDでハマる
 ---
 
 WD15EARSというHDDでは、

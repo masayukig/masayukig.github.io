@@ -6,6 +6,9 @@ tags:
 - Kindle
 draft: false
 disqus_identifier: 2010-06-23-wu-shi-70-refundsareta-amazon-kindle-kindlejp
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: '無事、$70 refundされた♪ #amazon #kindle #kindlejp'
 ---
 
 [前のエントリ「Kindle

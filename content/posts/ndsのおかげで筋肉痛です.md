@@ -6,6 +6,9 @@ tags:
 - game
 draft: false
 disqus_identifier: 2004-12-07-ndsnookagedejin-rou-tong-desu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: NDSのおかげで筋肉痛です
 ---
 
 [itmedia.co.jp](http://www.itmedia.co.jp/news/articles/0412/06/news036.html)

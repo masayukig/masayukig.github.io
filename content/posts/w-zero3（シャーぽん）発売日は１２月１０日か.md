@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-10-24-w-zero3shiyaponfa-mai-ri-ha12yue-10ri-ka
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: W-ZERO3（シャーぽん）発売日は１２月１０日か？
 ---
 
 [前のエントリー](http://lunatic.xrea.jp/mt/archives/000818.html "W-ZERO3（シャーぽん）発売日までのカウントダウンカウンターを付けてみました")で、

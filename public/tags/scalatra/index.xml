@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Scalatra on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/scalatra/</link>
+    <description>Recent content in Scalatra on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 02 Jul 2011 05:43:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/scalatra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloud Foundry で Scalatra アプリを実行</title>
+      <link>http://localhost:1313/posts/2011/07/cloud-foundry-%E3%81%A7-scalatra-%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E5%AE%9F%E8%A1%8C/</link>
+      <pubDate>Sat, 02 Jul 2011 05:43:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/07/cloud-foundry-%E3%81%A7-scalatra-%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E5%AE%9F%E8%A1%8C/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://picasaweb.google.com/lh/photo/yZtdpG7qkZc_OfWy78PCPw?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh3.googleusercontent.com/-FMIXumcTAV0/Tjr6wfSrWEI/AAAAAAAAg6M/d80dUsZSc_A/s800/5892056768_b3f93f8618_o.png&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cloud Foundry で &lt;a href=&#34;https://github.com/scalatra/scalatra&#34;&gt;Scalatra&lt;/a&gt;
+アプリを実行してみます。
+Scalatra
+自体については、&lt;a href=&#34;http://www.google.co.jp/search?q=scalatra&#34;&gt;ググって&lt;/a&gt;ください。
+:-P&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;sbtをインストール
+インストール方法は、&lt;a href=&#34;http://b.0r2.info/?p=1508&#34;&gt;Mac で Scala と Lift を使ってみる(1)
+インストール編&lt;/a&gt;に記載した通りです。
+Linuxならばapt-getやyum等でインストールできるかもしれません。
+Windowsはわかりませんw&lt;/del&gt;
+下記のgit cloneでsbtも取得できるので不要&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;sbtアプリ作成＆テスト実行
+&lt;a href=&#34;https://github.com/scalatra/scalatra&#34;&gt;Quick start (SBT
+0.7.x)&lt;/a&gt;に書かれている方法を実行します。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git clone git://github.com/scalatra/scalatra-sbt-prototype.git my-app
+$ cd my-app
+$ ./sbt
+&amp;gt; update
+&amp;gt; jetty-run
+&amp;gt; ~prepare-webapp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;で、あとは、&lt;a href=&#34;http://localhost:8080/&#34;&gt;http://localhost:8080/&lt;/a&gt;
+へアクセスすれば、上記の様な画面が表示されると思います。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cloud Foundryへpush&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sbt package
+$ vmc push --path target/scala_2.8.1
+Application Name: 好きなアプリケーション名を入力
+Application Deployed URL: &#39;アプリケーション名.cloudfoundry.com&#39;?
+Detected a Java Web Application, is this correct? [Yn]:
+Memory Reservation [Default:512M] (64M, 128M, 256M, 512M or 1G)
+Creating Application: OK
+Would you like to bind any services to &#39;好きなアプリケーション名&#39;? [yN]:
+Uploading Application:
+  Checking for available resources: OK
+  Processing resources: OK
+  Packing application: OK
+  Uploading (9K): OK
+Push Status: OK
+Staging Application: OK
+Starting Application: OK
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;とすれば、warファイルが作成され、Cloud Foundryへpushできますが、
+１点注意点があります。デフォルトでは、scala-compiler.jarがwarファイルに含まれないらしく、
+このwarファイルをvmc pushしても実行時にエラーとなります。
+&lt;a href=&#34;http://d.hatena.ne.jp/fits/20110521/1305942644&#34;&gt;http://d.hatena.ne.jp/fits/20110521/1305942644&lt;/a&gt;
+というわけで、以下の修正を加えた後、&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

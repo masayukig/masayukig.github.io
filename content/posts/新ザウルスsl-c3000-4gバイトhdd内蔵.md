@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-10-15-xin-zaurususl-c3000-4gbaitohddnei-zang
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 新ザウルス(SL-C3000) 4GバイトHDD内蔵
 ---
 
 [ITmedia](http://www.itmedia.co.jp/mobile/articles/0410/15/news032.html)

@@ -8,6 +8,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2008-12-13-lvmrisaizu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: LVMリサイズ
 ---
 
 LVMで領域のリサイズをしようと思ったら、ちょっとハマったので、メモ。

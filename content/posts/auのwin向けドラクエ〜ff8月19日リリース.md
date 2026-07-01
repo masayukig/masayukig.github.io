@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-08-05-aunowinxiang-kedorakue-ff-8yue-19ri-ririsu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: auのWIN向けドラクエ〜FF、8月19日リリース
 ---
 
 [ITmedia](http://lunatic.xrea.jp/mt/mt.cgi?__mode=view&_type=entry&blog_id=2)

@@ -7,6 +7,9 @@ tags:
 - UROAD-7000
 draft: false
 disqus_identifier: 2010-07-16-uroad-7000gou-ru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: UROAD-7000購入
 ---
 
 UROAD-7000 (WiMAX モバイルWiFiルータ)

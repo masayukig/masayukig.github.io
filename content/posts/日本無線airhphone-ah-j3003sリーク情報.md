@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-06-30-ri-ben-wu-xian-airhphone-ah-j3003s-rikuqing-bao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 日本無線AirH"PHONE 「AH-J3003S」リーク情報
 ---
 
 （情報元：<http://d.memn0ck.com/?AH-J3003S>）

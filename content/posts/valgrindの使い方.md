@@ -7,6 +7,9 @@ tags:
 - 開発
 draft: false
 disqus_identifier: 2010-05-20-valgrindnoshi-ifang
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Valgrindの使い方
 ---
 
 <http://kzk9.net/column/valgrind-memcheck.html>

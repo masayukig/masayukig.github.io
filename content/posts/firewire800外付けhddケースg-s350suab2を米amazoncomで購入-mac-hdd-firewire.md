@@ -7,6 +7,9 @@ tags:
 - Mac
 draft: false
 disqus_identifier: 2012-04-28-firewire800wai-fu-kehddkesug-s350suab2womi-amazoncomdegou-ru-mac-hdd-firewire
+cover:
+  image: https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg?w=199
+  alt: picture
 ---
 
 ### はじめに

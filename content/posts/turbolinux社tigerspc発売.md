@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-04-28-turbolinuxshe-tigerspcfa-mai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: TurboLinux社TigersPC発売
 ---
 
 <http://www.turbolinux.co.jp/products/tigerspc/>

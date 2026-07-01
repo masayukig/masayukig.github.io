@@ -8,6 +8,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2009-07-18-jabra-bluetoothhetsudosetsutobt3030
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Jabra Bluetoothヘッドセット「BT3030」
 ---
 
 > Jabra　Bluetoothヘッドセット「BT3030」

@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-08-31-san-ling-dian-ji-jin-nian-du-zhong-ni62vxing-dlpriapurotvwotou-ru-he
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 三菱電機、今年度中に62V型DLPリアプロTVを投入へ
 ---
 
 [ITmedia

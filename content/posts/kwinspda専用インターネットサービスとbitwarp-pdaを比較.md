@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-12-20-kwinspdazhuan-yong-intanetsutosabisutobitwarp-pdawobi-jiao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: KWINS(PDA専用インターネットサービス)とbitWarp PDAを比較
 ---
 
 リナザウ(SL-C3000)を買ったので、

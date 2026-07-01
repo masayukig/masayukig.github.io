@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2004-10-29-firefox-10nozui-zhong-tesutobaziyongaririsuni
+cover:
+  image: /images/covers/oss.png
+  alt: Firefox 1.0の最終テストバージョンがリリースに！
 ---
 
 [CNET

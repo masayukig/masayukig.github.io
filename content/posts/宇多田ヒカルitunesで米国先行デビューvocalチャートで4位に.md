@@ -6,6 +6,9 @@ tags:
 - entertainments
 draft: false
 disqus_identifier: 2004-07-28-yu-duo-tian-hikaru-itunesdemi-guo-xian-xing-debiyu-vocalchiyatode4wei-ni
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 宇多田ヒカル、iTunesで米国「先行」デビュー。Vocalチャートで4位に
 ---
 
 [ITmedia](http://www.itmedia.co.jp/lifestyle/articles/0407/28/news023.html)

@@ -12,6 +12,9 @@ tags:
 - tips
 draft: false
 disqus_identifier: 2008-11-16-gu-iji-shi-woinpotoshimashitamovabletype-wordpress
+cover:
+  image: /images/covers/oss.png
+  alt: 古い記事をインポートしました(MovableType -> Wordpress)
 ---
 
 以前、MovableTypeで書いていた記事を、wordpressにインポートしました。

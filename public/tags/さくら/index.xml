@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>さくら on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/%E3%81%95%E3%81%8F%E3%82%89/</link>
+    <description>Recent content in さくら on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 03 Apr 2012 20:04:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E3%81%95%E3%81%8F%E3%82%89/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>さくらのVPS(2G)でUnixBench(5.1.3)を実行してみた。結果：値段そのままなのに、大幅に性能アップ！</title>
+      <link>http://localhost:1313/posts/2012/04/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps2g%E3%81%A7unixbench513%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E7%B5%90%E6%9E%9C%E5%80%A4%E6%AE%B5%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E3%81%AA%E3%81%AE%E3%81%AB%E5%A4%A7%E5%B9%85%E3%81%AB%E6%80%A7%E8%83%BD%E3%82%A2%E3%83%83%E3%83%97/</link>
+      <pubDate>Tue, 03 Apr 2012 20:04:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/04/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps2g%E3%81%A7unixbench513%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E7%B5%90%E6%9E%9C%E5%80%A4%E6%AE%B5%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E3%81%AA%E3%81%AE%E3%81%AB%E5%A4%A7%E5%B9%85%E3%81%AB%E6%80%A7%E8%83%BD%E3%82%A2%E3%83%83%E3%83%97/</guid>
+      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
+&lt;h2 id=&#34;なお15gで評価した結果はさくらのvpsでunixbench513を実施してみた&#34;&gt;というわけで、早速、 さくらのVPS(2G)で、UnixBenchを実行してみました。
+なお、1.5Gで評価した結果は、[&amp;ldquo;さくらのVPSでUnixBench(5.1.3)を実施してみた&lt;/h2&gt;
+&lt;p&gt;part2(結果編)&amp;rdquo;](/posts/2011/03/sakuranovpsdeunixbench513woshi-shi-shitemita-part2jie-guo-bian/)を参照して下さい。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;========================================================================
+   BYTE UNIX Benchmarks (Version 5.1.3)
+
+   System: localhost.localdomain: GNU/Linux
+   OS: GNU/Linux -- 3.3.0-8.fc16.x86_64 -- #1 SMP Thu Mar 29 18:37:19 UTC 2012
+   Machine: x86_64 (x86_64)
+   Language: en_US.utf8 (charmap=&amp;quot;UTF-8&amp;quot;, collate=&amp;quot;UTF-8&amp;quot;)
+   CPU 0: Intel(R) Xeon(R) CPU E5645 (4800.2 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSCALL/SYSRET
+   CPU 1: Intel(R) Xeon(R) CPU E5645 (4800.2 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSCALL/SYSRET
+   CPU 2: Intel(R) Xeon(R) CPU E5645 (4800.2 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSCALL/SYSRET
+   20:22:38 up  2:57,  2 users,  load average: 0.53, 0.41, 0.21; runlevel 3
+
+------------------------------------------------------------------------
+Benchmark Run: Tue Apr 03 2012 20:22:38 - 20:49:59
+3 CPUs in system; running 1 parallel copy of tests
+
+Dhrystone 2 using register variables       24322317.4 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     2961.2 MWIPS (7.0 s, 7 samples)
+Execl Throughput                               1451.8 lps   (30.0 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks        787751.5 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          223048.0 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       1639344.8 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             1385086.0 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 226423.8 lps   (10.0 s, 7 samples)
+Process Creation                               3676.0 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                   3725.1 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   1646.1 lpm   (60.0 s, 2 samples)
+System Call Overhead                        1578386.4 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   24322317.4   2084.2
+Double-Precision Whetstone                       55.0       2961.2    538.4
+Execl Throughput                                 43.0       1451.8    337.6
+File Copy 1024 bufsize 2000 maxblocks          3960.0     787751.5   1989.3
+File Copy 256 bufsize 500 maxblocks            1655.0     223048.0   1347.7
+File Copy 4096 bufsize 8000 maxblocks          5800.0    1639344.8   2826.5
+Pipe Throughput                               12440.0    1385086.0   1113.4
+Pipe-based Context Switching                   4000.0     226423.8    566.1
+Process Creation                                126.0       3676.0    291.7
+Shell Scripts (1 concurrent)                     42.4       3725.1    878.6
+Shell Scripts (8 concurrent)                      6.0       1646.1   2743.5
+System Call Overhead                          15000.0    1578386.4   1052.3
+                                                                   ========
+System Benchmarks Index Score                                        1024.6
+
+------------------------------------------------------------------------
+Benchmark Run: Tue Apr 03 2012 20:49:59 - 21:17:27
+3 CPUs in system; running 3 parallel copies of tests
+
+Dhrystone 2 using register variables       72068041.9 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     8846.1 MWIPS (7.2 s, 7 samples)
+Execl Throughput                               8582.7 lps   (30.0 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks       1071208.3 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          285035.8 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       2289930.0 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             4059296.6 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 654058.4 lps   (10.0 s, 7 samples)
+Process Creation                              28607.3 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                  14152.2 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   1953.0 lpm   (60.0 s, 2 samples)
+System Call Overhead                        4106210.8 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   72068041.9   6175.5
+Double-Precision Whetstone                       55.0       8846.1   1608.4
+Execl Throughput                                 43.0       8582.7   1996.0
+File Copy 1024 bufsize 2000 maxblocks          3960.0    1071208.3   2705.1
+File Copy 256 bufsize 500 maxblocks            1655.0     285035.8   1722.3
+File Copy 4096 bufsize 8000 maxblocks          5800.0    2289930.0   3948.2
+Pipe Throughput                               12440.0    4059296.6   3263.1
+Pipe-based Context Switching                   4000.0     654058.4   1635.1
+Process Creation                                126.0      28607.3   2270.4
+Shell Scripts (1 concurrent)                     42.4      14152.2   3337.8
+Shell Scripts (8 concurrent)                      6.0       1953.0   3254.9
+System Call Overhead                          15000.0    4106210.8   2737.5
+                                                                   ========
+System Benchmarks Index Score                                        2670.2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;まとめ&#34;&gt;まとめ&lt;/h1&gt;
+&lt;p&gt;テスト内容                    旧システム(1.5G)                    新システム(2G)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>さくらVPS上位プランへアップグレードできないか？問い合わせてみた</title>
+      <link>http://localhost:1313/posts/2011/03/%E3%81%95%E3%81%8F%E3%82%89vps%E4%B8%8A%E4%BD%8D%E3%83%97%E3%83%A9%E3%83%B3%E3%81%B8%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%81%8B%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <pubDate>Fri, 11 Mar 2011 04:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/03/%E3%81%95%E3%81%8F%E3%82%89vps%E4%B8%8A%E4%BD%8D%E3%83%97%E3%83%A9%E3%83%B3%E3%81%B8%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%81%8B%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://b.0r2.info/?p=1447&#34;&gt;先日のエントリー&lt;/a&gt;で書いた さくらのVPS の上位プランへのアップグレードについて、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;簡単に容量アップできるのかな。。？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;と、書いたのですが、 さくらのVPS ページには特に何も書いてなかったので、
+問い合わせてみました。&lt;/p&gt;
+&lt;p&gt;で、得られた回答が以下の通り。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;大変恐れ入りますが、「さくらのVPSシリーズ」では、収容サーバが
+異なる為、プラン変更やアップグレードのお手続きがございません。&lt;/p&gt;
+&lt;p&gt;ご希望のサービスを新規でお申し込みいただき、お客様にてサーバの構築や
+データ等の移行作業を行われた後、不要なサービスの解約を頂く対応と
+なっております。&lt;/p&gt;
+&lt;p&gt;ご希望に沿えず申し訳ございませんが、ご了承賜りますようお願いいたします。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;プラン変更／アップグレードができないというのは
+ちょっとガッカリですが、まぁサーバ自体に特に不満はないので、
+その内移行したいと思います。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>さくらのVPSでUnixBench(5.1.3)を実施してみた - part1(準備編)</title>
+      <link>http://localhost:1313/posts/2011/03/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps%E3%81%A7unixbench513%E3%82%92%E5%AE%9F%E6%96%BD%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F-part1%E6%BA%96%E5%82%99%E7%B7%A8/</link>
+      <pubDate>Fri, 04 Mar 2011 06:07:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/03/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps%E3%81%A7unixbench513%E3%82%92%E5%AE%9F%E6%96%BD%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F-part1%E6%BA%96%E5%82%99%E7%B7%A8/</guid>
+      <description>&lt;p&gt;さくらのVPSでベンチマークをやってみた。&lt;/p&gt;
+&lt;p&gt;[php]
+$ wget &lt;a href=&#34;http://byte-unixbench.googlecode.com/files/UnixBench5.1.3.tgz&#34;&gt;http://byte-unixbench.googlecode.com/files/UnixBench5.1.3.tgz&lt;/a&gt;
+&amp;ndash;2011-03-04 05:12:00&amp;ndash;
+&lt;a href=&#34;http://byte-unixbench.googlecode.com/files/UnixBench5.1.3.tgz&#34;&gt;http://byte-unixbench.googlecode.com/files/UnixBench5.1.3.tgz&lt;/a&gt;
+byte-unixbench.googlecode.com をDNSに問いあわせています&amp;hellip;
+64.233.183.82
+byte-unixbench.googlecode.com|64.233.183.82|:80 に接続しています&amp;hellip;
+接続しました。
+HTTP による接続要求を送信しました、応答を待っています&amp;hellip; 200 OK
+長さ: 143259 (140K) [application/x-gzip]
+`UnixBench5.1.3.tgz&amp;rsquo; に保存中&lt;/p&gt;
+&lt;p&gt;100%[======================================&amp;gt;] 143,259 203K/s 時間
+0.7s&lt;/p&gt;
+&lt;p&gt;2011-03-04 05:12:06 (203 KB/s) - `UnixBench5.1.3.tgz&amp;rsquo; へ保存完了
+[143259/143259]&lt;/p&gt;
+&lt;p&gt;$ tar xf UnixBench5.1.3.tgz
+$ make
+Checking distribution of files
+./pgms exists
+./src exists
+./testdir exists
+./results exists
+gcc -o ./pgms/arithoh -DTIME -Wall -pedantic -ansi -O2
+-fomit-frame-pointer -fforce-addr -ffast-math -Wall -Darithoh
+./src/arith.c
+(中略)
+gcc -o ./pgms/whetstone-double -DTIME -Wall -pedantic -ansi -O2
+-fomit-frame-pointer -fforce-addr -ffast-math -Wall -DDP -DUNIX
+-DUNIXBENCH ./src/whets.c -lm
+$ echo $?
+0
+$ ./Run
+make all
+make[1]: Entering directory `/home/masayuki/src/UnixBench&#39;
+Checking distribution of files
+./pgms exists
+./src exists
+./testdir exists
+./tmp exists
+./results exists
+make[1]: Leaving directory `/home/masayuki/src/UnixBench&#39;
+sh: 3dinfo: command not found&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fedora14 on さくらVPS</title>
+      <link>http://localhost:1313/posts/2011/02/fedora14-on-%E3%81%95%E3%81%8F%E3%82%89vps/</link>
+      <pubDate>Sat, 12 Feb 2011 04:44:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/02/fedora14-on-%E3%81%95%E3%81%8F%E3%82%89vps/</guid>
+      <description>&lt;p&gt;このサイトのサーバは、[さくらのVPS]で動作していますが、今まで、CentOS5だったのを、Fedora14に変更しました。&lt;/p&gt;
+&lt;p&gt;以下、その時につまずいたところなどを、記してみたいと思います。&lt;/p&gt;
+&lt;p&gt;OSのインストール自体は、
+&lt;a href=&#34;http://support.sakura.ad.jp/support/vps/menu_oscustom_fedora.shtml&#34;&gt;カスタムOSインストールガイド ： Fedora
+13&lt;/a&gt;に従って行えば、特に困るところは無いと思います。&lt;/p&gt;
+&lt;p&gt;ただし、私の環境だと、
+「[STEP 13] VPSの停止と起動」で、VNCコンソール(QEMUコンソール)の
+ウィンドウが消えてしまうことがあったのですが、その場合には、
+VPSコントロールパネルのリモートコンソール
+&lt;a href=&#34;http://www.flickr.com/photos/masayun/5436912432/&#34; title=&#34;sakura vps remote console by masayukig, on Flickr&#34;&gt;&lt;img alt=&#34;sakura vps remote\nconsole&#34; loading=&#34;lazy&#34; src=&#34;http://farm6.static.flickr.com/5092/5436912432_e26d889434.jpg&#34;&gt;
+&lt;/a&gt;
+の、「VNCコンソールを開く」をやれば大丈夫だと思います。&lt;/p&gt;
+&lt;p&gt;また、「[STEP 10]
+インストールタイプの選択」では、私は「Webサーバ」を選択しました。
+特に問題はありません。&lt;/p&gt;
+&lt;p&gt;Fedora13がインストールできたら、次は、このブログ記事のタイトル
+「Fedora14」へアップグレードします。(まだ道半ばです(笑))&lt;/p&gt;
+&lt;p&gt;Fedora14のインストールは簡単です。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.tnmt.info/2010/11/06/upgrade-fedora-13-to-14-using-preupgrade/&#34;&gt;Fedora 13 → Fedora 14 へ preupgrade-cli
+でアップグレード&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://journal.mycom.co.jp/articles/2010/11/09/upgrading-fedora-from-13-to-14/index.html&#34;&gt;Fedora
+13から14へアップグレードする方法&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;あたりの記事を参考に、アップグレードします。&lt;/p&gt;
+&lt;p&gt;要は、
+[bash]
+# yum update rpm
+# yum -y update
+# yum clean all
+# reboot
+[/bash]
+てな感じで、ひとまず(Fedora13の)最新版にしておき、&lt;/p&gt;
+&lt;p&gt;preupgradeをインストール。(既にインストールされている場合もあり)
+[bash]
+# yum install preupgrade
+[/bash]&lt;/p&gt;
+&lt;p&gt;preupgrade-cliを実行。
+[bash]
+# LANG=C preupgrade-cli &amp;ldquo;Fedora 14 (Laughlin)&amp;rdquo;
+[/bash]
+LANG=Cで実行しないと、エラーが発生するらしいです。&lt;/p&gt;
+&lt;p&gt;で、これでFedora14になりました。&lt;/p&gt;
+&lt;p&gt;あとは、必要な設定を随時行っていきます。
+ちょっとつまずいたのは、パーマリンクの設定。&lt;/p&gt;
+&lt;p&gt;以下のように、httpd.confのAllowOverride NoneをAllowOverride Allに
+変更してやる必要がありました。
+&lt;a href=&#34;http://wpdocs.sourceforge.jp/%E3%83%91%E3%83%BC%E3%83%9E%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#.E3.81.9D.E3.81.AE.E4.BB.96.E3.81.AE.E5.95.8F.E9.A1.8C.E7.82.B9&#34;&gt;パーマリンクの使い方:その他の問題点&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;また、Webサーバとして使うので、GUIでのログインは不要なので、
+/etc/inittabを以下のように変更し、ランレベル３で動作するようにします。
+[text]
+diff &amp;ndash;git a/inittab b/inittab
+index a8ab066..b6a0b26 100644
+&amp;mdash; a/inittab
++++ b/inittab
+@@ -23,4 +23,5 @@
+# 5 - X11
+# 6 - reboot (Do NOT set initdefault to this)
+#
+-id:5:initdefault:
++#id:5:initdefault:
++id:3:initdefault:
+[/text]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

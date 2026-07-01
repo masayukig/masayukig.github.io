@@ -11,6 +11,9 @@ tags:
 - 写真
 draft: false
 disqus_identifier: 2008-07-29-ufraw-batchderawhuairuwojian-dan-xian-xiang
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ufraw-batchでRAWファイルを簡単現像
 ---
 
 Nikon

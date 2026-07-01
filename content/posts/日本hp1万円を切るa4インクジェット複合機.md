@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2005-06-01-ri-ben-hp-1mo-yuan-woqie-rua4inkuzietsutofu-he-ji
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 日本HP、1万円を切るA4インクジェット複合機
 ---
 
 [http://pc.watch.impress.co.jp/](http://pc.watch.impress.co.jp/docs/2005/0601/hp.htm)

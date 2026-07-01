@@ -8,6 +8,9 @@ tags:
 - xfs
 draft: false
 disqus_identifier: 2008-12-15-linux26xi-dexfsdelvm-nosnapshotwotoritaichang-he-ha-xfs_freezebu-yao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Linux2.6系でxfsでLVM のsnapshotをとりたい場合は、xfs_freeze不要？
 ---
 
 xfsではsnapshotをとる場合に、整合性を保つために

@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-12-07-guang-garitsutsuarumicrosoftbao-wei-wang
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 広がりつつあるMicrosoft包囲網!
 ---
 
 [pc.watch.impress.co.jp](http://pc.watch.impress.co.jp/docs/2004/1206/nishikawa.htm)

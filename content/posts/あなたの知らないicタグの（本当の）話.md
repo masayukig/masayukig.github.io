@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-10-19-anatanozhi-ranaiictagunoben-dang-nohua
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「あなたの知らないICタグの（本当の）話」
 ---
 
 [CNET

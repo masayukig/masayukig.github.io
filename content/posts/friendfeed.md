@@ -8,6 +8,9 @@ tags:
 - twitter
 draft: false
 disqus_identifier: 2009-07-29-friendfeed
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: friendfeed
 ---
 
 ブログ更新をtwitterへつぶやくのに、wordpressのプラグインを使っていたが、

@@ -7,6 +7,9 @@ tags:
 - Kindle
 draft: false
 disqus_identifier: 2010-06-23-kindle-70zhi-xia-ge-ro-kindle-kindlejp
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 'Kindle $70値下げ....(゜ロ゜; #kindle #kindlejp'
 ---
 
 昨日、Amazon.comのkindle サイトを見たところ、なんと、

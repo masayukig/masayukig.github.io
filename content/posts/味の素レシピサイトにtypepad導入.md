@@ -6,6 +6,9 @@ tags:
 - net
 draft: false
 disqus_identifier: 2004-10-04-wei-nosu-reshipisaitonitypepad-dao-ru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 味の素、レシピサイトに「TypePad」導入
 ---
 
 [ITmedia](http://www.itmedia.co.jp/news/articles/0409/29/news093.html)

@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-09-25-xi-chuan-he-jiu-shi-niyorupanasonic-lumix-dmc-fx7-norebiyuji-shi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 西川和久氏による「Panasonic LUMIX DMC-FX7」のレビュー記事
 ---
 
 [impress](http://pc.watch.impress.co.jp/docs/2004/0924/nishikawa.htm)

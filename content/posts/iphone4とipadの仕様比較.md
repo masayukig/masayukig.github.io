@@ -8,6 +8,9 @@ tags:
 - iPhone
 draft: false
 disqus_identifier: 2010-06-09-iphone4toipadnoshi-yang-bi-jiao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhone4とiPadの仕様比較
 ---
 
 iPhone4とiPadの仕様を比較してみることにします。

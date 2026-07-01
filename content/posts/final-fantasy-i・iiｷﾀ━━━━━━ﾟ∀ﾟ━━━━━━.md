@@ -6,6 +6,9 @@ tags:
 - game
 draft: false
 disqus_identifier: 2004-07-31-final-fantasy-iiikita-
+cover:
+  image: http://lunatic.xrea.jp/mt/images/SN250050-thumb.JPG
+  alt: picture
 ---
 
 昨日amazonで申し込んだ

@@ -8,6 +8,11 @@ tags:
 - review
 draft: false
 disqus_identifier: 2010-06-24-zhi-xia-geji-nian-kindle2-rebiyuxie-zhen-man-zai-kindle-kindlejp
+cover:
+  image: http://farm2.static.flickr.com/1031/4721123354_c25c5641d8.jpg
+  alt: 'Amazon Kindle2
+
+    Box'
 ---
 
 Kindle2を買って、\$189に値下げされて、無事返金されそうなこともあり、

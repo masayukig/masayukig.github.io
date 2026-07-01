@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-11-27-linuxhamie-bixing-kuyun-ming-niarunoka
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Linuxは滅び行く運命にあるのか
 ---
 
 [japan.linux.com](http://japan.linux.com/opensource/04/11/25/0216245.shtml?topic=1)

@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-12-20-jing-sera-gao-du-hua-phsiburst-woguo-nei-deshi-yan-kai-shi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 京セラ、高度化PHS「iBurst」を国内で実験開始
 ---
 
 [itmedia.co.jp](http://www.itmedia.co.jp/mobile/articles/0412/20/news018.html)

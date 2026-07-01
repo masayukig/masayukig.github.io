@@ -9,6 +9,9 @@ tags:
 - blog
 draft: false
 disqus_identifier: 2017-12-08-blog-architecture-and-tools
+cover:
+  image: /images/covers/misc.jpg
+  alt: The architecture of this blog
 ---
 
 I already posted_ about switching this blog to igawa.io. But I think

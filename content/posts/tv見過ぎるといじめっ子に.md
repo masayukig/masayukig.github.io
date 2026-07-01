@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-04-07-tvjian-guo-girutoizimetsuzi-ni
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: TV見過ぎるといじめっ子に？
 ---
 
 <http://news.goo.ne.jp/news/topics/index/28005/1.html>

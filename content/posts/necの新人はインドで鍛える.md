@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-08-15-necnoxin-ren-haindodeduan-eru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: NECの新人はインドで鍛える
 ---
 
 [ITmedia](http://www.itmedia.co.jp/news/articles/0408/10/news036.html)

@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-10-23-xuan-ren-zhi-xiang-gigabit-ethernetdui-ying-noxuan-xiang
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 玄人志向、Gigabit Ethernet対応の「玄箱」
 ---
 
 [Impress](http://pc.watch.impress.co.jp/docs/2004/1022/kurouto.htm)

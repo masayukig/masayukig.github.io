@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-10-19-packetwinshinguru-noliao-jin-gai-ding-hebiyuzaniode-napuranmo
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「PacketWINシングル」の料金改定〜ヘビーユーザーにお得なプランも
 ---
 
 [ITmedia](http://www.itmedia.co.jp/mobile/articles/0410/18/news019.html)

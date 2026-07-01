@@ -7,6 +7,9 @@ tags:
 - rpm
 draft: false
 disqus_identifier: 2008-07-13-courier-imapwoinsutoru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: courier-imapをインストール
 ---
 
 メールは今は、ほぼ、Gmailしか使って無いのですが、たまに、ローカルPC上でも見たい事があるので、

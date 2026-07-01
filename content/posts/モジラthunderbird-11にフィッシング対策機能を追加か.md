@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2005-02-02-mozira-thunderbird-11-nihuitsushingudui-ce-ji-neng-wozhui-jia-ka
+cover:
+  image: /images/covers/oss.png
+  alt: モジラ、「Thunderbird 1.1」にフィッシング対策機能を追加か？
 ---
 
 モジラ、「Thunderbird 1.1」にフィッシング対策機能を追加か？

@@ -8,6 +8,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2008-11-28-nec-express5800-110ge-part1
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: NEC Express5800/110Ge
 ---
 
 [NEC Express5800/110Ge]

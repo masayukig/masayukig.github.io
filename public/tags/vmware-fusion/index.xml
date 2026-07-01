@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vmware Fusion on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/vmware-fusion/</link>
+    <description>Recent content in Vmware Fusion on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 07 Feb 2011 05:21:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/vmware-fusion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fedora on VMWare Fusion 3 on MacBook Air</title>
+      <link>http://localhost:1313/posts/2011/02/fedora-on-vmware-fusion-3-on-macbook-air/</link>
+      <pubDate>Mon, 07 Feb 2011 05:21:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/02/fedora-on-vmware-fusion-3-on-macbook-air/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/masayun/5422904210/&#34; title=&#34;Fedora14 on VMware Fusion on MacBook Air by masayukig, on Flickr&#34;&gt;&lt;img alt=&#34;Fedora14 on VMware Fusion on MacBook\nAir&#34; loading=&#34;lazy&#34; src=&#34;http://farm6.static.flickr.com/5297/5422904210_999389cb72_m.jpg&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.0r2.info/blog/2011/02/06/macbook-air%E3%81%ABlinuxfedora%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/&#34;&gt;先日のエントリー&lt;/a&gt;で、MacBook
+AirにFedoraをインストールしたことを書きましたが、
+やはり、Mac OS X上からもLinuxを使いたいので試行錯誤して、
+VMWare Fusion 3上から使うことができました。&lt;/p&gt;
+&lt;p&gt;以下、その方法。&lt;/p&gt;
+&lt;p&gt;まずは、普通に別パーティション(私の場合/dev/disk0s3(Mac表記))へFedora14(x86_64)をインストール。
+なお、swapパーティションは、とりあえず作らない。必要なら後からswapファイルを作ってそれをswapにする。
+(無駄なディスク領域は作りたくないので)
+また、MacのUSキーボードの場合、キーボードは無印の「アメリカ合衆国」を選んだ方がいいようだ。
+「日本語入力するから国際版(International)」かな？と思ってそれを選んだら、
+「~, `, &amp;ldquo;, &amp;lsquo;」
+などのキーがまともに入力できなくなってしまいました。&lt;/p&gt;
+&lt;p&gt;なお、設定は/etc/sysconfig/keyboardの&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;KEYBOARD=&amp;quot;acentos-us&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;となっているところを&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;KEYBOARD=&amp;quot;us&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;20110208追記&#34;&gt;とすれば、普通のUSキーボードになるようです。
+2011/02/08追記：&lt;/h1&gt;
+&lt;h1 id=&#34;どうやらこれではダメだったみたいですもうちょっと解決策を探してみます&#34;&gt;どうやらこれではダメだったみたいです。。もうちょっと解決策を探してみます。&lt;/h1&gt;
+&lt;p&gt;で、肝心の別パーティションのディスクイメージを使用してのLinux起動ですが、
+以下の手順でできました。
+なお、&lt;a href=&#34;http://fearandloath.us/vmware-fusion-bootcamp-partition.html&#34;&gt;http://fearandloath.us/vmware-fusion-bootcamp-partition.html&lt;/a&gt;のサイトの情報を
+参考（というかほぼそのまま）にさせてもらいました。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd &amp;quot;/Library/Application Support/VMware Fusion/&amp;quot;
+$ ./vmware-rawdiskCreator print /dev/disk0
+Nr      Start       Size Type Id Sytem
+-- ---------- ---------- ---- -- ------------------------
+ 1          1     409639 BIOS EE Unknown
+ 2     409640  196982744 BIOS AF HFS+
+ 3  197654528   39321600 BIOS 83 Linux
+(という感じの出力がされるので、インストールするパーティションの「Nr」を確認しておく
+私の場合は「３」)
+$ ./vmware-rawdiskCreator create /dev/disk0 3 /Users/igawa/Documents/Virtual\ Machines.localized/rawfedora_x86_64.vmwarevm/bootcamp_partition ide
+$ vim /Users/igawa/Documents/Virtual\ Machines.localized/rawfedora_x86_64.vmwarevm/rawfedora_x86_64.vmx
+======
+ide0:0.present = &amp;quot;TRUE&amp;quot;
+ide0:0.fileName = &amp;quot;bootcamp_partition.vmdk&amp;quot;
+======
+を適当なところに追加 or 置換する。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;これでOKでした。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

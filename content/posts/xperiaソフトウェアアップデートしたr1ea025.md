@@ -10,6 +10,9 @@ tags:
 - Xperia
 draft: false
 disqus_identifier: 2010-06-11-xperiasohutoueaatsupudetoshitar1ea025
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Xperiaソフトウェアアップデートした(R1EA025)
 ---
 
 [![http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html](http://kwout.com/cutout/8/st/3x/5az_bor.jpg "POBox Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で - ITmedia +D モバイル")

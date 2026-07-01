@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-10-29-karaye-jing-fu-kiipod-photo
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: カラー液晶付きiPod Photo
 ---
 
 [slashdot.jp](http://slashdot.jp/mac/04/10/27/0811243.shtml?topic=52)

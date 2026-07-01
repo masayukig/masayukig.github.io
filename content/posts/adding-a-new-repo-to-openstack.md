@@ -11,6 +11,9 @@ tags:
 - development
 draft: false
 disqus_identifier: 2016-12-17-adding-a-new-repo-to-openstack
+cover:
+  image: /images/covers/work.jpg
+  alt: 初めてのOpenStackリポジトリ追加
 ---
 
 これは、 [OpenStack Advent Calendar 2016](http://www.adventar.org/calendars/1739) のエントリです。

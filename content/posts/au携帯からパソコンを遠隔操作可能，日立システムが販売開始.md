@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-04-03-auxi-dai-karapasokonwoyuan-ge-cao-zuo-ke-neng-ri-li-shisutemugafan-mai-kai-shi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: au携帯からパソコンを遠隔操作可能，日立システムが販売開始
 ---
 
 <http://itpro.nikkeibp.co.jp/free/NCC/NEWS/20050328/158081/>

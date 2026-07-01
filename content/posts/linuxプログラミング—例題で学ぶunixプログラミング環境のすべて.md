@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-02-27-linuxpuroguramingu-li-ti-dexue-buunixpuroguraminguhuan-jing-nosubete
+cover:
+  image: http://www.bk1.co.jp/bookimages/02/46/75/33/024675330000.jpg
+  alt: picture
 ---
 
 最近ちょっと気になっている本。

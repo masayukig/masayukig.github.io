@@ -7,6 +7,9 @@ tags:
 - Kindle
 draft: false
 disqus_identifier: 2010-06-22-kindlekita-kindle
+cover:
+  image: http://farm2.static.flickr.com/1107/4721196918_bfed137763.jpg
+  alt: DSC00230.JPG
 ---
 
 というわけで、kindle来ました。

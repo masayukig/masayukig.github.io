@@ -6,6 +6,9 @@ tags:
 - game
 draft: false
 disqus_identifier: 2005-05-29-nvidia-ps3xiang-kenogurahuitsukusuchitsupuhamadakai-fa-zhong
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: NVIDIA、PS3向けのグラフィックスチップはまだ開発中
 ---
 
 <http://www.itmedia.co.jp/news/articles/0505/28/news009.html>

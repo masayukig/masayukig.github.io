@@ -9,6 +9,9 @@ tags:
 - Xperia
 draft: false
 disqus_identifier: 2010-09-11-spmodotoimodonetnitsuite
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: SPモードとiモード.netについて
 ---
 
 [先ほどのエントリー](http://www.0r2.info/blog/2010/09/11/sp%e3%83%a2%e3%83%bc%e3%83%89%e3%82%92%e4%bd%bf%e3%81%84%e5%a7%8b%e3%82%81%e3%81%9f%e6%84%9f%e6%83%b3/)で、SPモードを使い始めたのは書いたとおりですが、

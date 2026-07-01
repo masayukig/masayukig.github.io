@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-06-30-phsha3gnisheng-tsu-ddipoketsutomai-shou-nokarairugayu-ru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「PHSは3Gに勝つ」DDIポケット買収のカーライルが語る
 ---
 
 [日経BP](http://itpro.nikkeibp.co.jp/free/NCC/NEWS/20040629/146533/)

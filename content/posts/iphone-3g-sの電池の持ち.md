@@ -8,6 +8,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2009-07-02-iphone-3g-snodian-chi-nochi-chi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhone 3G Sの電池の持ち
 ---
 
 昨日の晩、寝る時には70%ぐらいあったはずの電池残量が、

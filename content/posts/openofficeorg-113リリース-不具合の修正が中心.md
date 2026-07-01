@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2004-11-03-openofficeorg-113ririsu-bu-ju-he-noxiu-zheng-gazhong-xin
+cover:
+  image: /images/covers/oss.png
+  alt: OpenOffice.org 1.1.3リリース -不具合の修正が中心
 ---
 
 [MYCOM PC WEB](http://pcweb.mycom.co.jp/news/2004/10/27/010.html)

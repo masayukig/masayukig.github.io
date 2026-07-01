@@ -9,6 +9,9 @@ tags:
 - Software
 draft: false
 disqus_identifier: 2009-04-20-dropbox-100gb-plan
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Dropbox 100GBプラン登場？
 ---
 
 ファイルのバックアップ、履歴管理、複数PCでのファイル共有に最適な

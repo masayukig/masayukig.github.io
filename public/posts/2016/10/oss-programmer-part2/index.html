@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ja" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>あなたの知らないOSSプログラマの世界 - part 2 | What&#39;s done is done</title>
+<meta name="keywords" content="work, oss, english, career, openstack">
+<meta name="description" content="oss-programmer-part1 の続き
+前回:
+次回は仕事内容、コミュニケーションの様子などを書きたいと思います。
+と、書いておいてしばらく経ってしまいました。
+気になってる人がいないとも限らないので、書いてみたいと思います。
+コミュニケーションの様子
+HPEは外資系の会社なので、社内のシステムやメールなどは英語が主ですが、日本にいる社員の大半は日本人なので、
+日本オフィスは、日本語が共通語になっているようです。
+ただし、私の仕事内容はOpenStackというオープンソースのクラウド基盤ソフトウェアを、コミュニティの中で開発
+することです。また、会社のチームはインターナショナルチームなのでチームメンバー・上司が英語が母国語の
+人たちが大多数で共通語は英語という状況。そのため、英語が必須な状況ですが、10ヶ月近く経った今も、
+英語スキルは以前とあまり変わりがありません orz&hellip;
+もちろん「前から英語ができてた」わけではなく「今もあまりできません」という有様です。
+気心知れた人との１対１での会話ならなんとかなります(「あ、こいつ英語苦手なんだね」と相手がある程度手加減
+してくれることが多いのです)が、ネイティブあるいはそれに近い同士が議論をし始めると、なかなか入っていけません。
+また、もともと人見知り(!)でコミュニケーションは苦手な部分があるので、なかなか会話に入っていけません。
+それでも、どうにかなってるのは、テキストでの会話（IRC, E-mail）のお陰かなと思います。
+この辺は、自分の中の要改善項目です。
+テキスト
+というわけで私はテキストでの会話が主です。タイムゾーン問題、英語力、などのことを考慮すると、
+テキストでの会話が便利です。
+E-mail
+テキストでのコミュニケーションというとコレが思い浮かぶと思います。ただ、あまり使ってないです。
+正式な通知とか、後述のものでは伝えにくいもの（言うことがたくさんあったり、添付ファイルとか）で
+使う感じ。
+IRC
+E-mailはリアルタイム性が低いので、結構やりやすいですが、どうしても時間がかかってしまいがちです。
+IRCはリアルタイム性が高いので、やり取りがけっこう大変ですが、くだけた会話でもどうにかなります。
+一長一短ありますが、IRCの方が気楽なことが多いと思います。
+今だと、SlackやHipChatなどのツールもありますが、私のチームではできるだけ「オープン」なものが
+好まれる印象です。
+Face to Face
+Face to Faceのやり取りがないのかというと、そうでもありません。
+Google Hangouts, Skype
+これらのツールを使う機会もあって、
+
+Happy Hour
+重要な通知
+
+といったタイミングで使ってきました。
+「Happy Hour」はチーム内のコミュニケーションを活性化して、風通しを良くするような効果があったと思います。
+その名の通り、就業時間後のバーチャル飲み会風な感じなのですが、日本時間だと朝９時とかなので、
+こちらはさすがにお酒を飲むわけにはいかないのがつらいところでしたｗ
+また、雑談が高速で行われるので、あんまりついていけない感じなのも残念でした＞自分
+「重要な通知」は、メールやIRCだけで伝えるべき内容ではないものですね。チームの行く末とか。
+こちらについてはまた別途。
+各種イベント
+OpenStack Summit等、各種イベントで各国に散らばってるメンバーが集まることもあるので、
+一緒にお昼ごはんに行ったり、夜飲んだりとかありました。
+仕事内容について
+体制
+チームには日本人は私しかおらず、日本で作業しているのも私のみです。
+直属のマネージャはオーストラリアにおり、タイムゾーンが近いこともあって、IRCなどで会話をすることが多いです。
+さらにその上の上司は、 Allison Randal (Wikipedia JA, Wikipedia EN) さんで、
+やはりIRCで会話をすることが多いです。(タイムゾーンが違うこともあり、なかなか会話はないですが)
+さらに上の方になってくると、HPE のクラウドを統括している人になってきますが、なかなか話をする機会はない
+ですね。ただ、IRCのミーティングに参加したりすることもあり、非常に上下の風通しは良いんじゃないかと感じます。
+変な上下意識が見えないのが心地よく感じます。（もちろん、役割はしっかり意識されています。）
+外資系企業について
+当初思っていたよりも、ずっと個人を重視してくれているように思います。
+(身の回りの10ヶ月弱くらいの感想です。)
+外資系企業に対する私の印象は、
+「キミ、最近パフォーマンスが良くないから、改善策を検討して実施するように。特になければこの改善策を実施
+　して、1ヶ月で改善されないようならクビね。」
+くらい厳しいものだったのですが、少なくとも今いるチームではそのようなことはありません。
+この辺は、上司に依存するところが大きいと思います。
+(でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。
+が、それはまた別途書きたいと思います。)
+作業内容
+基本的にはOpenStack関連コードの読み書き・レビューしてます。
+イベントでの発表などがあれば、その準備も。
+最近はopenstack-healthというコンポーネントに注力して作業してます。フロントエンドがAngularJSなので、
+かなり刺激的。悪戦苦闘の日々です。
+作業場所
+大島 日本法人本社８階 食堂で作業してます。景色がいいし、比較的静か（心地よいノイズ）があるのでいい感じで
+作業できてます。
+参考URL:
+
+http://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html
+http://www.shashoku.com/shashoku/012.html
+http://www.pc-ninki.net/about/hp-oshima.html
+https://job.career-tasu.jp/2017/guide/study/shashoku/01.html
+
+Happy Hacking!">
+<meta name="author" content="Masayuki Igawa">
+<link rel="canonical" href="http://localhost:1313/posts/2016/10/oss-programmer-part2/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.68c62ef954d98b64015e3444e943bedbafc6461b357416b42e2caa6a6937032f.css" integrity="sha256-aMYu&#43;VTZi2QBXjRE6UO&#43;26/GRhs1dBa0Liyqamk3Ay8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="ja" href="http://localhost:1313/posts/2016/10/oss-programmer-part2/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="What&#39;s done is done (Alt + H)">What&#39;s done is done</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">ホーム</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/posts/">Posts</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      あなたの知らないOSSプログラマの世界 - part 2
+    </h1>
+    <div class="post-meta">
+
+<span title='2016-10-18 00:00:00 +0900 JST'>2016-10-18</span>&nbsp;·&nbsp;<span>1 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="http://localhost:1313/images/covers/work.jpg" alt="あなたの知らないOSSプログラマの世界 - part 2">
+        
+</figure><details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">目次</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#%e3%82%b3%e3%83%9f%e3%83%a5%e3%83%8b%e3%82%b1%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%81%ae%e6%a7%98%e5%ad%90" aria-label="コミュニケーションの様子">コミュニケーションの様子</a><ul>
+                    
+            <li>
+                <a href="#%e3%83%86%e3%82%ad%e3%82%b9%e3%83%88" aria-label="テキスト">テキスト</a><ul>
+                    
+            <li>
+                <a href="#e-mail" aria-label="E-mail">E-mail</a></li>
+            <li>
+                <a href="#irc" aria-label="IRC">IRC</a></li></ul>
+            </li>
+            <li>
+                <a href="#face-to-face" aria-label="Face to Face">Face to Face</a><ul>
+                    
+            <li>
+                <a href="#google-hangouts-skype" aria-label="Google Hangouts, Skype">Google Hangouts, Skype</a></li>
+            <li>
+                <a href="#%e5%90%84%e7%a8%ae%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88" aria-label="各種イベント">各種イベント</a></li></ul>
+            </li></ul>
+            </li>
+            <li>
+                <a href="#%e4%bb%95%e4%ba%8b%e5%86%85%e5%ae%b9%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" aria-label="仕事内容について">仕事内容について</a><ul>
+                    
+            <li>
+                <a href="#%e4%bd%93%e5%88%b6" aria-label="体制">体制</a></li>
+            <li>
+                <a href="#%e5%a4%96%e8%b3%87%e7%b3%bb%e4%bc%81%e6%a5%ad%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" aria-label="外資系企業について">外資系企業について</a></li>
+            <li>
+                <a href="#%e4%bd%9c%e6%a5%ad%e5%86%85%e5%ae%b9" aria-label="作業内容">作業内容</a></li>
+            <li>
+                <a href="#%e4%bd%9c%e6%a5%ad%e5%a0%b4%e6%89%80" aria-label="作業場所">作業場所</a>
+            </li>
+        </ul>
+        </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><p><a href="../../06/oss-programmer-part1">oss-programmer-part1</a> の続き</p>
+<p>前回:</p>
+<pre tabindex="0"><code>次回は仕事内容、コミュニケーションの様子などを書きたいと思います。
+</code></pre><p>と、書いておいてしばらく経ってしまいました。
+気になってる人がいないとも限らないので、書いてみたいと思います。</p>
+<h2 id="コミュニケーションの様子">コミュニケーションの様子<a hidden class="anchor" aria-hidden="true" href="#コミュニケーションの様子">#</a></h2>
+<p>HPEは外資系の会社なので、社内のシステムやメールなどは英語が主ですが、日本にいる社員の大半は日本人なので、
+日本オフィスは、日本語が共通語になっているようです。</p>
+<p>ただし、私の仕事内容はOpenStackというオープンソースのクラウド基盤ソフトウェアを、コミュニティの中で開発
+することです。また、会社のチームはインターナショナルチームなのでチームメンバー・上司が英語が母国語の
+人たちが大多数で共通語は英語という状況。そのため、英語が必須な状況ですが、10ヶ月近く経った今も、
+英語スキルは以前とあまり変わりがありません orz&hellip;</p>
+<p>もちろん「前から英語ができてた」わけではなく「今もあまりできません」という有様です。
+気心知れた人との１対１での会話ならなんとかなります(「あ、こいつ英語苦手なんだね」と相手がある程度手加減
+してくれることが多いのです)が、ネイティブあるいはそれに近い同士が議論をし始めると、なかなか入っていけません。</p>
+<p>また、もともと人見知り(!)でコミュニケーションは苦手な部分があるので、なかなか会話に入っていけません。
+それでも、どうにかなってるのは、テキストでの会話（IRC, E-mail）のお陰かなと思います。</p>
+<p>この辺は、自分の中の要改善項目です。</p>
+<h3 id="テキスト">テキスト<a hidden class="anchor" aria-hidden="true" href="#テキスト">#</a></h3>
+<p>というわけで私はテキストでの会話が主です。タイムゾーン問題、英語力、などのことを考慮すると、
+テキストでの会話が便利です。</p>
+<h4 id="e-mail">E-mail<a hidden class="anchor" aria-hidden="true" href="#e-mail">#</a></h4>
+<p>テキストでのコミュニケーションというとコレが思い浮かぶと思います。ただ、あまり使ってないです。
+正式な通知とか、後述のものでは伝えにくいもの（言うことがたくさんあったり、添付ファイルとか）で
+使う感じ。</p>
+<h4 id="irc">IRC<a hidden class="anchor" aria-hidden="true" href="#irc">#</a></h4>
+<p>E-mailはリアルタイム性が低いので、結構やりやすいですが、どうしても時間がかかってしまいがちです。
+IRCはリアルタイム性が高いので、やり取りがけっこう大変ですが、くだけた会話でもどうにかなります。
+一長一短ありますが、IRCの方が気楽なことが多いと思います。
+今だと、SlackやHipChatなどのツールもありますが、私のチームではできるだけ「オープン」なものが
+好まれる印象です。</p>
+<h3 id="face-to-face">Face to Face<a hidden class="anchor" aria-hidden="true" href="#face-to-face">#</a></h3>
+<p>Face to Faceのやり取りがないのかというと、そうでもありません。</p>
+<h4 id="google-hangouts-skype">Google Hangouts, Skype<a hidden class="anchor" aria-hidden="true" href="#google-hangouts-skype">#</a></h4>
+<p>これらのツールを使う機会もあって、</p>
+<ul>
+<li>Happy Hour</li>
+<li>重要な通知</li>
+</ul>
+<p>といったタイミングで使ってきました。</p>
+<p>「Happy Hour」はチーム内のコミュニケーションを活性化して、風通しを良くするような効果があったと思います。</p>
+<p>その名の通り、就業時間後のバーチャル飲み会風な感じなのですが、日本時間だと朝９時とかなので、
+こちらはさすがにお酒を飲むわけにはいかないのがつらいところでしたｗ</p>
+<p>また、雑談が高速で行われるので、あんまりついていけない感じなのも残念でした＞自分</p>
+<p>「重要な通知」は、メールやIRCだけで伝えるべき内容ではないものですね。チームの行く末とか。
+こちらについてはまた別途。</p>
+<h4 id="各種イベント">各種イベント<a hidden class="anchor" aria-hidden="true" href="#各種イベント">#</a></h4>
+<p>OpenStack Summit等、各種イベントで各国に散らばってるメンバーが集まることもあるので、
+一緒にお昼ごはんに行ったり、夜飲んだりとかありました。</p>
+<h2 id="仕事内容について">仕事内容について<a hidden class="anchor" aria-hidden="true" href="#仕事内容について">#</a></h2>
+<h3 id="体制">体制<a hidden class="anchor" aria-hidden="true" href="#体制">#</a></h3>
+<p>チームには日本人は私しかおらず、日本で作業しているのも私のみです。
+直属のマネージャはオーストラリアにおり、タイムゾーンが近いこともあって、IRCなどで会話をすることが多いです。
+さらにその上の上司は、 <a href="http://allisonrandal.com/">Allison Randal</a> (<a href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AA%E3%82%BD%E3%83%B3%E3%83%BB%E3%83%A9%E3%83%B3%E3%83%80%E3%83%AB">Wikipedia JA</a>, <a href="https://en.wikipedia.org/wiki/Allison_Randal">Wikipedia EN</a>) さんで、
+やはりIRCで会話をすることが多いです。(タイムゾーンが違うこともあり、なかなか会話はないですが)</p>
+<p>さらに上の方になってくると、HPE のクラウドを統括している人になってきますが、なかなか話をする機会はない
+ですね。ただ、IRCのミーティングに参加したりすることもあり、非常に上下の風通しは良いんじゃないかと感じます。
+変な上下意識が見えないのが心地よく感じます。（もちろん、役割はしっかり意識されています。）</p>
+<h3 id="外資系企業について">外資系企業について<a hidden class="anchor" aria-hidden="true" href="#外資系企業について">#</a></h3>
+<p>当初思っていたよりも、ずっと個人を重視してくれているように思います。
+(身の回りの10ヶ月弱くらいの感想です。)</p>
+<p>外資系企業に対する私の印象は、</p>
+<p>「キミ、最近パフォーマンスが良くないから、改善策を検討して実施するように。特になければこの改善策を実施
+　して、1ヶ月で改善されないようならクビね。」</p>
+<p>くらい厳しいものだったのですが、少なくとも今いるチームではそのようなことはありません。
+この辺は、上司に依存するところが大きいと思います。</p>
+<p>(でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。
+が、それはまた別途書きたいと思います。)</p>
+<h3 id="作業内容">作業内容<a hidden class="anchor" aria-hidden="true" href="#作業内容">#</a></h3>
+<p>基本的にはOpenStack関連コードの読み書き・レビューしてます。
+イベントでの発表などがあれば、その準備も。</p>
+<p>最近はopenstack-healthというコンポーネントに注力して作業してます。フロントエンドがAngularJSなので、
+かなり刺激的。悪戦苦闘の日々です。</p>
+<h3 id="作業場所">作業場所<a hidden class="anchor" aria-hidden="true" href="#作業場所">#</a></h3>
+<p>大島 日本法人本社８階 食堂で作業してます。景色がいいし、比較的静か（心地よいノイズ）があるのでいい感じで
+作業できてます。</p>
+<p>参考URL:</p>
+<ul>
+<li><a href="http://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html">http://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html</a></li>
+<li><a href="http://www.shashoku.com/shashoku/012.html">http://www.shashoku.com/shashoku/012.html</a></li>
+<li><a href="http://www.pc-ninki.net/about/hp-oshima.html">http://www.pc-ninki.net/about/hp-oshima.html</a></li>
+<li><a href="https://job.career-tasu.jp/2017/guide/study/shashoku/01.html">https://job.career-tasu.jp/2017/guide/study/shashoku/01.html</a></li>
+</ul>
+<p>Happy Hacking!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/work/">Work</a></li>
+      <li><a href="http://localhost:1313/tags/oss/">Oss</a></li>
+      <li><a href="http://localhost:1313/tags/english/">English</a></li>
+      <li><a href="http://localhost:1313/tags/career/">Career</a></li>
+      <li><a href="http://localhost:1313/tags/openstack/">Openstack</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/2016/10/openstack-health-updates/">
+    <span class="title">« 前へ</span>
+    <span>OpenStack-Health updates</span>
+  </a>
+  <a class="next" href="http://localhost:1313/posts/2016/10/dps-forever/">
+    <span class="title">次へ »</span>
+    <span>チーム解散?!</span>
+  </a>
+</nav>
+
+  </footer>
+
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">What&#39;s done is done</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'コピー';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'コピーされました!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'コピー';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

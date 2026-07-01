@@ -7,6 +7,9 @@ tags:
 - iPhone
 draft: false
 disqus_identifier: 2010-06-22-ios-4atsupudetokai-shi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iOS 4アップデート開始
 ---
 
 iOS 4のアップデート提供が開始されたようですね。

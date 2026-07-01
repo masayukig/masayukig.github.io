@@ -7,6 +7,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2004-12-18-playstationcomde-12yue-20ri-yue-1200-pspyu-yue-kai-shi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: PlayStation.comで、12月20日(月)12:00〜PSP予約開始！
 ---
 
 [playstation.com](http://www.jp.playstation.com/psp/index.html)

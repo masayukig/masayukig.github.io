@@ -9,6 +9,9 @@ tags:
 - tips
 draft: false
 disqus_identifier: 2010-06-05-make-oldconfigdequan-tenowen-ihe-wasexiang-mu-nientersurusukuriputo-linux
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 'make oldconfigで全ての問い合わせ項目にEnterするスクリプト #Linux'
 ---
 
 Linux

@@ -7,6 +7,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2004-12-12-psp-ritsuziresazu-rebiyu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: PSP 「リッジレーサーズ」レビュー
 ---
 
 [watch.impress.co.jp](http://www.watch.impress.co.jp/game/docs/20041211/rrs.htm)

@@ -9,6 +9,9 @@ tags:
 - sony
 draft: false
 disqus_identifier: 2012-03-28-toiuwakede-nex-5nnitsukeruakusesariwomai-tsutemita
+cover:
+  image: https://masayukig.files.wordpress.com/2012/03/8dcd2-2012-03-2904-37-46.jpg?w=300
+  alt: picture
 ---
 
 このままでは、NEX-5Nのレンズや液晶がむき出しになってしまうので、

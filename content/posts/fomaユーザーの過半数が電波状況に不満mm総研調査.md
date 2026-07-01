@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-07-21-fomayuzanoguo-ban-shu-gadian-bo-zhuang-kuang-nibu-man-mmzong-yan-diao-cha
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: FOMAユーザーの過半数が電波状況に不満、MM総研調査
 ---
 
 [CNET

@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-09-22-kashio-shi-jie-zui-gao-jing-xi-du-no22inchivgaye-jing-wokai-fa
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: カシオ、世界最高精細度の2.2インチVGA液晶を開発
 ---
 
 [ITmedia](http://www.itmedia.co.jp/news/articles/0409/21/news046.html)

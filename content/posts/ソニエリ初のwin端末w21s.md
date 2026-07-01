@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-07-20-sonierichu-nowinduan-mo-w21s
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ソニエリ初のWIN端末W21S
 ---
 
 ([ITmedia](http://www.itmedia.co.jp/mobile/articles/0407/20/news089.html))([ITmedia](http://www.itmedia.co.jp/mobile/articles/0407/12/news046.html))

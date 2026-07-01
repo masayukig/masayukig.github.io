@@ -6,6 +6,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2004-10-04-di-3noda-hua-mian-riapurotv-avhuesutaniji-ukousagi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: “第3の大画面”リアプロTV、A＆Vフェスタに集う(こうさぎ)
 ---
 
 きょううさこは、hughとここにひまもblogされた！

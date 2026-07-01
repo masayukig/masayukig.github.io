@@ -8,6 +8,9 @@ tags:
 - nexus7
 draft: false
 disqus_identifier: 2013-01-02-challenging-openstack-on-nexus-7-but-failed-openstack-nexus7
+cover:
+  image: https://masayukig.files.wordpress.com/2013/01/93fbd-dashboard.png
+  alt: picture
 ---
 
 [Nexus

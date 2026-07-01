@@ -8,6 +8,9 @@ tags:
 - sleep
 draft: false
 disqus_identifier: 2011-01-26-macbook-airdemo-hua-mian-wobi-zitemosuripusasenaiyounisuru-apuri
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: MacBook (Airでも) 画面を閉じてもスリープさせないようにする アプリ
 ---
 
 画面を閉じてもスリープさせたくないときもあるので、

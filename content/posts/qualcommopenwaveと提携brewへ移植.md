@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-02-18-qualcomm-openwavetoti-xi-brewheyi-zhi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Qualcomm、Openwaveと提携。BREWへ移植
 ---
 
 <http://www.itmedia.co.jp/enterprise/mobile/articles/0502/16/news036.html>

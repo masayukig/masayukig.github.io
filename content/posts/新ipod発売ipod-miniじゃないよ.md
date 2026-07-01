@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-07-19-xin-ipodfa-mai-ipod-miniziyanaiyo
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 新iPod発売！(iPod miniじゃないよ)
 ---
 
 ([apple](http://www.apple.co.jp/ipod/))([asahi.com](http://www.asahi.com/business/update/0719/018.html))

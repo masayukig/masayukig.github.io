@@ -6,6 +6,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2004-10-26-ti-deng-ji-shi-kitaictagunokotodonokuraizhi-tsutemasuka-kousagi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 提灯記事キター！「ICタグのこと，どのくらい知ってますか？」(こうさぎ)
 ---
 
 きょううさこがここに4するはずだったの。

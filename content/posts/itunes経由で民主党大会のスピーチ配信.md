@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-07-31-itunesjing-you-demin-zhu-dang-da-hui-nosupichipei-xin
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iTunes経由で民主党大会のスピーチ配信
 ---
 
 [ITmedia](http://www.itmedia.co.jp/news/articles/0407/31/news007.html)

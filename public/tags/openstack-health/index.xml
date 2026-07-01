@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Openstack-Health on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/openstack-health/</link>
+    <description>Recent content in Openstack-Health on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 19 Oct 2016 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/openstack-health/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenStack-Health updates</title>
+      <link>http://localhost:1313/posts/2016/10/openstack-health-updates/</link>
+      <pubDate>Wed, 19 Oct 2016 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2016/10/openstack-health-updates/</guid>
+      <description>&lt;p&gt;本日、&lt;a href=&#34;http://git.openstack.org/cgit/openstack/openstack-health&#34;&gt;OpenStack-Health&lt;/a&gt; のパッチをいくつかApproveしました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://review.openstack.org/#/c/363934/&#34;&gt;Add base utilities for canvas charts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://review.openstack.org/#/c/380884/&#34;&gt;Add canvas line chart&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://review.openstack.org/#/c/380885/&#34;&gt;Add canvas scatter chart&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;これは、グラフ描画用のJavascriptライブラリ（ユーティリティ）です。今までは、&lt;a href=&#34;http://nvd3.org/&#34;&gt;nvd3&lt;/a&gt; という &lt;a href=&#34;https://d3js.org/&#34;&gt;d3js&lt;/a&gt; を
+使いやすくしたJavascriptライブラリを使用していましたが、パフォーマンスと細かなバグに悩まされることも多く、
+独自実装に切り替えようとしています。(&lt;a href=&#34;https://d3js.org/&#34;&gt;d3js&lt;/a&gt; は引き続き使っています。)&lt;/p&gt;
+&lt;p&gt;まだ、全てのグラフを置き換えられたわけではありませんし、荒削りな部分が多々ありますが、良い方向に進んでいる
+と思います。&lt;/p&gt;
+&lt;p&gt;まぁ、最悪、クリティカルなバグがあったとしても、パッチをrevertすれば良いので、
+恐る恐る進む必要もなく、むしろ、現時点では、リスクを恐れて前に進まないほうが問題と判断しました。&lt;/p&gt;
+&lt;p&gt;現時点での課題は&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;unit testが無い&lt;/li&gt;
+&lt;li&gt;グラフが二重描画されることがある -&amp;gt; ブラウザリサイズ/リロードでなおる&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;今後も、品質改善に向けて進んでいきます :)&lt;/p&gt;
+&lt;p&gt;以下が OpenStack-Health の画面です。って、http://status.openstack.org/openstack-health/ にアクセスすれば、
+誰でも見られます :)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt=&#34;OpenStack-Health&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/openstack-health-2016-10-19.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

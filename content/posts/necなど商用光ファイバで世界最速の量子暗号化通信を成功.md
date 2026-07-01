@@ -6,6 +6,9 @@ tags:
 - science
 draft: false
 disqus_identifier: 2005-06-01-necnado-shang-yong-guang-huaibadeshi-jie-zui-su-noliang-zi-an-hao-hua-tong-xin-wocheng-gong
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: NECなど、商用光ファイバで世界最速の量子暗号化通信を成功
 ---
 
 [http://japan.cnet.com/](http://japan.cnet.com/news/com/story/0,2000047668,20084014,00.htm)

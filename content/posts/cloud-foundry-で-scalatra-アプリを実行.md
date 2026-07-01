@@ -9,6 +9,9 @@ tags:
 - Software
 draft: false
 disqus_identifier: 2011-07-02-cloud-foundry-de-scalatra-apuriwoshi-xing
+cover:
+  image: https://lh3.googleusercontent.com/-FMIXumcTAV0/Tjr6wfSrWEI/AAAAAAAAg6M/d80dUsZSc_A/s800/5892056768_b3f93f8618_o.png
+  alt: picture
 ---
 
 [![picture](https://lh3.googleusercontent.com/-FMIXumcTAV0/Tjr6wfSrWEI/AAAAAAAAg6M/d80dUsZSc_A/s800/5892056768_b3f93f8618_o.png)

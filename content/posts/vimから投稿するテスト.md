@@ -9,6 +9,9 @@ tags:
 - vim
 draft: false
 disqus_identifier: 2009-11-21-vimkaratou-gao-surutesuto
+cover:
+  image: /images/covers/oss.png
+  alt: Vimから投稿するテスト
 ---
 
 <http://mattn.kaoriya.net/software/vim/20070831122307.htm>

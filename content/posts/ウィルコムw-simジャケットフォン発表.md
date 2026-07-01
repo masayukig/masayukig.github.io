@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-07-08-uirukomu-w-sim-ziyaketsutohuon-fa-biao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ウィルコム、「W-SIM」「ジャケットフォン」発表
 ---
 
 [http://k-tai.impress.co.jp/](http://k-tai.impress.co.jp/cda/article/news_toppage/24683.html)

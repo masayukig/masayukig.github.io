@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Opensuse on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/opensuse/</link>
+    <description>Recent content in Opensuse on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 23 Jun 2018 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/opensuse/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>openSUSE mini Summit 2018</title>
+      <link>http://localhost:1313/posts/2018/06/opensuse-mini-summit-2018/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2018/06/opensuse-mini-summit-2018/</guid>
+      <description>&lt;p&gt;I had &lt;a href=&#34;https://github.com/masayukig/cheap-cloud/blob/2018-06-23-opensuse-mini-summit/cheap_cloud.pdf&#34;&gt;a talk&lt;/a&gt; at the &lt;a href=&#34;https://opensuseja.connpass.com/event/86085/&#34;&gt;openSUSE mini Summit 2018&lt;/a&gt; about &lt;code&gt;my private cloud&lt;/code&gt;. I had build this for my personal testing. This cloud is enough
+for my use but it&amp;rsquo;s costy for running due to the electricity. So, I&amp;rsquo;m
+thinking to use more efficient machines like Raspberry Pi or something
+like that. I think NUC boxes are better but costy for the initial
+cost..&lt;/p&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Snapper</title>
+      <link>http://localhost:1313/posts/2018/02/snapper/</link>
+      <pubDate>Fri, 09 Feb 2018 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2018/02/snapper/</guid>
+      <description>&lt;p&gt;I found that &lt;a href=&#34;https://en.opensuse.org/openSUSE:Snapper_Tutorial&#34;&gt;snapper&lt;/a&gt; of openSUSE is
+very useful! When I faced an update trouble, it worked very well
+without any trouble!&lt;/p&gt;
+&lt;p&gt;Basically, we tend to forget to make a  backup everyday every time by
+hand because it&amp;rsquo;s not necessary normally. However, the thing is happen
+all of a sudden!&lt;/p&gt;
+&lt;p&gt;This is the first time to use that tool. It worked very well without
+any trouble. So, I think snapper is a very good feature.&lt;/p&gt;
+&lt;p&gt;By default, openSUSE setups snapper on your root volume w/ btrfs. So
+you can use it like this, We can rollback where you want.&lt;/p&gt;
+&lt;p&gt;To use &lt;code&gt;snapper&lt;/code&gt;, it&amp;rsquo;s very easy. By default, &lt;code&gt;snapper&lt;/code&gt; creates
+snapshots every zypper updates. So, if you want to rollback, you just
+need to select the option to rollback on the boot menu. Or you can
+specify a snapshot like this:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

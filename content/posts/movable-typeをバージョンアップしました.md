@@ -6,6 +6,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2007-04-22-movable-typewobaziyonatsupushimashita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Movable Typeをバージョンアップしました
 ---
 
 Movable Typeをバージョンアップしました。

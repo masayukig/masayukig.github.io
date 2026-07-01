@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2005-03-10-opunsosunoohuisusohutoopenofficeorg-20ri-ben-yu-ban-betagagong-kai
+cover:
+  image: /images/covers/oss.png
+  alt: オープンソースのオフィス・ソフトOpenOffice.org 2.0日本語版ベータが公開
 ---
 
 <http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050307/157078/>

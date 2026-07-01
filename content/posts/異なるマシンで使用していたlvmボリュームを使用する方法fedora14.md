@@ -7,6 +7,11 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2011-04-09-yi-narumashindeshi-yong-shiteitalvmboriyumuwoshi-yong-surufang-fa-fedora14
+cover:
+  image: http://farm3.static.flickr.com/2562/4016960283_a8dd425379_m.jpg
+  alt: 'before the
+
+    end'
 ---
 
 [![before the

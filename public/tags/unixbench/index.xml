@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Unixbench on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/unixbench/</link>
+    <description>Recent content in Unixbench on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 03 Apr 2012 20:04:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/unixbench/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>さくらのVPS(2G)でUnixBench(5.1.3)を実行してみた。結果：値段そのままなのに、大幅に性能アップ！</title>
+      <link>http://localhost:1313/posts/2012/04/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps2g%E3%81%A7unixbench513%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E7%B5%90%E6%9E%9C%E5%80%A4%E6%AE%B5%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E3%81%AA%E3%81%AE%E3%81%AB%E5%A4%A7%E5%B9%85%E3%81%AB%E6%80%A7%E8%83%BD%E3%82%A2%E3%83%83%E3%83%97/</link>
+      <pubDate>Tue, 03 Apr 2012 20:04:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/04/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps2g%E3%81%A7unixbench513%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E7%B5%90%E6%9E%9C%E5%80%A4%E6%AE%B5%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E3%81%AA%E3%81%AE%E3%81%AB%E5%A4%A7%E5%B9%85%E3%81%AB%E6%80%A7%E8%83%BD%E3%82%A2%E3%83%83%E3%83%97/</guid>
+      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
+&lt;h2 id=&#34;なお15gで評価した結果はさくらのvpsでunixbench513を実施してみた&#34;&gt;というわけで、早速、 さくらのVPS(2G)で、UnixBenchを実行してみました。
+なお、1.5Gで評価した結果は、[&amp;ldquo;さくらのVPSでUnixBench(5.1.3)を実施してみた&lt;/h2&gt;
+&lt;p&gt;part2(結果編)&amp;rdquo;](/posts/2011/03/sakuranovpsdeunixbench513woshi-shi-shitemita-part2jie-guo-bian/)を参照して下さい。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;========================================================================
+   BYTE UNIX Benchmarks (Version 5.1.3)
+
+   System: localhost.localdomain: GNU/Linux
+   OS: GNU/Linux -- 3.3.0-8.fc16.x86_64 -- #1 SMP Thu Mar 29 18:37:19 UTC 2012
+   Machine: x86_64 (x86_64)
+   Language: en_US.utf8 (charmap=&amp;quot;UTF-8&amp;quot;, collate=&amp;quot;UTF-8&amp;quot;)
+   CPU 0: Intel(R) Xeon(R) CPU E5645 (4800.2 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSCALL/SYSRET
+   CPU 1: Intel(R) Xeon(R) CPU E5645 (4800.2 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSCALL/SYSRET
+   CPU 2: Intel(R) Xeon(R) CPU E5645 (4800.2 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSCALL/SYSRET
+   20:22:38 up  2:57,  2 users,  load average: 0.53, 0.41, 0.21; runlevel 3
+
+------------------------------------------------------------------------
+Benchmark Run: Tue Apr 03 2012 20:22:38 - 20:49:59
+3 CPUs in system; running 1 parallel copy of tests
+
+Dhrystone 2 using register variables       24322317.4 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     2961.2 MWIPS (7.0 s, 7 samples)
+Execl Throughput                               1451.8 lps   (30.0 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks        787751.5 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          223048.0 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       1639344.8 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             1385086.0 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 226423.8 lps   (10.0 s, 7 samples)
+Process Creation                               3676.0 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                   3725.1 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   1646.1 lpm   (60.0 s, 2 samples)
+System Call Overhead                        1578386.4 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   24322317.4   2084.2
+Double-Precision Whetstone                       55.0       2961.2    538.4
+Execl Throughput                                 43.0       1451.8    337.6
+File Copy 1024 bufsize 2000 maxblocks          3960.0     787751.5   1989.3
+File Copy 256 bufsize 500 maxblocks            1655.0     223048.0   1347.7
+File Copy 4096 bufsize 8000 maxblocks          5800.0    1639344.8   2826.5
+Pipe Throughput                               12440.0    1385086.0   1113.4
+Pipe-based Context Switching                   4000.0     226423.8    566.1
+Process Creation                                126.0       3676.0    291.7
+Shell Scripts (1 concurrent)                     42.4       3725.1    878.6
+Shell Scripts (8 concurrent)                      6.0       1646.1   2743.5
+System Call Overhead                          15000.0    1578386.4   1052.3
+                                                                   ========
+System Benchmarks Index Score                                        1024.6
+
+------------------------------------------------------------------------
+Benchmark Run: Tue Apr 03 2012 20:49:59 - 21:17:27
+3 CPUs in system; running 3 parallel copies of tests
+
+Dhrystone 2 using register variables       72068041.9 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     8846.1 MWIPS (7.2 s, 7 samples)
+Execl Throughput                               8582.7 lps   (30.0 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks       1071208.3 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          285035.8 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       2289930.0 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             4059296.6 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 654058.4 lps   (10.0 s, 7 samples)
+Process Creation                              28607.3 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                  14152.2 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   1953.0 lpm   (60.0 s, 2 samples)
+System Call Overhead                        4106210.8 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   72068041.9   6175.5
+Double-Precision Whetstone                       55.0       8846.1   1608.4
+Execl Throughput                                 43.0       8582.7   1996.0
+File Copy 1024 bufsize 2000 maxblocks          3960.0    1071208.3   2705.1
+File Copy 256 bufsize 500 maxblocks            1655.0     285035.8   1722.3
+File Copy 4096 bufsize 8000 maxblocks          5800.0    2289930.0   3948.2
+Pipe Throughput                               12440.0    4059296.6   3263.1
+Pipe-based Context Switching                   4000.0     654058.4   1635.1
+Process Creation                                126.0      28607.3   2270.4
+Shell Scripts (1 concurrent)                     42.4      14152.2   3337.8
+Shell Scripts (8 concurrent)                      6.0       1953.0   3254.9
+System Call Overhead                          15000.0    4106210.8   2737.5
+                                                                   ========
+System Benchmarks Index Score                                        2670.2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;まとめ&#34;&gt;まとめ&lt;/h1&gt;
+&lt;p&gt;テスト内容                    旧システム(1.5G)                    新システム(2G)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>さくらのVPSでUnixBench(5.1.3)を実施してみた - part2(結果編)</title>
+      <link>http://localhost:1313/posts/2011/03/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps%E3%81%A7unixbench513%E3%82%92%E5%AE%9F%E6%96%BD%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F-part2%E7%B5%90%E6%9E%9C%E7%B7%A8/</link>
+      <pubDate>Sun, 06 Mar 2011 06:30:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/03/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps%E3%81%A7unixbench513%E3%82%92%E5%AE%9F%E6%96%BD%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F-part2%E7%B5%90%E6%9E%9C%E7%B7%A8/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/31362181@N08/5500656344/&#34; title=&#34;result of sakura vps benchmark&#34;&gt;&lt;img alt=&#34;result of sakura vps\nbenchmark&#34; loading=&#34;lazy&#34; src=&#34;http://farm6.static.flickr.com/5136/5500656344_6a9db11cd9_m.jpg&#34;&gt;{.alignnone}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;と、いうわけで以下結果です。&lt;/p&gt;
+&lt;p&gt;スコアとしては、1256.5。こんなもんなんでしょうか。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;========================================================================
+   BYTE UNIX Benchmarks (Version 5.1.3)
+
+   System: 0r2.info: GNU/Linux
+   OS: GNU/Linux -- 2.6.38-rc4-00106-gd247852 -- #1 SMP Sat Feb 12 05:11:57 JST 2011
+   Machine: x86_64 (x86_64)
+   Language: en_US.utf8 (charmap=&amp;quot;UTF-8&amp;quot;, collate=&amp;quot;UTF-8&amp;quot;)
+   CPU 0: Intel(R) Core(TM)2 Duo CPU T7700 @ 2.40GHz (5320.3 bogomips)
+          x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET
+   CPU 1: Intel(R) Core(TM)2 Duo CPU T7700 @ 2.40GHz (5320.3 bogomips)
+          x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET
+   05:26:55 up 18 days, 15:23,  1 user,  load average: 0.02, 0.04, 0.05; runlevel 3
+
+------------------------------------------------------------------------
+Benchmark Run: 金  3月 04 2011 05:26:55 - 05:54:56
+2 CPUs in system; running 1 parallel copy of tests
+
+Dhrystone 2 using register variables       23992196.0 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     3085.0 MWIPS (9.1 s, 7 samples)
+Execl Throughput                               1307.9 lps   (30.0 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks        441004.0 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          122297.6 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks        992115.9 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             1037608.4 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 145308.5 lps   (10.0 s, 7 samples)
+Process Creation                               3073.2 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                   2637.8 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                    652.9 lpm   (60.1 s, 2 samples)
+System Call Overhead                        1429308.8 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   23992196.0   2055.9
+Double-Precision Whetstone                       55.0       3085.0    560.9
+Execl Throughput                                 43.0       1307.9    304.2
+File Copy 1024 bufsize 2000 maxblocks          3960.0     441004.0   1113.6
+File Copy 256 bufsize 500 maxblocks            1655.0     122297.6    739.0
+File Copy 4096 bufsize 8000 maxblocks          5800.0     992115.9   1710.5
+Pipe Throughput                               12440.0    1037608.4    834.1
+Pipe-based Context Switching                   4000.0     145308.5    363.3
+Process Creation                                126.0       3073.2    243.9
+Shell Scripts (1 concurrent)                     42.4       2637.8    622.1
+Shell Scripts (8 concurrent)                      6.0        652.9   1088.2
+System Call Overhead                          15000.0    1429308.8    952.9
+                                                                   ========
+System Benchmarks Index Score                                         731.7
+
+------------------------------------------------------------------------
+Benchmark Run: 金  3月 04 2011 05:54:56 - 06:23:16
+2 CPUs in system; running 2 parallel copies of tests
+
+Dhrystone 2 using register variables       45446984.0 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     6064.6 MWIPS (9.5 s, 7 samples)
+Execl Throughput                               3794.6 lps   (29.9 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks        465812.5 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          134853.9 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       1176253.0 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             1914346.3 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 272961.3 lps   (10.0 s, 7 samples)
+Process Creation                               9831.0 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                   5213.8 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                    744.4 lpm   (60.1 s, 2 samples)
+System Call Overhead                        2521800.8 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   45446984.0   3894.3
+Double-Precision Whetstone                       55.0       6064.6   1102.7
+Execl Throughput                                 43.0       3794.6    882.5
+File Copy 1024 bufsize 2000 maxblocks          3960.0     465812.5   1176.3
+File Copy 256 bufsize 500 maxblocks            1655.0     134853.9    814.8
+File Copy 4096 bufsize 8000 maxblocks          5800.0    1176253.0   2028.0
+Pipe Throughput                               12440.0    1914346.3   1538.9
+Pipe-based Context Switching                   4000.0     272961.3    682.4
+Process Creation                                126.0       9831.0    780.2
+Shell Scripts (1 concurrent)                     42.4       5213.8   1229.7
+Shell Scripts (8 concurrent)                      6.0        744.4   1240.7
+System Call Overhead                          15000.0    2521800.8   1681.2
+                                                                   ========
+System Benchmarks Index Score                                        1256.5
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>さくらのVPSでUnixBench(5.1.3)を実施してみた - part1(準備編)</title>
+      <link>http://localhost:1313/posts/2011/03/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps%E3%81%A7unixbench513%E3%82%92%E5%AE%9F%E6%96%BD%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F-part1%E6%BA%96%E5%82%99%E7%B7%A8/</link>
+      <pubDate>Fri, 04 Mar 2011 06:07:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/03/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps%E3%81%A7unixbench513%E3%82%92%E5%AE%9F%E6%96%BD%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F-part1%E6%BA%96%E5%82%99%E7%B7%A8/</guid>
+      <description>&lt;p&gt;さくらのVPSでベンチマークをやってみた。&lt;/p&gt;
+&lt;p&gt;[php]
+$ wget &lt;a href=&#34;http://byte-unixbench.googlecode.com/files/UnixBench5.1.3.tgz&#34;&gt;http://byte-unixbench.googlecode.com/files/UnixBench5.1.3.tgz&lt;/a&gt;
+&amp;ndash;2011-03-04 05:12:00&amp;ndash;
+&lt;a href=&#34;http://byte-unixbench.googlecode.com/files/UnixBench5.1.3.tgz&#34;&gt;http://byte-unixbench.googlecode.com/files/UnixBench5.1.3.tgz&lt;/a&gt;
+byte-unixbench.googlecode.com をDNSに問いあわせています&amp;hellip;
+64.233.183.82
+byte-unixbench.googlecode.com|64.233.183.82|:80 に接続しています&amp;hellip;
+接続しました。
+HTTP による接続要求を送信しました、応答を待っています&amp;hellip; 200 OK
+長さ: 143259 (140K) [application/x-gzip]
+`UnixBench5.1.3.tgz&amp;rsquo; に保存中&lt;/p&gt;
+&lt;p&gt;100%[======================================&amp;gt;] 143,259 203K/s 時間
+0.7s&lt;/p&gt;
+&lt;p&gt;2011-03-04 05:12:06 (203 KB/s) - `UnixBench5.1.3.tgz&amp;rsquo; へ保存完了
+[143259/143259]&lt;/p&gt;
+&lt;p&gt;$ tar xf UnixBench5.1.3.tgz
+$ make
+Checking distribution of files
+./pgms exists
+./src exists
+./testdir exists
+./results exists
+gcc -o ./pgms/arithoh -DTIME -Wall -pedantic -ansi -O2
+-fomit-frame-pointer -fforce-addr -ffast-math -Wall -Darithoh
+./src/arith.c
+(中略)
+gcc -o ./pgms/whetstone-double -DTIME -Wall -pedantic -ansi -O2
+-fomit-frame-pointer -fforce-addr -ffast-math -Wall -DDP -DUNIX
+-DUNIXBENCH ./src/whets.c -lm
+$ echo $?
+0
+$ ./Run
+make all
+make[1]: Entering directory `/home/masayuki/src/UnixBench&#39;
+Checking distribution of files
+./pgms exists
+./src exists
+./testdir exists
+./tmp exists
+./results exists
+make[1]: Leaving directory `/home/masayuki/src/UnixBench&#39;
+sh: 3dinfo: command not found&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

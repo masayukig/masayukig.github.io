@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-09-06-shingaporucreativegamp3pureyaniguan-surute-xu-woqu-de-ipodyorixian-nifa-ming
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: シンガポールCreativeがMP3プレーヤに関する特許を取得，「iPodより先に発 明」
 ---
 
 [itpro.nikkeibp.co.jp](http://itpro.nikkeibp.co.jp/article/USNEWS/20050831/220349/)

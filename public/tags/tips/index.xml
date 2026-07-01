@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tips on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/tips/</link>
+    <description>Recent content in Tips on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 08 Jun 2010 22:39:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>圧縮せずにファイルサイズを小さくしてコピーする方法</title>
+      <link>http://localhost:1313/posts/2010/06/%E5%9C%A7%E7%B8%AE%E3%81%9B%E3%81%9A%E3%81%AB%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92%E5%B0%8F%E3%81%95%E3%81%8F%E3%81%97%E3%81%A6%E3%82%B3%E3%83%94%E3%83%BC%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Tue, 08 Jun 2010 22:39:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2010/06/%E5%9C%A7%E7%B8%AE%E3%81%9B%E3%81%9A%E3%81%AB%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92%E5%B0%8F%E3%81%95%E3%81%8F%E3%81%97%E3%81%A6%E3%82%B3%E3%83%94%E3%83%BC%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;p&gt;GNUのcpコマンドには、sparseオプションがありこれを使うと、
+ファイルとしてはそのままに、実際にディスクを使用する量を削減することができる可能性があります。&lt;/p&gt;
+&lt;p&gt;使い方は、以下のような感じです。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ dd if=/dev/zero of=hoge.img bs=1024 count=102400
+$ cp --sparse=always hoge.img hoge.img.sparse
+$ ls -lhs
+合計 101M
+101M -rw-r--r-- 1 igawa igawa 100M 2010-06-08 22:16 hoge.img
+   0 -rw-r--r-- 1 igawa igawa 100M 2010-06-08 22:17 hoge.img.sparse
+^^^^実際にディスクを使用しているサイズ。(今回の場合、ゼロバイト！)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;実際にディスクを使用しているサイズは、上記のようにlsコマンドの「s」オプションで確認できます。&lt;/p&gt;
+&lt;p&gt;さらに、sparse fileのまま、tarボールにすることもできます。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ tar -Szcvf hoge.img.sparse.tar.gz hoge.img.sparse
+$ ls -lhs hoge.img.sparse.tar.gz
+4.0K -rw-r--r-- 1 igawa igawa 139 2010-06-08 22:32 hoge.img.sparse.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;普通にtarボールにした場合&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ tar -zcvf hoge.img.sparse.tar.gz hoge.img.sparse
+hoge.img.sparse
+$ ls -lhs hoge.img.sparse.tar.gz
+104K -rw-r--r-- 1 igawa igawa 100K 2010-06-08 22:35 hoge.img.sparse.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;sparse fileについては、こちらが参考になると思います。
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Sparse&#34;&gt;http://en.wikipedia.org/wiki/Sparse&lt;/a&gt;_file&lt;/p&gt;
+&lt;p&gt;要は、何もデータが無い領域は、削除して「あるかのように見せる」ということをしている様です。
+なので、通常のファイルの場合は削減効果はあまり期待できません。&lt;/p&gt;
+&lt;p&gt;削減を期待できるのは、仮想OSの仮想ディスクファイルや、メモリダンプイメージなどでしょう。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>make oldconfigで全ての問い合わせ項目にEnterするスクリプト #Linux</title>
+      <link>http://localhost:1313/posts/2010/06/make-oldconfig%E3%81%A7%E5%85%A8%E3%81%A6%E3%81%AE%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E9%A0%85%E7%9B%AE%E3%81%ABenter%E3%81%99%E3%82%8B%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88-linux/</link>
+      <pubDate>Sat, 05 Jun 2010 14:25:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2010/06/make-oldconfig%E3%81%A7%E5%85%A8%E3%81%A6%E3%81%AE%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E9%A0%85%E7%9B%AE%E3%81%ABenter%E3%81%99%E3%82%8B%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88-linux/</guid>
+      <description>&lt;p&gt;Linux
+kernelのmakeのターゲットでありそうな気もするんですが、見つからなかったので。&lt;/p&gt;
+&lt;p&gt;$ cat make_oldconfig_auto.sh&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#!/usr/bin/env expect
+
+set timeout 10
+spawn make oldconfig
+while {1} {
+        expect {
+                &amp;#34;] (NEW)&amp;#34; { send &amp;#34;\n&amp;#34; }
+                &amp;#34;# configuration written to .config&amp;#34; {break}
+        }
+}
+
+interact
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;見てわかるとおり、expectを使って、&amp;quot;]
+(NEW)&amp;ldquo;というのが出てきたら、Enter入力。
+&amp;ldquo;# configuration written to .config&amp;quot;が出てきたらおしまい。&lt;/p&gt;
+&lt;p&gt;というスクリプトです。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>古い記事をインポートしました(MovableType -&gt; Wordpress)</title>
+      <link>http://localhost:1313/posts/2008/11/%E5%8F%A4%E3%81%84%E8%A8%98%E4%BA%8B%E3%82%92%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%97%E3%81%BE%E3%81%97%E3%81%9Fmovabletype-wordpress/</link>
+      <pubDate>Sun, 16 Nov 2008 08:09:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/11/%E5%8F%A4%E3%81%84%E8%A8%98%E4%BA%8B%E3%82%92%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%97%E3%81%BE%E3%81%97%E3%81%9Fmovabletype-wordpress/</guid>
+      <description>&lt;p&gt;以前、MovableTypeで書いていた記事を、wordpressにインポートしました。&lt;/p&gt;
+&lt;p&gt;方法は、至って簡単。&lt;/p&gt;
+&lt;p&gt;MovableTypeの「ユーティリティ」-&amp;gt;「読み込み/書き出し」-&amp;gt;「エントリの書き出し」で、&lt;/p&gt;
+&lt;p&gt;エントリをファイルに書き出す。しばらく待つと、ファイル保存のダイアログがでるので、&lt;/p&gt;
+&lt;p&gt;適当に名前をつけて保存。&lt;/p&gt;
+&lt;p&gt;その後は、Wordpressの「Tools」-&amp;gt;「インポート」で、先ほど保存したファイルをインポートするだけ。&lt;/p&gt;
+&lt;p&gt;良しとする。w&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fedoraにuuencode, uudecodeをインストールしたいとき</title>
+      <link>http://localhost:1313/posts/2008/11/fedora%E3%81%ABuuencode-uudecode%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E3%81%84%E3%81%A8%E3%81%8D/</link>
+      <pubDate>Mon, 03 Nov 2008 15:35:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/11/fedora%E3%81%ABuuencode-uudecode%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E3%81%84%E3%81%A8%E3%81%8D/</guid>
+      <description>&lt;p&gt;Fedoraにuuencode, uudecodeをインストールしたいときは、
+&lt;code&gt;# yum install sharutils&lt;/code&gt;
+と、実行する。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;# yum install uudecode&lt;/code&gt;
+と、実行しても、&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Setting up Install ProcessParsing package install argumentsNo package uudecode available.Nothing to do&lt;/code&gt;
+と、なるだけです。&lt;/p&gt;
+&lt;p&gt;参照URL:&lt;a href=&#34;http://d.hatena.ne.jp/hogem/20061217/1166368657&#34;&gt;http://d.hatena.ne.jp/hogem/20061217/1166368657&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>gpsPhoto.plでGeoタグ付け</title>
+      <link>http://localhost:1313/posts/2008/11/gpsphotopl%E3%81%A7geo%E3%82%BF%E3%82%B0%E4%BB%98%E3%81%91/</link>
+      <pubDate>Sat, 01 Nov 2008 18:17:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/11/gpsphotopl%E3%81%A7geo%E3%82%BF%E3%82%B0%E4%BB%98%E3%81%91/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.carto.net/projects/photoTools/gpsPhoto/&#34;&gt;gpsPhoto.pl&lt;/a&gt;というのを使うと、geoタグをつけることが出来る。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ gpsPhoto.pl --dir JPEGファイルがあるディレクトリ --gpsfile GPSファイルパス.gpx --maxtimediff 500 --timeoffset -32400&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;-32400=GMTからの時差。(JSTなら-0900なので-60*60*9)&lt;/p&gt;
+&lt;p&gt;必要なもの：
+&lt;a href=&#34;http://www.carto.net/projects/photoTools/gpsPhoto/&#34;&gt;gpsPhoto.pl&lt;/a&gt;
+Image-ExifTool-7.51(CPANでインストール可能)
+&amp;hellip;?&lt;/p&gt;
+&lt;p&gt;参考URL:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.tamichan.com/lost+found/gps.html&#34;&gt;http://www.tamichan.com/lost+found/gps.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/a10i/20080220/1203519480&#34;&gt;http://d.hatena.ne.jp/a10i/20080220/1203519480&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Flickrで写真バックアップ</title>
+      <link>http://localhost:1313/posts/2008/10/flickr%E3%81%A7%E5%86%99%E7%9C%9F%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</link>
+      <pubDate>Sun, 26 Oct 2008 19:17:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/10/flickr%E3%81%A7%E5%86%99%E7%9C%9F%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/&#34;&gt;Flickr&lt;/a&gt;で写真をバックアップすることにした。&lt;/p&gt;
+&lt;p&gt;Proアカウントにすると、容量無制限となるので、バックアップにはちょうど良いかと。&lt;/p&gt;
+&lt;p&gt;PicasaWebは、容量無制限じゃないんですよね。&lt;/p&gt;
+&lt;p&gt;日本語のサイトとして、「&lt;a href=&#34;http://photozou.jp/&#34;&gt;フォト蔵&lt;/a&gt;」というのが無料であるのですが、&lt;/p&gt;
+&lt;p&gt;Linux環境だと大量の写真をアップロードするのは、若干辛そう。
+APIが公開されているようなので、適当なソフトを作ってアップロードするというのが、
+正しい(?)技術者かも知れないが、ヘタれなのでそんなことはせずに、
+FlickrのProアカウントでしばらく運用してみることにする。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

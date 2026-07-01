@@ -9,6 +9,11 @@ tags:
 - VPS
 draft: false
 disqus_identifier: 2011-03-06-sakuranovpsdeunixbench513woshi-shi-shitemita-part2jie-guo-bian
+cover:
+  image: http://farm6.static.flickr.com/5136/5500656344_6a9db11cd9_m.jpg
+  alt: 'result of sakura vps
+
+    benchmark'
 ---
 
 [![result of sakura vps

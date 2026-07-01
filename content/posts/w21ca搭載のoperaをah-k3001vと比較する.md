@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-12-23-w21ca-da-zai-nooperawoah-k3001v-tobi-jiao-suru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「W21CA」搭載のOperaを「AH-K3001V」と比較する
 ---
 
 [itmedia

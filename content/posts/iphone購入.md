@@ -7,6 +7,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2009-06-28-iphonegou-ru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhone購入！
 ---
 
 [![iPhone\_Mac](http://www.0r2.info/blog/wp-content/uploads/2009/06/iPhone_Mac-225x300.jpg "iPhone_Mac"){.alignleft

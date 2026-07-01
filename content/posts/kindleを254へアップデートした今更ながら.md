@@ -6,6 +6,11 @@ tags:
 - Kindle
 draft: false
 disqus_identifier: 2010-09-11-kindlewo254heatsupudetoshitajin-geng-nagara
+cover:
+  image: http://farm5.static.flickr.com/4108/4977555601_b67b881ecc.jpg
+  alt: 'kindle update to
+
+    2.5.4'
 ---
 
 今更ながら、Kindleを2.5.4へアップデートしました。

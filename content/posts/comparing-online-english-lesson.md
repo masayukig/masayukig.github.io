@@ -9,6 +9,9 @@ tags:
 - education
 draft: false
 disqus_identifier: 2017-12-20-comparing-online-english-lesson
+cover:
+  image: /images/covers/english.jpg
+  alt: Comparing Online English Lesson
 ---
 
 > This is an article for [鰻 Advent Calendar 2017](https://adventar.org/calendars/2628).

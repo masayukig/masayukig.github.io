@@ -6,6 +6,9 @@ tags:
 - お金
 draft: false
 disqus_identifier: 2008-06-10-citibanknikou-zuo-kai-she-shitemita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: citibankに口座開設してみた
 ---
 
 [citibank](http://www.citibank.co.jp/ja/ "citibank")に口座開設してみました。

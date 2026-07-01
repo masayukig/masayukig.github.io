@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-08-19-asuteruphs-tsuinizhong-yan-he-kousagi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: アステルPHS、ついに終焉へ!? (こうさぎ)
 ---
 
 きょうはhughがひまみたいな8したよ♪

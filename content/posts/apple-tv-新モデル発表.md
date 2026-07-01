@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-07-apple-tv-xin-moderufa-biao
+cover:
+  image: http://www.gizmodo.jp/upload_files2/120308appletvhd.jpg
+  alt: picture
 ---
 
 ［ \#iPad3 ］より美しくカッコよくなった「Apple TV」の新モデルが出たよ！

@@ -9,6 +9,9 @@ tags:
 - 写真
 draft: false
 disqus_identifier: 2009-05-04-nikon-batsuterichong-dian-chi-en-el3rikoru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Nikon バッテリー(充電池) EN-EL3リコール
 ---
 
 \[caption id="attachment\_750" align="alignnone" width="225"

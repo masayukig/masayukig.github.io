@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-08-15-microsoft-di-jia-ge-osban-windows-xpstarter-edition
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Microsoft、低価格OS版Windows XP「Starter Edition」
 ---
 
 [PC Watch](http://pc.watch.impress.co.jp/docs/2004/0812/ms.htm)

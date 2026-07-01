@@ -7,6 +7,9 @@ tags:
 - Software
 draft: false
 disqus_identifier: 2009-02-02-23kaguo-yu-dui-ying-nowordpressfan-yi-puraguinglobal-translatorwodao-ru-shitemimashita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 23か国語対応のWordpress翻訳プラグインGlobal Translatorを導入してみました
 ---
 
 [23か国語対応のWordpressプラグインGlobal

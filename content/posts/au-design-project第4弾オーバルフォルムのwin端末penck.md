@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-02-14-au-design-projectdi-4dan-obaruhuorumunowinduan-mo-penck
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: au design project第4弾、オーバルフォルムのWIN端末「PENCK」
 ---
 
 <http://k-tai.impress.co.jp/cda/article/news_toppage/22511.html>

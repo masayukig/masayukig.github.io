@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Windows8 on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/windows8/</link>
+    <description>Recent content in Windows8 on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 26 Sep 2012 14:45:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/windows8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows8 Release PreviewをVMware Fusion5 on Mac miniにインストールしてパフォーマンスの評価をしてみた</title>
+      <link>http://localhost:1313/posts/2012/09/windows8-release-preview%E3%82%92vmware-fusion5-on-mac-mini%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9%E3%81%AE%E8%A9%95%E4%BE%A1%E3%82%92%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <pubDate>Wed, 26 Sep 2012 14:45:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/09/windows8-release-preview%E3%82%92vmware-fusion5-on-mac-mini%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9%E3%81%AE%E8%A9%95%E4%BE%A1%E3%82%92%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/09/e7f3a-skitch.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;というわけで、題名の通り
+Window8 Release PreviewをVMware Fusion5 on Mac mini(10.8.2)に
+インストールして、パフォーマンスの評価をしてみました。&lt;/p&gt;
+&lt;p&gt;結果は上記の通り。&lt;/p&gt;
+&lt;p&gt;思ったよりもパフォーマンスは良い印象。
+サクサク動きます。
+画面もシンプルで好印象。&lt;/p&gt;
+&lt;p&gt;まぁ、ちょろっと触っただけなので、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使い続けるとどうなるのか?&lt;/li&gt;
+&lt;li&gt;色々とインストールしてもサクサク動くのか?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;など、気になる点は多々ありますが。&lt;/p&gt;
+&lt;p&gt;また、スタート画面(?)から「デスクトップ」か「エクスプローラー」を選択すると、&lt;/p&gt;
+&lt;p&gt;まるでWindow7な画面になってしまうのも、ちょっとイタダケナイ感じが&lt;/p&gt;
+&lt;p&gt;しないでもない今日この頃。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

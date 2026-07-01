@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cloudfoundry on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/cloudfoundry/</link>
+    <description>Recent content in Cloudfoundry on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 11 Jun 2011 06:00:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/cloudfoundry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac で Scala と Lift を使ってみる(2) Cloud Foundry編</title>
+      <link>http://localhost:1313/posts/2011/06/mac-%E3%81%A7-scala-%E3%81%A8-lift-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B2-cloud-foundry%E7%B7%A8/</link>
+      <pubDate>Sat, 11 Jun 2011 06:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/06/mac-%E3%81%A7-scala-%E3%81%A8-lift-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B2-cloud-foundry%E7%B7%A8/</guid>
+      <description>&lt;p&gt;「Mac で Scala と Lift を使ってみる」の2回目&lt;/p&gt;
+&lt;p&gt;今度は、作成したアプリをCloud Foundryへpushしてみます。
+つい最近、&lt;a href=&#34;http://cloudfoundry.com/&#34;&gt;Cloud
+Foundry&lt;/a&gt;が&lt;a href=&#34;http://blog.cloudfoundry.com/post/6109591023/cloud-foundry-now-supporting-scala&#34;&gt;Scala-Liftに対応した&lt;/a&gt;ので可能になりました。&lt;/p&gt;
+&lt;p&gt;今度は、「ゆろよろ日記」さんのサイト：
+&lt;a href=&#34;http://d.hatena.ne.jp/yuroyoro/20080808/1218168453&#34;&gt;http://d.hatena.ne.jp/yuroyoro/20080808/1218168453&lt;/a&gt;
+記述を参考にしました。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;アプリを作成&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ mvn archetype:create -U  -DarchetypeGroupId=net.liftweb  -DarchetypeArtifactId=lift-archetype-basic -DarchetypeVersion=0.9  -DremoteRepositories=http://scala-tools.org/repo-releases  -DgroupId=org.orzlabs -DartifactId=hello-lift
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;パッケージ作成&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd hello-lift/
+$ mvn package
+$ ls -l target
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;warファイルが作成されていることを確認します。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cloud Foundryへpush
+以下手順からは、事前に、&lt;a href=&#34;http://cloudfoundry.com/&#34;&gt;Cloud
+Foundry&lt;/a&gt;にて、sign
+upを済ませておく必要があります。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ gem install vmc (vmcをインストールしてない場合)
+$ vmc target api.cloudfoundry.com
+$ vmc login
+$ vmc push --path target/
+(以下の内容を聞かれるので、適当に入力)
+Application Name: xxxxx (アプリケーション名。好きな様につけて良い。)
+Application Deployed URL: &#39;xxxxx.cloudfoundry.com&#39;? (デフォルトで良ければ単にEnter。アクセスするURLを指定する)
+Detected a Java Web Application, is this correct? [Yn]: (Enter)
+Memory Reservation [Default:512M] (64M, 128M, 256M, 512M or 1G) (デフォルトで良ければ単にEnter)
+Creating Application: OK
+Would you like to bind any services to &#39;nano&#39;? [yN]: (DBを使用したければy。今回はとりあえず不要なのでN)
+Uploading Application:
+  Checking for available resources: OK
+  Processing resources: OK
+  Packing application: OK
+  Uploading (7M): OK
+Push Status: OK
+Staging Application: OK
+Starting Application: OK
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Webブラウザでアクセス&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

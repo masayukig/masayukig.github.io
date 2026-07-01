@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-15-qi-ninaruhua-ti-kokuyo-camiapp-nozhuan-yong-notonia4yokoxing-wozhui-jia-niyusu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: '気になる話題: コクヨ、「CamiApp」の専用ノートにA4ヨコ型を追加（ニュース）'
 ---
 
 <http://itpro.nikkeibp.co.jp/article/NEWS/20120315/386683/>

@@ -7,6 +7,9 @@ tags:
 - Kindle
 draft: false
 disqus_identifier: 2010-06-20-amazoncomnotracking-informationhaxin-yong-dekirunoka-kindle-amazon
+cover:
+  image: https://www.assoc-amazon.com/e/ir?t=pcorktamophbl-20&l=ur2&o=1
+  alt: picture
 ---
 
 [Amazon.com](http://www.amazon.com/gp/redirect.html?ie=UTF8&location=http%3A%2F%2Fwww.amazon.com%2F&tag=pcorktamophbl-20&linkCode=ur2&camp=1789&creative=390957)![picture](https://www.assoc-amazon.com/e/ir?t=pcorktamophbl-20&l=ur2&o=1)

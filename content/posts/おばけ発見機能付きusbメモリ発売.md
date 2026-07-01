@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2005-04-07-obakefa-jian-ji-neng-fu-kiusbmemorifa-mai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: おばけ発見機能付きUSBメモリ発売
 ---
 
 <http://slashdot.jp/article.pl?sid=05/04/04/1321216&topic=42>

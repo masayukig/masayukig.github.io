@@ -6,6 +6,9 @@ tags:
 - このサイトの事
 draft: false
 disqus_identifier: 2008-06-28-permlinknourlwobian-geng-shimashita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: permlinkのURLを変更しました
 ---
 
 検索エンジンからたどってきた場合は、ちゃんと表示されないことがあるかも。

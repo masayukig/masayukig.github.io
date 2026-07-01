@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-10-04-maikurosohutoan-quan-naieha-xphenoyou-liao-atsupuguredode
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: マイクロソフト：「安全なIEは、XPへの有料アップグレードで」
 ---
 
 [CNET

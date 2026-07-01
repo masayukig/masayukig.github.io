@@ -6,6 +6,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2004-09-16-pentium-44ghzda-zai-no60mo-yuan-gemupckousagi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Pentium 4“4GHz”搭載の60万円ゲームPC(こうさぎ)
 ---
 
 きょううさこは、hughがCNETしたかったの♪

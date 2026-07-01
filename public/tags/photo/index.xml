@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Photo on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/photo/</link>
+    <description>Recent content in Photo on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 26 Oct 2008 19:17:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/photo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flickrで写真バックアップ</title>
+      <link>http://localhost:1313/posts/2008/10/flickr%E3%81%A7%E5%86%99%E7%9C%9F%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</link>
+      <pubDate>Sun, 26 Oct 2008 19:17:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/10/flickr%E3%81%A7%E5%86%99%E7%9C%9F%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/&#34;&gt;Flickr&lt;/a&gt;で写真をバックアップすることにした。&lt;/p&gt;
+&lt;p&gt;Proアカウントにすると、容量無制限となるので、バックアップにはちょうど良いかと。&lt;/p&gt;
+&lt;p&gt;PicasaWebは、容量無制限じゃないんですよね。&lt;/p&gt;
+&lt;p&gt;日本語のサイトとして、「&lt;a href=&#34;http://photozou.jp/&#34;&gt;フォト蔵&lt;/a&gt;」というのが無料であるのですが、&lt;/p&gt;
+&lt;p&gt;Linux環境だと大量の写真をアップロードするのは、若干辛そう。
+APIが公開されているようなので、適当なソフトを作ってアップロードするというのが、
+正しい(?)技術者かも知れないが、ヘタれなのでそんなことはせずに、
+FlickrのProアカウントでしばらく運用してみることにする。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

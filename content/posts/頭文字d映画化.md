@@ -6,6 +6,9 @@ tags:
 - entertainments
 draft: false
 disqus_identifier: 2005-04-17-tou-wen-zi-dying-hua-hua
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 頭文字D映画化
 ---
 
 <http://news.goo.ne.jp/news/topics/index/28116/1.html>

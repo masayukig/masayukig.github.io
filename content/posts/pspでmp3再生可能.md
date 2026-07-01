@@ -7,6 +7,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2004-10-17-pspdemp3zai-sheng-ke-neng
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: PSPでMP3再生可能！
 ---
 
 [CNET](http://japan.cnet.com/news/tech/story/0,2000047674,20075169,00.htm)

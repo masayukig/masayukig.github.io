@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2005-02-22-cvsnibian-warubaziyonguan-li-tsurusubversionnoji-shi
+cover:
+  image: /images/covers/oss.png
+  alt: CVSに変わるバージョン管理ツールSubversionの記事
 ---
 
 <http://itpro.nikkeibp.co.jp/members/ITPro/oss/20050215/156212/>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>体重 on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/%E4%BD%93%E9%87%8D/</link>
+    <description>Recent content in 体重 on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 30 Jan 2010 08:34:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E4%BD%93%E9%87%8D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wifi Body Scale</title>
+      <link>http://localhost:1313/posts/2010/01/wifi-body-scale/</link>
+      <pubDate>Sat, 30 Jan 2010 08:34:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2010/01/wifi-body-scale/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.withings.com/ja&#34;&gt;http://www.withings.com/ja&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;インターネット接続の体重計。
+自動的にTweetする機能もついてるらしい。&lt;/p&gt;
+&lt;p&gt;ちょっと欲しいかもｗ&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

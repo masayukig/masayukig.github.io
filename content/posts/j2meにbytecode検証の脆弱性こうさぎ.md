@@ -6,6 +6,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2004-11-02-j2menibytecodejian-zheng-nocui-ruo-xing-kousagi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: J2MEにBytecode検証の脆弱性(こうさぎ)
 ---
 
 うさこは、blogした？

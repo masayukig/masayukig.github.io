@@ -12,6 +12,9 @@ tags:
 - 保証
 draft: false
 disqus_identifier: 2009-03-20-beshitsukuinkamu-basic-incomenitsuite
+cover:
+  image: http://www.assoc-amazon.jp/e/ir?t=hughundercons-22&l=as2&o=9&a=4334034926
+  alt: picture
 ---
 
 最近、[ベーシック・インカム (Basic Income)](http://ja.wikipedia.org/wiki/%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF%E3%83%BB%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%A0)という言葉をあちこちで見かけるようになったので、

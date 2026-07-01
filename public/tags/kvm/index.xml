@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>KVM on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/kvm/</link>
+    <description>Recent content in KVM on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 03 Mar 2011 06:06:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/kvm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>「さくらのVPS」に待望の上位プラン追加</title>
+      <link>http://localhost:1313/posts/2011/03/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps%E3%81%AB%E5%BE%85%E6%9C%9B%E3%81%AE%E4%B8%8A%E4%BD%8D%E3%83%97%E3%83%A9%E3%83%B3%E8%BF%BD%E5%8A%A0/</link>
+      <pubDate>Thu, 03 Mar 2011 06:06:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/03/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps%E3%81%AB%E5%BE%85%E6%9C%9B%E3%81%AE%E4%B8%8A%E4%BD%8D%E3%83%97%E3%83%A9%E3%83%B3%E8%BF%BD%E5%8A%A0/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://vps.sakura.ad.jp/news/archives/20110224-003.news&#34;&gt;「さくらのVPS」に待望の上位プラン&lt;/a&gt;が追加されるようです。&lt;/p&gt;
+&lt;p&gt;私は1GBにしたいと思っています。
+でも、簡単に容量アップできるのかな。。？&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>VPS比較Part-2(お名前.com vs さくらVPS)</title>
+      <link>http://localhost:1313/posts/2010/09/vps%E6%AF%94%E8%BC%83part-2%E3%81%8A%E5%90%8D%E5%89%8Dcom-vs-%E3%81%95%E3%81%8F%E3%82%89vps/</link>
+      <pubDate>Sat, 18 Sep 2010 05:54:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2010/09/vps%E6%AF%94%E8%BC%83part-2%E3%81%8A%E5%90%8D%E5%89%8Dcom-vs-%E3%81%95%E3%81%8F%E3%82%89vps/</guid>
+      <description>&lt;p&gt;と言うわけで、さっそく準備ができたようなので比較してみたいと思います。
+以下、計測ログ等。&lt;/p&gt;
+&lt;p&gt;お名前.comサーバ:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;onamaeVPS $ grep processor /proc/cpuinfo |wc -l
+16
+onamaeVPS $ time for ((i=0; i&amp;lt;100000; i++)); do :; done
+
+real  0m0.726s
+user  0m0.381s
+sys   0m0.345s
+onamaeVPS $ time for ((i=0; i&amp;lt;100000; i++)); do :; done
+
+real    0m0.842s
+user  0m0.422s
+sys   0m0.420s
+onamaeVPS $ time for ((i=0; i&amp;lt;100000; i++)); do :; done
+
+real    0m0.787s
+user  0m0.257s
+sys   0m0.530s
+onamaeVPS $ grep -e MemTotal -e Swap /proc/meminfo
+MemTotal:      1048576 kB
+SwapCached:          0 kB
+SwapTotal:           0 kB
+SwapFree:            0 kB
+onamaeVPS $ df -T
+Filesystem    Type   1K-ブロック    使用   使用可 使用% マウント位置
+/dev/vzfs     vzfs   124780544  17436724 107343820  14% /
+none         tmpfs      524288         4    524284   1% /dev
+onamaeVPS $ uname -a
+Linux 0r2.info 2.6.18-028stab068.9 #1 SMP Tue Mar 30 17:22:31 MSD 2010 x86_64 x86_64 x86_64 GNU/Linux
+onamaeVPS $ cat /etc/redhat-release
+CentOS release 5.5 (Final)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;さくらVPS:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>『さくらのVPS』を使ってみることにする</title>
+      <link>http://localhost:1313/posts/2010/09/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AB%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sat, 18 Sep 2010 04:16:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2010/09/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AB%E3%81%99%E3%82%8B/</guid>
+      <description>&lt;p&gt;さくらのVPS が月額９８０ということなので、使ってみることにします。
+何に惹かれたのか？というと、KVMを使っているからです。
+現在は、お名前.comを使っていて大きな不満はないのですが、以下が気になっています。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Virtuozzoで、SWAPが使えない(すぐにOOM発生)&lt;/li&gt;
+&lt;li&gt;月額料金が高い(その代わり、それに見合う快適度合いだとは思いますが。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;どっちが良いのか、これから使って比較してみます。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>VirtualBoxのディスクイメージ(vdi)をKVMのディスクイメージ(qcow2)に変換す る</title>
+      <link>http://localhost:1313/posts/2010/07/virtualbox%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8vdi%E3%82%92kvm%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8qcow2%E3%81%AB%E5%A4%89%E6%8F%9B%E3%81%99-%E3%82%8B/</link>
+      <pubDate>Sat, 24 Jul 2010 07:42:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2010/07/virtualbox%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8vdi%E3%82%92kvm%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8qcow2%E3%81%AB%E5%A4%89%E6%8F%9B%E3%81%99-%E3%82%8B/</guid>
+      <description>&lt;p&gt;VirtualBoxを使っていたのですが、KVMも使いたくなったのでディスクイメージを変換してみた。&lt;/p&gt;
+&lt;p&gt;とは言っても、以下のコマンド一発で変換できたので、特に苦労は無し。
+&lt;code&gt;$ qemu-img convert -O qcow2 .VirtualBox/windows7.vdi Documents/windows7.qcow2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;qemu便利だな。。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

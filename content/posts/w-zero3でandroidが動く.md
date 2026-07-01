@@ -11,6 +11,9 @@ tags:
 - WS011SH
 draft: false
 disqus_identifier: 2009-06-21-w-zero3deandroidgadong-ku
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: W-ZERO3でAndroidが動く！
 ---
 
 [.h2o2のお気楽日記](http://d.hatena.ne.jp/dot_h2o2/)で開発されているものですが、

@@ -6,6 +6,9 @@ tags:
 - SPAM
 draft: false
 disqus_identifier: 2005-01-16-jin-ri-nosupamuretong-fan-zhu-wen-shu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 今日のスパム「Re:通販注文書」
 ---
 
 平塚奈菜さんからスパム届きました。

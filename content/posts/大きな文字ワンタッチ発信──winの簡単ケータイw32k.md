@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-05-21-da-kinawen-zi-wantatsuchifa-xin-winnojian-dan-ketaiw32k
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 大きな文字、ワンタッチ発信──WINの簡単ケータイ「W32K」
 ---
 
 <http://www.itmedia.co.jp/mobile/articles/0505/19/news047.html>

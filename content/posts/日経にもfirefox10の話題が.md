@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2004-11-13-ri-jing-nimofirefox10nohua-ti-ga
+cover:
+  image: /images/covers/oss.png
+  alt: 日経にもFireFox1.0の話題が！
 ---
 
 [nikkei.co.jp](http://www.nikkei.co.jp/news/sangyo/20041110AT1D1003010112004.html)

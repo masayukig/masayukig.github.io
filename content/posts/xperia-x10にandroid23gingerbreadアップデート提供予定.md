@@ -10,6 +10,11 @@ tags:
 - Xperia
 draft: false
 disqus_identifier: 2011-03-27-xperia-x10niandroid23gingerbreadatsupudetoti-gong-yu-ding
+cover:
+  image: http://farm6.static.flickr.com/5142/5561883791_27e69b885d_m.jpg
+  alt: 'update on Xperia
+
+    X10'
 ---
 
 [![update on Xperia

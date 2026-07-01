@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-08-05-td-cdmanokabaeriahaxi-dai-nipo-reruka
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: TD-CDMAのカバーエリアは携帯に迫れるか？
 ---
 
 [ITmedia](http://www.itmedia.co.jp/mobile/articles/0408/04/news003.html)

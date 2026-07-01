@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2008-06-04-wordpressnishitemita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: wordpressにしてみた
 ---
 
 ブログシステムを、wordpressにしてみました。

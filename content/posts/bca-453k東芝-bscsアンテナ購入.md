@@ -9,6 +9,9 @@ tags:
 - entertainments
 draft: false
 disqus_identifier: 2010-02-22-bca-453kdong-zhi-bscsantenagou-ru
+cover:
+  image: http://farm3.static.flickr.com/2683/4378184177_ca3392eb5e.jpg
+  alt: BCA-453K
 ---
 
 東芝のBCA-453Kというアンテナを購入しました。

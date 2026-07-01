@@ -10,6 +10,9 @@ tags:
 - virus
 draft: false
 disqus_identifier: 2011-07-26-sophos-anti-virus-for-mac-home-edition-woinsutorushitemita
+cover:
+  image: https://lh4.googleusercontent.com/-UlBnlgfGsTg/TjfqpW1zKaI/AAAAAAAAY44/QwNcHq1kuPY/s288/5974970783_fa266bbeb6_o.png
+  alt: picture
 ---
 
 [Sophos Anti-Virus for Mac Home

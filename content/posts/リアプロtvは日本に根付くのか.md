@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-11-19-riapurotvhari-ben-nigen-fu-kunoka
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: リアプロTVは日本に根付くのか？
 ---
 
 [itmedia.co.jp](http://www.itmedia.co.jp/lifestyle/articles/0411/19/news024.html)

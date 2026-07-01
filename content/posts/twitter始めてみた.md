@@ -7,6 +7,9 @@ tags:
 - twitter
 draft: false
 disqus_identifier: 2009-07-25-twittershi-metemita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Twitter始めてみた
 ---
 
 Twitterを始めてみました。

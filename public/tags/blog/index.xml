@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/blog/</link>
+    <description>Recent content in Blog on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 11 Dec 2017 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning English</title>
+      <link>http://localhost:1313/posts/2017/12/learning-english/</link>
+      <pubDate>Mon, 11 Dec 2017 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2017/12/learning-english/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;This is an article for &lt;a href=&#34;https://adventar.org/calendars/2628&#34;&gt;鰻 Advent Calendar 2017&lt;/a&gt;. Japanese version is after
+the English version.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;I need to, have to, must use English because of my work. It&amp;rsquo;s not so
+easy for me. However, I&amp;rsquo;m thinking my English getting better with my
+effort, gradually. And I also think there are some tricks to achieve
+it. So I&amp;rsquo;m thinking for it.&lt;/p&gt;
+&lt;h2 id=&#34;tricks&#34;&gt;Tricks&lt;/h2&gt;
+&lt;h3 id=&#34;1-use-english-everyday-as-possible&#34;&gt;1. Use English everyday as possible&lt;/h3&gt;
+&lt;p&gt;This is the most important part. To do this, we need to find that fan
+things for you. For me, like the below.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Read and write emails and chat in English&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Read English articles&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The architecture of this blog</title>
+      <link>http://localhost:1313/posts/2017/12/blog-architecture-and-tools/</link>
+      <pubDate>Fri, 08 Dec 2017 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2017/12/blog-architecture-and-tools/</guid>
+      <description>&lt;p&gt;I already posted_ about switching this blog to igawa.io. But I think
+it&amp;rsquo;s good to share the information about the architecture of this blog
+for you and especially me :)&lt;/p&gt;
+&lt;h2 id=&#34;architecturetools&#34;&gt;Architecture/tools&lt;/h2&gt;
+&lt;h3 id=&#34;github-pages-cloudflare&#34;&gt;GitHub Pages, CloudFlare&lt;/h3&gt;
+&lt;p&gt;So, currently, this blog uses &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt; which can be used as a
+free blog system. And I also use it with my custom domain and HTTPS
+with CloudFlare_.&lt;/p&gt;
+&lt;h3 id=&#34;pelican&#34;&gt;Pelican&lt;/h3&gt;
+&lt;p&gt;And I&amp;rsquo;m using pelican_ as a blog system which is really powerful and
+written by python. That means I can improve and fix if I need it. And
+&lt;a href=&#34;https://github.com/masayukig/masayukig.github.io/issues&#34;&gt;I&amp;rsquo;ve done it&lt;/a&gt; before.&lt;/p&gt;
+&lt;h3 id=&#34;branches&#34;&gt;Branches&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/masayukig/masayukig.github.io/issues&#34;&gt;Here&lt;/a&gt; is
+the repository of this blog. This has two main branches, one
+is master and the other is source. &lt;code&gt;master&lt;/code&gt; branch is for managing
+generated contents. &lt;code&gt;source&lt;/code&gt; branch is for managing source code such
+as blog post rst/md, imange, files, etc. So, the two branches are
+completely different. I feel this is a bit weird, but I couldn&amp;rsquo;t find
+a better solution so far. And It seems it works well. I don&amp;rsquo;t need to
+change the workflow.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Switched my blog to igawa.io</title>
+      <link>http://localhost:1313/posts/2017/11/migrated-my-blog-to-igawaio/</link>
+      <pubDate>Sun, 26 Nov 2017 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2017/11/migrated-my-blog-to-igawaio/</guid>
+      <description>&lt;p&gt;I changed my blog to my original domain. My blogs were split to some
+different domains due to my laziness. So I decided to merge them.&lt;/p&gt;
+&lt;p&gt;I was trying to change it to wordpress.com first. But it&amp;rsquo;s not my
+taste :-p So, I decided to use pelican_.&lt;/p&gt;
+&lt;p&gt;I actually had two blogs on Blogger(br.0r2.info) and github
+pages(afterstack.net). So I needed to export br.0r2.info data to merge
+github pages. And I also wanted to change the domain to use igawa.io_.&lt;/p&gt;
+&lt;p&gt;Firstly, I was trying to use wordpress.com, so I exported my blogger
+data, and imported it on wordpress. And next, I also exported the
+wordprss data, and I imported the data with using pelican-import_ like
+this.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ブログをBloggerにしてみた</title>
+      <link>http://localhost:1313/posts/2012/02/%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92blogger%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <pubDate>Mon, 27 Feb 2012 21:01:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/02/%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92blogger%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+      <description>&lt;p&gt;ブログをWordPressから、Bloggerにしてみた。&lt;/p&gt;
+&lt;p&gt;コンテンツの移行は、比較的簡単。
+(WordPress上でコンテンツをExportして、
+以下のサービスを使ってBloggerコンテンツに変換。
+BloggerでImportすればおKだった。
+&lt;a href=&#34;http://wordpress2blogger.appspot.com/&#34;&gt;http://wordpress2blogger.appspot.com/&lt;/a&gt; )&lt;/p&gt;
+&lt;p&gt;でも、Blogger上のURL形式は変更できなくて、
+「そっくりそのまま移行」というのは、難しそう。&lt;/p&gt;
+&lt;p&gt;しばらく、404を無視して、Googleの更新を待つか、
+２重にコンテンツを持つか、若干悩ましいところ&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

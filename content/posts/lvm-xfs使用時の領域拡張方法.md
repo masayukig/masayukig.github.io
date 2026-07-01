@@ -8,6 +8,9 @@ tags:
 - xfs
 draft: false
 disqus_identifier: 2008-12-14-lvm-xfsshi-yong-shi-noling-yu-kuo-zhang-fang-fa
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: LVM xfs使用時の領域拡張方法
 ---
 
 LVMは動的に領域を拡張できて便利なわけですが、ファイルシステムに、

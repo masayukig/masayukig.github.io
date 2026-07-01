@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-06-07-guo-nei-demohddda-zai-xi-dai-deng-chang
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 国内でもHDD搭載携帯登場
 ---
 
 [http://slashdot.jp/](http://slashdot.jp/article.pl?sid=05/06/06/1245227&topic=97)

@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-08-03-itunesgalinuxdedong-ku
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iTunesがLinuxで動く？
 ---
 
 [CNET

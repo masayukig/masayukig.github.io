@@ -7,6 +7,9 @@ tags:
 - Kindle
 draft: false
 disqus_identifier: 2010-08-09-kindledi-3shi-dai-fa-biao-tadashi-xian-zai-pin-qie-rezhong
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Kindle第3世代発表。ただし、現在品切れ中。
 ---
 
 ちょっと古い話になりますが、とりあえず。

@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-11-06-ddipoketsuto-zhong-yue-di-zhen-bei-zai-zhe-noyue-e-ji-ben-liao-nadowomian-chu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: DDIポケット、中越地震被災者の月額基本料などを免除
 ---
 
 [Impress

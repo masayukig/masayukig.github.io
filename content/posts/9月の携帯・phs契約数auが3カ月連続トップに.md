@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-10-09-9yue-noxi-dai-phsqi-yue-shu-auga3kayue-lian-sok-totsupuni
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 9月の携帯・PHS契約数、auが3カ月連続トップに
 ---
 
 [k-tai.impress.co.jp](http://k-tai.impress.co.jp/cda/article/news_toppage/25993.html)

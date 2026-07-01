@@ -10,6 +10,9 @@ tags:
 - talk
 draft: false
 disqus_identifier: 2018-06-23-opensuse-mini-summit-2018
+cover:
+  image: /images/covers/oss.png
+  alt: openSUSE mini Summit 2018
 ---
 
 I had [a talk](https://github.com/masayukig/cheap-cloud/blob/2018-06-23-opensuse-mini-summit/cheap_cloud.pdf) at the [openSUSE mini Summit 2018](https://opensuseja.connpass.com/event/86085/) about `my private

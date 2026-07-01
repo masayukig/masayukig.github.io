@@ -6,6 +6,9 @@ tags:
 - book
 draft: false
 disqus_identifier: 2012-07-20-ridaburukodo-womai-tsuta-readablecode
+cover:
+  image: https://masayukig.files.wordpress.com/2012/07/94f03-dsc02428.jpg?w=300
+  alt: picture
 ---
 
 [![picture](https://masayukig.files.wordpress.com/2012/07/94f03-dsc02428.jpg?w=300)

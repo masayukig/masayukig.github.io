@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-06-07-debian-gnulinux-31-sarge-ririsu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Debian GNU/Linux 3.1 "sarge" リリース!
 ---
 
 [http://slashdot.jp/](http://slashdot.jp/article.pl?sid=05/06/07/0050220&topic=24)

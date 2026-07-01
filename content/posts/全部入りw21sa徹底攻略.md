@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-09-14-quan-bu-ru-riw21sa-che-di-gong-lue
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 全部入り「W21SA」徹底攻略
 ---
 
 [ITmedia](http://www.itmedia.co.jp/mobile/articles/0409/10/news071.html)

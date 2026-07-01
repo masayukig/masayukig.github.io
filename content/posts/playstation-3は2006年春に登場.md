@@ -6,6 +6,9 @@ tags:
 - game
 draft: false
 disqus_identifier: 2005-05-17-playstation-3ha2006nian-chun-nideng-chang
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: PLAYSTATION 3は2006年春に登場
 ---
 
 <http://www.itmedia.co.jp/news/articles/0505/17/news019.html>

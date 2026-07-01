@@ -10,6 +10,9 @@ tags:
 - Linux
 draft: false
 disqus_identifier: 2009-01-13-jpeghua-xiang-nocuo-ying-ri-shi-woxiu-zheng-surufang-fa
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: jpeg画像の撮影日時を修正する方法
 ---
 
 いろいろな理由で、jpeg画像の撮影日時を修正したくなることがあると思います。

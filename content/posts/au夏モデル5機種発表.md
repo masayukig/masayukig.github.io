@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-05-23-auxia-moderu5ji-zhong-fa-biao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: au夏モデル(5機種)発表
 ---
 
 <http://www.itmedia.co.jp/mobile/articles/0505/23/news020.html>

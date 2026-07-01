@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Lion on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/lion/</link>
+    <description>Recent content in Lion on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 03 Aug 2011 06:11:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/lion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac OS X Lionでsshfs</title>
+      <link>http://localhost:1313/posts/2011/08/mac-os-x-lion%E3%81%A7sshfs/</link>
+      <pubDate>Wed, 03 Aug 2011 06:11:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/08/mac-os-x-lion%E3%81%A7sshfs/</guid>
+      <description>&lt;p&gt;Mac OS X
+Lionでsshfsを使おうと思い、portでsshfs-guiインストールを行ったところ、
+以下の様なエラーが出て、インストールに失敗しました。
+&lt;a href=&#34;https://gist.github.com/1121166.js?file=sshfs-gui-install-failed-on-Mac-OS-X-Lion.log&#34;&gt;https://gist.github.com/1121166.js?file=sshfs-gui-install-failed-on-Mac-OS-X-Lion.log&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ググってみたところ、以下の情報を得たので、やってみました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://inabu.asia/monooki/357/2011/07/31/&#34;&gt;OSX
+Lionでは、タダじゃあsshfsが動かないみたい。&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://crysis-fs.blogspot.com/2011/07/ubuntumacosx-lionsshfs.html&#34;&gt;ubuntuやmac(OSX
+Lion)でsshfs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;というわけで、
+&lt;a href=&#34;http://www.tuxera.com/mac/macfuse-core-10.5-2.1.9.dmg&#34;&gt;http://www.tuxera.com/mac/macfuse-core-10.5-2.1.9.dmg&lt;/a&gt;
+を、ダウンロード＆インストール後、
+&lt;a href=&#34;https://gist.github.com/1121166.js?file=static-binary-download.log&#34;&gt;https://gist.github.com/1121166.js?file=static-binary-download.log&lt;/a&gt;
+の様な感じで実行し、うまくマウントできました。（warningが出てるけど無視w）&lt;/p&gt;
+&lt;p&gt;まだ、ハードな使用はしていないので、それは、後ほど試します。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sophos Anti-Virus for Mac Home Edition をインストールしてみた</title>
+      <link>http://localhost:1313/posts/2011/07/sophos-anti-virus-for-mac-home-edition-%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <pubDate>Tue, 26 Jul 2011 05:30:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/07/sophos-anti-virus-for-mac-home-edition-%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.sophos.co.jp/products/free-tools/free-mac-anti-virus/&#34;&gt;Sophos Anti-Virus for Mac Home
+Edition&lt;/a&gt;
+をインストールしてみました。&lt;/p&gt;
+&lt;p&gt;インストールは特に難しいことはなく、&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;上記リンクをクリックし、
+以下の「無償ダウンロード」からインストールファイルをダウンロードします。
+&lt;a href=&#34;https://picasaweb.google.com/lh/photo/Px8X6cv1epbS6XDgVzHP7w?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh4.googleusercontent.com/-UlBnlgfGsTg/TjfqpW1zKaI/AAAAAAAAY44/QwNcHq1kuPY/s288/5974970783_fa266bbeb6_o.png&#34;&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ダウンロードしたら、ファイルをダブルクリック等でマウントし、以下のWindowが表示されたら、
+「Sophos Anti-Virus Home Edition.mpkg」をダブルクリックし、
+インストーラを起動。
+&lt;a href=&#34;https://picasaweb.google.com/lh/photo/SZ33nrkj_IoBP1V_PRzATA?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh5.googleusercontent.com/-bpC7CQQ0cqw/TjfqpEZhB7I/AAAAAAAAY40/kfsMT4_OIck/s288/5975505618_e1dc43c0d4_o.jpeg&#34;&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;あとは、インストーラに従い、インストールするだけです。
+&lt;a href=&#34;https://picasaweb.google.com/lh/photo/ZFg4GdS20nPdClYlShTT7w?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh4.googleusercontent.com/-y_tN9b_Hq8Q/TjfqpH9EqFI/AAAAAAAAY4w/v6epY24NKU0/s288/5975520162_97f9d9c624_o.jpeg&#34;&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Sophosはウイルス対策ソフト(セキュリティ)会社として、有名だと思いますし、
+無料なので、ひとまずインストールしておいて損は無いと思います。&lt;/p&gt;
+&lt;p&gt;参考にした記事：
+&lt;a href=&#34;http://www.lifehacker.jp/2011/05/110516antivirusmac.html&#34;&gt;Macユーザーに贈る、そろそろ入れておくといいアンチウィルス・マルウェアソフト6選&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lionで 3rd party なNASではTimeMachineが動かない</title>
+      <link>http://localhost:1313/posts/2011/07/lion%E3%81%A7-3rd-party-%E3%81%AAnas%E3%81%A7%E3%81%AFtimemachine%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/</link>
+      <pubDate>Sat, 23 Jul 2011 05:33:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/07/lion%E3%81%A7-3rd-party-%E3%81%AAnas%E3%81%A7%E3%81%AFtimemachine%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/</guid>
+      <description>&lt;p&gt;昨日、Lionにアップデートしましたが、以下の様なエラーがでて
+Time Machineでバックアップができなくなりました。
+&lt;a href=&#34;https://picasaweb.google.com/lh/photo/4ufmuZEyhHGTyu3bVo7Ysg?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh5.googleusercontent.com/-eNFciYAVxnk/Tjr6xhXwX5I/AAAAAAAAg6M/p3ABUDEbpv8/s288/5964468227_f23fe1aabe_o.png&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ググってみたところ、いくつかの情報が得られました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://slashdot.jp/apple/comments.pl?sid=539273&amp;amp;cid=1989826&#34;&gt;http://slashdot.jp/apple/comments.pl?sid=539273&amp;amp;cid=1989826&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://amiens2009.tumblr.com/post/7886573873/timemachine-apple-nas-lion&#34;&gt;http://amiens2009.tumblr.com/post/7886573873/timemachine-apple-nas-lion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;なお、今回のバックアップ失敗では、以下の様なログが/var/log/syslog.log
+に出力されていました。
+&lt;a href=&#34;https://gist.github.com/1100364.js?file=Time-Machine-backup-failed-system.log&#34;&gt;https://gist.github.com/1100364.js?file=Time-Machine-backup-failed-system.log&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mac OS X Lion インストールしました！</title>
+      <link>http://localhost:1313/posts/2011/07/mac-os-x-lion-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <pubDate>Thu, 21 Jul 2011 05:43:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/07/mac-os-x-lion-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <description>&lt;p&gt;というわけで、Mac OS X Lionをインストールしました。&lt;/p&gt;
+&lt;p&gt;今のところ、トラックパッドによるスクロールが、上下逆さまになったことに慣れるのに必死ですw
+(もちろん、設定で変更可能ですが、この方がiPad/iPhoneみたいで、きっと良いんだと思うことにします)&lt;/p&gt;
+&lt;p&gt;システム環境設定の「トラックパッド」のところ
+&lt;a href=&#34;https://picasaweb.google.com/lh/photo/FGVjJpyGSCztyBKrzx4zXA?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh6.googleusercontent.com/-f9NaPsKenmo/Tjr6xcCGivI/AAAAAAAAg6M/GW4ygmcTaqw/s288/5958547975_802fe61e7b_o.png&#34;&gt;
+&lt;/a&gt;
+では、
+どのようなジェスチャーが使えるのか？がわかるので、便利です。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lion キター！</title>
+      <link>http://localhost:1313/posts/2011/07/lion-%E3%82%AD%E3%82%BF%E3%83%BC/</link>
+      <pubDate>Thu, 21 Jul 2011 04:57:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/07/lion-%E3%82%AD%E3%82%BF%E3%83%BC/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://picasaweb.google.com/lh/photo/RsxU2CRrWg6N7Bxo9pQnFw?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh5.googleusercontent.com/-s0MrqtQ3NvE/Tjr6wxPPTII/AAAAAAAAg6M/TSiEM5ZQ2n8/s400/5958402445_f5f0496bfb_o.png&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mac OS X Lionがついに発売となりました！
+と、ともに、&lt;a href=&#34;http://www.apple.com/jp/macbookair/&#34;&gt;新しいMacBook
+Airも発売になっています&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;現在、Lionをダウンロード中＆インストール中。
+再起動を促された
+&lt;a href=&#34;https://picasaweb.google.com/lh/photo/I4CMKqLfOFFu5VL_qd2fmg?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh4.googleusercontent.com/-Oj9GFPz0yvs/Tjr6xObBA4I/AAAAAAAAg6M/xiIzf5FTfFU/s288/5958413733_0a2bd90341_o.png&#34;&gt;
+&lt;/a&gt;
+ので、詳細は後ほど。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mac ソフトウェアアップデート来てた( Lion へのアップグレードのため)</title>
+      <link>http://localhost:1313/posts/2011/07/mac-%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E6%9D%A5%E3%81%A6%E3%81%9F-lion-%E3%81%B8%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%AE%E3%81%9F%E3%82%81/</link>
+      <pubDate>Fri, 01 Jul 2011 05:29:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/07/mac-%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E6%9D%A5%E3%81%A6%E3%81%9F-lion-%E3%81%B8%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%AE%E3%81%9F%E3%82%81/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/31362181@N08/5888361721/&#34; title=&#34;Software update for upgrading to Lion&#34;&gt;&lt;img alt=&#34;Software update for upgrading to\nLion&#34; loading=&#34;lazy&#34; src=&#34;http://farm7.static.flickr.com/6060/5888361721_4165932c1c_m.jpg&#34;&gt;{.alignnone}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mac のソフトウェアアップデートが来てました。
+いくつか更新項目はありますが、
+「Mac OS X Lionへのアップグレードを Mac App Store
+からできるようになります」
+というのが大きなところだと思います。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.apple.com/jp/macosx/&#34;&gt;http://www.apple.com/jp/macosx/&lt;/a&gt;によると、
+Lion は７月発売予定 価格は 2,600円
+ということなのですが、待ち遠しいですね。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

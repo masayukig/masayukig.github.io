@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2004-09-15-firefoxburauza-tsuinibaziyon10woririsuhe
+cover:
+  image: /images/covers/oss.png
+  alt: Firefoxブラウザ、ついにバージョン1.0をリリースへ
 ---
 
 [CNET

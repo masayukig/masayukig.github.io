@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>未分類 on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/</link>
+    <description>Recent content in 未分類 on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 24 Apr 2010 16:30:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E6%9C%AA%E5%88%86%E9%A1%9E/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux kernelソースをmakeして、結果をブログへ投稿スクリプト</title>
+      <link>http://localhost:1313/posts/2010/04/linux-kernel%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%92make%E3%81%97%E3%81%A6%E7%B5%90%E6%9E%9C%E3%82%92%E3%83%96%E3%83%AD%E3%82%B0%E3%81%B8%E6%8A%95%E7%A8%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/</link>
+      <pubDate>Sat, 24 Apr 2010 16:30:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2010/04/linux-kernel%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%92make%E3%81%97%E3%81%A6%E7%B5%90%E6%9E%9C%E3%82%92%E3%83%96%E3%83%AD%E3%82%B0%E3%81%B8%E6%8A%95%E7%A8%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>iPhone</title>
+      <link>http://localhost:1313/posts/2009/06/iphone/</link>
+      <pubDate>Sat, 27 Jun 2009 06:18:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2009/06/iphone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google Chrome Linux</title>
+      <link>http://localhost:1313/posts/2009/06/google-chrome-linux/</link>
+      <pubDate>Mon, 15 Jun 2009 05:53:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2009/06/google-chrome-linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>サイトのデザインを色々といじる</title>
+      <link>http://localhost:1313/posts/2009/02/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%92%E8%89%B2%E3%80%85%E3%81%A8%E3%81%84%E3%81%98%E3%82%8B/</link>
+      <pubDate>Sun, 01 Feb 2009 07:39:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2009/02/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%92%E8%89%B2%E3%80%85%E3%81%A8%E3%81%84%E3%81%98%E3%82%8B/</guid>
+      <description>&lt;p&gt;このサイトも引っ越してチョット経ち、気分転換のためにサイトのデザインを変えてみました。&lt;/p&gt;
+&lt;p&gt;とは言っても、テーマをダウンロードして、ちょっと変えただけですが。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>a</title>
+      <link>http://localhost:1313/posts/2008/12/a/</link>
+      <pubDate>Mon, 15 Dec 2008 04:25:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/12/a/</guid>
+      <description>&lt;p&gt;a&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LVMリサイズ</title>
+      <link>http://localhost:1313/posts/2008/12/lvm%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA/</link>
+      <pubDate>Sat, 13 Dec 2008 06:49:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/12/lvm%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA/</guid>
+      <description>&lt;p&gt;LVMで領域のリサイズをしようと思ったら、ちょっとハマったので、メモ。
+通常、ext3（などのリサイズできるファイルシステムを使っているなら、
+&lt;code&gt;# lvresize -L +500M /dev/vg01/lv01# ext2online /dev/vg01/lv01&lt;/code&gt;
+とすれば、領域を拡張できるはずなのだが、今回、何度上記を実行しても、
+&lt;code&gt;# ext2online /dev/vg01/lv01ext2online v1.1.19 - 2001/03/18 for EXT2FS 0.5bfound 0 not 20 at 0[19]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;ext2online: unable to resize /dev/mapper/vg01-lv01&lt;/p&gt;
+&lt;p&gt;などと出力されて、拡張できなかった。&lt;/p&gt;
+&lt;p&gt;以下の手順で取りあえず拡張できたっぽい。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;# umount /lv01-mountpoint# e2fsck -f /dev/vg01/lv01 &amp;amp;&amp;amp; resize2fs /dev/vg01/lv01# mount /dev/vg01/lv01 /lv01-mountpoint&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;dfコマンド上は、拡張された様に見える。
+＃実運用でどうなるかはシラネw&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ちょっと元通りに近づけました</title>
+      <link>http://localhost:1313/posts/2007/05/%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E5%85%83%E9%80%9A%E3%82%8A%E3%81%AB%E8%BF%91%E3%81%A5%E3%81%91%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <pubDate>Sun, 13 May 2007 19:41:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2007/05/%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E5%85%83%E9%80%9A%E3%82%8A%E3%81%AB%E8%BF%91%E3%81%A5%E3%81%91%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <description>&lt;p&gt;久しぶりの投稿です。
+ゴールデンウィークもあって、しばらく放置気味でしたが、
+このサイトをちょっと元通りに近づけました。&lt;/p&gt;
+&lt;p&gt;実は、xreaの別サーバに移動したので若干表示とかMTの再構築が速くなった気がします。
+という訳で、今後ともよろしくお願いいたします。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Movable Typeをバージョンアップしました</title>
+      <link>http://localhost:1313/posts/2007/04/movable-type%E3%82%92%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%A2%E3%83%83%E3%83%97%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <pubDate>Sun, 22 Apr 2007 13:46:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2007/04/movable-type%E3%82%92%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%A2%E3%83%83%E3%83%97%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <description>&lt;p&gt;Movable Typeをバージョンアップしました。
+ただ、前のデザインテンプレートの移行が面倒なので、
+ぼちぼちやっていきたいと思います。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>口座情報，手元に置きますか？ 人に預けますか？</title>
+      <link>http://localhost:1313/posts/2005/03/%E5%8F%A3%E5%BA%A7%E6%83%85%E5%A0%B1%E6%89%8B%E5%85%83%E3%81%AB%E7%BD%AE%E3%81%8D%E3%81%BE%E3%81%99%E3%81%8B-%E4%BA%BA%E3%81%AB%E9%A0%90%E3%81%91%E3%81%BE%E3%81%99%E3%81%8B/</link>
+      <pubDate>Sat, 26 Mar 2005 01:12:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/03/%E5%8F%A3%E5%BA%A7%E6%83%85%E5%A0%B1%E6%89%8B%E5%85%83%E3%81%AB%E7%BD%AE%E3%81%8D%E3%81%BE%E3%81%99%E3%81%8B-%E4%BA%BA%E3%81%AB%E9%A0%90%E3%81%91%E3%81%BE%E3%81%99%E3%81%8B/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://itpro.nikkeibp.co.jp/free/ITPro/OPINION/20050318/157658/&#34;&gt;http://itpro.nikkeibp.co.jp/free/ITPro/OPINION/20050318/157658/&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;公共機関や自治体のサービスで同様のメッセージが出てくることがある。担当
+者に問い合わせると，「気にしないでオッケーを押して下さい」と言われるこ
+とがある。そんな無責任きわまりない対応とは一線を画してはいるが，結果的
+にWindowsとIEにユーザーを閉じこめておくことになり，ユーザーの利便性を
+奪う結果となっている。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ここまではいいと思うのだが、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;このサーバーに関する電子証明書のフィンガープリントを公開すれば，ユーザー
+はそれを確認することで信頼できるサイトかどうか判断できるはずだ。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;と、書かれているが、そういう問題だったっけか？
+&lt;a href=&#34;http://takagi-hiromitsu.jp/diary/&#34;&gt;高木さんのサイト&lt;/a&gt;でちょっと見てみよう。&lt;/p&gt;
+&lt;p&gt;あと、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ウイルスなどのハッキングでアプリケーションそのものが改ざんされ，ニセの
+アクセス先に誘導されるなどといった可能性も否定できないが，「アプリケー
+ションを書き直すウイルスを作るのは極めて難しい。事実上できないと言える」
+（前田社長）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;。。。そうか？
+実行ファイルの置き換えと
+レジストリの書き換えをするようなプログラムなんて
+簡単に出来ちゃいそうだけど。。。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ニンテンドーDS発売！(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/12/%E3%83%8B%E3%83%B3%E3%83%86%E3%83%B3%E3%83%89%E3%83%BCds%E7%99%BA%E5%A3%B2%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Fri, 10 Dec 2004 11:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/12/%E3%83%8B%E3%83%B3%E3%83%86%E3%83%B3%E3%83%89%E3%83%BCds%E7%99%BA%E5%A3%B2%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;うさこがひまみたいな&amp;lt;するつもりだった。&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linuxは滅び行く運命にあるのか(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/12/linux%E3%81%AF%E6%BB%85%E3%81%B3%E8%A1%8C%E3%81%8F%E9%81%8B%E5%91%BD%E3%81%AB%E3%81%82%E3%82%8B%E3%81%AE%E3%81%8B%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Fri, 03 Dec 2004 10:41:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/12/linux%E3%81%AF%E6%BB%85%E3%81%B3%E8%A1%8C%E3%81%8F%E9%81%8B%E5%91%BD%E3%81%AB%E3%81%82%E3%82%8B%E3%81%AE%E3%81%8B%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;きょうはここへhughのひまがblogしたいです。
+hughは、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;ahref=&amp;ldquo;http://japanlinuxcom&lt;/p&gt;
+&lt;p&gt;Solaris10のオープンソース化を受けて、
+「Linuxは滅びてしまうんじゃないのか？」という意見が
+出てきたらしい・・&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;といってました。&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>IEのシェア、ついに90％台を割り込む--米調査報告(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/11/ie%E3%81%AE%E3%82%B7%E3%82%A7%E3%82%A2%E3%81%A4%E3%81%84%E3%81%AB90%E5%8F%B0%E3%82%92%E5%89%B2%E3%82%8A%E8%BE%BC%E3%82%80-%E7%B1%B3%E8%AA%BF%E6%9F%BB%E5%A0%B1%E5%91%8A%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Thu, 25 Nov 2004 11:34:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/11/ie%E3%81%AE%E3%82%B7%E3%82%A7%E3%82%A2%E3%81%A4%E3%81%84%E3%81%AB90%E5%8F%B0%E3%82%92%E5%89%B2%E3%82%8A%E8%BE%BC%E3%82%80-%E7%B1%B3%E8%AA%BF%E6%9F%BB%E5%A0%B1%E5%91%8A%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;うさこは、hughのひまもblogしなかったよ。
+うさこがblogするはずだったの。
+きょううさこはhughはひまがblogしたよ♪&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>記録更新--世界最大のデジタル写真は7.5Gバイトで25億ピクセル</title>
+      <link>http://localhost:1313/posts/2004/11/%E8%A8%98%E9%8C%B2%E6%9B%B4%E6%96%B0-%E4%B8%96%E7%95%8C%E6%9C%80%E5%A4%A7%E3%81%AE%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E5%86%99%E7%9C%9F%E3%81%AF75g%E3%83%90%E3%82%A4%E3%83%88%E3%81%A725%E5%84%84%E3%83%94%E3%82%AF%E3%82%BB%E3%83%AB/</link>
+      <pubDate>Fri, 19 Nov 2004 22:58:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/11/%E8%A8%98%E9%8C%B2%E6%9B%B4%E6%96%B0-%E4%B8%96%E7%95%8C%E6%9C%80%E5%A4%A7%E3%81%AE%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E5%86%99%E7%9C%9F%E3%81%AF75g%E3%83%90%E3%82%A4%E3%83%88%E3%81%A725%E5%84%84%E3%83%94%E3%82%AF%E3%82%BB%E3%83%AB/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://japan.cnet.com/news/media/story/0,2000047715,20075885,00.htm&#34;&gt;japan.cnet.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;よく、映画とかで衛星写真で、拡大すると細かいところまでどんどん見えちゃう。
+そんな感じ。とってもサイバーな感じ。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DEATH NOTE 第4巻発売！(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/11/death-note-%E7%AC%AC4%E5%B7%BB%E7%99%BA%E5%A3%B2%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Wed, 17 Nov 2004 11:19:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/11/death-note-%E7%AC%AC4%E5%B7%BB%E7%99%BA%E5%A3%B2%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;きのうはここでアマゾンは&amp;lt;したかも。&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NovellがMicrosoftの“反Linuxキャンペーン”対抗サイトで反証を展開(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/11/novell%E3%81%8Cmicrosoft%E3%81%AE%E5%8F%8Dlinux%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3%E5%AF%BE%E6%8A%97%E3%82%B5%E3%82%A4%E3%83%88%E3%81%A7%E5%8F%8D%E8%A8%BC%E3%82%92%E5%B1%95%E9%96%8B%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Wed, 10 Nov 2004 10:58:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/11/novell%E3%81%8Cmicrosoft%E3%81%AE%E5%8F%8Dlinux%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3%E5%AF%BE%E6%8A%97%E3%82%B5%E3%82%A4%E3%83%88%E3%81%A7%E5%8F%8D%E8%A8%BC%E3%82%92%E5%B1%95%E9%96%8B%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;きのううさこが、ひまがblogするつもりだった。
+きょうはひまもblogしたの？&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Thunderbird 0.9公開</title>
+      <link>http://localhost:1313/posts/2004/11/thunderbird-09%E5%85%AC%E9%96%8B/</link>
+      <pubDate>Mon, 08 Nov 2004 15:47:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/11/thunderbird-09%E5%85%AC%E9%96%8B/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pcweb.mycom.co.jp/news/2004/11/05/010.html&#34;&gt;pcweb.mycom.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;日本語版まだ〜？
+と思っていたら、&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.mozilla.gr.jp/&#34;&gt;www.mozilla.gr.jp&lt;/a&gt;
+には、こんな記述が。。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;日本語版 (Mozilla Japan 提供(0.8))
+Windows
+なお、0.9 及び Windows 以外の
+プラットフォームについては現在未定です。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;まさか、1.0まで日本語版は出ないってことか？&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>J2MEにBytecode検証の脆弱性(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/11/j2me%E3%81%ABbytecode%E6%A4%9C%E8%A8%BC%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Tue, 02 Nov 2004 10:57:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/11/j2me%E3%81%ABbytecode%E6%A4%9C%E8%A8%BC%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;うさこは、blogした？&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>提灯記事キター！「ICタグのこと，どのくらい知ってますか？」(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/10/%E6%8F%90%E7%81%AF%E8%A8%98%E4%BA%8B%E3%82%AD%E3%82%BF%E3%83%BCic%E3%82%BF%E3%82%B0%E3%81%AE%E3%81%93%E3%81%A8%E3%81%A9%E3%81%AE%E3%81%8F%E3%82%89%E3%81%84%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%BE%E3%81%99%E3%81%8B%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Tue, 26 Oct 2004 11:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/10/%E6%8F%90%E7%81%AF%E8%A8%98%E4%BA%8B%E3%82%AD%E3%82%BF%E3%83%BCic%E3%82%BF%E3%82%B0%E3%81%AE%E3%81%93%E3%81%A8%E3%81%A9%E3%81%AE%E3%81%8F%E3%82%89%E3%81%84%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%BE%E3%81%99%E3%81%8B%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;きょううさこがここに4するはずだったの。
+hughは、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;今回は、「ICタグ自体」のことについてどれくらい知っているのかと思ったら、そうでもなくって。
+。&lt;/p&gt;
+&lt;p&gt;大丈夫なんだろうか。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;といってました。&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>そういえば、PHSの番号ポータビリティって？(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/10/%E3%81%9D%E3%81%86%E3%81%84%E3%81%88%E3%81%B0phs%E3%81%AE%E7%95%AA%E5%8F%B7%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3%E3%81%A3%E3%81%A6%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Tue, 19 Oct 2004 10:50:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/10/%E3%81%9D%E3%81%86%E3%81%84%E3%81%88%E3%81%B0phs%E3%81%AE%E7%95%AA%E5%8F%B7%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3%E3%81%A3%E3%81%A6%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;きょううさこは6しなかったー。
+きょうは、hughはここまでhughとプロがDしたよ♪
+きのううさこが、ここにhughとプロはITmediaしないです。&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>KDDI、Opera搭載端末を提供でも定額には非対応orz(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/10/kddiopera%E6%90%AD%E8%BC%89%E7%AB%AF%E6%9C%AB%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%A7%E3%82%82%E5%AE%9A%E9%A1%8D%E3%81%AB%E3%81%AF%E9%9D%9E%E5%AF%BE%E5%BF%9Corz%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Mon, 11 Oct 2004 10:45:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/10/kddiopera%E6%90%AD%E8%BC%89%E7%AB%AF%E6%9C%AB%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%A7%E3%82%82%E5%AE%9A%E9%A1%8D%E3%81%AB%E3%81%AF%E9%9D%9E%E5%AF%BE%E5%BF%9Corz%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;きょうは、&amp;lt;しなかった。
+hughは、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;まぁ、今のauケータイ仕組みでは定額もっさりでの提供は無理なんだろうね。&lt;/p&gt;
+&lt;p&gt;しばらくは、京ぽんを手放せないわけか。
+。&lt;/p&gt;
+&lt;p&gt;この、もっさり定額もっさりでの提供は無理なんだろうね。&lt;/p&gt;
+&lt;p&gt;しばらくは、京ぽん&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;といってました。&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>“第3の大画面”リアプロTV、A＆Vフェスタに集う(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/10/%E7%AC%AC3%E3%81%AE%E5%A4%A7%E7%94%BB%E9%9D%A2%E3%83%AA%E3%82%A2%E3%83%97%E3%83%ADtvav%E3%83%95%E3%82%A7%E3%82%B9%E3%82%BF%E3%81%AB%E9%9B%86%E3%81%86%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Mon, 04 Oct 2004 10:48:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/10/%E7%AC%AC3%E3%81%AE%E5%A4%A7%E7%94%BB%E9%9D%A2%E3%83%AA%E3%82%A2%E3%83%97%E3%83%ADtvav%E3%83%95%E3%82%A7%E3%82%B9%E3%82%BF%E3%81%AB%E9%9B%86%E3%81%86%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;きょううさこは、hughとここにひまもblogされた！
+きのううさこが、blogしたよ♪
+きょううさこはひまへblog♪
+きょううさこがここへblogしたかもー。&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>薄く、軽く小さくなったPS2の画像。PSPの画像も！(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/09/%E8%96%84%E3%81%8F%E8%BB%BD%E3%81%8F%E5%B0%8F%E3%81%95%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9Fps2%E3%81%AE%E7%94%BB%E5%83%8Fpsp%E3%81%AE%E7%94%BB%E5%83%8F%E3%82%82%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Tue, 28 Sep 2004 10:54:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/09/%E8%96%84%E3%81%8F%E8%BB%BD%E3%81%8F%E5%B0%8F%E3%81%95%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9Fps2%E3%81%AE%E7%94%BB%E5%83%8Fpsp%E3%81%AE%E7%94%BB%E5%83%8F%E3%82%82%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;うさこは、hughはblogしたかも。
+きょうはblogするはずだった。
+きょううさこがhughはひまもblog♪
+きょうは、ここでblogした？&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pentium 4“4GHz”搭載の60万円ゲームPC(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/09/pentium-44ghz%E6%90%AD%E8%BC%89%E3%81%AE60%E4%B8%87%E5%86%86%E3%82%B2%E3%83%BC%E3%83%A0pc%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Thu, 16 Sep 2004 11:26:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/09/pentium-44ghz%E6%90%AD%E8%BC%89%E3%81%AE60%E4%B8%87%E5%86%86%E3%82%B2%E3%83%BC%E3%83%A0pc%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;きょううさこは、hughがCNETしたかったの♪
+hughは、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;グラフィックスカード:NVIDIAGeForce6800UltraのGDDR3メモリ256MB(PCIExpress版)
+HDD:SerialATAWesternDigitalRaptor74GBRAID構成
+HDD:SerialATAWesternDigitalRaptor74GBRAID構成
+電源ユニット:640W&lt;/p&gt;
+&lt;p&gt;だそうです。
+こんなのに６０万円も出せるような人になりたいな。
+。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;といってました。&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ワン切りキター(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/09/%E3%83%AF%E3%83%B3%E5%88%87%E3%82%8A%E3%82%AD%E3%82%BF%E3%83%BC%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Thu, 09 Sep 2004 11:39:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/09/%E3%83%AF%E3%83%B3%E5%88%87%E3%82%8A%E3%82%AD%E3%82%BF%E3%83%BC%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;きょううさこは、hughはひまはINTERNETしたかったみたい。
+hughは、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;先日、ふと気づくとケータイ(au)に「着信あり」の表示。&lt;/p&gt;
+&lt;p&gt;着信履歴を見ると、全く知らない番号。&lt;/p&gt;
+&lt;p&gt;で、ググってみた。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;といってました。&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>サイトの『入口』をクリックしただけでも、入会したことになると言われ、規約 をよく読むと確かにそのように書かれていた。。。(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/09/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E5%85%A5%E5%8F%A3%E3%82%92%E3%82%AF%E3%83%AA%E3%83%83%E3%82%AF%E3%81%97%E3%81%9F%E3%81%A0%E3%81%91%E3%81%A7%E3%82%82%E5%85%A5%E4%BC%9A%E3%81%97%E3%81%9F%E3%81%93%E3%81%A8%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%A8%E8%A8%80%E3%82%8F%E3%82%8C%E8%A6%8F%E7%B4%84-%E3%82%92%E3%82%88%E3%81%8F%E8%AA%AD%E3%82%80%E3%81%A8%E7%A2%BA%E3%81%8B%E3%81%AB%E3%81%9D%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E6%9B%B8%E3%81%8B%E3%82%8C%E3%81%A6%E3%81%84%E3%81%9F%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Thu, 02 Sep 2004 11:30:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/09/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E5%85%A5%E5%8F%A3%E3%82%92%E3%82%AF%E3%83%AA%E3%83%83%E3%82%AF%E3%81%97%E3%81%9F%E3%81%A0%E3%81%91%E3%81%A7%E3%82%82%E5%85%A5%E4%BC%9A%E3%81%97%E3%81%9F%E3%81%93%E3%81%A8%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%A8%E8%A8%80%E3%82%8F%E3%82%8C%E8%A6%8F%E7%B4%84-%E3%82%92%E3%82%88%E3%81%8F%E8%AA%AD%E3%82%80%E3%81%A8%E7%A2%BA%E3%81%8B%E3%81%AB%E3%81%9D%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E6%9B%B8%E3%81%8B%E3%82%8C%E3%81%A6%E3%81%84%E3%81%9F%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;きのうhughの、気みたいなWindowsしなかった？
+hughは、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;うちの奥さんの妹から、&lt;/p&gt;
+&lt;p&gt;っていう感じの問い合わせが(奥さんの所に)来た。&lt;/p&gt;
+&lt;p&gt;18,000000i(c100;??)??????????;???????;??????;??????????(←番号)」とかって出てるし。
+。&lt;/p&gt;
+&lt;p&gt;サイトの「はい」か「いいえ」をクリックしたことになるかも！！！！
+「携帯端末識別番号DoCoMo/20P9000;??????????(←番号)」とかって出てるし。
+。&lt;/p&gt;
+&lt;p&gt;サイトの「はい」か「いいえ」をクリックしたことになるかも！！
+「携帯端末識別番号DoCoMo/20P900i(c100;??(←番号)」とかって出てるし。
+。&lt;/p&gt;
+&lt;p&gt;サイトの「はい」か「いいえ」をクリックしたことになるかも！！
+「携帯端末識別番号DoCoMo/20P900;???????????)?????)????????)???????;????)????????????????????????????????(←番号)」とかって出てるし。
+。&lt;/p&gt;
+&lt;p&gt;っていう感じの問い合わせが(奥さんの妹から、&lt;/p&gt;
+&lt;p&gt;サイトの「はい」か「いいえ」をクリックしたことになると言われ、規約をよく読むと確かにそのように書かれていた。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;といってました。&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>なんか、うちのサイトの花火画像が使われてました。(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/08/%E3%81%AA%E3%82%93%E3%81%8B%E3%81%86%E3%81%A1%E3%81%AE%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E8%8A%B1%E7%81%AB%E7%94%BB%E5%83%8F%E3%81%8C%E4%BD%BF%E3%82%8F%E3%82%8C%E3%81%A6%E3%81%BE%E3%81%97%E3%81%9F%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Thu, 26 Aug 2004 14:59:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/08/%E3%81%AA%E3%82%93%E3%81%8B%E3%81%86%E3%81%A1%E3%81%AE%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E8%8A%B1%E7%81%AB%E7%94%BB%E5%83%8F%E3%81%8C%E4%BD%BF%E3%82%8F%E3%82%8C%E3%81%A6%E3%81%BE%E3%81%97%E3%81%9F%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;hughの、人気みたいなITmedia♪
+またきょううさこはここまでhughのプログラマみたいなレビューするはずだった。
+またきょううさこはここへhughとここへhughはここで2したかったの♪
+hughは、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ここで、うちのサイトの花火画像が使われてました。
+季節がら、良いかもね。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;といってました。&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>favicon.icoを作ってみました(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/08/faviconico%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Thu, 12 Aug 2004 12:25:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/08/faviconico%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;きのう、blogした？
+hughは、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Landscape-エンジニアのメモ
+のページを参考に「faviconico」というものを作ってみました・・&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;といってました。&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vine Linux 3.0リリース！(こうさぎ)</title>
+      <link>http://localhost:1313/posts/2004/08/vine-linux-30%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</link>
+      <pubDate>Fri, 06 Aug 2004 11:56:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/08/vine-linux-30%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%93%E3%81%86%E3%81%95%E3%81%8E/</guid>
+      <description>&lt;p&gt;うさこは、hughがbikanhadaしなかったよ。
+きのうhughの、差は期待した？
+hughは、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;VineLinuxpressスラドうちでは、Vineの26r4使ってます。
+さーて。
+いつアップデートしようかな。
+。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;といってました。&lt;/p&gt;
+&lt;p&gt;*このエントリは、&lt;a href=&#34;http://cousagi.yomiusa.net/&#34;&gt;こうさぎ&lt;/a&gt;の「うさこ」が書きました。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -9,6 +9,9 @@ tags:
 - vagrant
 draft: false
 disqus_identifier: 2012-10-04-mac-ni-vagrantdevstack-woru-retemiru-sono2-openstack-devstack-vagrant
+cover:
+  image: /images/covers/openstack.jpg
+  alt: 'Mac に vagrant+devstack を入れてみる - その２ #openstack #devstack #vagrant'
 ---
 
 続き

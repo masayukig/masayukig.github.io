@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-08-20-2chfa-mona-os-zuo-zhe-gahatenanilai-tali-you
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 2ch発「Mona OS」作者がはてなに来た理由
 ---
 
 [www.itmedia.co.jp](http://www.itmedia.co.jp/news/articles/0508/19/news029.html)

@@ -7,6 +7,9 @@ tags:
 - Kindle
 draft: false
 disqus_identifier: 2010-07-17-kindle-kabawozi-zuo-shitemita-kindle
+cover:
+  image: http://farm5.static.flickr.com/4116/4796875727_3ec65c8249.jpg
+  alt: 単なるノートカバーかと見せかけといて
 ---
 
 Kindle のカバーを自作してみた。

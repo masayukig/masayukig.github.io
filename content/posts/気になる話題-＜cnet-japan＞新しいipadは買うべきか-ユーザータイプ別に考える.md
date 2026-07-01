@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-15-qi-ninaruhua-ti-cnet-japanxin-shiiipad-hamai-ubekika-yuzataipubie-nikao-eru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: '気になる話題: ＜CNET Japan＞新しい「iPad」は買うべきか--ユーザータイプ別に考える'
 ---
 
 気になる話題:

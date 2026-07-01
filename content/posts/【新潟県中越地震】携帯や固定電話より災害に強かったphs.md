@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-10-29-xin-xi-xian-zhong-yue-di-zhen-xi-dai-yagu-ding-dian-hua-yorizai-hai-niqiang-katsutaphs
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 【新潟県中越地震】携帯や固定電話より災害に強かったPHS
 ---
 
 [ITPro](http://itpro.nikkeibp.co.jp/free/NCC/NEWS/20041028/151844/)

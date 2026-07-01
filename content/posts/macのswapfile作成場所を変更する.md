@@ -5,6 +5,9 @@ slug: macのswapfile作成場所を変更する
 categories:
 - Uncategorized
 draft: true
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Macのswapfile作成場所を変更する
 ---
 
 はじめに

@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-10-25-ddipoketsutonowebsabahaiplanetjin-hasun-java-web-server
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: DDIポケットのWebサーバはiPlanet?(今はSun Java Web Server?)
 ---
 
 [DDIpocketのページ](http://www.ddipocket.co.jp/)

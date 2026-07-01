@@ -5,6 +5,9 @@ slug: wd米国で｢my-book-thunderbolt-duo｣の販売を開始
 categories:
 - Uncategorized
 draft: true
+cover:
+  image: http://taisyo.up.seesaa.net/image/wdfMBThunderbolt-500x500.jpg
+  alt: wdfMBThunderbolt-500x500.jpg
 ---
 
 <http://taisyo.seesaa.net/article/257898364.html>

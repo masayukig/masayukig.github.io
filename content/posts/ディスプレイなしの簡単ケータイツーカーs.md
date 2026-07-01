@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-10-19-deisupureinashinojian-dan-ketaitsukas
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ディスプレイなしの簡単ケータイ「ツーカーS」
 ---
 
 [ITmedia](http://www.itmedia.co.jp/mobile/articles/0410/18/news010.html)

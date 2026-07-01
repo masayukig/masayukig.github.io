@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2005-03-26-firefoxniwei-xian-nasekiyuriteihoruzui-xin-ban-firefox-102-dejie-xiao
+cover:
+  image: /images/covers/oss.png
+  alt: Firefoxに危険なセキュリティ・ホール，最新版「Firefox 1.0.2」で解消
 ---
 
 <http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050324/157958/>

@@ -6,6 +6,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2004-11-08-thunderbird-09gong-kai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Thunderbird 0.9公開
 ---
 
 [pcweb.mycom.co.jp](http://pcweb.mycom.co.jp/news/2004/11/05/010.html)

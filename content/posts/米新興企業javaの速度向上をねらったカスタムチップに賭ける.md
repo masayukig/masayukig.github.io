@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-10-04-mi-xin-xing-qi-ye-javanosu-du-xiang-shang-woneratsutakasutamuchitsupunidu-keru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 米新興企業、Javaの速度向上をねらったカスタムチップに賭ける
 ---
 
 [CNET

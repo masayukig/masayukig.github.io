@@ -6,6 +6,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2009-06-27-iphone
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhone
 ---
 
 

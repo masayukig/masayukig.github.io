@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-10-31-msxlai-chun-nimofu-huo
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: MSX来春にも復活？
 ---
 
 [slashdot.jp](http://slashdot.jp/articles/04/10/30/071251.shtml?topic=38)

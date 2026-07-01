@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-02-19-nttdokomo-iyoiyophskarache-tui
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: NTTドコモ、いよいよPHSから撤退!?
 ---
 
 <http://slashdot.jp/article.pl?sid=05/02/17/0124247&topic=97>

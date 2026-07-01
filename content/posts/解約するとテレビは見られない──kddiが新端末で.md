@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-05-31-jie-yue-surutoterebihajian-rarenai-kddigaxin-duan-mo-de
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 解約するとテレビは見られない──KDDIが新端末で
 ---
 
 [http://www.itmedia.co.jp/](http://www.itmedia.co.jp/enterprise/mobile/articles/0505/30/news002.html)

@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-11-19-itunes-music-storeri-ben-demokai-shi-lai-chun
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iTunes Music Store日本でも開始！(来春)
 ---
 
 [nikkei.co.jp](http://www.nikkei.co.jp/news/sangyo/20041118AT1D1704R17112004.html)

@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-09-30-shui-mozhi-meyoutoshinai-jia-chu-yong-ictagunoxiao-xue-sheng-henoshi-yong
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 誰も止めようとしない 家畜用ICタグの小学生への適用
 ---
 
 [はてなの高木さんサイト](http://d.hatena.ne.jp/HiromitsuTakagi/20040927)

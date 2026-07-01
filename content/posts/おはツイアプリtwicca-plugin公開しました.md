@@ -10,6 +10,9 @@ tags:
 - wokeuptwit
 draft: false
 disqus_identifier: 2011-03-12-ohatsui-apuritwicca-plugingong-kai-shimashita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「おはツイ」アプリ(twicca plugin)公開しました
 ---
 
 「おはツイ」というアプリ(twicca plugin)を公開しました。

@@ -6,6 +6,9 @@ tags:
 - game
 draft: false
 disqus_identifier: 2005-03-01-ndstopsp-ren-qi-hapspgayayarido
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: NDSとPSP、人気はPSPがややリード？
 ---
 
 <http://www.itmedia.co.jp/news/articles/0502/28/news037.html>
