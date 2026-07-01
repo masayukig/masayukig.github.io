@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-10-29-guo-nei-chu-pcliang-chan-rainnirfiddao-ru-nec
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 国内初、PC量産ラインにRFID導入 NEC
 ---
 
 [ITmedia](http://www.itmedia.co.jp/news/articles/0410/25/news010.html)

@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-07-07-jian-dan-pure-javanodetabesuenzin-hsqldb-18gong-kai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 簡単! Pure Javaのデータベースエンジン - HSQLDB 1.8公開
 ---
 
 [http://pcweb.mycom.co.jp/](http://pcweb.mycom.co.jp/news/2005/07/05/011.html)

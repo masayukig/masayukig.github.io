@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-09-30-ipodtsutemp3ziyanaino-towen-karetekun-tsuta
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「iPodってMP3じゃないの？」と聞かれて困った
 ---
 
 [ITmedia](http://www.itmedia.co.jp/news/articles/0409/27/news062.html)

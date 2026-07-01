@@ -10,6 +10,9 @@ tags:
 - twitter
 draft: false
 disqus_identifier: 2009-08-01-twitter2mixirbnogai-liang-ha-hou-hui-shinishiyoukanatwitterdui-kang-mixieko-zheng-shi-sabisuni-apimogong-kai-he
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: twitter2mixi.rbの改良は、後回しにしようかな(Twitter対抗、mixi「エコー」 正式サービスに APIも公開へ)
 ---
 
 「Twitter対抗、mixi「エコー」正式サービスに　APIも公開へ」

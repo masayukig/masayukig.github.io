@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ja" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>チーム解散?! | What&#39;s done is done</title>
+<meta name="keywords" content="work, oss, english, career, openstack">
+<meta name="description" content="追記
+以下は、あくまで私が所属しているチーム(OpenStack, OSSをアップストリームで開発)についてのみ言及しています。
+それ以外のHelion開発その他については言及していません。誤解のなきよう。
+オリジナル
+oss-programmer-part2 にて:
+(でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。
+が、それはまた別途書きたいと思います。)
+と書きました。が、それについて書きたいと思います。
+連投になってしまって申し訳ないです。もう少し気を静めてから書こうかとも思ったのですが、
+今の気持ちも含めて記録しておきたいなと思い。
+まずは、関連Tweetをいくつか。
+Today I laid off my entire team. I&#39;m completely gutted. They&#39;re the best w/whom I&#39;ve ever worked. They humble me daily. Hire them, please.&mdash; VM Brasseur (@vmbrasseur) October 17, 2016
+
+Today I was notified that my position at HPE is affected by layoffs so I am looking for a new role — https://t.co/A9XLekuX25 Please share!&mdash; Donald Stufft (@dstufft) October 17, 2016
+
+I&#39;m seeking a new ops or evangelist role! Must haves: Open source, travel for speaking and work from home. Details: https://t.co/PDD6HGPsuz&mdash; Elizabeth K. Joseph (@pleia2) October 17, 2016
+
+All of my US-based team-mates got laid off today. Each and every one would be a stellar hire. Hire them.">
+<meta name="author" content="Masayuki Igawa">
+<link rel="canonical" href="http://localhost:1313/posts/2016/10/dps-forever/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.68c62ef954d98b64015e3444e943bedbafc6461b357416b42e2caa6a6937032f.css" integrity="sha256-aMYu&#43;VTZi2QBXjRE6UO&#43;26/GRhs1dBa0Liyqamk3Ay8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="ja" href="http://localhost:1313/posts/2016/10/dps-forever/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="What&#39;s done is done (Alt + H)">What&#39;s done is done</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">ホーム</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/posts/">Posts</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      チーム解散?!
+    </h1>
+    <div class="post-meta">
+
+<span title='2016-10-18 00:00:00 +0900 JST'>2016-10-18</span>&nbsp;·&nbsp;<span>1 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="http://localhost:1313/images/covers/work.jpg" alt="チーム解散?!">
+        
+</figure><details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">目次</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#%e8%bf%bd%e8%a8%98" aria-label="追記">追記</a></li>
+            <li>
+                <a href="#%e3%82%aa%e3%83%aa%e3%82%b8%e3%83%8a%e3%83%ab" aria-label="オリジナル">オリジナル</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><h2 id="追記">追記<a hidden class="anchor" aria-hidden="true" href="#追記">#</a></h2>
+<p>以下は、あくまで私が所属しているチーム(OpenStack, OSSをアップストリームで開発)についてのみ言及しています。
+それ以外のHelion開発その他については言及していません。誤解のなきよう。</p>
+<h2 id="オリジナル">オリジナル<a hidden class="anchor" aria-hidden="true" href="#オリジナル">#</a></h2>
+<p><a href="../../10/oss-programmer-part2">oss-programmer-part2</a> にて:</p>
+<pre tabindex="0"><code>(でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。
+が、それはまた別途書きたいと思います。)
+</code></pre><p>と書きました。が、それについて書きたいと思います。</p>
+<p>連投になってしまって申し訳ないです。もう少し気を静めてから書こうかとも思ったのですが、
+今の気持ちも含めて記録しておきたいなと思い。</p>
+<p>まずは、関連Tweetをいくつか。</p>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Today I laid off my entire team. I&#39;m completely gutted. They&#39;re the best w/whom I&#39;ve ever worked. They humble me daily. Hire them, please.</p>&mdash; VM Brasseur (@vmbrasseur) <a href="https://twitter.com/vmbrasseur/status/788052309225902080">October 17, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Today I was notified that my position at HPE is affected by layoffs so I am looking for a new role — <a href="https://t.co/A9XLekuX25">https://t.co/A9XLekuX25</a> <br><br>Please share!</p>&mdash; Donald Stufft (@dstufft) <a href="https://twitter.com/dstufft/status/788051252592648192">October 17, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;m seeking a new ops or evangelist role! Must haves: Open source, travel for speaking and work from home. Details: <a href="https://t.co/PDD6HGPsuz">https://t.co/PDD6HGPsuz</a></p>&mdash; Elizabeth K. Joseph (@pleia2) <a href="https://twitter.com/pleia2/status/788159332521086977">October 17, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">All of my US-based team-mates got laid off today. Each and every one would be a stellar hire. Hire them.</p>&mdash; Cory Benfield (@Lukasaoz) <a href="https://twitter.com/Lukasaoz/status/788052699271028740">October 17, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>悲痛な叫びではあるものの、変に会社にしがみついたり、固執したり、あるいは、会社批判や今後を悲観するような
+内容がないのが印象的。既に、次に向けて活動を開始している。
+もちろん、これは表向きの顔なので、実際の本人たちの苦悩は計り知れないものがある。</p>
+<p>でも、この辺が、国民性・文化・社会システムの違いなのかなと思ったりしています。</p>
+<p>また、<a href="http://www.geekwire.com/2016/struggling-keep-pace-cloud-hewlett-packard-enterprise-cuts-staff/">Hewlett Packard Enterprise cuts staff as it struggles to keep pace in the
+cloud</a>
+というところでニュース扱いされているようです。
+（でも、色んな噂話まで含めて記事にしてる感もあるのであんまり鵜呑みにしないほうが良いと思う。）</p>
+<p>と、他人事のように書いていますが、思いっきり私の身にもこの変化の影響が降り掛かっていて、
+タイトルの通り、 <strong>チーム解散</strong> となる見込みです。</p>
+<p>アメリカ、オーストラリア、ブラジルのほとんどのチームメンバーがレイオフ対象となり、彼らはチームの大多数を
+占めていたため、チーム存続は難しく、解散となりそう。(少なくとも現状のHPEの中では無理)</p>
+<p>これ以上、あまり、詳しい状況を書くわけにもいかず、詳しく知りたい人は個人的に聞いてください :-p</p>
+<p>なお、私を含めたレイオフを逃れた数名は、社内OpenStack製品の CI/CDを行っているチーム配下に移って、
+Upstream活動を継続したりしています。ただし、チームの活動内容とあまりマッチしているとは思えず、
+今後、どの程度の期間継続できるのかは不透明です。</p>
+<p>そのため、今後の身の振り方も含めて考えなきゃいけないな、と思っています。</p>
+<p>では、最後の気分転換にコスモスの写真をご覧ください。</p>
+<p><a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/masayun/30296689256/in/datetaken/" title="#cosmos #flowers"><img src="https://c1.staticflickr.com/9/8269/30296689256_973a38e686_n.jpg" width="320" height="320" alt="#cosmos #flowers"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/work/">Work</a></li>
+      <li><a href="http://localhost:1313/tags/oss/">Oss</a></li>
+      <li><a href="http://localhost:1313/tags/english/">English</a></li>
+      <li><a href="http://localhost:1313/tags/career/">Career</a></li>
+      <li><a href="http://localhost:1313/tags/openstack/">Openstack</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/2016/10/oss-programmer-part2/">
+    <span class="title">« 前へ</span>
+    <span>あなたの知らないOSSプログラマの世界 - part 2</span>
+  </a>
+  <a class="next" href="http://localhost:1313/posts/2016/06/oss-programmer-part1/">
+    <span class="title">次へ »</span>
+    <span>あなたの知らないOSSプログラマの世界 - part 1</span>
+  </a>
+</nav>
+
+  </footer>
+
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">What&#39;s done is done</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'コピー';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'コピーされました!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'コピー';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

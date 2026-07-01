@@ -7,6 +7,9 @@ tags:
 - raspberrypi
 draft: false
 disqus_identifier: 2013-02-09-raspberry-pigou-ru-ji-dao-zhao-shitanode-macwoshi-tsutesetsutoatsupushitemiru-raspberrypi
+cover:
+  image: http://www.assoc-amazon.jp/e/ir?t=hughundercons-22&l=as2&o=9&a=B0093IE9S4
+  alt: picture
 ---
 
 ### 履歴

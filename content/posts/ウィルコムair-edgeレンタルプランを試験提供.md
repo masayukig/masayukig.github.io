@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-07-28-uirukomu-air-edgerentarupuranwoshi-yan-ti-gong
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ウィルコム、AIR-EDGEレンタルプランを試験提供
 ---
 
 [http://www.itmedia.co.jp/](http://www.itmedia.co.jp/mobile/articles/0507/28/news043.html)

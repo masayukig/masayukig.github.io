@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DB on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/db/</link>
+    <description>Recent content in DB on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 19 Jun 2010 08:28:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/db/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQLiteでprepared statementとBLOBを使って構造体を保存(C言語)その1 #sqlite</title>
+      <link>http://localhost:1313/posts/2010/06/sqlite%E3%81%A7prepared-statement%E3%81%A8blob%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E6%A7%8B%E9%80%A0%E4%BD%93%E3%82%92%E4%BF%9D%E5%AD%98c%E8%A8%80%E8%AA%9E%E3%81%9D%E3%81%AE1-sqlite/</link>
+      <pubDate>Sat, 19 Jun 2010 08:28:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2010/06/sqlite%E3%81%A7prepared-statement%E3%81%A8blob%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E6%A7%8B%E9%80%A0%E4%BD%93%E3%82%92%E4%BF%9D%E5%AD%98c%E8%A8%80%E8%AA%9E%E3%81%9D%E3%81%AE1-sqlite/</guid>
+      <description>&lt;p&gt;SQLiteのC言語APIを使ってprepared statementで、BLOBを使ってみます。&lt;/p&gt;
+&lt;p&gt;基本的には、以下のサイトに書いてある方法ですが、日本語で書いてみることにします。
+&lt;a href=&#34;http://www.sqlite.org/capi3ref.html#sqlite3_stmt&#34;&gt;http://www.sqlite.org/capi3ref.html#sqlite3_stmt&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;sqlite3_prepare_v2()(あるいはそれに類するもの)を使って、sqlite3_stmtのオブジェクトを作る。&lt;/li&gt;
+&lt;li&gt;sqlite3_bind_*() インターフェースを使ってパラメータに値をBind。&lt;/li&gt;
+&lt;li&gt;sqlite3_step()を使ってSQL実行。(sqlite3_step()は何回でも実行できる)&lt;/li&gt;
+&lt;li&gt;sqlite3_reset()を使ってstatementをリセットして、step
+2に戻る。これは何度でもできるし、やらなくても良い。&lt;/li&gt;
+&lt;li&gt;sqlite3_finalize()を使ってオブジェクトを破棄する。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;というわけで、いきなりサンプルコードw
+便利だなーと思ったのは、sqlite3_errmsg()関数。dbを引数にすると、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ gcc -o sqlite_test sqlite_test.c -lsqlite3
+$ chmod 000 test.db
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;と、DBファイルを読み書き出来ないようにして、実行すると、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ./sqlite_test
+open error:14, unable to open database file
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;と、何でエラーになったのかが表示されます。&lt;/p&gt;
+&lt;p&gt;さらに、このDBファイルをsqlite3コマンドで見たときの話は次回のエントリに書きたいと思います。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#include
+#include
+#include
+#include
+
+struct human {
+  char name[256];
+  int age;
+  int height;
+  int sex;
+};
+
+int main(int argc, char *argv[])
+{
+  struct human human[5] = {
+    { &amp;#34;Isono Katsuo&amp;#34;, 32, 168, 0 },
+    { &amp;#34;Isono Wakame&amp;#34;, 29, 158, 1 },
+    { &amp;#34;Huguta Tarao&amp;#34;, 20, 180, 0 },
+    { &amp;#34;Huguta Masuo&amp;#34;, 52, 178, 0 },
+    { &amp;#34;Huguta Sazae&amp;#34;, 48, 161, 1 } };
+  sqlite3 *db;
+  sqlite3_stmt *dropStmt = NULL;
+  sqlite3_stmt *createStmt = NULL;
+  sqlite3_stmt *selectStmt = NULL;
+  sqlite3_stmt *insertStmt = NULL;
+  char *drop_tbl_sql = &amp;#34;drop table member&amp;#34;;
+  char *create_tbl_sql = &amp;#34;create table member&amp;#34;
+    &amp;#34;(id INTEGER PRIMARY KEY,&amp;#34;
+    &amp;#34;human BLOB NOT NULL )&amp;#34;;
+  char *insert_tbl_sql = &amp;#34;INSERT INTO member (id, human) values (?, ?)&amp;#34;;
+  char *select_tbl_sql = &amp;#34;select human from member where id = ?&amp;#34;;
+  char *pzTail;
+  int rc = 0;
+  int exitcode = 0;
+
+  rc = sqlite3_open(&amp;#34;test.db&amp;#34;, &amp;amp;db);
+  //rc = sqlite3_open(&amp;#34;:memory:&amp;#34;, &amp;amp;db);
+  if (rc != SQLITE_OK) {
+    printf(&amp;#34;open error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+    exitcode = 1;
+    goto end;
+  }
+
+  /* cleanup. ignore error. */
+  sqlite3_prepare_v2(db, drop_tbl_sql, -1, &amp;amp;dropStmt, NULL);
+  sqlite3_step(dropStmt);
+
+  rc = sqlite3_prepare_v2(db, create_tbl_sql, -1, &amp;amp;createStmt, NULL);
+  if (rc != SQLITE_OK) {
+    printf(&amp;#34;create error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+    exitcode = 1;
+    goto end;
+  }
+  rc = sqlite3_step(createStmt);
+  if (rc != SQLITE_DONE) {
+    printf(&amp;#34;create error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+    exitcode = 1;
+    goto end;
+  }
+
+  rc = sqlite3_prepare_v2(db, insert_tbl_sql, -1, &amp;amp;insertStmt, NULL);
+  if (rc != SQLITE_OK) {
+    printf(&amp;#34;insert error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+    exitcode = 1;
+    goto end;
+  }
+  rc = sqlite3_prepare_v2(db, select_tbl_sql, -1, &amp;amp;selectStmt, NULL);
+  if (rc != SQLITE_OK) {
+    printf(&amp;#34;select error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+    exitcode = 1;
+    goto end;
+  }
+
+  int i = 0;
+  for (i = 0; i &amp;lt; 5; i++) {
+    sqlite3_reset(insertStmt);
+    sqlite3_bind_int(insertStmt, 1, i);
+    sqlite3_bind_blob(insertStmt, 2, &amp;amp;human[i], sizeof(struct human), SQLITE_STATIC);
+    rc = sqlite3_step(insertStmt);
+    if (rc != SQLITE_DONE) {
+      printf(&amp;#34;insert error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+      exitcode = 1;
+      goto end;
+    }
+  }
+
+  printf(&amp;#34;-------------------------------------\n&amp;#34;);
+  for (i = 0; i &amp;lt; 5; i++) {
+    sqlite3_reset(selectStmt);
+    sqlite3_bind_int(selectStmt, 1, i);
+    rc = sqlite3_step(selectStmt);
+    //printf(&amp;#34;select result:%d\n&amp;#34;, rc);
+    if (rc == SQLITE_ROW) {
+      struct human *t = (struct human*)sqlite3_column_blob(selectStmt, 0);
+      printf(&amp;#34;ID: %d\n\t name: %s\n\t age: %d\n\t height: %d\n\t sex: %s\n&amp;#34;,
+       i, t-&amp;gt;name, t-&amp;gt;age, t-&amp;gt;height, t-&amp;gt;sex == 0 ? &amp;#34;M&amp;#34; : &amp;#34;F&amp;#34;);
+      printf(&amp;#34;-------------------------------------\n&amp;#34;);
+    }
+  }
+
+ end:
+  sqlite3_finalize(selectStmt);
+  sqlite3_finalize(insertStmt);
+  sqlite3_finalize(createStmt);
+  sqlite3_finalize(dropStmt);
+
+  return exitcode;
+}
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

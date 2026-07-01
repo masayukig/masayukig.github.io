@@ -11,6 +11,9 @@ tags:
 - openstack-health
 draft: false
 disqus_identifier: 2016-10-19-openstack-health-updates
+cover:
+  image: /images/openstack-health-2016-10-19.png
+  alt: OpenStack-Health
 ---
 
 本日、[OpenStack-Health](http://git.openstack.org/cgit/openstack/openstack-health) のパッチをいくつかApproveしました。

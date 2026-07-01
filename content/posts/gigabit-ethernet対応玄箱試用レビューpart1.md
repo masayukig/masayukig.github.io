@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-11-27-gigabit-ethernetdui-ying-xuan-xiang-shi-yong-rebiyupart1
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Gigabit Ethernet対応「玄箱」試用レビュー(Part1)
 ---
 
 [pc.watch.impress.co.jp](http://pc.watch.impress.co.jp/docs/2004/1124/pclabo27.htm)

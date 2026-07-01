@@ -9,6 +9,9 @@ tags:
 - scala
 draft: false
 disqus_identifier: 2011-06-11-mac-de-scala-to-lift-woshi-tsutemiru2-cloud-foundrybian
+cover:
+  image: http://farm4.static.flickr.com/3258/5819360632_a510807843.jpg
+  alt: "Scala-Lift app push to\n    CloudFoundry"
 ---
 
 「Mac で Scala と Lift を使ってみる」の2回目

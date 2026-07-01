@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-12-10-w-zero3yu-yue-shitekimashitahui-she-haamxiu-qu-rimashitaxiao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: W-ZERO3予約してきました(会社はAM休取りました(笑))
 ---
 
 2005/12/09のW-ZERO3予約開始日に、ヨドバシカメラ錦糸町店にて予約してきました！

@@ -9,6 +9,9 @@ tags:
 - 東芝
 draft: false
 disqus_identifier: 2010-07-19-leng-zang-ku-dong-zhi-gr-c43ggou-ru
+cover:
+  image: http://farm5.static.flickr.com/4123/4804432674_d5d3672f20.jpg
+  alt: DSC00342.JPG
 ---
 
 [![DSC00342.JPG](http://farm5.static.flickr.com/4123/4804432674_d5d3672f20.jpg)

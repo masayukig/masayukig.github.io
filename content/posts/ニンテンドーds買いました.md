@@ -6,6 +6,9 @@ tags:
 - game
 draft: false
 disqus_identifier: 2006-01-05-nintendodsmai-imashita
+cover:
+  image: http://lunatic.xrea.jp/mt/archives/img007s-thumb.jpg
+  alt: picture
 ---
 
 前から欲しかった[

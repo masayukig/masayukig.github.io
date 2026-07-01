@@ -7,6 +7,11 @@ tags:
 - Kindle
 draft: false
 disqus_identifier: 2010-06-22-amazon-kindle-252atsupudeto
+cover:
+  image: http://farm2.static.flickr.com/1309/4723870177_9dca605c35.jpg
+  alt: 'Amazon Kindle
+
+    updated'
 ---
 
 [![Amazon Kindle

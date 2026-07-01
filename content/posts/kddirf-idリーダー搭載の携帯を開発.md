@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-03-02-kddi-rf-idridada-zai-noxi-dai-wokai-fa
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: KDDI、RF IDリーダー搭載の携帯を開発
 ---
 
 <http://www.itmedia.co.jp/mobile/articles/0503/02/news031.html>

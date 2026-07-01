@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-12-23-ddi-pocketga2yue-ni256kbpssabisusutato-airhphonexiang-kenimogao-su-hua-sa-bisuti-gong
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: DDI Pocketが２月に256kbpsサービススタート、AirH"PHONE向けにも高速化サー ビス提供
 ---
 
 [useDDIPocket](http://kamo.pos.to/dpoke/)

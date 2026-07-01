@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mac on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/mac/</link>
+    <description>Recent content in Mac on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 09 Feb 2013 21:51:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raspberry Pi購入記＆到着したので、Macを使ってセットアップしてみる #raspberrypi</title>
+      <link>http://localhost:1313/posts/2013/02/raspberry-pi%E8%B3%BC%E5%85%A5%E8%A8%98%E5%88%B0%E7%9D%80%E3%81%97%E3%81%9F%E3%81%AE%E3%81%A7mac%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B-raspberrypi/</link>
+      <pubDate>Sat, 09 Feb 2013 21:51:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2013/02/raspberry-pi%E8%B3%BC%E5%85%A5%E8%A8%98%E5%88%B0%E7%9D%80%E3%81%97%E3%81%9F%E3%81%AE%E3%81%A7mac%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B-raspberrypi/</guid>
+      <description>&lt;h3 id=&#34;履歴&#34;&gt;履歴&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;2013-01-12 Raspberry Piを購入&lt;/li&gt;
+&lt;li&gt;2013-01-26 購入時のOrder
+confirmation以外、なんの音沙汰もないので、どういう状況なのか問い合わせ実施。(購入時には「Standard
+Delivery &lt;strong&gt;(Despatch expected within 1 week(s))&lt;/strong&gt;」というOrder
+confirmationが来たのだが)&lt;/li&gt;
+&lt;li&gt;2013-02-01(頃)Raspberry Pi到着。&lt;/li&gt;
+&lt;li&gt;2013-02-03
+とりあえず、近所の100均でコンパクトなmicroUSBケーブルを購入し、Amazonで&lt;a href=&#34;http://www.amazon.co.jp/gp/product/B0093IE9S4/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=B0093IE9S4&amp;amp;linkCode=as2&amp;amp;tag=hughundercons-22&#34;&gt;TDK
+LoR SDHCカード 32GB Class10
+T-SDHC32GB10-FFP&lt;/a&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;http://www.assoc-amazon.jp/e/ir?t=hughundercons-22&amp;l=as2&amp;o=9&amp;a=B0093IE9S4&#34;&gt;
+を購入。&lt;/li&gt;
+&lt;li&gt;2013-02-04 AmazonからSDHCカード到着。早い。&lt;/li&gt;
+&lt;li&gt;2013-02-05
+rswww.comから、「あなたの注文は1/16にdispatchされている。日本にはだいたい21営業日かかるのでそれでも到着しないようなら、再度連絡ください」的なメールが届く。「もう、届いたよ」と連絡しようと思ったが、それを処理するのも向こう側が大変かなと思い、とりあえずやめておく。&lt;/li&gt;
+&lt;li&gt;2013-02-10 &lt;a href=&#34;http://www.raspberrypi.org/downloads&#34;&gt;http://www.raspberrypi.org/downloads&lt;/a&gt; からRaspbian
+&amp;ldquo;wheezy&amp;quot;のイメージをダウンロードし、Mac で
+ddコマンドを使ってSDHCに書き込む。Raspberry
+Piへ差し込み、microUSBケーブルとLANケーブルも差し込んでしばらく待つ。&lt;/li&gt;
+&lt;li&gt;LED的なものがピカピカ光って、動作している風。なお、HDMIが直接使えるディスプレイがそばにないので、SSHが使えるようになっていることを祈りつつ、
+Macからarp
+-aコマンドを叩いて、それっぽいIPアドレスへアクセスしてみる。(Default
+login &amp;ndash; Username: pi/Password: raspberry)&lt;/li&gt;
+&lt;li&gt;ログインできた！&lt;/li&gt;
+&lt;li&gt;で、Please run &amp;lsquo;sudo raspi-config&amp;rsquo;をやって、様子を見ようと思っている
+&amp;lt;- いまここ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mac-で-sdhc-カードへ-dd-を使って書き込む時の注意&#34;&gt;Mac で SDHC カードへ dd を使って書き込む時の注意&lt;/h3&gt;
+&lt;p&gt;Linux なら 差し込まれたデバイスの /dev/sd? が何かを確認して、 dd
+コマンドで書き込めばいいと思います。 Mac でも
+ほぼ同様ですが、dfコマンドで表示されたデバイス名そのままだとダメらしいので、
+脳内変換が必要なようです(本当？)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;-&amp;gt; % df -h
+Filesystem      Size   Used  Avail Capacity   iused      ifree %iused  Mounted on
+/dev/disk1s1    29Gi  2.3Mi   29Gi     1%         0          0  100%   /Volumes/NO NAME
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;/dev/disk1s1がSDHC カードなのですが、この場合、 /dev/rdisk1
+とddコマンドに渡す必要が有るようです。
+なぜ、「&lt;strong&gt;r&lt;/strong&gt;」を付けないとダメなのかはよくわかりませんw
+**
+追記**&amp;ldquo;r&amp;quot;は、rawデバイスってことらしい
+  &lt;a href=&#34;http://d.hatena.ne.jp/pasela/20121222&#34;&gt;http://d.hatena.ne.jp/pasela/20121222&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;-&amp;gt; % time sudo dd bs=1m if=2012-12-16-wheezy-raspbian.img of=/dev/rdisk1
+                                                                                                                          1850+0 records in
+1850+0 records out
+1939865600 bytes transferred in 141.153967 secs (13742905 bytes/sec)
+sudo dd bs=1m if=2012-12-16-wheezy-raspbian.img of=/dev/rdisk1  0.03s user 1.10s system 0% cpu 2:21.20 total
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;今回得られたもの&#34;&gt;今回得られたもの&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Raspberry Piの注文〜到着には、3週間程度はかかること&lt;/li&gt;
+&lt;li&gt;Macで SDHC へ dd で書き込むときの方法&lt;/li&gt;
+&lt;li&gt;Raspberry Pi使用中はほんのり温かい&lt;/li&gt;
+&lt;li&gt;ラズベリーのつづりはRas&lt;strong&gt;p&lt;/strong&gt;berryであることｗ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;アフィリエイト&#34;&gt;アフィリエイト&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as4&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;ref=ss_til&amp;amp;asins=B0093IE9S4&#34;&gt;http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as4&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;ref=ss_til&amp;amp;asins=B0093IE9S4&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ソースコードをiPhoneで読む #mac #iPhone</title>
+      <link>http://localhost:1313/posts/2012/11/%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92iphone%E3%81%A7%E8%AA%AD%E3%82%80-mac-iphone/</link>
+      <pubDate>Mon, 26 Nov 2012 14:33:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/11/%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92iphone%E3%81%A7%E8%AA%AD%E3%82%80-mac-iphone/</guid>
+      <description>&lt;p&gt;-&amp;gt; % brew install a2ps
+==&amp;gt; Downloading &lt;a href=&#34;http://ftpmirror.gnu.org/a2ps/a2ps-4.14.tar.gz&#34;&gt;http://ftpmirror.gnu.org/a2ps/a2ps-4.14.tar.gz&lt;/a&gt;
+Already downloaded: /Library/Caches/Homebrew/a2ps-4.14.tar.gz
+==&amp;gt; Downloading patches
+######################################################################## 100.0%
+######################################################################## 100.0%
+==&amp;gt; Patching
+patching file contrib/sample/Makefile.in
+patching file lib/xstrrpl.c
+==&amp;gt; ./configure &amp;ndash;prefix=/usr/local/Cellar/a2ps/4.14
+==&amp;gt; make install
+/usr/local/Cellar/a2ps/4.14: 278 files, 4.0M, built in 60 seconds&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>brew updateでエラーが発生してしまったので対処 #mac</title>
+      <link>http://localhost:1313/posts/2012/11/brew-update%E3%81%A7%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E7%99%BA%E7%94%9F%E3%81%97%E3%81%A6%E3%81%97%E3%81%BE%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E5%AF%BE%E5%87%A6-mac/</link>
+      <pubDate>Fri, 23 Nov 2012 22:42:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/11/brew-update%E3%81%A7%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E7%99%BA%E7%94%9F%E3%81%97%E3%81%A6%E3%81%97%E3%81%BE%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E5%AF%BE%E5%87%A6-mac/</guid>
+      <description>&lt;p&gt;久しぶりに brew update してみたら、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;-&amp;gt; % brew update
+error: The following untracked working tree files would be overwritten by merge:
+ Library/Formula/argp-standalone.rb
+ Library/Formula/cmigemo.rb
+ Library/Formula/ninja.rb
+ Library/Formula/pbrt.rb
+ Library/Formula/voldemort.rb
+Please move or remove them before you can merge.
+Aborting
+Error: Failure while executing: git pull -q origin refs/heads/master:refs/remotes/origin/master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;と、エラーが発生して、更新処理が行われなくなってしまった。 「git
+pullしろ」というメッセージがあるが、どこのディレクトリでやればいいのか
+よくわからなかったので、調べた。
+&lt;a href=&#34;https://github.com/mxcl/homebrew/issues/11448#issuecomment-4959157&#34;&gt;https://github.com/mxcl/homebrew/issues/11448#issuecomment-4959157&lt;/a&gt;に、ソリューションが書いてあったので、ちょっと改変して試してみる。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd `brew --prefix`
+git fetch origin
+git reset --hard origin/master
+brew update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Already up-to-date. と、表示されたので、ひとまず解決したことにする。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Getting #CrashPlan to work on #Mac after upgraded to JDK1.7</title>
+      <link>http://localhost:1313/posts/2012/11/getting-crashplan-to-work-on-mac-after-upgraded-to-jdk17/</link>
+      <pubDate>Fri, 09 Nov 2012 17:10:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/11/getting-crashplan-to-work-on-mac-after-upgraded-to-jdk17/</guid>
+      <description>&lt;p&gt;I got an error of CrashPlan a few days ago. That is
+&lt;a href=&#34;https://gist.github.com/4046875.js?file=engine_error.log&#34;&gt;https://gist.github.com/4046875.js?file=engine_error.log&lt;/a&gt; So CrashPlan
+did not work from the day. I sought to resolve this problem and &lt;a href=&#34;http://java.dzone.com/articles/getting-crashplan-work-mac&#34;&gt;found
+it&lt;/a&gt;. Modify
+the &amp;ldquo;/Library/LaunchDaemons/com.crashplan.engine.plist&amp;rdquo;
+&lt;a href=&#34;https://gist.github.com/4046875.js?file=com.crashplan.engine.plist.diff&#34;&gt;https://gist.github.com/4046875.js?file=com.crashplan.engine.plist.diff&lt;/a&gt;
+And, &lt;a href=&#34;https://gist.github.com/4046875.js?file=reload_crashplan.sh&#34;&gt;https://gist.github.com/4046875.js?file=reload_crashplan.sh&lt;/a&gt;
+That&amp;rsquo;s it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mac に vagrant&#43;devstack を入れてみる - その２ #openstack #devstack #vagrant</title>
+      <link>http://localhost:1313/posts/2012/10/mac-%E3%81%AB-vagrant-devstack-%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B-%E3%81%9D%E3%81%AE%EF%BC%92-openstack-devstack-vagrant/</link>
+      <pubDate>Thu, 04 Oct 2012 21:13:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/10/mac-%E3%81%AB-vagrant-devstack-%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B-%E3%81%9D%E3%81%AE%EF%BC%92-openstack-devstack-vagrant/</guid>
+      <description>&lt;h2 id=&#34;続き&#34;&gt;続き&lt;/h2&gt;
+&lt;p&gt;無事ダウンロードは終了し、VMも起動したが、NFSでマウントできないってエラーが&lt;/p&gt;
+&lt;p&gt;発生。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[vagrant] Downloading box: http://dl.dropbox.com/u/1537815/precise64.box
+[vagrant] Extracting box...
+[vagrant] Verifying box...
+[vagrant] Cleaning up downloaded box...
+[default] Importing base box &#39;precise&#39;...
+[default] The guest additions on this VM do not match the install version of
+VirtualBox! This may cause things such as forwarded ports, shared
+folders, and more to not work properly. If any of those things fail on
+this machine, please update the guest additions and repackage the
+box.
+
+Guest Additions Version: 4.1.18
+VirtualBox Version: 4.1.23
+[default] Matching MAC address for NAT networking...
+[default] Mounting shared folders...
+[default] -- v-root: /vagrant
+[default] -- v-ssh: /home/vagrant/.host-ssh
+[default] -- v-csc-1: /tmp/vagrant-chef-1/chef-solo-1/cookbooks
+[default] Mounting NFS shared folders...
+Mounting NFS shared folders failed. This is most often caused by the NFS
+client software not being installed on the guest machine. Please verify
+that the NFS client software is properly installed, and consult any resources
+specific to the linux distro you&#39;re using for more information on how to
+do this.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;でも、vagrant sshでGuest OSには接続できた!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OS X Mountain Lionにはしたけれど…</title>
+      <link>http://localhost:1313/posts/2012/07/os-x-mountain-lion%E3%81%AB%E3%81%AF%E3%81%97%E3%81%9F%E3%81%91%E3%82%8C%E3%81%A9/</link>
+      <pubDate>Fri, 27 Jul 2012 14:27:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/07/os-x-mountain-lion%E3%81%AB%E3%81%AF%E3%81%97%E3%81%9F%E3%81%91%E3%82%8C%E3%81%A9/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/07/cb3ec-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-2723-21-55.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/07/cb3ec-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-2723-21-55.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;まぁ、大した違いは感じられないわけです…
+&lt;a href=&#34;http://www.apple.com/jp/osx/whats-new/features.html&#34;&gt;http://www.apple.com/jp/osx/whats-new/features.html&lt;/a&gt;
+にあるのは、結構細かい点が多く感じ、
+「これがあるからMountain Lionにして良かった!」と感じられるものが、
+私には思い浮かびません。&lt;/p&gt;
+&lt;p&gt;たぶん、「ジワジワ来る」んじゃないか?と、期待してます。
+(勝手な期待ですが)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OS X Mountain Lion 提供開始!</title>
+      <link>http://localhost:1313/posts/2012/07/os-x-mountain-lion-%E6%8F%90%E4%BE%9B%E9%96%8B%E5%A7%8B/</link>
+      <pubDate>Wed, 25 Jul 2012 19:42:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/07/os-x-mountain-lion-%E6%8F%90%E4%BE%9B%E9%96%8B%E5%A7%8B/</guid>
+      <description>&lt;p&gt;というわけで、OS X Mountain Lion インストール開始 。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/07/adce7-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-36-54.png?w=600&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/07/7c400-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-37-21.png?w=600&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/07/5ca3b-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-37-40.png?w=600&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/07/d8649-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-38-05.png?w=600&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/07/b2c57-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-07-264-41-52.png?w=600&#34;&gt;&lt;/p&gt;
+&lt;p&gt;無事(?)、準備は終わったようなので、これから、再起動します。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FireWire800外付けHDDケース(G-S350SUAB2)を米Amazon.comで購入 #mac #hdd #firewire</title>
+      <link>http://localhost:1313/posts/2012/04/firewire800%E5%A4%96%E4%BB%98%E3%81%91hdd%E3%82%B1%E3%83%BC%E3%82%B9g-s350suab2%E3%82%92%E7%B1%B3amazoncom%E3%81%A7%E8%B3%BC%E5%85%A5-mac-hdd-firewire/</link>
+      <pubDate>Sat, 28 Apr 2012 07:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/04/firewire800%E5%A4%96%E4%BB%98%E3%81%91hdd%E3%82%B1%E3%83%BC%E3%82%B9g-s350suab2%E3%82%92%E7%B1%B3amazoncom%E3%81%A7%E8%B3%BC%E5%85%A5-mac-hdd-firewire/</guid>
+      <description>&lt;h3 id=&#34;はじめに&#34;&gt;はじめに&lt;/h3&gt;
+&lt;p&gt;Mac mini(HDD 500GB)の残り容量が、10GBを下回る様になってきて、
+ちょっと危機感が出てきたので、HDDを増設することにしました。&lt;/p&gt;
+&lt;p&gt;ただ、HDD自体は、別PCについていた1TBのHDDが余っている状況であり、
+それを有効活用したいと思ったので、外付けケースを買うことにしました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/04/f0ca4-dsc01056.jpg?w=199&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;前提&#34;&gt;前提&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Macに取り付ける&lt;/li&gt;
+&lt;li&gt;3.5inch HDDが取り付けられること&lt;/li&gt;
+&lt;li&gt;FireWireかThunderBolt接続&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;選択肢&#34;&gt;選択肢&lt;/h3&gt;
+&lt;p&gt;手頃な商品を探していたのですが、「3. 」の条件が結構ハードルが高く、
+選択肢としては、以下のようなものでした。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;センチュリー CRIS35EUF(2012-04-28現在 9,534円(税込) 送料無料)
+&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;http://www.enet-japan.com/image/shop/1/commodity/4936014962484.jpg&#34;&gt;](&lt;a href=&#34;http://www.enet-japan.com/image/shop/1/commodity/4936014962484.jpg&#34;&gt;http://www.enet-japan.com/image/shop/1/commodity/4936014962484.jpg&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;センチュリー CROSFU3(2012-04-28現在 8,331円(税込) 送料無料)
+&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;http://www.enet-japan.com/image/shop/1/commodity/4936014911741.jpg&#34;&gt;](&lt;a href=&#34;http://www.enet-japan.com/image/shop/1/commodity/4936014911741.jpg&#34;&gt;http://www.enet-japan.com/image/shop/1/commodity/4936014911741.jpg&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;G-S350SUAB2(Macally)
+&lt;a href=&#34;http://rcm.amazon.com/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=pcorktamophbl-20&amp;amp;o=1&amp;amp;p=8&amp;amp;l=as4&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;ref=ss_til&amp;amp;asins=B003VTZFN4&#34;&gt;http://rcm.amazon.com/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=pcorktamophbl-20&amp;amp;o=1&amp;amp;p=8&amp;amp;l=as4&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;ref=ss_til&amp;amp;asins=B003VTZFN4&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;なぜそれを選んだのか&#34;&gt;なぜそれを選んだのか？&lt;/h3&gt;
+&lt;p&gt;(海外からの送料を含めても)一番安く済みそうだったのと、
+デザイン的にも良さそうだったので、「3. G-S350SUAB2」を選択しました。
+ただ、海外からの購入なので、不良品・故障だった場合の対応が面倒そうだし、
+値段も1,000円程度しか違いはないので、「2.
+CROSFU3」を国内で購入することでも良かったかもしれません。&lt;/p&gt;
+&lt;h3 id=&#34;どんな感じ&#34;&gt;どんな感じ？&lt;/h3&gt;
+&lt;p&gt;注文：2012-04-20 5:40頃(priority international courier というので注文)
+到着：2012-04-23 11:40頃
+(不在だったので、実際の受け取りは翌日の夜になりましたが)
+大体まる3日で到着しました！スゴイ！
+今のところ、概ね満足です。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;動作すると、金属フレームがかなり熱を持つ&lt;/li&gt;
+&lt;li&gt;正面の青い電源ボタン兼HDD動作確認ランプが、Macっぽくて良い感じ&lt;/li&gt;
+&lt;li&gt;既存のUSB2.0 HDDよりもFireWire800は2倍近く早い！&lt;/li&gt;
+&lt;li&gt;ACアダプタはちょっと邪魔&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>CrashPlan でキャッシュファイルが大きくなって困ったらやってみること</title>
+      <link>http://localhost:1313/posts/2011/09/crashplan-%E3%81%A7%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%8C%E5%A4%A7%E3%81%8D%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%A6%E5%9B%B0%E3%81%A3%E3%81%9F%E3%82%89%E3%82%84%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8/</link>
+      <pubDate>Fri, 16 Sep 2011 06:45:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/09/crashplan-%E3%81%A7%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%8C%E5%A4%A7%E3%81%8D%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%A6%E5%9B%B0%E3%81%A3%E3%81%9F%E3%82%89%E3%82%84%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8/</guid>
+      <description>&lt;hr&gt;
+&lt;h2 id=&#34;picture&#34;&gt;&lt;a href=&#34;https://picasaweb.google.com/lh/photo/BrjXoOVmCm1UQS7_Gx3cXA?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh3.googleusercontent.com/-66No1KwEeS4/TnJwSyVJqxI/AAAAAAAAmXw/2bXBLMW2b5Q/s400/%2525E3%252582%2525B9%2525E3%252582%2525AF%2525E3%252583%2525AA%2525E3%252583%2525BC%2525E3%252583%2525B3%2525E3%252582%2525B7%2525E3%252583%2525A7%2525E3%252583%252583%2525E3%252583%252588%2525202011-09-16%2525206.37.31.png&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;現在、&lt;a href=&#34;http://www.crashplan.com/&#34;&gt;CrashPlan&lt;/a&gt;というオンラインバックアップサービスを利用中です。
+サービスとしては、結構快適で&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;バックグラウンドで自動的にバックアップしてくれる&lt;/li&gt;
+&lt;li&gt;台数・容量無制限のプランがある&lt;/li&gt;
+&lt;li&gt;他のコンピュータをバックアップ先に選ぶことができる(らしい)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Linux, Macに対応している&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;履歴を持っており、指定した日にちに戻れる(らしい)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;と、かなり使い勝手はいい感じです。&lt;/p&gt;
+&lt;p&gt;しかしながら、頻繁に更新があるようなディレクトリ、ファイルを指定したりすると、
+やたらとキャッシュファイルが大きくなってしまうことがあるようです。
+(私の場合、10GB近くまで大きくなってしまいました)&lt;/p&gt;
+&lt;p&gt;こうなってしまうと、そのファイル・ディレクトリをバックアップ対象外としても、
+小さくなってくれませんでした。&lt;/p&gt;
+&lt;p&gt;なので、キャッシュファイルを削除してみることにしました。&lt;/p&gt;
+&lt;p&gt;キャッシュファイル削除手順(Linuxの場合)
+&lt;a href=&#34;https://gist.github.com/1220523.js?file=delete_log.log&#34;&gt;https://gist.github.com/1220523.js?file=delete_log.log&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;私の場合はこれで、キャッシュファイルを小さくすることができました。&lt;/p&gt;
+&lt;p&gt;以上をまとめると、&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;頻繁に更新があるようなディレクトリ、ファイルはバックアップ対象から外す&lt;/li&gt;
+&lt;li&gt;キャッシュファイルを削除するには、CrashPlanサービスを停止し、
+ディレクトリ毎削除。CrashPlanサービス起動を行う&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;ということをすれば、なんとか使っていけそうです。&lt;/p&gt;
+&lt;p&gt;公式に認められた手段ではなく、私が勝手に行っていることなので、実行は自己責任でお願いいたします
+:-P&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mac OS X Lionでsshfs</title>
+      <link>http://localhost:1313/posts/2011/08/mac-os-x-lion%E3%81%A7sshfs/</link>
+      <pubDate>Wed, 03 Aug 2011 06:11:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/08/mac-os-x-lion%E3%81%A7sshfs/</guid>
+      <description>&lt;p&gt;Mac OS X
+Lionでsshfsを使おうと思い、portでsshfs-guiインストールを行ったところ、
+以下の様なエラーが出て、インストールに失敗しました。
+&lt;a href=&#34;https://gist.github.com/1121166.js?file=sshfs-gui-install-failed-on-Mac-OS-X-Lion.log&#34;&gt;https://gist.github.com/1121166.js?file=sshfs-gui-install-failed-on-Mac-OS-X-Lion.log&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ググってみたところ、以下の情報を得たので、やってみました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://inabu.asia/monooki/357/2011/07/31/&#34;&gt;OSX
+Lionでは、タダじゃあsshfsが動かないみたい。&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://crysis-fs.blogspot.com/2011/07/ubuntumacosx-lionsshfs.html&#34;&gt;ubuntuやmac(OSX
+Lion)でsshfs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;というわけで、
+&lt;a href=&#34;http://www.tuxera.com/mac/macfuse-core-10.5-2.1.9.dmg&#34;&gt;http://www.tuxera.com/mac/macfuse-core-10.5-2.1.9.dmg&lt;/a&gt;
+を、ダウンロード＆インストール後、
+&lt;a href=&#34;https://gist.github.com/1121166.js?file=static-binary-download.log&#34;&gt;https://gist.github.com/1121166.js?file=static-binary-download.log&lt;/a&gt;
+の様な感じで実行し、うまくマウントできました。（warningが出てるけど無視w）&lt;/p&gt;
+&lt;p&gt;まだ、ハードな使用はしていないので、それは、後ほど試します。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sophos Anti-Virus for Mac Home Edition をインストールしてみた</title>
+      <link>http://localhost:1313/posts/2011/07/sophos-anti-virus-for-mac-home-edition-%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <pubDate>Tue, 26 Jul 2011 05:30:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/07/sophos-anti-virus-for-mac-home-edition-%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.sophos.co.jp/products/free-tools/free-mac-anti-virus/&#34;&gt;Sophos Anti-Virus for Mac Home
+Edition&lt;/a&gt;
+をインストールしてみました。&lt;/p&gt;
+&lt;p&gt;インストールは特に難しいことはなく、&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;上記リンクをクリックし、
+以下の「無償ダウンロード」からインストールファイルをダウンロードします。
+&lt;a href=&#34;https://picasaweb.google.com/lh/photo/Px8X6cv1epbS6XDgVzHP7w?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh4.googleusercontent.com/-UlBnlgfGsTg/TjfqpW1zKaI/AAAAAAAAY44/QwNcHq1kuPY/s288/5974970783_fa266bbeb6_o.png&#34;&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ダウンロードしたら、ファイルをダブルクリック等でマウントし、以下のWindowが表示されたら、
+「Sophos Anti-Virus Home Edition.mpkg」をダブルクリックし、
+インストーラを起動。
+&lt;a href=&#34;https://picasaweb.google.com/lh/photo/SZ33nrkj_IoBP1V_PRzATA?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh5.googleusercontent.com/-bpC7CQQ0cqw/TjfqpEZhB7I/AAAAAAAAY40/kfsMT4_OIck/s288/5975505618_e1dc43c0d4_o.jpeg&#34;&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;あとは、インストーラに従い、インストールするだけです。
+&lt;a href=&#34;https://picasaweb.google.com/lh/photo/ZFg4GdS20nPdClYlShTT7w?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh4.googleusercontent.com/-y_tN9b_Hq8Q/TjfqpH9EqFI/AAAAAAAAY4w/v6epY24NKU0/s288/5975520162_97f9d9c624_o.jpeg&#34;&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Sophosはウイルス対策ソフト(セキュリティ)会社として、有名だと思いますし、
+無料なので、ひとまずインストールしておいて損は無いと思います。&lt;/p&gt;
+&lt;p&gt;参考にした記事：
+&lt;a href=&#34;http://www.lifehacker.jp/2011/05/110516antivirusmac.html&#34;&gt;Macユーザーに贈る、そろそろ入れておくといいアンチウィルス・マルウェアソフト6選&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lionで 3rd party なNASではTimeMachineが動かない</title>
+      <link>http://localhost:1313/posts/2011/07/lion%E3%81%A7-3rd-party-%E3%81%AAnas%E3%81%A7%E3%81%AFtimemachine%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/</link>
+      <pubDate>Sat, 23 Jul 2011 05:33:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/07/lion%E3%81%A7-3rd-party-%E3%81%AAnas%E3%81%A7%E3%81%AFtimemachine%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/</guid>
+      <description>&lt;p&gt;昨日、Lionにアップデートしましたが、以下の様なエラーがでて
+Time Machineでバックアップができなくなりました。
+&lt;a href=&#34;https://picasaweb.google.com/lh/photo/4ufmuZEyhHGTyu3bVo7Ysg?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh5.googleusercontent.com/-eNFciYAVxnk/Tjr6xhXwX5I/AAAAAAAAg6M/p3ABUDEbpv8/s288/5964468227_f23fe1aabe_o.png&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ググってみたところ、いくつかの情報が得られました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://slashdot.jp/apple/comments.pl?sid=539273&amp;amp;cid=1989826&#34;&gt;http://slashdot.jp/apple/comments.pl?sid=539273&amp;amp;cid=1989826&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://amiens2009.tumblr.com/post/7886573873/timemachine-apple-nas-lion&#34;&gt;http://amiens2009.tumblr.com/post/7886573873/timemachine-apple-nas-lion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;なお、今回のバックアップ失敗では、以下の様なログが/var/log/syslog.log
+に出力されていました。
+&lt;a href=&#34;https://gist.github.com/1100364.js?file=Time-Machine-backup-failed-system.log&#34;&gt;https://gist.github.com/1100364.js?file=Time-Machine-backup-failed-system.log&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mac OS X Lion インストールしました！</title>
+      <link>http://localhost:1313/posts/2011/07/mac-os-x-lion-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <pubDate>Thu, 21 Jul 2011 05:43:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/07/mac-os-x-lion-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <description>&lt;p&gt;というわけで、Mac OS X Lionをインストールしました。&lt;/p&gt;
+&lt;p&gt;今のところ、トラックパッドによるスクロールが、上下逆さまになったことに慣れるのに必死ですw
+(もちろん、設定で変更可能ですが、この方がiPad/iPhoneみたいで、きっと良いんだと思うことにします)&lt;/p&gt;
+&lt;p&gt;システム環境設定の「トラックパッド」のところ
+&lt;a href=&#34;https://picasaweb.google.com/lh/photo/FGVjJpyGSCztyBKrzx4zXA?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh6.googleusercontent.com/-f9NaPsKenmo/Tjr6xcCGivI/AAAAAAAAg6M/GW4ygmcTaqw/s288/5958547975_802fe61e7b_o.png&#34;&gt;
+&lt;/a&gt;
+では、
+どのようなジェスチャーが使えるのか？がわかるので、便利です。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lion キター！</title>
+      <link>http://localhost:1313/posts/2011/07/lion-%E3%82%AD%E3%82%BF%E3%83%BC/</link>
+      <pubDate>Thu, 21 Jul 2011 04:57:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/07/lion-%E3%82%AD%E3%82%BF%E3%83%BC/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://picasaweb.google.com/lh/photo/RsxU2CRrWg6N7Bxo9pQnFw?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh5.googleusercontent.com/-s0MrqtQ3NvE/Tjr6wxPPTII/AAAAAAAAg6M/TSiEM5ZQ2n8/s400/5958402445_f5f0496bfb_o.png&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mac OS X Lionがついに発売となりました！
+と、ともに、&lt;a href=&#34;http://www.apple.com/jp/macbookair/&#34;&gt;新しいMacBook
+Airも発売になっています&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;現在、Lionをダウンロード中＆インストール中。
+再起動を促された
+&lt;a href=&#34;https://picasaweb.google.com/lh/photo/I4CMKqLfOFFu5VL_qd2fmg?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh4.googleusercontent.com/-Oj9GFPz0yvs/Tjr6xObBA4I/AAAAAAAAg6M/xiIzf5FTfFU/s288/5958413733_0a2bd90341_o.png&#34;&gt;
+&lt;/a&gt;
+ので、詳細は後ほど。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mac ソフトウェアアップデート来てた( Lion へのアップグレードのため)</title>
+      <link>http://localhost:1313/posts/2011/07/mac-%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E6%9D%A5%E3%81%A6%E3%81%9F-lion-%E3%81%B8%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%AE%E3%81%9F%E3%82%81/</link>
+      <pubDate>Fri, 01 Jul 2011 05:29:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/07/mac-%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E6%9D%A5%E3%81%A6%E3%81%9F-lion-%E3%81%B8%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%AE%E3%81%9F%E3%82%81/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/31362181@N08/5888361721/&#34; title=&#34;Software update for upgrading to Lion&#34;&gt;&lt;img alt=&#34;Software update for upgrading to\nLion&#34; loading=&#34;lazy&#34; src=&#34;http://farm7.static.flickr.com/6060/5888361721_4165932c1c_m.jpg&#34;&gt;{.alignnone}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mac のソフトウェアアップデートが来てました。
+いくつか更新項目はありますが、
+「Mac OS X Lionへのアップグレードを Mac App Store
+からできるようになります」
+というのが大きなところだと思います。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.apple.com/jp/macosx/&#34;&gt;http://www.apple.com/jp/macosx/&lt;/a&gt;によると、
+Lion は７月発売予定 価格は 2,600円
+ということなのですが、待ち遠しいですね。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mac で Scala と Lift を使ってみる(2) Cloud Foundry編</title>
+      <link>http://localhost:1313/posts/2011/06/mac-%E3%81%A7-scala-%E3%81%A8-lift-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B2-cloud-foundry%E7%B7%A8/</link>
+      <pubDate>Sat, 11 Jun 2011 06:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/06/mac-%E3%81%A7-scala-%E3%81%A8-lift-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B2-cloud-foundry%E7%B7%A8/</guid>
+      <description>&lt;p&gt;「Mac で Scala と Lift を使ってみる」の2回目&lt;/p&gt;
+&lt;p&gt;今度は、作成したアプリをCloud Foundryへpushしてみます。
+つい最近、&lt;a href=&#34;http://cloudfoundry.com/&#34;&gt;Cloud
+Foundry&lt;/a&gt;が&lt;a href=&#34;http://blog.cloudfoundry.com/post/6109591023/cloud-foundry-now-supporting-scala&#34;&gt;Scala-Liftに対応した&lt;/a&gt;ので可能になりました。&lt;/p&gt;
+&lt;p&gt;今度は、「ゆろよろ日記」さんのサイト：
+&lt;a href=&#34;http://d.hatena.ne.jp/yuroyoro/20080808/1218168453&#34;&gt;http://d.hatena.ne.jp/yuroyoro/20080808/1218168453&lt;/a&gt;
+記述を参考にしました。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;アプリを作成&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ mvn archetype:create -U  -DarchetypeGroupId=net.liftweb  -DarchetypeArtifactId=lift-archetype-basic -DarchetypeVersion=0.9  -DremoteRepositories=http://scala-tools.org/repo-releases  -DgroupId=org.orzlabs -DartifactId=hello-lift
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;パッケージ作成&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd hello-lift/
+$ mvn package
+$ ls -l target
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;warファイルが作成されていることを確認します。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cloud Foundryへpush
+以下手順からは、事前に、&lt;a href=&#34;http://cloudfoundry.com/&#34;&gt;Cloud
+Foundry&lt;/a&gt;にて、sign
+upを済ませておく必要があります。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ gem install vmc (vmcをインストールしてない場合)
+$ vmc target api.cloudfoundry.com
+$ vmc login
+$ vmc push --path target/
+(以下の内容を聞かれるので、適当に入力)
+Application Name: xxxxx (アプリケーション名。好きな様につけて良い。)
+Application Deployed URL: &#39;xxxxx.cloudfoundry.com&#39;? (デフォルトで良ければ単にEnter。アクセスするURLを指定する)
+Detected a Java Web Application, is this correct? [Yn]: (Enter)
+Memory Reservation [Default:512M] (64M, 128M, 256M, 512M or 1G) (デフォルトで良ければ単にEnter)
+Creating Application: OK
+Would you like to bind any services to &#39;nano&#39;? [yN]: (DBを使用したければy。今回はとりあえず不要なのでN)
+Uploading Application:
+  Checking for available resources: OK
+  Processing resources: OK
+  Packing application: OK
+  Uploading (7M): OK
+Push Status: OK
+Staging Application: OK
+Starting Application: OK
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Webブラウザでアクセス&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mac で Scala と Lift を使ってみる(1) インストール編</title>
+      <link>http://localhost:1313/posts/2011/06/mac-%E3%81%A7-scala-%E3%81%A8-lift-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B1-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E7%B7%A8/</link>
+      <pubDate>Fri, 10 Jun 2011 06:06:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/06/mac-%E3%81%A7-scala-%E3%81%A8-lift-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B1-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E7%B7%A8/</guid>
+      <description>&lt;p&gt;Scala と Lift が気になってきたので、インストール。
+くろだろぐさん： &lt;a href=&#34;http://kuroda.exblog.jp/12093277/&#34;&gt;http://kuroda.exblog.jp/12093277/&lt;/a&gt; の記述を参考に、
+最新版っぽいscala29をインストールした。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo port selfupdate
+sudo port upgrade outdated
+sudo port install scala28 scala29 maven2
+sudo port select --set maven maven2
+sudo scala_select scala29
+scala -version
+sudo port install sbt
+mvn archetype:generate -U
+-DarchetypeGroupId=net.liftweb
+-DarchetypeArtifactId=lift-archetype-basic_2.8.1
+-DarchetypeVersion=2.3
+-DarchetypeRepository=http://scala-tools.org/repo-snapshots
+-DremoteRepositories=http://scala-tools.org/repo-snapshots
+-DgroupId=your.com
+-DartifactId=sample
+-Dversion=1.0
+cd sample
+sbt update
+sbt ~jetty-run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;で、できた。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/31362181@N08/5815832647/&#34; title=&#34;mac de Scala/Lift sample&#34;&gt;&lt;img alt=&#34;mac de Scala/Lift\nsample&#34; loading=&#34;lazy&#34; src=&#34;http://farm6.static.flickr.com/5261/5815832647_168f6767f5.jpg&#34;&gt;{.alignnone}&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Time Machineが「マウントできませんでした」で失敗したときに試してみること</title>
+      <link>http://localhost:1313/posts/2011/05/time-machine%E3%81%8C%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%E3%81%A7%E3%81%97%E3%81%9F%E3%81%A7%E5%A4%B1%E6%95%97%E3%81%97%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AB%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8/</link>
+      <pubDate>Sun, 22 May 2011 05:20:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/05/time-machine%E3%81%8C%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%E3%81%A7%E3%81%97%E3%81%9F%E3%81%A7%E5%A4%B1%E6%95%97%E3%81%97%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AB%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8/</guid>
+      <description>&lt;p&gt;現在、Time MachineをNAS上のボリュームで使っているのですが、たまに、
+「マウントできませんでした」
+という感じのエラーが発生し、バックアップができなくなることがあります。
+そのとき、/var/log/system.logには以下の様な出力がありました。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;May 22 04:20:49 ariel com.apple.backupd[6949]: Error 45 creating backup disk image
+May 22 04:20:49 ariel com.apple.backupd[6949]: Failed to create disk image /Volumes/Public/ariel.sparsebundle, status: 45
+May 22 04:20:54 ariel com.apple.backupd[6949]: Backup failed with error: 20
+May 22 04:20:55 ariel com.apple.backupd[6949]: Ejected Time Machine network volume.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;こういう場合には、以下を試してみます。
+**
+[なお、これらの作業は自己責任でお願いします。]{style=&amp;ldquo;color:#ff0000;&amp;rdquo;}
+[私の環境ではうまく行きましたが、すべての環境でうまく行くとは限りません。]{style=&amp;ldquo;color:#ff0000;&amp;rdquo;}
+**&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Time
+Machineバックアップに失敗すると、ディレクトリ名に日付／時間がついてしまうので、それを元に戻す。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ mv ariel_XXXXXXXXXXXX_2011-05-21-113228.sparsebundle ariel_XXXXXXXXXXXX.sparsebundle
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;変更禁止フラグがたっている(らしい)ので、それを解除。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ chflags nouchg ariel_XXXXXXXXXXXX.sparsebundle
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;以下のファイル内容の修正を行う。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ vim ariel_XXXXXXXXXXXX.sparsebundle/com.apple.TimeMachine.MachineID.plist
+
+        VerificationState
+  2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;を&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;        VerificationState
+  1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;に変更。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;変更禁止フラグを再度設定。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ chflags uchg ariel_XXXXXXXXXXXX.sparsebundle
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;再度、バックアップを試してみる。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;＃まぁ、本当に大丈夫なのかどうかは、リストアしてみるまでわかりませんが。。w&lt;/p&gt;
+&lt;p&gt;参考サイト: &lt;a href=&#34;http://d.hatena.ne.jp/mtaneda/&#34;&gt;mtaneda’s diary&lt;/a&gt; -
+&lt;a href=&#34;http://d.hatena.ne.jp/mtaneda/20101207/1291670192&#34;&gt;続・Time Machine
+によるバックアップの検証が完了しました。信頼性を向上するために、新規バックアップの作成が必要になりました。&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>新しいMacBook Pro発表(そしてもう買えます)</title>
+      <link>http://localhost:1313/posts/2011/02/%E6%96%B0%E3%81%97%E3%81%84macbook-pro%E7%99%BA%E8%A1%A8%E3%81%9D%E3%81%97%E3%81%A6%E3%82%82%E3%81%86%E8%B2%B7%E3%81%88%E3%81%BE%E3%81%99/</link>
+      <pubDate>Fri, 25 Feb 2011 06:12:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/02/%E6%96%B0%E3%81%97%E3%81%84macbook-pro%E7%99%BA%E8%A1%A8%E3%81%9D%E3%81%97%E3%81%A6%E3%82%82%E3%81%86%E8%B2%B7%E3%81%88%E3%81%BE%E3%81%99/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/31362181@N08/5474817500/&#34; title=&#34;New MacBook Pro&#34;&gt;&lt;img alt=&#34;New MacBook\nPro&#34; loading=&#34;lazy&#34; src=&#34;http://farm6.static.flickr.com/5051/5474817500_0eb9c4292e_m.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;新しいMacBook Proが発表になっていました。
+そしてもう買えます。&lt;/p&gt;
+&lt;p&gt;ノートでもQuad Coreですか。スゴい時代になりましたね。
+デフォルトだと通常のHDDですが、SSDも選択できるようです。&lt;/p&gt;
+&lt;p&gt;私は、MacBook
+Airを買ったばかりで大満足中なので、特に欲しくはありません。
+本当です。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fedora on VMWare Fusion 3 on MacBook Air</title>
+      <link>http://localhost:1313/posts/2011/02/fedora-on-vmware-fusion-3-on-macbook-air/</link>
+      <pubDate>Mon, 07 Feb 2011 05:21:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/02/fedora-on-vmware-fusion-3-on-macbook-air/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/masayun/5422904210/&#34; title=&#34;Fedora14 on VMware Fusion on MacBook Air by masayukig, on Flickr&#34;&gt;&lt;img alt=&#34;Fedora14 on VMware Fusion on MacBook\nAir&#34; loading=&#34;lazy&#34; src=&#34;http://farm6.static.flickr.com/5297/5422904210_999389cb72_m.jpg&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.0r2.info/blog/2011/02/06/macbook-air%E3%81%ABlinuxfedora%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/&#34;&gt;先日のエントリー&lt;/a&gt;で、MacBook
+AirにFedoraをインストールしたことを書きましたが、
+やはり、Mac OS X上からもLinuxを使いたいので試行錯誤して、
+VMWare Fusion 3上から使うことができました。&lt;/p&gt;
+&lt;p&gt;以下、その方法。&lt;/p&gt;
+&lt;p&gt;まずは、普通に別パーティション(私の場合/dev/disk0s3(Mac表記))へFedora14(x86_64)をインストール。
+なお、swapパーティションは、とりあえず作らない。必要なら後からswapファイルを作ってそれをswapにする。
+(無駄なディスク領域は作りたくないので)
+また、MacのUSキーボードの場合、キーボードは無印の「アメリカ合衆国」を選んだ方がいいようだ。
+「日本語入力するから国際版(International)」かな？と思ってそれを選んだら、
+「~, `, &amp;ldquo;, &amp;lsquo;」
+などのキーがまともに入力できなくなってしまいました。&lt;/p&gt;
+&lt;p&gt;なお、設定は/etc/sysconfig/keyboardの&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;KEYBOARD=&amp;quot;acentos-us&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;となっているところを&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;KEYBOARD=&amp;quot;us&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;20110208追記&#34;&gt;とすれば、普通のUSキーボードになるようです。
+2011/02/08追記：&lt;/h1&gt;
+&lt;h1 id=&#34;どうやらこれではダメだったみたいですもうちょっと解決策を探してみます&#34;&gt;どうやらこれではダメだったみたいです。。もうちょっと解決策を探してみます。&lt;/h1&gt;
+&lt;p&gt;で、肝心の別パーティションのディスクイメージを使用してのLinux起動ですが、
+以下の手順でできました。
+なお、&lt;a href=&#34;http://fearandloath.us/vmware-fusion-bootcamp-partition.html&#34;&gt;http://fearandloath.us/vmware-fusion-bootcamp-partition.html&lt;/a&gt;のサイトの情報を
+参考（というかほぼそのまま）にさせてもらいました。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd &amp;quot;/Library/Application Support/VMware Fusion/&amp;quot;
+$ ./vmware-rawdiskCreator print /dev/disk0
+Nr      Start       Size Type Id Sytem
+-- ---------- ---------- ---- -- ------------------------
+ 1          1     409639 BIOS EE Unknown
+ 2     409640  196982744 BIOS AF HFS+
+ 3  197654528   39321600 BIOS 83 Linux
+(という感じの出力がされるので、インストールするパーティションの「Nr」を確認しておく
+私の場合は「３」)
+$ ./vmware-rawdiskCreator create /dev/disk0 3 /Users/igawa/Documents/Virtual\ Machines.localized/rawfedora_x86_64.vmwarevm/bootcamp_partition ide
+$ vim /Users/igawa/Documents/Virtual\ Machines.localized/rawfedora_x86_64.vmwarevm/rawfedora_x86_64.vmx
+======
+ide0:0.present = &amp;quot;TRUE&amp;quot;
+ide0:0.fileName = &amp;quot;bootcamp_partition.vmdk&amp;quot;
+======
+を適当なところに追加 or 置換する。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;これでOKでした。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MacBook (Airでも) 画面を閉じてもスリープさせないようにする アプリ</title>
+      <link>http://localhost:1313/posts/2011/01/macbook-air%E3%81%A7%E3%82%82-%E7%94%BB%E9%9D%A2%E3%82%92%E9%96%89%E3%81%98%E3%81%A6%E3%82%82%E3%82%B9%E3%83%AA%E3%83%BC%E3%83%97%E3%81%95%E3%81%9B%E3%81%AA%E3%81%84%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B-%E3%82%A2%E3%83%97%E3%83%AA/</link>
+      <pubDate>Wed, 26 Jan 2011 05:51:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/01/macbook-air%E3%81%A7%E3%82%82-%E7%94%BB%E9%9D%A2%E3%82%92%E9%96%89%E3%81%98%E3%81%A6%E3%82%82%E3%82%B9%E3%83%AA%E3%83%BC%E3%83%97%E3%81%95%E3%81%9B%E3%81%AA%E3%81%84%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B-%E3%82%A2%E3%83%97%E3%83%AA/</guid>
+      <description>&lt;p&gt;画面を閉じてもスリープさせたくないときもあるので、
+ググったら見つかりました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://semaja2.net/insomniaxinfo&#34;&gt;InsomniaX&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;というアプリです。&lt;/p&gt;
+&lt;p&gt;情報元は以下のページです。
+&lt;a href=&#34;http://espressoaddshot.blog74.fc2.com/blog-entry-221.html&#34;&gt;macbookディスプレイを閉じてもスリープしないように。Mac導入日記&lt;/a&gt;
+&lt;a href=&#34;http://maruta.be/sugimurase/356&#34;&gt;MacBook Air
+閉じてもスリープしないように&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MacBook Air(13&#34;)買った。いや、到着した！</title>
+      <link>http://localhost:1313/posts/2011/01/macbook-air13%E8%B2%B7%E3%81%A3%E3%81%9F%E3%81%84%E3%82%84%E5%88%B0%E7%9D%80%E3%81%97%E3%81%9F/</link>
+      <pubDate>Fri, 14 Jan 2011 05:08:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/01/macbook-air13%E8%B2%B7%E3%81%A3%E3%81%9F%E3%81%84%E3%82%84%E5%88%B0%E7%9D%80%E3%81%97%E3%81%9F/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/masayun/5352096223/&#34; title=&#34;Untitled by masayukig, on Flickr&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;http://farm6.static.flickr.com/5125/5352096223_fc20480cdf.jpg&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Twitterではつぶやき済みですが、
+&lt;a href=&#34;http://www.apple.com/jp/macbookair/&#34;&gt;MacBook Air
+13&amp;quot;&lt;/a&gt;~~を買いました。~~が到着しました！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;USキーボード&lt;/li&gt;
+&lt;li&gt;128GB SSD&lt;/li&gt;
+&lt;li&gt;CPU:1.86GHz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;といった感じにカスタマイズしてます。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MacBook Airは上海から出荷されるらしい</title>
+      <link>http://localhost:1313/posts/2011/01/macbook-air%E3%81%AF%E4%B8%8A%E6%B5%B7%E3%81%8B%E3%82%89%E5%87%BA%E8%8D%B7%E3%81%95%E3%82%8C%E3%82%8B%E3%82%89%E3%81%97%E3%81%84/</link>
+      <pubDate>Thu, 06 Jan 2011 04:26:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/01/macbook-air%E3%81%AF%E4%B8%8A%E6%B5%B7%E3%81%8B%E3%82%89%E5%87%BA%E8%8D%B7%E3%81%95%E3%82%8C%E3%82%8B%E3%82%89%E3%81%97%E3%81%84/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.0r2.info/blog/2011/01/04/macbook-air13%e3%82%a4%e3%83%b3%e3%83%81%e8%b3%bc%e5%85%a5%ef%bc%81/&#34;&gt;先日注文した&lt;/a&gt;、Apple
+Storeから「商品出荷のお知らせ」というのが来た！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/31362181@N08/5328031242/&#34; title=&#34;MacBook_Air_shipped_email&#34;&gt;&lt;img alt=&#34;MacBook_Air_shipped_email&#34; loading=&#34;lazy&#34; src=&#34;http://farm6.static.flickr.com/5250/5328031242_f3959b7941_m.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ので、
+「配送状況を確認」したところ、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;海外荷物受付
+海外で荷物をお預かりしました&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/31362181@N08/5328007756/&#34; title=&#34;shipped_on_yamato&#34;&gt;&lt;img alt=&#34;shipped_on_yamato&#34; loading=&#34;lazy&#34; src=&#34;http://farm6.static.flickr.com/5005/5328007756_9ec8ea6c54_m.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;となっており、
+「担当店名」が「上海支店（中国）」となっていました。
+ずいぶん遠くから来るんだなーと思いました。
+カスタマイズしたからかな？？&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MacBook Air(13インチ)購入！</title>
+      <link>http://localhost:1313/posts/2011/01/macbook-air13%E3%82%A4%E3%83%B3%E3%83%81%E8%B3%BC%E5%85%A5/</link>
+      <pubDate>Tue, 04 Jan 2011 07:07:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/01/macbook-air13%E3%82%A4%E3%83%B3%E3%83%81%E8%B3%BC%E5%85%A5/</guid>
+      <description>&lt;p&gt;MacBook Air(13インチ)を購入した！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://store.apple.com/jp/browse/campaigns/newyearspecial&#34;&gt;Apple
+Storeの初売り&lt;/a&gt;に背中を押された形です。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/31362181@N08/5321142285/&#34; title=&#34;apple-store-macbook_air_screenshot_m&#34;&gt;&lt;img alt=&#34;apple-store-macbook_air_screenshot_m&#34; loading=&#34;lazy&#34; src=&#34;http://farm6.static.flickr.com/5125/5321142285_6164911975.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;妻にも事前に許可をもらい（タワー型PCを２台処分したのが大きかった模様）、
+「iMacもいいかなぁ」
+「MacBookProの方が良いかなぁ」
+「11インチでも良いんじゃないかなぁ」
+「同じ値段でiPadを３つ位買えるんじゃないか？」
+「HPのプリンタを買うと1万円キャッシュバック？
+　HP Photosmart Wireless B110aが1万円で、これが実質無料？」
+「外で使うにしても、ネットワークどうしよう。」
+「ValueCommerceのショッパーズクラブ経由で買うと0.8%報酬？」
+「実は、他のサイトや店舗ではもっと安く買えるのでは？」
+「キーボードはUSかJISどっちにしよう？」
+等、色々悩むところ、考えるところありましたが、購入しました。&lt;/p&gt;
+&lt;p&gt;なお、上記の悩みは以下のように解決。
+「iMacもいいかなぁ」
+→まぁ、今はデスクトップPC(Linux)があるからいらないだろう。&lt;/p&gt;
+&lt;p&gt;「MacBookProの方が良いかなぁ」
+→重いから却下。&lt;/p&gt;
+&lt;p&gt;「11インチでも良いんじゃないかなぁ」
+→少しでもパワフルの方が良い。&lt;/p&gt;
+&lt;p&gt;「同じ値段でiPadを３つ位買えるんじゃないか？」
+→MacBook Airを保有すること&amp;hellip;Price less　w&lt;/p&gt;
+&lt;p&gt;「HPのプリンタを買うと1万円キャッシュバック？
+　HP Photosmart Wireless B110aが1万円で、これが実質無料？」
+→とりあえず、注文。でも納期は3週間後w。分割配送なので特に問題無し。
+　もし、使わない場合は、誰かに譲ることにする。&lt;/p&gt;
+&lt;p&gt;「外で使うにしても、ネットワークどうしよう。」
+→近い将来Pocket Wifi Sでも導入しよう。
+　(光ポータブルは何となく割高な気もするので、面白そうなPocket Wifi
+Sかなぁと。
+　 HTC Ariaも気になるが、ちょっと高い。)&lt;/p&gt;
+&lt;p&gt;「ValueCommerceのショッパーズクラブ経由で買うと0.8%報酬？」
+→いまのところよくわからない。。&lt;/p&gt;
+&lt;p&gt;「実は、他のサイトや店舗ではもっと安く買えるのでは？」
+→そうかもしれないけど、店舗に行く手間がかかるし、
+　カスタマイズが出来る店舗もそれほど多くはないし、
+　なにしろ、「買おうと思ったときが買い時」なので(笑)&lt;/p&gt;
+&lt;p&gt;「キーボードはUSかJISどっちにしよう？」
+→USにしてみることにする。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mac OS X向けのiSCSI イニシエーター(無料)</title>
+      <link>http://localhost:1313/posts/2008/12/mac-os-x%E5%90%91%E3%81%91%E3%81%AEiscsi-%E3%82%A4%E3%83%8B%E3%82%B7%E3%82%A8%E3%83%BC%E3%82%BF%E3%83%BC%E7%84%A1%E6%96%99/</link>
+      <pubDate>Mon, 15 Dec 2008 04:52:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/12/mac-os-x%E5%90%91%E3%81%91%E3%81%AEiscsi-%E3%82%A4%E3%83%8B%E3%82%B7%E3%82%A8%E3%83%BC%E3%82%BF%E3%83%BC%E7%84%A1%E6%96%99/</guid>
+      <description>&lt;p&gt;Mac OS X向けのiSCSI イニシエーターです。
+&lt;a href=&#34;http://www.studionetworksolutions.com/products/product_detail.php?pi=11&#34;&gt;Studio Network Solutions - Download iSCSI Initiator for Mac OS
+X&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;適当な(Linuxとかの)サーバでiSCSIターゲット作っておけば、
+Leopardなら、iSCSIで、Time Machineが使えるようになるので、
+Time Capsuleは買わなくても良いらしい。&lt;/p&gt;
+&lt;p&gt;でも、うちはまだTigerなので、将来のためのメモw&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MacBookが起動しない！</title>
+      <link>http://localhost:1313/posts/2007/05/macbook%E3%81%8C%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%AA%E3%81%84/</link>
+      <pubDate>Sun, 13 May 2007 21:15:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2007/05/macbook%E3%81%8C%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%AA%E3%81%84/</guid>
+      <description>&lt;p&gt;１年度ほど前、
+&lt;a href=&#34;http://lunatic.xrea.jp/mt/2006/08/macbook.html&#34;&gt;http://lunatic.xrea.jp/mt/2006/08/macbook.html&lt;/a&gt;
+のエントリーにあるように、MacBookを購入したのですが、
+つい最近、ゴールデンウィーク中（旅行に行っていたので）、
+電源を切ってほったらかしにしていたら、
+旅行から帰ってきたら、起動しなくなっていました(泣)
+&lt;a href=&#34;http://www.apple.com/jp/support/panther/startup/index.html&#34;&gt;http://www.apple.com/jp/support/panther/startup/index.html&lt;/a&gt;
+の、情報なんかを参考に色々と、やってみたのですが全然ダメで。。&lt;/p&gt;
+&lt;p&gt;状態としては、
+「電源を入れると、真っ暗な画面(ブラックアウト状態)になったままで、
+　うんともすんとも言わない。時々、スリープランプが素早く点滅する事がある
+　(点滅しない事もある)」
+という感じです。&lt;/p&gt;
+&lt;p&gt;もう、全くお手上げだったので、Appleのサポートに電話しました。
+そのときのやり取りは、以下のような感じ。
+私「すいません。MacBookが起動しなくなっちゃったんですが。。」
+サポート「保証期間も間もなくですし、電話サポートも受けられるので、AppleCare
+Protectionに加入しませんか？￥31,500です。(という感じの事を言っていたと思う)」
+私「(そんなバカみたいに高いもの今更入るか！と思いつつ)それに、加入しないと今回の対応はしてもらえないんですか？」
+サポート「いえ。そのような事はありませんが、このような物もあるというご紹介です。」
+私「わかりました。」
+サポート「お客様の方で何かなさった事はありますか？」
+私「(アップルのサイトに書かれている事をいくつか挙げて)という事をやりました。」
+サポート「わかりました。今回のものはハードウェア的な故障と思われますので無償修理対応をいたします。つきましては、お客様のメモリ容量とHDD容量をお知らせください。」
+私「メモリ2GB, HDD 160GBです。自分で入れ替えました。」
+サポート「ご自分で入れ替えたのですか！！！？無償修理対応出来るかどうか確認しますので少々お待ちください。。。」
+私「(かなり焦って)はい。。。」
+この時点で、「しまったー。デフォルトに戻しておけば別にバレないのに。。失敗したかもー(泣)」と思っていた。
+サポート「ご自分で購入したときの状態に戻せるのであれば、無償修理対応可能です。まずは、最初の状態に戻して起動するかどうか確認の上、起動しなければ、再度、ご連絡ください。」
+私「わかりました」
+で、購入時の状態に戻して起動してみるものの、やはり起動しない(同じ状態)。
+なので、再度サポートに連絡し、無償修理対応をしてもらいました。&lt;/p&gt;
+&lt;p&gt;という訳で、サポートに連絡するならデフォルト状態に戻しておきましょう。
+というお話でした。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MacBook買いました（ちょっとお得な気分になれる買い方）</title>
+      <link>http://localhost:1313/posts/2006/08/macbook%E8%B2%B7%E3%81%84%E3%81%BE%E3%81%97%E3%81%9F%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%8A%E5%BE%97%E3%81%AA%E6%B0%97%E5%88%86%E3%81%AB%E3%81%AA%E3%82%8C%E3%82%8B%E8%B2%B7%E3%81%84%E6%96%B9/</link>
+      <pubDate>Thu, 17 Aug 2006 23:45:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2006/08/macbook%E8%B2%B7%E3%81%84%E3%81%BE%E3%81%97%E3%81%9F%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%8A%E5%BE%97%E3%81%AA%E6%B0%97%E5%88%86%E3%81%AB%E3%81%AA%E3%82%8C%E3%82%8B%E8%B2%B7%E3%81%84%E6%96%B9/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://lunatic.xrea.jp/mt/archives/DSC_17701.html&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;http://lunatic.xrea.jp/mt/archives/DSC_1770-thumb.jpg&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ちょっと前になりますが、MacBookを買いました。
+一番下のクラス(1.83GHz)でも良いかなぁと思ったのですが、どうせなら（何が？）という事で、2GHzを買いました。
+いろいろ悩んで、買いましたが「ちょっとお得かも」と思える買い方を見つけました。&lt;/p&gt;
+&lt;p&gt;大雑把に言うと、&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;チケットショップでVISA等のギフトカードを購入(大体９６,7%ぐらいの値段でうってると思います)。&lt;/li&gt;
+&lt;li&gt;ソフマップで先ほど購入したギフトカードを使用してMacを購入。&lt;/li&gt;
+&lt;li&gt;購入する際にはSofmapカードを提示して、ポイントをもらう事を忘れずに。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.apple.com/jp/support/products/&#34;&gt;AppleCare&lt;/a&gt;には加入せず、&lt;a href=&#34;http://guide.sofmap.com/guide/ss/before/s_wara.html&#34;&gt;ソフマップパーフェクトワランティ&lt;/a&gt;に加入する。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;という感じです。&lt;/p&gt;
+&lt;p&gt;どれくらい得をするのかというと、例えば&lt;a href=&#34;http://store.apple.com/0120-APPLE-1/WebObjects/japanstore.woa/&#34;&gt;AppleStore&lt;/a&gt;で普通に「MacBook2GHz
+白 HDD60GB Memory1GB AppleCare付き」で購入すると、
+→￥203,270
+一方、ソフマップで、「MacBook2GHz 白 HDD60GB Memory1GB
+ソフマップパーフェクトワランティ付き」で購入すると、
+￥171,770+￥10,000(ソフマップパーフェクトワランティ分)=￥181,770(且つ５％ポイント（約8500円分）還元)
+さらに、９６％でVISAギフトカードを購入していれば、さらに７０００円程度はお得です。
+というわけで、お得金額は、
+保証料：31,500 - 10,000 = ￥21,500
+ポイント：約￥8,500
+ギフトカード:約￥7,000
+となり、合計で、約**￥37,000**もお得です。！&lt;/p&gt;
+&lt;p&gt;注意点は、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ギフトカードではおつりが出ないらしい。&lt;/li&gt;
+&lt;li&gt;Sofmap以外の店舗ではギフトカードが使えなかったり、使えてもポイント還元率が悪くなったりする。&lt;/li&gt;
+&lt;li&gt;保証期間こそ「ソフマップパーフェクトワランティ」の方が長く、外来性の事故（破損・火災など）も含めて保証してくれるようだが、電話サポートや出張修理などは無い。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;などなど、色々ありますのでご利用の際は、十分ご注意ください。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mac OS Xのセキュリティアップデートが公開に--10件の脆弱性を修正</title>
+      <link>http://localhost:1313/posts/2005/09/mac-os-x%E3%81%AE%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E3%81%8C%E5%85%AC%E9%96%8B%E3%81%AB-10%E4%BB%B6%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7%E3%82%92%E4%BF%AE%E6%AD%A3/</link>
+      <pubDate>Mon, 26 Sep 2005 23:07:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/09/mac-os-x%E3%81%AE%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E3%81%8C%E5%85%AC%E9%96%8B%E3%81%AB-10%E4%BB%B6%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7%E3%82%92%E4%BF%AE%E6%AD%A3/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://japan.cnet.com/news/sec/story/0,2000050480,20087532,00.htm&#34;&gt;japan.cnet.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;先日、Macを使っていたら、「セキュリティーアップデート」のダイアログが表示されたので、
+アップデートしました。
+セキュリティーアップデートなので、特に理由がない限りアップデートした方が良いでしょう。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>マックパーフェクト、初代／第2世代iPod専用大容量バッテリー発売</title>
+      <link>http://localhost:1313/posts/2005/08/%E3%83%9E%E3%83%83%E3%82%AF%E3%83%91%E3%83%BC%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88%E5%88%9D%E4%BB%A3%E7%AC%AC2%E4%B8%96%E4%BB%A3ipod%E5%B0%82%E7%94%A8%E5%A4%A7%E5%AE%B9%E9%87%8F%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC%E7%99%BA%E5%A3%B2/</link>
+      <pubDate>Fri, 26 Aug 2005 22:14:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/08/%E3%83%9E%E3%83%83%E3%82%AF%E3%83%91%E3%83%BC%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88%E5%88%9D%E4%BB%A3%E7%AC%AC2%E4%B8%96%E4%BB%A3ipod%E5%B0%82%E7%94%A8%E5%A4%A7%E5%AE%B9%E9%87%8F%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC%E7%99%BA%E5%A3%B2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://macperfect.com/cts/batt-ac/item/ipod.htm&#34;&gt;macperfect.com&lt;/a&gt;
+&lt;a href=&#34;http://www.itmedia.co.jp/lifestyle/articles/0508/19/news068.html&#34;&gt;www.itmedia.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;iPodのバッテリーの持ちがイマイチとお嘆きのそこの私。
+バッテリーを交換して長時間再生を可能にするチャンスです(w&lt;/p&gt;
+&lt;p&gt;「自分で交換するのはちょっと不安&amp;hellip;」
+という人も、
+iPod内蔵バッテリー交換サービス
+&lt;a href=&#34;http://macperfect.com/cts/service/list/ipod_battery.htm&#34;&gt;macperfect.com&lt;/a&gt;
+があるようです。
+バッテリー＋工賃＝6,980円
+だそうです。バッテリーキット単体が5,980円なので工賃は1,000円ってことになります。
+「リフレッシュ、クリーニング&amp;amp;傷取り」もサービスでやってくれるらしいので、
+結構お手頃な値段だと思います。&lt;/p&gt;
+&lt;p&gt;＃交換してもらおうかなぁ。。。。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Intel Mac以外でx86対応Mac OSを走らせる手法がネットに公開</title>
+      <link>http://localhost:1313/posts/2005/08/intel-mac%E4%BB%A5%E5%A4%96%E3%81%A7x86%E5%AF%BE%E5%BF%9Cmac-os%E3%82%92%E8%B5%B0%E3%82%89%E3%81%9B%E3%82%8B%E6%89%8B%E6%B3%95%E3%81%8C%E3%83%8D%E3%83%83%E3%83%88%E3%81%AB%E5%85%AC%E9%96%8B/</link>
+      <pubDate>Tue, 16 Aug 2005 23:33:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/08/intel-mac%E4%BB%A5%E5%A4%96%E3%81%A7x86%E5%AF%BE%E5%BF%9Cmac-os%E3%82%92%E8%B5%B0%E3%82%89%E3%81%9B%E3%82%8B%E6%89%8B%E6%B3%95%E3%81%8C%E3%83%8D%E3%83%83%E3%83%88%E3%81%AB%E5%85%AC%E9%96%8B/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.itmedia.co.jp/news/articles/0508/15/news011.html&#34; title=&#34;Intel Mac以外でx86対応Mac OSを走らせる手法がネットに公開&#34;&gt;Intel Mac以外でx86対応Mac
+OSを走らせる手法がネットに公開&lt;/a&gt;
+なかなか面白そうな話だけど、こういうのって&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;while(物好きがやる気) {
+OS開発社側がプロテクトをかける。
+物好きがプロテクトを回避する。
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;じゃないのかなぁ。。。？&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AppleがIntelプロセッサ採用を発表</title>
+      <link>http://localhost:1313/posts/2005/06/apple%E3%81%8Cintel%E3%83%97%E3%83%AD%E3%82%BB%E3%83%83%E3%82%B5%E6%8E%A1%E7%94%A8%E3%82%92%E7%99%BA%E8%A1%A8/</link>
+      <pubDate>Tue, 07 Jun 2005 22:08:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/06/apple%E3%81%8Cintel%E3%83%97%E3%83%AD%E3%82%BB%E3%83%83%E3%82%B5%E6%8E%A1%E7%94%A8%E3%82%92%E7%99%BA%E8%A1%A8/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://slashdot.jp/article.pl?sid=05/06/06/1853207&amp;amp;topic=40&#34;&gt;http://slashdot.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本当の話だった模様。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;2006年からMacはIntelプロセッサに移行(Mac OS X自体は既に対応)。&lt;/li&gt;
+&lt;li&gt;Intel版Mac OS XではPowerPC版ソフトも実行できる機能を持っている。&lt;/li&gt;
+&lt;li&gt;プログラムをネイティブ対応させるのはXcode。&lt;/li&gt;
+&lt;li&gt;すでにAdobeをはじめとした大手は対応を表明している。&lt;/li&gt;
+&lt;li&gt;開発者向けIntel版移行用キットは999ドルで提供。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;だそうだ。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://pc.watch.impress.co.jp/docs/2005/0607/apple2.htm&#34;&gt;http://pc.watch.impress.co.jp/&lt;/a&gt;
+も、参照。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>アップル、IBMを見限る--Macにインテル製プロセッサを採用へ</title>
+      <link>http://localhost:1313/posts/2005/06/%E3%82%A2%E3%83%83%E3%83%97%E3%83%ABibm%E3%82%92%E8%A6%8B%E9%99%90%E3%82%8B-mac%E3%81%AB%E3%82%A4%E3%83%B3%E3%83%86%E3%83%AB%E8%A3%BD%E3%83%97%E3%83%AD%E3%82%BB%E3%83%83%E3%82%B5%E3%82%92%E6%8E%A1%E7%94%A8%E3%81%B8/</link>
+      <pubDate>Tue, 07 Jun 2005 00:12:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/06/%E3%82%A2%E3%83%83%E3%83%97%E3%83%ABibm%E3%82%92%E8%A6%8B%E9%99%90%E3%82%8B-mac%E3%81%AB%E3%82%A4%E3%83%B3%E3%83%86%E3%83%AB%E8%A3%BD%E3%83%97%E3%83%AD%E3%82%BB%E3%83%83%E3%82%B5%E3%82%92%E6%8E%A1%E7%94%A8%E3%81%B8/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://japan.cnet.com/news/tech/story/0,2000047674,20084156,00.htm&#34;&gt;http://japan.cnet.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;なんだか、すごい数のトラックバックがついてる。
+確かに、非常に興味が湧く話題。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CNET News.comが入手した情報によると、Apple
+Computerは米国時間6日に、IBMとの提携関係を解消し、代わりにIntel製プロ
+セッサを同社のコンピュータに採用することを発表する。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;って書いてあるし。&lt;/p&gt;
+&lt;p&gt;最初のうちは、
+「IBMへのオドシだろ。」
+ぐらいな感じだったけど、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Appleはまず2006年なかばに、Mac
+miniなどローエンドのコンピュータでIntel
+プロセッサへの切り替えを行い、Power Macなどハイエンドのモデルも2007年
+なかばには移行する予定だという。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;だそうだ。
+なんにしても、今日行われるはずの発表で真偽が明らかになるだろう。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -8,6 +8,11 @@ tags:
 - Mac
 draft: false
 disqus_identifier: 2011-07-01-mac-sohutoueaatsupudetolai-teta-lion-henoatsupuguredonotame
+cover:
+  image: http://farm7.static.flickr.com/6060/5888361721_4165932c1c_m.jpg
+  alt: 'Software update for upgrading to
+
+    Lion'
 ---
 
 [![Software update for upgrading to

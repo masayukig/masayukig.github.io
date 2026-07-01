@@ -3,6 +3,9 @@ title: DISCLAIMER
 date: '1970-01-01T00:00:00+09:00'
 slug: disclaimer
 draft: false
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: DISCLAIMER
 ---
 
 These blog posts are my own opinion.

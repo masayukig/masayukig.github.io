@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-10-04-linux-world-cd-2004-raibudoaku-jiang-she-chang-puroqiu-tuan-wochi-tetara-linuxqiu-tuan-nishitai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Linux World C&D 2004 - ライブドア堀江社長、「プロ球団を持てたら、Linux球 団にしたい」
 ---
 
 [MYCOM PC](http://pcweb.mycom.co.jp/articles/2004/09/30/lwcd2/)

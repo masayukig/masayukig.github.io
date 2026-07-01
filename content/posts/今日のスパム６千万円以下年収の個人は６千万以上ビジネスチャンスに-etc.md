@@ -6,6 +6,9 @@ tags:
 - SPAM
 draft: false
 disqus_identifier: 2004-08-22-jin-ri-nosupamu6qian-mo-yuan-yi-xia-nian-shou-noge-ren-ha6qian-mo-yi-shang-bizinesuchiyansuni-etc
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 今日のスパム「６千万円以下年収の個人は６千万以上ビジネスチャンスに！」 etc
 ---
 
 今度はこんな奴が来ました。

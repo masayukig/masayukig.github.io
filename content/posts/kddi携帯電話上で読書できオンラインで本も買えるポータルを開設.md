@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-04-23-kddi-xi-dai-dian-hua-shang-dedu-shu-deki-onraindeben-momai-erupotaruwokai-she
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: KDDI、携帯電話上で読書でき、オンラインで本も買えるポータルを開設
 ---
 
 [MYCOM PC WEB -

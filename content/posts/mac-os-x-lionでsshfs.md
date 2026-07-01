@@ -9,6 +9,9 @@ tags:
 - sshfs
 draft: false
 disqus_identifier: 2011-08-03-mac-os-x-liondesshfs
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Mac OS X Lionでsshfs
 ---
 
 Mac OS X

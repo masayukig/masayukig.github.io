@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-10-22-ti-deng-ji-shi-kitaictagunokotodonokuraizhi-tsutemasuka
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 提灯記事キター！「ICタグのこと，どのくらい知ってますか？」
 ---
 
 [ITmedia](http://itpro.nikkeibp.co.jp/free/ITPro/OPINION/20041019/151399/)

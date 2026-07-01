@@ -6,6 +6,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2005-03-27-bei-mi-depspfa-mai-shen-ye-nokai-dian-nihuangajie-megua-ke
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 北米でPSP発売、深夜の開店にファンが詰め掛け
 ---
 
 <http://www.itmedia.co.jp/news/articles/0503/25/news010.html>

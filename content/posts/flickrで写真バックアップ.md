@@ -10,6 +10,9 @@ tags:
 - 写真
 draft: false
 disqus_identifier: 2008-10-26-flickrdexie-zhen-batsukuatsupu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Flickrで写真バックアップ
 ---
 
 [Flickr](http://www.flickr.com/)で写真をバックアップすることにした。

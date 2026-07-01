@@ -7,6 +7,9 @@ tags:
 - このサイトのこと
 draft: false
 disqus_identifier: 2011-02-12-konoburoguhasabudomeinb0r2infodeyun-yong-surukotonishita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: このブログはサブドメイン(b.0r2.info)で運用することにした
 ---
 
 今まで、このブログは、

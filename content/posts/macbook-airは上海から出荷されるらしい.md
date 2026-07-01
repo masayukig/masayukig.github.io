@@ -7,6 +7,9 @@ tags:
 - Mac
 draft: false
 disqus_identifier: 2011-01-06-macbook-airhashang-hai-karachu-he-sarerurashii
+cover:
+  image: http://farm6.static.flickr.com/5250/5328031242_f3959b7941_m.jpg
+  alt: MacBook\_Air\_shipped\_email
 ---
 
 [先日注文した](http://www.0r2.info/blog/2011/01/04/macbook-air13%e3%82%a4%e3%83%b3%e3%83%81%e8%b3%bc%e5%85%a5%ef%bc%81/)、Apple

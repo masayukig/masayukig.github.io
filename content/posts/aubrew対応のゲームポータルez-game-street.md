@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-02-13-au-brewdui-ying-nogemupotaruez-game-street
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: au、BREW対応のゲームポータル「EZ Game Street!」
 ---
 
 <http://k-tai.impress.co.jp/cda/article/news_toppage/22554.html>

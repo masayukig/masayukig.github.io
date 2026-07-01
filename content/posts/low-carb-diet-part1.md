@@ -9,6 +9,9 @@ tags:
 - diabetes
 - low-carb
 draft: true
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Low Carb Diet - part1
 ---
 
 ## 概要

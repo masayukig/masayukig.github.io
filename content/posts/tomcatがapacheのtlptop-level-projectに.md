@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-09-29-tomcatgaapachenotlptop-level-projectni
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: TomcatがApacheのTLP(top-level project)に
 ---
 
 [slashdot.jp](http://slashdot.jp/developers/05/09/29/0047250.shtml?topic=43)

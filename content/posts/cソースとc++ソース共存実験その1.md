@@ -7,6 +7,9 @@ tags:
 - C言語
 draft: false
 disqus_identifier: 2010-08-08-csosutocsosugong-cun-shi-yan-sono1
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: CソースとC++ソース共存実験(その1)
 ---
 
 CソースとC++ソースの共存を実験してみた。

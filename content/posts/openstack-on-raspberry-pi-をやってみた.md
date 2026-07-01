@@ -5,6 +5,9 @@ slug: openstack-on-raspberry-pi-をやってみた
 categories:
 - Uncategorized
 draft: true
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: OpenStack on Raspberry Pi をやってみた
 ---
 
 [Raspberry

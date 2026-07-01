@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-09-14-tsuka-auheyi-xing-niban-uyou-yu-ce-woan-nei
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ツーカー、auへ移行に伴う優遇策を案内
 ---
 
 [k-tai.impress.co.jp](http://k-tai.impress.co.jp/cda/article/news_toppage/25632.html)

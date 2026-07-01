@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-09-06-zi-zhai-sabawomacnishitemita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 自宅サーバをMacにしてみた
 ---
 
 自宅サーバをMacにしてみました

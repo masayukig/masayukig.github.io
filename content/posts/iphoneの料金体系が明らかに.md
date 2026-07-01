@@ -7,6 +7,9 @@ tags:
 - iPhone
 draft: false
 disqus_identifier: 2008-06-24-iphonenoliao-jin-ti-xi-gaming-rakani
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhoneの料金体系が明らかに！
 ---
 
 [softbankmobile:iPhone

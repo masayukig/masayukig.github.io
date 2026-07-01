@@ -13,6 +13,9 @@ tags:
 - 日本語
 draft: false
 disqus_identifier: 2008-12-13-ubuntu810shang-nofirefoxderi-ben-yu-huontogaokashiizhong-guo-yu-huonto
+cover:
+  image: /images/covers/oss.png
+  alt: Ubuntu(8.10)上のFirefoxで日本語フォントがおかしい（中国語フォント？）
 ---
 
 Ubuntu(8.10)上のFirefoxで日本語フォントがおかしい（中国語フォント？）と言う現象に遭遇したので、

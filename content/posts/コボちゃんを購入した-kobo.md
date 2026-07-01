@@ -7,6 +7,9 @@ tags:
 - rakuten
 draft: false
 disqus_identifier: 2012-07-20-kobochiyanwogou-ru-shita-kobo
+cover:
+  image: https://masayukig.files.wordpress.com/2012/07/3f0a5-dsc02417.jpg?w=300
+  alt: picture
 ---
 
 +-----------------------------------------------------------------------+

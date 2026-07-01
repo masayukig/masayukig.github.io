@@ -6,6 +6,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2004-08-06-vine-linux-30ririsukousagi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Vine Linux 3.0リリース！(こうさぎ)
 ---
 
 うさこは、hughがbikanhadaしなかったよ。

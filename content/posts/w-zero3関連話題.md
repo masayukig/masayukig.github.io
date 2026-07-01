@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2006-08-14-w-zero3guan-lian-hua-ti
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: W-ZERO3関連話題
 ---
 
 超久々の更新！

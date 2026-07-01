@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-06-07-linuxpu-ji-jue-hao-diao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Linux普及 絶好調？
 ---
 
 日経BPの記事。Linuxの話題がたくさんでした。

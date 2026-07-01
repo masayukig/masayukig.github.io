@@ -7,6 +7,9 @@ tags:
 - Kindle
 draft: false
 disqus_identifier: 2010-06-18-kindle6deisupureiwomai-tsuchiyatsuta
+cover:
+  image: http://www.assoc-amazon.com/e/ir?t=pcorktamophbl-20&l=as2&o=1&a=B0015T963C
+  alt: picture
 ---
 
 というわけで、Kindle([Kindle Wireless Reading Device (6" Display, Global

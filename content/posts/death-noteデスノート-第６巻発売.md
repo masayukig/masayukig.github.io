@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-04-15-death-notedesunoto-di-6juan-fa-mai
+cover:
+  image: http://img.bk1.co.jp/bookimages/0253/025371090000.jpg
+  alt: Ｄｅａｔｈ　ｎｏｔｅ
 ---
 
 [![Ｄｅａｔｈ　ｎｏｔｅ](http://img.bk1.co.jp/bookimages/0253/025371090000.jpg)](http://www.bk1.co.jp/product/2537109/p-hugh55881 "オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"){#bk1link}

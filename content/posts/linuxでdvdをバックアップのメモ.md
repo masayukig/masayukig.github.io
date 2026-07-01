@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2009-01-30-linuxdedvdwobatsukuatsupunomemo
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: LinuxでDVDをバックアップのメモ
 ---
 
 DVDは、結構長期間保存がきくが、いつどうなるか分かったものではないので、

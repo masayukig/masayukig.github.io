@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2005-06-07-mozillamozilla-firefoxnocui-ruo-xing-gazai-fa
+cover:
+  image: /images/covers/oss.png
+  alt: Mozilla/Mozilla Firefoxの脆弱性が再発
 ---
 
 [http://slashdot.jp/](http://slashdot.jp/article.pl?sid=05/06/06/1146249&topic=51)

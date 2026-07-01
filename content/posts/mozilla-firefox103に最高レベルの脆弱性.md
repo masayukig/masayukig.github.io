@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2005-05-09-mozilla-firefox103nizui-gao-reberunocui-ruo-xing
+cover:
+  image: /images/covers/oss.png
+  alt: Mozilla Firefox1.0.3に最高レベルの脆弱性
 ---
 
 <http://slashdot.jp/article.pl?sid=05/05/09/0327254&topic=51>

@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-09-14-apple-tigertopantheryong-nojavasekiyuriteiatsupudetowogong-kai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Apple、TigerとPanther用のJavaセキュリティアップデートを公開
 ---
 
 [www.itmedia.co.jp](http://www.itmedia.co.jp/news/articles/0509/14/news039.html)

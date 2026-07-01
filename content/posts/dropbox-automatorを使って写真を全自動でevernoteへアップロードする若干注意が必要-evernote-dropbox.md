@@ -10,6 +10,9 @@ tags:
 - picture
 draft: false
 disqus_identifier: 2012-03-20-dropbox-automatorwoshi-tsutexie-zhen-woquan-zi-dong-deevernoteheatsupurodosururuo-gan-zhu-yi-gabi-yao-evernote-dropbox
+cover:
+  image: https://masayukig.files.wordpress.com/2012/03/9556c-dropboxautomator-01.png?w=300
+  alt: picture
 ---
 
 [はじめに]{.Apple-style-span style="font-size:large;"}

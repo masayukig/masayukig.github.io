@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>GC on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/gc/</link>
+    <description>Recent content in GC on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 07 Jul 2008 23:55:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/gc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C/C&#43;&#43;でGC</title>
+      <link>http://localhost:1313/posts/2008/07/cc-%E3%81%A7gc/</link>
+      <pubDate>Mon, 07 Jul 2008 23:55:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/07/cc-%E3%81%A7gc/</guid>
+      <description>&lt;p&gt;Java野郎(私)が、C/C++でメンドイものの一つに、&lt;/p&gt;
+&lt;p&gt;**「malloc()したらfree()しなきゃならん」**というものがある。&lt;/p&gt;
+&lt;p&gt;大体、誰も参照しなくなったら、もはや、誰も触れないんだから、勝手に開放してほしいのだ。&lt;/p&gt;
+&lt;h6 id=&#34;でもそれをc言語自体に望むのは無理だって言うのもわかってる&#34;&gt;でも、それをC言語自体に望むのは無理だって言うのもわかってる。&lt;/h6&gt;
+&lt;p&gt;どうにかなんないの？と思っていたら、C/C++でGCするためのライブラリがあるということを知りました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.hpl.hp.com/personal/Hans_Boehm/gc/&#34;&gt;http://www.hpl.hp.com/personal/Hans_Boehm/gc/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;自分(個人)でプログラム書くときは、これ使います。多分。&lt;/p&gt;
+&lt;p&gt;(いちいち、malloc()/free()なんてしてられっか)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -7,6 +7,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2004-09-22-bo-ku-qing-kuxiao-sakunatsutaps2nohua-xiang-pspnohua-xiang-mo
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 薄く、軽く小さくなったPS2の画像。PSPの画像も！
 ---
 
 [ITmedia](http://www.itmedia.co.jp/lifestyle/articles/0409/21/news103.html)

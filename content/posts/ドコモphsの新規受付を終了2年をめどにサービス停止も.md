@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-02-28-dokomo-phsnoxin-gui-shou-fu-wozhong-liao-2nian-womedonisabisuting-zhi-mo
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ドコモ、PHSの新規受付を終了、2年をめどにサービス停止も
 ---
 
 <http://pcweb.mycom.co.jp/news/2005/02/28/007.html>

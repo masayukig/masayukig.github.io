@@ -8,6 +8,9 @@ tags:
 - PICKUP
 draft: false
 disqus_identifier: 2005-06-12-gmailakauntowozuo-tsutemita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Gmailアカウントを作ってみた
 ---
 
 最近、[Gmail](http://gmail.google.com/)のことが気になって来たので、

@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-05-20-osaihuketainipdf-huruburauzada-zai-mo-dokomo-foma-901isfa-biao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: おサイフケータイにPDF、フルブラウザ搭載も - ドコモ、FOMA 901iS発表
 ---
 
 <http://pcweb.mycom.co.jp/news/2005/05/17/008.html>

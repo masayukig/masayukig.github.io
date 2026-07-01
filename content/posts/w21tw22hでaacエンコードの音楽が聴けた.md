@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-12-04-w21t-w22h-deaacenkodonoyin-le-gating-keta
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「W21T」「W22H」でAACエンコードの音楽が聴けた
 ---
 
 [itmedia.co.jp](http://www.itmedia.co.jp/mobile/articles/0411/22/news076.html)

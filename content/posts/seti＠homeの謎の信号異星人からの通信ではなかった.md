@@ -6,6 +6,9 @@ tags:
 - science
 draft: false
 disqus_identifier: 2004-09-10-setihomenomi-noxin-hao-yi-xing-ren-karanotong-xin-dehanakatsuta
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: SETI＠Homeの謎の信号、異星人からの通信ではなかった
 ---
 
 [CNET

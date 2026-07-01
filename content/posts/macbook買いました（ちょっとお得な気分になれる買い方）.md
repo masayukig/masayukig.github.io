@@ -6,6 +6,9 @@ tags:
 - Mac
 draft: false
 disqus_identifier: 2006-08-17-macbookmai-imashitachiyotsutoode-naqi-fen-ninarerumai-ifang
+cover:
+  image: http://lunatic.xrea.jp/mt/archives/DSC_1770-thumb.jpg
+  alt: picture
 ---
 
 [![picture](http://lunatic.xrea.jp/mt/archives/DSC_1770-thumb.jpg)

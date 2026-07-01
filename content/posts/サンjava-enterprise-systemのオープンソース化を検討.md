@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-07-16-san-java-enterprise-systemnoopunsosuhua-wojian-tao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: サン、Java Enterprise Systemのオープンソース化を検討
 ---
 
 ([CNET

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Talk on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/talk/</link>
+    <description>Recent content in Talk on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 23 Jun 2018 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/talk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>openSUSE mini Summit 2018</title>
+      <link>http://localhost:1313/posts/2018/06/opensuse-mini-summit-2018/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2018/06/opensuse-mini-summit-2018/</guid>
+      <description>&lt;p&gt;I had &lt;a href=&#34;https://github.com/masayukig/cheap-cloud/blob/2018-06-23-opensuse-mini-summit/cheap_cloud.pdf&#34;&gt;a talk&lt;/a&gt; at the &lt;a href=&#34;https://opensuseja.connpass.com/event/86085/&#34;&gt;openSUSE mini Summit 2018&lt;/a&gt; about &lt;code&gt;my private cloud&lt;/code&gt;. I had build this for my personal testing. This cloud is enough
+for my use but it&amp;rsquo;s costy for running due to the electricity. So, I&amp;rsquo;m
+thinking to use more efficient machines like Raspberry Pi or something
+like that. I think NUC boxes are better but costy for the initial
+cost..&lt;/p&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

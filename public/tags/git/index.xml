@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Git on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/git/</link>
+    <description>Recent content in Git on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 11 Oct 2010 05:49:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ssh git@github.comで「Agent admitted failure to sign using the key. 」と なったら...</title>
+      <link>http://localhost:1313/posts/2010/10/ssh-git@githubcom%E3%81%A7agent-admitted-failure-to-sign-using-the-key-%E3%81%A8-%E3%81%AA%E3%81%A3%E3%81%9F%E3%82%89/</link>
+      <pubDate>Mon, 11 Oct 2010 05:49:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2010/10/ssh-git@githubcom%E3%81%A7agent-admitted-failure-to-sign-using-the-key-%E3%81%A8-%E3%81%AA%E3%81%A3%E3%81%9F%E3%82%89/</guid>
+      <description>&lt;p&gt;ssh &lt;a href=&#34;mailto:git@github.com&#34;&gt;git@github.com&lt;/a&gt;で「Agent admitted failure to sign using the key.
+」となったら、&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssh-add ~/.ssh/id_rsa&lt;/code&gt;
+と、するとうまくいくかもしれない。&lt;/p&gt;
+&lt;p&gt;参考サイト：&lt;a href=&#34;http://ripan27.wordpress.com/2010/04/01/ssh-gitgithub-com-agent-admitted-failure-to-sign-using-the-key-permission-denied-publickey/&#34;&gt;http://ripan27.wordpress.com/2010/04/01/ssh-gitgithub-com-agent-admitted-failure-to-sign-using-the-key-permission-denied-publickey/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

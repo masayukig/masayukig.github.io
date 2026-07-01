@@ -9,6 +9,9 @@ tags:
 - github
 draft: false
 disqus_identifier: 2017-12-25-keep-contribution-during-a-month
+cover:
+  image: /images/covers/oss.png
+  alt: Keeping my contribution during a month
 ---
 
 I have some feelings about keeping my contribution through a month on

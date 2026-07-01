@@ -13,6 +13,11 @@ tags:
 - vmware fusion
 draft: false
 disqus_identifier: 2011-02-07-fedora-on-vmware-fusion-3-on-macbook-air
+cover:
+  image: http://farm6.static.flickr.com/5297/5422904210_999389cb72_m.jpg
+  alt: 'Fedora14 on VMware Fusion on MacBook
+
+    Air'
 ---
 
 [![Fedora14 on VMware Fusion on MacBook

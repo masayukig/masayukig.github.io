@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-02-25-willcom-yin-sheng-tong-hua-moding-e-zhi-he
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: WILLCOM、「音声通話」も定額制へ
 ---
 
 <http://slashdot.jp/mobile/05/02/24/0136256.shtml?topic=97>

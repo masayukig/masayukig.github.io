@@ -6,6 +6,9 @@ tags:
 - science
 draft: false
 disqus_identifier: 2005-08-21-jtbgayu-zhou-lu-xing-fa-mai-soyuzudeyue-made
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: JTBが宇宙旅行発売 ソユーズで月まで
 ---
 
 [www.itmedia.co.jp](http://www.itmedia.co.jp/news/articles/0508/18/news072.html)

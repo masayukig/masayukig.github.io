@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-11-19-hadoueadivxenkodada-zai-tvkiyapuchiyaadaputa
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ハードウェアDivXエンコーダ搭載TVキャプチャアダプタ
 ---
 
 [「PX-TV402U/JP」](http://plextor.jp/product/pxtv402u/index.php)

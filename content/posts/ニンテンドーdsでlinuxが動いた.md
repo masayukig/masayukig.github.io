@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-05-09-nintendodsdelinuxgadong-ita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ニンテンドーDSでLinuxが動いた
 ---
 
 <http://slashdot.jp/article.pl?sid=05/05/09/0315223&topic=76>

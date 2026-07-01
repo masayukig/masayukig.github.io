@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2011-09-11-posterouswoshi-tsutemirukotonisuru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Posterousを使ってみることにする
 ---
 
 いろんなブログを使ってて、

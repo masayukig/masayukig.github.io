@@ -7,6 +7,9 @@ tags:
 - Software
 draft: false
 disqus_identifier: 2010-06-19-sqlitedeprepared-statementtoblobwoshi-tsutegou-zao-ti-wobao-cun-cyan-yu-sono2-sqlite
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 'SQLiteでprepared statementとBLOBを使って構造体を保存(C言語)その2 #sqlite'
 ---
 
 と言うわけで、[前回](http://www.0r2.info/blog/2010/06/19/sqlite%E3%81%A7prepared-statement%E3%81%A8blob%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E6%A7%8B%E9%80%A0%E4%BD%93%E3%82%92%E4%BF%9D%E5%AD%98c%E8%A8%80%E8%AA%9E/)に続き今回は、前回作成したDBファイルをsqlite3コマンドで見てみます。

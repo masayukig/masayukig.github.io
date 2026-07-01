@@ -9,6 +9,11 @@ tags:
 - macbook pro
 draft: false
 disqus_identifier: 2011-02-25-xin-shiimacbook-profa-biao-soshitemoumai-emasu
+cover:
+  image: http://farm6.static.flickr.com/5051/5474817500_0eb9c4292e_m.jpg
+  alt: 'New MacBook
+
+    Pro'
 ---
 
 [![New MacBook

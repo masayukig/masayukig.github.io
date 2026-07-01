@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-09-05-firefox-15nob1-9yue-8ri-ririsu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Firefox 1.5のβ1、9月8日リリース
 ---
 
 [www.itmedia.co.jp](http://www.itmedia.co.jp/news/articles/0509/02/news020.html)

@@ -6,6 +6,9 @@ tags:
 - Software
 draft: false
 disqus_identifier: 2009-07-09-iphone-apurikai-fa-can-kao-pezi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhone アプリ開発参考ページ
 ---
 
 自分用のメモ

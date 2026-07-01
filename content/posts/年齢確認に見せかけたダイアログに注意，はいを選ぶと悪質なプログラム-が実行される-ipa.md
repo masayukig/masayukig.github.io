@@ -6,6 +6,9 @@ tags:
 - net
 draft: false
 disqus_identifier: 2005-09-06-nian-ling-que-ren-nijian-sekaketadaiarogunizhu-yi-hai-woxuan-butoe-zhi-napuroguramu-gashi-xing-sareru-ipa
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「年齢確認に見せかけたダイアログに注意，『はい』を選ぶと悪質なプログラム が実行される」---IPA
 ---
 
 [itpro.nikkeibp.co.jp](http://itpro.nikkeibp.co.jp/article/NEWS/20050905/220603/)

@@ -7,6 +7,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2004-09-21-pspnoshi-ji-wogong-kai-tadashifa-mai-ri-hagong-kai-sezu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: PSPの実機を公開!! ただし発売日は公開せず
 ---
 
 [PCWatch](http://www.watch.impress.co.jp/game/docs/20040921/scej1.htm)

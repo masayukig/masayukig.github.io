@@ -6,6 +6,9 @@ tags:
 - Mac
 draft: false
 disqus_identifier: 2005-08-16-intel-macyi-wai-dex86dui-ying-mac-oswozou-raserushou-fa-ganetsutonigong-kai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Intel Mac以外でx86対応Mac OSを走らせる手法がネットに公開
 ---
 
 [Intel Mac以外でx86対応Mac

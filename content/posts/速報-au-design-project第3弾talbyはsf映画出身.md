@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-10-13-su-bao-au-design-projectdi-3dan-talby-hasfying-hua-chu-shen
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 速報 - au design project第3弾「talby」はSF映画出身?
 ---
 
 [PCWEB](http://pcweb.mycom.co.jp/news/2004/10/13/009.html)

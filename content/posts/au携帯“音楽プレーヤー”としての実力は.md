@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-04-12-auxi-dai-yin-le-pureyatoshitenoshi-li-ha
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: au携帯、“音楽プレーヤー”としての実力は？
 ---
 
 <http://www.itmedia.co.jp/mobile/articles/0504/11/news022.html>

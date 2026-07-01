@@ -6,6 +6,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2004-10-19-souieba-phsnofan-hao-potabiriteitsutekousagi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: そういえば、PHSの番号ポータビリティって？(こうさぎ)
 ---
 
 きょううさこは6しなかったー。

@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-07-22-jin-iuchini-auyadokomonoketainimohuruburauza-gada-zai-sarerukamo
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 近いうちに、auやドコモのケータイにも「フルブラウザ」が搭載されるかも？
 ---
 
 [ITmedia](http://www.itmedia.co.jp/enterprise/articles/0407/16/news002.html)

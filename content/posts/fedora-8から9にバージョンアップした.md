@@ -7,6 +7,9 @@ tags:
 - Fedora
 draft: false
 disqus_identifier: 2008-07-13-fedora-8kara9nibaziyonatsupushita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Fedora 8から9にバージョンアップした
 ---
 
 自宅ではLinuxを使っていて、

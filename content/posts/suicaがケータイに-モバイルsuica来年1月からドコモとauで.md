@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-02-25-suicagaketaini-mobairusuica-lai-nian-1yue-kara-dokomotoaude
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Suicaがケータイに - モバイルSuica、来年1月から、ドコモとauで
 ---
 
 <http://pcweb.mycom.co.jp/news/2005/02/22/002.html>

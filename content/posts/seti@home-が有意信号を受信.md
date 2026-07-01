@@ -6,6 +6,9 @@ tags:
 - science
 draft: false
 disqus_identifier: 2004-09-06-setihome-gayou-yi-xin-hao-woshou-xin
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: SETI@Home が有意信号を受信？
 ---
 
 [スラド](http://slashdot.jp/articles/04/09/04/1446225.shtml?topic=65)

@@ -9,6 +9,9 @@ tags:
 - opensuse
 draft: false
 disqus_identifier: 2018-02-09-snapper
+cover:
+  image: /images/covers/oss.png
+  alt: Snapper
 ---
 
 I found that [snapper](https://en.opensuse.org/openSUSE:Snapper_Tutorial) of openSUSE is

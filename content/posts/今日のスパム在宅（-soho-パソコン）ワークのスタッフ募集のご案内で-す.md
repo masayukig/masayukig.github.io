@@ -6,6 +6,9 @@ tags:
 - SPAM
 draft: false
 disqus_identifier: 2004-08-01-jin-ri-nosupamuzai-zhai-soho-pasokonwakunosutatsuhumu-ji-nogoan-nei-de-su
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 今日のスパム「在宅（ SOHO. パソコン）ワークのスタッフ募集のご案内で す！」
 ---
 
 なんか、最近日本語でくるSPAMは、こんな感じのSPAMが多いなぁ。

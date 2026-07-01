@@ -7,6 +7,11 @@ tags:
 - scala
 draft: false
 disqus_identifier: 2011-06-18-play-framework-de-scala-wo-shi-shitemiru
+cover:
+  image: http://farm4.static.flickr.com/3010/5843344046_490f31de82.jpg
+  alt: 'Scala
+
+    Play'
 ---
 
 [![Scala

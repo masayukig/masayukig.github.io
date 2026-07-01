@@ -9,6 +9,9 @@ tags:
 - TODO
 draft: false
 disqus_identifier: 2009-06-21-iphone-3g-swomai-tsutarayaroutosi-tsuteirukoto
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhone 3G Sを買ったらやろうと思っていること
 ---
 
 自分のためのメモ書き

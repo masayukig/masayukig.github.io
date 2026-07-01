@@ -11,6 +11,9 @@ tags:
 - VirtualBox
 draft: false
 disqus_identifier: 2010-07-24-virtualboxnodeisukuimezivdiwokvmnodeisukuimeziqcow2nibian-huan-su-ru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: VirtualBoxのディスクイメージ(vdi)をKVMのディスクイメージ(qcow2)に変換す る
 ---
 
 VirtualBoxを使っていたのですが、KVMも使いたくなったのでディスクイメージを変換してみた。

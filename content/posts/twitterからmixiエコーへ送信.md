@@ -9,6 +9,9 @@ tags:
 - twitter
 draft: false
 disqus_identifier: 2009-07-26-twitterkaramixiekohesong-xin
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: twitterからmixiエコーへ送信
 ---
 
 [Twitterしたら、自動でMixiエコー作ったよ!!　『twitter2mixi.rb』](http://cyberwave.jp/nashiki/2009/04/twitter%E3%81%97%E3%81%9F%E3%82%89%E3%80%81%E8%87%AA%E5%8B%95%E3%81%A7mixi%E3%82%A8%E3%82%B3%E3%83%BC%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%88%E3%80%80%E3%80%8Etwitter2mixirb%E3%80%8F/comment-page-1/)

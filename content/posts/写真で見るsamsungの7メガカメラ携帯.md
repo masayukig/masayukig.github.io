@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-04-04-xie-zhen-dejian-ru-samsungno7megakameraxi-dai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 写真で見る、Samsungの「7メガカメラ携帯」
 ---
 
 <http://www.itmedia.co.jp/mobile/articles/0503/10/news114.html>

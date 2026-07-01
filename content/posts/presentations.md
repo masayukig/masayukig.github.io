@@ -3,6 +3,9 @@ title: Presentations
 date: '1970-01-01T00:00:00+09:00'
 slug: presentations
 draft: false
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Presentations
 ---
 
 These are my public speaking/writing list.

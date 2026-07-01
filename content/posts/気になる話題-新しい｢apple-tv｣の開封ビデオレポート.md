@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-15-qi-ninaruhua-ti-xin-shiiapple-tv-nokai-feng-bideorepoto
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: '気になる話題: 新しい｢Apple TV｣の開封ビデオレポート'
 ---
 
 気になる話題: <http://taisyo.seesaa.net/article/257937899.html>

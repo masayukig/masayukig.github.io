@@ -8,6 +8,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2009-06-20-iphone-3g-syu-yue-shita0627shou-kequ-riyu-ding
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhone 3G S予約した！(06/27受け取り予定)
 ---
 
 iPhone 3GSを予約しました！（ヨドバシカメラにしました。一括で購入予定です。(10%ポイント還元があるので)）

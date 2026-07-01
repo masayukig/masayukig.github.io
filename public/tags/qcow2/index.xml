@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Qcow2 on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/qcow2/</link>
+    <description>Recent content in Qcow2 on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 24 Jul 2010 07:42:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/qcow2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VirtualBoxのディスクイメージ(vdi)をKVMのディスクイメージ(qcow2)に変換す る</title>
+      <link>http://localhost:1313/posts/2010/07/virtualbox%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8vdi%E3%82%92kvm%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8qcow2%E3%81%AB%E5%A4%89%E6%8F%9B%E3%81%99-%E3%82%8B/</link>
+      <pubDate>Sat, 24 Jul 2010 07:42:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2010/07/virtualbox%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8vdi%E3%82%92kvm%E3%81%AE%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8qcow2%E3%81%AB%E5%A4%89%E6%8F%9B%E3%81%99-%E3%82%8B/</guid>
+      <description>&lt;p&gt;VirtualBoxを使っていたのですが、KVMも使いたくなったのでディスクイメージを変換してみた。&lt;/p&gt;
+&lt;p&gt;とは言っても、以下のコマンド一発で変換できたので、特に苦労は無し。
+&lt;code&gt;$ qemu-img convert -O qcow2 .VirtualBox/windows7.vdi Documents/windows7.qcow2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;qemu便利だな。。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

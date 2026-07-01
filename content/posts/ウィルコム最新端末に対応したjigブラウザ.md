@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-09-29-uirukomuzui-xin-duan-mo-nidui-ying-shitajigburauza
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ウィルコム最新端末に対応したjigブラウザ
 ---
 
 [k-tai.impress.co.jp](http://k-tai.impress.co.jp/cda/article/news_toppage/25851.html)

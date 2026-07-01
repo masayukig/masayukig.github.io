@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ifttt on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/ifttt/</link>
+    <description>Recent content in Ifttt on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 08 Nov 2012 14:18:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ifttt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I won #Withings x #IFTTT contest!</title>
+      <link>http://localhost:1313/posts/2012/11/i-won-withings-x-ifttt-contest/</link>
+      <pubDate>Thu, 08 Nov 2012 14:18:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/11/i-won-withings-x-ifttt-contest/</guid>
+      <description>&lt;p&gt;Yesterday, I received a tweet&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Congratulations @&lt;a href=&#34;https://twitter.com/masayukig&#34;&gt;masayukig&lt;/a&gt;! You
+imagined the most useful @&lt;a href=&#34;https://twitter.com/ifttt&#34;&gt;ifttt&lt;/a&gt; recipe!
+&lt;a href=&#34;https://t.co/etB8ljWv&#34; title=&#34;https://ifttt.com/recipes/63114&#34;&gt;ifttt.com/recipes/63114&lt;/a&gt;
+Please contact us: &lt;a href=&#34;mailto:community@withings.com&#34;&gt;community@withings.com&lt;/a&gt;
+— Withingsさん (@Withings) &lt;a href=&#34;https://twitter.com/Withings/status/266141604526579714&#34;&gt;11月 7,
+2012&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;//platform.twitter.com/widgets.js&#34;&gt;//platform.twitter.com/widgets.js&lt;/a&gt;
+Yeah! I&amp;rsquo;m really happy to see this.&lt;/p&gt;
+&lt;p&gt;I read the article a few weeks ago:
+&lt;a href=&#34;http://blog.withings.com/en/2012/10/17/ifttt-x-withings-contest-imagine-the-most-usefuluseless-recipe/&#34;&gt;http://blog.withings.com/en/2012/10/17/ifttt-x-withings-contest-imagine-the-most-usefuluseless-recipe/&lt;/a&gt;
+And I seek the recipe about Withings x Google Calendar. But I could not
+find out.
+So I imagined this recipe. This recipe is used 53 times! This is my best
+score about ifttt.&lt;/p&gt;
+&lt;p&gt;But actually, this recipe has a few problems..
+That is about&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;time zone(?)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the data itself&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For example, when I weighed my weight at &amp;ldquo;Nov 8 22:31 JST 2012&amp;rdquo;, but the
+datetime of Google Calendar is &amp;ldquo;Nov 9 22:31 JST 2012&amp;rdquo;.
+The difference is about 24 hours!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>#fbというhashtagをつけて#twitter へtweetしたら、#fbのハッシュタグは取り除いて、#Facebook へ投稿</title>
+      <link>http://localhost:1313/posts/2012/03/fb%E3%81%A8%E3%81%84%E3%81%86hashtag%E3%82%92%E3%81%A4%E3%81%91%E3%81%A6twitter-%E3%81%B8tweet%E3%81%97%E3%81%9F%E3%82%89fb%E3%81%AE%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%82%BF%E3%82%B0%E3%81%AF%E5%8F%96%E3%82%8A%E9%99%A4%E3%81%84%E3%81%A6facebook-%E3%81%B8%E6%8A%95%E7%A8%BF/</link>
+      <pubDate>Tue, 27 Mar 2012 20:06:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/03/fb%E3%81%A8%E3%81%84%E3%81%86hashtag%E3%82%92%E3%81%A4%E3%81%91%E3%81%A6twitter-%E3%81%B8tweet%E3%81%97%E3%81%9F%E3%82%89fb%E3%81%AE%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%82%BF%E3%82%B0%E3%81%AF%E5%8F%96%E3%82%8A%E9%99%A4%E3%81%84%E3%81%A6facebook-%E3%81%B8%E6%8A%95%E7%A8%BF/</guid>
+      <description>&lt;p&gt;というiftttのレシピを作りました。
+&lt;a href=&#34;http://ifttt.com/recipes/26782&#34;&gt;http://ifttt.com/recipes/26782&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今までは、Twitter -&amp;gt; Facebookを自動連携していましたが、
+最近、Twitterに情報を流すことが多くなり、ちょっと後ろめたさがあったので、
+こんなことにしてみました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Google Readerでスターをつけた記事を自動的にブログ投稿する</title>
+      <link>http://localhost:1313/posts/2012/03/google-reader%E3%81%A7%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%92%E3%81%A4%E3%81%91%E3%81%9F%E8%A8%98%E4%BA%8B%E3%82%92%E8%87%AA%E5%8B%95%E7%9A%84%E3%81%AB%E3%83%96%E3%83%AD%E3%82%B0%E6%8A%95%E7%A8%BF%E3%81%99%E3%82%8B/</link>
+      <pubDate>Wed, 07 Mar 2012 20:34:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/03/google-reader%E3%81%A7%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%92%E3%81%A4%E3%81%91%E3%81%9F%E8%A8%98%E4%BA%8B%E3%82%92%E8%87%AA%E5%8B%95%E7%9A%84%E3%81%AB%E3%83%96%E3%83%AD%E3%82%B0%E6%8A%95%E7%A8%BF%E3%81%99%E3%82%8B/</guid>
+      <description>&lt;p&gt;Google
+Readerでスターをつけた記事を、自動的にブログ投稿するようにしてみた。&lt;/p&gt;
+&lt;h3 id=&#34;どんな仕組み&#34;&gt;どんな仕組み？&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://ifttt.com/&#34;&gt;http://ifttt.com/&lt;/a&gt; を利用しています。これ、スゴい便利。
+「Channel」と呼ばれるものを組み合わせて、「Task」を作り、動作させます。
+今回は、「Google
+Reader」と「Gmail」のChannelを組み合わせてTaskを作っています。&lt;/p&gt;
+&lt;p&gt;ifttt自体については、&lt;a href=&#34;https://www.google.co.jp/search?q=ifttt&#34;&gt;ググれば色々出てきます&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;でレシピは&#34;&gt;で、レシピは？&lt;/h3&gt;
+&lt;p&gt;When #googlereader starred, send to #blogger
+&lt;a href=&#34;http://ifttt.com/recipes/24057&#34;&gt;http://ifttt.com/recipes/24057&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;いきなり公開されると困るんだけど&#34;&gt;いきなり公開されると困るんだけど&amp;hellip;?&lt;/h3&gt;
+&lt;p&gt;Bloggerのメール投稿の設定で「下書き」状態にしておけばいいんじゃないかと。
+で、公開したいものだけ、好きなように編集して公開すれば良いと思いますです。
+(最初、「全て公開」にしていて、ちょっぴり後悔しましたｗ)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

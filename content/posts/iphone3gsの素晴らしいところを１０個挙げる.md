@@ -8,6 +8,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2009-08-09-iphone3gsnosu-qing-rashiitokorowo10ge-ju-geru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhone(3GS)の素晴らしいところを１０個挙げる
 ---
 
 iPhoneを1ヶ月半ぐらい使用してきたので、iPhone

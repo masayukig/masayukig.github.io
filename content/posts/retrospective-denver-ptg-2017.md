@@ -13,6 +13,9 @@ tags:
 - ptg
 draft: false
 disqus_identifier: 2017-09-18-retrospective-denver-ptg-2017
+cover:
+  image: /images/covers/work.jpg
+  alt: Retrospective for PTG in Denver 2017
 ---
 
 I'd like to run a retrospective myself against the PTG in Denver, briefly.

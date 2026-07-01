@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-10-17-google-desktopsuge
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Google Desktopすげ〜！
 ---
 
 [Google Desktop](http://desktop.google.com/)

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ja" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>あなたの知らないOSSプログラマの世界 - part 1 | What&#39;s done is done</title>
+<meta name="keywords" content="work, oss, english, career, openstack">
+<meta name="description" content="概要
+　「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が
+多いかなと思い、こんなブログを書いてみました。
+想定読者
+
+オープンソース開発で飯食っていけるの！？と思っている人
+なんとなく、OSSとかプログラマに興味がある
+「外資系」ってどういうところなのか知りたい
+
+結論
+
+技術力だけじゃない
+４０歳でも（転職）初体験できる
+英語大事
+
+自己紹介
+　現在Hewlett Packard Enterprise/日本ヒューレット・パッカード所属です。OpenStack開発者で、
+主にQAを担当しています。日本で作業していますが、日本人は私一人です。他のメンバーは全て海外にいます。
+（正確な人数は把握してませんが、多分2-30人弱くらいかと思います。）
+　インターナショナルで分散チームで、大半は、アメリカ・欧州・オーストラリアにいて、アジア人は中国人1名と
+私の合計2名です。チームの中にマネージャが数名おり、１マネージャあたり、数名を管理するような体制です。
+なお、私のマネージャはオーストラリアに在住していますが、私は英語はそれほどしゃべれません。TOEIC最高点は
+(ほぼマグレで)800点でした。最近は受けてませんが、そんなに大きな違いは無いかと思います。
+（TOEICをある程度知っている方はどの程度なのか想像がつくのではないでしょうか&hellip;）
+技術力だけじゃない
+　まずはじめに。私はスーパー(ハカー|プログラマ|デベロッパ)と呼ばれるほどの技術は持ってません。技術力は
+「並」くらいはあるとは思いたいですが、突出しているわけではありません。周りのOpenStack開発者をざっと
+見回しても「あいつには勝てないな・・・」と思うことが多々あります。
+　そんな状況なのに「プログラマとして転職してやっていけるだろうか・・・」と自問自答している日々ではあります
+が、最近は「技術力だけではない」と思うようにしています。自分の役割としては&hellip;
+
+OpenStack開発
+-&gt; もちろん、これが一番重要。早い・遅いはそれほど重視されていない様に感じる。知らないことがあれば、
+どうやって解決していくのかが重要。
+自分の持っている知識・技術・経験を使って、ほかの人に伝える・手伝う/助ける。
+あまり他の人がやっていない分野に貢献する。
+盛り上げ役（苦手ダケド）
+
+などなど、色々貢献できる領域があると思うようになってきました。逆に、技術力だけ非常に高くても、
+コミュニケーション能力が圧倒的に低いと厳しいだろうなと思います。（という意味でも英語大事）
+また、転職するときに今のチームメンバーの一人から、
+「人から言われて動くようだと、今のチームではうまくやっていけないと思う。だから、自分でやるべきことを
+考え・ 探してやっていくようにしたほうが良いよ。」
+というようなことを言われました。
+　実際、今のマネージャやその上の上司などからは「アレやれ、コレやれ」という指示は無く、週1のマネージャと
+のミーティングも、IRCでチャットしてるだけで、特にノルマ（ｘ件/月パッチマージとか）もありません。情報共
+有しておきたいこと、困ってることなどを相談する場になっています。もちろん、社内の必須教育、事務処理フォロ
+ーなどはありますが、それほど多いとは感じません。
+４０歳でも（転職）初体験できる
+　私、今、４０歳です。日本のIT業界一般常識から考えると頭の良いキャリア選択ではなかったかなとも思っていま
+す。日本のIT業界的には、
+「マネージャになって、デカイプロジェクトをガンガンさばいて、コンサル系に転職してウハウハ」
+みたいなのを思い描いている人もいると思いますが、私は、そういうところに「楽しみ」を見いだせませんでした。
+なので、「技術者」として生きていく道をずっと考えていたので、今回、縁があって転職することになりました。
+転職した先では、比較的長く「技術者」として働ける環境ができているとは思います。
+　今、思っていることなどを以下に列挙してみます。
+
+
+見極めはもっと早くすべき。年齢を重ねて、地位が上がるにつれ、関係各所に色々と迷惑をかけることが増えて
+きて、身動きが取りづらくなる。
+
+
+記憶力、スピードなどはどうしても年々衰えてくるのでそういう意味でも若いうちにやれることはどんどん
+やっておくべき。
+
+とは言え、それなりのオファーがないと転職は難しいので、私としては最速に近いくらいのタイミングだった。
+
+
+
+自分のキャリアパスはきちんと考えて、流されずに主張しよう。
+
+
+思い描いたキャリアパスが今の会社に無いのなら、それがあるところに移ることも考えよう。
+
+もちろん「自分の道を作っていく」という選択肢もあり、それをやりたい人ならそこで頑張るのが良いと思い
+ます。私の場合はそうではありませんでした。
+
+
+
+自分が「面白そう」と思う分野に進んだほうが、全体最適化から考えても有意義。
+
+自らやる気になって動く時が一番力を発揮できると思います。個々人が「面白そう」と思ったことに
+全力を傾けるのが、結果、全体最適になるはず。
+
+
+
+実は、数年前にも転職活動していた時期があります。その時はいくつか面接まで行きましたが、ことごとく
+敗退。自己主張、アピールが足りなかったんだろうなと思う。
+
+
+英語大事
+
+学生のうちから本気で取り組むべき。
+と、後悔だけしても意味が無いので、これから頑張ることにします。
+
+まだまだ英語苦手なので、コミュニケーションに日本語の3倍以上の時間と労力がかかりますが、この労力をなんとか
+小さくしていくべく、トレーニングの毎日です。
+次回予告
+次回は仕事内容、コミュニケーションの様子などを書きたいと思います。
+Happy Hacking!">
+<meta name="author" content="Masayuki Igawa">
+<link rel="canonical" href="http://localhost:1313/posts/2016/06/oss-programmer-part1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.68c62ef954d98b64015e3444e943bedbafc6461b357416b42e2caa6a6937032f.css" integrity="sha256-aMYu&#43;VTZi2QBXjRE6UO&#43;26/GRhs1dBa0Liyqamk3Ay8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="ja" href="http://localhost:1313/posts/2016/06/oss-programmer-part1/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="What&#39;s done is done (Alt + H)">What&#39;s done is done</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">ホーム</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/posts/">Posts</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      あなたの知らないOSSプログラマの世界 - part 1
+    </h1>
+    <div class="post-meta">
+
+<span title='2016-06-03 00:00:00 +0900 JST'>2016-06-03</span>&nbsp;·&nbsp;<span>1 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="http://localhost:1313/images/covers/work.jpg" alt="あなたの知らないOSSプログラマの世界 - part 1">
+        
+</figure><details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">目次</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#%e6%a6%82%e8%a6%81" aria-label="概要">概要</a></li>
+            <li>
+                <a href="#%e6%83%b3%e5%ae%9a%e8%aa%ad%e8%80%85" aria-label="想定読者">想定読者</a></li>
+            <li>
+                <a href="#%e7%b5%90%e8%ab%96" aria-label="結論">結論</a></li>
+            <li>
+                <a href="#%e8%87%aa%e5%b7%b1%e7%b4%b9%e4%bb%8b" aria-label="自己紹介">自己紹介</a></li>
+            <li>
+                <a href="#%e6%8a%80%e8%a1%93%e5%8a%9b%e3%81%a0%e3%81%91%e3%81%98%e3%82%83%e3%81%aa%e3%81%84" aria-label="技術力だけじゃない">技術力だけじゃない</a></li>
+            <li>
+                <a href="#%ef%bc%94%ef%bc%90%e6%ad%b3%e3%81%a7%e3%82%82%e8%bb%a2%e8%81%b7%e5%88%9d%e4%bd%93%e9%a8%93%e3%81%a7%e3%81%8d%e3%82%8b" aria-label="４０歳でも（転職）初体験できる">４０歳でも（転職）初体験できる</a></li>
+            <li>
+                <a href="#%e8%8b%b1%e8%aa%9e%e5%a4%a7%e4%ba%8b" aria-label="英語大事">英語大事</a></li>
+            <li>
+                <a href="#%e6%ac%a1%e5%9b%9e%e4%ba%88%e5%91%8a" aria-label="次回予告">次回予告</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><h2 id="概要">概要<a hidden class="anchor" aria-hidden="true" href="#概要">#</a></h2>
+<p>　「OSS」も「プログラマ」も知っている方が多いと思いますが、それを専門にやっている人のことは知らない人が
+多いかなと思い、こんなブログを書いてみました。</p>
+<h2 id="想定読者">想定読者<a hidden class="anchor" aria-hidden="true" href="#想定読者">#</a></h2>
+<ul>
+<li>オープンソース開発で飯食っていけるの！？と思っている人</li>
+<li>なんとなく、OSSとかプログラマに興味がある</li>
+<li>「外資系」ってどういうところなのか知りたい</li>
+</ul>
+<h2 id="結論">結論<a hidden class="anchor" aria-hidden="true" href="#結論">#</a></h2>
+<ul>
+<li>技術力だけじゃない</li>
+<li>４０歳でも（転職）初体験できる</li>
+<li>英語大事</li>
+</ul>
+<h2 id="自己紹介">自己紹介<a hidden class="anchor" aria-hidden="true" href="#自己紹介">#</a></h2>
+<p>　現在Hewlett Packard Enterprise/日本ヒューレット・パッカード所属です。OpenStack開発者で、
+主にQAを担当しています。日本で作業していますが、日本人は私一人です。他のメンバーは全て海外にいます。
+（正確な人数は把握してませんが、多分2-30人弱くらいかと思います。）</p>
+<p>　インターナショナルで分散チームで、大半は、アメリカ・欧州・オーストラリアにいて、アジア人は中国人1名と
+私の合計2名です。チームの中にマネージャが数名おり、１マネージャあたり、数名を管理するような体制です。
+なお、私のマネージャはオーストラリアに在住していますが、私は英語はそれほどしゃべれません。TOEIC最高点は
+(ほぼマグレで)800点でした。最近は受けてませんが、そんなに大きな違いは無いかと思います。
+（TOEICをある程度知っている方はどの程度なのか想像がつくのではないでしょうか&hellip;）</p>
+<h2 id="技術力だけじゃない">技術力だけじゃない<a hidden class="anchor" aria-hidden="true" href="#技術力だけじゃない">#</a></h2>
+<p>　まずはじめに。私はスーパー(ハカー|プログラマ|デベロッパ)と呼ばれるほどの技術は持ってません。技術力は
+「並」くらいはあるとは思いたいですが、突出しているわけではありません。周りのOpenStack開発者をざっと
+見回しても「あいつには勝てないな・・・」と思うことが多々あります。</p>
+<p>　そんな状況なのに「プログラマとして転職してやっていけるだろうか・・・」と自問自答している日々ではあります
+が、最近は「技術力だけではない」と思うようにしています。自分の役割としては&hellip;</p>
+<ul>
+<li>OpenStack開発
+-&gt; もちろん、これが一番重要。早い・遅いはそれほど重視されていない様に感じる。知らないことがあれば、
+どうやって解決していくのかが重要。</li>
+<li>自分の持っている知識・技術・経験を使って、ほかの人に伝える・手伝う/助ける。</li>
+<li>あまり他の人がやっていない分野に貢献する。</li>
+<li>盛り上げ役（苦手ダケド）</li>
+</ul>
+<p>などなど、色々貢献できる領域があると思うようになってきました。逆に、技術力だけ非常に高くても、
+コミュニケーション能力が圧倒的に低いと厳しいだろうなと思います。（という意味でも英語大事）</p>
+<p>また、転職するときに今のチームメンバーの一人から、</p>
+<p>「人から言われて動くようだと、今のチームではうまくやっていけないと思う。だから、自分でやるべきことを
+考え・ 探してやっていくようにしたほうが良いよ。」</p>
+<p>というようなことを言われました。
+　実際、今のマネージャやその上の上司などからは「アレやれ、コレやれ」という指示は無く、週1のマネージャと
+のミーティングも、IRCでチャットしてるだけで、特にノルマ（ｘ件/月パッチマージとか）もありません。情報共
+有しておきたいこと、困ってることなどを相談する場になっています。もちろん、社内の必須教育、事務処理フォロ
+ーなどはありますが、それほど多いとは感じません。</p>
+<h2 id="４０歳でも転職初体験できる">４０歳でも（転職）初体験できる<a hidden class="anchor" aria-hidden="true" href="#４０歳でも転職初体験できる">#</a></h2>
+<p>　私、今、４０歳です。日本のIT業界一般常識から考えると頭の良いキャリア選択ではなかったかなとも思っていま
+す。日本のIT業界的には、</p>
+<p>「マネージャになって、デカイプロジェクトをガンガンさばいて、コンサル系に転職してウハウハ」</p>
+<p>みたいなのを思い描いている人もいると思いますが、私は、そういうところに「楽しみ」を見いだせませんでした。
+なので、「技術者」として生きていく道をずっと考えていたので、今回、縁があって転職することになりました。
+転職した先では、比較的長く「技術者」として働ける環境ができているとは思います。
+　今、思っていることなどを以下に列挙してみます。</p>
+<ul>
+<li>
+<p>見極めはもっと早くすべき。年齢を重ねて、地位が上がるにつれ、関係各所に色々と迷惑をかけることが増えて
+きて、身動きが取りづらくなる。</p>
+</li>
+<li>
+<p>記憶力、スピードなどはどうしても年々衰えてくるのでそういう意味でも若いうちにやれることはどんどん
+やっておくべき。</p>
+<ul>
+<li>とは言え、それなりのオファーがないと転職は難しいので、私としては最速に近いくらいのタイミングだった。</li>
+</ul>
+</li>
+<li>
+<p>自分のキャリアパスはきちんと考えて、流されずに主張しよう。</p>
+</li>
+<li>
+<p>思い描いたキャリアパスが今の会社に無いのなら、それがあるところに移ることも考えよう。</p>
+<ul>
+<li>もちろん「自分の道を作っていく」という選択肢もあり、それをやりたい人ならそこで頑張るのが良いと思い
+ます。私の場合はそうではありませんでした。</li>
+</ul>
+</li>
+<li>
+<p>自分が「面白そう」と思う分野に進んだほうが、全体最適化から考えても有意義。</p>
+<ul>
+<li>自らやる気になって動く時が一番力を発揮できると思います。個々人が「面白そう」と思ったことに
+全力を傾けるのが、結果、全体最適になるはず。</li>
+</ul>
+</li>
+<li>
+<p>実は、数年前にも転職活動していた時期があります。その時はいくつか面接まで行きましたが、ことごとく
+敗退。自己主張、アピールが足りなかったんだろうなと思う。</p>
+</li>
+</ul>
+<h2 id="英語大事">英語大事<a hidden class="anchor" aria-hidden="true" href="#英語大事">#</a></h2>
+<ul>
+<li>学生のうちから本気で取り組むべき。</li>
+<li>と、後悔だけしても意味が無いので、これから頑張ることにします。</li>
+</ul>
+<p>まだまだ英語苦手なので、コミュニケーションに日本語の3倍以上の時間と労力がかかりますが、この労力をなんとか
+小さくしていくべく、トレーニングの毎日です。</p>
+<h2 id="次回予告">次回予告<a hidden class="anchor" aria-hidden="true" href="#次回予告">#</a></h2>
+<p>次回は仕事内容、コミュニケーションの様子などを書きたいと思います。</p>
+<p>Happy Hacking!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/work/">Work</a></li>
+      <li><a href="http://localhost:1313/tags/oss/">Oss</a></li>
+      <li><a href="http://localhost:1313/tags/english/">English</a></li>
+      <li><a href="http://localhost:1313/tags/career/">Career</a></li>
+      <li><a href="http://localhost:1313/tags/openstack/">Openstack</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/2016/10/dps-forever/">
+    <span class="title">« 前へ</span>
+    <span>チーム解散?!</span>
+  </a>
+  <a class="next" href="http://localhost:1313/posts/2015/12/%E6%8A%80%E8%A1%93%E7%9A%84%E3%81%98%E3%82%83%E3%81%AA%E3%81%84openstack%E3%81%AE%E8%A9%B1/">
+    <span class="title">次へ »</span>
+    <span>技術的じゃないOpenStackの話</span>
+  </a>
+</nav>
+
+  </footer>
+
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">What&#39;s done is done</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'コピー';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'コピーされました!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'コピー';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

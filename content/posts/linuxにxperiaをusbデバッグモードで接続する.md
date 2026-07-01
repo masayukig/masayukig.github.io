@@ -8,6 +8,9 @@ tags:
 - Software
 draft: false
 disqus_identifier: 2010-10-03-linuxnixperiawousbdebatsugumododejie-sok-suru
+cover:
+  image: http://farm5.static.flickr.com/4090/5045424574_ebae73ab4d.jpg
+  alt: setting
 ---
 
 以下、URLの情報を参考に、XperiaをUSBデバッグモードでLinux(Fedora13-2.6.36-rc6-sandbox-00084-gc6ea21e)へ接続してみました。

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ruby on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/ruby/</link>
+    <description>Recent content in Ruby on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 26 Jul 2009 07:27:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>twitterからmixiエコーへ送信</title>
+      <link>http://localhost:1313/posts/2009/07/twitter%E3%81%8B%E3%82%89mixi%E3%82%A8%E3%82%B3%E3%83%BC%E3%81%B8%E9%80%81%E4%BF%A1/</link>
+      <pubDate>Sun, 26 Jul 2009 07:27:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2009/07/twitter%E3%81%8B%E3%82%89mixi%E3%82%A8%E3%82%B3%E3%83%BC%E3%81%B8%E9%80%81%E4%BF%A1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://cyberwave.jp/nashiki/2009/04/twitter%E3%81%97%E3%81%9F%E3%82%89%E3%80%81%E8%87%AA%E5%8B%95%E3%81%A7mixi%E3%82%A8%E3%82%B3%E3%83%BC%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%88%E3%80%80%E3%80%8Etwitter2mixirb%E3%80%8F/comment-page-1/&#34;&gt;Twitterしたら、自動でMixiエコー作ったよ!!　『twitter2mixi.rb』&lt;/a&gt;
+の記事を参考に(というかほぼそのままだが)、Twitterから、mixiエコーへ送信するようにしてみた。&lt;/p&gt;
+&lt;p&gt;mixiの微妙な閉鎖感が若干嫌で、ちょっと足が遠のきつつあったが、
+辛うじてつなぎ止まったかも。&lt;/p&gt;
+&lt;p&gt;上記のスクリプトを使用する上で、私の環境だといくつかつまづいたことがあったので、
+とりあえず、以下に記しておくことにする&amp;hellip;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;文字コードの問題&lt;/li&gt;
+&lt;li&gt;依存ライブラリの問題&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;・文字コードの問題
+ソースをUTF-8-unixで書いたのだが、実行すると、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hoge@unicorn:~/bin$ ./twitter2mixi.rb
+./twitter2mixi.rb:45: syntax error, unexpected tIDENTIFIER, expecting kEND
+  puts &amp;quot;login to mixi by #{config[&#39;mixiusername&#39;]}&amp;quot;
+             ^
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;と、よく分からないエラーとなる。
+これは、実行時のrubyのKCODEとソースの文字コードが異なると発生する（？）様で、
+twitter2mixi.rbソースの先頭の記述を以下の様に変更して対応。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/ruby -Ku
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;また、最終行近くの&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  form.fields.find { |f| f.name == &#39;body&#39; }.value = twitterlaststatus.toeuc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;もうまく動作しなかったので、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  form.fields.find { |f| f.name == &#39;body&#39; }.value = twitterlaststatus.toutf8
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;に、変更。&lt;/p&gt;
+&lt;p&gt;・依存ライブラリの問題&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Building native extensions. This could take a while&amp;hellip;
+ERROR: Error installing mechanize:
+ERROR: Failed to build gem native extension.
+(snip)
+checking for libxslt/xslt.h in
+/opt/local/include/,/opt/local/include/libxml2,/opt/local/include,/opt/local/include,/opt/local/include/libxml2,/usr/local/include,/usr/local/include/libxml2,/usr/include,/usr/include/libxml2,/usr/include,/usr/include/libxml2&amp;hellip;
+no
+libxslt is missing. try &amp;lsquo;port install libxslt&amp;rsquo; or &amp;lsquo;yum install
+libxslt-devel&amp;rsquo;
+(snip)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;というエラーが出たが、ubuntuにはそんなパッケージは無い。
+で、&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

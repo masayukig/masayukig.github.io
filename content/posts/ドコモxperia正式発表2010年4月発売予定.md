@@ -9,6 +9,9 @@ tags:
 - Xperia
 draft: false
 disqus_identifier: 2010-01-22-dokomo-xperiazheng-shi-fa-biao-2010nian-4yue-fa-mai-yu-ding
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ドコモ、Xperia正式発表(2010年4月発売予定)
 ---
 
 ドコモから、ソニエリのGoogleケータイXperiaが[正式に発表されました。](http://www.nttdocomo.co.jp/product/foma/smart_phone/so01b/index.html)

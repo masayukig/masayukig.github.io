@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-09-03-w32s-blog
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: W32S blog
 ---
 
 [blog.duogate.jp](http://blog.duogate.jp/w32s/)

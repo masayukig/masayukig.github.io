@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-01-22-burauzashi-chang-deienoshieadi-xia-zhi-marazu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ブラウザ市場でIEのシェア低下止まらず
 ---
 
 <http://www.itmedia.co.jp/news/articles/0501/22/news008.html>

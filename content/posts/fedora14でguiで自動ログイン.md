@@ -12,6 +12,9 @@ tags:
 - Software
 draft: false
 disqus_identifier: 2011-02-08-fedora14deguidezi-dong-roguin
+cover:
+  image: http://farm6.static.flickr.com/5097/5425467281_0e1672d58f.jpg
+  alt: "Screenshot-Account\n    Information-1"
 ---
 
 Fedora14をインストールしましたが、

@@ -6,6 +6,9 @@ tags:
 - net
 draft: false
 disqus_identifier: 2009-08-01-twitterzuo-fa-jie-shuo-pezijian-tsuketa
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Twitter作法 解説ページ見つけた
 ---
 
 最近、Twitterを始めたのですが、色々なお作法がある様なのですが、

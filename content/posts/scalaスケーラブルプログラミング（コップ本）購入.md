@@ -7,6 +7,9 @@ tags:
 - scala
 draft: false
 disqus_identifier: 2011-06-15-scalasukeraburupuroguramingukotsupuben-gou-ru
+cover:
+  image: http://farm3.static.flickr.com/2592/5833994866_b0a8f0e29f.jpg
+  alt: Scalaスケーラブルプログラミング
 ---
 
 [![Scalaスケーラブルプログラミング](http://farm3.static.flickr.com/2592/5833994866_b0a8f0e29f.jpg)

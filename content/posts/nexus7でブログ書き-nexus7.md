@@ -5,6 +5,9 @@ slug: nexus7でブログ書き-nexus7
 tags:
 - nexus7
 draft: true
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 'NEXUS7でブログ書き #nexus7'
 ---
 
 NEXUS7 + Bluetoothキーボードの使い心地を体感すべく、

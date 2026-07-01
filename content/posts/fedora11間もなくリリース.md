@@ -9,6 +9,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2009-06-08-fedora11jian-monakuririsu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Fedora11間もなくリリース
 ---
 
 <http://fedoraproject.org/static/js/release-counter-ext.js?lang=ja>

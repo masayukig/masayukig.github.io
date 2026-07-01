@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-01-02-dong-winnohaiendo-w21ca-woshi-su
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 冬WINのハイエンド、「W21CA」を試す
 ---
 
 [itmedia.co.jp](http://www.itmedia.co.jp/mobile/articles/0412/29/news027.html)

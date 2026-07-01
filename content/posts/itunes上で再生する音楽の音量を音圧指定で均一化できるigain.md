@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-11-13-itunes-shang-dezai-sheng-suruyin-le-noyin-liang-woyin-ya-zhi-ding-dejun-yi-hua-dekiruigain
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「iTunes」上で再生する音楽の音量を音圧指定で均一化できる「iGain」
 ---
 
 [forest.impress.co.jp](http://www.forest.impress.co.jp/article/2004/11/11/igain.html)

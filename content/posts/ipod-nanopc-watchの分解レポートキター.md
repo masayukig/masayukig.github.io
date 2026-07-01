@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-09-10-ipod-nano-pc-watchnofen-jie-repotokita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「iPod nano」PC Watchの分解レポートキター！
 ---
 
 [pc.watch.impress.co.jp](http://pc.watch.impress.co.jp/docs/2005/0908/nano.htm)

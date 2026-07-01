@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-10-21-w-zero3kita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: W-ZERO3キターーーーー！！！
 ---
 
 [www.willcom-inc.com](http://www.willcom-inc.com/ja/lineup/ws/003sh/index.html)

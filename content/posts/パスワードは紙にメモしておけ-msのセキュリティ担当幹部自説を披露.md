@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-05-26-pasuwadohazhi-nimemoshiteoke-msnosekiyuriteidan-dang-gan-bu-zi-shuo-wopi-lu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「パスワードは(紙に)メモしておけ」--MSのセキュリティ担当幹部、自説を披露
 ---
 
 <http://japan.cnet.com/news/sec/story/0,2000050480,20083861,00.htm>

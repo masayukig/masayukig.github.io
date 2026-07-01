@@ -7,6 +7,10 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-15-qi-ninaruhua-ti-using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: '気になる話題: Using Cloud Foundry Services with Ruby: Part 2 – Run-time Support
+    for Ruby Applications'
 ---
 
 <http://blog.cloudfoundry.com/post/13481010778/using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications>

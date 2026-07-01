@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-07-30-ipod-minisu-gong-rebiyu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPod mini速攻レビュー
 ---
 
 [ASCII24](http://review.ascii24.com/db/news/hard/2004/07/27/650769-000.html)

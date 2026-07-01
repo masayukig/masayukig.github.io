@@ -6,6 +6,9 @@ tags:
 - science
 draft: false
 disqus_identifier: 2004-10-13-mi-ohaiozhou-zhi-yuan-shi-shi-chang-desetihomewodong-kashikubini
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 米オハイオ州職員、仕事場でSETI@homeを動かしクビに
 ---
 
 [CNET

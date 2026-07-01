@@ -8,6 +8,9 @@ tags:
 - twitter
 draft: false
 disqus_identifier: 2012-03-27-fbtoiuhashtagwotsuketetwitter-hetweetshitara-fbnohatsushiyutaguhaqu-richu-ite-facebook-hetou-gao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: '#fbというhashtagをつけて#twitter へtweetしたら、#fbのハッシュタグは取り除いて、#Facebook へ投稿'
 ---
 
 というiftttのレシピを作りました。

@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-07-21-airhphonede-excelyawordhuairunoyue-lan-gake-neng-ni
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: AirH"PHONEで、ExcelやWordファイルの閲覧が可能に
 ---
 
 [ITmedia](http://www.itmedia.co.jp/mobile/articles/0407/20/news046.html)

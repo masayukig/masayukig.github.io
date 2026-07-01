@@ -8,6 +8,9 @@ tags:
 - ipad2
 draft: false
 disqus_identifier: 2011-10-29-ipad2gou-ru
+cover:
+  image: https://lh4.googleusercontent.com/-DjtpT99VSgU/TqsdSBEAd2I/AAAAAAAAoWU/N512e1upM-Y/s400/IMG_1202.jpg
+  alt: picture
 ---
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

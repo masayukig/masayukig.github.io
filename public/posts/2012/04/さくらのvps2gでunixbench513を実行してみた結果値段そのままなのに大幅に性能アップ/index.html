@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ja" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>さくらのVPS(2G)でUnixBench(5.1.3)を実行してみた。結果：値段そのままなのに、大幅に性能アップ！ | What&#39;s done is done</title>
+<meta name="keywords" content="さくら, benchmark, unixbench, VPS">
+<meta name="description" content="はじめに
+というわけで、早速、 さくらのVPS(2G)で、UnixBenchを実行してみました。
+なお、1.5Gで評価した結果は、[&ldquo;さくらのVPSでUnixBench(5.1.3)を実施してみた
+part2(結果編)&rdquo;](/posts/2011/03/sakuranovpsdeunixbench513woshi-shi-shitemita-part2jie-guo-bian/)を参照して下さい。
+========================================================================
+   BYTE UNIX Benchmarks (Version 5.1.3)
+
+   System: localhost.localdomain: GNU/Linux
+   OS: GNU/Linux -- 3.3.0-8.fc16.x86_64 -- #1 SMP Thu Mar 29 18:37:19 UTC 2012
+   Machine: x86_64 (x86_64)
+   Language: en_US.utf8 (charmap=&quot;UTF-8&quot;, collate=&quot;UTF-8&quot;)
+   CPU 0: Intel(R) Xeon(R) CPU E5645 (4800.2 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSCALL/SYSRET
+   CPU 1: Intel(R) Xeon(R) CPU E5645 (4800.2 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSCALL/SYSRET
+   CPU 2: Intel(R) Xeon(R) CPU E5645 (4800.2 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSCALL/SYSRET
+   20:22:38 up  2:57,  2 users,  load average: 0.53, 0.41, 0.21; runlevel 3
+
+------------------------------------------------------------------------
+Benchmark Run: Tue Apr 03 2012 20:22:38 - 20:49:59
+3 CPUs in system; running 1 parallel copy of tests
+
+Dhrystone 2 using register variables       24322317.4 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     2961.2 MWIPS (7.0 s, 7 samples)
+Execl Throughput                               1451.8 lps   (30.0 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks        787751.5 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          223048.0 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       1639344.8 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             1385086.0 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 226423.8 lps   (10.0 s, 7 samples)
+Process Creation                               3676.0 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                   3725.1 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   1646.1 lpm   (60.0 s, 2 samples)
+System Call Overhead                        1578386.4 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   24322317.4   2084.2
+Double-Precision Whetstone                       55.0       2961.2    538.4
+Execl Throughput                                 43.0       1451.8    337.6
+File Copy 1024 bufsize 2000 maxblocks          3960.0     787751.5   1989.3
+File Copy 256 bufsize 500 maxblocks            1655.0     223048.0   1347.7
+File Copy 4096 bufsize 8000 maxblocks          5800.0    1639344.8   2826.5
+Pipe Throughput                               12440.0    1385086.0   1113.4
+Pipe-based Context Switching                   4000.0     226423.8    566.1
+Process Creation                                126.0       3676.0    291.7
+Shell Scripts (1 concurrent)                     42.4       3725.1    878.6
+Shell Scripts (8 concurrent)                      6.0       1646.1   2743.5
+System Call Overhead                          15000.0    1578386.4   1052.3
+                                                                   ========
+System Benchmarks Index Score                                        1024.6
+
+------------------------------------------------------------------------
+Benchmark Run: Tue Apr 03 2012 20:49:59 - 21:17:27
+3 CPUs in system; running 3 parallel copies of tests
+
+Dhrystone 2 using register variables       72068041.9 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     8846.1 MWIPS (7.2 s, 7 samples)
+Execl Throughput                               8582.7 lps   (30.0 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks       1071208.3 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          285035.8 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       2289930.0 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             4059296.6 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 654058.4 lps   (10.0 s, 7 samples)
+Process Creation                              28607.3 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                  14152.2 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   1953.0 lpm   (60.0 s, 2 samples)
+System Call Overhead                        4106210.8 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   72068041.9   6175.5
+Double-Precision Whetstone                       55.0       8846.1   1608.4
+Execl Throughput                                 43.0       8582.7   1996.0
+File Copy 1024 bufsize 2000 maxblocks          3960.0    1071208.3   2705.1
+File Copy 256 bufsize 500 maxblocks            1655.0     285035.8   1722.3
+File Copy 4096 bufsize 8000 maxblocks          5800.0    2289930.0   3948.2
+Pipe Throughput                               12440.0    4059296.6   3263.1
+Pipe-based Context Switching                   4000.0     654058.4   1635.1
+Process Creation                                126.0      28607.3   2270.4
+Shell Scripts (1 concurrent)                     42.4      14152.2   3337.8
+Shell Scripts (8 concurrent)                      6.0       1953.0   3254.9
+System Call Overhead                          15000.0    4106210.8   2737.5
+                                                                   ========
+System Benchmarks Index Score                                        2670.2
+
+まとめ
+テスト内容                    旧システム(1.5G)                    新システム(2G)">
+<meta name="author" content="Masayuki Igawa">
+<link rel="canonical" href="http://localhost:1313/posts/2012/04/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps2g%E3%81%A7unixbench513%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E7%B5%90%E6%9E%9C%E5%80%A4%E6%AE%B5%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E3%81%AA%E3%81%AE%E3%81%AB%E5%A4%A7%E5%B9%85%E3%81%AB%E6%80%A7%E8%83%BD%E3%82%A2%E3%83%83%E3%83%97/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.68c62ef954d98b64015e3444e943bedbafc6461b357416b42e2caa6a6937032f.css" integrity="sha256-aMYu&#43;VTZi2QBXjRE6UO&#43;26/GRhs1dBa0Liyqamk3Ay8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="ja" href="http://localhost:1313/posts/2012/04/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps2g%E3%81%A7unixbench513%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E7%B5%90%E6%9E%9C%E5%80%A4%E6%AE%B5%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E3%81%AA%E3%81%AE%E3%81%AB%E5%A4%A7%E5%B9%85%E3%81%AB%E6%80%A7%E8%83%BD%E3%82%A2%E3%83%83%E3%83%97/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="What&#39;s done is done (Alt + H)">What&#39;s done is done</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">ホーム</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/posts/">Posts</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      さくらのVPS(2G)でUnixBench(5.1.3)を実行してみた。結果：値段そのままなのに、大幅に性能アップ！
+    </h1>
+    <div class="post-meta">
+
+<span title='2012-04-03 20:04:00 +0900 JST'>2012-04-03</span>&nbsp;·&nbsp;<span>3 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="http://localhost:1313/images/covers/uncategorized.jpg" alt="さくらのVPS(2G)でUnixBench(5.1.3)を実行してみた。結果：値段そのままなのに、大幅に性能アップ！">
+        
+</figure><details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">目次</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#%e3%81%af%e3%81%98%e3%82%81%e3%81%ab" aria-label="はじめに">はじめに</a></li>
+            <li>
+                <a href="#%e3%81%be%e3%81%a8%e3%82%81" aria-label="まとめ">まとめ</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><h1 id="はじめに">はじめに<a hidden class="anchor" aria-hidden="true" href="#はじめに">#</a></h1>
+<h2 id="なお15gで評価した結果はさくらのvpsでunixbench513を実施してみた">というわけで、早速、 さくらのVPS(2G)で、UnixBenchを実行してみました。
+なお、1.5Gで評価した結果は、[&ldquo;さくらのVPSでUnixBench(5.1.3)を実施してみた</h2>
+<p>part2(結果編)&rdquo;](/posts/2011/03/sakuranovpsdeunixbench513woshi-shi-shitemita-part2jie-guo-bian/)を参照して下さい。</p>
+<pre><code>========================================================================
+   BYTE UNIX Benchmarks (Version 5.1.3)
+
+   System: localhost.localdomain: GNU/Linux
+   OS: GNU/Linux -- 3.3.0-8.fc16.x86_64 -- #1 SMP Thu Mar 29 18:37:19 UTC 2012
+   Machine: x86_64 (x86_64)
+   Language: en_US.utf8 (charmap=&quot;UTF-8&quot;, collate=&quot;UTF-8&quot;)
+   CPU 0: Intel(R) Xeon(R) CPU E5645 (4800.2 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSCALL/SYSRET
+   CPU 1: Intel(R) Xeon(R) CPU E5645 (4800.2 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSCALL/SYSRET
+   CPU 2: Intel(R) Xeon(R) CPU E5645 (4800.2 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSCALL/SYSRET
+   20:22:38 up  2:57,  2 users,  load average: 0.53, 0.41, 0.21; runlevel 3
+
+------------------------------------------------------------------------
+Benchmark Run: Tue Apr 03 2012 20:22:38 - 20:49:59
+3 CPUs in system; running 1 parallel copy of tests
+
+Dhrystone 2 using register variables       24322317.4 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     2961.2 MWIPS (7.0 s, 7 samples)
+Execl Throughput                               1451.8 lps   (30.0 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks        787751.5 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          223048.0 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       1639344.8 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             1385086.0 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 226423.8 lps   (10.0 s, 7 samples)
+Process Creation                               3676.0 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                   3725.1 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   1646.1 lpm   (60.0 s, 2 samples)
+System Call Overhead                        1578386.4 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   24322317.4   2084.2
+Double-Precision Whetstone                       55.0       2961.2    538.4
+Execl Throughput                                 43.0       1451.8    337.6
+File Copy 1024 bufsize 2000 maxblocks          3960.0     787751.5   1989.3
+File Copy 256 bufsize 500 maxblocks            1655.0     223048.0   1347.7
+File Copy 4096 bufsize 8000 maxblocks          5800.0    1639344.8   2826.5
+Pipe Throughput                               12440.0    1385086.0   1113.4
+Pipe-based Context Switching                   4000.0     226423.8    566.1
+Process Creation                                126.0       3676.0    291.7
+Shell Scripts (1 concurrent)                     42.4       3725.1    878.6
+Shell Scripts (8 concurrent)                      6.0       1646.1   2743.5
+System Call Overhead                          15000.0    1578386.4   1052.3
+                                                                   ========
+System Benchmarks Index Score                                        1024.6
+
+------------------------------------------------------------------------
+Benchmark Run: Tue Apr 03 2012 20:49:59 - 21:17:27
+3 CPUs in system; running 3 parallel copies of tests
+
+Dhrystone 2 using register variables       72068041.9 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     8846.1 MWIPS (7.2 s, 7 samples)
+Execl Throughput                               8582.7 lps   (30.0 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks       1071208.3 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          285035.8 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       2289930.0 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             4059296.6 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 654058.4 lps   (10.0 s, 7 samples)
+Process Creation                              28607.3 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                  14152.2 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   1953.0 lpm   (60.0 s, 2 samples)
+System Call Overhead                        4106210.8 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   72068041.9   6175.5
+Double-Precision Whetstone                       55.0       8846.1   1608.4
+Execl Throughput                                 43.0       8582.7   1996.0
+File Copy 1024 bufsize 2000 maxblocks          3960.0    1071208.3   2705.1
+File Copy 256 bufsize 500 maxblocks            1655.0     285035.8   1722.3
+File Copy 4096 bufsize 8000 maxblocks          5800.0    2289930.0   3948.2
+Pipe Throughput                               12440.0    4059296.6   3263.1
+Pipe-based Context Switching                   4000.0     654058.4   1635.1
+Process Creation                                126.0      28607.3   2270.4
+Shell Scripts (1 concurrent)                     42.4      14152.2   3337.8
+Shell Scripts (8 concurrent)                      6.0       1953.0   3254.9
+System Call Overhead                          15000.0    4106210.8   2737.5
+                                                                   ========
+System Benchmarks Index Score                                        2670.2
+</code></pre>
+<h1 id="まとめ">まとめ<a hidden class="anchor" aria-hidden="true" href="#まとめ">#</a></h1>
+<p>テスト内容                    旧システム(1.5G)                    新システム(2G)</p>
+<hr>
+<p>1 parallel copy of tests      731.7                               1024.6
+2or3 parallel copy of tests   1256.5                              2670.2
+CPU                           Core2 Duo <a href="mailto:T7700@2.4Ghz">T7700@2.4Ghz</a>(2666.8MHz)   Xeon E5645(2400.0MHz)</p>
+<p>パラレルテストでは、1.5Gと比較して、2倍以上の結果がでており、CPUもパワーアップしていて、
+さらに、HDD容量2倍以上(200GB)、メモリ512MBアップで、お値段そのままなので、乗り換える価値大と思います。</p>
+<p>ただし、まだ、サービス開始直後なので、今後、他のVMの使用状況によっては、
+この結果が維持されるとは限らないので、注意が必要と思います。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/%E3%81%95%E3%81%8F%E3%82%89/">さくら</a></li>
+      <li><a href="http://localhost:1313/tags/benchmark/">Benchmark</a></li>
+      <li><a href="http://localhost:1313/tags/unixbench/">Unixbench</a></li>
+      <li><a href="http://localhost:1313/tags/vps/">VPS</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/2012/04/firewire800%E5%A4%96%E4%BB%98%E3%81%91hdd%E3%82%B1%E3%83%BC%E3%82%B9g-s350suab2%E3%82%92%E7%B1%B3amazoncom%E3%81%A7%E8%B3%BC%E5%85%A5-mac-hdd-firewire/">
+    <span class="title">« 前へ</span>
+    <span>FireWire800外付けHDDケース(G-S350SUAB2)を米Amazon.comで購入 #mac #hdd #firewire</span>
+  </a>
+  <a class="next" href="http://localhost:1313/posts/2012/04/%E3%81%95%E3%81%8F%E3%82%89%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E3%81%8B%E3%82%89%E8%A9%AB%E3%81%B3%E7%8A%B6%E3%82%AD%E3%82%BF%E3%83%BC/">
+    <span class="title">次へ »</span>
+    <span>さくらインターネットから「詫び状」キター</span>
+  </a>
+</nav>
+
+  </footer>
+
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">What&#39;s done is done</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'コピー';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'コピーされました!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'コピー';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

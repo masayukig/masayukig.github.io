@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-07-16-xin-xing-imachag5gong-gei-bu-zu-notame-fa-mai-yan-qi-sareta
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 新型iMacはG5供給不足のため、発売延期された
 ---
 
 新型iMacの発売延期は、IBMからのCPU(G5)供給不足が原因だそうです。

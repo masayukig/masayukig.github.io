@@ -11,6 +11,9 @@ tags:
 - make
 draft: false
 disqus_identifier: 2011-01-22-ubuntu1010dezui-xin-kernelbirudo
+cover:
+  image: /images/covers/oss.png
+  alt: Ubuntu(10.10)で最新Kernelビルド
 ---
 
 UbuntuでKernelをビルドしたくなり、そのときのメモ。

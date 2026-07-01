@@ -6,6 +6,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2005-04-14-koramu-os-x-hatsukingu-di-130hui-os-xdepspwoyu-shimu-dong-hua-zhun-bei-bian
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 【コラム】OS X ハッキング! 第130回 OS XでPSPを愉しむ - 動画準備編
 ---
 
 [MYCOM PC WEB - 【コラム】OS X ハッキング! 第130回 OS XでPSPを愉しむ -

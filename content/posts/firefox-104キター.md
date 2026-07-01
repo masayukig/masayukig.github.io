@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2005-05-21-firefox-104kita
+cover:
+  image: /images/covers/oss.png
+  alt: Firefox 1.0.4キター
 ---
 
 [http://www.mozilla-japan.org/products/firefox/

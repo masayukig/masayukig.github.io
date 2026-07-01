@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-10-01-jig-puraguindeji-neng-kuo-zhang-dekirujigburauza2-bban
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: jig、プラグインで機能拡張できる「jigブラウザ2」β版
 ---
 
 [k-tai.impress.co.jp](http://k-tai.impress.co.jp/cda/article/news_toppage/25867.html)

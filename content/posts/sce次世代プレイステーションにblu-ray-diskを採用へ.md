@@ -6,6 +6,9 @@ tags:
 - game
 draft: false
 disqus_identifier: 2004-10-04-sce-ci-shi-dai-pureisuteshiyonniblu-ray-diskwocai-yong-he
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: SCE、次世代プレイステーションにBlu-ray Diskを採用へ
 ---
 
 [CNET

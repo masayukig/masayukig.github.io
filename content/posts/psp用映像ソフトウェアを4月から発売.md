@@ -6,6 +6,9 @@ tags:
 - game
 draft: false
 disqus_identifier: 2005-03-10-pspyong-ying-xiang-sohutoueawo4yue-karafa-mai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: PSP用映像ソフトウェアを4月から発売
 ---
 
 <http://www.watch.impress.co.jp/game/docs/20050303/psp.htm>

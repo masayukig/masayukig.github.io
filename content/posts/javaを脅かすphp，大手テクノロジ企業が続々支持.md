@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-05-30-javawoxie-kasuphpda-shou-tekunoroziqi-ye-gasok-zhi-chi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Javaを脅かすPHP，大手テクノロジ企業が続々支持
 ---
 
 <http://itpro.nikkeibp.co.jp/members/ITPro/USURA/20050526/161575/>

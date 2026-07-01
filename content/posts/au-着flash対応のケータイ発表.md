@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-01-22-au-zhao-flash-dui-ying-noketaifa-biao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: au 「着Flash」対応のケータイ発表
 ---
 
 <http://www.kddi.com/corporate/news_release/2005/0120/>

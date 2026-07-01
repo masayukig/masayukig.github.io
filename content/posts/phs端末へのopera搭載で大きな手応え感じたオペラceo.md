@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-08-06-phsduan-mo-henooperada-zai-deda-kinashou-ying-egan-zita-operaceo
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「PHS端末へのOpera搭載で大きな手応え感じた」オペラCEO
 ---
 
 [IT Pro](http://itpro.nikkeibp.co.jp/free/NC/NEWS/20040804/148202/)

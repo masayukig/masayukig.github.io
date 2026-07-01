@@ -7,6 +7,9 @@ tags:
 - blogger
 draft: false
 disqus_identifier: 2012-02-27-buroguwobloggernishitemita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ブログをBloggerにしてみた
 ---
 
 ブログをWordPressから、Bloggerにしてみた。

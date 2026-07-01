@@ -9,6 +9,9 @@ tags:
 - nec
 draft: false
 disqus_identifier: 2011-08-02-medias-wpn-06cwomai-imashita
+cover:
+  image: https://lh5.googleusercontent.com/-yMEyZkxtkEg/TjcLL0dy_8I/AAAAAAAAVfE/oiUW8ute44o/s288/MEDIAS%252520WP%252520Brown.jpg
+  alt: picture
 ---
 
 [![picture](https://lh5.googleusercontent.com/-yMEyZkxtkEg/TjcLL0dy_8I/AAAAAAAAVfE/oiUW8ute44o/s288/MEDIAS%252520WP%252520Brown.jpg)

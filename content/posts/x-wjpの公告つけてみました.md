@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2007-05-19-x-wjpnogong-gao-tsuketemimashita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: x-w.jpの公告つけてみました
 ---
 
 Willcom(シャープ)の話題の新端末(スマートフォン)の公告「x-w.jp」のブログ公告パーツを

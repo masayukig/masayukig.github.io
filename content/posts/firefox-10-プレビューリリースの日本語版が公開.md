@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2004-09-25-firefox-10-purebiyuririsunori-ben-yu-ban-gagong-kai
+cover:
+  image: /images/covers/oss.png
+  alt: Firefox 1.0 プレビューリリースの日本語版が公開
 ---
 
 [MYCOM PC](http://pcweb.mycom.co.jp/news/2004/09/22/014.html)

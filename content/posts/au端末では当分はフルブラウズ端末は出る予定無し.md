@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-06-28-auduan-mo-dehadang-fen-hahuruburauzuduan-mo-hachu-ruyu-ding-wu-shi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: au端末では当分はフルブラウズ端末は出る予定無し
 ---
 
 ちょっと古い話題。

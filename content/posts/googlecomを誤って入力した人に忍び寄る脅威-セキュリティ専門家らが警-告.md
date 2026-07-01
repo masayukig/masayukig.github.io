@@ -6,6 +6,9 @@ tags:
 - net
 draft: false
 disqus_identifier: 2005-04-28-googlecom-wowu-tsuteru-li-shitaren-niren-biji-ruxie-wei-sekiyuriteizhuan-men-jia-ragajing-gao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「Google.com」を誤って入力した人に忍び寄る脅威--セキュリティ専門家らが警 告
 ---
 
 <http://japan.cnet.com/news/sec/story/0,2000050480,20083246,00.htm>

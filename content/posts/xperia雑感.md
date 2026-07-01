@@ -8,6 +8,9 @@ tags:
 - Xperia
 draft: false
 disqus_identifier: 2010-05-17-xperiaza-gan
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Xperia雑感
 ---
 
 -   Xperiaは操作について、どきどき引っかかりを感じ、iPhoneほどスムーズでない

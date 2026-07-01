@@ -10,6 +10,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2009-06-28-insutorushitaapuriiphone
+cover:
+  image: http://ax.itunes.apple.com/images/badgeitunes61x15dark.gif
+  alt: iTrail
 ---
 
 各種、無料のアプリの他、以下のアプリもインストールしました。

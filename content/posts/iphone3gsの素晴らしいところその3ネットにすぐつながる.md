@@ -8,6 +8,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2009-08-16-iphone3gsnosu-qing-rashiitokorosono3netsutonisugutsunagaru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhone(3GS)の素晴らしいところ(その3):ネットにすぐつながる
 ---
 
 [iPhone(3GS)の素晴らしいところを１０個挙げる](http://www.0r2.info/blog/2009/08/09/iphone3gs%E3%81%AE%E7%B4%A0%E6%99%B4%E3%82%89%E3%81%97%E3%81%84%E3%81%A8%E3%81%93%E3%82%8D%E3%82%92%EF%BC%91%EF%BC%90%E5%80%8B%E6%8C%99%E3%81%92%E3%82%8B/)のその3：「ネットにすぐつながる」について、記したいと思います。

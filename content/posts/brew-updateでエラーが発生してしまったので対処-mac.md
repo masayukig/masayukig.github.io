@@ -6,6 +6,9 @@ tags:
 - Mac
 draft: false
 disqus_identifier: 2012-11-23-brew-updatedeeragafa-sheng-shiteshimatsutanodedui-chu-mac
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 'brew updateでエラーが発生してしまったので対処 #mac'
 ---
 
 久しぶりに brew update してみたら、

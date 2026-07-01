@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-07-29-linuxhawindowsyorian-quan-tosurudiao-cha-jie-guo-gafa-biao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「LinuxはWindowsより安全」とする調査結果が発表
 ---
 
 [MYCOM PC WEB](http://pcweb.mycom.co.jp/news/2004/07/29/003.html)

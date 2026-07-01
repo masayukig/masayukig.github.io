@@ -7,6 +7,9 @@ tags:
 - VPS
 draft: false
 disqus_identifier: 2010-09-18-sakuranovps-woshi-tsutemirukotonisuru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 『さくらのVPS』を使ってみることにする
 ---
 
 さくらのVPS が月額９８０ということなので、使ってみることにします。

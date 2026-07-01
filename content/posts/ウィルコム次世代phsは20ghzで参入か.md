@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-06-22-uirukomu-ci-shi-dai-phsha20ghzdecan-ru-ka
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ウィルコム、次世代PHSは2.0GHzで参入か
 ---
 
 [picture](http://www.itmedia.co.jp/mobile/articles/0506/21/news035.html)

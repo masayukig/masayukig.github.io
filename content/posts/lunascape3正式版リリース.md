@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-09-12-lunascape3-zheng-shi-ban-ririsu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「Lunascape3」正式版リリース
 ---
 
 [www.itmedia.co.jp](http://www.itmedia.co.jp/news/articles/0509/12/news053.html)

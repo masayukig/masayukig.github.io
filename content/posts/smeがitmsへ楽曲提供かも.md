@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-09-05-smegaitmshele-qu-ti-gong-kamo
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: SMEがiTMSへ楽曲提供かも？
 ---
 
 [slashdot.jp](http://slashdot.jp/article.pl?sid=05/09/05/0936228&topic=52)

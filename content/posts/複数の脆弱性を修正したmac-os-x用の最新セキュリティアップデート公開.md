@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-09-09-fu-shu-nocui-ruo-xing-woxiu-zheng-shitamac-os-xyong-nozui-xin-sekiyuriteiatsupudetogong-kai
+cover:
+  image: http://lunatic.xrea.jp/mt/archives/MacOSXUpdateI20040907mg-thumb.jpg
+  alt: picture
 ---
 
 [INTERNET

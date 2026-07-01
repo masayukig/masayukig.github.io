@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-16-agile-japan-2012dong-jing-sateraitonixing-tsutekita-aj12-aj12dong-jing
+cover:
+  image: https://masayukig.files.wordpress.com/2012/03/c6631-2012-03-1609-52-13.jpg?w=300
+  alt: picture
 ---
 
 [Agile Japan 2012

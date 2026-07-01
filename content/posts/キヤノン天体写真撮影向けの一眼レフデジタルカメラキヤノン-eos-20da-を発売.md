@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2005-02-14-kiyanon-tian-ti-xie-zhen-cuo-ying-xiang-kenoyi-yan-rehudezitarukamerakiyanon-eos-20da-wofa-mai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: キヤノン、天体写真撮影向けの一眼レフデジタルカメラ『キヤノン EOS 20Da』 を発売
 ---
 
 <http://ascii24.com/news/i/hard/article/2005/02/14/654255-000.html>

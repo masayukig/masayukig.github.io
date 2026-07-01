@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-07-28-yu-yue-lu-hua-deshen-ye-noatenewu-lun-mozhao-suguchi-chichu-seru-pocketmx-pvr
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 予約録画で深夜のアテネ五輪も朝すぐ持ち出せる〜「PocketMX PVR」
 ---
 
 [ITmedia](http://www.itmedia.co.jp/lifestyle/articles/0407/27/news037.html)

@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2005-02-13-firefoxyong-supaiuea-nian-nei-nimodeng-chang-ka
+cover:
+  image: /images/covers/oss.png
+  alt: Firefox用スパイウェア、年内にも登場か
 ---
 
 <http://japan.linux.com/security/05/02/09/0347232.shtml?topic=1>

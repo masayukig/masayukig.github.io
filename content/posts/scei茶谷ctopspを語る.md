@@ -7,6 +7,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2004-12-15-sceicha-gu-cto-pspwoyu-ru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: SCEI茶谷CTO、PSPを語る
 ---
 
 [itmedia.co.jp](http://www.itmedia.co.jp/news/articles/0412/14/news057.html)

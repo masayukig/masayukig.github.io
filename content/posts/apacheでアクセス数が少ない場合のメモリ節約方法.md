@@ -6,6 +6,9 @@ tags:
 - apache
 draft: false
 disqus_identifier: 2010-10-11-apachedeakusesushu-gashao-naichang-he-nomemorijie-yue-fang-fa
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: apacheでアクセス数が少ない場合のメモリ節約方法
 ---
 
 現在このサイトは、さくらVPSをつかっていて、いまのところ、メモリが512MBとそれほど多いわけではない。

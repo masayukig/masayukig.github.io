@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2005-07-25-soritsudoaraiansu-naporitanxing-usbyan-chang-keburu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ソリッドアライアンス、“ナポリタン型”USB延長ケーブル
 ---
 
 [http://pc.watch.impress.co.jp/](http://pc.watch.impress.co.jp/docs/2005/0725/solid.htm)

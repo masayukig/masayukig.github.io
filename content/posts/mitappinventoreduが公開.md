@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-07-mit-app-inventor-edugagong-kai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: MIT　App　Inventor　Eduが公開
 ---
 
 <http://kamo.pos.to/dpoke/c/UW5968.html>

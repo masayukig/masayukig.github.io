@@ -6,6 +6,9 @@ tags:
 - Mac
 draft: false
 disqus_identifier: 2005-08-26-matsukupahuekuto-chu-dai-di-2shi-dai-ipodzhuan-yong-da-rong-liang-batsuterifa-mai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: マックパーフェクト、初代／第2世代iPod専用大容量バッテリー発売
 ---
 
 [macperfect.com](http://macperfect.com/cts/batt-ac/item/ipod.htm)

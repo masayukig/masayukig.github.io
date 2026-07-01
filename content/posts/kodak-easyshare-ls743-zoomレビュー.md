@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-08-13-kodak-easyshare-ls743-zoomrebiyu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Kodak EasyShare LS743 Zoomレビュー
 ---
 
 [PC Watch](http://pc.watch.impress.co.jp/docs/2004/0813/nishikawa.htm)

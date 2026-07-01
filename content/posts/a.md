@@ -6,6 +6,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2008-12-15-a
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: a
 ---
 
 a

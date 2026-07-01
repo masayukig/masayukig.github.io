@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-07-rezakatsutagazhu-yi-nokahuefabcafe-shibui-gu-niopun
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: レーザーカッターが主役のカフェ「FabCafe」、渋谷にオープン
 ---
 
 <http://hardware.slashdot.jp/story/12/03/07/096258/>

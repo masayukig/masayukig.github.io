@@ -11,6 +11,9 @@ tags:
 - timemachine
 draft: false
 disqus_identifier: 2011-07-23-lionde-3rd-party-nanasdehatimemachinegadong-kanai
+cover:
+  image: https://lh5.googleusercontent.com/-eNFciYAVxnk/Tjr6xhXwX5I/AAAAAAAAg6M/p3ABUDEbpv8/s288/5964468227_f23fe1aabe_o.png
+  alt: picture
 ---
 
 昨日、Lionにアップデートしましたが、以下の様なエラーがでて

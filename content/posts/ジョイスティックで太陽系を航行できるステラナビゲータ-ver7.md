@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-09-02-ziyoisuteitsukudetai-yang-xi-wohang-xing-dekirusuteranabigeta-ver7
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ジョイスティックで太陽系を航行できる「ステラナビゲータ Ver.7」
 ---
 
 今回のバージョンアップでは、以下のような機能の追加が特徴となっているようだ。

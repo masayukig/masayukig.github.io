@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-02-16-jafnonian-hui-fei-womatometeauzhi-fu-i-de-kddi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: JAFの年会費を「まとめてau支払い」で〜KDDI
 ---
 
 <http://www.itmedia.co.jp/enterprise/mobile/articles/0502/15/news033.html>

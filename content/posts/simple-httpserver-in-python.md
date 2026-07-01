@@ -9,6 +9,9 @@ tags:
 - python
 draft: false
 disqus_identifier: 2017-12-18-simple-httpserver-in-python
+cover:
+  image: /images/covers/oss.png
+  alt: Simple HTTPServer in Python
 ---
 
 > This is an article for [鰻 Advent Calendar 2017](https://adventar.org/calendars/2628).

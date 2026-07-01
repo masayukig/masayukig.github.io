@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-16-qi-ninaruhua-ti-kokomadeyaruka-sqlitewojavascriptnibian-huan-sqljs-moongiftopunsosusohutoueashao-jie-wozhou-toshitaitenzinia-webdezainaxiang-keburogu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: '気になる話題: ここまでやるか。SQLiteをJavaScriptに変換「SQL.js」 - MOONGIFT|オープンソース・ソフトウェア紹介を軸としたITエンジニア、Webデザイナー向けブログ'
 ---
 
 気になる話題: [ここまでやるか。SQLiteをJavaScriptに変換「SQL.js」 -

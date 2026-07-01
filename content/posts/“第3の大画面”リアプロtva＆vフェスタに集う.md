@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-09-30-di-3noda-hua-mian-riapurotv-avhuesutaniji-u
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: “第3の大画面”リアプロTV、A＆Vフェスタに集う
 ---
 
 [ITmedia](http://www.itmedia.co.jp/lifestyle/articles/0409/22/news084.html)

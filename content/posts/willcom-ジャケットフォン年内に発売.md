@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-03-20-willcom-ziyaketsutohuonnian-nei-nifa-mai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: WILLCOM ジャケットフォン年内に発売？
 ---
 
 <http://www.itmedia.co.jp/mobile/articles/0503/16/news066.html>

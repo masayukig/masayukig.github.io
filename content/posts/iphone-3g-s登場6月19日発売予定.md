@@ -10,6 +10,9 @@ tags:
 - sbm
 draft: false
 disqus_identifier: 2009-06-09-iphone-3g-sdeng-chang-6yue-19ri-fa-mai-yu-ding
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhone 3G S登場！(6月19日発売予定)
 ---
 
 新しい[iPhone - iPhone 3G

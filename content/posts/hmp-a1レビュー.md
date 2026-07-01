@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-07-26-hmp-a1-rebiyu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「HMP-A1」レビュー
 ---
 
 [後藤弘茂の人生を変えたこの1品!!](http://pc.watch.impress.co.jp/docs/2004/0726/kai35.htm)

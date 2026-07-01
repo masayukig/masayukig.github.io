@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-11-09-hao-diao-ddipoketsuto-1mo-yi-shang-nochun-zeng
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 好調DDIポケット、1万以上の純増
 ---
 
 [itmedia.co.jp](http://www.itmedia.co.jp/mobile/articles/0411/08/news075.html)

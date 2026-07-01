@@ -6,6 +6,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2005-01-19-estoysde1yue-21ri-jin-19shi-pspfa-mai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: estoysで1月21日(金)19時〜PSP発売？
 ---
 
 らしいです。

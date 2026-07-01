@@ -10,6 +10,9 @@ tags:
 - gemini
 draft: false
 disqus_identifier: 2018-06-06-restore-gemini-pda-firmware
+cover:
+  image: https://photos.app.goo.gl/n0nD0O5Ulc7uPBlj1
+  alt: Gemini PDA
 ---
 
 ![Gemini PDA](https://photos.app.goo.gl/n0nD0O5Ulc7uPBlj1)

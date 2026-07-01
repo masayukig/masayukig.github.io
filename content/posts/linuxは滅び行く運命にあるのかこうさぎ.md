@@ -6,6 +6,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2004-12-03-linuxhamie-bixing-kuyun-ming-niarunokakousagi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Linuxは滅び行く運命にあるのか(こうさぎ)
 ---
 
 きょうはここへhughのひまがblogしたいです。

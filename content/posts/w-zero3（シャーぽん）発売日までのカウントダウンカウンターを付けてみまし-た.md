@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-10-22-w-zero3shiyaponfa-mai-ri-madenokauntodaunkauntawofu-ketemimashi-ta
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: W-ZERO3（シャーぽん）発売日までのカウントダウンカウンターを付けてみまし た
 ---
 
 W-ZERO3(シャーぽん？)の発売日が待ちきれないので、

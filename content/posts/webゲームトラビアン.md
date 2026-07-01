@@ -8,6 +8,9 @@ tags:
 - travian
 draft: false
 disqus_identifier: 2009-06-23-webgemutorabian
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Webゲーム(トラビアン)
 ---
 
 最近、Webゲームの「[トラビアン](http://www.travian.jp/?uc=jp2_47366)」というのをやっています。

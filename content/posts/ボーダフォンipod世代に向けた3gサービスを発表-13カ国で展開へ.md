@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-11-13-bodahuon-ipodshi-dai-nixiang-keta3gsabisuwofa-biao-13kaguo-dezhan-kai-he
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ボーダフォン、iPod世代に向けた3Gサービスを発表--13カ国で展開へ
 ---
 
 [japan.cnet.com](http://japan.cnet.com/news/com/story/0,2000047668,20075696,00.htm)

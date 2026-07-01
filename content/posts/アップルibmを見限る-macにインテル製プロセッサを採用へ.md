@@ -6,6 +6,9 @@ tags:
 - Mac
 draft: false
 disqus_identifier: 2005-06-07-atsupuru-ibmwojian-xian-ru-macniinteruzhi-purosetsusawocai-yong-he
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: アップル、IBMを見限る--Macにインテル製プロセッサを採用へ
 ---
 
 [http://japan.cnet.com/](http://japan.cnet.com/news/tech/story/0,2000047674,20084156,00.htm)

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Fedora11 on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/fedora11/</link>
+    <description>Recent content in Fedora11 on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 10 Jun 2009 05:47:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/fedora11/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fedora11リリース</title>
+      <link>http://localhost:1313/posts/2009/06/fedora11%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</link>
+      <pubDate>Wed, 10 Jun 2009 05:47:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2009/06/fedora11%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</guid>
+      <description>&lt;p&gt;先日&lt;a href=&#34;http://www.0r2.info/blog/2009/06/08/fedora11%e9%96%93%e3%82%82%e3%81%aa%e3%81%8f%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9/&#34;&gt;Fedora11間もなくリリース&lt;/a&gt;というエントリーを書きましたが、
+無事(ようやく)Fedora11がリリースされました。&lt;/p&gt;
+&lt;p&gt;ただいま、ダウンロード中です。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fedora11間もなくリリース</title>
+      <link>http://localhost:1313/posts/2009/06/fedora11%E9%96%93%E3%82%82%E3%81%AA%E3%81%8F%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</link>
+      <pubDate>Mon, 08 Jun 2009 22:59:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2009/06/fedora11%E9%96%93%E3%82%82%E3%81%AA%E3%81%8F%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://fedoraproject.org/static/js/release-counter-ext.js?lang=ja&#34;&gt;http://fedoraproject.org/static/js/release-counter-ext.js?lang=ja&lt;/a&gt;
+というわけで、Fedora11が何度もリリース延期となったようですが、
+2009-06-09にリリース予定です。&lt;/p&gt;
+&lt;p&gt;個人的には、Btrfsに期待。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

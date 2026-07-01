@@ -9,6 +9,9 @@ tags:
 - VPS
 draft: false
 disqus_identifier: 2011-03-04-sakuranovpsdeunixbench513woshi-shi-shitemita-part1zhun-bei-bian
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: さくらのVPSでUnixBench(5.1.3)を実施してみた - part1(準備編)
 ---
 
 さくらのVPSでベンチマークをやってみた。

@@ -7,6 +7,9 @@ tags:
 - emobile
 draft: false
 disqus_identifier: 2011-01-16-htc-arias31htgou-ru
+cover:
+  image: http://farm6.static.flickr.com/5162/5359055485_04cd25ea24.jpg
+  alt: picture
 ---
 
 [![picture](http://farm6.static.flickr.com/5162/5359055485_04cd25ea24.jpg)](http://www.flickr.com/photos/31362181@N08/5359055485/)

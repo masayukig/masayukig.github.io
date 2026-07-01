@@ -12,6 +12,11 @@ tags:
 - VPS
 draft: false
 disqus_identifier: 2011-02-12-fedora14-on-sakuravps
+cover:
+  image: http://farm6.static.flickr.com/5092/5436912432_e26d889434.jpg
+  alt: 'sakura vps remote
+
+    console'
 ---
 
 このサイトのサーバは、[さくらのVPS]で動作していますが、今まで、CentOS5だったのを、Fedora14に変更しました。

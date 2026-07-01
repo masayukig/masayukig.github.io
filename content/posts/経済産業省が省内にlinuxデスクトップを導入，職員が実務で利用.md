@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-03-03-jing-ji-chan-ye-sheng-gasheng-nei-nilinuxdesukutotsupuwodao-ru-zhi-yuan-gashi-wu-deli-yong
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 経済産業省が省内にLinuxデスクトップを導入，職員が実務で利用
 ---
 
 <http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050301/156848/>

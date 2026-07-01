@@ -8,6 +8,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2009-07-03-iphoneoqi-niru-riapuriiwen-ku
+cover:
+  image: http://ax.itunes.apple.com/images/badgeitunes61x15dark.gif
+  alt: iBunko
 ---
 
 まだ、iPhoneを使い始めて1週間ぐらいしか経ってませんが、お気に入りのアプリを紹介したいと思います。

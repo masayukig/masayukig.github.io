@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-09-06-pentium-44ghzda-zai-no60mo-yuan-gemupc
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Pentium 4“4GHz”搭載の60万円ゲームPC
 ---
 
 [ITmedia](http://www.itmedia.co.jp/news/articles/0409/04/news013.html)

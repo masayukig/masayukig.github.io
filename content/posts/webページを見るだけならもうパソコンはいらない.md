@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-04-24-webpeziwojian-rudakenaramoupasokonhairanai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Webページを見るだけならもうパソコンはいらない
 ---
 
 <http://itpro.nikkeibp.co.jp/free/NNW/NETHOT/20050416/159433/>

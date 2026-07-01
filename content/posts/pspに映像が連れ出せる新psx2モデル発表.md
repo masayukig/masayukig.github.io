@@ -6,6 +6,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2005-03-17-pspniying-xiang-galian-rechu-seruxin-psx-2moderufa-biao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: PSPに映像が連れ出せる新PSX、2モデル発表
 ---
 
 [MYCOM PC](http://pcweb.mycom.co.jp/news/2005/03/16/008.html)

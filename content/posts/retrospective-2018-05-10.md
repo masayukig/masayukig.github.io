@@ -9,6 +9,9 @@ tags:
 - retrospective
 draft: false
 disqus_identifier: 2018-05-10-retrospective-2018-05-10
+cover:
+  image: /images/covers/process.jpg
+  alt: Retrospective 2018-05-10
 ---
 
 ## Introduction

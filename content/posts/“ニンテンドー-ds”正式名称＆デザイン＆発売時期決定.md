@@ -6,6 +6,9 @@ tags:
 - game
 draft: false
 disqus_identifier: 2004-07-29-nintendo-dszheng-shi-ming-cheng-dezainfa-mai-shi-qi-jue-ding
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: “ニンテンドー DS”正式名称＆デザイン＆発売時期決定！
 ---
 
 [Yahoo](http://gameinfo.yahoo.co.jp/info/headlines/geg/20040728/cpt/20000000_eg011.html)

@@ -6,6 +6,9 @@ tags:
 - net
 draft: false
 disqus_identifier: 2004-07-20-biglobegacong-liang-ke-jin-zhi-noadslsabisuwoshi-merurashii
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: BIGLOBEが従量課金制のADSLサービスを始めるらしい
 ---
 
 ([CNET

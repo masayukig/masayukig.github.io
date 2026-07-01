@@ -5,6 +5,9 @@ slug: linuxマイコンボードraspberry-pi国内でも3400円で発売へ
 categories:
 - Uncategorized
 draft: true
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: LinuxマイコンボードRaspberry Pi、国内でも3,400円で発売へ
 ---
 
 <http://hardware.slashdot.jp/story/12/03/14/1336254/>

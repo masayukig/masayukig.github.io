@@ -8,6 +8,9 @@ tags:
 - iPhone
 draft: false
 disqus_identifier: 2010-06-09-iphone4fa-biao-soshite-ipadwomai-ukadoukanao-mu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhone4発表！そして、iPadを買うかどうか悩む。。
 ---
 
 昨日、iPhone4が発表されました。

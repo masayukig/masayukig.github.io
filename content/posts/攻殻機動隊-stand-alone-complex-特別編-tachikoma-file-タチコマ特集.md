@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-06-04-gong-que-ji-dong-dui-stand-alone-complex-te-bie-bian-tachikoma-file-tachikomate-ji
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 攻殻機動隊 STAND ALONE COMPLEX 特別編 TACHIKOMA FILE (タチコマ特集)
 ---
 
 [攻殻機動隊 STAND ALONE COMPLEX 特別編 TACHIKOMA

@@ -6,6 +6,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2005-03-30-pspnoyin-shiburauzadeuebuburauzingu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: PSPの隠しブラウザでウェブブラウジング
 ---
 
 <http://slashdot.jp/article.pl?sid=05/03/28/0426228&topic=31>

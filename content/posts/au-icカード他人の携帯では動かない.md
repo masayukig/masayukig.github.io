@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-08-12-au-ickado-ta-ren-noxi-dai-dehadong-kanai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「au ICカード」、他人の携帯では動かない？
 ---
 
 [www.itmedia.co.jp](http://www.itmedia.co.jp/mobile/articles/0508/11/news067.html)

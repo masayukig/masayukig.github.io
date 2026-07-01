@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-07-08-uirukomuhao-diao-de2nian-buriniphschun-zeng
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ウィルコム好調で2年ぶりにPHS純増
 ---
 
 [http://k-tai.impress.co.jp/](http://k-tai.impress.co.jp/cda/article/news_toppage/24684.html)

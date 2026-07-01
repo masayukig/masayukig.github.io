@@ -9,6 +9,9 @@ tags:
 - blog
 draft: false
 disqus_identifier: 2017-12-11-learning-english
+cover:
+  image: /images/covers/english.jpg
+  alt: Learning English
 ---
 
 > This is an article for [鰻 Advent Calendar 2017](https://adventar.org/calendars/2628). Japanese version is after

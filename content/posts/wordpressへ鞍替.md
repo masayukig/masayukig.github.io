@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2008-06-22-wordpresshean-ti
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: wordpressへ鞍替
 ---
 
 [wordpressへ鞍替しました。

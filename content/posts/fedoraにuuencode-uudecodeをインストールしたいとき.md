@@ -10,6 +10,9 @@ tags:
 - yum
 draft: false
 disqus_identifier: 2008-11-03-fedoraniuuencode-uudecodewoinsutorushitaitoki
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Fedoraにuuencode, uudecodeをインストールしたいとき
 ---
 
 Fedoraにuuencode, uudecodeをインストールしたいときは、

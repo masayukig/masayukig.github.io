@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Evernote on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/evernote/</link>
+    <description>Recent content in Evernote on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 29 Mar 2012 20:50:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/evernote/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eye-Fi Pro X2を購入しました。で、オススメの購入方法や、Macでの設定方法について</title>
+      <link>http://localhost:1313/posts/2012/03/eye-fi-pro-x2%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%81%A7%E3%82%AA%E3%82%B9%E3%82%B9%E3%83%A1%E3%81%AE%E8%B3%BC%E5%85%A5%E6%96%B9%E6%B3%95%E3%82%84mac%E3%81%A7%E3%81%AE%E8%A8%AD%E5%AE%9A%E6%96%B9%E6%B3%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</link>
+      <pubDate>Thu, 29 Mar 2012 20:50:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/03/eye-fi-pro-x2%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%81%A7%E3%82%AA%E3%82%B9%E3%82%B9%E3%83%A1%E3%81%AE%E8%B3%BC%E5%85%A5%E6%96%B9%E6%B3%95%E3%82%84mac%E3%81%A7%E3%81%AE%E8%A8%AD%E5%AE%9A%E6%96%B9%E6%B3%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.eyefi.co.jp/products/prox2&#34;&gt;Eye-Fi Pro X2&lt;/a&gt; を購入しました。&lt;/p&gt;
+&lt;p&gt;というわけで、購入方法、設定方法について。&lt;/p&gt;
+&lt;h2 id=&#34;オススメ購入方法&#34;&gt;オススメ購入方法&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Evernoteプレミアム会員になっていて今後も使い続ける予定&lt;/strong&gt;、
+　あるいは、
+**GMOとくとくポイントが余っている &lt;strong&gt;ならば、
+　&lt;a href=&#34;http://eyefi.shop-pro.jp/&#34;&gt;Eye-Fi公式オンラインストア&lt;/a&gt;
+がオススメです。
+なぜなら、2012/03/30現在、Eye-Fi公式オンラインストアでは、
+Eye-Fi Mobile X2、または、Pro X2を購入すると、
+**　Evernoteプレミアム会員1年分&lt;/strong&gt;
+が、無料でバンドルされるキャンペーンを実施中だからです。
+(Evernoteプレミアム1年分特典は、2012/4/10 16:00購入分までなので注意)&lt;/p&gt;
+&lt;p&gt;GMOとくとくポイントに関しては、あまり使い所が見つからなくて、
+個人的にちょっと持て余していたところだったので、調度良かっただけです。(^^;&lt;/p&gt;
+&lt;p&gt;どちらにも特に当てはまらない場合は、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://kakaku.com/search_results/Eye-Fi/&#34;&gt;価格.comで最安値を検索&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.yodobashi.com/ec/product/100000001001230441/index.html&#34;&gt;カメラ量販店等&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;で、購入することで良いと思います。&lt;/p&gt;
+&lt;h2 id=&#34;設定方法&#34;&gt;設定方法&lt;/h2&gt;
+&lt;h4 id=&#34;初めてeye-fiを使う場合&#34;&gt;初めてEye-Fiを使う場合&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;http://eyefi.co.jp/support/download/&#34;&gt;http://eyefi.co.jp/support/download/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;より、Eye-Fi Softwareセンターをダウンロードし、インストールする。&lt;/p&gt;
+&lt;p&gt;特に迷うような点はないはず。&lt;/p&gt;
+&lt;h4 id=&#34;以前にeye-fiを使用したことがありeye-fi-softwareセンターをインストール済み&#34;&gt;以前にEye-Fiを使用したことがあり、Eye-Fi Softwareセンターをインストール済み&lt;/h4&gt;
+&lt;p&gt;こちらの場合も簡単でした。
+Eye-FiカードをMacに接続すると、以下のような画面が表示されます。
+(表示されない場合は、Eye-Fi Centerを開きます)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/085aa-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-02-20.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/085aa-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-02-20.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回は、「Eye-Fiファームウェアの更新」が案内されたので、
+それに従い、更新してみます。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/ec6dd-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-04.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/ec6dd-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-04.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/5f989-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-19.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/5f989-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-19.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;更新されるかとおもいきや、失敗しました。。orz&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/d3d95-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-39.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/d3d95-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-39.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ちょっと悪い予感がしましたが、上記に従い、一度Eye-Fiを取り外してから、
+再度、接続しなおしてみます。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/9c7bc-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-17-19.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/9c7bc-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-17-19.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;特に、エラーは出ること無く、使えるようになっていました。&lt;/p&gt;
+&lt;p&gt;後は、以下の画面からネットワークの設定やアップロードの設定を行えば完了です。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/4cc6c-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-08-34.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/4cc6c-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-08-34.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+&lt;h4 id=&#34;購入方法&#34;&gt;購入方法&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;[Evernoteを今後も使い続ける予定、または、&lt;a href=&#34;http://point.gmo.jp/&#34;&gt;GMOとくとくポイント&lt;/a&gt;が余っている]{.Apple-style-span
+style=&amp;ldquo;font-size:small;font-weight:normal;&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[[　　→　&lt;a href=&#34;http://eyefi.shop-pro.jp/&#34;&gt;Eye-Fiオンラインストア&lt;/a&gt;で購入(ただし、Evernoteプレミアム1年分特典は、2012/4/10
+16:00購入分までなので注意)。GMOとくとくポイントがあるならそれを使用する。]{.Apple-style-span
+style=&amp;ldquo;font-weight:normal;&amp;rdquo;}]{.Apple-style-span
+style=&amp;ldquo;font-size:small;&amp;rdquo;}&lt;/p&gt;
+&lt;h4 id=&#34;設定方法-1&#34;&gt;設定方法&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;[[基本的にはとても簡単。ただし、ちょっと残念な動作になることもあるので、期待はしすぎないほうが良い。]{.Apple-style-span
+style=&amp;ldquo;font-weight:normal;&amp;rdquo;}]{.Apple-style-span
+style=&amp;ldquo;font-size:small;&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[[
+]{.Apple-style-span style=&amp;ldquo;font-weight:normal;&amp;rdquo;}]{.Apple-style-span
+style=&amp;ldquo;font-size:small;&amp;rdquo;}&lt;/p&gt;
+&lt;p&gt;[[
+]{.Apple-style-span style=&amp;ldquo;font-weight:normal;&amp;rdquo;}]{.Apple-style-span
+style=&amp;ldquo;font-size:small;&amp;rdquo;}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Evernoteで月間アップロード量がリミットに達した場合の対応方法 #evernote</title>
+      <link>http://localhost:1313/posts/2012/03/evernote%E3%81%A7%E6%9C%88%E9%96%93%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E9%87%8F%E3%81%8C%E3%83%AA%E3%83%9F%E3%83%83%E3%83%88%E3%81%AB%E9%81%94%E3%81%97%E3%81%9F%E5%A0%B4%E5%90%88%E3%81%AE%E5%AF%BE%E5%BF%9C%E6%96%B9%E6%B3%95-evernote/</link>
+      <pubDate>Thu, 29 Mar 2012 09:51:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/03/evernote%E3%81%A7%E6%9C%88%E9%96%93%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E9%87%8F%E3%81%8C%E3%83%AA%E3%83%9F%E3%83%83%E3%83%88%E3%81%AB%E9%81%94%E3%81%97%E3%81%9F%E5%A0%B4%E5%90%88%E3%81%AE%E5%AF%BE%E5%BF%9C%E6%96%B9%E6%B3%95-evernote/</guid>
+      <description>&lt;p&gt;先日、Evernoteで月間アップロード量がリミットに達してしまい、
+かなりショボンな感じだったのですが、(一時的に)回避する方法がありました。
+&lt;strong&gt;450円を支払うと、1ヶ月だけ1GBアップロード容量が増える&lt;/strong&gt;
+というものです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/b7ea3-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-29-10.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/b7ea3-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-29-10.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;WebでEvernoteにアクセスして、上記をクリックすると、以下のような画面になるので、 &lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/b13ac-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-38-01.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/b13ac-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-38-01.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;必要事項を入力すれば、即時で1GBアップロード容量が増えます。&lt;/p&gt;
+&lt;p&gt;公式アナウンスもされているようですし、
+WebでEvernoteを使っていれば、まるわかりだったのですね。。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.evernote.com/2011/11/23/new-premium-feature-increase-your-monthly-allowance/&#34;&gt;http://blog.evernote.com/2011/11/23/new-premium-feature-increase-your-monthly-allowance/&lt;/a&gt;
+&lt;a href=&#34;https://support.evernote.com/link/portal/16051/16058/Article/2173/Increased-Upload-Allowance-Overview&#34;&gt;https://support.evernote.com/link/portal/16051/16058/Article/2173/Increased-Upload-Allowance-Overview&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dropbox Automatorを使って写真を全自動でEvernoteへアップロードする(若干注意が必要) #evernote #dropbox</title>
+      <link>http://localhost:1313/posts/2012/03/dropbox-automator%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E5%86%99%E7%9C%9F%E3%82%92%E5%85%A8%E8%87%AA%E5%8B%95%E3%81%A7evernote%E3%81%B8%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E8%8B%A5%E5%B9%B2%E6%B3%A8%E6%84%8F%E3%81%8C%E5%BF%85%E8%A6%81-evernote-dropbox/</link>
+      <pubDate>Tue, 20 Mar 2012 20:28:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/03/dropbox-automator%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E5%86%99%E7%9C%9F%E3%82%92%E5%85%A8%E8%87%AA%E5%8B%95%E3%81%A7evernote%E3%81%B8%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E8%8B%A5%E5%B9%B2%E6%B3%A8%E6%84%8F%E3%81%8C%E5%BF%85%E8%A6%81-evernote-dropbox/</guid>
+      <description>&lt;p&gt;[はじめに]{.Apple-style-span style=&amp;ldquo;font-size:large;&amp;rdquo;}
+&lt;a href=&#34;http://wappwolf.com/dropboxautomator/&#34;&gt;Dropbox
+Automator&lt;/a&gt;というのを使って、iPhone,
+iPad, Android, デジカメで
+撮影した写真を全自動でEvernoteへアップロードする方法を記します。&lt;/p&gt;
+&lt;p&gt;ただし、注意点があるので、それは最後に書きます。&lt;/p&gt;
+&lt;p&gt;[前提条件]{.Apple-style-span style=&amp;ldquo;font-size:large;&amp;rdquo;}&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.itmedia.co.jp/news/articles/1202/24/news092.html&#34;&gt;Dropboxの写真や動画の自動アップロードサービス&lt;/a&gt;が有効になっていること&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;[方法]{.Apple-style-span style=&amp;ldquo;font-size:large;&amp;rdquo;}
+[&lt;a href=&#34;http://wappwolf.com/dropboxautomator/&#34;&gt;Dropbox
+Automator&lt;/a&gt; にアクセスし、あとは以下の画像の通り進めます。]{.Apple-style-span
+style=&amp;ldquo;font-size:small;&amp;rdquo;}&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/9556c-dropboxautomator-01.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/9556c-dropboxautomator-01.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/8a791-dropboxautomator-02.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/8a791-dropboxautomator-02.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/10778-dropboxautomator-03.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/10778-dropboxautomator-03.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/ac3fe-dropboxautomator-04.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/ac3fe-dropboxautomator-04.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/fbad5-dropboxautomator-05.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/fbad5-dropboxautomator-05.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/5a13c-dropboxautomator-06.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/5a13c-dropboxautomator-06.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/72eb7-dropboxautomator-07.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/72eb7-dropboxautomator-07.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/ac0c5-dropboxautomator-08.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/ac0c5-dropboxautomator-08.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/019bc-dropboxautomator-10.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/019bc-dropboxautomator-10.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/dcb4a-dropboxautomator-11.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/dcb4a-dropboxautomator-11.png?w=241&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[注意点]{.Apple-style-span style=&amp;ldquo;font-size:large;&amp;rdquo;}&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Evernoteの月間最大アップロードは、60MB(無料アカウント)または1GB(プレミアムアカウント)です。既に、Camera
+Uploadsフォルダにある程度の枚数写真がある場合、月間最大アップロード量を超えてしまうかもしれません。(その場合、次の月までアップロードできなくなります。。)&lt;/li&gt;
+&lt;li&gt;Evernoteへアップロード処理されると、「processed」というフォルダに勝手に移動されてしまうようです。これで、今後もDropbox的にうまく動作するのか？はよくわかっていません。。&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+  </channel>
+</rss>

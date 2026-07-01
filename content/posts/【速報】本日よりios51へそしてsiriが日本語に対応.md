@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-07-su-bao-ben-ri-yoriios51hesoshitesirigari-ben-yu-nidui-ying
+cover:
+  image: http://www.gizmodo.jp/upload_files2/120308ios-siri.jpg
+  alt: picture
 ---
 
 <http://www.gizmodo.jp/2012/03/ios51siri.html>

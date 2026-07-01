@@ -6,6 +6,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2005-04-25-koramu-os-x-hatsukingu-di-132hui-os-xdepspwoyu-shimu-dvdrekodabian
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 【コラム】OS X ハッキング! 第132回 OS XでPSPを愉しむ - DVDレコーダ編
 ---
 
 <http://pcweb.mycom.co.jp/column/osx/132/>

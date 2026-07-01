@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PC on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/pc/</link>
+    <description>Recent content in PC on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 16 Sep 2011 06:45:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CrashPlan でキャッシュファイルが大きくなって困ったらやってみること</title>
+      <link>http://localhost:1313/posts/2011/09/crashplan-%E3%81%A7%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%8C%E5%A4%A7%E3%81%8D%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%A6%E5%9B%B0%E3%81%A3%E3%81%9F%E3%82%89%E3%82%84%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8/</link>
+      <pubDate>Fri, 16 Sep 2011 06:45:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/09/crashplan-%E3%81%A7%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%8C%E5%A4%A7%E3%81%8D%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%A6%E5%9B%B0%E3%81%A3%E3%81%9F%E3%82%89%E3%82%84%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8/</guid>
+      <description>&lt;hr&gt;
+&lt;h2 id=&#34;picture&#34;&gt;&lt;a href=&#34;https://picasaweb.google.com/lh/photo/BrjXoOVmCm1UQS7_Gx3cXA?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh3.googleusercontent.com/-66No1KwEeS4/TnJwSyVJqxI/AAAAAAAAmXw/2bXBLMW2b5Q/s400/%2525E3%252582%2525B9%2525E3%252582%2525AF%2525E3%252583%2525AA%2525E3%252583%2525BC%2525E3%252583%2525B3%2525E3%252582%2525B7%2525E3%252583%2525A7%2525E3%252583%252583%2525E3%252583%252588%2525202011-09-16%2525206.37.31.png&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;現在、&lt;a href=&#34;http://www.crashplan.com/&#34;&gt;CrashPlan&lt;/a&gt;というオンラインバックアップサービスを利用中です。
+サービスとしては、結構快適で&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;バックグラウンドで自動的にバックアップしてくれる&lt;/li&gt;
+&lt;li&gt;台数・容量無制限のプランがある&lt;/li&gt;
+&lt;li&gt;他のコンピュータをバックアップ先に選ぶことができる(らしい)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Linux, Macに対応している&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;履歴を持っており、指定した日にちに戻れる(らしい)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;と、かなり使い勝手はいい感じです。&lt;/p&gt;
+&lt;p&gt;しかしながら、頻繁に更新があるようなディレクトリ、ファイルを指定したりすると、
+やたらとキャッシュファイルが大きくなってしまうことがあるようです。
+(私の場合、10GB近くまで大きくなってしまいました)&lt;/p&gt;
+&lt;p&gt;こうなってしまうと、そのファイル・ディレクトリをバックアップ対象外としても、
+小さくなってくれませんでした。&lt;/p&gt;
+&lt;p&gt;なので、キャッシュファイルを削除してみることにしました。&lt;/p&gt;
+&lt;p&gt;キャッシュファイル削除手順(Linuxの場合)
+&lt;a href=&#34;https://gist.github.com/1220523.js?file=delete_log.log&#34;&gt;https://gist.github.com/1220523.js?file=delete_log.log&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;私の場合はこれで、キャッシュファイルを小さくすることができました。&lt;/p&gt;
+&lt;p&gt;以上をまとめると、&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;頻繁に更新があるようなディレクトリ、ファイルはバックアップ対象から外す&lt;/li&gt;
+&lt;li&gt;キャッシュファイルを削除するには、CrashPlanサービスを停止し、
+ディレクトリ毎削除。CrashPlanサービス起動を行う&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;ということをすれば、なんとか使っていけそうです。&lt;/p&gt;
+&lt;p&gt;公式に認められた手段ではなく、私が勝手に行っていることなので、実行は自己責任でお願いいたします
+:-P&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>異なるマシンで使用していたLVMボリュームを使用する方法(Fedora14)</title>
+      <link>http://localhost:1313/posts/2011/04/%E7%95%B0%E3%81%AA%E3%82%8B%E3%83%9E%E3%82%B7%E3%83%B3%E3%81%A7%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%81%84%E3%81%9Flvm%E3%83%9C%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%A0%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95fedora14/</link>
+      <pubDate>Sat, 09 Apr 2011 06:10:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/04/%E7%95%B0%E3%81%AA%E3%82%8B%E3%83%9E%E3%82%B7%E3%83%B3%E3%81%A7%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%81%84%E3%81%9Flvm%E3%83%9C%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%A0%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95fedora14/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/manchester-monkey/4016960283/&#34; title=&#34;before the end by Manchester-Monkey, on Flickr&#34;&gt;&lt;img alt=&#34;before the\nend&#34; loading=&#34;lazy&#34; src=&#34;http://farm3.static.flickr.com/2562/4016960283_a8dd425379_m.jpg&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;異なるマシンで使用していたLVMのボリュームを使用する必要が出てきたので、
+ちょっと調べました。&lt;/p&gt;
+&lt;p&gt;基本的には、以下のサイトに記述されている内容を参考に実施し特に問題はありませんでした。
+&lt;a href=&#34;http://l-w-i.net/t/fedora/lvm_006.txt&#34;&gt;http://l-w-i.net/t/fedora/lvm_006.txt&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo -s
+# pvscan
+  PV /dev/sdd1   VG vg01     lvm2 [931.50 GiB / 50.00 GiB free]
+  PV /dev/sdc1   VG vgmisc   lvm2 [931.50 GiB / 512.00 MiB free]
+# vgscan
+  Reading all physical volumes.  This may take a while...
+  Found volume group &amp;quot;vg01&amp;quot; using metadata type lvm2
+  Found volume group &amp;quot;vgmisc&amp;quot; using metadata type lvm2
+# lvchange -ay /dev/vg01/backup
+  The link /dev/vg01/backup should had been created by udev but it was not found. Falling back to direct link creation.
+# lvchange -ay /dev/vgmisc/lv_doc
+  The link /dev/vgmisc/lv_doc should had been created by udev but it was not found. Falling back to direct link creation.
+# mount /dev/vg01/backup /mnt/backup/
+# mount /dev/vgmisc/lv_doc /mnt/lv_doc/
+# df -T |grep -e backup -e lv_doc
+/dev/mapper/vg01-backup
+               xfs   924188672 887058332  37130340  96% /mnt/backup
+/dev/mapper/vgmisc-lv_doc
+               xfs   976093184 686094968 289998216  71% /mnt/lv_doc
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Fedora on VMWare Fusion 3 on MacBook Air</title>
+      <link>http://localhost:1313/posts/2011/02/fedora-on-vmware-fusion-3-on-macbook-air/</link>
+      <pubDate>Mon, 07 Feb 2011 05:21:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/02/fedora-on-vmware-fusion-3-on-macbook-air/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/masayun/5422904210/&#34; title=&#34;Fedora14 on VMware Fusion on MacBook Air by masayukig, on Flickr&#34;&gt;&lt;img alt=&#34;Fedora14 on VMware Fusion on MacBook\nAir&#34; loading=&#34;lazy&#34; src=&#34;http://farm6.static.flickr.com/5297/5422904210_999389cb72_m.jpg&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.0r2.info/blog/2011/02/06/macbook-air%E3%81%ABlinuxfedora%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/&#34;&gt;先日のエントリー&lt;/a&gt;で、MacBook
+AirにFedoraをインストールしたことを書きましたが、
+やはり、Mac OS X上からもLinuxを使いたいので試行錯誤して、
+VMWare Fusion 3上から使うことができました。&lt;/p&gt;
+&lt;p&gt;以下、その方法。&lt;/p&gt;
+&lt;p&gt;まずは、普通に別パーティション(私の場合/dev/disk0s3(Mac表記))へFedora14(x86_64)をインストール。
+なお、swapパーティションは、とりあえず作らない。必要なら後からswapファイルを作ってそれをswapにする。
+(無駄なディスク領域は作りたくないので)
+また、MacのUSキーボードの場合、キーボードは無印の「アメリカ合衆国」を選んだ方がいいようだ。
+「日本語入力するから国際版(International)」かな？と思ってそれを選んだら、
+「~, `, &amp;ldquo;, &amp;lsquo;」
+などのキーがまともに入力できなくなってしまいました。&lt;/p&gt;
+&lt;p&gt;なお、設定は/etc/sysconfig/keyboardの&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;KEYBOARD=&amp;quot;acentos-us&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;となっているところを&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;KEYBOARD=&amp;quot;us&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;20110208追記&#34;&gt;とすれば、普通のUSキーボードになるようです。
+2011/02/08追記：&lt;/h1&gt;
+&lt;h1 id=&#34;どうやらこれではダメだったみたいですもうちょっと解決策を探してみます&#34;&gt;どうやらこれではダメだったみたいです。。もうちょっと解決策を探してみます。&lt;/h1&gt;
+&lt;p&gt;で、肝心の別パーティションのディスクイメージを使用してのLinux起動ですが、
+以下の手順でできました。
+なお、&lt;a href=&#34;http://fearandloath.us/vmware-fusion-bootcamp-partition.html&#34;&gt;http://fearandloath.us/vmware-fusion-bootcamp-partition.html&lt;/a&gt;のサイトの情報を
+参考（というかほぼそのまま）にさせてもらいました。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd &amp;quot;/Library/Application Support/VMware Fusion/&amp;quot;
+$ ./vmware-rawdiskCreator print /dev/disk0
+Nr      Start       Size Type Id Sytem
+-- ---------- ---------- ---- -- ------------------------
+ 1          1     409639 BIOS EE Unknown
+ 2     409640  196982744 BIOS AF HFS+
+ 3  197654528   39321600 BIOS 83 Linux
+(という感じの出力がされるので、インストールするパーティションの「Nr」を確認しておく
+私の場合は「３」)
+$ ./vmware-rawdiskCreator create /dev/disk0 3 /Users/igawa/Documents/Virtual\ Machines.localized/rawfedora_x86_64.vmwarevm/bootcamp_partition ide
+$ vim /Users/igawa/Documents/Virtual\ Machines.localized/rawfedora_x86_64.vmwarevm/rawfedora_x86_64.vmx
+======
+ide0:0.present = &amp;quot;TRUE&amp;quot;
+ide0:0.fileName = &amp;quot;bootcamp_partition.vmdk&amp;quot;
+======
+を適当なところに追加 or 置換する。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;これでOKでした。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wake-on-LANを使ってみた</title>
+      <link>http://localhost:1313/posts/2010/05/wake-on-lan%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <pubDate>Thu, 27 May 2010 05:59:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2010/05/wake-on-lan%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+      <description>&lt;p&gt;「PCが複数台あって、必要な時だけPCを起動したい」という欲求が出てきたので、
+&lt;a href=&#34;http://ja.wikipedia.org/wiki/Wake-on-LAN&#34;&gt;Wake On
+Lan(WOL)機能&lt;/a&gt;を使ってみた。&lt;/p&gt;
+&lt;p&gt;(最近、暑くなってきたこともあり、さらに電気代もバカにならないので、
+不要なPCの電源はできるだけ落としておきたいので)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;準備(ハードウェア編)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;マザーボード等が対応している必要があるが、
+最近のPCであればおそらく対応しているものがほとんどだと思われる。
+ただし、BIOSの設定変更が必要な場合があるので注意が必要。
+私が使っているマザーボード(MSI
+KA780GM-M)ではデフォルトでONになっている様でした。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;準備(ソフトウェア編)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;送信側：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;「起こされる」PCのMACアドレスを調査&lt;/li&gt;
+&lt;li&gt;wakeonlanパッケージをインストール&lt;/li&gt;
+&lt;li&gt;wakeonlanコマンドを使用し、起こす&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;この様な流れでしょうか。では、詳細を。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;「起こされる」PCのMACアドレスを調査&lt;/li&gt;
+&lt;li&gt;wakeonlanパッケージをインストール&lt;/li&gt;
+&lt;li&gt;wakeonlanコマンドを使用し、起こす&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;cron等で「起こす側」がwakeonlanコマンドを実行し、「起こされる側」が定期的にpoweroffするようにすれば、
+「定期的に電源ONをして、終わったら、電源OFF」という運用が可能となる。&lt;/p&gt;
+&lt;p&gt;参考リンク:
+&lt;a href=&#34;http://www.atmarkit.co.jp/flinux/rensai/linuxtips/709usewol.html&#34;&gt;http://www.atmarkit.co.jp/flinux/rensai/linuxtips/709usewol.html&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linux WD15EARS HDDでハマる</title>
+      <link>http://localhost:1313/posts/2010/04/linux-wd15ears-hdd%E3%81%A7%E3%83%8F%E3%83%9E%E3%82%8B/</link>
+      <pubDate>Wed, 14 Apr 2010 05:28:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2010/04/linux-wd15ears-hdd%E3%81%A7%E3%83%8F%E3%83%9E%E3%82%8B/</guid>
+      <description>&lt;p&gt;WD15EARSというHDDでは、
+「Advanced Format Technology」
+というのを採用していて、セクタが4KBになっているそうです。&lt;/p&gt;
+&lt;p&gt;で、このHDDへLinuxをインストールして使ったところ、
+「書き込みがやたら遅い」
+という問題が発生しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://community.wdc.com/t5/Desktop/Problem-with-WD-Advanced-Format-drive-in-LINUX-WD15EARS/td-p/6395&#34;&gt;http://community.wdc.com/t5/Desktop/Problem-with-WD-Advanced-Format-drive-in-LINUX-WD15EARS/td-p/6395
+&lt;/a&gt;
+の投稿を参考に、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# fdisk -H 224 -S 56 /dev/sda
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;として、
+あとは、通常どおり、パーティションを区切りました。
+(面倒なので「/」とswapの二つだけにしました。)
+これで、ようやく正常な速度になりました。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>最近購入したiPhoneアプリ</title>
+      <link>http://localhost:1313/posts/2009/08/%E6%9C%80%E8%BF%91%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%9Fiphone%E3%82%A2%E3%83%97%E3%83%AA/</link>
+      <pubDate>Thu, 06 Aug 2009 04:33:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2009/08/%E6%9C%80%E8%BF%91%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%9Fiphone%E3%82%A2%E3%83%97%E3%83%AA/</guid>
+      <description>&lt;p&gt;Appleから最近購入したiPhoneアプリの請求書が来たので、
+載せてみます。(「購入」とは言っても、すべて無料ですが。。)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;アイテム番号   詳細      単価
+1   TweetDeck for iPhone, v1.0.1, 販売業者: Iain Dodsworth (4+)
+レビューを書く 問題を報告する    無料
+2   USA TODAY, v1.1.1, 販売業者: Tallent Communications, Inc. (4+)
+レビューを書く 問題を報告する     無料
+3   WSJ – The Wall Street Journal, v1.1.0, 販売業者: Wall Street Journal (4+)
+レビューを書く 問題を報告する  無料
+4   ふらっと案内 - 手の中に街を, v1.0.1, 販売業者: SOFTBANK MOBILE Corp. - ISD (4+)
+レビューを書く 問題を報告する    無料
+5   My Name is E, v1.0.31, 販売業者: My name is E (4+)
+レビューを書く 問題を報告する     無料
+6   玉屋, v2.0, 販売業者: Eisuke Okumura (4+)
+レビューを書く 問題を報告する    無料
+7   Golgo13, v1.0.0, 販売業者: SONORAN BLUE
+レビューを書く 問題を報告する    無料
+8   Montblanc pen, v1.0, 販売業者: Ubiquitous Entertainment Inc. (4+)
+レビューを書く 問題を報告する  無料
+9   MonkeySwing, v1.1, 販売業者: Lee Morgan (4+)
+レビューを書く 問題を報告する   無料
+10  PickUp Recommended Exhibition of Japan, v2.1, 販売業者: Kosaido Co., Ltd (4+)
+レビューを書く 問題を報告する  無料
+11  Labyrinth Lite Edition, v1.6.0, 販売業者: Carl Loodberg (4+)
+レビューを書く 問題を報告する   無料
+12  Morocco, v1.1.0, 販売業者: Thomas Aylesworth (4+)
+レビューを書く 問題を報告する  無料
+13  Samurai Taxi, v1.0, 販売業者: kazagulma inc. (4+)
+レビューを書く 問題を報告する  無料
+14  Waterslide Extreme, v1.0.0, 販売業者: Dare Digital Ltd (4+)
+レビューを書く 問題を報告する    無料
+15  MyWebClip LITE, v1.0.1, 販売業者: forYou inc. (17+)
+レビューを書く 問題を報告する    無料
+16  caravan
+レビューを書く 問題を報告する    無料
+17  NatsuLion for iPhone, v1.51, 販売業者: 琢磨 Mori (4+)
+レビューを書く 問題を報告する    無料
+注文合計:   ¥0
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Fedora11間もなくリリース</title>
+      <link>http://localhost:1313/posts/2009/06/fedora11%E9%96%93%E3%82%82%E3%81%AA%E3%81%8F%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</link>
+      <pubDate>Mon, 08 Jun 2009 22:59:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2009/06/fedora11%E9%96%93%E3%82%82%E3%81%AA%E3%81%8F%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://fedoraproject.org/static/js/release-counter-ext.js?lang=ja&#34;&gt;http://fedoraproject.org/static/js/release-counter-ext.js?lang=ja&lt;/a&gt;
+というわけで、Fedora11が何度もリリース延期となったようですが、
+2009-06-09にリリース予定です。&lt;/p&gt;
+&lt;p&gt;個人的には、Btrfsに期待。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dropbox 100GBプラン登場？</title>
+      <link>http://localhost:1313/posts/2009/04/dropbox-100gb-plan/</link>
+      <pubDate>Mon, 20 Apr 2009 05:26:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2009/04/dropbox-100gb-plan/</guid>
+      <description>&lt;p&gt;ファイルのバックアップ、履歴管理、複数PCでのファイル共有に最適な
+&lt;a href=&#34;https://www.getdropbox.com/referrals/NTQ1NjE1MTk&#34;&gt;Dropbox&lt;/a&gt;(左記は（最大）+500MBになる紹介リンク)
+ですが、100GBのプランが登場しているようです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.getdropbox.com/upgrade?plan=100&#34;&gt;https://www.getdropbox.com/upgrade?plan=100&lt;/a&gt;(利用登録者しか見られないかもしれません。)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://forums.getdropbox.com/topic.php?id=8278&amp;amp;replies=23#post-52700&#34;&gt;http://forums.getdropbox.com/topic.php?id=8278&amp;amp;replies=23#post-52700&lt;/a&gt;
+で、知ったのですが、通常のプラン一覧
+&lt;a href=&#34;https://www.getdropbox.com/plans&#34;&gt;https://www.getdropbox.com/plans&lt;/a&gt;
+には、表示されていないので、もしかしたら、正式なものではないのかも。&lt;/p&gt;
+&lt;p&gt;私は、50GBプランを契約中なのですが、既に90%以上の使用率になっているので、
+さらなる容量のプランが出てくるのは、非常にうれしいです。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LVM xfs使用時の領域拡張方法</title>
+      <link>http://localhost:1313/posts/2008/12/lvm-xfs%E4%BD%BF%E7%94%A8%E6%99%82%E3%81%AE%E9%A0%98%E5%9F%9F%E6%8B%A1%E5%BC%B5%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sun, 14 Dec 2008 08:04:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/12/lvm-xfs%E4%BD%BF%E7%94%A8%E6%99%82%E3%81%AE%E9%A0%98%E5%9F%9F%E6%8B%A1%E5%BC%B5%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;p&gt;LVMは動的に領域を拡張できて便利なわけですが、ファイルシステムに、
+xfsを使用している時の、領域拡張法法を記しておきます。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;# lvresize -L +500M /dev/vg01/lv01# xfs_growfs /mnt/lv01-mountpoint&lt;/code&gt;
+xfs_growfsは、マウントポイントをパラメータにとるので注意。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;# xfs_growfs &amp;ndash;help
+xfs_growfs: invalid option &amp;ndash; &amp;lsquo;-&amp;rsquo;
+Usage: xfs_growfs [options] mountpoint&lt;/p&gt;
+&lt;p&gt;Options:
+-d grow data/metadata section
+-l grow log section
+-r grow realtime section
+-n don&amp;rsquo;t change anything, just show geometry
+-I allow inode numbers to exceed 32 significant bits
+-i convert log from external to internal format
+-t alternate location for mount table (/etc/mtab)
+-x convert log from internal to external format
+-D size grow data/metadata section to size blks
+-L size grow/shrink log section to size blks
+-R size grow realtime section to size blks
+-e size set realtime extent size to size blks
+-m imaxpct set inode max percent to imaxpct
+-V print version information&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NEC Express5800/110Ge part-2</title>
+      <link>http://localhost:1313/posts/2008/11/nec-express5800-110ge-part-2/</link>
+      <pubDate>Fri, 28 Nov 2008 23:17:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/11/nec-express5800-110ge-part-2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/posts/2008/11/28/nec-express5800110ge/&#34;&gt;前の記事&lt;/a&gt;で、
+NEC Express5800/110Ge の購入をどうするかちょっと悩んでいましたが、
+無事、ポチッとなしましたw。
+(ほぼ、即決じゃないのか？というのは気のせいです。一応、いろいろなサイトを見たりしてましたし。)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NEC Express5800/110Ge</title>
+      <link>http://localhost:1313/posts/2008/11/nec-express5800-110ge-part1/</link>
+      <pubDate>Fri, 28 Nov 2008 22:44:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/11/nec-express5800-110ge-part1/</guid>
+      <description>&lt;p&gt;[NEC Express5800/110Ge]
+をバックアップPC用に買おうかどうか迷い中。
+安いし、そこそこ省電力っぽいし。&lt;/p&gt;
+&lt;p&gt;爆音と言うほどでもないらしいです。
+参考記事：&lt;a href=&#34;http://akahige.cocolog-nifty.com/blog/2008/06/nec_express5800_8458.html&#34;&gt;http://akahige.cocolog-nifty.com/blog/2008/06/nec_express5800_8458.html&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Flickrで写真バックアップ</title>
+      <link>http://localhost:1313/posts/2008/10/flickr%E3%81%A7%E5%86%99%E7%9C%9F%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</link>
+      <pubDate>Sun, 26 Oct 2008 19:17:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/10/flickr%E3%81%A7%E5%86%99%E7%9C%9F%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/&#34;&gt;Flickr&lt;/a&gt;で写真をバックアップすることにした。&lt;/p&gt;
+&lt;p&gt;Proアカウントにすると、容量無制限となるので、バックアップにはちょうど良いかと。&lt;/p&gt;
+&lt;p&gt;PicasaWebは、容量無制限じゃないんですよね。&lt;/p&gt;
+&lt;p&gt;日本語のサイトとして、「&lt;a href=&#34;http://photozou.jp/&#34;&gt;フォト蔵&lt;/a&gt;」というのが無料であるのですが、&lt;/p&gt;
+&lt;p&gt;Linux環境だと大量の写真をアップロードするのは、若干辛そう。
+APIが公開されているようなので、適当なソフトを作ってアップロードするというのが、
+正しい(?)技術者かも知れないが、ヘタれなのでそんなことはせずに、
+FlickrのProアカウントでしばらく運用してみることにする。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HPのMini-Note PC(2133)</title>
+      <link>http://localhost:1313/posts/2008/06/hp%E3%81%AEmini-note-pc2133/</link>
+      <pubDate>Tue, 24 Jun 2008 22:52:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/06/hp%E3%81%AEmini-note-pc2133/</guid>
+      <description>&lt;h2 id=&#34;ハイパフォーマンスモデル&#34;&gt;HP 2133 Mini-Note PC
+ハイパフォーマンスモデル&lt;/h2&gt;
+&lt;p&gt;Windows Vista Business（32bit）&lt;/p&gt;
+&lt;p&gt;VIA C7®-M ULV プロセッサ （1.6 GHz, 128 KB L2 cache, 800 MHz FSB）&lt;/p&gt;
+&lt;p&gt;メモリ2GB (2GB×1)&lt;/p&gt;
+&lt;p&gt;8.9インチワイドTFTカラーWXGA液晶ディスプレイ&lt;/p&gt;
+&lt;p&gt;160GB HDD&lt;/p&gt;
+&lt;p&gt;Broadcom製 802.11a/b/g 内蔵無線LAN＋Bluetooth v2.0&lt;/p&gt;
+&lt;p&gt;リチウムイオンバッテリ 標準3セル＋大容量6セル&lt;/p&gt;
+&lt;p&gt;というスペックで、79,800円。
+かなりのお買い得だと思うんですが・・・ノートPCも安くなったもんですね。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>世界初１６ギガのフラッシュメモリー、サムスンが開発 (読売新聞)</title>
+      <link>http://localhost:1313/posts/2005/09/%E4%B8%96%E7%95%8C%E5%88%9D%EF%BC%91%EF%BC%96%E3%82%AE%E3%82%AC%E3%81%AE%E3%83%95%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%83%A1%E3%83%A2%E3%83%AA%E3%83%BC%E3%82%B5%E3%83%A0%E3%82%B9%E3%83%B3%E3%81%8C%E9%96%8B%E7%99%BA-%E8%AA%AD%E5%A3%B2%E6%96%B0%E8%81%9E/</link>
+      <pubDate>Tue, 13 Sep 2005 00:17:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/09/%E4%B8%96%E7%95%8C%E5%88%9D%EF%BC%91%EF%BC%96%E3%82%AE%E3%82%AC%E3%81%AE%E3%83%95%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%83%A1%E3%83%A2%E3%83%AA%E3%83%BC%E3%82%B5%E3%83%A0%E3%82%B9%E3%83%B3%E3%81%8C%E9%96%8B%E7%99%BA-%E8%AA%AD%E5%A3%B2%E6%96%B0%E8%81%9E/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://news.www.infoseek.co.jp/business/story.html?q=12yomiuri20050912i316&amp;amp;cat=35&#34;&gt;news.www.infoseek.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「世界初１６ギガ」って。。。
+「バイト」なのか「ビット」なのかによって８倍も違うんですが。
+記事を書いてる人は、それをわかってて書いてるのだろうか？
+ちなみに、「１６ギガ・ビット」だそうです。
+あと、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;メモリーをつなげれば最大で記憶容量３２ギガ・バイトのメモリーカードが作れ、新聞２００年分のデータを記憶することができるという。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいです。
+ということは、一日分の新聞のデータは、
+32GB/200Year/365=459.649753 kilobytes
+ってこと？
+日本語一文字2Byteだとすると、
+１日だいたい２３万文字ってことか？
+ふ〜ん。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>【ディスプレイ】値下がり激しく、20型液晶が6万円台に</title>
+      <link>http://localhost:1313/posts/2005/09/%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4%E5%80%A4%E4%B8%8B%E3%81%8C%E3%82%8A%E6%BF%80%E3%81%97%E3%81%8F20%E5%9E%8B%E6%B6%B2%E6%99%B6%E3%81%8C6%E4%B8%87%E5%86%86%E5%8F%B0%E3%81%AB/</link>
+      <pubDate>Wed, 07 Sep 2005 23:23:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/09/%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4%E5%80%A4%E4%B8%8B%E3%81%8C%E3%82%8A%E6%BF%80%E3%81%97%E3%81%8F20%E5%9E%8B%E6%B6%B2%E6%99%B6%E3%81%8C6%E4%B8%87%E5%86%86%E5%8F%B0%E3%81%AB/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pc.watch.impress.co.jp/docs/2005/0907/p_dsp.htm&#34;&gt;pc.watch.impress.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;うぉー。すげー。
+こりゃ、次ディスプレー買うときは、
+「よほどのことがない限り液晶ディスプレイだな」
+と思いました。&lt;/p&gt;
+&lt;p&gt;ちなみに、「6万円台の20型液晶ディスプレイ」は、これ
+&lt;a href=&#34;http://www.acer.co.jp/products/monitore/al2021m.htm&#34;&gt;www.acer.co.jp&lt;/a&gt;
+です。
+1600×1200(UXGA)
+もサポートしているので、いい感じかも。
+(この解像度の場合、安物CRTだとちょっと辛いんですよね。)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ATI、PCとMacの両方に対応のグラフィックスカード発表</title>
+      <link>http://localhost:1313/posts/2005/08/atipc%E3%81%A8mac%E3%81%AE%E4%B8%A1%E6%96%B9%E3%81%AB%E5%AF%BE%E5%BF%9C%E3%81%AE%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%82%B9%E3%82%AB%E3%83%BC%E3%83%89%E7%99%BA%E8%A1%A8/</link>
+      <pubDate>Sat, 20 Aug 2005 23:31:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/08/atipc%E3%81%A8mac%E3%81%AE%E4%B8%A1%E6%96%B9%E3%81%AB%E5%AF%BE%E5%BF%9C%E3%81%AE%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%82%B9%E3%82%AB%E3%83%BC%E3%83%89%E7%99%BA%E8%A1%A8/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.itmedia.co.jp/news/articles/0508/20/news007.html&#34;&gt;www.itmedia.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;PCとMacの両方に対応らしいです。AGPの様です。
+Mac版はいつも高かったから、この傾向が続くと良いな。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ソリッドアライアンス、“ナポリタン型”USB延長ケーブル</title>
+      <link>http://localhost:1313/posts/2005/07/%E3%82%BD%E3%83%AA%E3%83%83%E3%83%89%E3%82%A2%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%82%B9%E3%83%8A%E3%83%9D%E3%83%AA%E3%82%BF%E3%83%B3%E5%9E%8Busb%E5%BB%B6%E9%95%B7%E3%82%B1%E3%83%BC%E3%83%96%E3%83%AB/</link>
+      <pubDate>Mon, 25 Jul 2005 21:14:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/07/%E3%82%BD%E3%83%AA%E3%83%83%E3%83%89%E3%82%A2%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%82%B9%E3%83%8A%E3%83%9D%E3%83%AA%E3%82%BF%E3%83%B3%E5%9E%8Busb%E5%BB%B6%E9%95%B7%E3%82%B1%E3%83%BC%E3%83%96%E3%83%AB/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pc.watch.impress.co.jp/docs/2005/0725/solid.htm&#34;&gt;http://pc.watch.impress.co.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;果たして「スパゲッティーソース」との関連は有るのか？
+#いや、無いです。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>EPoX EP-8RDA&#43;が。。。</title>
+      <link>http://localhost:1313/posts/2005/07/epox-ep-8rda-%E3%81%8C/</link>
+      <pubDate>Mon, 04 Jul 2005 23:34:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/07/epox-ep-8rda-%E3%81%8C/</guid>
+      <description>&lt;p&gt;使用していたマザーボード「EPoX EP-8RDA+」がお亡くなりになりました。
+メインＰＣだったのですが、
+いきなり再起動したり、
+「IRQL_NOT_LESS_OR_EQUAL」という感じの
+ブルーバック画面が表示されるなど、
+何か調子悪いなぁと思っていました。&lt;/p&gt;
+&lt;p&gt;当初は、メモリ増設をしたばかりだったので、
+メモリのせいと思い、memtestを行うものの、
+異常なし。&lt;/p&gt;
+&lt;p&gt;ＨＤＤが逝かれたか？
+と思いCHKDSKを行おうとするものの途中でブルーバック画面。&lt;/p&gt;
+&lt;p&gt;なんだかわからないので、とりあえずケーブルでも抜き差ししてみようと思い、
+マザーボードを眺めてみたら、CPU周りのコンデンサから液が漏れてました。。。&lt;/p&gt;
+&lt;p&gt;2年ぐらいは24時間稼動させており、
+俗に言う、
+「地雷」とか「時限爆弾」みたいなものらしいです。
+結構有名な話みたい。
+&lt;a href=&#34;http://www.google.co.jp/search?q=epox+8rda%2B+%E3%82%B3%E3%83%B3%E3%83%87%E3%83%B3%E3%82%B5&#34;&gt;http://www.google.co.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;皆さん、同じマザーボードを使用していて、
+何だか調子が悪くなったら、
+マザーボード上の様子を眺めてみましょう。
+こんな感じで、おかしな様子が見られたらだったら、すぐに使用中止することをお勧めします。
+無理して使い続けると、他の部品への影響もあります。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>サンのJ・シュワルツ：「次世代MacにSolaris 10採用を」</title>
+      <link>http://localhost:1313/posts/2005/06/%E3%82%B5%E3%83%B3%E3%81%AEj%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E6%AC%A1%E4%B8%96%E4%BB%A3mac%E3%81%ABsolaris-10%E6%8E%A1%E7%94%A8%E3%82%92/</link>
+      <pubDate>Tue, 07 Jun 2005 00:08:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/06/%E3%82%B5%E3%83%B3%E3%81%AEj%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E6%AC%A1%E4%B8%96%E4%BB%A3mac%E3%81%ABsolaris-10%E6%8E%A1%E7%94%A8%E3%82%92/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://japan.cnet.com/news/ent/story/0,2000047623,20084188,00.htm&#34;&gt;http://japan.cnet.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;実現したら、なかなか面白いかも。
+エンタープライズな分野で勢力の有るSunと
+一般ユーザのデスクトップな分野で(Sunよりは)勢いの有るAppleと
+手を組めば、面白いものが出来るのかもしれない。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ディスプレー買いました</title>
+      <link>http://localhost:1313/posts/2005/06/%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%83%BC%E8%B2%B7%E3%81%84%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <pubDate>Sun, 05 Jun 2005 22:03:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/06/%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%83%BC%E8%B2%B7%E3%81%84%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://lunatic.xrea.jp/diary2/20050604.html#p02&#34;&gt;新しくやり始めた日記&lt;/a&gt;で書いているのですが、ディスプレーが壊れました。
+で、急遽近くの[ＰＣデポ]{}というお店に行って、ディスプレーを買って来ました。
+&lt;a href=&#34;http://lunatic.xrea.jp/mt/archives/DSC_0832m.html&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;http://lunatic.xrea.jp/mt/archives/DSC_0832m-thumb.jpg&#34;&gt;
+&lt;/a&gt;
+今度は19インチです。
+飯山の「A902M」というやつです。
+最初は液晶ディスプレーにしようかと思っていたのですが、
+中古の「A902M」が8970円で売られていたので、
+かなり即決に近い形で購入決定しました。
+さて、今度は、どれくらい持つのか。。。。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AOpenが「Mac mini」より小さなベアボーンを展示</title>
+      <link>http://localhost:1313/posts/2005/06/aopen%E3%81%8Cmac-mini%E3%82%88%E3%82%8A%E5%B0%8F%E3%81%95%E3%81%AA%E3%83%99%E3%82%A2%E3%83%9C%E3%83%BC%E3%83%B3%E3%82%92%E5%B1%95%E7%A4%BA/</link>
+      <pubDate>Wed, 01 Jun 2005 23:29:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/06/aopen%E3%81%8Cmac-mini%E3%82%88%E3%82%8A%E5%B0%8F%E3%81%95%E3%81%AA%E3%83%99%E3%82%A2%E3%83%9C%E3%83%BC%E3%83%B3%E3%82%92%E5%B1%95%E7%A4%BA/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pc.watch.impress.co.jp/docs/2005/0601/comp03.htm&#34;&gt;http://pc.watch.impress.co.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「Mac mini」にかなり似ています。
+ウチの自宅サーバのリプレースに検討しようかなぁ。
+と思ったけど、
+よく考えたら「Mac mini」にした方が後々安く済みそう。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>日本HP、1万円を切るA4インクジェット複合機</title>
+      <link>http://localhost:1313/posts/2005/06/%E6%97%A5%E6%9C%AChp1%E4%B8%87%E5%86%86%E3%82%92%E5%88%87%E3%82%8Ba4%E3%82%A4%E3%83%B3%E3%82%AF%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E8%A4%87%E5%90%88%E6%A9%9F/</link>
+      <pubDate>Wed, 01 Jun 2005 23:24:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/06/%E6%97%A5%E6%9C%AChp1%E4%B8%87%E5%86%86%E3%82%92%E5%88%87%E3%82%8Ba4%E3%82%A4%E3%83%B3%E3%82%AF%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E8%A4%87%E5%90%88%E6%A9%9F/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pc.watch.impress.co.jp/docs/2005/0601/hp.htm&#34;&gt;http://pc.watch.impress.co.jp/&lt;/a&gt;
+&lt;a href=&#34;http://pcweb.mycom.co.jp/news/2005/06/01/001.html&#34;&gt;http://pcweb.mycom.co.jp/&lt;/a&gt;
+&lt;a href=&#34;http://h50146.www5.hp.com/products/printers/inkjet/psc1510/index.html&#34;&gt;http://h50146.www5.hp.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安いから、大したこと無いんだろう。。と思っていたら大間違い。&lt;/p&gt;
+&lt;p&gt;印刷解像度 最大4,800×1,200dpi&lt;/p&gt;
+&lt;p&gt;デジカメと直結して印刷を行なう「PictBridge」に対応&lt;/p&gt;
+&lt;p&gt;プリント速度 モノクロ20ppm、カラー/モノクロ混在18ppm
+などなど、必要十分と思われる機能を搭載している。&lt;/p&gt;
+&lt;p&gt;ただ、
+惜しいのは、「メモリカードスロット」が無いことかなぁ。。
+でも無くてもいいか。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>困ったらマグカップを見よ！</title>
+      <link>http://localhost:1313/posts/2005/05/%E5%9B%B0%E3%81%A3%E3%81%9F%E3%82%89%E3%83%9E%E3%82%B0%E3%82%AB%E3%83%83%E3%83%97%E3%82%92%E8%A6%8B%E3%82%88/</link>
+      <pubDate>Thu, 26 May 2005 23:24:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/05/%E5%9B%B0%E3%81%A3%E3%81%9F%E3%82%89%E3%83%9E%E3%82%B0%E3%82%AB%E3%83%83%E3%83%97%E3%82%92%E8%A6%8B%E3%82%88/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://slashdot.jp/article.pl?sid=05/05/26/0818249&amp;amp;topic=42&#34;&gt;http://slashdot.jp/article.pl?sid=05/05/26/0818249&amp;amp;topic=42&lt;/a&gt;
+viリファレンスのマグカップだそうです。
+やべー。
+欲しい〜｡･ﾟ･(ﾉ∀`)･ﾟ･｡&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.cafepress.com/geekcheat/366806&#34;&gt;Emacs用&lt;/a&gt;もあるらしい。。。。
+うむ〜。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>1万円ほどで買える双方向通信対応プリントサーバ——コレガ「CG-FPSUBD」</title>
+      <link>http://localhost:1313/posts/2005/04/1%E4%B8%87%E5%86%86%E3%81%BB%E3%81%A9%E3%81%A7%E8%B2%B7%E3%81%88%E3%82%8B%E5%8F%8C%E6%96%B9%E5%90%91%E9%80%9A%E4%BF%A1%E5%AF%BE%E5%BF%9C%E3%83%97%E3%83%AA%E3%83%B3%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%82%B3%E3%83%AC%E3%82%ACcg-fpsubd/</link>
+      <pubDate>Sun, 24 Apr 2005 19:26:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/04/1%E4%B8%87%E5%86%86%E3%81%BB%E3%81%A9%E3%81%A7%E8%B2%B7%E3%81%88%E3%82%8B%E5%8F%8C%E6%96%B9%E5%90%91%E9%80%9A%E4%BF%A1%E5%AF%BE%E5%BF%9C%E3%83%97%E3%83%AA%E3%83%B3%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%82%B3%E3%83%AC%E3%82%ACcg-fpsubd/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.itmedia.co.jp/pcupdate/articles/0504/14/news049.html&#34;&gt;http://www.itmedia.co.jp/pcupdate/articles/0504/14/news049.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ちょっと前にCanonのMP770を買って、置き場所に困っています。
+好きな場所に置けるのと、接続するPCが動作していなくても良い点で、
+ちょっと気になる製品。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NEC子会社がシステム構築の新サービス、業務プロセスを定義するだけでアプリ を自動生成</title>
+      <link>http://localhost:1313/posts/2005/04/nec%E5%AD%90%E4%BC%9A%E7%A4%BE%E3%81%8C%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E3%81%AE%E6%96%B0%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E6%A5%AD%E5%8B%99%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8B%E3%81%A0%E3%81%91%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA-%E3%82%92%E8%87%AA%E5%8B%95%E7%94%9F%E6%88%90/</link>
+      <pubDate>Sun, 24 Apr 2005 19:23:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/04/nec%E5%AD%90%E4%BC%9A%E7%A4%BE%E3%81%8C%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%A7%8B%E7%AF%89%E3%81%AE%E6%96%B0%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E6%A5%AD%E5%8B%99%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8B%E3%81%A0%E3%81%91%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA-%E3%82%92%E8%87%AA%E5%8B%95%E7%94%9F%E6%88%90/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://itpro.nikkeibp.co.jp/free/NC/NEWS/20050421/159839/&#34;&gt;http://itpro.nikkeibp.co.jp/free/NC/NEWS/20050421/159839/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;なんか、いんちき臭いな。
+それだけでうまく行くシステムは、ごく少数だろう。
+また、
+「簡単にシステム構築できる」
+と思われてしまうと、要件確定が延び延びになって、
+デスマーチプロジェクトになる悪寒。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>6メガピクセル、実売9万円台「ニコンD50」登場 - D70&#34;s&#34;も</title>
+      <link>http://localhost:1313/posts/2005/04/6%E3%83%A1%E3%82%AC%E3%83%94%E3%82%AF%E3%82%BB%E3%83%AB%E5%AE%9F%E5%A3%B29%E4%B8%87%E5%86%86%E5%8F%B0%E3%83%8B%E3%82%B3%E3%83%B3d50%E7%99%BB%E5%A0%B4-d70s%E3%82%82/</link>
+      <pubDate>Sat, 23 Apr 2005 22:53:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/04/6%E3%83%A1%E3%82%AC%E3%83%94%E3%82%AF%E3%82%BB%E3%83%AB%E5%AE%9F%E5%A3%B29%E4%B8%87%E5%86%86%E5%8F%B0%E3%83%8B%E3%82%B3%E3%83%B3d50%E7%99%BB%E5%A0%B4-d70s%E3%82%82/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pcweb.mycom.co.jp/news/2005/04/20/014.html&#34;&gt;MYCOM PC WEB - 6メガピクセル、実売9万円台「ニコンD50」登場 -
+D70&amp;quot;s&amp;quot;も&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ぐあ。この前Ｄ７０買ったばかりだったのに、もう改良版が出てしまったのか？
+うぐぅ。
+まぁ、こういうものってそういう運命だよね。。。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mac OS X 10.4 &#34;Tiger&#34;の発売日が4月29日に決定</title>
+      <link>http://localhost:1313/posts/2005/04/mac-os-x-104-tiger%E3%81%AE%E7%99%BA%E5%A3%B2%E6%97%A5%E3%81%8C4%E6%9C%8829%E6%97%A5%E3%81%AB%E6%B1%BA%E5%AE%9A/</link>
+      <pubDate>Thu, 14 Apr 2005 23:21:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/04/mac-os-x-104-tiger%E3%81%AE%E7%99%BA%E5%A3%B2%E6%97%A5%E3%81%8C4%E6%9C%8829%E6%97%A5%E3%81%AB%E6%B1%BA%E5%AE%9A/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.apple.com/jp/macosx/&#34;&gt;http://www.apple.com/jp/macosx/&lt;/a&gt;
+&lt;a href=&#34;http://slashdot.jp/article.pl?sid=05/04/12/1331225&amp;amp;topic=106&#34;&gt;http://slashdot.jp/article.pl?sid=05/04/12/1331225&amp;amp;topic=106&lt;/a&gt;
+&lt;a href=&#34;http://www.asahi.com/digital/pc/TKY200504130085.html&#34;&gt;http://www.asahi.com/digital/pc/TKY200504130085.html&lt;/a&gt;
+&lt;a href=&#34;http://www.itmedia.co.jp/news/articles/0504/09/news011.html&#34;&gt;http://www.itmedia.co.jp/news/articles/0504/09/news011.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;私のMacは10.3でいっぱいいっぱいなので、
+次にMacを買うことになったら、乗り換えかなぁ。。。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>おばけ発見機能付きUSBメモリ発売</title>
+      <link>http://localhost:1313/posts/2005/04/%E3%81%8A%E3%81%B0%E3%81%91%E7%99%BA%E8%A6%8B%E6%A9%9F%E8%83%BD%E4%BB%98%E3%81%8Dusb%E3%83%A1%E3%83%A2%E3%83%AA%E7%99%BA%E5%A3%B2/</link>
+      <pubDate>Thu, 07 Apr 2005 00:46:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/04/%E3%81%8A%E3%81%B0%E3%81%91%E7%99%BA%E8%A6%8B%E6%A9%9F%E8%83%BD%E4%BB%98%E3%81%8Dusb%E3%83%A1%E3%83%A2%E3%83%AA%E7%99%BA%E5%A3%B2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://slashdot.jp/article.pl?sid=05/04/04/1321216&amp;amp;topic=42&#34;&gt;http://slashdot.jp/article.pl?sid=05/04/04/1321216&amp;amp;topic=42&lt;/a&gt;
+&lt;a href=&#34;http://pc.watch.impress.co.jp/docs/2005/0404/solid.htm&#34;&gt;http://pc.watch.impress.co.jp/docs/2005/0404/solid.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;128MBのUSBフラッシュメモリとしても使えるけど、
+その用途で使うにはケーブルを接続しなくてはならず、
+使いづらい。
+さらに目玉である「お化け発見機能」については、
+微妙な感じで期待はずれみたい。&lt;/p&gt;
+&lt;p&gt;「霊能力」を持っている人が使えば、
+もっと違うのかもね。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>キヤノン、天体写真撮影向けの一眼レフデジタルカメラ『キヤノン EOS 20Da』 を発売</title>
+      <link>http://localhost:1313/posts/2005/02/%E3%82%AD%E3%83%A4%E3%83%8E%E3%83%B3%E5%A4%A9%E4%BD%93%E5%86%99%E7%9C%9F%E6%92%AE%E5%BD%B1%E5%90%91%E3%81%91%E3%81%AE%E4%B8%80%E7%9C%BC%E3%83%AC%E3%83%95%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AB%E3%83%A1%E3%83%A9%E3%82%AD%E3%83%A4%E3%83%8E%E3%83%B3-eos-20da-%E3%82%92%E7%99%BA%E5%A3%B2/</link>
+      <pubDate>Mon, 14 Feb 2005 22:56:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/02/%E3%82%AD%E3%83%A4%E3%83%8E%E3%83%B3%E5%A4%A9%E4%BD%93%E5%86%99%E7%9C%9F%E6%92%AE%E5%BD%B1%E5%90%91%E3%81%91%E3%81%AE%E4%B8%80%E7%9C%BC%E3%83%AC%E3%83%95%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AB%E3%83%A1%E3%83%A9%E3%82%AD%E3%83%A4%E3%83%8E%E3%83%B3-eos-20da-%E3%82%92%E7%99%BA%E5%A3%B2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://ascii24.com/news/i/hard/article/2005/02/14/654255-000.html&#34;&gt;http://ascii24.com/news/i/hard/article/2005/02/14/654255-000.html&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;水素のスペクトラムのHα輝線(656nm)の透過率を約2.5倍に高めた赤外カットフィルターを約820万(総850万)画素の
+CMOSセンサー(APS-Cサイズ:22.5×15.0mm)の前面のローパスフィルターに組み込むことで、従来撮影が難しかった赤い星雲などを特殊なフィルターなしで撮影できるようにしたのが特徴&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいんですが、あんまり数は売れ無そうですね。。。
+そんな機種があった方が、私的には嬉しいですが。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>「Mac miniはお買い得」は本当か</title>
+      <link>http://localhost:1313/posts/2005/01/mac-mini%E3%81%AF%E3%81%8A%E8%B2%B7%E3%81%84%E5%BE%97%E3%81%AF%E6%9C%AC%E5%BD%93%E3%81%8B/</link>
+      <pubDate>Sun, 16 Jan 2005 02:11:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2005/01/mac-mini%E3%81%AF%E3%81%8A%E8%B2%B7%E3%81%84%E5%BE%97%E3%81%AF%E6%9C%AC%E5%BD%93%E3%81%8B/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://japan.cnet.com/news/tech/story/0,2000047674,20080051,00.htm&#34;&gt;http://japan.cnet.com/news/tech/story/0,2000047674,20080051,00.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;いままでMacが欲しかったけど、
+「ちょっと高いなぁ」と思っていた人にとっては、
+十分「お買い得」だと思う。&lt;/p&gt;
+&lt;p&gt;逆に、Macに対して、PCと同じようなスペックを求めてしまうと
+「割高感」が出てくると思う。&lt;/p&gt;
+&lt;p&gt;私は、十分に「お買い得」だと思います。
+っていうか、欲しい(笑)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linux Zaurus（SL-C3000)買ったー</title>
+      <link>http://localhost:1313/posts/2004/12/linux-zaurussl-c3000%E8%B2%B7%E3%81%A3%E3%81%9F%E3%83%BC/</link>
+      <pubDate>Mon, 20 Dec 2004 00:37:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/12/linux-zaurussl-c3000%E8%B2%B7%E3%81%A3%E3%81%9F%E3%83%BC/</guid>
+      <description>&lt;p&gt;とりあえず、無線LANカードは買って来た。
+AirH&amp;quot;を解約して、bitWarpを契約しようかなと思ってます。
+で、
+今日やったのは、
+&lt;a href=&#34;http://www.makichan.jp/home/index.php?ZGCC2%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB&#34;&gt;zgcc2インストール&lt;/a&gt;
+&lt;a href=&#34;http://www.ayati.com/kobako/c3usb.htm&#34;&gt;SL-C3000のUSBホスト機能&lt;/a&gt;を使うために、&lt;a href=&#34;http://pocketgames.jp/modules.php?op=modload&amp;amp;name=Shop&amp;amp;file=index&amp;amp;req=viewarticle&amp;amp;artid=298&#34;&gt;pocketgames&lt;/a&gt;というところで、USB
+Mini-Aケーブルを購入(注文)。
+これで、外付けキーボードをつなげる予定。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gigabit Ethernet対応「玄箱」試用レビュー(Part1)</title>
+      <link>http://localhost:1313/posts/2004/11/gigabit-ethernet%E5%AF%BE%E5%BF%9C%E7%8E%84%E7%AE%B1%E8%A9%A6%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BCpart1/</link>
+      <pubDate>Sat, 27 Nov 2004 00:28:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/11/gigabit-ethernet%E5%AF%BE%E5%BF%9C%E7%8E%84%E7%AE%B1%E8%A9%A6%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BCpart1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pc.watch.impress.co.jp/docs/2004/1124/pclabo27.htm&#34;&gt;pc.watch.impress.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「従来の玄箱」とも比較しているようです。
+CPUも早くなって、Webサーバやらperlやらいろいろ入っているようなので、
+これをサーバにしたら面白そうだなと思ったり。思わなかったり。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>「10万円の受信機でパソコンからの漏洩電磁波を“盗聴”できる」——ISTがデモ</title>
+      <link>http://localhost:1313/posts/2004/11/10%E4%B8%87%E5%86%86%E3%81%AE%E5%8F%97%E4%BF%A1%E6%A9%9F%E3%81%A7%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E3%81%8B%E3%82%89%E3%81%AE%E6%BC%8F%E6%B4%A9%E9%9B%BB%E7%A3%81%E6%B3%A2%E3%82%92%E7%9B%97%E8%81%B4%E3%81%A7%E3%81%8D%E3%82%8Bist%E3%81%8C%E3%83%87%E3%83%A2/</link>
+      <pubDate>Fri, 26 Nov 2004 00:46:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/11/10%E4%B8%87%E5%86%86%E3%81%AE%E5%8F%97%E4%BF%A1%E6%A9%9F%E3%81%A7%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E3%81%8B%E3%82%89%E3%81%AE%E6%BC%8F%E6%B4%A9%E9%9B%BB%E7%A3%81%E6%B3%A2%E3%82%92%E7%9B%97%E8%81%B4%E3%81%A7%E3%81%8D%E3%82%8Bist%E3%81%8C%E3%83%87%E3%83%A2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20041124/153009/&#34;&gt;itpro.nikkeibp.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;かなり衝撃的。
+結構簡単に「盗聴」されちゃうんですね。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ハードウェアDivXエンコーダ搭載TVキャプチャアダプタ</title>
+      <link>http://localhost:1313/posts/2004/11/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2divx%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%80%E6%90%AD%E8%BC%89tv%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%82%A2%E3%83%80%E3%83%97%E3%82%BF/</link>
+      <pubDate>Fri, 19 Nov 2004 22:52:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/11/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2divx%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%80%E6%90%AD%E8%BC%89tv%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%82%A2%E3%83%80%E3%83%97%E3%82%BF/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://plextor.jp/product/pxtv402u/index.php&#34;&gt;「PX-TV402U/JP」&lt;/a&gt;
+ハードウェアでDivXエンコードできるらしく、
+ちょっと気になっています。。&lt;/p&gt;
+&lt;p&gt;でも、デジタル放送になったらこういうのはほとんど使用できなくなるんだよね。。
+うーむ。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>エーオープン、実売8千円を切るRADEON 9550搭載ビデオカード</title>
+      <link>http://localhost:1313/posts/2004/11/%E3%82%A8%E3%83%BC%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E5%AE%9F%E5%A3%B28%E5%8D%83%E5%86%86%E3%82%92%E5%88%87%E3%82%8Bradeon-9550%E6%90%AD%E8%BC%89%E3%83%93%E3%83%87%E3%82%AA%E3%82%AB%E3%83%BC%E3%83%89/</link>
+      <pubDate>Sat, 06 Nov 2004 21:09:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/11/%E3%82%A8%E3%83%BC%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E5%AE%9F%E5%A3%B28%E5%8D%83%E5%86%86%E3%82%92%E5%88%87%E3%82%8Bradeon-9550%E6%90%AD%E8%BC%89%E3%83%93%E3%83%87%E3%82%AA%E3%82%AB%E3%83%BC%E3%83%89/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pc.watch.impress.co.jp/docs/2004/1105/aopen.htm&#34;&gt;Impress&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ファンレスだし、安いし、なかなかいいかも。
+でも、ゲームあんまりやんないから、いらないか。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MSX来春にも復活？</title>
+      <link>http://localhost:1313/posts/2004/10/msx%E6%9D%A5%E6%98%A5%E3%81%AB%E3%82%82%E5%BE%A9%E6%B4%BB/</link>
+      <pubDate>Sun, 31 Oct 2004 09:46:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/10/msx%E6%9D%A5%E6%98%A5%E3%81%AB%E3%82%82%E5%BE%A9%E6%B4%BB/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://slashdot.jp/articles/04/10/30/071251.shtml?topic=38&#34;&gt;slashdot.jp&lt;/a&gt;
+&lt;a href=&#34;http://ascii24.com/news/i/topi/article/2004/10/29/652296-000.html&#34;&gt;ascii24&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;私の青春。MSX。
+ゲームは高くてあまり買えなかったので、BASICでいろいろ遊んでた記憶があるなぁ。
+その時の「おもしろかったなぁ」という記憶のせいで、
+今の職業を選んだ気がする。&lt;/p&gt;
+&lt;p&gt;今思えば、
+「あの時にもっとプログラミングしておくんだったな」
+と思う。
+結局、中途半端にBASICをやっていて、
+その時は、
+「マシン語？C言語？むずかしそう。。」って感じだった。
+周りにプログラミングやってる人もいなくって、
+今みたいにインターネットも無い時代だから、
+情報は本からしか入手できなくって、本は高いからあんまり買えなくって。。&lt;/p&gt;
+&lt;p&gt;今回の
+「１チップＭＳＸ（仮称）」は
+Z80の学習用としても良いのかもね。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.msxa.fcm.co.jp/&#34;&gt;MSXアソシエーション&lt;/a&gt;
+のプレスリリースによると、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;今回展示する１チップＭＳＸ（仮称）のスペックはＭＳＸ１相当となっておりますが、試験的にＭＳＸ２の一部機能も搭載しております。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;という事だそうです。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>カラー液晶付きiPod Photo</title>
+      <link>http://localhost:1313/posts/2004/10/%E3%82%AB%E3%83%A9%E3%83%BC%E6%B6%B2%E6%99%B6%E4%BB%98%E3%81%8Dipod-photo/</link>
+      <pubDate>Fri, 29 Oct 2004 00:37:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/10/%E3%82%AB%E3%83%A9%E3%83%BC%E6%B6%B2%E6%99%B6%E4%BB%98%E3%81%8Dipod-photo/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://slashdot.jp/mac/04/10/27/0811243.shtml?topic=52&#34;&gt;slashdot.jp&lt;/a&gt;
+&lt;a href=&#34;http://www.apple.com/jp/ipodphoto/&#34;&gt;apple&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;大人気のiPodがカラー液晶になりました。
+iPodに画像を転送して見られます。
+220×176ピクセルで、65536色。
+対応画像フォーマットは、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;JPEG、BMP、GIF、TIFF、PNG&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;だそうです。
+動画を見られればいいのにね。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>玄人志向、Gigabit Ethernet対応の「玄箱」</title>
+      <link>http://localhost:1313/posts/2004/10/%E7%8E%84%E4%BA%BA%E5%BF%97%E5%90%91gigabit-ethernet%E5%AF%BE%E5%BF%9C%E3%81%AE%E7%8E%84%E7%AE%B1/</link>
+      <pubDate>Sat, 23 Oct 2004 23:44:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/10/%E7%8E%84%E4%BA%BA%E5%BF%97%E5%90%91gigabit-ethernet%E5%AF%BE%E5%BF%9C%E3%81%AE%E7%8E%84%E7%AE%B1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pc.watch.impress.co.jp/docs/2004/1022/kurouto.htm&#34;&gt;Impress&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;玄人志向の「玄箱」がパワーアップして帰ってきた。
+CPUが「PowerPC 266MHz」
+メモリが「128MBに倍増」
+OSはLinuxカーネル「2.4.17」で、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;sambaやnetatalk、telnetなどが組み込まれている&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしい。
+ってことは、これをWebサーバとか
+メールサーバにするのも結構簡単なのかなぁと
+想像してみる。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>世界最速65TFLOPS NEC「SX-8」発表</title>
+      <link>http://localhost:1313/posts/2004/10/%E4%B8%96%E7%95%8C%E6%9C%80%E9%80%9F65tflops-necsx-8%E7%99%BA%E8%A1%A8/</link>
+      <pubDate>Wed, 20 Oct 2004 23:03:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/10/%E4%B8%96%E7%95%8C%E6%9C%80%E9%80%9F65tflops-necsx-8%E7%99%BA%E8%A1%A8/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.itmedia.co.jp/news/articles/0410/20/news023.html&#34;&gt;ITmedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;なんだか、とてつもなくすごい値。&lt;/p&gt;
+&lt;p&gt;つい最近、
+&lt;a href=&#34;http://www.itmedia.co.jp/news/articles/0409/29/news052.html&#34;&gt;IBMのスパコン、地球シミュレータ超え最速に&lt;/a&gt;
+っていう話があって、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;IBMの1万6000プロセッサ版BlueGene/Lは、地球シミュレータを上回る36.01テ
+ラFLOPSの性能を達成を達成した。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;だったのに、一気に「65TFLOPS」だからね。。。すげ〜。&lt;/p&gt;
+&lt;p&gt;関連の話題&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.itmedia.co.jp/news/articles/0410/20/news068.html&#34;&gt;迫る米国勢、ベクターで立ち向かうNEC&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Google Desktopすげ〜！</title>
+      <link>http://localhost:1313/posts/2004/10/google-desktop%E3%81%99%E3%81%92/</link>
+      <pubDate>Sun, 17 Oct 2004 11:22:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/10/google-desktop%E3%81%99%E3%81%92/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://desktop.google.com/&#34;&gt;Google Desktop&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;いろんなところで、「Google Desktop」に関する話題があったので、
+インストールしてみた。&lt;/p&gt;
+&lt;p&gt;インストールは、超簡単。
+&lt;a href=&#34;http://desktop.google.com/&#34;&gt;http://desktop.google.com/&lt;/a&gt;
+で、「Agree and Download」をクリックして適当に進めていけば、
+ファイルをダウンロードするので、あとはそれをインストールするだけ。&lt;/p&gt;
+&lt;p&gt;設定も、デフォルトで特に問題ないでしょう。
+で、
+PCがIDLE中にインデックスを作成するので、
+しばらくPCを使用しないで放置しておくと、HDDがガラガラ言い始め、
+インデックスを作っている様子。&lt;/p&gt;
+&lt;p&gt;まぁ、最後までは我慢できないので、使ってみる。&lt;/p&gt;
+&lt;p&gt;使い方は、
+タスクバーにある、「Google Desktop」アイコンから使用するか、
+もしくはブラウザで普通にGoogle検索をすると、
+結果画面に「Google Desktop」の結果も表示される！&lt;/p&gt;
+&lt;p&gt;しかも、対応ブラウザはIEだけじゃなく、Firefoxにも対応している！！！&lt;/p&gt;
+&lt;p&gt;どっかで見た情報だと、IEコンポーネントを使用していたりする
+ブラウザのときには、実行ファイル名を「iexplorer.exe」にすると
+いいらしい。(多分)&lt;/p&gt;
+&lt;p&gt;今まで、ファイルをどこにおいたか思い出せないことも多々あるが、
+これを使えばそんなファイルもキーワード検索で、
+「あっ！」という間に見つかりそうな予感。&lt;/p&gt;
+&lt;p&gt;とにかくすごいのでお試しを。
+惜しいのは、&lt;/p&gt;
+&lt;p&gt;メールはOutlook/OEのものにしか対応していないらしい。
+→MH形式もインデックスされるが、日本語はことごとく文字化け。&lt;/p&gt;
+&lt;p&gt;日本語には「いちおう」未対応。
+→ちょっと検索してみたが、普通に日本語もOKでした。
+あるサイトの情報だと、S-JISのみの対応で、EUCとかはダメらしい。。&lt;/p&gt;
+&lt;p&gt;関連情報サイト
+[Googleで検索した結果]{}
+&lt;a href=&#34;http://pcweb.mycom.co.jp/news/2004/10/15/100.html&#34;&gt;http://pcweb.mycom.co.jp/news/2004/10/15/100.html&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>マイクロソフト：「安全なIEは、XPへの有料アップグレードで」</title>
+      <link>http://localhost:1313/posts/2004/10/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%BD%E3%83%95%E3%83%88%E5%AE%89%E5%85%A8%E3%81%AAie%E3%81%AFxp%E3%81%B8%E3%81%AE%E6%9C%89%E6%96%99%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%A7/</link>
+      <pubDate>Mon, 04 Oct 2004 14:27:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/10/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%BD%E3%83%95%E3%83%88%E5%AE%89%E5%85%A8%E3%81%AAie%E3%81%AFxp%E3%81%B8%E3%81%AE%E6%9C%89%E6%96%99%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%A7/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://japan.cnet.com/news/ent/story/0,2000047623,20074797,00.htm&#34;&gt;CNET
+Japan&lt;/a&gt;
+&lt;a href=&#34;http://slashdot.jp/article.pl?sid=04/09/27/0912253&amp;amp;topic=41&amp;amp;mode=thread&#34;&gt;slashdot.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Internet Explorer(IE)の最新版は、今後Windows XP向けにしか提供されない
+という話。&lt;/p&gt;
+&lt;p&gt;。。。やっぱりね。
+独占企業はこれだからいやんなっちゃうね。
+これからは、IEは捨てて、FireFoxとかMozillaとかを
+使っていくべきでしょうかね。(Operaは、OSSじゃないのでちょっとね。。。)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>「iPodってMP3じゃないの？」と聞かれて困った</title>
+      <link>http://localhost:1313/posts/2004/09/ipod%E3%81%A3%E3%81%A6mp3%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%81%AE%E3%81%A8%E8%81%9E%E3%81%8B%E3%82%8C%E3%81%A6%E5%9B%B0%E3%81%A3%E3%81%9F/</link>
+      <pubDate>Thu, 30 Sep 2004 01:16:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/09/ipod%E3%81%A3%E3%81%A6mp3%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%81%AE%E3%81%A8%E8%81%9E%E3%81%8B%E3%82%8C%E3%81%A6%E5%9B%B0%E3%81%A3%E3%81%9F/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.itmedia.co.jp/news/articles/0409/27/news062.html&#34;&gt;ITmedia&lt;/a&gt;
+ITmedia記者の
+&lt;a href=&#34;http://d.hatena.ne.jp/keyword/%B2%AC%C5%C4%CD%AD%B2%D6&#34;&gt;「ユカタン」&lt;/a&gt;
+の記事。&lt;/p&gt;
+&lt;p&gt;ユカタンの友人がどういう感じで聞いたのかよくわかんないので、
+なんともいえないが、
+「iPodってMP3「を扱えるん」じゃないの？」って意味だったら、
+別に普通な意味なので、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;弊誌の読者なら質問の意味すら理解しかねるだろう。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;には、同意できない。&lt;/p&gt;
+&lt;p&gt;まぁ、ユカタンの友人は、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2人はどうやら、「シリコンオーディオ」という「デバイス」を「MP3」という
+「ファイル形式」と同じだと思っているらしかった。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;と思っているらしいので、その場にいたら、
+意味がわからない会話だったのだろう。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>新しくなったiMac G5に触れる</title>
+      <link>http://localhost:1313/posts/2004/09/%E6%96%B0%E3%81%97%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9Fimac-g5%E3%81%AB%E8%A7%A6%E3%82%8C%E3%82%8B/</link>
+      <pubDate>Sat, 25 Sep 2004 20:44:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/09/%E6%96%B0%E3%81%97%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9Fimac-g5%E3%81%AB%E8%A7%A6%E3%82%8C%E3%82%8B/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pcweb.mycom.co.jp/articles/2004/09/22/imacg5/&#34;&gt;MYCOM PC&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;iMac G5レビュー記事。
+かつこいいね。欲しいね。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>西川和久氏による「Panasonic LUMIX DMC-FX7」のレビュー記事</title>
+      <link>http://localhost:1313/posts/2004/09/%E8%A5%BF%E5%B7%9D%E5%92%8C%E4%B9%85%E6%B0%8F%E3%81%AB%E3%82%88%E3%82%8Bpanasonic-lumix-dmc-fx7%E3%81%AE%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E8%A8%98%E4%BA%8B/</link>
+      <pubDate>Sat, 25 Sep 2004 20:31:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/09/%E8%A5%BF%E5%B7%9D%E5%92%8C%E4%B9%85%E6%B0%8F%E3%81%AB%E3%82%88%E3%82%8Bpanasonic-lumix-dmc-fx7%E3%81%AE%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E8%A8%98%E4%BA%8B/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pc.watch.impress.co.jp/docs/2004/0924/nishikawa.htm&#34;&gt;impress&lt;/a&gt;
+もう季節ではないので、水着写真はありません。
+なかなかいい感触な様です。
+DMC-FX7は。&lt;/p&gt;
+&lt;p&gt;せくしーショットをみたい方は、&lt;a href=&#34;http://arena.nikkeibp.co.jp/game/news/20040924/109575/&#34;&gt;こちら&lt;/a&gt;をどうぞ。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>複数の脆弱性を修正したMac OS X用の最新セキュリティアップデート公開</title>
+      <link>http://localhost:1313/posts/2004/09/%E8%A4%87%E6%95%B0%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7%E3%82%92%E4%BF%AE%E6%AD%A3%E3%81%97%E3%81%9Fmac-os-x%E7%94%A8%E3%81%AE%E6%9C%80%E6%96%B0%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E5%85%AC%E9%96%8B/</link>
+      <pubDate>Thu, 09 Sep 2004 00:34:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/09/%E8%A4%87%E6%95%B0%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7%E3%82%92%E4%BF%AE%E6%AD%A3%E3%81%97%E3%81%9Fmac-os-x%E7%94%A8%E3%81%AE%E6%9C%80%E6%96%B0%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E5%85%AC%E9%96%8B/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://internet.watch.impress.co.jp/cda/news/2004/09/08/4559.html&#34;&gt;INTERNET
+Watch&lt;/a&gt;
+対応OSは、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mac OS X 10.2.8/10.3.4/10.3.5およびMac OS X Server
+10.2.8/10.3.4/10.3.5&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;修正内容は、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;今回配布された「Security Update
+2004-09-07」では、OSに含まれるCoreFoundation、IPSec、Kerberos、OpenLDAP、OpenSSH、Safariなど10以上のコンポーネントについてセキュリティ上の問題が修正されている。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;と、いうことらしい。
+サイズは、7.6MB。
+「ソフトウェアアップデート」を使えば、簡単にアップデートできるみたい。
+で、インストール後は、再起動が必要らしい。
+ソフトウェアアップデートは、こんな画像。
+&lt;a href=&#34;http://lunatic.xrea.jp/mt/archives/MacOSXUpdateI20040907mg.html&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;http://lunatic.xrea.jp/mt/archives/MacOSXUpdateI20040907mg-thumb.jpg&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>24時間×9日間のアナログ番組(6ch分)を呑みこめるスーパーキャプチャーマシン</title>
+      <link>http://localhost:1313/posts/2004/09/24%E6%99%82%E9%96%939%E6%97%A5%E9%96%93%E3%81%AE%E3%82%A2%E3%83%8A%E3%83%AD%E3%82%B0%E7%95%AA%E7%B5%846ch%E5%88%86%E3%82%92%E5%91%91%E3%81%BF%E3%81%93%E3%82%81%E3%82%8B%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%83%BC%E3%83%9E%E3%82%B7%E3%83%B3/</link>
+      <pubDate>Thu, 09 Sep 2004 00:10:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/09/24%E6%99%82%E9%96%939%E6%97%A5%E9%96%93%E3%81%AE%E3%82%A2%E3%83%8A%E3%83%AD%E3%82%B0%E7%95%AA%E7%B5%846ch%E5%88%86%E3%82%92%E5%91%91%E3%81%BF%E3%81%93%E3%82%81%E3%82%8B%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%83%BC%E3%83%9E%E3%82%B7%E3%83%B3/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.itmedia.co.jp/pcupdate/articles/0409/02/news076.html&#34;&gt;ITmedia&lt;/a&gt;
+今のところ、84万円という高価な製品だが、
+既存技術を使っているだけなので、これからどんどん値段が下がりそう。
+でも、値段が下がった頃には、全部デジタル放送になっていて、
+意味が無いだろう。orz&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pentium 4“4GHz”搭載の60万円ゲームPC</title>
+      <link>http://localhost:1313/posts/2004/09/pentium-44ghz%E6%90%AD%E8%BC%89%E3%81%AE60%E4%B8%87%E5%86%86%E3%82%B2%E3%83%BC%E3%83%A0pc/</link>
+      <pubDate>Mon, 06 Sep 2004 09:38:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/09/pentium-44ghz%E6%90%AD%E8%BC%89%E3%81%AE60%E4%B8%87%E5%86%86%E3%82%B2%E3%83%BC%E3%83%A0pc/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.itmedia.co.jp/news/articles/0409/04/news013.html&#34;&gt;ITmedia&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;グラフィックスカード:NVIDIA GeForce 6800 UltraのGDDR3メモリ256MB(PCI
+Express版)
+メモリ:デュアルチャンネル対応DDR SDRAM 1GB
+HDD:Serial ATA Western Digital Raptor 74GB RAID構成
+サウンドカード:Creative 「Sound Blaster Audigy 2 ZS High Definition
+7.1 Surround」
+電源ユニット:640W&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;だそうです。こんなのに６０万円も出せるような人になりたいな。。
+とりあえず、必要ありませんね。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ＰｏｗｅｒＭａｃ Ｇ４買いました。</title>
+      <link>http://localhost:1313/posts/2004/09/%EF%BD%90%EF%BD%8F%EF%BD%97%EF%BD%85%EF%BD%92%EF%BD%8D%EF%BD%81%EF%BD%83-%EF%BD%87%EF%BC%94%E8%B2%B7%E3%81%84%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <pubDate>Sat, 04 Sep 2004 11:35:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/09/%EF%BD%90%EF%BD%8F%EF%BD%97%EF%BD%85%EF%BD%92%EF%BD%8D%EF%BD%81%EF%BD%83-%EF%BD%87%EF%BC%94%E8%B2%B7%E3%81%84%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <description>&lt;p&gt;ＰｏｗｅｒＭａｃ Ｇ４を買いました。(今更ながら)
+中古で49,800円(税込)くらいでした。
+52,000円の値札がついていたのですが、サイドパネルの爪が折れているらしく、
+3000円引きになっていました。&lt;/p&gt;
+&lt;p&gt;で、買うと、
+「512MBのメモリがあたる！」ってクジを引いたのですが、
+案の定ハズレでした。まぁ、当たりくじなんかほとんど入ってないと思いますが。&lt;/p&gt;
+&lt;p&gt;私が買ったのは、
+PowerMac G4 (Gigabit Ethernet？)で、&lt;/p&gt;
+&lt;p&gt;Memory:320MB&lt;/p&gt;
+&lt;p&gt;HDD:20GB&lt;/p&gt;
+&lt;p&gt;DVD-ROMドライブ&lt;/p&gt;
+&lt;p&gt;マニュアル・電源コード・IEEE1394ケーブル・USBケーブル・リストアCD 付き&lt;/p&gt;
+&lt;p&gt;キーボード・マウス付き
+HDDは、20GBではちょっと心もとなかったのと、
+ちょっとでも体感速度を速くしようと思って、80GBにしました。&lt;/p&gt;
+&lt;p&gt;あとは、グラボ(Radeon8500を狙ってます)とメモリとCPUのアップグレードが待っています。
+全部やったら、Mac G5買えちゃいそう。&lt;/p&gt;
+&lt;p&gt;で、ディスプレーはな、なんと２０インチ(笑)
+ヤフオクで510円で落札しました。
+1600*1200 75Hzで、表示できてます。
+ちょっとフォーカスが甘いのと、すこしだけ暗いのが難点か。。。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ジョイスティックで太陽系を航行できる「ステラナビゲータ Ver.7」</title>
+      <link>http://localhost:1313/posts/2004/09/%E3%82%B8%E3%83%A7%E3%82%A4%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%81%A7%E5%A4%AA%E9%99%BD%E7%B3%BB%E3%82%92%E8%88%AA%E8%A1%8C%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%B9%E3%83%86%E3%83%A9%E3%83%8A%E3%83%93%E3%82%B2%E3%83%BC%E3%82%BF-ver7/</link>
+      <pubDate>Thu, 02 Sep 2004 19:01:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/09/%E3%82%B8%E3%83%A7%E3%82%A4%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%81%A7%E5%A4%AA%E9%99%BD%E7%B3%BB%E3%82%92%E8%88%AA%E8%A1%8C%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%B9%E3%83%86%E3%83%A9%E3%83%8A%E3%83%93%E3%82%B2%E3%83%BC%E3%82%BF-ver7/</guid>
+      <description>&lt;p&gt;今回のバージョンアップでは、以下のような機能の追加が特徴となっているようだ。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;プラネタリウム機能の強化と、太陽系フライトモードの追加が特徴となっている。
+　プラネタリウムでは、天体の物語を画像とナレーションで解説する「プラネタリウム番組」が新設され、12本が収録される。
+　また、太陽系フライトモードでは、キーボードやジョイスティックを使用して、太陽系内を自由自在に航行できる。土星などの惑星に接近して見ることもできる。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;高校・大学と星を見るサークルだったので、非常に興味があるが、
+とりあえず、望遠鏡とそれをいじる時間が欲しいです。
+価格は15,750円。対応ＯＳは、Windows 98 SE/Me/2000/XP。
+ＭａｃＯＳには対応しないみたい。当たり前といえば当たり前か。。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>iMac ？ Simplem ？</title>
+      <link>http://localhost:1313/posts/2004/09/imac-simplem/</link>
+      <pubDate>Thu, 02 Sep 2004 13:25:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/09/imac-simplem/</guid>
+      <description>&lt;p&gt;何処かで見かけた話題だけど、
+つい最近発売された、&lt;a href=&#34;http://www.apple.co.jp/imac/&#34;&gt;G5
+iMac&lt;/a&gt;、これって、5年前に発売されたNECの「&lt;a href=&#34;http://www.nec.co.jp/press/ja/9909/0201.html&#34;&gt;Simplem&lt;/a&gt;」そっくりじゃない？&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>iMacG5キター</title>
+      <link>http://localhost:1313/posts/2004/09/imacg5%E3%82%AD%E3%82%BF%E3%83%BC/</link>
+      <pubDate>Wed, 01 Sep 2004 18:03:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/09/imacg5%E3%82%AD%E3%82%BF%E3%83%BC/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.apple.com/jp/imac/&#34;&gt;apple&lt;/a&gt;
+最小構成&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;17インチワイドスクリーンLCD
+1.6GHz PowerPC G5
+512K 二次キャッシュ
+533MHz フロントサイドバス
+256MB DDR400 SDRAM
+NVIDIA GeForce FX 5200 Ultra
+64MB DDR ビデオメモリ
+80GB Serial ATA ハードドライブ
+コンボドライブ（スロットローディング方式）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;で、157,290円だそうです。&lt;/p&gt;
+&lt;p&gt;2004/09/01 追記
+&lt;a href=&#34;http://www.apple.com/jp/imac/&#34;&gt;appleのiMacのページ&lt;/a&gt;を見ればわかるとおり、新iMac(G5
+CPU搭載)はiPodをかなり強く意識したデザインのようだ。
+&lt;a href=&#34;http://japan.cnet.com/news/tech/story/0,2000047674,20071544,00.htm&#34;&gt;CNetの記事&lt;/a&gt;にもあるとおり、iPod人気にあやかりたい気持ちもあったのだろう。
+でも、PCの寿命なんてあっという間だから、出来ることなら、このiMacを
+&lt;strong&gt;ただのLCDディスプレイ&lt;/strong&gt;としても使用できるようになっているとありがたいね。
+なってないけど。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>「空冷服」レビュー第2弾</title>
+      <link>http://localhost:1313/posts/2004/08/%E7%A9%BA%E5%86%B7%E6%9C%8D%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E7%AC%AC2%E5%BC%BE/</link>
+      <pubDate>Sun, 22 Aug 2004 16:13:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/08/%E7%A9%BA%E5%86%B7%E6%9C%8D%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E7%AC%AC2%E5%BC%BE/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.itmedia.co.jp/lifestyle/articles/0408/14/news014.html&#34;&gt;ITmedia&lt;/a&gt;
+「空冷服」レビュー第2弾。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;差出人は、一部読者の間でカルト的な人気を誇る新人女性記者のO。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;とかかれていたので、どういう人なのかと思って、
+&lt;a href=&#34;http://www.google.com/search?hl=ja&amp;amp;lr=lang_ja&amp;amp;ie=SJIS&amp;amp;oe=SJIS&amp;amp;q=%89%AA%93c%97L%89%D4&#34;&gt;ググってみた&lt;/a&gt;。
+確かにすごい。。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Microsoft、低価格OS版Windows XP「Starter Edition」</title>
+      <link>http://localhost:1313/posts/2004/08/microsoft%E4%BD%8E%E4%BE%A1%E6%A0%BCos%E7%89%88windows-xpstarter-edition/</link>
+      <pubDate>Sun, 15 Aug 2004 10:29:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/08/microsoft%E4%BD%8E%E4%BE%A1%E6%A0%BCos%E7%89%88windows-xpstarter-edition/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pc.watch.impress.co.jp/docs/2004/0812/ms.htm&#34;&gt;PC Watch&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;タイ、マレーシア、インドネシアの各国語版を10月発売&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;するそうです。
+でも、どういう機能かと言うと。。。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;画面解像度が800×600ドットまで
+同時に実行可能なプログラムが3つまで
+1つのプログラムで使用可能なウィンドウが3つまで
+などの制限が設けられる。
+また、ファイル共有やプリンタ共有、マルチユーザーアカウントなどの機能が搭載されない。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいです。いまさらこんなOS金出して使いたく無いけど、MS-Windows上でしか動かないソフトが
+たくさんあるから仕方ないのかなぁ。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>バンダイ、“ハロ”の等身大モデルPC収納ケース</title>
+      <link>http://localhost:1313/posts/2004/08/%E3%83%90%E3%83%B3%E3%83%80%E3%82%A4%E3%83%8F%E3%83%AD%E3%81%AE%E7%AD%89%E8%BA%AB%E5%A4%A7%E3%83%A2%E3%83%87%E3%83%ABpc%E5%8F%8E%E7%B4%8D%E3%82%B1%E3%83%BC%E3%82%B9/</link>
+      <pubDate>Sun, 15 Aug 2004 10:25:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/08/%E3%83%90%E3%83%B3%E3%83%80%E3%82%A4%E3%83%8F%E3%83%AD%E3%81%AE%E7%AD%89%E8%BA%AB%E5%A4%A7%E3%83%A2%E3%83%87%E3%83%ABpc%E5%8F%8E%E7%B4%8D%E3%82%B1%E3%83%BC%E3%82%B9/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pc.watch.impress.co.jp/docs/2004/0811/bandai.htm&#34;&gt;PC Watch&lt;/a&gt;
+&lt;a href=&#34;http://www.bandai-net.com/pressrelease/top_20040811.html&#34;&gt;バンダイネットワークスプレスリリース&lt;/a&gt;
+キューブ型のPCケースをそのまま丸ごと入れられる大きさのようです。
+ほしいかなぁ？
+それよりも、リンク先のコスプレ女性が気になる。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kodak EasyShare LS743 Zoomレビュー</title>
+      <link>http://localhost:1313/posts/2004/08/kodak-easyshare-ls743-zoom%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</link>
+      <pubDate>Fri, 13 Aug 2004 10:07:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/08/kodak-easyshare-ls743-zoom%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pc.watch.impress.co.jp/docs/2004/0813/nishikawa.htm&#34;&gt;PC Watch&lt;/a&gt;
+先週に引き続き、健康的な水着写真です。
+&lt;a href=&#34;http://pc.watch.impress.co.jp/docs/article/backno/nisikawa.htm&#34;&gt;バックナンバー&lt;/a&gt;は必見か？&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>iPod mini速攻レビュー</title>
+      <link>http://localhost:1313/posts/2004/07/ipod-mini%E9%80%9F%E6%94%BB%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</link>
+      <pubDate>Fri, 30 Jul 2004 11:41:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/07/ipod-mini%E9%80%9F%E6%94%BB%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://review.ascii24.com/db/news/hard/2004/07/27/650769-000.html&#34;&gt;ASCII24&lt;/a&gt;
+ASCII24による&lt;strong&gt;iPod mini&lt;/strong&gt;のレビューです。
+レビュー者は、iPod初体験のようで、既存のiPod使用者からすると当たり前のことでも、
+非常に新鮮に感じるようです。
+ただ、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ベルトクリップの固定部分にやや難がある。
+実際に編集部の女性がベルトやバックに装着してみたが、
+装着自体は簡単だが外そうと思ったときになかなか外しにくい。
+しっかりと固定するには必要であるのかもしれないが、
+取り外しに対する工夫も欲しかったところだ。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;だそうです。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>24日の「アップルストア銀座」はやっぱりすごかった</title>
+      <link>http://localhost:1313/posts/2004/07/24%E6%97%A5%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%AB%E3%82%B9%E3%83%88%E3%82%A2%E9%8A%80%E5%BA%A7%E3%81%AF%E3%82%84%E3%81%A3%E3%81%B1%E3%82%8A%E3%81%99%E3%81%94%E3%81%8B%E3%81%A3%E3%81%9F/</link>
+      <pubDate>Wed, 28 Jul 2004 13:55:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/07/24%E6%97%A5%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%AB%E3%82%B9%E3%83%88%E3%82%A2%E9%8A%80%E5%BA%A7%E3%81%AF%E3%82%84%E3%81%A3%E3%81%B1%E3%82%8A%E3%81%99%E3%81%94%E3%81%8B%E3%81%A3%E3%81%9F/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.itmedia.co.jp/lifestyle/articles/0407/26/news008.html&#34;&gt;ITmedia&lt;/a&gt;
+「24日の「アップルストア銀座」はやっぱりすごかった」らしいです。
+アップルは、この好調さをどこまで維持できるか、
+今後、iPodだけではジリ貧だと思うので、Macの売り上げをさらに伸ばすために、
+どのような作戦を立てているのか、気になります。
+＃でも、すでに私は、Macが欲しい。
+＃作戦に乗せられているのか？&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>予約録画で深夜のアテネ五輪も朝すぐ持ち出せる〜「PocketMX PVR」</title>
+      <link>http://localhost:1313/posts/2004/07/%E4%BA%88%E7%B4%84%E9%8C%B2%E7%94%BB%E3%81%A7%E6%B7%B1%E5%A4%9C%E3%81%AE%E3%82%A2%E3%83%86%E3%83%8D%E4%BA%94%E8%BC%AA%E3%82%82%E6%9C%9D%E3%81%99%E3%81%90%E6%8C%81%E3%81%A1%E5%87%BA%E3%81%9B%E3%82%8Bpocketmx-pvr/</link>
+      <pubDate>Wed, 28 Jul 2004 12:11:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/07/%E4%BA%88%E7%B4%84%E9%8C%B2%E7%94%BB%E3%81%A7%E6%B7%B1%E5%A4%9C%E3%81%AE%E3%82%A2%E3%83%86%E3%83%8D%E4%BA%94%E8%BC%AA%E3%82%82%E6%9C%9D%E3%81%99%E3%81%90%E6%8C%81%E3%81%A1%E5%87%BA%E3%81%9B%E3%82%8Bpocketmx-pvr/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.itmedia.co.jp/lifestyle/articles/0407/27/news037.html&#34;&gt;ITmedia&lt;/a&gt;
+実売2万5000円のポーターブルAVプレーヤー「Arex PocketMX
+PVR」のレビュー記事。
+最初のレビューでは、「1時間ちょっとで電池切れ」となっていたのですが、
+その後記事が修正され、「2時間持つ」となっているようです。
+さらに、バッテリーも別途入手可能で、2800円程度だということ。
+ただ、こんだけお金出すなら、いろいろな動画フォーマットに対応してる、
+リナザウを買ってもいいかなぁと思えたり、そうじゃなかったり。。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>“通常の3倍”高速化したガンダムUSBメモリ</title>
+      <link>http://localhost:1313/posts/2004/07/%E9%80%9A%E5%B8%B8%E3%81%AE3%E5%80%8D%E9%AB%98%E9%80%9F%E5%8C%96%E3%81%97%E3%81%9F%E3%82%AC%E3%83%B3%E3%83%80%E3%83%A0usb%E3%83%A1%E3%83%A2%E3%83%AA/</link>
+      <pubDate>Wed, 21 Jul 2004 17:53:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/07/%E9%80%9A%E5%B8%B8%E3%81%AE3%E5%80%8D%E9%AB%98%E9%80%9F%E5%8C%96%E3%81%97%E3%81%9F%E3%82%AC%E3%83%B3%E3%83%80%E3%83%A0usb%E3%83%A1%E3%83%A2%E3%83%AA/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pc.watch.impress.co.jp/docs/2004/0721/iodata2.htm&#34;&gt;PC Watch&lt;/a&gt;
+何でもかんでも、&lt;strong&gt;ガンダム&lt;/strong&gt;と名が付けば、
+「3倍･3倍」って言えばいいってもんでもないでしょう。
+なんで、&lt;strong&gt;ガンダムとかジオングまで&lt;/strong&gt;3倍なのよ。
+　
+ちなみに、ガンタンク・ガンキャノン・ジム・グフ・エルメス・ギャンは
+USB1.1の製品で、「&lt;strong&gt;3倍&lt;/strong&gt;」製品ではない模様。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>新iPod発売！(iPod miniじゃないよ)</title>
+      <link>http://localhost:1313/posts/2004/07/%E6%96%B0ipod%E7%99%BA%E5%A3%B2ipod-mini%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%82%88/</link>
+      <pubDate>Mon, 19 Jul 2004 23:43:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/07/%E6%96%B0ipod%E7%99%BA%E5%A3%B2ipod-mini%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%82%88/</guid>
+      <description>&lt;p&gt;(&lt;a href=&#34;http://www.apple.co.jp/ipod/&#34;&gt;apple&lt;/a&gt;)(&lt;a href=&#34;http://www.asahi.com/business/update/0719/018.html&#34;&gt;asahi.com&lt;/a&gt;)
+新iPod発売です。
+iPod miniではありません。&lt;/p&gt;
+&lt;p&gt;値下げ&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;20GB（33,390円、本体価格：31,800円）と40GB（44,940円、本体価格：42,800円）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;して、
+電池寿命が延びた&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;新しいiPodでは1回の充電で最長12時間も連続再生できる&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしい。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>真夏に長袖！なのに裸より涼しい「空調服」</title>
+      <link>http://localhost:1313/posts/2004/07/%E7%9C%9F%E5%A4%8F%E3%81%AB%E9%95%B7%E8%A2%96%E3%81%AA%E3%81%AE%E3%81%AB%E8%A3%B8%E3%82%88%E3%82%8A%E6%B6%BC%E3%81%97%E3%81%84%E7%A9%BA%E8%AA%BF%E6%9C%8D/</link>
+      <pubDate>Mon, 19 Jul 2004 00:13:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/07/%E7%9C%9F%E5%A4%8F%E3%81%AB%E9%95%B7%E8%A2%96%E3%81%AA%E3%81%AE%E3%81%AB%E8%A3%B8%E3%82%88%E3%82%8A%E6%B6%BC%E3%81%97%E3%81%84%E7%A9%BA%E8%AA%BF%E6%9C%8D/</guid>
+      <description>&lt;p&gt;(&lt;a href=&#34;http://www.itmedia.co.jp/news/articles/0407/17/news001.html?nc20&#34;&gt;ITmedia&lt;/a&gt;)(&lt;a href=&#34;http://slashdot.jp/article.pl?sid=04/07/17/1739248&amp;amp;topic=42&#34;&gt;/.J&lt;/a&gt;)
+すげ〜。
+汗の気化熱で涼しくなるらしいです。
+真夏に長袖なんて、普通は考えられないけど、
+バイクに乗っているときとかは非常にいいかも。
+でも、なんか&lt;strong&gt;微妙に膨らんでいて&lt;/strong&gt;微妙な感じ。
+もうちょっとデザインがよければね。。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>新型iMacはG5供給不足のため、発売延期された</title>
+      <link>http://localhost:1313/posts/2004/07/%E6%96%B0%E5%9E%8Bimac%E3%81%AFg5%E4%BE%9B%E7%B5%A6%E4%B8%8D%E8%B6%B3%E3%81%AE%E3%81%9F%E3%82%81%E7%99%BA%E5%A3%B2%E5%BB%B6%E6%9C%9F%E3%81%95%E3%82%8C%E3%81%9F/</link>
+      <pubDate>Fri, 16 Jul 2004 12:46:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2004/07/%E6%96%B0%E5%9E%8Bimac%E3%81%AFg5%E4%BE%9B%E7%B5%A6%E4%B8%8D%E8%B6%B3%E3%81%AE%E3%81%9F%E3%82%81%E7%99%BA%E5%A3%B2%E5%BB%B6%E6%9C%9F%E3%81%95%E3%82%8C%E3%81%9F/</guid>
+      <description>&lt;p&gt;新型iMacの発売延期は、IBMからのCPU(G5)供給不足が原因だそうです。
+最近Macが非常に気になっているので、
+気になるニュースです。
+9月にはマカーになってるかも。。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

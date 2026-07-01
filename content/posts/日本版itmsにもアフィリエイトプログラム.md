@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-08-07-ri-ben-ban-itmsnimoahuirieitopuroguramu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 日本版iTMSにもアフィリエイトプログラム
 ---
 
 [www.itmedia.co.jp](http://www.itmedia.co.jp/news/articles/0508/05/news078.html)

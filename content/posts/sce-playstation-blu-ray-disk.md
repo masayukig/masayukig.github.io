@@ -6,6 +6,9 @@ tags:
 - game
 draft: false
 disqus_identifier: 2004-09-23-sce-playstation-blu-ray-disk
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: SCE、次世代プレイステーションにBlu-ray Diskを採用へ
 ---
 
 [CNET Japan](http://japan.cnet.com/news/tech/story/0,2000047674,20074727,00.htm)

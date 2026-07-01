@@ -10,6 +10,9 @@ tags:
 - openstack
 - team
 draft: true
+cover:
+  image: /images/covers/work.jpg
+  alt: オーストラリアメンバー最終日
 ---
 
 本日は、オーストラリアチームメンバーの最終日でした。

@@ -9,6 +9,9 @@ tags:
 - 写真
 draft: false
 disqus_identifier: 2008-11-01-gpsphotopldegeotagufu-ke
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: gpsPhoto.plでGeoタグ付け
 ---
 
 [gpsPhoto.pl](http://www.carto.net/projects/photoTools/gpsPhoto/)というのを使うと、geoタグをつけることが出来る。

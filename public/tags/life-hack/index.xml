@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Life Hack on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/life-hack/</link>
+    <description>Recent content in Life Hack on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 25 Aug 2009 20:58:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/life-hack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>これ知らないと損するなーと思うもの</title>
+      <link>http://localhost:1313/posts/2009/08/%E3%81%93%E3%82%8C%E7%9F%A5%E3%82%89%E3%81%AA%E3%81%84%E3%81%A8%E6%90%8D%E3%81%99%E3%82%8B%E3%81%AA%E3%83%BC%E3%81%A8%E6%80%9D%E3%81%86%E3%82%82%E3%81%AE/</link>
+      <pubDate>Tue, 25 Aug 2009 20:58:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2009/08/%E3%81%93%E3%82%8C%E7%9F%A5%E3%82%89%E3%81%AA%E3%81%84%E3%81%A8%E6%90%8D%E3%81%99%E3%82%8B%E3%81%AA%E3%83%BC%E3%81%A8%E6%80%9D%E3%81%86%E3%82%82%E3%81%AE/</guid>
+      <description>&lt;p&gt;SCM(ソースコード管理システム)&lt;/p&gt;
+&lt;p&gt;ただ、単にソースコードだけではなくて、
+設定ファイルとか、その他、あらゆるファイルを管理したい。&lt;/p&gt;
+&lt;p&gt;だって、いつでももとに戻せるんですよ。簡単に。&lt;/p&gt;
+&lt;p&gt;これがないと、
+hogehuga.txt.bak1
+hogehuga.txt.org
+hogehuga.txt.bak20090825
+みたいなファイルが山ほどできたりするじゃないですか？&lt;/p&gt;
+&lt;p&gt;gitなどのツールで管理すれば、気兼ねなく変更削除できますし、
+精神衛生上もよろしいかと。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dropbox 100GBプラン登場</title>
+      <link>http://localhost:1313/posts/2009/06/dropbox-100gb%E3%83%97%E3%83%A9%E3%83%B3%E7%99%BB%E5%A0%B4/</link>
+      <pubDate>Thu, 04 Jun 2009 05:26:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2009/06/dropbox-100gb%E3%83%97%E3%83%A9%E3%83%B3%E7%99%BB%E5%A0%B4/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.0r2.info/blog/2009/04/20/dropbox-100gb%e3%83%97%e3%83%a9%e3%83%b3%e7%99%bb%e5%a0%b4%ef%bc%9f/&#34;&gt;先日のエントリー&lt;/a&gt;で、「Dropboxに100GBのプランが追加されたかも」と書いたのですが、
+いつの間にか、正式に追加された様です。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.getdropbox.com/plans&#34;&gt;https://www.getdropbox.com/plans&lt;/a&gt;
+に、「100GB」のプランが表示されています。
+ただ、&lt;strong&gt;$199/year&lt;/strong&gt;は、ちょっと高いので、
+100GBプランへのアップグレードは躊躇しています。。
+より良い方法はないだろうか。。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dropbox 100GBプラン登場？</title>
+      <link>http://localhost:1313/posts/2009/04/dropbox-100gb-plan/</link>
+      <pubDate>Mon, 20 Apr 2009 05:26:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2009/04/dropbox-100gb-plan/</guid>
+      <description>&lt;p&gt;ファイルのバックアップ、履歴管理、複数PCでのファイル共有に最適な
+&lt;a href=&#34;https://www.getdropbox.com/referrals/NTQ1NjE1MTk&#34;&gt;Dropbox&lt;/a&gt;(左記は（最大）+500MBになる紹介リンク)
+ですが、100GBのプランが登場しているようです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.getdropbox.com/upgrade?plan=100&#34;&gt;https://www.getdropbox.com/upgrade?plan=100&lt;/a&gt;(利用登録者しか見られないかもしれません。)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://forums.getdropbox.com/topic.php?id=8278&amp;amp;replies=23#post-52700&#34;&gt;http://forums.getdropbox.com/topic.php?id=8278&amp;amp;replies=23#post-52700&lt;/a&gt;
+で、知ったのですが、通常のプラン一覧
+&lt;a href=&#34;https://www.getdropbox.com/plans&#34;&gt;https://www.getdropbox.com/plans&lt;/a&gt;
+には、表示されていないので、もしかしたら、正式なものではないのかも。&lt;/p&gt;
+&lt;p&gt;私は、50GBプランを契約中なのですが、既に90%以上の使用率になっているので、
+さらなる容量のプランが出てくるのは、非常にうれしいです。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TODOリストの再発明</title>
+      <link>http://localhost:1313/posts/2008/06/todo%E3%83%AA%E3%82%B9%E3%83%88%E3%81%AE%E5%86%8D%E7%99%BA%E6%98%8E/</link>
+      <pubDate>Tue, 24 Jun 2008 00:46:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/06/todo%E3%83%AA%E3%82%B9%E3%83%88%E3%81%AE%E5%86%8D%E7%99%BA%E6%98%8E/</guid>
+      <description>&lt;p&gt;と、言えば、「&lt;a href=&#34;http://www.rememberthemilk.com/&#34; title=&#34;remember the milk&#34;&gt;remember the
+milk&lt;/a&gt;」(通称:RTM)。&lt;/p&gt;
+&lt;p&gt;最近、かなりお気に入りのWebアプリです。&lt;/p&gt;
+&lt;p&gt;何が良いのかといえば&amp;hellip;&lt;/p&gt;
+&lt;p&gt;TODO項目が箇条書きにされていて、&lt;/p&gt;
+&lt;p&gt;それを消化したらチェックをして、おしまい。&lt;/p&gt;
+&lt;p&gt;を、繰り返すわけですが、RTMはもうちょっと便利な機能がついてます。&lt;/p&gt;
+&lt;p&gt;それは、&lt;strong&gt;「繰り返しのTODO」を定義出来ること&lt;/strong&gt;です。&lt;/p&gt;
+&lt;p&gt;日頃、仕事をしていると、色々なルーチンワークがあると思います。&lt;/p&gt;
+&lt;p&gt;例えば、日報／週報を書いて提出したり、毎日の作業時間を記録したり、&lt;/p&gt;
+&lt;p&gt;定期的な提出物など色々とあることでしょう。&lt;/p&gt;
+&lt;p&gt;そういうものも、RTMでは管理出来ます。&lt;/p&gt;
+&lt;p&gt;一旦「完了」としても、定期的なアイテムの場合は、次のアイテムが&lt;strong&gt;自動的に&lt;/strong&gt;現れるのです。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;やった感&lt;/strong&gt;を得られられつつ、定期的なTODOにも対応できる、&lt;/p&gt;
+&lt;p&gt;非常に優れものだと思います。&lt;/p&gt;
+&lt;p&gt;それ以外にも、日付を「今日」とか「明日」などで指定出来たり、&lt;/p&gt;
+&lt;p&gt;繰り返しパターンもある程度、日本語で設定出来て、&lt;/p&gt;
+&lt;p&gt;かなり直感的なI/Fになっています。&lt;/p&gt;
+&lt;p&gt;こういうのを、見習わなきゃね。。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

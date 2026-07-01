@@ -10,6 +10,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2010-01-17-iphonemmsmi-huo-meruburotsukushe-ding
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhone(MMS)迷惑メールブロック設定
 ---
 
 最近、iPhoneのMMSメールアドレス宛の迷惑メールがやたらと増えてきたので対策をしました。

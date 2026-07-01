@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2004-11-09-firefox-dai-wang-nobaziyon10garirisu
+cover:
+  image: /images/covers/oss.png
+  alt: Firefox、待望のバージョン1.0がリリース!
 ---
 
 [japan.cnet.com](http://japan.cnet.com/news/media/story/0,2000047715,20075645,00.htm)

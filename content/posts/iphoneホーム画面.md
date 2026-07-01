@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2009-07-12-iphonehomuhua-mian
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhoneホーム画面
 ---
 
 現在のiPhoneのホーム画面。

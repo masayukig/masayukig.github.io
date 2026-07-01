@@ -8,6 +8,9 @@ tags:
 - VPS
 draft: false
 disqus_identifier: 2011-03-11-sakuravpsshang-wei-puranheatsupuguredodekinaikawen-ihe-wasetemita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: さくらVPS上位プランへアップグレードできないか？問い合わせてみた
 ---
 
 [先日のエントリー](http://b.0r2.info/?p=1447)で書いた さくらのVPS の上位プランへのアップグレードについて、

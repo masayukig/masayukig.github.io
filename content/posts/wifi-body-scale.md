@@ -11,6 +11,9 @@ tags:
 - 体重
 draft: false
 disqus_identifier: 2010-01-30-wifi-body-scale
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Wifi Body Scale
 ---
 
 <http://www.withings.com/ja>

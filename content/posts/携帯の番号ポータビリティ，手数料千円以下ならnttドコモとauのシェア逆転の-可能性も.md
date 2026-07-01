@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-05-30-xi-dai-nofan-hao-potabiriteishou-shu-liao-qian-yuan-yi-xia-naranttdokomotoaunoshieani-zhuan-no-ke-neng-xing-mo
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 携帯の番号ポータビリティ，手数料千円以下ならNTTドコモとauのシェア逆転の 可能性も
 ---
 
 <http://itpro.nikkeibp.co.jp/members/ITPro/USURA/20050526/161575/>

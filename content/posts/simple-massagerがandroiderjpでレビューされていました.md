@@ -8,6 +8,9 @@ tags:
 - Software
 draft: false
 disqus_identifier: 2010-12-21-simple-massagergaandroiderjpderebiyusareteimashita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Simple Massagerがandroider.jpでレビューされていました
 ---
 
 Simple Massagerがandroid.jpでレビューされていました！

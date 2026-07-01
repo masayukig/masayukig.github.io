@@ -6,6 +6,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2004-12-10-nintendodsfa-mai-kousagi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ニンテンドーDS発売！(こうさぎ)
 ---
 
 うさこがひまみたいな&lt;するつもりだった。

@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2005-04-14-mac-os-x-104-tigernofa-mai-ri-ga4yue-29ri-nijue-ding
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Mac OS X 10.4 "Tiger"の発売日が4月29日に決定
 ---
 
 <http://www.apple.com/jp/macosx/>

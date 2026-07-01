@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-09-01-imacg5kita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iMacG5キター
 ---
 
 [apple](http://www.apple.com/jp/imac/)

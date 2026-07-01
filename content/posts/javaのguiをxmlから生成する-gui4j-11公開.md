@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-06-11-javanoguiwoxmlkarasheng-cheng-suru-gui4j-11gong-kai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: JavaのGUIをXMLから生成する gui4j 1.1公開
 ---
 
 [http://pcweb.mycom.co.jp/](http://pcweb.mycom.co.jp/news/2005/06/09/012.html)

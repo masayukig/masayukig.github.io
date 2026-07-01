@@ -9,6 +9,11 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2009-08-15-iphonenokicao-zuo-wokasutamaizushitahomubotandaburukuritsukudekameraqi-dong
+cover:
+  image: http://farm3.static.flickr.com/2674/3820631221_267f54c68e.jpg
+  alt: 'customizing home
+
+    button'
 ---
 
 iPhoneのキー操作をカスタマイズしました。

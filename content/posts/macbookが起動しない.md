@@ -6,6 +6,9 @@ tags:
 - Mac
 draft: false
 disqus_identifier: 2007-05-13-macbookgaqi-dong-shinai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: MacBookが起動しない！
 ---
 
 １年度ほど前、

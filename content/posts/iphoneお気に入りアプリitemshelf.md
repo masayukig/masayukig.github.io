@@ -8,6 +8,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2009-07-11-iphoneoqi-niru-riapuriitemshelf
+cover:
+  image: http://ax.itunes.apple.com/images/badgeitunes61x15dark.gif
+  alt: ItemShelf
 ---
 
 今回のお気に入りは、「[ItemShelf![ItemShelf](http://ax.itunes.apple.com/images/badgeitunes61x15dark.gif)

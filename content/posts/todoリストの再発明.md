@@ -7,6 +7,9 @@ tags:
 - life hack
 draft: false
 disqus_identifier: 2008-06-24-todorisutonozai-fa-ming
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: TODOリストの再発明
 ---
 
 と、言えば、「[remember the

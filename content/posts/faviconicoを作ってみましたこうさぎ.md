@@ -6,6 +6,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2004-08-12-faviconicowozuo-tsutemimashitakousagi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: favicon.icoを作ってみました(こうさぎ)
 ---
 
 きのう、blogした？

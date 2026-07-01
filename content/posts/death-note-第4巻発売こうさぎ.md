@@ -6,6 +6,9 @@ tags:
 - 未分類
 draft: false
 disqus_identifier: 2004-11-17-death-note-di-4juan-fa-mai-kousagi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: DEATH NOTE 第4巻発売！(こうさぎ)
 ---
 
 きのうはここでアマゾンは&lt;したかも。

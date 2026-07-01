@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2015-12-12-ji-shu-de-ziyanaiopenstacknohua
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 技術的じゃないOpenStackの話
 ---
 
 <https://gist.github.com/masayukig/3ab6c18ace33eb01f9d1.js>

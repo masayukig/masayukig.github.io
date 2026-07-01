@@ -8,6 +8,9 @@ tags:
 - ifttt
 draft: false
 disqus_identifier: 2012-03-07-google-readerdesutawotsuketaji-shi-wozi-dong-de-niburogutou-gao-suru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Google Readerでスターをつけた記事を自動的にブログ投稿する
 ---
 
 Google

@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-07-11-uirukomu-2ghzdai-dephsfang-shi-nocan-ru-qiu-meru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ウィルコム、2GHz帯でPHS方式の参入求める
 ---
 
 [http://www.itmedia.co.jp/](http://www.itmedia.co.jp/mobile/articles/0507/08/news075.html)

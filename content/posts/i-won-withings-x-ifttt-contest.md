@@ -7,6 +7,9 @@ tags:
 - withings
 draft: false
 disqus_identifier: 2012-11-08-i-won-withings-x-ifttt-contest
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 'I won #Withings x #IFTTT contest!'
 ---
 
 Yesterday, I received a tweet

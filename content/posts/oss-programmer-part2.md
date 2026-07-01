@@ -12,6 +12,9 @@ tags:
 - openstack
 draft: false
 disqus_identifier: 2016-10-18-oss-programmer-part2
+cover:
+  image: /images/covers/work.jpg
+  alt: あなたの知らないOSSプログラマの世界 - part 2
 ---
 
 [oss-programmer-part1](../../06/oss-programmer-part1) の続き

@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-10-20-shi-jie-zui-su-65tflops-necsx-8-fa-biao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 世界最速65TFLOPS NEC「SX-8」発表
 ---
 
 [ITmedia](http://www.itmedia.co.jp/news/articles/0410/20/news023.html)

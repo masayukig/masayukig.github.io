@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-16-qi-ninaruhua-ti-zhu-zuo-quan-fa-gai-zheng-an-gaguo-hui-niti-chu-xie-riip-mi-hahe-fa-hua-dvdritsupinguhawei-fa-hua-internet-watch
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: '気になる話題: 著作権法改正案が国会に提出、「写り込み」は合法化、DVDリッピングは違法化 -INTERNET Watch'
 ---
 
 気になる話題:

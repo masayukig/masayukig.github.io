@@ -6,6 +6,9 @@ tags:
 - net
 draft: false
 disqus_identifier: 2004-12-03-ietogeckowoqie-riti-erarerulunascape-20-purebiyuban-gong-kai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: IEとGeckoを切り替えられる「Lunascape 2.0」プレビュー版公開
 ---
 
 [itmedia.co.jp

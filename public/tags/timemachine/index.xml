@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Timemachine on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/timemachine/</link>
+    <description>Recent content in Timemachine on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 23 Jul 2011 05:33:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/timemachine/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lionで 3rd party なNASではTimeMachineが動かない</title>
+      <link>http://localhost:1313/posts/2011/07/lion%E3%81%A7-3rd-party-%E3%81%AAnas%E3%81%A7%E3%81%AFtimemachine%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/</link>
+      <pubDate>Sat, 23 Jul 2011 05:33:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/07/lion%E3%81%A7-3rd-party-%E3%81%AAnas%E3%81%A7%E3%81%AFtimemachine%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/</guid>
+      <description>&lt;p&gt;昨日、Lionにアップデートしましたが、以下の様なエラーがでて
+Time Machineでバックアップができなくなりました。
+&lt;a href=&#34;https://picasaweb.google.com/lh/photo/4ufmuZEyhHGTyu3bVo7Ysg?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh5.googleusercontent.com/-eNFciYAVxnk/Tjr6xhXwX5I/AAAAAAAAg6M/p3ABUDEbpv8/s288/5964468227_f23fe1aabe_o.png&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ググってみたところ、いくつかの情報が得られました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://slashdot.jp/apple/comments.pl?sid=539273&amp;amp;cid=1989826&#34;&gt;http://slashdot.jp/apple/comments.pl?sid=539273&amp;amp;cid=1989826&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://amiens2009.tumblr.com/post/7886573873/timemachine-apple-nas-lion&#34;&gt;http://amiens2009.tumblr.com/post/7886573873/timemachine-apple-nas-lion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;なお、今回のバックアップ失敗では、以下の様なログが/var/log/syslog.log
+に出力されていました。
+&lt;a href=&#34;https://gist.github.com/1100364.js?file=Time-Machine-backup-failed-system.log&#34;&gt;https://gist.github.com/1100364.js?file=Time-Machine-backup-failed-system.log&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Time Machineが「マウントできませんでした」で失敗したときに試してみること</title>
+      <link>http://localhost:1313/posts/2011/05/time-machine%E3%81%8C%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%E3%81%A7%E3%81%97%E3%81%9F%E3%81%A7%E5%A4%B1%E6%95%97%E3%81%97%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AB%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8/</link>
+      <pubDate>Sun, 22 May 2011 05:20:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/05/time-machine%E3%81%8C%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%E3%81%A7%E3%81%97%E3%81%9F%E3%81%A7%E5%A4%B1%E6%95%97%E3%81%97%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AB%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8/</guid>
+      <description>&lt;p&gt;現在、Time MachineをNAS上のボリュームで使っているのですが、たまに、
+「マウントできませんでした」
+という感じのエラーが発生し、バックアップができなくなることがあります。
+そのとき、/var/log/system.logには以下の様な出力がありました。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;May 22 04:20:49 ariel com.apple.backupd[6949]: Error 45 creating backup disk image
+May 22 04:20:49 ariel com.apple.backupd[6949]: Failed to create disk image /Volumes/Public/ariel.sparsebundle, status: 45
+May 22 04:20:54 ariel com.apple.backupd[6949]: Backup failed with error: 20
+May 22 04:20:55 ariel com.apple.backupd[6949]: Ejected Time Machine network volume.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;こういう場合には、以下を試してみます。
+**
+[なお、これらの作業は自己責任でお願いします。]{style=&amp;ldquo;color:#ff0000;&amp;rdquo;}
+[私の環境ではうまく行きましたが、すべての環境でうまく行くとは限りません。]{style=&amp;ldquo;color:#ff0000;&amp;rdquo;}
+**&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Time
+Machineバックアップに失敗すると、ディレクトリ名に日付／時間がついてしまうので、それを元に戻す。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ mv ariel_XXXXXXXXXXXX_2011-05-21-113228.sparsebundle ariel_XXXXXXXXXXXX.sparsebundle
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;変更禁止フラグがたっている(らしい)ので、それを解除。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ chflags nouchg ariel_XXXXXXXXXXXX.sparsebundle
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;以下のファイル内容の修正を行う。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ vim ariel_XXXXXXXXXXXX.sparsebundle/com.apple.TimeMachine.MachineID.plist
+
+        VerificationState
+  2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;を&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;        VerificationState
+  1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;に変更。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;変更禁止フラグを再度設定。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ chflags uchg ariel_XXXXXXXXXXXX.sparsebundle
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;再度、バックアップを試してみる。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;＃まぁ、本当に大丈夫なのかどうかは、リストアしてみるまでわかりませんが。。w&lt;/p&gt;
+&lt;p&gt;参考サイト: &lt;a href=&#34;http://d.hatena.ne.jp/mtaneda/&#34;&gt;mtaneda’s diary&lt;/a&gt; -
+&lt;a href=&#34;http://d.hatena.ne.jp/mtaneda/20101207/1291670192&#34;&gt;続・Time Machine
+によるバックアップの検証が完了しました。信頼性を向上するために、新規バックアップの作成が必要になりました。&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

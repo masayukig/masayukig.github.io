@@ -6,6 +6,11 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2011-02-06-macbook-airnilinuxfedorawoinsutoru
+cover:
+  image: http://farm6.static.flickr.com/5133/5419108725_0289d42b50_m.jpg
+  alt: 'Fedora14 on MacBook
+
+    Air'
 ---
 
 MacBook AirにLinuxをインストールした。

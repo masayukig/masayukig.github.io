@@ -7,6 +7,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2004-12-19-pspkozima-deyu-yue-shou-fu-zhong
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: PSP「コジマ」で予約受付中！！！
 ---
 
 http://www.kojima.net/netshop/netshopnews/ne002/index.html

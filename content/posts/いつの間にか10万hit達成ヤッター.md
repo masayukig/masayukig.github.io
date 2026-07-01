@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-11-21-itsunojian-nika10mo-hitda-cheng-yatsuta
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: いつの間にか10万Hit達成！ヤッター
 ---
 
 いつの間にか１０万Hit達成だー！

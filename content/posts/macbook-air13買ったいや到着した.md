@@ -7,6 +7,9 @@ tags:
 - Mac
 draft: false
 disqus_identifier: 2011-01-14-macbook-air13mai-tsuta-iya-dao-zhao-shita
+cover:
+  image: http://farm6.static.flickr.com/5125/5352096223_fc20480cdf.jpg
+  alt: picture
 ---
 
 [![picture](http://farm6.static.flickr.com/5125/5352096223_fc20480cdf.jpg)

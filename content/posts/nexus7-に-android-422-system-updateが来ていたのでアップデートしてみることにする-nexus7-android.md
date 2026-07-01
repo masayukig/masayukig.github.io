@@ -7,6 +7,9 @@ tags:
 - nexus7
 draft: false
 disqus_identifier: 2013-02-22-nexus7-ni-android-422-system-updategalai-teitanodeatsupudetoshitemirukotonisuru-nexus7-android
+cover:
+  image: https://masayukig.files.wordpress.com/2013/02/22dcb-2013-02-2307-40-41.jpg?w=225
+  alt: picture
 ---
 
 [![picture](https://masayukig.files.wordpress.com/2013/02/22dcb-2013-02-2307-40-41.jpg?w=225)

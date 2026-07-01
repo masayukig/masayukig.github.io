@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2004-11-06-burauzashi-chang-ie-nodu-zhan-shi-dai-nikageri
+cover:
+  image: /images/covers/oss.png
+  alt: ブラウザ市場、IE の独占時代にかげり？
 ---
 
 [japan.internet.com](http://japan.internet.com/webtech/20041104/12.html)

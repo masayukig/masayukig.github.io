@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-11-27-3gyoriphsnohougagao-su
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 3GよりPHSのほうが高速？
 ---
 
 [itmedia.co.jp](http://www.itmedia.co.jp/mobile/articles/0411/26/news035.html)

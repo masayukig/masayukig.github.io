@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-10-15-xi-dai-haipodwochao-eru-augaju-uyin-le-pei-xin-bizinesu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「携帯はiPodを超える」〜auが狙う音楽配信ビジネス
 ---
 
 [ITmedia](http://www.itmedia.co.jp/mobile/articles/0410/13/news031.html)

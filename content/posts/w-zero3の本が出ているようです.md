@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-12-12-w-zero3noben-gachu-teiruyoudesu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: W-ZERO3の本が出ているようです！
 ---
 
 [

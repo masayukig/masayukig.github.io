@@ -8,6 +8,9 @@ tags:
 - Xperia
 draft: false
 disqus_identifier: 2010-04-29-xperiamai-tsuchiyatsutaw
+cover:
+  image: http://www.0r2.info/blog//0r2.info/3035/4562523183_cc0be3d31d.jpg
+  alt: xperia
 ---
 
 iPhoneを持ってるのに、Xperiaを買っちゃいましたw

@@ -9,6 +9,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2009-06-17-iphone-3g-syu-yue-kai-shi-618mu-kara
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: iPhone 3G S予約開始！(6/18(木)から)
 ---
 
 [![http://plusd.itmedia.co.jp/mobile/articles/0906/16/news086.html](http://kwout.com/cutout/s/fx/7r/wdc_bor.jpg "「iPhone 3G S」、6月18日から予約受付開始 - ITmedia +D モバイル")

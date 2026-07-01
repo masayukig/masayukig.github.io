@@ -9,6 +9,9 @@ tags:
 - VPS
 draft: false
 disqus_identifier: 2012-04-03-sakuranovps2gdeunixbench513woshi-xing-shitemita-jie-guo-zhi-duan-sonomamananoni-da-fu-nixing-neng-atsupu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: さくらのVPS(2G)でUnixBench(5.1.3)を実行してみた。結果：値段そのままなのに、大幅に性能アップ！
 ---
 
 はじめに

@@ -10,6 +10,11 @@ tags:
 - Software
 draft: false
 disqus_identifier: 2011-06-10-mac-de-scala-to-lift-woshi-tsutemiru1-insutorubian
+cover:
+  image: http://farm6.static.flickr.com/5261/5815832647_168f6767f5.jpg
+  alt: 'mac de Scala/Lift
+
+    sample'
 ---
 
 Scala と Lift が気になってきたので、インストール。

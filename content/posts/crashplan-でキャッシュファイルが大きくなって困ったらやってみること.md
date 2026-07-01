@@ -10,6 +10,9 @@ tags:
 - Software
 draft: false
 disqus_identifier: 2011-09-16-crashplan-dekiyatsushiyuhuairugada-kikunatsutekun-tsutarayatsutemirukoto
+cover:
+  image: https://lh3.googleusercontent.com/-66No1KwEeS4/TnJwSyVJqxI/AAAAAAAAmXw/2bXBLMW2b5Q/s400/%2525E3%252582%2525B9%2525E3%252582%2525AF%2525E3%252583%2525AA%2525E3%252583%2525BC%2525E3%252583%2525B3%2525E3%252582%2525B7%2525E3%252583%2525A7%2525E3%252583%252583%2525E3%252583%252588%2525202011-09-16%2525206.37.31.png
+  alt: picture
 ---
 
 --------------------------------------

@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-08-07-faviconicowozuo-tsutemimashita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: favicon.icoを作ってみました
 ---
 
 [Landscape -

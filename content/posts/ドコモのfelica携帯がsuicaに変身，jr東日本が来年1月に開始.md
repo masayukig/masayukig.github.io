@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-02-24-dokomonofelicaxi-dai-gasuicanibian-shen-jrdong-ri-ben-galai-nian-1yue-nikai-shi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ドコモのFeliCa携帯がSuicaに変身，JR東日本が来年1月に開始
 ---
 
 <http://itpro.nikkeibp.co.jp/free/NCC/NEWS/20050222/156495/>

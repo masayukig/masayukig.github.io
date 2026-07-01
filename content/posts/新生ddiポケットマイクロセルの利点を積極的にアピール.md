@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-11-28-xin-sheng-ddipoketsuto-maikuroserunoli-dian-woji-ji-de-niapiru
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 新生DDIポケット、マイクロセルの利点を積極的にアピール
 ---
 
 [k-tai.impress.co.jp](http://k-tai.impress.co.jp/cda/article/news_toppage/21574.html)

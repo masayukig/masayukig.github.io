@@ -9,6 +9,9 @@ tags:
 - WOL
 draft: false
 disqus_identifier: 2010-05-27-wake-on-lanwoshi-tsutemita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Wake-on-LANを使ってみた
 ---
 
 「PCが複数台あって、必要な時だけPCを起動したい」という欲求が出てきたので、

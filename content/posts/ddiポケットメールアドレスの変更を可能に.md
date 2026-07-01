@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-09-10-ddipoketsuto-meruadoresunobian-geng-woke-neng-ni
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: DDIポケット、メールアドレスの変更を可能に
 ---
 
 [ITmedia](http://www.itmedia.co.jp/mobile/articles/0409/08/news039.html)

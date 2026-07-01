@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-08-04-tsuinishi-matsutanopczhou-jian-pcwoshi-wazu-zi-domonikurieiteibunaxia-xiu-mi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ついに始まったノーPC週間! PCを使わず、子どもにクリエイティブな夏休み
 ---
 
 [pcweb.mycom.co.jp](http://pcweb.mycom.co.jp/news/2005/08/02/004.html)

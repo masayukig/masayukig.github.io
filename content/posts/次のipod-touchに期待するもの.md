@@ -3,6 +3,9 @@ title: 次のiPod touchに期待するもの
 date: '2012-02-25T21:29:00+09:00'
 slug: 次のipod-touchに期待するもの
 draft: true
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 次のiPod touchに期待するもの
 ---
 
 iPhoneは、諸々の理由により今回は見送りとなる可能性が高いので、

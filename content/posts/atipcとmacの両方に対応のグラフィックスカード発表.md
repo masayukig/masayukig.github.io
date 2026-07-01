@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2005-08-20-ati-pctomacnoliang-fang-nidui-ying-nogurahuitsukusukadofa-biao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: ATI、PCとMacの両方に対応のグラフィックスカード発表
 ---
 
 [www.itmedia.co.jp](http://www.itmedia.co.jp/news/articles/0508/20/news007.html)

@@ -5,6 +5,9 @@ slug: 3歳児にもわかるopenstackコントリビュート企業上位2社
 categories:
 - Uncategorized
 draft: true
+cover:
+  image: https://masayukig.files.wordpress.com/2012/12/533524_562961493718458_871603546_n.jpg?w=300
+  alt: picture
 ---
 
 [![picture](https://masayukig.files.wordpress.com/2012/12/533524_562961493718458_871603546_n.jpg?w=300)

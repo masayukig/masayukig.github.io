@@ -6,6 +6,9 @@ tags:
 - iPhone
 - Mac
 draft: true
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 'ソースコードをiPhoneで読む #mac #iPhone'
 ---
 
 -> % brew install a2ps

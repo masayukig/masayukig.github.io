@@ -7,6 +7,9 @@ tags:
 - VPS
 draft: false
 disqus_identifier: 2010-09-18-vpsbi-jiao-part-2oming-qian-com-vs-sakuravps
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: VPS比較Part-2(お名前.com vs さくらVPS)
 ---
 
 と言うわけで、さっそく準備ができたようなので比較してみたいと思います。

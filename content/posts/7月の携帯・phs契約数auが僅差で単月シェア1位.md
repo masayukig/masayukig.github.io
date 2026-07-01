@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-08-06-7yue-noxi-dai-phsqi-yue-shu-augajin-chai-dedan-yue-shiea1wei
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 7月の携帯・PHS契約数、auが僅差で単月シェア1位
 ---
 
 [k-tai.impress.co.jp](http://k-tai.impress.co.jp/cda/article/news_toppage/25168.html)

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Camera on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/camera/</link>
+    <description>Recent content in Camera on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 29 Mar 2012 20:50:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/camera/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eye-Fi Pro X2を購入しました。で、オススメの購入方法や、Macでの設定方法について</title>
+      <link>http://localhost:1313/posts/2012/03/eye-fi-pro-x2%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%81%A7%E3%82%AA%E3%82%B9%E3%82%B9%E3%83%A1%E3%81%AE%E8%B3%BC%E5%85%A5%E6%96%B9%E6%B3%95%E3%82%84mac%E3%81%A7%E3%81%AE%E8%A8%AD%E5%AE%9A%E6%96%B9%E6%B3%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</link>
+      <pubDate>Thu, 29 Mar 2012 20:50:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/03/eye-fi-pro-x2%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%81%A7%E3%82%AA%E3%82%B9%E3%82%B9%E3%83%A1%E3%81%AE%E8%B3%BC%E5%85%A5%E6%96%B9%E6%B3%95%E3%82%84mac%E3%81%A7%E3%81%AE%E8%A8%AD%E5%AE%9A%E6%96%B9%E6%B3%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.eyefi.co.jp/products/prox2&#34;&gt;Eye-Fi Pro X2&lt;/a&gt; を購入しました。&lt;/p&gt;
+&lt;p&gt;というわけで、購入方法、設定方法について。&lt;/p&gt;
+&lt;h2 id=&#34;オススメ購入方法&#34;&gt;オススメ購入方法&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Evernoteプレミアム会員になっていて今後も使い続ける予定&lt;/strong&gt;、
+　あるいは、
+**GMOとくとくポイントが余っている &lt;strong&gt;ならば、
+　&lt;a href=&#34;http://eyefi.shop-pro.jp/&#34;&gt;Eye-Fi公式オンラインストア&lt;/a&gt;
+がオススメです。
+なぜなら、2012/03/30現在、Eye-Fi公式オンラインストアでは、
+Eye-Fi Mobile X2、または、Pro X2を購入すると、
+**　Evernoteプレミアム会員1年分&lt;/strong&gt;
+が、無料でバンドルされるキャンペーンを実施中だからです。
+(Evernoteプレミアム1年分特典は、2012/4/10 16:00購入分までなので注意)&lt;/p&gt;
+&lt;p&gt;GMOとくとくポイントに関しては、あまり使い所が見つからなくて、
+個人的にちょっと持て余していたところだったので、調度良かっただけです。(^^;&lt;/p&gt;
+&lt;p&gt;どちらにも特に当てはまらない場合は、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://kakaku.com/search_results/Eye-Fi/&#34;&gt;価格.comで最安値を検索&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.yodobashi.com/ec/product/100000001001230441/index.html&#34;&gt;カメラ量販店等&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;で、購入することで良いと思います。&lt;/p&gt;
+&lt;h2 id=&#34;設定方法&#34;&gt;設定方法&lt;/h2&gt;
+&lt;h4 id=&#34;初めてeye-fiを使う場合&#34;&gt;初めてEye-Fiを使う場合&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;http://eyefi.co.jp/support/download/&#34;&gt;http://eyefi.co.jp/support/download/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;より、Eye-Fi Softwareセンターをダウンロードし、インストールする。&lt;/p&gt;
+&lt;p&gt;特に迷うような点はないはず。&lt;/p&gt;
+&lt;h4 id=&#34;以前にeye-fiを使用したことがありeye-fi-softwareセンターをインストール済み&#34;&gt;以前にEye-Fiを使用したことがあり、Eye-Fi Softwareセンターをインストール済み&lt;/h4&gt;
+&lt;p&gt;こちらの場合も簡単でした。
+Eye-FiカードをMacに接続すると、以下のような画面が表示されます。
+(表示されない場合は、Eye-Fi Centerを開きます)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/085aa-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-02-20.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/085aa-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-02-20.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回は、「Eye-Fiファームウェアの更新」が案内されたので、
+それに従い、更新してみます。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/ec6dd-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-04.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/ec6dd-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-04.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/5f989-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-19.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/5f989-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-19.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;更新されるかとおもいきや、失敗しました。。orz&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/d3d95-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-39.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/d3d95-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-39.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ちょっと悪い予感がしましたが、上記に従い、一度Eye-Fiを取り外してから、
+再度、接続しなおしてみます。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/9c7bc-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-17-19.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/9c7bc-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-17-19.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;特に、エラーは出ること無く、使えるようになっていました。&lt;/p&gt;
+&lt;p&gt;後は、以下の画面からネットワークの設定やアップロードの設定を行えば完了です。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/4cc6c-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-08-34.png&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/4cc6c-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-08-34.png?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+&lt;h4 id=&#34;購入方法&#34;&gt;購入方法&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;[Evernoteを今後も使い続ける予定、または、&lt;a href=&#34;http://point.gmo.jp/&#34;&gt;GMOとくとくポイント&lt;/a&gt;が余っている]{.Apple-style-span
+style=&amp;ldquo;font-size:small;font-weight:normal;&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[[　　→　&lt;a href=&#34;http://eyefi.shop-pro.jp/&#34;&gt;Eye-Fiオンラインストア&lt;/a&gt;で購入(ただし、Evernoteプレミアム1年分特典は、2012/4/10
+16:00購入分までなので注意)。GMOとくとくポイントがあるならそれを使用する。]{.Apple-style-span
+style=&amp;ldquo;font-weight:normal;&amp;rdquo;}]{.Apple-style-span
+style=&amp;ldquo;font-size:small;&amp;rdquo;}&lt;/p&gt;
+&lt;h4 id=&#34;設定方法-1&#34;&gt;設定方法&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;[[基本的にはとても簡単。ただし、ちょっと残念な動作になることもあるので、期待はしすぎないほうが良い。]{.Apple-style-span
+style=&amp;ldquo;font-weight:normal;&amp;rdquo;}]{.Apple-style-span
+style=&amp;ldquo;font-size:small;&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[[
+]{.Apple-style-span style=&amp;ldquo;font-weight:normal;&amp;rdquo;}]{.Apple-style-span
+style=&amp;ldquo;font-size:small;&amp;rdquo;}&lt;/p&gt;
+&lt;p&gt;[[
+]{.Apple-style-span style=&amp;ldquo;font-weight:normal;&amp;rdquo;}]{.Apple-style-span
+style=&amp;ldquo;font-size:small;&amp;rdquo;}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NEX-5NDを買った！安い買い方について</title>
+      <link>http://localhost:1313/posts/2012/03/nex-5nd%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%9F%E5%AE%89%E3%81%84%E8%B2%B7%E3%81%84%E6%96%B9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</link>
+      <pubDate>Sun, 25 Mar 2012 21:09:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2012/03/nex-5nd%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%9F%E5%AE%89%E3%81%84%E8%B2%B7%E3%81%84%E6%96%B9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://masayukig.files.wordpress.com/2012/03/c2af8-2012-03-2605-38-33.jpg&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://masayukig.files.wordpress.com/2012/03/c2af8-2012-03-2605-38-33.jpg?w=300&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;という訳で、NEX-5NDを買ったのです。(写真には写ってませんが、もうひとつレンズ(16mm
+F2.8)があります)
+近くのノジマ店舗で67,000円でしたが、実質、50,300円で購入しました。&lt;/p&gt;
+&lt;p&gt;ただし、買い方はちょっと一手間、二手間入ってます。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nojima.co.jp/ir/stockholder.html&#34;&gt;ノジマの株主優待券&lt;/a&gt;を使った(10%オフ)&lt;/li&gt;
+&lt;li&gt;Ario店舗入っている店舗だったので、プレミアムチケット(※)を使い、購入。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;※6,000円分の商品券が5,000円で購入できる、期間・数量限定チケット。今回は60,000円分使用しました。&lt;/p&gt;
+&lt;p&gt;という訳で、実質、50,300円で購入できたことになります。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://kakaku.com/item/K0000281279/&#34;&gt;価格.comの最安値&lt;/a&gt;よりも1万円以上安く、ヨドバシ・ビックでは、&lt;/p&gt;
+&lt;p&gt;70,000円でポイント10%なので、まぁ、お得だったと思っています。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

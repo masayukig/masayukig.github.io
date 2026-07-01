@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-08-03-vine-linux-30ririsu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Vine Linux 3.0リリース！
 ---
 
 [Vine Linux](http://vinelinux.org/)

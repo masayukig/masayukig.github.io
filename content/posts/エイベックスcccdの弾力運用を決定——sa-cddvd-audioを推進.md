@@ -6,6 +6,9 @@ tags:
 - entertainments
 draft: false
 disqus_identifier: 2004-09-18-eibetsukusu-cccdnodan-li-yun-yong-wojue-ding-sa-cd-dvd-audiowotui-jin
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: エイベックス、CCCDの弾力運用を決定——SA-CD、DVD-Audioを推進
 ---
 
 [ITmedia](http://www.itmedia.co.jp/lifestyle/articles/0409/17/news027.html)

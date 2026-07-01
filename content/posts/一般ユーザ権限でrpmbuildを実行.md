@@ -7,6 +7,9 @@ tags:
 - rpmbuild
 draft: false
 disqus_identifier: 2009-03-21-yi-ban-yuzaquan-xian-derpmbuildwoshi-xing
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 一般ユーザ権限でrpmbuildを実行
 ---
 
 $ echo "%_topdir $HOME/src/rpms" > $HOME/.rpmmacros

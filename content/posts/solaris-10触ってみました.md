@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2005-02-19-solaris-10-hong-tsutemimashita
+cover:
+  image: /images/covers/oss.png
+  alt: 「Solaris 10」触ってみました!
 ---
 
 <http://pc.watch.impress.co.jp/docs/2005/0216/nishikawa.htm>

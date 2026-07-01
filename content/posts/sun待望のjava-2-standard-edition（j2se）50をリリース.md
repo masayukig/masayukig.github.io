@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2004-10-04-sun-dai-wang-nojava-2-standard-editionj2se50woririsu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Sun、待望のJava 2 Standard Edition（J2SE）5.0をリリース
 ---
 
 [CNET

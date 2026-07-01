@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-12-20-linux-zaurussl-c3000mai-tsuta
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Linux Zaurus（SL-C3000)買ったー
 ---
 
 とりあえず、無線LANカードは買って来た。

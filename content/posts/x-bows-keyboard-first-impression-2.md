@@ -10,6 +10,9 @@ tags:
 - x-bows
 draft: false
 disqus_identifier: 2018-06-11-x-bows-keyboard-first-impression-2
+cover:
+  image: https://lh3.googleusercontent.com/A68ov2kKQgJmQLoJUeQGsbCulq_bBCfHZpt8kzkY4eQQv5MTsUJ_Txf0Xt8jFr6egW7ygxhHuGknHT3os_lqPlkxwwXAgtYTFPdpGvCAVkniUqhoxGg6temcF6n8f7KLS83UWBvIndA=w2400
+  alt: X-Bows Keyboard
 ---
 
 ![X-Bows Keyboard](https://lh3.googleusercontent.com/A68ov2kKQgJmQLoJUeQGsbCulq_bBCfHZpt8kzkY4eQQv5MTsUJ_Txf0Xt8jFr6egW7ygxhHuGknHT3os_lqPlkxwwXAgtYTFPdpGvCAVkniUqhoxGg6temcF6n8f7KLS83UWBvIndA=w2400)

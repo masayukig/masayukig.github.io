@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-10-04-jia-zu-lian-luo-naraxi-dai-nocmerusong-xin-gawu-liao-nikddiga11yue-kara
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 家族連絡なら携帯のCメール送信が無料に，KDDIが11月から
 ---
 
 [NIKKEI](http://itpro.nikkeibp.co.jp/free/NCC/NEWS/20040924/150347/)

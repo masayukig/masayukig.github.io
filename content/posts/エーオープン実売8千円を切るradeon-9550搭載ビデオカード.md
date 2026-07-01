@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2004-11-06-eopun-shi-mai-8qian-yuan-woqie-ruradeon-9550da-zai-bideokado
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: エーオープン、実売8千円を切るRADEON 9550搭載ビデオカード
 ---
 
 [Impress](http://pc.watch.impress.co.jp/docs/2004/1105/aopen.htm)

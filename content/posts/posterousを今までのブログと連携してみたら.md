@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2011-09-11-posterouswojin-madenoburogutolian-xi-shitemitara
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Posterousを今までのブログと連携してみたら...
 ---
 
 今までのブログ(b.0r2.info)にも投稿されるようになった(みたい)。

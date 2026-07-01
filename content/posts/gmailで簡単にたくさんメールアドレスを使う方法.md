@@ -6,6 +6,9 @@ tags:
 - Gmail
 draft: false
 disqus_identifier: 2005-09-07-gmaildejian-dan-nitakusanmeruadoresuwoshi-ufang-fa
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Gmailで簡単にたくさんメールアドレスを使う方法
 ---
 
 Gmailでは、便利な機能があって、

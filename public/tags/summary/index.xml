@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Summary on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/summary/</link>
+    <description>Recent content in Summary on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 31 May 2018 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/summary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenStack Summit 2018 Vancouver Summary from QA perspective</title>
+      <link>http://localhost:1313/posts/2018/05/openstack-summit-2018-yvr-qa/</link>
+      <pubDate>Thu, 31 May 2018 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2018/05/openstack-summit-2018-yvr-qa/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This is a summary of the OpenStack Summit 2018 Vancouver from the QA
+perspective. I had three subject to attend the summit.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;To participate the OpenStack Upstream Institute&lt;/li&gt;
+&lt;li&gt;To attend the forum sessions (mainly QA related) and have
+conversations with QA people&lt;/li&gt;
+&lt;li&gt;To give talks at the lightning talk and the QA forum session&lt;/li&gt;
+&lt;li&gt;To meet and say hello in person and/or have lunch/dinner/drinks&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;qa-summary&#34;&gt;QA Summary&lt;/h2&gt;
+&lt;p&gt;There were a lot of QA related talks at the summit. I could attend
+some of them.&lt;/p&gt;
+&lt;h3 id=&#34;forum&#34;&gt;Forum&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;QA Tooling&lt;/li&gt;
+&lt;li&gt;On boarding&lt;/li&gt;
+&lt;li&gt;&amp;hellip;?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;others&#34;&gt;Others&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Keynotes&lt;/li&gt;
+&lt;li&gt;openDev&lt;/li&gt;
+&lt;li&gt;any others?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

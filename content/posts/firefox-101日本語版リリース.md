@@ -6,6 +6,9 @@ categories:
 - OSS
 draft: false
 disqus_identifier: 2005-03-14-firefox-101ri-ben-yu-ban-ririsu
+cover:
+  image: /images/covers/oss.png
+  alt: Firefox 1.0.1日本語版リリース
 ---
 
 [Firefox

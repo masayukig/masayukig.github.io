@@ -9,6 +9,9 @@ tags:
 - Xperia
 draft: false
 disqus_identifier: 2010-06-05-sharemyapps-insutorushiteiruandroidapurinoyi-lan-woqu-de-shitemerusong-xin-suruapuri-xperia-android
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 'ShareMyApps: インストールしているAndroidアプリの一覧を取得してメール送信 するアプリ ( #Xperia #Android )'
 ---
 
 たくさんアプリをインストールしたので、

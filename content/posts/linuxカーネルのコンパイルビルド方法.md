@@ -6,6 +6,9 @@ tags:
 - カーネル
 draft: false
 disqus_identifier: 2008-06-20-linuxkanerunokonpairubirudofang-fa
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Linuxカーネルのコンパイル(ビルド)方法
 ---
 
 突然だが、Linuxカーネルのコンパイル方法を書いてみる。

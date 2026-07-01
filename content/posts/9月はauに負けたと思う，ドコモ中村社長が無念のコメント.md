@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-10-04-9yue-haaunifu-ketatosi-u-dokomozhong-cun-she-chang-gawu-nian-nokomento
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「9月はauに負けたと思う」，ドコモ中村社長が無念のコメント
 ---
 
 [NIKKEIBP](http://itpro.nikkeibp.co.jp/free/NCC/NEWS/20040930/150612/)

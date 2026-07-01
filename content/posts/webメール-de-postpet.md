@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-06-23-webmeru-de-postpet
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Webメール de PostPet
 ---
 
 [http://blog.so-net.ne.jp/](http://blog.so-net.ne.jp/postpetwm/)

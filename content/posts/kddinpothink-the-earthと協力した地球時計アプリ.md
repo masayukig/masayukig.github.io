@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-06-04-kddi-npothink-the-earth-toxie-li-shitadi-qiu-shi-ji-apuri
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: KDDI、NPO「Think the Earth」と協力した地球時計アプリ
 ---
 
 [http://k-tai.impress.co.jp/](http://k-tai.impress.co.jp/cda/article/news_toppage/24155.html)

@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-02-16-koretsutezeng-she-yong-dong-zhi-gadvdnashinord-h1-fa-biao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: これって増設用？ 東芝が“DVDなし”の「RD-H1」発表
 ---
 
 <http://www.itmedia.co.jp/lifestyle/articles/0502/16/news040.html>

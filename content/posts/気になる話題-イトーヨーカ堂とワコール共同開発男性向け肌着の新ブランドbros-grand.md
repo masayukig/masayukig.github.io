@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-15-qi-ninaruhua-ti-itoyokatang-towakorugong-tong-kai-fa-nan-xing-xiang-keji-zhao-noxin-burandobros-grand
+cover:
+  image: http://rss.rssad.jp/rss/artimg/RWFTmzjGxpl3/91bfab8ae6255809e95e78f38ecae37d
+  alt: picture
 ---
 
 <http://news.mynavi.jp/news/2012/03/15/141/index.html>

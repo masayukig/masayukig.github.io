@@ -11,6 +11,9 @@ tags:
 - vim
 draft: false
 disqus_identifier: 2011-01-26-ubuntudedehuorutonoedeitawonanokaravimnibian-geng
+cover:
+  image: /images/covers/oss.png
+  alt: Ubuntuでデフォルトのエディタをnanoからvimに変更
 ---
 
 Ubuntuのデフォルトエディタはnanoというやつですが、

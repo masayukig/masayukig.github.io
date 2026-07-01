@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Backup on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/backup/</link>
+    <description>Recent content in Backup on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 16 Sep 2011 06:45:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/backup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CrashPlan でキャッシュファイルが大きくなって困ったらやってみること</title>
+      <link>http://localhost:1313/posts/2011/09/crashplan-%E3%81%A7%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%8C%E5%A4%A7%E3%81%8D%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%A6%E5%9B%B0%E3%81%A3%E3%81%9F%E3%82%89%E3%82%84%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8/</link>
+      <pubDate>Fri, 16 Sep 2011 06:45:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/09/crashplan-%E3%81%A7%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%8C%E5%A4%A7%E3%81%8D%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%A6%E5%9B%B0%E3%81%A3%E3%81%9F%E3%82%89%E3%82%84%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8/</guid>
+      <description>&lt;hr&gt;
+&lt;h2 id=&#34;picture&#34;&gt;&lt;a href=&#34;https://picasaweb.google.com/lh/photo/BrjXoOVmCm1UQS7_Gx3cXA?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh3.googleusercontent.com/-66No1KwEeS4/TnJwSyVJqxI/AAAAAAAAmXw/2bXBLMW2b5Q/s400/%2525E3%252582%2525B9%2525E3%252582%2525AF%2525E3%252583%2525AA%2525E3%252583%2525BC%2525E3%252583%2525B3%2525E3%252582%2525B7%2525E3%252583%2525A7%2525E3%252583%252583%2525E3%252583%252588%2525202011-09-16%2525206.37.31.png&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;現在、&lt;a href=&#34;http://www.crashplan.com/&#34;&gt;CrashPlan&lt;/a&gt;というオンラインバックアップサービスを利用中です。
+サービスとしては、結構快適で&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;バックグラウンドで自動的にバックアップしてくれる&lt;/li&gt;
+&lt;li&gt;台数・容量無制限のプランがある&lt;/li&gt;
+&lt;li&gt;他のコンピュータをバックアップ先に選ぶことができる(らしい)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Linux, Macに対応している&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;履歴を持っており、指定した日にちに戻れる(らしい)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;と、かなり使い勝手はいい感じです。&lt;/p&gt;
+&lt;p&gt;しかしながら、頻繁に更新があるようなディレクトリ、ファイルを指定したりすると、
+やたらとキャッシュファイルが大きくなってしまうことがあるようです。
+(私の場合、10GB近くまで大きくなってしまいました)&lt;/p&gt;
+&lt;p&gt;こうなってしまうと、そのファイル・ディレクトリをバックアップ対象外としても、
+小さくなってくれませんでした。&lt;/p&gt;
+&lt;p&gt;なので、キャッシュファイルを削除してみることにしました。&lt;/p&gt;
+&lt;p&gt;キャッシュファイル削除手順(Linuxの場合)
+&lt;a href=&#34;https://gist.github.com/1220523.js?file=delete_log.log&#34;&gt;https://gist.github.com/1220523.js?file=delete_log.log&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;私の場合はこれで、キャッシュファイルを小さくすることができました。&lt;/p&gt;
+&lt;p&gt;以上をまとめると、&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;頻繁に更新があるようなディレクトリ、ファイルはバックアップ対象から外す&lt;/li&gt;
+&lt;li&gt;キャッシュファイルを削除するには、CrashPlanサービスを停止し、
+ディレクトリ毎削除。CrashPlanサービス起動を行う&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;ということをすれば、なんとか使っていけそうです。&lt;/p&gt;
+&lt;p&gt;公式に認められた手段ではなく、私が勝手に行っていることなので、実行は自己責任でお願いいたします
+:-P&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CrashPlanを使ってみる</title>
+      <link>http://localhost:1313/posts/2011/08/crashplan%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</link>
+      <pubDate>Tue, 09 Aug 2011 05:35:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2011/08/crashplan%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
+      <description>&lt;p&gt;日頃から、PCにデータは出来るだけ持たないようにしているのですが、
+どうしても増加傾向です。&lt;/p&gt;
+&lt;p&gt;どうでも良い様なデータが大半ではありますが、子どもの動画や音楽データ等は、
+無くなってしまうと寂しいので、バックアップを考えます。&lt;/p&gt;
+&lt;p&gt;以前は&lt;a href=&#34;http://tw.0r2.info/?s=safesync&#34;&gt;Safesyncを使っていた&lt;/a&gt;のですが、
+&lt;a href=&#34;http://www.trendmicro.co.jp/support/news.asp?id=1538&amp;amp;cm_sp=Sup-_-SS-_-lineup_top&#34;&gt;残念なことになってしまった&lt;/a&gt;ので、乗り換え先を探していました。&lt;/p&gt;
+&lt;p&gt;コストパフォーマンス的に、&lt;a href=&#34;http://www.crashplan.com/&#34;&gt;CrashPlan&lt;/a&gt;が良いかなと考えています。
+30日間は無料でCrashPlan+の機能が利用できるらしいので試してみたいと思います。&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;今のところ、0.5Mbps程度のバックアップ速度なので、40GBのバックアップに１週間以上かかる計算ですw&lt;/del&gt;
+よく見たら、設定で通信速度を変更可能でした。
+&lt;a href=&#34;https://picasaweb.google.com/lh/photo/WaQQ9d7MYGD0x2AW8OBPWQ?feat=embedwebsite&#34;&gt;&lt;img alt=&#34;picture&#34; loading=&#34;lazy&#34; src=&#34;https://lh5.googleusercontent.com/-1UcmzXXeulA/TkBLJxBRKNI/AAAAAAAAhWU/k-4PLl2o6Jc/s400/%2525E3%252582%2525B9%2525E3%252582%2525AF%2525E3%252583%2525AA%2525E3%252583%2525BC%2525E3%252583%2525B3%2525E3%252582%2525B7%2525E3%252583%2525A7%2525E3%252583%252583%2525E3%252583%252588%2525202011-08-09%2525205.43.08.jpg&#34;&gt;
+&lt;/a&gt;
+上記のように制限無しに変更したら、3.5Mbps程度出ています。これなら1日程度で終わる計算ですね
+:-)&lt;/p&gt;
+&lt;p&gt;対応しているクライアントOSも非常に多く、
+Windows, Mac, Linux, Open Solaris
+と、まず、問題ない品揃え。&lt;/p&gt;
+&lt;p&gt;管理用クライアントアプリも、日本語化されており、使いやすいのではないかと思います。&lt;/p&gt;
+&lt;p&gt;ググってみたところ、以下のサイトが参考になりました。
+&lt;a href=&#34;http://sleepless.jp/archives/1305&#34;&gt;http://sleepless.jp/archives/1305&lt;/a&gt;
+&lt;a href=&#34;http://www.forest.impress.co.jp/article/2009/06/26/crashplan.html&#34;&gt;http://www.forest.impress.co.jp/article/2009/06/26/crashplan.html&lt;/a&gt;
+&lt;a href=&#34;http://pc.mogeringo.com/archives/5595&#34;&gt;http://pc.mogeringo.com/archives/5595&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Flickrで写真バックアップ</title>
+      <link>http://localhost:1313/posts/2008/10/flickr%E3%81%A7%E5%86%99%E7%9C%9F%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</link>
+      <pubDate>Sun, 26 Oct 2008 19:17:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/10/flickr%E3%81%A7%E5%86%99%E7%9C%9F%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/&#34;&gt;Flickr&lt;/a&gt;で写真をバックアップすることにした。&lt;/p&gt;
+&lt;p&gt;Proアカウントにすると、容量無制限となるので、バックアップにはちょうど良いかと。&lt;/p&gt;
+&lt;p&gt;PicasaWebは、容量無制限じゃないんですよね。&lt;/p&gt;
+&lt;p&gt;日本語のサイトとして、「&lt;a href=&#34;http://photozou.jp/&#34;&gt;フォト蔵&lt;/a&gt;」というのが無料であるのですが、&lt;/p&gt;
+&lt;p&gt;Linux環境だと大量の写真をアップロードするのは、若干辛そう。
+APIが公開されているようなので、適当なソフトを作ってアップロードするというのが、
+正しい(?)技術者かも知れないが、ヘタれなのでそんなことはせずに、
+FlickrのProアカウントでしばらく運用してみることにする。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

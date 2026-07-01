@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-12-23-ddipoketsuto-ti-gan-1mbps-nodetatong-xin-sabisuwo2yue-nikai-shi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: DDIポケット、「体感1Mbps」のデータ通信サービスを2月に開始
 ---
 
 [japan.cnet.com](http://japan.cnet.com/news/com/story/0,2000047668,20079801,00.htm)

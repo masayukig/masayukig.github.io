@@ -7,6 +7,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2004-12-19-d-stage-nite-pspchou-xuan-fan-mai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 「D-Stage」にて、PSP抽選販売
 ---
 
 http://www.d-stagegamenet.com/gamenet\_132.htm

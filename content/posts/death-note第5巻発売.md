@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2005-02-08-death-notedi-5juan-fa-mai
+cover:
+  image: http://images-jp.amazon.com/images/P/4088737741.09.TZZZZZZZ.jpg
+  alt: picture
 ---
 
 [

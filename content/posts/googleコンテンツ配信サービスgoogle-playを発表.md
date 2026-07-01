@@ -6,6 +6,9 @@ categories:
 - Uncategorized
 draft: false
 disqus_identifier: 2012-03-07-google-kontentsupei-xin-sabisugoogle-play-wofa-biao
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Google、コンテンツ配信サービス「Google Play」を発表
 ---
 
 <http://it.slashdot.jp/story/12/03/07/0856204/>

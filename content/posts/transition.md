@@ -10,6 +10,9 @@ tags:
 - openstack
 - development
 draft: true
+cover:
+  image: /images/covers/work.jpg
+  alt: Moving to ....?
 ---
 
 ## Transition??

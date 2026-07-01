@@ -8,6 +8,11 @@ tags:
 - UROAD-7000
 draft: false
 disqus_identifier: 2010-07-24-uroad-7000gou-ru-wimaxqi-yue
+cover:
+  image: http://farm5.static.flickr.com/4081/4822168678_28b3a0c594.jpg
+  alt: 'URoad-7000''s
+
+    back'
 ---
 
 [![URoad-7000's

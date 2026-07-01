@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-03-27-cheng-rihuan-etaixi-dai-kiyarianoren-qi-totsupuhaau
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 乗り換えたい携帯キャリアの人気トップはau
 ---
 
 <http://www.itmedia.co.jp/news/articles/0503/25/news074.html>

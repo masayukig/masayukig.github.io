@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-03-03-sony-ericsson-uokumanxi-dai-fa-biao-tadashigsmfang-shi
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: Sony Ericsson、“ウォークマン携帯”発表(ただしＧＳＭ方式)
 ---
 
 <http://internet.watch.impress.co.jp/cda/news/2005/03/02/6672.html>

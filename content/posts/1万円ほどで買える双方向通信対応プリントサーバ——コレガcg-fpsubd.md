@@ -6,6 +6,9 @@ tags:
 - PC
 draft: false
 disqus_identifier: 2005-04-24-1mo-yuan-hododemai-erushuang-fang-xiang-tong-xin-dui-ying-purintosaba-koregacg-fpsubd
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 1万円ほどで買える双方向通信対応プリントサーバ——コレガ「CG-FPSUBD」
 ---
 
 <http://www.itmedia.co.jp/pcupdate/articles/0504/14/news049.html>

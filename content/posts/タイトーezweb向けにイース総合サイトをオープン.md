@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-02-19-taito-ezwebxiang-keniisu-zong-he-saitowoopun
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: タイトー、EZweb向けに「イース」総合サイトをオープン
 ---
 
 <http://k-tai.impress.co.jp/cda/article/news_toppage/22668.html>

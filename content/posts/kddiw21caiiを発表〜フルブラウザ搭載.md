@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-04-09-kddi-w21caii-wofa-biao-huruburauzada-zai
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: KDDI、「W21CAII」を発表〜フルブラウザ搭載
 ---
 
 <http://www.itmedia.co.jp/mobile/articles/0504/08/news043.html>

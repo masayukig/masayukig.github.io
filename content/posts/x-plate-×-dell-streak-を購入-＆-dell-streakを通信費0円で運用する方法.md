@@ -11,6 +11,9 @@ tags:
 - x plate
 draft: false
 disqus_identifier: 2011-08-23-x-plate-x-dell-streak-wogou-ru-dell-streakwotong-xin-fei-0yuan-deyun-yong-surufang-fa
+cover:
+  image: https://lh3.googleusercontent.com/-OADIxzA_oOU/TlKnIAnYWWI/AAAAAAAAmQU/gWwZAoWygs8/s400/NEC_0322.JPG
+  alt: picture
 ---
 
 [![picture](https://lh3.googleusercontent.com/-OADIxzA_oOU/TlKnIAnYWWI/AAAAAAAAmQU/gWwZAoWygs8/s400/NEC_0322.JPG)

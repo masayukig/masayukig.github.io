@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-04-14-sok-phsno10nian-tojin-hou-uirukomuintabiyujin-hou-nophshakuo-da-tocheng-chang-he
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 続・PHSの10年と今後 ウィルコムインタビュー「今後のPHSは拡大と成長へ」
 ---
 
 <http://www.pc-view.net/Telephone/050412/>

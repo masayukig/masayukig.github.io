@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-10-13-au-huruburauzada-zai-duan-mo-nado1x-winnodong-moderu4ji-zhong
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: au、フルブラウザ搭載端末など1X WINの冬モデル4機種
 ---
 
 [Impress](http://k-tai.impress.co.jp/cda/article/news_toppage/20958.html)

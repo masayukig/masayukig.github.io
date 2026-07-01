@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-07-30-kddigatsukagurupuwowan-quan-zi-hui-she-hua
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: KDDIがツーカーグループを完全子会社化
 ---
 
 [MYCOM PC WEB](http://pcweb.mycom.co.jp/news/2004/07/29/001.html)

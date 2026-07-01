@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Xfs on What&#39;s done is done</title>
+    <link>http://localhost:1313/tags/xfs/</link>
+    <description>Recent content in Xfs on What&#39;s done is done</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 15 Dec 2008 04:14:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/xfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux2.6系でxfsでLVM のsnapshotをとりたい場合は、xfs_freeze不要？</title>
+      <link>http://localhost:1313/posts/2008/12/linux26%E7%B3%BB%E3%81%A7xfs%E3%81%A7lvm-%E3%81%AEsnapshot%E3%82%92%E3%81%A8%E3%82%8A%E3%81%9F%E3%81%84%E5%A0%B4%E5%90%88%E3%81%AFxfs_freeze%E4%B8%8D%E8%A6%81/</link>
+      <pubDate>Mon, 15 Dec 2008 04:14:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/12/linux26%E7%B3%BB%E3%81%A7xfs%E3%81%A7lvm-%E3%81%AEsnapshot%E3%82%92%E3%81%A8%E3%82%8A%E3%81%9F%E3%81%84%E5%A0%B4%E5%90%88%E3%81%AFxfs_freeze%E4%B8%8D%E8%A6%81/</guid>
+      <description>&lt;p&gt;xfsではsnapshotをとる場合に、整合性を保つために
+&lt;code&gt;xfs_freeze&lt;/code&gt;
+というコマンドがある。&lt;/p&gt;
+&lt;p&gt;が、これは、Linux2.6系では実行してはいけないらしい。
+(最近の2.6.27とかでも同様かは不明。)&lt;/p&gt;
+&lt;p&gt;情報元：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://ja.wikipedia.org/wiki/XFS#.E3.82.B9.E3.83.8A.E3.83.83.E3.83.97.E3.82.B7.E3.83.A7.E3.83.83.E3.83.88&#34;&gt;http://ja.wikipedia.org/wiki/XFS#.E3.82.B9.E3.83.8A.E3.83.83.E3.83.97.E3.82.B7.E3.83.A7.E3.83.83.E3.83.88&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://labs.unoh.net/2006/09/lvm_xfs_mysql.html&#34;&gt;http://labs.unoh.net/2006/09/lvm_xfs_mysql.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://marc.info/?l=linux-lvm&amp;amp;m=111014382900031&amp;amp;w=2&#34;&gt;http://marc.info/?l=linux-lvm&amp;amp;m=111014382900031&amp;amp;w=2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>LVM xfs使用時の領域拡張方法</title>
+      <link>http://localhost:1313/posts/2008/12/lvm-xfs%E4%BD%BF%E7%94%A8%E6%99%82%E3%81%AE%E9%A0%98%E5%9F%9F%E6%8B%A1%E5%BC%B5%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sun, 14 Dec 2008 08:04:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2008/12/lvm-xfs%E4%BD%BF%E7%94%A8%E6%99%82%E3%81%AE%E9%A0%98%E5%9F%9F%E6%8B%A1%E5%BC%B5%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;p&gt;LVMは動的に領域を拡張できて便利なわけですが、ファイルシステムに、
+xfsを使用している時の、領域拡張法法を記しておきます。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;# lvresize -L +500M /dev/vg01/lv01# xfs_growfs /mnt/lv01-mountpoint&lt;/code&gt;
+xfs_growfsは、マウントポイントをパラメータにとるので注意。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;# xfs_growfs &amp;ndash;help
+xfs_growfs: invalid option &amp;ndash; &amp;lsquo;-&amp;rsquo;
+Usage: xfs_growfs [options] mountpoint&lt;/p&gt;
+&lt;p&gt;Options:
+-d grow data/metadata section
+-l grow log section
+-r grow realtime section
+-n don&amp;rsquo;t change anything, just show geometry
+-I allow inode numbers to exceed 32 significant bits
+-i convert log from external to internal format
+-t alternate location for mount table (/etc/mtab)
+-x convert log from internal to external format
+-D size grow data/metadata section to size blks
+-L size grow/shrink log section to size blks
+-R size grow realtime section to size blks
+-e size set realtime extent size to size blks
+-m imaxpct set inode max percent to imaxpct
+-V print version information&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

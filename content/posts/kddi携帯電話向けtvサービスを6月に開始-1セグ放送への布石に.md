@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2005-05-23-kddi-xi-dai-dian-hua-xiang-ketvsabisuwo6yue-nikai-shi-1segufang-song-henobu-shi-ni
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: KDDI、携帯電話向けTVサービスを6月に開始--1セグ放送への布石に
 ---
 
 <http://japan.cnet.com/news/com/story/0,2000047668,20083752,00.htm>

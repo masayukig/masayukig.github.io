@@ -7,6 +7,9 @@ tags:
 - PSP
 draft: false
 disqus_identifier: 2004-09-30-pspgada-liang-zhan-shi-zao-su-sawatsutekimashita
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: PSPが大量展示、早速さわってきました
 ---
 
 [ITmedia](http://www.itmedia.co.jp/lifestyle/articles/0409/24/news032.html)

@@ -6,6 +6,9 @@ tags:
 - evernote
 draft: false
 disqus_identifier: 2012-03-29-evernotedeyue-jian-atsupurodoliang-garimitsutonida-shitachang-he-nodui-ying-fang-fa-evernote
+cover:
+  image: https://masayukig.files.wordpress.com/2012/03/b7ea3-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-29-10.png?w=300
+  alt: picture
 ---
 
 先日、Evernoteで月間アップロード量がリミットに達してしまい、

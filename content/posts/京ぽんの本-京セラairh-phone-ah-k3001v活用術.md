@@ -6,6 +6,9 @@ tags:
 - PHS-Mobile-Phone
 draft: false
 disqus_identifier: 2004-08-18-jing-ponnoben-jing-seraairh-phone-ah-k3001vhuo-yong-shu
+cover:
+  image: /images/covers/uncategorized.jpg
+  alt: 京ぽんの本 京セラAirH" PHONE AH-K3001V活用術
 ---
 
 [京ぽんの本 京セラAirH" PHONE
