@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>お得 on What's done is done</title><link>https://igawa.io/tags/%E3%81%8A%E5%BE%97/</link><description>Recent content in お得 on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sun, 13 Jul 2008 21:39:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/%E3%81%8A%E5%BE%97/index.xml" rel="self" type="application/rss+xml"/><item><title>Fedora 8から9にバージョンアップした</title><link>https://igawa.io/posts/2008/07/fedora-8%E3%81%8B%E3%82%899%E3%81%AB%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%A2%E3%83%83%E3%83%97%E3%81%97%E3%81%9F/</link><pubDate>Sun, 13 Jul 2008 21:39:00 +0900</pubDate><guid>https://igawa.io/posts/2008/07/fedora-8%E3%81%8B%E3%82%899%E3%81%AB%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%A2%E3%83%83%E3%83%97%E3%81%97%E3%81%9F/</guid><description>&lt;p&gt;自宅ではLinuxを使っていて、
+Fedora 8を使っていたんですが、それを9にバージョンアップしました。&lt;/p&gt;
+&lt;p&gt;バージョンアップ方法は、以下のとおり。
+&lt;code&gt;# rpm -Uhv ftp://ftp.riken.jp/Linux/fedora/releases/9/Fedora/i386/os/Packages/fedora-release-*.noarch.rpm# yum remove thunderbird# yum clean all# yum update rpm\* yum\* gamin# yum -y upgrade# reboot# yum install yum-utils# package-cleanup --cleandupes&lt;/code&gt;
+途中、上記のupdate/upgradeの時に、依存関係のエラーが何個か出たのですが、
+特に問題無さそうな既存パッケージのエラーだったので、既存パッケージを削除した。&lt;/p&gt;
+&lt;p&gt;後は、上記手順で基本的にはOKでしたが、一点、困った問題が発生しました。
+私は、M2NPV-VMというマザーボードを使っていて、オンボードのグラフィック(nvidia)を使用しているのですが、
+新しいカーネル用のnvidiaドライバを入れ忘れて、
+再起動後、画面が崩れた表示となり、まともに映らなくなりました。&lt;/p&gt;
+&lt;p&gt;このままでは、使えないので、ひとまず、古いカーネルで起動し直して、
+画面をまともに表示させて、新しいカーネル用のnvidiaドライバをインストールしてから、
+再度、新しいカーネルで再起動して、事なきを得ました。&lt;/p&gt;
+&lt;p&gt;良かったこと：
+Fedora8ではサスペンドが出来なかったのですが、9にバージョンアップしたら、
+サスペンドが出来るようになりました。
+これで、電気代がちょっとは安くなるかも。。。&lt;/p&gt;
+&lt;p&gt;以下、参考URL：
+&lt;a href="http://fun.poosan.net/sawa/index.php?UID=1211207724"&gt;http://fun.poosan.net/sawa/index.php?UID=1211207724&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

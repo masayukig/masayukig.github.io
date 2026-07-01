@@ -1,0 +1,155 @@
+<!doctype html><html lang=ja dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Linux(Ubuntu)で、Objective-C | What's done is done</title><meta name=keywords content="開発,Linux,Objective-C,Software"><meta name=description content='iPhoneアプリを作るなら、Objective-Cという言語を知っておく必要が
+ありそうなので、とりあえず、LinuxでObjective-Cをやってみる。
+参考にしている書籍は、以下。
+http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=hughundercons-22&amp;o=9&amp;p=8&amp;l=as1&amp;m=amazon&amp;f=ifr&amp;md=1X69VDGQCMF7Z30FM082&amp;asins=4797346809
+私は、とりあえず、図書館で借りました。
+が、図書館に無かったり、近くに図書館が内容な場合は、上記からご購入ください
+:-)
+Apple製品専用言語なのかと思ったが、ググったら、Linuxでも動きそうだったので、
+挑戦してみる。
+以下、その内容。
+まずは、Objective-Cの環境をインストール。
+Linux で Objective C
+を走らせてみた
+の記事を参照して、以下の様にインストール。
+$ sudo aptitude install gobjc
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています
+状態情報を読み取っています... 完了
+拡張状態情報を読み込んでいます
+パッケージの状態を初期化しています... 完了
+拡張状態情報を書き込んでいます... 完了
+以下の新規パッケージがインストールされます:
+  gobjc gobjc-4.3{a} libobjc2{a}
+0 個のパッケージを更新、 3 個を新たにインストール、 0 個を削除予定、1 個が更新されていない。
+3700kB のアーカイブを取得する必要があります。 展開後に 9478kB のディスク領域が新たに消費されます。
+先に進みますか? [Y/n/?] Y
+拡張状態情報を書き込んでいます... 完了
+取得:1 http://jp.archive.ubuntu.com jaunty/main libobjc2 4.3.3-5ubuntu4 [160kB]
+取得:2 http://jp.archive.ubuntu.com jaunty/main gobjc-4.3 4.3.3-5ubuntu4 [3538kB]
+取得:3 http://jp.archive.ubuntu.com jaunty/main gobjc 4:4.3.3-1ubuntu1 [894B]
+3700kB を 2s 秒でダウンロードしました (1552kB/s)
+未選択パッケージ libobjc2 を選択しています。
+(データベースを読み込んでいます ... 現在 250930 個のファイルとディレクトリがインストールされています。)
+(.../libobjc2_4.3.3-5ubuntu4_amd64.deb から) libobjc2 を展開しています...
+未選択パッケージ gobjc-4.3 を選択しています。
+(.../gobjc-4.3_4.3.3-5ubuntu4_amd64.deb から) gobjc-4.3 を展開しています...
+未選択パッケージ gobjc を選択しています。
+(.../gobjc_4%3a4.3.3-1ubuntu1_amd64.deb から) gobjc を展開しています...
+libobjc2 (4.3.3-5ubuntu4) を設定しています ...
+
+gobjc-4.3 (4.3.3-5ubuntu4) を設定しています ...
+gobjc (4:4.3.3-1ubuntu1) を設定しています ...
+libc6 のトリガを処理しています ...
+ldconfig deferred processing now taking place
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています
+状態情報を読み取っています... 完了
+拡張状態情報を読み込んでいます
+パッケージの状態を初期化しています... 完了
+拡張状態情報を書き込んでいます... 完了
+
+で、まずは、お約束Hello Worldからw（インターネットはどれくらい"Hello
+World"であふれているのだろうか..）'><meta name=author content="Masayuki Igawa"><link rel=canonical href=https://igawa.io/posts/2009/08/linuxubuntu%E3%81%A7objective-c/><link crossorigin=anonymous href=/assets/css/stylesheet.987d551cdd092d8da451805d60d63e0d671e3a1a995a5f3e18d5dfd22623e655.css integrity="sha256-mH1VHN0JLY2kUYBdYNY+DWceOhqZWl8+GNXf0iYj5lU=" rel="preload stylesheet" as=style><link rel=icon href=https://igawa.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://igawa.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://igawa.io/favicon-32x32.png><link rel=apple-touch-icon href=https://igawa.io/apple-touch-icon.png><link rel=mask-icon href=https://igawa.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=ja href=https://igawa.io/posts/2009/08/linuxubuntu%E3%81%A7objective-c/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-M8ZXKW4C73"></script><script>var doNotTrack=!1,dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes";if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-M8ZXKW4C73")}</script><meta property="og:url" content="https://igawa.io/posts/2009/08/linuxubuntu%E3%81%A7objective-c/"><meta property="og:site_name" content="What's done is done"><meta property="og:title" content="Linux(Ubuntu)で、Objective-C"><meta property="og:description" content='iPhoneアプリを作るなら、Objective-Cという言語を知っておく必要が ありそうなので、とりあえず、LinuxでObjective-Cをやってみる。 参考にしている書籍は、以下。 http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=hughundercons-22&amp;o=9&amp;p=8&amp;l=as1&amp;m=amazon&amp;f=ifr&amp;md=1X69VDGQCMF7Z30FM082&amp;asins=4797346809 私は、とりあえず、図書館で借りました。 が、図書館に無かったり、近くに図書館が内容な場合は、上記からご購入ください :-)
+Apple製品専用言語なのかと思ったが、ググったら、Linuxでも動きそうだったので、 挑戦してみる。
+以下、その内容。 まずは、Objective-Cの環境をインストール。 Linux で Objective C を走らせてみた の記事を参照して、以下の様にインストール。
+$ sudo aptitude install gobjc パッケージリストを読み込んでいます... 完了 依存関係ツリーを作成しています 状態情報を読み取っています... 完了 拡張状態情報を読み込んでいます パッケージの状態を初期化しています... 完了 拡張状態情報を書き込んでいます... 完了 以下の新規パッケージがインストールされます: gobjc gobjc-4.3{a} libobjc2{a} 0 個のパッケージを更新、 3 個を新たにインストール、 0 個を削除予定、1 個が更新されていない。 3700kB のアーカイブを取得する必要があります。 展開後に 9478kB のディスク領域が新たに消費されます。 先に進みますか? [Y/n/?] Y 拡張状態情報を書き込んでいます... 完了 取得:1 http://jp.archive.ubuntu.com jaunty/main libobjc2 4.3.3-5ubuntu4 [160kB] 取得:2 http://jp.archive.ubuntu.com jaunty/main gobjc-4.3 4.3.3-5ubuntu4 [3538kB] 取得:3 http://jp.archive.ubuntu.com jaunty/main gobjc 4:4.3.3-1ubuntu1 [894B] 3700kB を 2s 秒でダウンロードしました (1552kB/s) 未選択パッケージ libobjc2 を選択しています。 (データベースを読み込んでいます ... 現在 250930 個のファイルとディレクトリがインストールされています。) (.../libobjc2_4.3.3-5ubuntu4_amd64.deb から) libobjc2 を展開しています... 未選択パッケージ gobjc-4.3 を選択しています。 (.../gobjc-4.3_4.3.3-5ubuntu4_amd64.deb から) gobjc-4.3 を展開しています... 未選択パッケージ gobjc を選択しています。 (.../gobjc_4%3a4.3.3-1ubuntu1_amd64.deb から) gobjc を展開しています... libobjc2 (4.3.3-5ubuntu4) を設定しています ... gobjc-4.3 (4.3.3-5ubuntu4) を設定しています ... gobjc (4:4.3.3-1ubuntu1) を設定しています ... libc6 のトリガを処理しています ... ldconfig deferred processing now taking place パッケージリストを読み込んでいます... 完了 依存関係ツリーを作成しています 状態情報を読み取っています... 完了 拡張状態情報を読み込んでいます パッケージの状態を初期化しています... 完了 拡張状態情報を書き込んでいます... 完了 で、まずは、お約束Hello Worldからw（インターネットはどれくらい"Hello World"であふれているのだろうか..）'><meta property="og:locale" content="ja"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2009-08-15T05:54:00+09:00"><meta property="article:modified_time" content="2009-08-15T05:54:00+09:00"><meta property="article:tag" content="開発"><meta property="article:tag" content="Linux"><meta property="article:tag" content="Objective-C"><meta property="article:tag" content="Software"><meta name=twitter:card content="summary"><meta name=twitter:title content="Linux(Ubuntu)で、Objective-C"><meta name=twitter:description content='iPhoneアプリを作るなら、Objective-Cという言語を知っておく必要が ありそうなので、とりあえず、LinuxでObjective-Cをやってみる。 参考にしている書籍は、以下。 http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=hughundercons-22&amp;o=9&amp;p=8&amp;l=as1&amp;m=amazon&amp;f=ifr&amp;md=1X69VDGQCMF7Z30FM082&amp;asins=4797346809 私は、とりあえず、図書館で借りました。 が、図書館に無かったり、近くに図書館が内容な場合は、上記からご購入ください :-)
+Apple製品専用言語なのかと思ったが、ググったら、Linuxでも動きそうだったので、 挑戦してみる。
+以下、その内容。 まずは、Objective-Cの環境をインストール。 Linux で Objective C を走らせてみた の記事を参照して、以下の様にインストール。
+$ sudo aptitude install gobjc パッケージリストを読み込んでいます... 完了 依存関係ツリーを作成しています 状態情報を読み取っています... 完了 拡張状態情報を読み込んでいます パッケージの状態を初期化しています... 完了 拡張状態情報を書き込んでいます... 完了 以下の新規パッケージがインストールされます: gobjc gobjc-4.3{a} libobjc2{a} 0 個のパッケージを更新、 3 個を新たにインストール、 0 個を削除予定、1 個が更新されていない。 3700kB のアーカイブを取得する必要があります。 展開後に 9478kB のディスク領域が新たに消費されます。 先に進みますか? [Y/n/?] Y 拡張状態情報を書き込んでいます... 完了 取得:1 http://jp.archive.ubuntu.com jaunty/main libobjc2 4.3.3-5ubuntu4 [160kB] 取得:2 http://jp.archive.ubuntu.com jaunty/main gobjc-4.3 4.3.3-5ubuntu4 [3538kB] 取得:3 http://jp.archive.ubuntu.com jaunty/main gobjc 4:4.3.3-1ubuntu1 [894B] 3700kB を 2s 秒でダウンロードしました (1552kB/s) 未選択パッケージ libobjc2 を選択しています。 (データベースを読み込んでいます ... 現在 250930 個のファイルとディレクトリがインストールされています。) (.../libobjc2_4.3.3-5ubuntu4_amd64.deb から) libobjc2 を展開しています... 未選択パッケージ gobjc-4.3 を選択しています。 (.../gobjc-4.3_4.3.3-5ubuntu4_amd64.deb から) gobjc-4.3 を展開しています... 未選択パッケージ gobjc を選択しています。 (.../gobjc_4%3a4.3.3-1ubuntu1_amd64.deb から) gobjc を展開しています... libobjc2 (4.3.3-5ubuntu4) を設定しています ... gobjc-4.3 (4.3.3-5ubuntu4) を設定しています ... gobjc (4:4.3.3-1ubuntu1) を設定しています ... libc6 のトリガを処理しています ... ldconfig deferred processing now taking place パッケージリストを読み込んでいます... 完了 依存関係ツリーを作成しています 状態情報を読み取っています... 完了 拡張状態情報を読み込んでいます パッケージの状態を初期化しています... 完了 拡張状態情報を書き込んでいます... 完了 で、まずは、お約束Hello Worldからw（インターネットはどれくらい"Hello World"であふれているのだろうか..）'><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://igawa.io/posts/"},{"@type":"ListItem","position":2,"name":"Linux(Ubuntu)で、Objective-C","item":"https://igawa.io/posts/2009/08/linuxubuntu%E3%81%A7objective-c/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Linux(Ubuntu)で、Objective-C","name":"Linux(Ubuntu)で、Objective-C","description":"iPhoneアプリを作るなら、Objective-Cという言語を知っておく必要が ありそうなので、とりあえず、LinuxでObjective-Cをやってみる。 参考にしている書籍は、以下。 http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank\u0026amp;bc1=000000\u0026amp;IS2=1\u0026amp;bg1=FFFFFF\u0026amp;fc1=000000\u0026amp;lc1=0000FF\u0026amp;t=hughundercons-22\u0026amp;o=9\u0026amp;p=8\u0026amp;l=as1\u0026amp;m=amazon\u0026amp;f=ifr\u0026amp;md=1X69VDGQCMF7Z30FM082\u0026amp;asins=4797346809 私は、とりあえず、図書館で借りました。 が、図書館に無かったり、近くに図書館が内容な場合は、上記からご購入ください :-)\nApple製品専用言語なのかと思ったが、ググったら、Linuxでも動きそうだったので、 挑戦してみる。\n以下、その内容。 まずは、Objective-Cの環境をインストール。 Linux で Objective C を走らせてみた の記事を参照して、以下の様にインストール。\n$ sudo aptitude install gobjc パッケージリストを読み込んでいます... 完了 依存関係ツリーを作成しています 状態情報を読み取っています... 完了 拡張状態情報を読み込んでいます パッケージの状態を初期化しています... 完了 拡張状態情報を書き込んでいます... 完了 以下の新規パッケージがインストールされます: gobjc gobjc-4.3{a} libobjc2{a} 0 個のパッケージを更新、 3 個を新たにインストール、 0 個を削除予定、1 個が更新されていない。 3700kB のアーカイブを取得する必要があります。 展開後に 9478kB のディスク領域が新たに消費されます。 先に進みますか? [Y/n/?] Y 拡張状態情報を書き込んでいます... 完了 取得:1 http://jp.archive.ubuntu.com jaunty/main libobjc2 4.3.3-5ubuntu4 [160kB] 取得:2 http://jp.archive.ubuntu.com jaunty/main gobjc-4.3 4.3.3-5ubuntu4 [3538kB] 取得:3 http://jp.archive.ubuntu.com jaunty/main gobjc 4:4.3.3-1ubuntu1 [894B] 3700kB を 2s 秒でダウンロードしました (1552kB/s) 未選択パッケージ libobjc2 を選択しています。 (データベースを読み込んでいます ... 現在 250930 個のファイルとディレクトリがインストールされています。) (.../libobjc2_4.3.3-5ubuntu4_amd64.deb から) libobjc2 を展開しています... 未選択パッケージ gobjc-4.3 を選択しています。 (.../gobjc-4.3_4.3.3-5ubuntu4_amd64.deb から) gobjc-4.3 を展開しています... 未選択パッケージ gobjc を選択しています。 (.../gobjc_4%3a4.3.3-1ubuntu1_amd64.deb から) gobjc を展開しています... libobjc2 (4.3.3-5ubuntu4) を設定しています ... gobjc-4.3 (4.3.3-5ubuntu4) を設定しています ... gobjc (4:4.3.3-1ubuntu1) を設定しています ... libc6 のトリガを処理しています ... ldconfig deferred processing now taking place パッケージリストを読み込んでいます... 完了 依存関係ツリーを作成しています 状態情報を読み取っています... 完了 拡張状態情報を読み込んでいます パッケージの状態を初期化しています... 完了 拡張状態情報を書き込んでいます... 完了 で、まずは、お約束Hello Worldからw（インターネットはどれくらい\u0026quot;Hello World\u0026quot;であふれているのだろうか..）\n","keywords":["開発","Linux","Objective-C","Software"],"articleBody":"iPhoneアプリを作るなら、Objective-Cという言語を知っておく必要が ありそうなので、とりあえず、LinuxでObjective-Cをやってみる。 参考にしている書籍は、以下。 http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank\u0026bc1=000000\u0026IS2=1\u0026bg1=FFFFFF\u0026fc1=000000\u0026lc1=0000FF\u0026t=hughundercons-22\u0026o=9\u0026p=8\u0026l=as1\u0026m=amazon\u0026f=ifr\u0026md=1X69VDGQCMF7Z30FM082\u0026asins=4797346809 私は、とりあえず、図書館で借りました。 が、図書館に無かったり、近くに図書館が内容な場合は、上記からご購入ください :-)\nApple製品専用言語なのかと思ったが、ググったら、Linuxでも動きそうだったので、 挑戦してみる。\n以下、その内容。 まずは、Objective-Cの環境をインストール。 Linux で Objective C を走らせてみた の記事を参照して、以下の様にインストール。\n$ sudo aptitude install gobjc パッケージリストを読み込んでいます... 完了 依存関係ツリーを作成しています 状態情報を読み取っています... 完了 拡張状態情報を読み込んでいます パッケージの状態を初期化しています... 完了 拡張状態情報を書き込んでいます... 完了 以下の新規パッケージがインストールされます: gobjc gobjc-4.3{a} libobjc2{a} 0 個のパッケージを更新、 3 個を新たにインストール、 0 個を削除予定、1 個が更新されていない。 3700kB のアーカイブを取得する必要があります。 展開後に 9478kB のディスク領域が新たに消費されます。 先に進みますか? [Y/n/?] Y 拡張状態情報を書き込んでいます... 完了 取得:1 http://jp.archive.ubuntu.com jaunty/main libobjc2 4.3.3-5ubuntu4 [160kB] 取得:2 http://jp.archive.ubuntu.com jaunty/main gobjc-4.3 4.3.3-5ubuntu4 [3538kB] 取得:3 http://jp.archive.ubuntu.com jaunty/main gobjc 4:4.3.3-1ubuntu1 [894B] 3700kB を 2s 秒でダウンロードしました (1552kB/s) 未選択パッケージ libobjc2 を選択しています。 (データベースを読み込んでいます ... 現在 250930 個のファイルとディレクトリがインストールされています。) (.../libobjc2_4.3.3-5ubuntu4_amd64.deb から) libobjc2 を展開しています... 未選択パッケージ gobjc-4.3 を選択しています。 (.../gobjc-4.3_4.3.3-5ubuntu4_amd64.deb から) gobjc-4.3 を展開しています... 未選択パッケージ gobjc を選択しています。 (.../gobjc_4%3a4.3.3-1ubuntu1_amd64.deb から) gobjc を展開しています... libobjc2 (4.3.3-5ubuntu4) を設定しています ... gobjc-4.3 (4.3.3-5ubuntu4) を設定しています ... gobjc (4:4.3.3-1ubuntu1) を設定しています ... libc6 のトリガを処理しています ... ldconfig deferred processing now taking place パッケージリストを読み込んでいます... 完了 依存関係ツリーを作成しています 状態情報を読み取っています... 完了 拡張状態情報を読み込んでいます パッケージの状態を初期化しています... 完了 拡張状態情報を書き込んでいます... 完了 で、まずは、お約束Hello Worldからw（インターネットはどれくらい\"Hello World\"であふれているのだろうか..）\ntest1.m というファイル名で以下のソースを記述。\n#import int main() { printf(\"Hello World!\\n\"); return 0; } で、以下のコマンドを実行。\n$ gcc test1.m -lobjc $ ./a.out Hello World! って、これじゃ、普通のC言語と変わらない！w\nというわけで、インターフェース、クラスを使ってみる。\n#import @interface Human : Object { int age; } -setAge :(int) a; -(int) getAge; @end @implementation Human -setAge :(int) a { age = a; return self; } -(int) getAge { return age; } -(void) sayAge { printf(\"I'm %d years old.\\n\", age); } @end int main() { id human = [Human alloc]; [human setAge: 23]; [human sayAge]; return 0; } で、コンパイル＆実行すると、\n$ gcc test1.m -lobjc $ ./a.out I'm 23 years old. インターフェースにないメソッド(メッセージ？)を、実装で追加しても良いらしい。。 というわけで、なんとなく雰囲気をつかんだので、今のところは、まぁ良しとします。\n参考サイト：\nhttp://d.hatena.ne.jp/elm200/20080426/1209211127 http://d.hatena.ne.jp/ntaku/20080802/1217603923 ","wordCount":"233","inLanguage":"ja","datePublished":"2009-08-15T05:54:00+09:00","dateModified":"2009-08-15T05:54:00+09:00","author":{"@type":"Person","name":"Masayuki Igawa"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://igawa.io/posts/2009/08/linuxubuntu%E3%81%A7objective-c/"},"publisher":{"@type":"Organization","name":"What's done is done","logo":{"@type":"ImageObject","url":"https://igawa.io/favicon.ico"}}}</script></head><body id=top><header class=header><nav class=header-nav><div class=logo><a href=https://igawa.io/ accesskey=h title="What's done is done (Alt + H)">What's done is done</a><div class=logo-switches><button id=theme-toggle class=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg class="moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg class="sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu class=menu><li><a href=https://igawa.io/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://igawa.io/categories/ title=Categories><span>Categories</span></a></li><li><a href=https://igawa.io/tags/ title=Tags><span>Tags</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><nav class=breadcrumbs role=navigation aria-label=Breadcrumb><a href=/>ホーム</a>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg>
+<a href=/posts/>Posts</a>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg></nav><h1 class="post-title entry-hint-parent">Linux(Ubuntu)で、Objective-C</h1><div class=post-meta><span title='2009-08-15 05:54:00 +0900 +0900'>2009-08-15</span>&nbsp;·&nbsp;<span>2 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span></div></header><div class="post-content md-content"><p>iPhoneアプリを作るなら、Objective-Cという言語を知っておく必要が
+ありそうなので、とりあえず、LinuxでObjective-Cをやってみる。
+参考にしている書籍は、以下。
+<a href="http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=hughundercons-22&amp;o=9&amp;p=8&amp;l=as1&amp;m=amazon&amp;f=ifr&amp;md=1X69VDGQCMF7Z30FM082&amp;asins=4797346809">http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=hughundercons-22&amp;o=9&amp;p=8&amp;l=as1&amp;m=amazon&amp;f=ifr&amp;md=1X69VDGQCMF7Z30FM082&amp;asins=4797346809</a>
+私は、とりあえず、図書館で借りました。
+が、図書館に無かったり、近くに図書館が内容な場合は、上記からご購入ください
+:-)</p><p>Apple製品専用言語なのかと思ったが、ググったら、Linuxでも動きそうだったので、
+挑戦してみる。</p><p>以下、その内容。
+まずは、Objective-Cの環境をインストール。
+<a href=http://d.hatena.ne.jp/elm200/20080426/1209211127>Linux で Objective C
+を走らせてみた</a>
+の記事を参照して、以下の様にインストール。</p><pre><code>$ sudo aptitude install gobjc
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています
+状態情報を読み取っています... 完了
+拡張状態情報を読み込んでいます
+パッケージの状態を初期化しています... 完了
+拡張状態情報を書き込んでいます... 完了
+以下の新規パッケージがインストールされます:
+  gobjc gobjc-4.3{a} libobjc2{a}
+0 個のパッケージを更新、 3 個を新たにインストール、 0 個を削除予定、1 個が更新されていない。
+3700kB のアーカイブを取得する必要があります。 展開後に 9478kB のディスク領域が新たに消費されます。
+先に進みますか? [Y/n/?] Y
+拡張状態情報を書き込んでいます... 完了
+取得:1 http://jp.archive.ubuntu.com jaunty/main libobjc2 4.3.3-5ubuntu4 [160kB]
+取得:2 http://jp.archive.ubuntu.com jaunty/main gobjc-4.3 4.3.3-5ubuntu4 [3538kB]
+取得:3 http://jp.archive.ubuntu.com jaunty/main gobjc 4:4.3.3-1ubuntu1 [894B]
+3700kB を 2s 秒でダウンロードしました (1552kB/s)
+未選択パッケージ libobjc2 を選択しています。
+(データベースを読み込んでいます ... 現在 250930 個のファイルとディレクトリがインストールされています。)
+(.../libobjc2_4.3.3-5ubuntu4_amd64.deb から) libobjc2 を展開しています...
+未選択パッケージ gobjc-4.3 を選択しています。
+(.../gobjc-4.3_4.3.3-5ubuntu4_amd64.deb から) gobjc-4.3 を展開しています...
+未選択パッケージ gobjc を選択しています。
+(.../gobjc_4%3a4.3.3-1ubuntu1_amd64.deb から) gobjc を展開しています...
+libobjc2 (4.3.3-5ubuntu4) を設定しています ...
+
+gobjc-4.3 (4.3.3-5ubuntu4) を設定しています ...
+gobjc (4:4.3.3-1ubuntu1) を設定しています ...
+libc6 のトリガを処理しています ...
+ldconfig deferred processing now taking place
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています
+状態情報を読み取っています... 完了
+拡張状態情報を読み込んでいます
+パッケージの状態を初期化しています... 完了
+拡張状態情報を書き込んでいます... 完了
+</code></pre><p>で、まずは、お約束Hello Worldからw（インターネットはどれくらい"Hello
+World"であふれているのだろうか..）</p><p>test1.m というファイル名で以下のソースを記述。</p><pre tabindex=0><code>#import
+
+int main() {
+        printf(&#34;Hello World!\n&#34;);
+        return 0;
+}
+</code></pre><p>で、以下のコマンドを実行。</p><pre><code>$ gcc test1.m -lobjc
+$ ./a.out
+Hello World!
+</code></pre><p>って、これじゃ、普通のC言語と変わらない！w</p><p>というわけで、インターフェース、クラスを使ってみる。</p><pre tabindex=0><code>#import
+
+@interface Human : Object
+{
+        int age;
+}
+-setAge :(int) a;
+-(int) getAge;
+@end
+
+@implementation Human
+-setAge :(int) a { age = a; return self; }
+-(int) getAge { return age; }
+-(void) sayAge { printf(&#34;I&#39;m %d years old.\n&#34;, age); }
+@end
+
+int main() {
+        id human = [Human alloc];
+        [human setAge: 23];
+        [human sayAge];
+
+        return 0;
+}
+</code></pre><p>で、コンパイル＆実行すると、</p><pre><code>$ gcc test1.m -lobjc
+$ ./a.out
+I'm 23 years old.
+</code></pre><p>インターフェースにないメソッド(メッセージ？)を、実装で追加しても良いらしい。。
+というわけで、なんとなく雰囲気をつかんだので、今のところは、まぁ良しとします。</p><p>参考サイト：</p><ul><li><a href=http://d.hatena.ne.jp/elm200/20080426/1209211127>http://d.hatena.ne.jp/elm200/20080426/1209211127</a></li><li><a href=http://d.hatena.ne.jp/ntaku/20080802/1217603923>http://d.hatena.ne.jp/ntaku/20080802/1217603923</a></li></ul></div><footer class=post-footer><ul class=post-tags><li><a href=https://igawa.io/tags/%E9%96%8B%E7%99%BA/>開発</a></li><li><a href=https://igawa.io/tags/linux/>Linux</a></li><li><a href=https://igawa.io/tags/objective-c/>Objective-C</a></li><li><a href=https://igawa.io/tags/software/>Software</a></li></ul><nav class=paginav><a class=prev href=https://igawa.io/posts/2009/08/google-syntax-highlighter-for-wordpress-%E3%83%86%E3%82%B9%E3%83%88/><span class=title>« 前へ</span>
+<span>Google Syntax Highlighter for WordPress テスト</span>
+</a><a class=next href=https://igawa.io/posts/2009/08/iphone%E3%81%AE%E3%82%AD%E3%83%BC%E6%93%8D%E4%BD%9C%E3%82%92%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA%E3%81%97%E3%81%9F2%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%83%B3%E3%82%AD%E3%83%BC%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%97%E3%81%AA%E3%81%84%E3%82%88%E3%81%86%E3%81%AB%E3%81%97-%E3%81%9F/><span class=title>次へ »</span>
+<span>iPhoneのキー操作をカスタマイズした2(日本語テンキーを表示しないようにし た)</span></a></nav></footer><div id=disqus_thread></div><script>var disqus_config=function(){this.page.url="https://igawa.io/posts/2009/08/linuxubuntu%E3%81%A7objective-c/",this.page.identifier="2009-08-15-linuxubuntude-objective-c"};(function(){var e=document,t=e.createElement("script");t.src="https://afterstack.disqus.com/embed.js",t.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(t)})()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></article></main><footer class=footer><span>&copy; 2026 <a href=https://igawa.io/>What's done is done</a></span> ·
+<span>Powered by
+<a href="https://gohugo.io/?utm_source=papermod" rel=noopener target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top id=top-link class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey=g><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up"><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var toplink=document.getElementById("top-link");window.onscroll=function(){const e=window.innerHeight;document.body.scrollTop>e||document.documentElement.scrollTop>e?toplink.classList.remove("hidden"):toplink.classList.add("hidden")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="コピー";function s(){t.innerHTML="コピーされました!",setTimeout(()=>{t.innerHTML="コピー"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>

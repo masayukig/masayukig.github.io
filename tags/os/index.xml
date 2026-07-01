@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>OS on What's done is done</title><link>https://igawa.io/tags/os/</link><description>Recent content in OS on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sat, 23 Jul 2011 05:33:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/os/index.xml" rel="self" type="application/rss+xml"/><item><title>Lionで 3rd party なNASではTimeMachineが動かない</title><link>https://igawa.io/posts/2011/07/lion%E3%81%A7-3rd-party-%E3%81%AAnas%E3%81%A7%E3%81%AFtimemachine%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/</link><pubDate>Sat, 23 Jul 2011 05:33:00 +0900</pubDate><guid>https://igawa.io/posts/2011/07/lion%E3%81%A7-3rd-party-%E3%81%AAnas%E3%81%A7%E3%81%AFtimemachine%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/</guid><description>&lt;p&gt;昨日、Lionにアップデートしましたが、以下の様なエラーがでて
+Time Machineでバックアップができなくなりました。
+&lt;a href="https://picasaweb.google.com/lh/photo/4ufmuZEyhHGTyu3bVo7Ysg?feat=embedwebsite"&gt;&lt;img alt="picture" loading="lazy" src="https://lh5.googleusercontent.com/-eNFciYAVxnk/Tjr6xhXwX5I/AAAAAAAAg6M/p3ABUDEbpv8/s288/5964468227_f23fe1aabe_o.png"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ググってみたところ、いくつかの情報が得られました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://slashdot.jp/apple/comments.pl?sid=539273&amp;amp;cid=1989826"&gt;http://slashdot.jp/apple/comments.pl?sid=539273&amp;amp;cid=1989826&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://amiens2009.tumblr.com/post/7886573873/timemachine-apple-nas-lion"&gt;http://amiens2009.tumblr.com/post/7886573873/timemachine-apple-nas-lion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;なお、今回のバックアップ失敗では、以下の様なログが/var/log/syslog.log
+に出力されていました。
+&lt;a href="https://gist.github.com/1100364.js?file=Time-Machine-backup-failed-system.log"&gt;https://gist.github.com/1100364.js?file=Time-Machine-backup-failed-system.log&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Mac OS X Lion インストールしました！</title><link>https://igawa.io/posts/2011/07/mac-os-x-lion-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</link><pubDate>Thu, 21 Jul 2011 05:43:00 +0900</pubDate><guid>https://igawa.io/posts/2011/07/mac-os-x-lion-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</guid><description>&lt;p&gt;というわけで、Mac OS X Lionをインストールしました。&lt;/p&gt;
+&lt;p&gt;今のところ、トラックパッドによるスクロールが、上下逆さまになったことに慣れるのに必死ですw
+(もちろん、設定で変更可能ですが、この方がiPad/iPhoneみたいで、きっと良いんだと思うことにします)&lt;/p&gt;
+&lt;p&gt;システム環境設定の「トラックパッド」のところ
+&lt;a href="https://picasaweb.google.com/lh/photo/FGVjJpyGSCztyBKrzx4zXA?feat=embedwebsite"&gt;&lt;img alt="picture" loading="lazy" src="https://lh6.googleusercontent.com/-f9NaPsKenmo/Tjr6xcCGivI/AAAAAAAAg6M/GW4ygmcTaqw/s288/5958547975_802fe61e7b_o.png"&gt;
+&lt;/a&gt;
+では、
+どのようなジェスチャーが使えるのか？がわかるので、便利です。&lt;/p&gt;</description></item><item><title>Fedora14 on さくらVPS</title><link>https://igawa.io/posts/2011/02/fedora14-on-%E3%81%95%E3%81%8F%E3%82%89vps/</link><pubDate>Sat, 12 Feb 2011 04:44:00 +0900</pubDate><guid>https://igawa.io/posts/2011/02/fedora14-on-%E3%81%95%E3%81%8F%E3%82%89vps/</guid><description>&lt;p&gt;このサイトのサーバは、[さくらのVPS]で動作していますが、今まで、CentOS5だったのを、Fedora14に変更しました。&lt;/p&gt;
+&lt;p&gt;以下、その時につまずいたところなどを、記してみたいと思います。&lt;/p&gt;
+&lt;p&gt;OSのインストール自体は、
+&lt;a href="http://support.sakura.ad.jp/support/vps/menu_oscustom_fedora.shtml"&gt;カスタムOSインストールガイド ： Fedora
+13&lt;/a&gt;に従って行えば、特に困るところは無いと思います。&lt;/p&gt;
+&lt;p&gt;ただし、私の環境だと、
+「[STEP 13] VPSの停止と起動」で、VNCコンソール(QEMUコンソール)の
+ウィンドウが消えてしまうことがあったのですが、その場合には、
+VPSコントロールパネルのリモートコンソール
+&lt;a href="http://www.flickr.com/photos/masayun/5436912432/" title="sakura vps remote console by masayukig, on Flickr"&gt;&lt;img alt="sakura vps remote\nconsole" loading="lazy" src="http://farm6.static.flickr.com/5092/5436912432_e26d889434.jpg"&gt;
+&lt;/a&gt;
+の、「VNCコンソールを開く」をやれば大丈夫だと思います。&lt;/p&gt;
+&lt;p&gt;また、「[STEP 10]
+インストールタイプの選択」では、私は「Webサーバ」を選択しました。
+特に問題はありません。&lt;/p&gt;
+&lt;p&gt;Fedora13がインストールできたら、次は、このブログ記事のタイトル
+「Fedora14」へアップグレードします。(まだ道半ばです(笑))&lt;/p&gt;
+&lt;p&gt;Fedora14のインストールは簡単です。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.tnmt.info/2010/11/06/upgrade-fedora-13-to-14-using-preupgrade/"&gt;Fedora 13 → Fedora 14 へ preupgrade-cli
+でアップグレード&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://journal.mycom.co.jp/articles/2010/11/09/upgrading-fedora-from-13-to-14/index.html"&gt;Fedora
+13から14へアップグレードする方法&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;あたりの記事を参考に、アップグレードします。&lt;/p&gt;
+&lt;p&gt;要は、
+[bash]
+# yum update rpm
+# yum -y update
+# yum clean all
+# reboot
+[/bash]
+てな感じで、ひとまず(Fedora13の)最新版にしておき、&lt;/p&gt;
+&lt;p&gt;preupgradeをインストール。(既にインストールされている場合もあり)
+[bash]
+# yum install preupgrade
+[/bash]&lt;/p&gt;
+&lt;p&gt;preupgrade-cliを実行。
+[bash]
+# LANG=C preupgrade-cli &amp;ldquo;Fedora 14 (Laughlin)&amp;rdquo;
+[/bash]
+LANG=Cで実行しないと、エラーが発生するらしいです。&lt;/p&gt;
+&lt;p&gt;で、これでFedora14になりました。&lt;/p&gt;
+&lt;p&gt;あとは、必要な設定を随時行っていきます。
+ちょっとつまずいたのは、パーマリンクの設定。&lt;/p&gt;
+&lt;p&gt;以下のように、httpd.confのAllowOverride NoneをAllowOverride Allに
+変更してやる必要がありました。
+&lt;a href="http://wpdocs.sourceforge.jp/%E3%83%91%E3%83%BC%E3%83%9E%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#.E3.81.9D.E3.81.AE.E4.BB.96.E3.81.AE.E5.95.8F.E9.A1.8C.E7.82.B9"&gt;パーマリンクの使い方:その他の問題点&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;また、Webサーバとして使うので、GUIでのログインは不要なので、
+/etc/inittabを以下のように変更し、ランレベル３で動作するようにします。
+[text]
+diff &amp;ndash;git a/inittab b/inittab
+index a8ab066..b6a0b26 100644
+&amp;mdash; a/inittab
++++ b/inittab
+@@ -23,4 +23,5 @@
+# 5 - X11
+# 6 - reboot (Do NOT set initdefault to this)
+#
+-id:5:initdefault:
++#id:5:initdefault:
++id:3:initdefault:
+[/text]&lt;/p&gt;</description></item><item><title>Fedora on VMWare Fusion 3 on MacBook Air</title><link>https://igawa.io/posts/2011/02/fedora-on-vmware-fusion-3-on-macbook-air/</link><pubDate>Mon, 07 Feb 2011 05:21:00 +0900</pubDate><guid>https://igawa.io/posts/2011/02/fedora-on-vmware-fusion-3-on-macbook-air/</guid><description>&lt;p&gt;&lt;a href="http://www.flickr.com/photos/masayun/5422904210/" title="Fedora14 on VMware Fusion on MacBook Air by masayukig, on Flickr"&gt;&lt;img alt="Fedora14 on VMware Fusion on MacBook\nAir" loading="lazy" src="http://farm6.static.flickr.com/5297/5422904210_999389cb72_m.jpg"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.0r2.info/blog/2011/02/06/macbook-air%E3%81%ABlinuxfedora%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/"&gt;先日のエントリー&lt;/a&gt;で、MacBook
+AirにFedoraをインストールしたことを書きましたが、
+やはり、Mac OS X上からもLinuxを使いたいので試行錯誤して、
+VMWare Fusion 3上から使うことができました。&lt;/p&gt;
+&lt;p&gt;以下、その方法。&lt;/p&gt;
+&lt;p&gt;まずは、普通に別パーティション(私の場合/dev/disk0s3(Mac表記))へFedora14(x86_64)をインストール。
+なお、swapパーティションは、とりあえず作らない。必要なら後からswapファイルを作ってそれをswapにする。
+(無駄なディスク領域は作りたくないので)
+また、MacのUSキーボードの場合、キーボードは無印の「アメリカ合衆国」を選んだ方がいいようだ。
+「日本語入力するから国際版(International)」かな？と思ってそれを選んだら、
+「~, `, &amp;ldquo;, &amp;lsquo;」
+などのキーがまともに入力できなくなってしまいました。&lt;/p&gt;
+&lt;p&gt;なお、設定は/etc/sysconfig/keyboardの&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;KEYBOARD=&amp;quot;acentos-us&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;となっているところを&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;KEYBOARD=&amp;quot;us&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id="20110208追記"&gt;とすれば、普通のUSキーボードになるようです。
+2011/02/08追記：&lt;/h1&gt;
+&lt;h1 id="どうやらこれではダメだったみたいですもうちょっと解決策を探してみます"&gt;どうやらこれではダメだったみたいです。。もうちょっと解決策を探してみます。&lt;/h1&gt;
+&lt;p&gt;で、肝心の別パーティションのディスクイメージを使用してのLinux起動ですが、
+以下の手順でできました。
+なお、&lt;a href="http://fearandloath.us/vmware-fusion-bootcamp-partition.html"&gt;http://fearandloath.us/vmware-fusion-bootcamp-partition.html&lt;/a&gt;のサイトの情報を
+参考（というかほぼそのまま）にさせてもらいました。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd &amp;quot;/Library/Application Support/VMware Fusion/&amp;quot;
+$ ./vmware-rawdiskCreator print /dev/disk0
+Nr Start Size Type Id Sytem
+-- ---------- ---------- ---- -- ------------------------
+1 1 409639 BIOS EE Unknown
+2 409640 196982744 BIOS AF HFS+
+3 197654528 39321600 BIOS 83 Linux
+(という感じの出力がされるので、インストールするパーティションの「Nr」を確認しておく
+私の場合は「３」)
+$ ./vmware-rawdiskCreator create /dev/disk0 3 /Users/igawa/Documents/Virtual\ Machines.localized/rawfedora_x86_64.vmwarevm/bootcamp_partition ide
+$ vim /Users/igawa/Documents/Virtual\ Machines.localized/rawfedora_x86_64.vmwarevm/rawfedora_x86_64.vmx
+======
+ide0:0.present = &amp;quot;TRUE&amp;quot;
+ide0:0.fileName = &amp;quot;bootcamp_partition.vmdk&amp;quot;
+======
+を適当なところに追加 or 置換する。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;これでOKでした。&lt;/p&gt;</description></item><item><title>make oldconfigで全ての問い合わせ項目にEnterするスクリプト #Linux</title><link>https://igawa.io/posts/2010/06/make-oldconfig%E3%81%A7%E5%85%A8%E3%81%A6%E3%81%AE%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E9%A0%85%E7%9B%AE%E3%81%ABenter%E3%81%99%E3%82%8B%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88-linux/</link><pubDate>Sat, 05 Jun 2010 14:25:00 +0900</pubDate><guid>https://igawa.io/posts/2010/06/make-oldconfig%E3%81%A7%E5%85%A8%E3%81%A6%E3%81%AE%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E9%A0%85%E7%9B%AE%E3%81%ABenter%E3%81%99%E3%82%8B%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88-linux/</guid><description>&lt;p&gt;Linux
+kernelのmakeのターゲットでありそうな気もするんですが、見つからなかったので。&lt;/p&gt;
+&lt;p&gt;$ cat make_oldconfig_auto.sh&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#!/usr/bin/env expect
+set timeout 10
+spawn make oldconfig
+while {1} {
+expect {
+&amp;#34;] (NEW)&amp;#34; { send &amp;#34;\n&amp;#34; }
+&amp;#34;# configuration written to .config&amp;#34; {break}
+}
+}
+interact
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;見てわかるとおり、expectを使って、&amp;quot;]
+(NEW)&amp;ldquo;というのが出てきたら、Enter入力。
+&amp;ldquo;# configuration written to .config&amp;quot;が出てきたらおしまい。&lt;/p&gt;
+&lt;p&gt;というスクリプトです。&lt;/p&gt;</description></item><item><title>Xperia買っちゃったw</title><link>https://igawa.io/posts/2010/04/xperia%E8%B2%B7%E3%81%A3%E3%81%A1%E3%82%83%E3%81%A3%E3%81%9Fw/</link><pubDate>Thu, 29 Apr 2010 22:10:00 +0900</pubDate><guid>https://igawa.io/posts/2010/04/xperia%E8%B2%B7%E3%81%A3%E3%81%A1%E3%82%83%E3%81%A3%E3%81%9Fw/</guid><description>&lt;p&gt;iPhoneを持ってるのに、Xperiaを買っちゃいましたw
+&lt;a href="http://www.flickr.com/photos/masayun/4562523183/" title="xperia by masayukig, on Flickr"&gt;&lt;img alt="xperia" loading="lazy" src="http://www.0r2.info/blog//0r2.info/3035/4562523183_cc0be3d31d.jpg"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;なんか、ケータイ電話とは程遠い気がします。
+普通に、/proc配下のディレクトリにアクセスできたりしますし。&lt;/p&gt;
+&lt;p&gt;/proc/config.gzにもアクセスできたので、とりあえず張り付けてみる。
+&lt;a href="http://www.0r2.info/blog/wp-content/uploads/2010/04/config.gz"&gt;Xperiaの.config&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;で、それ以外の情報ですが、/proc配下から適当に取ってきてみました。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/proc/version:
+Linux version 2.6.29-rel (semc-android@SEMC) (gcc version 4.2.1) #2 PREEMPT Sun Feb 21 11:47:54 JST 2010
+/proc/meminfo:
+MemTotal: 274608 kB
+MemFree: 6048 kB
+Buffers: 116 kB
+Cached: 27148 kB
+SwapCached: 0 kB
+Active: 111936 kB
+Inactive: 125948 kB
+Active(anon): 100964 kB
+Inactive(anon): 111256 kB
+Active(file): 10972 kB
+Inactive(file): 14692 kB
+Unevictable: 1124 kB
+Mlocked: 0 kB
+SwapTotal: 0 kB
+SwapFree: 0 kB
+Dirty: 0 kB
+Writeback: 0 kB
+AnonPages: 211760 kB
+Mapped: 24620 kB
+Slab: 7920 kB
+SReclaimable: 1764 kB
+SUnreclaim: 6156 kB
+PageTables: 11080 kB
+NFS_Unstable: 0 kB
+Bounce: 0 kB
+WritebackTmp: 0 kB
+CommitLimit: 137304 kB
+Committed_AS: 3801756 kB
+VmallocTotal: 1179648 kB
+VmallocUsed: 132756 kB
+VmallocChunk: 939004 kB
+/proc/cpuinfo:
+Processor : ARMv7 Processor rev 2 (v7l)
+BogoMIPS : 383.38
+Features : swp half thumb fastmult vfp edsp neon
+CPU implementer : 0x51
+CPU architecture: 7
+CPU variant : 0x0
+CPU part : 0x00f
+CPU revision : 2
+Hardware : ES209RA
+Revision : 0000
+Serial : 0000000000000000
+/proc/iomem:
+03000000-031fffff : kgsl_phys_memory
+03000000-031fffff : kgsl
+20000000-2dffffff : System RAM
+2002b000-20485fff : Kernel text
+20486000-205bea43 : Kernel data
+30000000-37efffff : System RAM
+37fe0000-37ffffff : ram_console
+a0000000-a001ffff : kgsl_reg_memory
+a0000000-a001ffff : kgsl
+a0300000-a0300fff : msm_sdcc.1
+a0400000-a0400fff : msm_sdcc.2
+a0700000-a0700004 : audio_base_addr
+a0800000-a08003ff : msm_hsusb_periphera
+a0900000-a0900fff : msm_serial_hs.1
+a0a00000-a0a007ff : msm_nand_phys
+a1200000-a1200fff : spi_base
+a1200000-a1200fff : spi_qsd
+a9900000-a9900fff : msm_i2c.0
+a9900000-a9900fff : msm_i2c
+a9a00000-a9a00fff : msm_serial.0
+a9a00000-a9a00fff : msm_serial
+aa200000-aa2effff : mdp
+aa300000-aa300fff : tssc
+aa400000-aa400fff : tvenc
+aa600000-aa600fff : pmdh
+aa700000-aa700fff : emdh
+/proc/mounts:
+rootfs / rootfs rw 0 0
+tmpfs /dev tmpfs rw,mode=755 0 0
+devpts /dev/pts devpts rw,mode=600 0 0
+proc /proc proc rw 0 0
+sysfs /sys sysfs rw 0 0
+tmpfs /sqlite_stmt_journals tmpfs rw,size=4096k 0 0
+/dev/block/mtdblock2 /system yaffs2 ro 0 0
+/dev/block/mtdblock3 /data yaffs2 rw,nosuid,nodev 0 0
+/dev/block/mtdblock1 /cache yaffs2 rw,nosuid,nodev 0 0
+/dev/block/loop0 /cdrom iso9660 ro 0 0
+DxDrmServerIpc /data/DxDrm/fuse fuse.DxDrmServerIpc rw,nosuid,nodev,user_id=0,group_id=0,allow_other 0 0
+/dev/block//vold/179:1 /sdcard vfat rw,dirsync,nosuid,nodev,noexec,uid=1000,gid=1015,fmask=0702,dmask=0702,allow_utime=0020,codepage=cp437,iocharset=iso8859-1,shortname=mixed,utf8 0 0
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>W-ZERO3でAndroidが動く！</title><link>https://igawa.io/posts/2009/06/w-zero3%E3%81%A7android%E3%81%8C%E5%8B%95%E3%81%8F/</link><pubDate>Sun, 21 Jun 2009 06:47:00 +0900</pubDate><guid>https://igawa.io/posts/2009/06/w-zero3%E3%81%A7android%E3%81%8C%E5%8B%95%E3%81%8F/</guid><description>&lt;p&gt;&lt;a href="http://d.hatena.ne.jp/dot_h2o2/"&gt;.h2o2のお気楽日記&lt;/a&gt;で開発されているものですが、
+W-ZERO3(私はWS011SH)で、Androidが動きました！
+&lt;a href="http://www.0r2.info/blog/2009/06/21/w-zero3%e3%81%a7android%e3%81%8c%e5%8b%95%e3%81%8f%ef%bc%81/nec_0041/"&gt;&lt;img alt="android(W-ZERO3-1)" loading="lazy" src="http://www.0r2.info/blog/wp-content/uploads/2009/06/NEC_0041-225x300.jpg" title="android(W-ZERO3-1)"&gt;{.alignnone
+.size-medium .wp-image-795 width=&amp;ldquo;225&amp;rdquo;
+&lt;/a&gt;[caption
+id=&amp;ldquo;attachment_796&amp;rdquo; align=&amp;ldquo;alignnone&amp;rdquo; width=&amp;ldquo;225&amp;rdquo;
+caption=&amp;ldquo;android(W-ZERO3-2)&amp;rdquo;]&lt;a href="http://www.0r2.info/blog/2009/06/21/w-zero3%e3%81%a7android%e3%81%8c%e5%8b%95%e3%81%8f%ef%bc%81/nec_0042/"&gt;&lt;img alt="android(W-ZERO3-2)" loading="lazy" src="http://www.0r2.info/blog/wp-content/uploads/2009/06/NEC_0042-225x300.jpg" title="android(W-ZERO3-2)"&gt;{.size-medium
+.wp-image-796 width=&amp;ldquo;225&amp;rdquo;
+&lt;/a&gt;[/caption]
+毎日、進展があってすごいです!&lt;/p&gt;
+&lt;p&gt;ちゃんと、カーソルキーも使えました。
+動きも、思った以上にサクサクです。
+後は、無線LANと正常な停止が出来れば、結構使えそうです。
+(でも、iPhoneかったら、そっちがメインかも。。:-P)&lt;/p&gt;</description></item><item><title>Fedora11リリース</title><link>https://igawa.io/posts/2009/06/fedora11%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</link><pubDate>Wed, 10 Jun 2009 05:47:00 +0900</pubDate><guid>https://igawa.io/posts/2009/06/fedora11%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</guid><description>&lt;p&gt;先日&lt;a href="http://www.0r2.info/blog/2009/06/08/fedora11%e9%96%93%e3%82%82%e3%81%aa%e3%81%8f%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9/"&gt;Fedora11間もなくリリース&lt;/a&gt;というエントリーを書きましたが、
+無事(ようやく)Fedora11がリリースされました。&lt;/p&gt;
+&lt;p&gt;ただいま、ダウンロード中です。&lt;/p&gt;</description></item><item><title>Fedora11間もなくリリース</title><link>https://igawa.io/posts/2009/06/fedora11%E9%96%93%E3%82%82%E3%81%AA%E3%81%8F%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</link><pubDate>Mon, 08 Jun 2009 22:59:00 +0900</pubDate><guid>https://igawa.io/posts/2009/06/fedora11%E9%96%93%E3%82%82%E3%81%AA%E3%81%8F%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</guid><description>&lt;p&gt;&lt;a href="http://fedoraproject.org/static/js/release-counter-ext.js?lang=ja"&gt;http://fedoraproject.org/static/js/release-counter-ext.js?lang=ja&lt;/a&gt;
+というわけで、Fedora11が何度もリリース延期となったようですが、
+2009-06-09にリリース予定です。&lt;/p&gt;
+&lt;p&gt;個人的には、Btrfsに期待。&lt;/p&gt;</description></item><item><title>Mac OS X向けのiSCSI イニシエーター(無料)</title><link>https://igawa.io/posts/2008/12/mac-os-x%E5%90%91%E3%81%91%E3%81%AEiscsi-%E3%82%A4%E3%83%8B%E3%82%B7%E3%82%A8%E3%83%BC%E3%82%BF%E3%83%BC%E7%84%A1%E6%96%99/</link><pubDate>Mon, 15 Dec 2008 04:52:00 +0900</pubDate><guid>https://igawa.io/posts/2008/12/mac-os-x%E5%90%91%E3%81%91%E3%81%AEiscsi-%E3%82%A4%E3%83%8B%E3%82%B7%E3%82%A8%E3%83%BC%E3%82%BF%E3%83%BC%E7%84%A1%E6%96%99/</guid><description>&lt;p&gt;Mac OS X向けのiSCSI イニシエーターです。
+&lt;a href="http://www.studionetworksolutions.com/products/product_detail.php?pi=11"&gt;Studio Network Solutions - Download iSCSI Initiator for Mac OS
+X&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;適当な(Linuxとかの)サーバでiSCSIターゲット作っておけば、
+Leopardなら、iSCSIで、Time Machineが使えるようになるので、
+Time Capsuleは買わなくても良いらしい。&lt;/p&gt;
+&lt;p&gt;でも、うちはまだTigerなので、将来のためのメモw&lt;/p&gt;</description></item></channel></rss>

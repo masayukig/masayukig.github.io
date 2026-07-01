@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>変なモノ on What's done is done</title><link>https://igawa.io/tags/%E5%A4%89%E3%81%AA%E3%83%A2%E3%83%8E/</link><description>Recent content in 変なモノ on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sat, 19 Dec 2009 08:21:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/%E5%A4%89%E3%81%AA%E3%83%A2%E3%83%8E/index.xml" rel="self" type="application/rss+xml"/><item><title>「いいのね」</title><link>https://igawa.io/posts/2009/12/%E3%81%84%E3%81%84%E3%81%AE%E3%81%AD/</link><pubDate>Sat, 19 Dec 2009 08:21:00 +0900</pubDate><guid>https://igawa.io/posts/2009/12/%E3%81%84%E3%81%84%E3%81%AE%E3%81%AD/</guid><description>&lt;p&gt;Microsoftのボリュームライセンスについて調べていたら、おかしなPDFを見つけた。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://download.microsoft.com/download/7/B/0/7B06D41B-7CFD-4E76-B000-A28786113BA0/spla_mvls_user_guide.pdf"&gt;http://download.microsoft.com/download/7/B/0/7B06D41B-7CFD-4E76-B000-A28786113BA0/spla_mvls_user_guide.pdf&lt;/a&gt;
+&lt;a href="http://74.125.153.132/search?q=cache:VHOYIiWtKhUJ:download.microsoft.com/download/7/B/0/7B06D41B-7CFD-4E76-B000-A28786113BA0/spla_mvls_user_guide.pdf+VLSC+%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%A8%A9%E9%99%90&amp;amp;cd=2&amp;amp;hl=ja&amp;amp;ct=clnk"&gt;Googleキャッシュ&lt;/a&gt;
+&lt;a href="http://www.google.com/search?hl=ja&amp;amp;rls=com.microsoft%3Aja%3AIE-ContextMenu&amp;amp;rlz=1I7GGLL_ja&amp;amp;q=VLSC+%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%A8%A9%E9%99%90&amp;amp;lr=&amp;amp;aq=f&amp;amp;oq="&gt;Google検索結果&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;なんだろう、この「いいのね」という文字は。。Googleの問題ではなく、PDFファイル自体に埋め込まれているようです。
+Adobe Reader等で検索すると、
+１ページ目に見つかります。（が、文字列自体は表示されてません。）
+選択された文字列をコピーして、適当にどこかに貼付けをすると、
+「いいのね」という文字列を確認できました。&lt;/p&gt;
+&lt;p&gt;この文書ファイルを作るときに、１ページ目の画像ファイルを貼り付ける前に、
+女性（もしくはオカマ）が、入力した確認の文章を消さずにPDF化してしまったのでしょうか。&lt;/p&gt;
+&lt;p&gt;まぁ、こんなことにならない様、気を付けましょう。&lt;/p&gt;</description></item></channel></rss>

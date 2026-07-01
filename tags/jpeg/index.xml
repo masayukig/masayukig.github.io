@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Jpeg on What's done is done</title><link>https://igawa.io/tags/jpeg/</link><description>Recent content in Jpeg on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Tue, 13 Jan 2009 12:11:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/jpeg/index.xml" rel="self" type="application/rss+xml"/><item><title>jpeg画像の撮影日時を修正する方法</title><link>https://igawa.io/posts/2009/01/jpeg%E7%94%BB%E5%83%8F%E3%81%AE%E6%92%AE%E5%BD%B1%E6%97%A5%E6%99%82%E3%82%92%E4%BF%AE%E6%AD%A3%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 13 Jan 2009 12:11:00 +0900</pubDate><guid>https://igawa.io/posts/2009/01/jpeg%E7%94%BB%E5%83%8F%E3%81%AE%E6%92%AE%E5%BD%B1%E6%97%A5%E6%99%82%E3%82%92%E4%BF%AE%E6%AD%A3%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid><description>&lt;p&gt;いろいろな理由で、jpeg画像の撮影日時を修正したくなることがあると思います。
+その場合には、以下の方法により修正できます。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;jheadコマンドをインストール。&lt;/li&gt;
+&lt;li&gt;jheadコマンドを実行&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

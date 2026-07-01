@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Dm on What's done is done</title><link>https://igawa.io/tags/dm/</link><description>Recent content in Dm on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Fri, 20 Mar 2009 09:13:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/dm/index.xml" rel="self" type="application/rss+xml"/><item><title>lvremove出来ない！(Can't remove open logical volume "hogehoge")</title><link>https://igawa.io/posts/2009/03/lvremove%E5%87%BA%E6%9D%A5%E3%81%AA%E3%81%84cant-remove-open-logical-volume-hogehoge/</link><pubDate>Fri, 20 Mar 2009 09:13:00 +0900</pubDate><guid>https://igawa.io/posts/2009/03/lvremove%E5%87%BA%E6%9D%A5%E3%81%AA%E3%81%84cant-remove-open-logical-volume-hogehoge/</guid><description>&lt;p&gt;lvmを使っていて、必要なくなったlvを削除するためのコマンドである、
+lvremove
+というのがあります。
+先日、iscsiテスト用に作ったlvを、これを使って削除しようとしたら、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo lvremove /dev/vg01/iscsi
+Can't remove open logical volume &amp;quot;iscsi&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;と、言われて削除できなかったので、その解決方法など。
+結論を言うと、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo dmsetup ls
+vg01-iscsip3 (254, 4)
+vg01-iscsip1 (254, 3)
+vg01-iscsi (254, 0)
+$ sudo dmsetup remove vg01-iscsip1
+$ sudo dmsetup remove vg01-iscsip3
+$ sudo dmsetup remove vg01-iscsi
+$ sudo lvremove /dev/vg01/iscsi
+Logical volume &amp;quot;iscsi&amp;quot; successfully removed
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;と、すれば良い模様。
+最初、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo dmsetup remove vg01-iscsi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;をやったのですが、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;device-mapper: remove ioctl failed: Device or resource busy
+Command failed
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;と、言われて削除できませんでした。&lt;/p&gt;
+&lt;p&gt;vg01-iscsip1,3というのが(多分)勝手に作られていて、
+それがあったために、vg01-iscsiを削除できなかったのではないかと思っています。&lt;/p&gt;
+&lt;p&gt;#記憶は若干あやふやなので、参考程度に。。&lt;/p&gt;</description></item></channel></rss>

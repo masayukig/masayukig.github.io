@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>C++ on What's done is done</title><link>https://igawa.io/tags/c++/</link><description>Recent content in C++ on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sun, 08 Aug 2010 07:31:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>CソースとC++ソース共存実験(その1)</title><link>https://igawa.io/posts/2010/08/c%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%A8c-%E3%82%BD%E3%83%BC%E3%82%B9%E5%85%B1%E5%AD%98%E5%AE%9F%E9%A8%93%E3%81%9D%E3%81%AE1/</link><pubDate>Sun, 08 Aug 2010 07:31:00 +0900</pubDate><guid>https://igawa.io/posts/2010/08/c%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%A8c-%E3%82%BD%E3%83%BC%E3%82%B9%E5%85%B1%E5%AD%98%E5%AE%9F%E9%A8%93%E3%81%9D%E3%81%AE1/</guid><description>&lt;p&gt;CソースとC++ソースの共存を実験してみた。
+とは言っても、printf()とcout&amp;lt;&amp;lt; を同時に使ってみただけ。&lt;/p&gt;
+&lt;p&gt;同時に使えるんですね。まずは、第一歩。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ cat c_cpp_test.cpp #include #include using namespace std;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;int main()
+{
+printf(&amp;ldquo;Hello, world\n&amp;rdquo;);
+cout &amp;lt;&amp;lt; &amp;ldquo;Hello, world2\n&amp;rdquo;;&lt;/p&gt;
+&lt;p&gt;return 0;
+}
+$ g++ c_cpp_test.cpp
+$ ./a.out
+Hello, world
+Hello, world2
+$&lt;/p&gt;
+&lt;p&gt;続きがあるのか？は未定w&lt;/p&gt;</description></item><item><title>SQLiteでprepared statementとBLOBを使って構造体を保存(C言語)その1 #sqlite</title><link>https://igawa.io/posts/2010/06/sqlite%E3%81%A7prepared-statement%E3%81%A8blob%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E6%A7%8B%E9%80%A0%E4%BD%93%E3%82%92%E4%BF%9D%E5%AD%98c%E8%A8%80%E8%AA%9E%E3%81%9D%E3%81%AE1-sqlite/</link><pubDate>Sat, 19 Jun 2010 08:28:00 +0900</pubDate><guid>https://igawa.io/posts/2010/06/sqlite%E3%81%A7prepared-statement%E3%81%A8blob%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E6%A7%8B%E9%80%A0%E4%BD%93%E3%82%92%E4%BF%9D%E5%AD%98c%E8%A8%80%E8%AA%9E%E3%81%9D%E3%81%AE1-sqlite/</guid><description>&lt;p&gt;SQLiteのC言語APIを使ってprepared statementで、BLOBを使ってみます。&lt;/p&gt;
+&lt;p&gt;基本的には、以下のサイトに書いてある方法ですが、日本語で書いてみることにします。
+&lt;a href="http://www.sqlite.org/capi3ref.html#sqlite3_stmt"&gt;http://www.sqlite.org/capi3ref.html#sqlite3_stmt&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;sqlite3_prepare_v2()(あるいはそれに類するもの)を使って、sqlite3_stmtのオブジェクトを作る。&lt;/li&gt;
+&lt;li&gt;sqlite3_bind_*() インターフェースを使ってパラメータに値をBind。&lt;/li&gt;
+&lt;li&gt;sqlite3_step()を使ってSQL実行。(sqlite3_step()は何回でも実行できる)&lt;/li&gt;
+&lt;li&gt;sqlite3_reset()を使ってstatementをリセットして、step
+2に戻る。これは何度でもできるし、やらなくても良い。&lt;/li&gt;
+&lt;li&gt;sqlite3_finalize()を使ってオブジェクトを破棄する。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;というわけで、いきなりサンプルコードw
+便利だなーと思ったのは、sqlite3_errmsg()関数。dbを引数にすると、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ gcc -o sqlite_test sqlite_test.c -lsqlite3
+$ chmod 000 test.db
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;と、DBファイルを読み書き出来ないようにして、実行すると、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ./sqlite_test
+open error:14, unable to open database file
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;と、何でエラーになったのかが表示されます。&lt;/p&gt;
+&lt;p&gt;さらに、このDBファイルをsqlite3コマンドで見たときの話は次回のエントリに書きたいと思います。&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#include
+#include
+#include
+#include
+struct human {
+char name[256];
+int age;
+int height;
+int sex;
+};
+int main(int argc, char *argv[])
+{
+struct human human[5] = {
+{ &amp;#34;Isono Katsuo&amp;#34;, 32, 168, 0 },
+{ &amp;#34;Isono Wakame&amp;#34;, 29, 158, 1 },
+{ &amp;#34;Huguta Tarao&amp;#34;, 20, 180, 0 },
+{ &amp;#34;Huguta Masuo&amp;#34;, 52, 178, 0 },
+{ &amp;#34;Huguta Sazae&amp;#34;, 48, 161, 1 } };
+sqlite3 *db;
+sqlite3_stmt *dropStmt = NULL;
+sqlite3_stmt *createStmt = NULL;
+sqlite3_stmt *selectStmt = NULL;
+sqlite3_stmt *insertStmt = NULL;
+char *drop_tbl_sql = &amp;#34;drop table member&amp;#34;;
+char *create_tbl_sql = &amp;#34;create table member&amp;#34;
+&amp;#34;(id INTEGER PRIMARY KEY,&amp;#34;
+&amp;#34;human BLOB NOT NULL )&amp;#34;;
+char *insert_tbl_sql = &amp;#34;INSERT INTO member (id, human) values (?, ?)&amp;#34;;
+char *select_tbl_sql = &amp;#34;select human from member where id = ?&amp;#34;;
+char *pzTail;
+int rc = 0;
+int exitcode = 0;
+rc = sqlite3_open(&amp;#34;test.db&amp;#34;, &amp;amp;db);
+//rc = sqlite3_open(&amp;#34;:memory:&amp;#34;, &amp;amp;db);
+if (rc != SQLITE_OK) {
+printf(&amp;#34;open error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+exitcode = 1;
+goto end;
+}
+/* cleanup. ignore error. */
+sqlite3_prepare_v2(db, drop_tbl_sql, -1, &amp;amp;dropStmt, NULL);
+sqlite3_step(dropStmt);
+rc = sqlite3_prepare_v2(db, create_tbl_sql, -1, &amp;amp;createStmt, NULL);
+if (rc != SQLITE_OK) {
+printf(&amp;#34;create error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+exitcode = 1;
+goto end;
+}
+rc = sqlite3_step(createStmt);
+if (rc != SQLITE_DONE) {
+printf(&amp;#34;create error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+exitcode = 1;
+goto end;
+}
+rc = sqlite3_prepare_v2(db, insert_tbl_sql, -1, &amp;amp;insertStmt, NULL);
+if (rc != SQLITE_OK) {
+printf(&amp;#34;insert error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+exitcode = 1;
+goto end;
+}
+rc = sqlite3_prepare_v2(db, select_tbl_sql, -1, &amp;amp;selectStmt, NULL);
+if (rc != SQLITE_OK) {
+printf(&amp;#34;select error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+exitcode = 1;
+goto end;
+}
+int i = 0;
+for (i = 0; i &amp;lt; 5; i++) {
+sqlite3_reset(insertStmt);
+sqlite3_bind_int(insertStmt, 1, i);
+sqlite3_bind_blob(insertStmt, 2, &amp;amp;human[i], sizeof(struct human), SQLITE_STATIC);
+rc = sqlite3_step(insertStmt);
+if (rc != SQLITE_DONE) {
+printf(&amp;#34;insert error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+exitcode = 1;
+goto end;
+}
+}
+printf(&amp;#34;-------------------------------------\n&amp;#34;);
+for (i = 0; i &amp;lt; 5; i++) {
+sqlite3_reset(selectStmt);
+sqlite3_bind_int(selectStmt, 1, i);
+rc = sqlite3_step(selectStmt);
+//printf(&amp;#34;select result:%d\n&amp;#34;, rc);
+if (rc == SQLITE_ROW) {
+struct human *t = (struct human*)sqlite3_column_blob(selectStmt, 0);
+printf(&amp;#34;ID: %d\n\t name: %s\n\t age: %d\n\t height: %d\n\t sex: %s\n&amp;#34;,
+i, t-&amp;gt;name, t-&amp;gt;age, t-&amp;gt;height, t-&amp;gt;sex == 0 ? &amp;#34;M&amp;#34; : &amp;#34;F&amp;#34;);
+printf(&amp;#34;-------------------------------------\n&amp;#34;);
+}
+}
+end:
+sqlite3_finalize(selectStmt);
+sqlite3_finalize(insertStmt);
+sqlite3_finalize(createStmt);
+sqlite3_finalize(dropStmt);
+return exitcode;
+}
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>C/C++でGC</title><link>https://igawa.io/posts/2008/07/cc-%E3%81%A7gc/</link><pubDate>Mon, 07 Jul 2008 23:55:00 +0900</pubDate><guid>https://igawa.io/posts/2008/07/cc-%E3%81%A7gc/</guid><description>&lt;p&gt;Java野郎(私)が、C/C++でメンドイものの一つに、&lt;/p&gt;
+&lt;p&gt;**「malloc()したらfree()しなきゃならん」**というものがある。&lt;/p&gt;
+&lt;p&gt;大体、誰も参照しなくなったら、もはや、誰も触れないんだから、勝手に開放してほしいのだ。&lt;/p&gt;
+&lt;h6 id="でもそれをc言語自体に望むのは無理だって言うのもわかってる"&gt;でも、それをC言語自体に望むのは無理だって言うのもわかってる。&lt;/h6&gt;
+&lt;p&gt;どうにかなんないの？と思っていたら、C/C++でGCするためのライブラリがあるということを知りました。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.hpl.hp.com/personal/Hans_Boehm/gc/"&gt;http://www.hpl.hp.com/personal/Hans_Boehm/gc/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;自分(個人)でプログラム書くときは、これ使います。多分。&lt;/p&gt;
+&lt;p&gt;(いちいち、malloc()/free()なんてしてられっか)&lt;/p&gt;</description></item><item><title>独習C++ 改訂版日記 P.52 練習問題2.2 2.〜</title><link>https://igawa.io/posts/2008/07/%E7%8B%AC%E7%BF%92c-%E6%94%B9%E8%A8%82%E7%89%88%E6%97%A5%E8%A8%98-p52-%E7%B7%B4%E7%BF%92%E5%95%8F%E9%A1%8C22-2/</link><pubDate>Fri, 04 Jul 2008 00:15:00 +0900</pubDate><guid>https://igawa.io/posts/2008/07/%E7%8B%AC%E7%BF%92c-%E6%94%B9%E8%A8%82%E7%89%88%E6%97%A5%E8%A8%98-p52-%E7%B7%B4%E7%BF%92%E5%95%8F%E9%A1%8C22-2/</guid><description>&lt;p&gt;2.(こんなコードで良いのか？)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include
+#include
+using namespace std;
+class t_and_d {
+time_t now_time;
+public:
+t_and_d(time_t _now_time);
+void disp();
+};
+t_and_d::t_and_d(time_t _now_time)
+{
+now_time = _now_time;
+}
+void t_and_d::disp()
+{
+struct tm *tm = localtime(&amp;amp;now_time);
+char *time_str = asctime(tm);
+printf(&amp;quot;%s\n&amp;quot;, time_str);
+}
+int main()
+{
+time_t n = time(NULL);
+t_and_d td(n);
+td.disp();
+return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;3.(こんなコードで良いのか？)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include
+using namespace std;
+class box {
+double height;
+double width;
+double breadth;
+public:
+box(double _height,
+double _width,
+double _breadth);
+void vol();
+};
+box::box(double _height, double _width, double _breadth)
+{
+height = _height;
+width = _width;
+breadth = _breadth;
+}
+void box::vol()
+{
+printf(&amp;quot;vol:%f\n&amp;quot;, height * width * breadth);
+}
+int main()
+{
+box b(10.0, 20.0, 30.0);
+b.vol();
+return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>独習C++ 改訂版日記2</title><link>https://igawa.io/posts/2008/07/%E7%8B%AC%E7%BF%92c-%E6%94%B9%E8%A8%82%E7%89%88%E6%97%A5%E8%A8%982/</link><pubDate>Wed, 02 Jul 2008 01:36:00 +0900</pubDate><guid>https://igawa.io/posts/2008/07/%E7%8B%AC%E7%BF%92c-%E6%94%B9%E8%A8%82%E7%89%88%E6%97%A5%E8%A8%982/</guid><description>&lt;p&gt;というわけで、P.52 練習問題2.2
+1.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include
+using namespace std;
+class stack {
+char *stck;
+int tos;
+char who;
+int size;
+public:
+stack(char c, int _size);
+void push(char ch);
+char pop();
+};
+stack::stack(char c, int _size)
+{
+size = _size;
+stck = (char *)malloc(size);
+tos = 0;
+who = c;
+cout &amp;lt;&amp;lt; &amp;quot;Constructing stack &amp;quot; &amp;lt;&amp;lt; who &amp;lt;&amp;lt; &amp;quot;\n&amp;quot;;
+}
+void stack::push(char ch)
+{
+if (tos == size) {
+cout &amp;lt;&amp;lt; &amp;quot;Stack &amp;quot; &amp;lt;&amp;lt; who &amp;lt;&amp;lt; &amp;quot; is full\n&amp;quot;;
+return;
+}
+stck[tos] = ch;
+tos++;
+}
+char stack::pop()
+{
+if (tos == 0) {
+cout &amp;lt;&amp;lt; &amp;quot;Stack &amp;quot; &amp;lt;&amp;lt; who &amp;lt;&amp;lt; &amp;quot; is empty\n&amp;quot;;
+return 0;
+}
+tos--;
+return stck[tos];
+}
+int main()
+{
+int i;
+int size1, size2;
+cout &amp;lt;&amp;lt; &amp;quot;Enter two sizes: &amp;quot;;
+cin &amp;gt;&amp;gt; size1 &amp;gt;&amp;gt; size2;
+stack s1('A', size1), s2('B', size2);
+s1.push('a');
+s2.push('x');
+s1.push('b');
+s2.push('y');
+s1.push('c');
+s2.push('z');
+for (i = 0; i &amp;lt; 5; i++) {
+cout &amp;lt;&amp;lt; &amp;quot;Pop s1: &amp;quot; &amp;lt;&amp;lt; s1.pop() &amp;lt;&amp;lt; &amp;quot;\n&amp;quot;;
+}
+for (i = 0; i &amp;lt; 5; i++) {
+cout &amp;lt;&amp;lt; &amp;quot;Pop s2: &amp;quot; &amp;lt;&amp;lt; s2.pop() &amp;lt;&amp;lt; &amp;quot;\n&amp;quot;;
+}
+return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>独習C++ 改訂版日記</title><link>https://igawa.io/posts/2008/06/%E7%8B%AC%E7%BF%92c-%E6%94%B9%E8%A8%82%E7%89%88%E6%97%A5%E8%A8%98/</link><pubDate>Sun, 29 Jun 2008 23:07:00 +0900</pubDate><guid>https://igawa.io/posts/2008/06/%E7%8B%AC%E7%BF%92c-%E6%94%B9%E8%A8%82%E7%89%88%E6%97%A5%E8%A8%98/</guid><description>&lt;p&gt;「&lt;a href="http://www.amazon.co.jp/gp/redirect.html?ie=UTF8&amp;amp;location=http%3A%2F%2Fwww.amazon.co.jp%2F%25E7%258B%25AC%25E7%25BF%2592C-%25E3%2583%258F%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2583%2588%25E3%2583%25BB%25E3%2582%25B7%25E3%2583%25AB%25E3%2583%2588%2Fdp%2F4798103187&amp;amp;tag=hughundercons-22&amp;amp;linkCode=ur2&amp;amp;camp=247&amp;amp;creative=1211"&gt;独習C++&lt;/a&gt;
+(改訂版)を(本自体は、ずいぶん前に買ったんですが)やり始めているので、書いていくことにしてみようと思う。(いつまで続くやらw)&lt;/p&gt;
+&lt;p&gt;いきなりだが、P.46 練習問題2.1から。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;キュークラスを改良して、初期化関数をコンストラクタに置き換え。&lt;/li&gt;
+&lt;li&gt;stopwatchクラスの作成&lt;/li&gt;
+&lt;li&gt;次に示すコンストラクタの誤りは?&lt;/li&gt;
+&lt;/ol&gt;</description></item></channel></rss>

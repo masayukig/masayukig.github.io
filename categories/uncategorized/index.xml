@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Uncategorized on What's done is done</title><link>https://igawa.io/categories/uncategorized/</link><description>Recent content in Uncategorized on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sat, 12 Dec 2015 09:59:00 +0900</lastBuildDate><atom:link href="https://igawa.io/categories/uncategorized/index.xml" rel="self" type="application/rss+xml"/><item><title>技術的じゃないOpenStackの話</title><link>https://igawa.io/posts/2015/12/%E6%8A%80%E8%A1%93%E7%9A%84%E3%81%98%E3%82%83%E3%81%AA%E3%81%84openstack%E3%81%AE%E8%A9%B1/</link><pubDate>Sat, 12 Dec 2015 09:59:00 +0900</pubDate><guid>https://igawa.io/posts/2015/12/%E6%8A%80%E8%A1%93%E7%9A%84%E3%81%98%E3%82%83%E3%81%AA%E3%81%84openstack%E3%81%AE%E8%A9%B1/</guid><description>&lt;p&gt;&lt;a href="https://gist.github.com/masayukig/3ab6c18ace33eb01f9d1.js"&gt;https://gist.github.com/masayukig/3ab6c18ace33eb01f9d1.js&lt;/a&gt;&lt;/p&gt;</description></item><item><title>OpenStack Tempest の テストを実行する方法 (testr vs run_tempest.sh vs tox)</title><link>https://igawa.io/posts/2014/12/openstack-tempest-%E3%81%AE-%E3%83%86%E3%82%B9%E3%83%88%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95-testr-vs-run_tempestsh-vs-tox/</link><pubDate>Wed, 17 Dec 2014 05:34:00 +0900</pubDate><guid>https://igawa.io/posts/2014/12/openstack-tempest-%E3%81%AE-%E3%83%86%E3%82%B9%E3%83%88%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95-testr-vs-run_tempestsh-vs-tox/</guid><description>&lt;p&gt;Tempest は OpenStackのテストスイートです。
+これを実行することにより、OpenStackが&amp;quot;ちゃんとうごく&amp;quot;かどうかを確認できます。&lt;/p&gt;
+&lt;h2 id="準備"&gt;準備&lt;/h2&gt;
+&lt;p&gt;DevStackを使ってOpenStackをインストールして、一緒にTempestもインストールした場合には下記準備作業は不要です（自動的に設定ファイルを設定してくれるため）。
+なお、Tempestは現在３つのバージョン（Icehouse, Juno,
+master）にブランチなしで対応していますので、基本的には最新版のTempestを使えば事足りるはずです。
+（サポートしていない機能などがあれば、下記に示す設定ファイル(tempest.conf)でテストするかどうかを設定できます。)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir -p /opt/stack
+cd /opt/stack
+git clone https://github.com/openstack/tempest
+cd /opt/stack/tempest
+cp etc/tempest.conf.sample etc/tempest.conf
+vi etc/tempest.conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;テスト対象の環境に合わせて、編集します。まずはidentityセクションを修正すれば、たぶんなんとかなるでしょう。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[identity]
+auth_version = v2
+admin_domain_name = Default
+admin_tenant_id = d44ed5a94d4c4c70a4e91bb9c979eda1
+admin_tenant_name = admin
+admin_password = ぼくのかんがえたさいきょうのパスワード
+admin_username = admin
+alt_tenant_name = alt_demo
+alt_password = ぼくのかんがえたさいきょうのパスワード
+alt_username = alt_demo
+tenant_name = demo
+password = ぼくのかんがえたさいきょうのパスワード
+username = demo
+uri_v3 = http://192.168.1.xx:5000/v3/
+uri = http://192.168.1.xx:5000/v2.0/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="実行"&gt;実行&lt;/h2&gt;
+&lt;p&gt;さて、いよいよ実行です。
+ただ、その実行方法はいくつかあり、少し混乱するときもあると思います。
+いくつかの例を示します。&lt;/p&gt;
+&lt;p&gt;なお、&lt;a href="http://docs.openstack.org/developer/tempest/overview.html#quickstart"&gt;公式ドキュメント&lt;/a&gt;には、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;testr run --parallel
+testr run --parallel tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_reboot_non_existent_server
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;という方法が書かれています。
+一番目の方法では、全てのテストが実行されます。環境にも依存しますが、だいたい１時間程度はかかると思っておいたほうが良いでしょう。
+二番目の方法では、指定したテストが実行されます。なおここは正規表現が使えるようです。&lt;/p&gt;
+&lt;p&gt;以下、実行例です。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2014/12/ece92-executing_tempest_testr.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一つのテストが3.512秒で実行されて、成功したことがわかります。&lt;/p&gt;
+&lt;p&gt;コレ以外にも、「run_tempest.sh」「tox」を使って実行する方法も示されていますので、それらを使ってみましょう。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2014/12/20ebc-executing_tempest.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2014/12/20ebc-executing_tempest.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="まとめ"&gt;まとめ&lt;/h2&gt;
+&lt;p&gt;いずれも、同じテストケースを実行しているので、出力もほぼ同様です。好みに合わせて使い分ければ良いと思います。
+個人的な好みとしては、toxを使ったときの出力がわかりやすく、親しみやすい（フェイスマークもあるし）感じられるので、toxを使っていこうかなと思います。&lt;/p&gt;
+&lt;p&gt;Happy testing!&lt;/p&gt;</description></item><item><title>SonicGardenさんが開発されているMessageleafのサービスをサイトに導入してみた</title><link>https://igawa.io/posts/2012/07/sonicgarden%E3%81%95%E3%82%93%E3%81%8C%E9%96%8B%E7%99%BA%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8Bmessageleaf%E3%81%AE%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%92%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link><pubDate>Mon, 23 Jul 2012 18:37:00 +0900</pubDate><guid>https://igawa.io/posts/2012/07/sonicgarden%E3%81%95%E3%82%93%E3%81%8C%E9%96%8B%E7%99%BA%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8Bmessageleaf%E3%81%AE%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%92%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid><description>&lt;p&gt;右下に出ている「MessageLeaf」がそれです。
+入力された内容は、私にしか届きません。&lt;/p&gt;</description></item><item><title>気になる話題: Amazon S3のパフォーマンスをあげるコツ - Amazon Web Services ブログ</title><link>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-amazon-s3%E3%81%AE%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9%E3%82%92%E3%81%82%E3%81%92%E3%82%8B%E3%82%B3%E3%83%84-amazon-web-services-%E3%83%96%E3%83%AD%E3%82%B0/</link><pubDate>Fri, 16 Mar 2012 20:16:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-amazon-s3%E3%81%AE%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9%E3%82%92%E3%81%82%E3%81%92%E3%82%8B%E3%82%B3%E3%83%84-amazon-web-services-%E3%83%96%E3%83%AD%E3%82%B0/</guid><description>&lt;p&gt;気になる話題: &lt;a href="http://aws.typepad.com/aws_japan/2012/03/amazon-s3-performance-tips-tricks-.html"&gt;Amazon S3のパフォーマンスをあげるコツ - Amazon Web
+Services
+ブログ&lt;/a&gt;
+from はてなブックマーク - タグ - lifehack
+&lt;a href="http://b.hatena.ne.jp/t/lifehack?sort=hot&amp;amp;threshold=5"&gt;http://b.hatena.ne.jp/t/lifehack?sort=hot&amp;amp;threshold=5&lt;/a&gt;&lt;/p&gt;</description></item><item><title>気になる話題: amazonで買い物をする時二回投げ銭する方法 - 情報の海の漂流者</title><link>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-amazon%E3%81%A7%E8%B2%B7%E3%81%84%E7%89%A9%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E4%BA%8C%E5%9B%9E%E6%8A%95%E3%81%92%E9%8A%AD%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95-%E6%83%85%E5%A0%B1%E3%81%AE%E6%B5%B7%E3%81%AE%E6%BC%82%E6%B5%81%E8%80%85/</link><pubDate>Fri, 16 Mar 2012 20:16:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-amazon%E3%81%A7%E8%B2%B7%E3%81%84%E7%89%A9%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E4%BA%8C%E5%9B%9E%E6%8A%95%E3%81%92%E9%8A%AD%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95-%E6%83%85%E5%A0%B1%E3%81%AE%E6%B5%B7%E3%81%AE%E6%BC%82%E6%B5%81%E8%80%85/</guid><description>&lt;p&gt;気になる話題: &lt;a href="http://d.hatena.ne.jp/fut573/20120316/1331890782"&gt;amazonで買い物をする時二回投げ銭する方法 -
+情報の海の漂流者&lt;/a&gt;
+from はてなブックマーク - タグ - lifehack
+&lt;a href="http://b.hatena.ne.jp/t/lifehack?sort=hot&amp;amp;threshold=5"&gt;http://b.hatena.ne.jp/t/lifehack?sort=hot&amp;amp;threshold=5&lt;/a&gt;&lt;/p&gt;</description></item><item><title>気になる話題: ここまでやるか。SQLiteをJavaScriptに変換「SQL.js」 - MOONGIFT|オープンソース・ソフトウェア紹介を軸としたITエンジニア、Webデザイナー向けブログ</title><link>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E3%81%93%E3%81%93%E3%81%BE%E3%81%A7%E3%82%84%E3%82%8B%E3%81%8Bsqlite%E3%82%92javascript%E3%81%AB%E5%A4%89%E6%8F%9Bsqljs-moongift%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E7%B4%B9%E4%BB%8B%E3%82%92%E8%BB%B8%E3%81%A8%E3%81%97%E3%81%9Fit%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2web%E3%83%87%E3%82%B6%E3%82%A4%E3%83%8A%E3%83%BC%E5%90%91%E3%81%91%E3%83%96%E3%83%AD%E3%82%B0/</link><pubDate>Fri, 16 Mar 2012 20:16:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E3%81%93%E3%81%93%E3%81%BE%E3%81%A7%E3%82%84%E3%82%8B%E3%81%8Bsqlite%E3%82%92javascript%E3%81%AB%E5%A4%89%E6%8F%9Bsqljs-moongift%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E7%B4%B9%E4%BB%8B%E3%82%92%E8%BB%B8%E3%81%A8%E3%81%97%E3%81%9Fit%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2web%E3%83%87%E3%82%B6%E3%82%A4%E3%83%8A%E3%83%BC%E5%90%91%E3%81%91%E3%83%96%E3%83%AD%E3%82%B0/</guid><description>&lt;p&gt;気になる話題: &lt;a href="http://www.moongift.jp/2012/03/20120316/"&gt;ここまでやるか。SQLiteをJavaScriptに変換「SQL.js」 -
+MOONGIFT|オープンソース・ソフトウェア紹介を軸としたITエンジニア、Webデザイナー向けブログ&lt;/a&gt;
+from はてなブックマーク - タグ - lifehack
+&lt;a href="http://b.hatena.ne.jp/t/lifehack?sort=hot&amp;amp;threshold=5"&gt;http://b.hatena.ne.jp/t/lifehack?sort=hot&amp;amp;threshold=5&lt;/a&gt;&lt;/p&gt;</description></item><item><title>気になる話題: フリーフォントまとめ | ひらめき箱</title><link>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E3%83%95%E3%83%AA%E3%83%BC%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%81%BE%E3%81%A8%E3%82%81-%E3%81%B2%E3%82%89%E3%82%81%E3%81%8D%E7%AE%B1/</link><pubDate>Fri, 16 Mar 2012 20:16:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E3%83%95%E3%83%AA%E3%83%BC%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%81%BE%E3%81%A8%E3%82%81-%E3%81%B2%E3%82%89%E3%82%81%E3%81%8D%E7%AE%B1/</guid><description>&lt;p&gt;気になる話題: &lt;a href="http://fta7.jp/font"&gt;フリーフォントまとめ | ひらめき箱&lt;/a&gt;
+from はてなブックマーク - タグ - lifehack
+&lt;a href="http://b.hatena.ne.jp/t/lifehack?sort=hot&amp;amp;threshold=5"&gt;http://b.hatena.ne.jp/t/lifehack?sort=hot&amp;amp;threshold=5&lt;/a&gt;&lt;/p&gt;</description></item><item><title>気になる話題: 著作権法改正案が国会に提出、「写り込み」は合法化、DVDリッピングは違法化 -INTERNET Watch</title><link>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E8%91%97%E4%BD%9C%E6%A8%A9%E6%B3%95%E6%94%B9%E6%AD%A3%E6%A1%88%E3%81%8C%E5%9B%BD%E4%BC%9A%E3%81%AB%E6%8F%90%E5%87%BA%E5%86%99%E3%82%8A%E8%BE%BC%E3%81%BF%E3%81%AF%E5%90%88%E6%B3%95%E5%8C%96dvd%E3%83%AA%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%81%AF%E9%81%95%E6%B3%95%E5%8C%96-internet-watch/</link><pubDate>Fri, 16 Mar 2012 20:01:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E8%91%97%E4%BD%9C%E6%A8%A9%E6%B3%95%E6%94%B9%E6%AD%A3%E6%A1%88%E3%81%8C%E5%9B%BD%E4%BC%9A%E3%81%AB%E6%8F%90%E5%87%BA%E5%86%99%E3%82%8A%E8%BE%BC%E3%81%BF%E3%81%AF%E5%90%88%E6%B3%95%E5%8C%96dvd%E3%83%AA%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%81%AF%E9%81%95%E6%B3%95%E5%8C%96-internet-watch/</guid><description>&lt;p&gt;気になる話題:
+&lt;a href="http://internet.watch.impress.co.jp/docs/news/20120316_519448.html"&gt;著作権法改正案が国会に提出、「写り込み」は合法化、DVDリッピングは違法化
+-INTERNET
+Watch&lt;/a&gt;
+from はてなブックマーク - タグ - lifehack
+&lt;a href="http://b.hatena.ne.jp/t/lifehack?sort=hot&amp;amp;threshold=5"&gt;http://b.hatena.ne.jp/t/lifehack?sort=hot&amp;amp;threshold=5&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Agile Japan 2012(東京サテライト)に行ってきた！ #aj12 #aj12東京</title><link>https://igawa.io/posts/2012/03/agile-japan-2012%E6%9D%B1%E4%BA%AC%E3%82%B5%E3%83%86%E3%83%A9%E3%82%A4%E3%83%88%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%9F-aj12-aj12%E6%9D%B1%E4%BA%AC/</link><pubDate>Fri, 16 Mar 2012 19:58:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/agile-japan-2012%E6%9D%B1%E4%BA%AC%E3%82%B5%E3%83%86%E3%83%A9%E3%82%A4%E3%83%88%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%9F-aj12-aj12%E6%9D%B1%E4%BA%AC/</guid><description>&lt;p&gt;&lt;a href="http://www.agilejapan.org/tokyosatellite/"&gt;Agile Japan 2012
+(東京サテライト)&lt;/a&gt;というものに(有給+自腹で)、初めて行って来ました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;参加費が6,000円&lt;/li&gt;
+&lt;li&gt;サテライト開催&lt;/li&gt;
+&lt;li&gt;知り合いはいない&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;という状況で、若干参加を躊躇していましたが、
+参加した感想としては、&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;「参加して良かった！次回も是非参加したい！」&lt;/strong&gt;
+**
+**
+です。&lt;/p&gt;
+&lt;p&gt;知り合いがいなくても全然問題なしでした。
+「ワールドカフェ」で、近くの人となんとなくのフィーリングで３人組になり、
+打ち解けあう時間が持て、なんと一人は学生！でした。&lt;/p&gt;
+&lt;p&gt;今のところ、自分としてはアジャイルプラクティスを
+部分的に導入したりしている(こともある)くらいですが、
+実際にアジャイルをバリバリ実践している方の公演や質疑応答を見たり、
+学生が参加しているのを見たりして、非常に刺激を受け、
+「まだやれること、やるべきことがたくさんあるな」
+と感じた一日でした。&lt;/p&gt;
+&lt;p&gt;心残りは、クロージング、交流会に参加できなかったこと。&lt;/p&gt;
+&lt;p&gt;15時頃、妻より、「次男が39.4℃の熱あり！」ということで、
+若干、中途半端ながら帰りました。&lt;/p&gt;
+&lt;p&gt;次回は、フル参加して、他の方との交流も楽しみたいと思いました。
+下の画像は、受付の隣で売ってた&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;プランニングポーカー(500円)&lt;/li&gt;
+&lt;li&gt;アジャイルマインド Volume1(同人誌, 1,500円)&lt;/li&gt;
+&lt;li&gt;その他パンフレット(0円)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;です。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/c6631-2012-03-1609-52-13.jpg"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/c6631-2012-03-1609-52-13.jpg?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;</description></item><item><title>気になる話題: ＜CNET Japan＞新しい「iPad」は買うべきか--ユーザータイプ別に考える</title><link>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-cnet-japan%E6%96%B0%E3%81%97%E3%81%84ipad%E3%81%AF%E8%B2%B7%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B-%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%97%E5%88%A5%E3%81%AB%E8%80%83%E3%81%88%E3%82%8B/</link><pubDate>Thu, 15 Mar 2012 23:45:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-cnet-japan%E6%96%B0%E3%81%97%E3%81%84ipad%E3%81%AF%E8%B2%B7%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B-%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%97%E5%88%A5%E3%81%AB%E8%80%83%E3%81%88%E3%82%8B/</guid><description>&lt;p&gt;気になる話題:
+&lt;a href="http://japan.cnet.com/news/commentary/35015145/?tag=as.rss"&gt;http://japan.cnet.com/news/commentary/35015145/?tag=as.rss&lt;/a&gt;
+from 朝日新聞デジタル &lt;a href="http://www.asahi.com/"&gt;http://www.asahi.com/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>気になる話題: Githug - an interactive way to learn how to use git</title><link>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-githug-an-interactive-way-to-learn-how-to-use-git/</link><pubDate>Thu, 15 Mar 2012 23:45:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-githug-an-interactive-way-to-learn-how-to-use-git/</guid><description>&lt;p&gt;気になる話題: &lt;a href="https://github.com/Gazler/githug"&gt;https://github.com/Gazler/githug&lt;/a&gt;
+from Hacker News &lt;a href="http://news.ycombinator.com/"&gt;http://news.ycombinator.com/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>気になる話題: RPGの世界を作った1980年代のPCゲームたち</title><link>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-rpg%E3%81%AE%E4%B8%96%E7%95%8C%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F1980%E5%B9%B4%E4%BB%A3%E3%81%AEpc%E3%82%B2%E3%83%BC%E3%83%A0%E3%81%9F%E3%81%A1/</link><pubDate>Thu, 15 Mar 2012 23:45:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-rpg%E3%81%AE%E4%B8%96%E7%95%8C%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F1980%E5%B9%B4%E4%BB%A3%E3%81%AEpc%E3%82%B2%E3%83%BC%E3%83%A0%E3%81%9F%E3%81%A1/</guid><description>&lt;p&gt;気になる話題: &lt;a href="http://slashdot.jp/story/12/03/15/1844235/"&gt;http://slashdot.jp/story/12/03/15/1844235/&lt;/a&gt;
+from スラッシュドット・ジャパン &lt;a href="http://slashdot.jp/"&gt;http://slashdot.jp/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>気になる話題: 新しいiPadで撮られた写真！ iPad2よりもカメラが格段に良くなっています。</title><link>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E6%96%B0%E3%81%97%E3%81%84ipad%E3%81%A7%E6%92%AE%E3%82%89%E3%82%8C%E3%81%9F%E5%86%99%E7%9C%9F-ipad2%E3%82%88%E3%82%8A%E3%82%82%E3%82%AB%E3%83%A1%E3%83%A9%E3%81%8C%E6%A0%BC%E6%AE%B5%E3%81%AB%E8%89%AF%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99/</link><pubDate>Thu, 15 Mar 2012 23:45:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E6%96%B0%E3%81%97%E3%81%84ipad%E3%81%A7%E6%92%AE%E3%82%89%E3%82%8C%E3%81%9F%E5%86%99%E7%9C%9F-ipad2%E3%82%88%E3%82%8A%E3%82%82%E3%82%AB%E3%83%A1%E3%83%A9%E3%81%8C%E6%A0%BC%E6%AE%B5%E3%81%AB%E8%89%AF%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99/</guid><description>&lt;p&gt;気になる話題: &lt;a href="http://www.gizmodo.jp/2012/03/ipad_ipad2.html"&gt;http://www.gizmodo.jp/2012/03/ipad_ipad2.html&lt;/a&gt;
+from ギズモード・ジャパン &lt;a href="http://www.gizmodo.jp/"&gt;http://www.gizmodo.jp/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>気になる話題: アップル、ApertureとデジタルカメラRAW互換性アップデートの最新版を公開</title><link>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E3%82%A2%E3%83%83%E3%83%97%E3%83%ABaperture%E3%81%A8%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AB%E3%83%A1%E3%83%A9raw%E4%BA%92%E6%8F%9B%E6%80%A7%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E3%81%AE%E6%9C%80%E6%96%B0%E7%89%88%E3%82%92%E5%85%AC%E9%96%8B/</link><pubDate>Thu, 15 Mar 2012 22:31:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E3%82%A2%E3%83%83%E3%83%97%E3%83%ABaperture%E3%81%A8%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AB%E3%83%A1%E3%83%A9raw%E4%BA%92%E6%8F%9B%E6%80%A7%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E3%81%AE%E6%9C%80%E6%96%B0%E7%89%88%E3%82%92%E5%85%AC%E9%96%8B/</guid><description>&lt;p&gt;気になる話題:
+&lt;a href="http://rss.rssad.jp/rss/artclk/RWFTmzjGxpl3/48eb235d506a6c9a6a777d924179032e?ul=PiAMwAgetkO_rg.cxEYJN_.akiOl3WFvvyhYqQ9deS3IDe5k_W8EhNNopZwokMpLVOYHsetNgckJPFFCZmuLRsDFJxxJ"&gt;http://rss.rssad.jp/rss/artclk/RWFTmzjGxpl3/48eb235d506a6c9a6a777d924179032e?ul=PiAMwAgetkO_rg.cxEYJN_.akiOl3WFvvyhYqQ9deS3IDe5k_W8EhNNopZwokMpLVOYHsetNgckJPFFCZmuLRsDFJxxJ&lt;/a&gt;
+from マイナビニュース &lt;a href="http://news.mynavi.jp"&gt;http://news.mynavi.jp&lt;/a&gt;&lt;/p&gt;</description></item><item><title>気になる話題: 新しい｢Apple TV｣の開封ビデオレポート</title><link>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E6%96%B0%E3%81%97%E3%81%84apple-tv%E3%81%AE%E9%96%8B%E5%B0%81%E3%83%93%E3%83%87%E3%82%AA%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88/</link><pubDate>Thu, 15 Mar 2012 22:31:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E6%96%B0%E3%81%97%E3%81%84apple-tv%E3%81%AE%E9%96%8B%E5%B0%81%E3%83%93%E3%83%87%E3%82%AA%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88/</guid><description>&lt;p&gt;気になる話題: &lt;a href="http://taisyo.seesaa.net/article/257937899.html"&gt;http://taisyo.seesaa.net/article/257937899.html&lt;/a&gt;
+from 気になる、記になる… &lt;a href="http://taisyo.seesaa.net/"&gt;http://taisyo.seesaa.net/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>気になる話題: 知的エンジニアライフの方法 (3)食べ方</title><link>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E7%9F%A5%E7%9A%84%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%A9%E3%82%A4%E3%83%95%E3%81%AE%E6%96%B9%E6%B3%95-3%E9%A3%9F%E3%81%B9%E6%96%B9/</link><pubDate>Thu, 15 Mar 2012 22:31:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E7%9F%A5%E7%9A%84%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%A9%E3%82%A4%E3%83%95%E3%81%AE%E6%96%B9%E6%B3%95-3%E9%A3%9F%E3%81%B9%E6%96%B9/</guid><description>&lt;p&gt;気になる話題:
+&lt;a href="http://rss.rssad.jp/rss/artclk/NZAqoyYVJiR_/7639e07437758a215d943964da6e75f8?ul=crQGRsUxSYoBEqtzVoUwQ8l1Ny0fOP1eyHnp_0mhztB5RRSby1E8g.lDpwdfUE5DFswpINdWo1N7YlgcNnlAxnHiQTAM"&gt;http://rss.rssad.jp/rss/artclk/NZAqoyYVJiR_/7639e07437758a215d943964da6e75f8?ul=crQGRsUxSYoBEqtzVoUwQ8l1Ny0fOP1eyHnp_0mhztB5RRSby1E8g.lDpwdfUE5DFswpINdWo1N7YlgcNnlAxnHiQTAM&lt;/a&gt;
+from ＠IT自分戦略研究所 &lt;a href="http://jibun.atmarkit.co.jp"&gt;http://jibun.atmarkit.co.jp&lt;/a&gt;&lt;/p&gt;</description></item><item><title>気になる話題: 夢の「無意識ダイエット」実現へ!?　拡張現実で「拡張満腹感」は得られるか</title><link>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E5%A4%A2%E3%81%AE%E7%84%A1%E6%84%8F%E8%AD%98%E3%83%80%E3%82%A4%E3%82%A8%E3%83%83%E3%83%88%E5%AE%9F%E7%8F%BE%E3%81%B8%E6%8B%A1%E5%BC%B5%E7%8F%BE%E5%AE%9F%E3%81%A7%E6%8B%A1%E5%BC%B5%E6%BA%80%E8%85%B9%E6%84%9F%E3%81%AF%E5%BE%97%E3%82%89%E3%82%8C%E3%82%8B%E3%81%8B/</link><pubDate>Thu, 15 Mar 2012 22:31:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E5%A4%A2%E3%81%AE%E7%84%A1%E6%84%8F%E8%AD%98%E3%83%80%E3%82%A4%E3%82%A8%E3%83%83%E3%83%88%E5%AE%9F%E7%8F%BE%E3%81%B8%E6%8B%A1%E5%BC%B5%E7%8F%BE%E5%AE%9F%E3%81%A7%E6%8B%A1%E5%BC%B5%E6%BA%80%E8%85%B9%E6%84%9F%E3%81%AF%E5%BE%97%E3%82%89%E3%82%8C%E3%82%8B%E3%81%8B/</guid><description>&lt;p&gt;気になる話題:
+&lt;a href="http://rss.rssad.jp/rss/artclk/yd3DyH_6aPig/a8c13c17206422f24a56d81b581c454f?ul=GulwecHWQTlE5RzCu2MENVOk4RnImeW0TAtIrS0unIlmAh0AZTlj0TdbGn9VO5iIFs9znp8qZupUh5C7az1IfYjG5BgC.ULXbvRpDyGyR8eolGdjn"&gt;http://rss.rssad.jp/rss/artclk/yd3DyH_6aPig/a8c13c17206422f24a56d81b581c454f?ul=GulwecHWQTlE5RzCu2MENVOk4RnImeW0TAtIrS0unIlmAh0AZTlj0TdbGn9VO5iIFs9znp8qZupUh5C7az1IfYjG5BgC.ULXbvRpDyGyR8eolGdjn&lt;/a&gt;
+from ITmedia TOP STORIES 最新記事一覧
+&lt;a href="http://www.itmedia.co.jp/news/fortop/"&gt;http://www.itmedia.co.jp/news/fortop/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>気になる話題: Using Cloud Foundry Services with Ruby: Part 2 – Run-time Support for Ruby Applications</title><link>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-using-cloud-foundry-services-with-ruby-part-2--run-time-support-for-ruby-applications/</link><pubDate>Thu, 15 Mar 2012 22:15:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-using-cloud-foundry-services-with-ruby-part-2--run-time-support-for-ruby-applications/</guid><description>&lt;p&gt;&lt;a href="http://blog.cloudfoundry.com/post/13481010778/using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications"&gt;http://blog.cloudfoundry.com/post/13481010778/using-cloud-foundry-services-with-ruby-part-2-run-time-support-for-ruby-applications&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;from Blog &lt;a href="http://blog.cloudfoundry.com"&gt;http://blog.cloudfoundry.com&lt;/a&gt;&lt;/p&gt;</description></item><item><title>気になる話題: イトーヨーカ堂とワコール共同開発。男性向け肌着の新ブランド「BROS GRAND」</title><link>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E3%82%A4%E3%83%88%E3%83%BC%E3%83%A8%E3%83%BC%E3%82%AB%E5%A0%82%E3%81%A8%E3%83%AF%E3%82%B3%E3%83%BC%E3%83%AB%E5%85%B1%E5%90%8C%E9%96%8B%E7%99%BA%E7%94%B7%E6%80%A7%E5%90%91%E3%81%91%E8%82%8C%E7%9D%80%E3%81%AE%E6%96%B0%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89bros-grand/</link><pubDate>Thu, 15 Mar 2012 22:15:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E3%82%A4%E3%83%88%E3%83%BC%E3%83%A8%E3%83%BC%E3%82%AB%E5%A0%82%E3%81%A8%E3%83%AF%E3%82%B3%E3%83%BC%E3%83%AB%E5%85%B1%E5%90%8C%E9%96%8B%E7%99%BA%E7%94%B7%E6%80%A7%E5%90%91%E3%81%91%E8%82%8C%E7%9D%80%E3%81%AE%E6%96%B0%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89bros-grand/</guid><description>&lt;p&gt;&lt;a href="http://news.mynavi.jp/news/2012/03/15/141/index.html"&gt;http://news.mynavi.jp/news/2012/03/15/141/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;イトーヨーカ堂とワコールが共同開発して生まれた男性用肌着の新ブランド「BROS(ブロス)
+GRANDE(グランデ)」が22日に全国のイトーヨーカドー全102店舗で販売される。トップス2品、ボトム18品、ボディウォーマー1品番の合計21品を販売し、初年度で15万枚、約4億円の売り上げを目指すという。
+&lt;img alt="picture" loading="lazy" src="http://rss.rssad.jp/rss/artimg/RWFTmzjGxpl3/91bfab8ae6255809e95e78f38ecae37d"&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;from マイナビニュース &lt;a href="http://news.mynavi.jp/"&gt;http://news.mynavi.jp&lt;/a&gt;&lt;/p&gt;</description></item><item><title>気になる話題: コクヨ、「CamiApp」の専用ノートにA4ヨコ型を追加（ニュース）</title><link>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E3%82%B3%E3%82%AF%E3%83%A8camiapp%E3%81%AE%E5%B0%82%E7%94%A8%E3%83%8E%E3%83%BC%E3%83%88%E3%81%ABa4%E3%83%A8%E3%82%B3%E5%9E%8B%E3%82%92%E8%BF%BD%E5%8A%A0%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9/</link><pubDate>Thu, 15 Mar 2012 22:15:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B%E8%A9%B1%E9%A1%8C-%E3%82%B3%E3%82%AF%E3%83%A8camiapp%E3%81%AE%E5%B0%82%E7%94%A8%E3%83%8E%E3%83%BC%E3%83%88%E3%81%ABa4%E3%83%A8%E3%82%B3%E5%9E%8B%E3%82%92%E8%BF%BD%E5%8A%A0%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/article/NEWS/20120315/386683/"&gt;http://itpro.nikkeibp.co.jp/article/NEWS/20120315/386683/&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;コクヨS&amp;amp;Tは2012年3月14日、スマートフォンのアプリケーションで手書きメモをデジタル化できるノート「CamiApp」シリーズにA4ヨコ型タイプなどを追加した。A4サイズのツインリングノートが840円、見開きでA4サイズになるA5ノートが241円。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;from ITpro総合 &lt;a href="http://itpro.nikkeibp.co.jp/"&gt;http://itpro.nikkeibp.co.jp/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>【速報】本日よりiOS5.1へ...そしてSiriが日本語に対応！</title><link>https://igawa.io/posts/2012/03/%E9%80%9F%E5%A0%B1%E6%9C%AC%E6%97%A5%E3%82%88%E3%82%8Aios51%E3%81%B8%E3%81%9D%E3%81%97%E3%81%A6siri%E3%81%8C%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AB%E5%AF%BE%E5%BF%9C/</link><pubDate>Wed, 07 Mar 2012 19:31:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E9%80%9F%E5%A0%B1%E6%9C%AC%E6%97%A5%E3%82%88%E3%82%8Aios51%E3%81%B8%E3%81%9D%E3%81%97%E3%81%A6siri%E3%81%8C%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AB%E5%AF%BE%E5%BF%9C/</guid><description>&lt;p&gt;&lt;a href="http://www.gizmodo.jp/2012/03/ios51siri.html"&gt;http://www.gizmodo.jp/2012/03/ios51siri.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="picture" loading="lazy" src="http://www.gizmodo.jp/upload_files2/120308ios-siri.jpg"&gt;
+ついにこの日が&amp;hellip;。
+先程発表がありました、iOSが5.1にアップデートの際にSiriが日本語に対応することが発表されました！　やったー！　Siri子がついに日本にきました。果たして&amp;hellip;声はどうなってるんでしょうかね。楽しみー！ (長谷憲)
+&lt;img alt="picture" loading="lazy" src="http://rss.rssad.jp/rss/artimg/T7he30zk4qYy/401117ac96803f93891b534c7febe7ba"&gt;&lt;/p&gt;
+&lt;p&gt;from ギズモード・ジャパン &lt;a href="http://www.gizmodo.jp/"&gt;http://www.gizmodo.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;日本語でどの程度の認識をしてくれるのか、楽しみ。&lt;/p&gt;</description></item><item><title>Apple TV 新モデル発表！</title><link>https://igawa.io/posts/2012/03/apple-tv-%E6%96%B0%E3%83%A2%E3%83%87%E3%83%AB%E7%99%BA%E8%A1%A8/</link><pubDate>Wed, 07 Mar 2012 19:31:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/apple-tv-%E6%96%B0%E3%83%A2%E3%83%87%E3%83%AB%E7%99%BA%E8%A1%A8/</guid><description>&lt;p&gt;［ #iPad3 ］より美しくカッコよくなった「Apple TV」の新モデルが出たよ！
+&lt;a href="http://www.gizmodo.jp/2012/03/_ipad3_apple_tv.html"&gt;http://www.gizmodo.jp/2012/03/_ipad3_apple_tv.html&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img alt="picture" loading="lazy" src="http://www.gizmodo.jp/upload_files2/120308appletvhd.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;まずは「Apple TV」が「HD」でキター！
+期待のアップル発表会の先陣を切って登場したのは、新たに1080pのHD動画に対応したApple
+TVでしたね。iTunesでも1080pの動画配信がスタートしますよ。
+ちなみにHD対応を強化して美しい映像にこだわったのみならず、より使いやすくてカッコいいApple
+TVとしても生まれ変わっています。メニューからUIが変更されており、iCloudとの統合強化で、iPhoneにて撮影した写真の自動配信機能なんかも便利そうですよね。
+ん、でも、液晶テレビと一体型になった大刷新まではなかったみたいですかね～
+Sam Biddle（米版／湯木進悟）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;from ギズモード・ジャパン &lt;a href="http://www.gizmodo.jp/"&gt;http://www.gizmodo.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;「新しいiPad」はそれほど興味はそそられないので、「新しいAppleTV」のほうが興味がわく。
+&lt;a href="http://japanese.engadget.com/2012/03/07/1080p-apple-tv/"&gt;http://japanese.engadget.com/2012/03/07/1080p-apple-tv/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;日本のAppleストアでも予約開始してる。8,800円。まぁ、様子見かな。
+&lt;a href="http://store.apple.com/jp/browse/home/shop_ipod/family/apple_tv"&gt;http://store.apple.com/jp/browse/home/shop_ipod/family/apple_tv&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Google、コンテンツ配信サービス「Google Play」を発表</title><link>https://igawa.io/posts/2012/03/google%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E9%85%8D%E4%BF%A1%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9google-play%E3%82%92%E7%99%BA%E8%A1%A8/</link><pubDate>Wed, 07 Mar 2012 19:31:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/google%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E9%85%8D%E4%BF%A1%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9google-play%E3%82%92%E7%99%BA%E8%A1%A8/</guid><description>&lt;p&gt;&lt;a href="http://it.slashdot.jp/story/12/03/07/0856204/"&gt;http://it.slashdot.jp/story/12/03/07/0856204/&lt;/a&gt;
+from スラッシュドット・ジャパン &lt;a href="http://slashdot.jp/"&gt;http://slashdot.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今のところ、AndroidサイトのURLが変わっただけのようにしか見えないです。&lt;/p&gt;</description></item><item><title>MIT　App　Inventor　Eduが公開</title><link>https://igawa.io/posts/2012/03/mitappinventoredu%E3%81%8C%E5%85%AC%E9%96%8B/</link><pubDate>Wed, 07 Mar 2012 19:31:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/mitappinventoredu%E3%81%8C%E5%85%AC%E9%96%8B/</guid><description>&lt;h2 id="from-usewillcomウィルコムを使え"&gt;&lt;a href="http://kamo.pos.to/dpoke/c/UW5968.html"&gt;http://kamo.pos.to/dpoke/c/UW5968.html&lt;/a&gt;
+from useWillcom(ウィルコムを使え!) &lt;a href="http://kamo.pos.to/dpoke/"&gt;http://kamo.pos.to/dpoke/&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;ちょっと使ってみたが、操作方法がよくわからんので、
+もう少し勉強が必要。&lt;/p&gt;</description></item><item><title>アップル 新 iPad 発表：2048x1536 解像度、A5X 搭載、LTE 対応、3月16日発売</title><link>https://igawa.io/posts/2012/03/%E3%82%A2%E3%83%83%E3%83%97%E3%83%AB-%E6%96%B0-ipad-%E7%99%BA%E8%A1%A82048x1536-%E8%A7%A3%E5%83%8F%E5%BA%A6a5x-%E6%90%AD%E8%BC%89lte-%E5%AF%BE%E5%BF%9C3%E6%9C%8816%E6%97%A5%E7%99%BA%E5%A3%B2/</link><pubDate>Wed, 07 Mar 2012 19:31:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E3%82%A2%E3%83%83%E3%83%97%E3%83%AB-%E6%96%B0-ipad-%E7%99%BA%E8%A1%A82048x1536-%E8%A7%A3%E5%83%8F%E5%BA%A6a5x-%E6%90%AD%E8%BC%89lte-%E5%AF%BE%E5%BF%9C3%E6%9C%8816%E6%97%A5%E7%99%BA%E5%A3%B2/</guid><description>&lt;p&gt;&lt;a href="http://japanese.engadget.com/2012/03/07/new-ipad/"&gt;http://japanese.engadget.com/2012/03/07/new-ipad/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="iPad" loading="lazy" src="http://www.blogcdn.com/www.engadget.com/media/2012/03/apple-ipad-3-ipad-hd-liveblog-2926.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;アップルの&lt;a href="http://japanese.engadget.com/2012/03/07/ipad/"&gt;発表イベント&lt;/a&gt;にて、新
+iPad が発表されました。主な特長は：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Retina Display：iPad のディスプレイも高精細化。解像度は2048x1536！
+264ppiという数字は iPhone 4 / 4S
+ほどではありませんが、十分に精細です。彩度も40%向上。&lt;/li&gt;
+&lt;li&gt;Apple A5X：クアッドコアプロセッサ。A5 の倍高速（アップル比）。&lt;/li&gt;
+&lt;li&gt;iSight
+カメラ：5メガピクセル、裏面照射型の新しい背面カメラ。動画撮影は1080pに対応します。そのほか赤外線フィルタ、オートフォーカス、顔認識など。&lt;/li&gt;
+&lt;li&gt;音声入力：iPhone
+同様、キーボードのマイクボタンから音声入力機能が利用できるように。英語（米、英、豪）、フランス語、ドイツ語、そして日本語にも対応します。&lt;/li&gt;
+&lt;li&gt;LTE：第4世代の高速通信規格。LTE
+サービスを提供するキャリアパートナーとして、米国の AT&amp;amp;T /
+Verizon、カナダの Rogers / Bell / Telus が挙げられました。日本で LTE
+といえばドコモ &lt;a href="http://japanese.engadget.com/tag/Xi/"&gt;Xi&lt;/a&gt;
+ですが&lt;a href="http://japanese.engadget.com/2011/11/30/lte-iphone/"&gt;果たして今夏に対応の真偽は&lt;/a&gt;。あわせて
+HSPA+、DC-HSDPA にも対応します。こちらはソフトバンクで言う
+&lt;a href="http://japanese.engadget.com/tag/UltraSpeed/"&gt;UltraSpeed&lt;/a&gt;。また、iPhone
+同様にモバイルルーター機能「パーソナルホットスポット」を搭載します&amp;hellip;&amp;hellip;&lt;a href="http://japanese.engadget.com/2011/03/02/iphone-4-personal-hot-spot/"&gt;キャリアが対応すれば&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;そのほかのポイントは：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;バッテリー：高性能化にも関わらず、10時間動作で変わらず。LTE
+では9時間動作。&lt;/li&gt;
+&lt;li&gt;サイズ：厚さ 9.4mm。重さは多少増加。&lt;/li&gt;
+&lt;li&gt;モデルと価格：16 / 32 / 64 GB の構成は変わらず。価格もドル立てでは
+499 / 599 / 699 ドルと変わりません。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ホームボタンもなくならず、ドックコネクタもこれまでどおり。SDカードスロットもありません。&lt;/p&gt;
+&lt;p&gt;発売日は3月16日。日本でも3月16日です。&lt;/p&gt;
+&lt;p&gt;from Engadget Japanese
+&lt;a href="http://japanese.engadget.com/"&gt;http://japanese.engadget.com&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;一番の驚きは、「iPad3」でも「iPad HD」でもなく「New iPad」だったこと。
+(実際にはただの「iPad」なんでしょうが) 今後は、「第n世代
+iPad」と呼ばれることになりそうですね。&lt;/p&gt;</description></item><item><title>レーザーカッターが主役のカフェ「FabCafe」、渋谷にオープン</title><link>https://igawa.io/posts/2012/03/%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC%E3%81%8C%E4%B8%BB%E5%BD%B9%E3%81%AE%E3%82%AB%E3%83%95%E3%82%A7fabcafe%E6%B8%8B%E8%B0%B7%E3%81%AB%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3/</link><pubDate>Wed, 07 Mar 2012 19:31:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC%E3%81%8C%E4%B8%BB%E5%BD%B9%E3%81%AE%E3%82%AB%E3%83%95%E3%82%A7fabcafe%E6%B8%8B%E8%B0%B7%E3%81%AB%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3/</guid><description>&lt;p&gt;&lt;a href="http://hardware.slashdot.jp/story/12/03/07/096258/"&gt;http://hardware.slashdot.jp/story/12/03/07/096258/&lt;/a&gt;
+from スラッシュドット・ジャパン &lt;a href="http://slashdot.jp/"&gt;http://slashdot.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ちょっと気になる。&lt;/p&gt;</description></item><item><title>今日は東京タワーに行ってみることにします♪</title><link>https://igawa.io/posts/2011/09/%E4%BB%8A%E6%97%A5%E3%81%AF%E6%9D%B1%E4%BA%AC%E3%82%BF%E3%83%AF%E3%83%BC%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AB%E3%81%97%E3%81%BE%E3%81%99/</link><pubDate>Sun, 11 Sep 2011 10:22:00 +0900</pubDate><guid>https://igawa.io/posts/2011/09/%E4%BB%8A%E6%97%A5%E3%81%AF%E6%9D%B1%E4%BA%AC%E3%82%BF%E3%83%AF%E3%83%BC%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AB%E3%81%97%E3%81%BE%E3%81%99/</guid><description>&lt;p&gt;&lt;a href="http://posterous.com/getfile/files.posterous.com/masayukig/qOq9QLyVfymXz6xdR7tpPwgE80PoXmBtJBELrU5f6GpBLTMGGMYd3cfCKDnE/NEC_0413.jpg.scaled.1000.jpg"&gt;&lt;img alt="Nec_0413" loading="lazy" src="http://posterous.com/getfile/files.posterous.com/masayukig/Ttqf0hkE3OpzBZjXp5fViBRdUgSnxoyIs9NbaRGEA4skkqXo8BFW2dRrIFFD/NEC_0413.jpg.scaled.500.jpg"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ndash; masayuki&lt;/p&gt;</description></item><item><title>Posterousを今までのブログと連携してみたら...</title><link>https://igawa.io/posts/2011/09/posterous%E3%82%92%E4%BB%8A%E3%81%BE%E3%81%A7%E3%81%AE%E3%83%96%E3%83%AD%E3%82%B0%E3%81%A8%E9%80%A3%E6%90%BA%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E3%82%89/</link><pubDate>Sun, 11 Sep 2011 08:14:00 +0900</pubDate><guid>https://igawa.io/posts/2011/09/posterous%E3%82%92%E4%BB%8A%E3%81%BE%E3%81%A7%E3%81%AE%E3%83%96%E3%83%AD%E3%82%B0%E3%81%A8%E9%80%A3%E6%90%BA%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E3%82%89/</guid><description>&lt;p&gt;今までのブログ(b.0r2.info)にも投稿されるようになった(みたい)。&lt;/p&gt;
+&lt;p&gt;そういうサービスなのか。。全然知らなかったｗ&lt;/p&gt;
+&lt;p&gt;だとすると、「Twitter以上、ブログ未満」っていう使い分けにならないな。&lt;/p&gt;
+&lt;p&gt;とりあえず、あまり気にせずこのまま使ってみることにします。&lt;/p&gt;</description></item><item><title>Posterousを使ってみることにする</title><link>https://igawa.io/posts/2011/09/posterous%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AB%E3%81%99%E3%82%8B/</link><pubDate>Sun, 11 Sep 2011 06:58:00 +0900</pubDate><guid>https://igawa.io/posts/2011/09/posterous%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AB%E3%81%99%E3%82%8B/</guid><description>&lt;p&gt;いろんなブログを使ってて、
+使い分けがイマイチわからないが、
+「Twitter以上、Blog未満」なものをPosterousに使ってみることに
+しようと考えています。&lt;/p&gt;</description></item><item><title>MacBook AirにLinux(Fedora)をインストール</title><link>https://igawa.io/posts/2011/02/macbook-air%E3%81%ABlinuxfedora%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link><pubDate>Sun, 06 Feb 2011 06:40:00 +0900</pubDate><guid>https://igawa.io/posts/2011/02/macbook-air%E3%81%ABlinuxfedora%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid><description>&lt;p&gt;MacBook AirにLinuxをインストールした。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.flickr.com/photos/masayun/5419108725/" title="Fedora14 on MacBook Air by masayukig, on Flickr"&gt;&lt;img alt="Fedora14 on MacBook\nAir" loading="lazy" src="http://farm6.static.flickr.com/5133/5419108725_0289d42b50_m.jpg"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考にしたページは、
+&lt;a href="http://d.hatena.ne.jp/masami256/20110115/1295104000"&gt;http://d.hatena.ne.jp/masami256/20110115/1295104000&lt;/a&gt;
+です。&lt;/p&gt;
+&lt;p&gt;ただ、私の場合、どうやってもUSBメモリからのブートがうまくいかず、
+以下の、USB接続のDVDドライブを購入しました。
+&lt;a href="http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as4&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;asins=B002FB6VJQ"&gt;http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as4&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;asins=B002FB6VJQ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;また、Fedora14ではデフォルトでは無線LANのドライバもうまく動作しないらしいので、合わせて以下も購入しました。
+&lt;a href="http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as4&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;asins=B003GXFTZ4"&gt;http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as4&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;asins=B003GXFTZ4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;どちらのデバイスも特に問題なく動作し、インストール出来ました。&lt;/p&gt;</description></item><item><title>「Ａｎｄｒｏｉｄ ２．１プログラミングバイブル」購入</title><link>https://igawa.io/posts/2010/10/%EF%BD%81%EF%BD%8E%EF%BD%84%EF%BD%92%EF%BD%8F%EF%BD%89%EF%BD%84-%EF%BC%92%EF%BC%91%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%90%E3%82%A4%E3%83%96%E3%83%AB%E8%B3%BC%E5%85%A5/</link><pubDate>Sun, 03 Oct 2010 06:37:00 +0900</pubDate><guid>https://igawa.io/posts/2010/10/%EF%BD%81%EF%BD%8E%EF%BD%84%EF%BD%92%EF%BD%8F%EF%BD%89%EF%BD%84-%EF%BC%92%EF%BC%91%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%90%E3%82%A4%E3%83%96%E3%83%AB%E8%B3%BC%E5%85%A5/</guid><description>&lt;p&gt;「Ａｎｄｒｏｉｄ　２．１プログラミングバイブル」というのを購入してみました。&lt;/p&gt;
+&lt;p&gt;近所の本屋でいくつか立ち読みして、この本が一番いろいろなことを網羅していそうだったので。
+&lt;a href="http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as1&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;md=1X69VDGQCMF7Z30FM082&amp;amp;asins=4883377075"&gt;http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as1&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;md=1X69VDGQCMF7Z30FM082&amp;amp;asins=4883377075&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;感想：&lt;/p&gt;
+&lt;p&gt;なお、これとは別に、
+「Android Hacks　―プロが教えるテクニック &amp;amp; ツール」も購入しました。
+こちらはまだ手元に届いていないので、届いたら何か書きたいと思います。
+&lt;a href="http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as1&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;md=1X69VDGQCMF7Z30FM082&amp;amp;asins=487311456X"&gt;http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as1&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;md=1X69VDGQCMF7Z30FM082&amp;amp;asins=487311456X&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Google Syntax Highlighter for WordPress テスト</title><link>https://igawa.io/posts/2009/08/google-syntax-highlighter-for-wordpress-%E3%83%86%E3%82%B9%E3%83%88/</link><pubDate>Sat, 15 Aug 2009 06:40:00 +0900</pubDate><guid>https://igawa.io/posts/2009/08/google-syntax-highlighter-for-wordpress-%E3%83%86%E3%82%B9%E3%83%88/</guid><description>&lt;p&gt;うまくいきそう！&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;int main()
+{
+printf(&amp;#34;Hello world.\n&amp;#34;);
+return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>サイトデザインを(また)変えてみた</title><link>https://igawa.io/posts/2009/06/%E3%82%B5%E3%82%A4%E3%83%88%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%92%E3%81%BE%E3%81%9F%E5%A4%89%E3%81%88%E3%81%A6%E3%81%BF%E3%81%9F/</link><pubDate>Sat, 13 Jun 2009 05:28:00 +0900</pubDate><guid>https://igawa.io/posts/2009/06/%E3%82%B5%E3%82%A4%E3%83%88%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%92%E3%81%BE%E3%81%9F%E5%A4%89%E3%81%88%E3%81%A6%E3%81%BF%E3%81%9F/</guid><description>&lt;p&gt;画面スクロールが若干もたつくのが気になったので、
+サイトデザインを変えてみた。&lt;/p&gt;
+&lt;p&gt;結構満足。&lt;/p&gt;</description></item><item><title>LinuxでDVDをバックアップのメモ</title><link>https://igawa.io/posts/2009/01/linux%E3%81%A7dvd%E3%82%92%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97%E3%81%AE%E3%83%A1%E3%83%A2/</link><pubDate>Fri, 30 Jan 2009 12:14:00 +0900</pubDate><guid>https://igawa.io/posts/2009/01/linux%E3%81%A7dvd%E3%82%92%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97%E3%81%AE%E3%83%A1%E3%83%A2/</guid><description>&lt;p&gt;DVDは、結構長期間保存がきくが、いつどうなるか分かったものではないので、
+バックアップをするためのメモです。&lt;/p&gt;
+&lt;p&gt;私の趣味で(というかWindows環境が手元にないので)LinuxでDVDをバックアップしたときのメモです。&lt;/p&gt;
+&lt;p&gt;$ sudo apt-get install dvdbackup
+バックアップしたいDVDディスクを挿入。
+$ cd バックアップ先ディレクトリ; dvdbackup -M -v&lt;/p&gt;
+&lt;p&gt;これでOK。&lt;/p&gt;
+&lt;p&gt;さらに、ISOイメージにしたい場合には、genisoimageというソフトを使うらしいが、
+まだ私は使っていない。&lt;/p&gt;</description></item><item><title>wordpressへ鞍替</title><link>https://igawa.io/posts/2008/06/wordpress%E3%81%B8%E9%9E%8D%E6%9B%BF/</link><pubDate>Sun, 22 Jun 2008 22:57:00 +0900</pubDate><guid>https://igawa.io/posts/2008/06/wordpress%E3%81%B8%E9%9E%8D%E6%9B%BF/</guid><description>&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/wordpress/"&gt;wordpressへ鞍替しました。
+&lt;/a&gt;
+というわけで、今後は、&lt;a href="http://lunatic.xrea.jp/wordpress/"&gt;wordpress&lt;/a&gt;の方しか更新しない予定なので、よろしくお願いします。&lt;/p&gt;</description></item><item><title>wordpressにしてみた</title><link>https://igawa.io/posts/2008/06/wordpress%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link><pubDate>Wed, 04 Jun 2008 21:21:00 +0900</pubDate><guid>https://igawa.io/posts/2008/06/wordpress%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid><description>&lt;p&gt;ブログシステムを、wordpressにしてみました。&lt;/p&gt;
+&lt;p&gt;以前のデータはあえて引き継がず、新たな気持ちで。&lt;/p&gt;</description></item><item><title>食器洗い乾燥機を買っちゃいました！</title><link>https://igawa.io/posts/2006/09/%E9%A3%9F%E5%99%A8%E6%B4%97%E3%81%84%E4%B9%BE%E7%87%A5%E6%A9%9F%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%A1%E3%82%83%E3%81%84%E3%81%BE%E3%81%97%E3%81%9F/</link><pubDate>Thu, 14 Sep 2006 23:25:00 +0900</pubDate><guid>https://igawa.io/posts/2006/09/%E9%A3%9F%E5%99%A8%E6%B4%97%E3%81%84%E4%B9%BE%E7%87%A5%E6%A9%9F%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%A1%E3%82%83%E3%81%84%E3%81%BE%E3%81%97%E3%81%9F/</guid><description>&lt;p&gt;食器洗い乾燥機NP-BM1 を買っちゃいました！&lt;/p&gt;
+&lt;p&gt;まだ買ったばかりで、２回ぐらいしか使ってないので、使い勝手がよくわかっていませんが、
+もし、食器洗い乾燥機を買おうと考えている人がいるのなら、なるべく容量の大きな物を買った方が良いと思います。結構入れるの大変です。二人暮らしなのにいっぱいいっぱいです。&lt;/p&gt;</description></item><item><title>サイトのデザイン配置をちょっと変えました</title><link>https://igawa.io/posts/2005/10/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E9%85%8D%E7%BD%AE%E3%82%92%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E5%A4%89%E3%81%88%E3%81%BE%E3%81%97%E3%81%9F/</link><pubDate>Sat, 01 Oct 2005 00:32:00 +0900</pubDate><guid>https://igawa.io/posts/2005/10/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E9%85%8D%E7%BD%AE%E3%82%92%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E5%A4%89%E3%81%88%E3%81%BE%E3%81%97%E3%81%9F/</guid><description>&lt;p&gt;前は、３段だったのですが２段にしました。
+こっちの方がなんだか落ち着きます。&lt;/p&gt;</description></item><item><title>TomcatがApacheのTLP(top-level project)に</title><link>https://igawa.io/posts/2005/09/tomcat%E3%81%8Capache%E3%81%AEtlptop-level-project%E3%81%AB/</link><pubDate>Thu, 29 Sep 2005 11:21:00 +0900</pubDate><guid>https://igawa.io/posts/2005/09/tomcat%E3%81%8Capache%E3%81%AEtlptop-level-project%E3%81%AB/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/developers/05/09/29/0047250.shtml?topic=43"&gt;slashdot.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;JavaのWebコンテナ(サーブレット/JSPコンテナ実行環境)の標準ですからね。
+某社のミドルウェア製品も、Tomcatがベース(っていうか、ほとんどそのものだけど)になっています。
+&lt;a href="http://www.sw.nec.co.jp/middle/WebOTX/function/webctn.html"&gt;www.sw.nec.co.jp&lt;/a&gt;&lt;/p&gt;</description></item><item><title>表示が乱れていたみたいですね。。。(泣)</title><link>https://igawa.io/posts/2005/09/%E8%A1%A8%E7%A4%BA%E3%81%8C%E4%B9%B1%E3%82%8C%E3%81%A6%E3%81%84%E3%81%9F%E3%81%BF%E3%81%9F%E3%81%84%E3%81%A7%E3%81%99%E3%81%AD%E6%B3%A3/</link><pubDate>Sat, 24 Sep 2005 23:36:00 +0900</pubDate><guid>https://igawa.io/posts/2005/09/%E8%A1%A8%E7%A4%BA%E3%81%8C%E4%B9%B1%E3%82%8C%E3%81%A6%E3%81%84%E3%81%9F%E3%81%BF%E3%81%9F%E3%81%84%E3%81%A7%E3%81%99%E3%81%AD%E6%B3%A3/</guid><description>&lt;p&gt;このサイトのトップページの表示が乱れていたみたいですね。。。
+infoseekの奴を組み込んでいたのが原因みたいで、
+取り除いたら、うまく行きました。
+もうちょっと考えれば、回避できそうだけど、特に使ってもいなかったので、
+取り除いたままにしておきます。
+#いっつもFirefoxかSafariしか使っていなかったので、気づかなかった。。。&lt;/p&gt;</description></item><item><title>Opera無償版の広告バナーが廃止に</title><link>https://igawa.io/posts/2005/09/opera%E7%84%A1%E5%84%9F%E7%89%88%E3%81%AE%E5%BA%83%E5%91%8A%E3%83%90%E3%83%8A%E3%83%BC%E3%81%8C%E5%BB%83%E6%AD%A2%E3%81%AB/</link><pubDate>Thu, 22 Sep 2005 00:17:00 +0900</pubDate><guid>https://igawa.io/posts/2005/09/opera%E7%84%A1%E5%84%9F%E7%89%88%E3%81%AE%E5%BA%83%E5%91%8A%E3%83%90%E3%83%8A%E3%83%BC%E3%81%8C%E5%BB%83%E6%AD%A2%E3%81%AB/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=05/09/20/0812239&amp;amp;topic=74"&gt;slashdot.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ちょっと前に「ライセンス無料」のキャンペーンをやっていましたが、
+ついに「無料」となるそうです。
+今、私はMac使いなのですが、これを機会にOperaもちょっと使ってみよう。&lt;/p&gt;</description></item><item><title>この1年で最高の変換ミスは……</title><link>https://igawa.io/posts/2005/09/%E3%81%93%E3%81%AE1%E5%B9%B4%E3%81%A7%E6%9C%80%E9%AB%98%E3%81%AE%E5%A4%89%E6%8F%9B%E3%83%9F%E3%82%B9%E3%81%AF/</link><pubDate>Mon, 19 Sep 2005 10:04:00 +0900</pubDate><guid>https://igawa.io/posts/2005/09/%E3%81%93%E3%81%AE1%E5%B9%B4%E3%81%A7%E6%9C%80%E9%AB%98%E3%81%AE%E5%A4%89%E6%8F%9B%E3%83%9F%E3%82%B9%E3%81%AF/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0509/15/news103.html"&gt;www.itmedia.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;「今年から海外に住み始めました」を変換ミスした「今年から貝が胃に棲み始めました」&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;だそうです。。。
+でも、こんなの本当に変換ミスするのか？
+ということで、実際に色々入力してみました。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;このほか、「正解はお金です」→「政界はお金です」、「規制中で渋滞だ」→「寄生虫で重体だ」、「地区陸上大会」→「チクリ苦情大会」といった変換ミスが上位に並んだ。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;これらも入力してみた。&lt;/p&gt;
+&lt;p&gt;今年から海外に住み始めました&lt;/p&gt;
+&lt;p&gt;正解はお金です&lt;/p&gt;
+&lt;p&gt;帰省中で渋滞だ&lt;/p&gt;
+&lt;p&gt;地区陸上大会&lt;/p&gt;
+&lt;p&gt;どれも、普通に変換されています。。
+ケータイで入力すると、誤変換しやすいのでしょうか？
+しかし、私のケータイ(W21S)では、「ことしからかいがいにすみはじめました」は
+一気に入力することはできず、適当な単語ごとに変換します。&lt;/p&gt;
+&lt;p&gt;結局そっちの方が、変換効率は良さそうな漢字です。(&amp;lt;=誤変換)&lt;/p&gt;</description></item><item><title>Apple、TigerとPanther用のJavaセキュリティアップデートを公開</title><link>https://igawa.io/posts/2005/09/appletiger%E3%81%A8panther%E7%94%A8%E3%81%AEjava%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E3%82%92%E5%85%AC%E9%96%8B/</link><pubDate>Wed, 14 Sep 2005 20:54:00 +0900</pubDate><guid>https://igawa.io/posts/2005/09/appletiger%E3%81%A8panther%E7%94%A8%E3%81%AEjava%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E3%82%92%E5%85%AC%E9%96%8B/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0509/14/news039.html"&gt;www.itmedia.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「多くのセキュリティ面の強化」&lt;/p&gt;
+&lt;p&gt;Java 1.4.2は1.4.2_09にアップデート&lt;/p&gt;
+&lt;p&gt;Mac OS X向けJava実装において任意のファイルを不正ファイル化する問題&lt;/p&gt;
+&lt;p&gt;特定のJava ServerSocketに向けたネットワークトラフィックが見えてしまうMac
+OS X実装エラーが修正&lt;/p&gt;
+&lt;p&gt;だそうです。&lt;/p&gt;
+&lt;p&gt;私は、早速アップデートしました。&lt;/p&gt;</description></item><item><title>「Lunascape3」正式版リリース</title><link>https://igawa.io/posts/2005/09/lunascape3%E6%AD%A3%E5%BC%8F%E7%89%88%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</link><pubDate>Mon, 12 Sep 2005 23:43:00 +0900</pubDate><guid>https://igawa.io/posts/2005/09/lunascape3%E6%AD%A3%E5%BC%8F%E7%89%88%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0509/12/news053.html"&gt;www.itmedia.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;と、紹介してみたものの、
+最近、自宅でのメインPCはMac
+会社ではWindowsだが、ブラウザはFirefox。
+なので、利用機会は全然ないんです。&lt;/p&gt;
+&lt;p&gt;まぁ、奥さんはLunascape使っているが、「Lite」を使っているみたいなので、
+やはり関係ないですね。。&lt;/p&gt;</description></item><item><title>「iPod nano」PC Watchの分解レポートキター！</title><link>https://igawa.io/posts/2005/09/ipod-nanopc-watch%E3%81%AE%E5%88%86%E8%A7%A3%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%82%AD%E3%82%BF%E3%83%BC/</link><pubDate>Sat, 10 Sep 2005 23:04:00 +0900</pubDate><guid>https://igawa.io/posts/2005/09/ipod-nanopc-watch%E3%81%AE%E5%88%86%E8%A7%A3%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%82%AD%E3%82%BF%E3%83%BC/</guid><description>&lt;p&gt;&lt;a href="http://pc.watch.impress.co.jp/docs/2005/0908/nano.htm"&gt;pc.watch.impress.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;PC Watch恒例(笑)の分解レポートです。
+主な内容は、&lt;/p&gt;
+&lt;p&gt;外箱は「厚い部分」と「薄い部分」に分かれており、本体は薄いほうに入っている。&lt;/p&gt;
+&lt;p&gt;Samsung製のフラッシュメモリ。1チップ2GB。&lt;/p&gt;
+&lt;p&gt;バッテリ配線は半田付けされていて、一般人には交換は難しい。&lt;/p&gt;
+&lt;p&gt;全体の部品数は少なく、製造コストに配慮されてるっぽい。&lt;/p&gt;
+&lt;p&gt;全体的に良くできた製品。&lt;/p&gt;
+&lt;p&gt;という感じ。&lt;/p&gt;</description></item><item><title>「タチコママニアのためのタチコマ本」タチコマファイル発売</title><link>https://igawa.io/posts/2005/09/%E3%82%BF%E3%83%81%E3%82%B3%E3%83%9E%E3%83%9E%E3%83%8B%E3%82%A2%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%82%BF%E3%83%81%E3%82%B3%E3%83%9E%E6%9C%AC%E3%82%BF%E3%83%81%E3%82%B3%E3%83%9E%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E7%99%BA%E5%A3%B2/</link><pubDate>Fri, 09 Sep 2005 00:48:00 +0900</pubDate><guid>https://igawa.io/posts/2005/09/%E3%82%BF%E3%83%81%E3%82%B3%E3%83%9E%E3%83%9E%E3%83%8B%E3%82%A2%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%82%BF%E3%83%81%E3%82%B3%E3%83%9E%E6%9C%AC%E3%82%BF%E3%83%81%E3%82%B3%E3%83%9E%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E7%99%BA%E5%A3%B2/</guid><description>&lt;p&gt;&lt;a href="http://blog.livedoor.jp/geek/archives/50049100.html"&gt;blog.livedoor.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;タチコマー！！！！&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;60ページ強の本にはタチコマのビジュアルや設定資料、ホビージャパンのジオラマの作例や、アームズマガジンによる思考戦車タチコマ徹底分析の他、攻殻機動隊SAC/SAC2の監督・シリーズ構成お神山健治氏、タチコマの声優玉川紗己子氏、メカニカルデザイン寺岡賢司氏の「タチコマ座談会」も収録されている。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいです。
+タチコマファンの方はどうぞ。&lt;/p&gt;
+&lt;p&gt;「タチコマ」って何？って方は、
+&lt;a href="http://d.hatena.ne.jp/keyword/%A5%BF%A5%C1%A5%B3%A5%DE"&gt;d.hatena.ne.jp&lt;/a&gt;ここらへんをどうぞ。&lt;/p&gt;</description></item><item><title>「 最高裁判所裁判官 国民審査の判断資料」のサイト</title><link>https://igawa.io/posts/2005/09/%E6%9C%80%E9%AB%98%E8%A3%81%E5%88%A4%E6%89%80%E8%A3%81%E5%88%A4%E5%AE%98-%E5%9B%BD%E6%B0%91%E5%AF%A9%E6%9F%BB%E3%81%AE%E5%88%A4%E6%96%AD%E8%B3%87%E6%96%99%E3%81%AE%E3%82%B5%E3%82%A4%E3%83%88/</link><pubDate>Wed, 07 Sep 2005 22:20:00 +0900</pubDate><guid>https://igawa.io/posts/2005/09/%E6%9C%80%E9%AB%98%E8%A3%81%E5%88%A4%E6%89%80%E8%A3%81%E5%88%A4%E5%AE%98-%E5%9B%BD%E6%B0%91%E5%AF%A9%E6%9F%BB%E3%81%AE%E5%88%A4%E6%96%AD%E8%B3%87%E6%96%99%E3%81%AE%E3%82%B5%E3%82%A4%E3%83%88/</guid><description>&lt;p&gt;&lt;a href="http://homepage2.nifty.com/misoshiru/mg/judgedata.htm"&gt;homepage2.nifty.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;選挙には、毎回行っているのですが、
+「 最高裁判所裁判官 国民審査」に関しては、
+いっつも適当に○×をつけてました。
+（だって判断材料が全然ないんだもん）
+今回は、このサイトのおかげで、ちゃんと考えることができそうです。&lt;/p&gt;</description></item><item><title>自宅サーバをMacにしてみた</title><link>https://igawa.io/posts/2005/09/%E8%87%AA%E5%AE%85%E3%82%B5%E3%83%BC%E3%83%90%E3%82%92mac%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link><pubDate>Tue, 06 Sep 2005 23:36:00 +0900</pubDate><guid>https://igawa.io/posts/2005/09/%E8%87%AA%E5%AE%85%E3%82%B5%E3%83%BC%E3%83%90%E3%82%92mac%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid><description>&lt;p&gt;自宅サーバをMacにしてみました
+理由は、&lt;/p&gt;
+&lt;p&gt;以前サーバにしていたPCのスペック(PentiumII 350MHz
+384MB)より、Mac(PowerPC 1GHz, 896MB)の方がスペックがいいこと。&lt;/p&gt;
+&lt;p&gt;なんとなく（ｗ&lt;/p&gt;
+&lt;p&gt;という理由です。&lt;/p&gt;
+&lt;p&gt;以前のサーバはLinuxだったのですが、
+今回はMacなので、ちょっと勝手が違って困ったのですが、
+大体、同様のことができるようになったので、
+移行してみました。&lt;/p&gt;
+&lt;p&gt;まぁ、前のサーバには大したコンテンツも無かったので、
+メールサーバ＆ファイルサーバになっているだけでしたが。&lt;/p&gt;
+&lt;p&gt;自分のサーバなので、JavaのWebコンテナ(Tomcat)を使えるのが、
+レンタルサーバとの大きな違いでしょうか。&lt;/p&gt;
+&lt;p&gt;後、HTTPS通信も行うべく、サーバ証明書を用意したりしていますが、
+当然「オレオレ証明書」&lt;/p&gt;</description></item><item><title>シンガポールCreativeがMP3プレーヤに関する特許を取得，「iPodより先に発 明」</title><link>https://igawa.io/posts/2005/09/%E3%82%B7%E3%83%B3%E3%82%AC%E3%83%9D%E3%83%BC%E3%83%ABcreative%E3%81%8Cmp3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%A4%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E7%89%B9%E8%A8%B1%E3%82%92%E5%8F%96%E5%BE%97ipod%E3%82%88%E3%82%8A%E5%85%88%E3%81%AB%E7%99%BA-%E6%98%8E/</link><pubDate>Tue, 06 Sep 2005 23:30:00 +0900</pubDate><guid>https://igawa.io/posts/2005/09/%E3%82%B7%E3%83%B3%E3%82%AC%E3%83%9D%E3%83%BC%E3%83%ABcreative%E3%81%8Cmp3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%A4%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E7%89%B9%E8%A8%B1%E3%82%92%E5%8F%96%E5%BE%97ipod%E3%82%88%E3%82%8A%E5%85%88%E3%81%AB%E7%99%BA-%E6%98%8E/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/article/USNEWS/20050831/220349/"&gt;itpro.nikkeibp.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;申請内容は&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;プレーヤのディスプレイ上で，連続する3つ以上の画面を使って，階層構造に
+従ってナビゲートし，多数の楽曲の中から1曲以上を選ぶ手法に関するもの。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ということらしいが、こんなものに
+「特許性」(新規性、進歩性)があるのか、はなはだ疑問だ。&lt;/p&gt;
+&lt;p&gt;だって、これってWindowsのエクスプローラで
+とっくに実現されていたものじゃないのか？&lt;/p&gt;
+&lt;p&gt;くだらないね。&lt;/p&gt;</description></item><item><title>SMEがiTMSへ楽曲提供かも？</title><link>https://igawa.io/posts/2005/09/sme%E3%81%8Citms%E3%81%B8%E6%A5%BD%E6%9B%B2%E6%8F%90%E4%BE%9B%E3%81%8B%E3%82%82/</link><pubDate>Mon, 05 Sep 2005 23:24:00 +0900</pubDate><guid>https://igawa.io/posts/2005/09/sme%E3%81%8Citms%E3%81%B8%E6%A5%BD%E6%9B%B2%E6%8F%90%E4%BE%9B%E3%81%8B%E3%82%82/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=05/09/05/0936228&amp;amp;topic=52"&gt;slashdot.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;まだ、「具体的な時期も決まっていない」という情報もあるようなので、
+まだ、どう転ぶかわからないですね。&lt;/p&gt;</description></item><item><title>Firefox 1.5のβ1、9月8日リリース</title><link>https://igawa.io/posts/2005/09/firefox-15%E3%81%AE%CE%B219%E6%9C%888%E6%97%A5%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</link><pubDate>Mon, 05 Sep 2005 00:45:00 +0900</pubDate><guid>https://igawa.io/posts/2005/09/firefox-15%E3%81%AE%CE%B219%E6%9C%888%E6%97%A5%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0509/02/news020.html"&gt;www.itmedia.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;機能強化として&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;アップグレードを簡略化するソフトアップデートシステム
+ブラウザナビゲーションの高速化
+ドラッグ＆ドロップによるブラウザタブの並べ替え機能
+ポップアップ遮断機能の向上
+Mac OS Xサポートの改善&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;というものが有るらしい。
+期待してしまいます。&lt;/p&gt;</description></item><item><title>民主党、選挙期間中のネット利用について総務省に質問状を送付</title><link>https://igawa.io/posts/2005/09/%E6%B0%91%E4%B8%BB%E5%85%9A%E9%81%B8%E6%8C%99%E6%9C%9F%E9%96%93%E4%B8%AD%E3%81%AE%E3%83%8D%E3%83%83%E3%83%88%E5%88%A9%E7%94%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E7%B7%8F%E5%8B%99%E7%9C%81%E3%81%AB%E8%B3%AA%E5%95%8F%E7%8A%B6%E3%82%92%E9%80%81%E4%BB%98/</link><pubDate>Sat, 03 Sep 2005 00:49:00 +0900</pubDate><guid>https://igawa.io/posts/2005/09/%E6%B0%91%E4%B8%BB%E5%85%9A%E9%81%B8%E6%8C%99%E6%9C%9F%E9%96%93%E4%B8%AD%E3%81%AE%E3%83%8D%E3%83%83%E3%83%88%E5%88%A9%E7%94%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E7%B7%8F%E5%8B%99%E7%9C%81%E3%81%AB%E8%B3%AA%E5%95%8F%E7%8A%B6%E3%82%92%E9%80%81%E4%BB%98/</guid><description>&lt;p&gt;&lt;a href="http://internet.watch.impress.co.jp/cda/news/2005/09/02/9013.html"&gt;internet.watch.impress.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;う〜ん。アホだ。
+解散する前に、こういう「変な法律」を改正しておけば良かったのにね。
+自分で、自分の首を絞めているようなもんじゃん。&lt;/p&gt;</description></item><item><title>東京タワー名物「昇り階段」</title><link>https://igawa.io/posts/2005/08/%E6%9D%B1%E4%BA%AC%E3%82%BF%E3%83%AF%E3%83%BC%E5%90%8D%E7%89%A9%E6%98%87%E3%82%8A%E9%9A%8E%E6%AE%B5/</link><pubDate>Sun, 21 Aug 2005 21:34:00 +0900</pubDate><guid>https://igawa.io/posts/2005/08/%E6%9D%B1%E4%BA%AC%E3%82%BF%E3%83%AF%E3%83%BC%E5%90%8D%E7%89%A9%E6%98%87%E3%82%8A%E9%9A%8E%E6%AE%B5/</guid><description>&lt;p&gt;&lt;a href="http://www.tokyotower.co.jp/2005/"&gt;www.tokyotower.co.jp&lt;/a&gt;
+東京タワーの階段１５０m（約６００段）を歩いて登るイベントだそうです。
+で、
+階段で登るとはいえ、展望台に行くので「展望券（大人８２０円）」が必要です。
+記念品（オリジナル「ノッポンノート」）と認定書（非売品の「ノッポン公認昇り階段認定証」（ナンバリング入り））が
+もらえるそうです。&lt;/p&gt;</description></item><item><title>2ch発「Mona OS」作者がはてなに来た理由</title><link>https://igawa.io/posts/2005/08/2ch%E7%99%BAmona-os%E4%BD%9C%E8%80%85%E3%81%8C%E3%81%AF%E3%81%A6%E3%81%AA%E3%81%AB%E6%9D%A5%E3%81%9F%E7%90%86%E7%94%B1/</link><pubDate>Sat, 20 Aug 2005 23:24:00 +0900</pubDate><guid>https://igawa.io/posts/2005/08/2ch%E7%99%BAmona-os%E4%BD%9C%E8%80%85%E3%81%8C%E3%81%AF%E3%81%A6%E3%81%AA%E3%81%AB%E6%9D%A5%E3%81%9F%E7%90%86%E7%94%B1/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0508/19/news029.html"&gt;www.itmedia.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;「同い年なのに、自分の20倍の生産性を持っている人がいる。一生かかっても追いつけない」——人生の大半の時間を、学ぶことがほとんどない仕事に費やす毎日。平日の帰宅後と休日をフルに使って技術を磨いても、限界があった。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;「自分の全盛期かもしれない20代後半に、こんな会社にいていいんだろうか」。入社4年目の27歳。管理職のポスト——お金と人を動かすだけの生活——が迫っていた。結婚したばかりで、安定した生活も捨てがたかったが、「我慢の限界だった」。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1日中技術を勉強できる企業に行きたかった。メディアやブログが伝える、第一線の技術者の姿に自分を重ねた。Googleのような、技術者が生き生きしている企業にあこがれた。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;hellip;
+うー。
+なんか、考えていることや周りの状況が似ているかも。。。
+行動力が違うようだ。
+こういう人は結構いるのだろうと思う。&lt;/p&gt;</description></item><item><title>日本版iTMSにもアフィリエイトプログラム</title><link>https://igawa.io/posts/2005/08/%E6%97%A5%E6%9C%AC%E7%89%88itms%E3%81%AB%E3%82%82%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%88%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0/</link><pubDate>Sun, 07 Aug 2005 19:04:00 +0900</pubDate><guid>https://igawa.io/posts/2005/08/%E6%97%A5%E6%9C%AC%E7%89%88itms%E3%81%AB%E3%82%82%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%88%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0508/05/news078.html"&gt;www.itmedia.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;音楽を紹介しているようなBLOGを持っている人は、
+要チェックですね。&lt;/p&gt;</description></item><item><title>Apple、日本での「iTunes Music Store」の開始を発表</title><link>https://igawa.io/posts/2005/08/apple%E6%97%A5%E6%9C%AC%E3%81%A7%E3%81%AEitunes-music-store%E3%81%AE%E9%96%8B%E5%A7%8B%E3%82%92%E7%99%BA%E8%A1%A8/</link><pubDate>Fri, 05 Aug 2005 08:41:00 +0900</pubDate><guid>https://igawa.io/posts/2005/08/apple%E6%97%A5%E6%9C%AC%E3%81%A7%E3%81%AEitunes-music-store%E3%81%AE%E9%96%8B%E5%A7%8B%E3%82%92%E7%99%BA%E8%A1%A8/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=05/08/04/0247259&amp;amp;topic=52"&gt;slashdot.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.apple.com/jp/itunes/store/"&gt;www.apple.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ついに開始。&lt;/p&gt;
+&lt;p&gt;1曲150〜200円くらいらしいです。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;個人利用目的であれば、何枚でもCDを作成でき、台数無制限のiPod、最大5台
+のMac、Windows PCで再生できます。iTunesはMac、Windows
+PCのどちらでもス
+ムーズに動作するので、どちらのプラットフォームでiTunesを使っていても、
+ネットワーク上のあらゆるMacやWindows PCと曲を共有できます。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいっす。&lt;/p&gt;</description></item><item><title>ついに始まったノーPC週間! PCを使わず、子どもにクリエイティブな夏休み</title><link>https://igawa.io/posts/2005/08/%E3%81%A4%E3%81%84%E3%81%AB%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F%E3%83%8E%E3%83%BCpc%E9%80%B1%E9%96%93-pc%E3%82%92%E4%BD%BF%E3%82%8F%E3%81%9A%E5%AD%90%E3%81%A9%E3%82%82%E3%81%AB%E3%82%AF%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96%E3%81%AA%E5%A4%8F%E4%BC%91%E3%81%BF/</link><pubDate>Thu, 04 Aug 2005 08:39:00 +0900</pubDate><guid>https://igawa.io/posts/2005/08/%E3%81%A4%E3%81%84%E3%81%AB%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F%E3%83%8E%E3%83%BCpc%E9%80%B1%E9%96%93-pc%E3%82%92%E4%BD%BF%E3%82%8F%E3%81%9A%E5%AD%90%E3%81%A9%E3%82%82%E3%81%AB%E3%82%AF%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96%E3%81%AA%E5%A4%8F%E4%BC%91%E3%81%BF/</guid><description>&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2005/08/02/004.html"&gt;pcweb.mycom.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;う〜ん。ちょっと違和感あり。
+確かに、
+「掲示板などでくだらない会話をやり取りしてるだけ」
+なら、「ノーPC」も理解できますが、
+すばらしいプログラムを書くかもしれないのに、
+その機会を取り上げるような、この運動はどうなんだ？&lt;/p&gt;</description></item><item><title>体長１．４メートル、巨大ヘラクレスカブト展示 札幌</title><link>https://igawa.io/posts/2005/07/%E4%BD%93%E9%95%B7%EF%BC%91%EF%BC%94%E3%83%A1%E3%83%BC%E3%83%88%E3%83%AB%E5%B7%A8%E5%A4%A7%E3%83%98%E3%83%A9%E3%82%AF%E3%83%AC%E3%82%B9%E3%82%AB%E3%83%96%E3%83%88%E5%B1%95%E7%A4%BA-%E6%9C%AD%E5%B9%8C/</link><pubDate>Thu, 28 Jul 2005 21:59:00 +0900</pubDate><guid>https://igawa.io/posts/2005/07/%E4%BD%93%E9%95%B7%EF%BC%91%EF%BC%94%E3%83%A1%E3%83%BC%E3%83%88%E3%83%AB%E5%B7%A8%E5%A4%A7%E3%83%98%E3%83%A9%E3%82%AF%E3%83%AC%E3%82%B9%E3%82%AB%E3%83%96%E3%83%88%E5%B1%95%E7%A4%BA-%E6%9C%AD%E5%B9%8C/</guid><description>&lt;p&gt;&lt;a href="http://www.asahi.com/national/update/0726/TKY200507260375.html"&gt;http://www.asahi.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;模型ですよ。
+本物じゃないです。&lt;/p&gt;</description></item><item><title>ホンダの小型ジェット機、２８日に一般公開</title><link>https://igawa.io/posts/2005/07/%E3%83%9B%E3%83%B3%E3%83%80%E3%81%AE%E5%B0%8F%E5%9E%8B%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E6%A9%9F%EF%BC%92%EF%BC%98%E6%97%A5%E3%81%AB%E4%B8%80%E8%88%AC%E5%85%AC%E9%96%8B/</link><pubDate>Mon, 25 Jul 2005 21:16:00 +0900</pubDate><guid>https://igawa.io/posts/2005/07/%E3%83%9B%E3%83%B3%E3%83%80%E3%81%AE%E5%B0%8F%E5%9E%8B%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E6%A9%9F%EF%BC%92%EF%BC%98%E6%97%A5%E3%81%AB%E4%B8%80%E8%88%AC%E5%85%AC%E9%96%8B/</guid><description>&lt;p&gt;&lt;a href="http://www.asahi.com/business/update/0725/072.html"&gt;http://www.asahi.com/&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;「航空会社の路線を使うよりも・・・テロに遭う危険性も小さい」&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいのですが、
+トータルの航空事故が発生する可能性は小さいのでしょうか？
+飛行機が小さいってことは、気流の影響を受けやすそうだし、
+航空事故が発生する可能性が高まる気がするのですが。&lt;/p&gt;</description></item><item><title>オーストラリアに行ってきました</title><link>https://igawa.io/posts/2005/07/%E3%82%AA%E3%83%BC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%AA%E3%82%A2%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/</link><pubDate>Thu, 21 Jul 2005 23:12:00 +0900</pubDate><guid>https://igawa.io/posts/2005/07/%E3%82%AA%E3%83%BC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%AA%E3%82%A2%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/</guid><description>&lt;p&gt;オーストラリアに行ってきました。
+最初はあんまり天気がよくありませんでしたが、
+エアーズロック（ウルル）です。
+&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1044s.html"&gt;&lt;img alt="picture" loading="lazy" src="http://lunatic.xrea.jp/mt/archives/dsc_1044s-thumb.jpg"&gt;&lt;/a&gt;
+とても良かったでーす。
+ちなみにウルルには登りませんでした。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1364s.html"&gt;&lt;img alt="picture" loading="lazy" src="http://lunatic.xrea.jp/mt/archives/dsc_1364s-thumb.jpg"&gt;&lt;/a&gt;
+ゴールドコーストのホテルからの夜景。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1220s1.html"&gt;&lt;img alt="picture" loading="lazy" src="http://lunatic.xrea.jp/mt/archives/dsc_1220s-thumb.jpg"&gt;&lt;/a&gt;
+南十字座&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/dsc_1223s.html"&gt;&lt;img alt="picture" loading="lazy" src="http://lunatic.xrea.jp/mt/archives/dsc_1223s-thumb.JPG"&gt;&lt;/a&gt;
+泊まったホテルの夜&lt;/p&gt;</description></item><item><title>簡単! Pure Javaのデータベースエンジン - HSQLDB 1.8公開</title><link>https://igawa.io/posts/2005/07/%E7%B0%A1%E5%8D%98-pure-java%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3-hsqldb-18%E5%85%AC%E9%96%8B/</link><pubDate>Thu, 07 Jul 2005 00:25:00 +0900</pubDate><guid>https://igawa.io/posts/2005/07/%E7%B0%A1%E5%8D%98-pure-java%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3-hsqldb-18%E5%85%AC%E9%96%8B/</guid><description>&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2005/07/05/011.html"&gt;http://pcweb.mycom.co.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;すごいなぁ。
+軽いデータベースエンジンなら、色々使い道があるから、
+需要も多そうですね。&lt;/p&gt;</description></item><item><title>理系のための恋愛論 女の子が不機嫌なときの原因</title><link>https://igawa.io/posts/2005/07/%E7%90%86%E7%B3%BB%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E6%81%8B%E6%84%9B%E8%AB%96-%E5%A5%B3%E3%81%AE%E5%AD%90%E3%81%8C%E4%B8%8D%E6%A9%9F%E5%AB%8C%E3%81%AA%E3%81%A8%E3%81%8D%E3%81%AE%E5%8E%9F%E5%9B%A0/</link><pubDate>Tue, 05 Jul 2005 22:23:00 +0900</pubDate><guid>https://igawa.io/posts/2005/07/%E7%90%86%E7%B3%BB%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E6%81%8B%E6%84%9B%E8%AB%96-%E5%A5%B3%E3%81%AE%E5%AD%90%E3%81%8C%E4%B8%8D%E6%A9%9F%E5%AB%8C%E3%81%AA%E3%81%A8%E3%81%8D%E3%81%AE%E5%8E%9F%E5%9B%A0/</guid><description>&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/column/rikei/178/"&gt;http://pcweb.mycom.co.jp/&lt;/a&gt;
+「いわゆる理系」な男には到底理解できない原因だったりします。
+真剣に悩んだりすると、結構大変です。
+さりげなく対処するのが良いのでしょう。&lt;/p&gt;</description></item><item><title>危うし！「魁！！クロマティ高校」</title><link>https://igawa.io/posts/2005/06/%E5%8D%B1%E3%81%86%E3%81%97%E9%AD%81%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%86%E3%82%A3%E9%AB%98%E6%A0%A1/</link><pubDate>Thu, 30 Jun 2005 21:15:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/%E5%8D%B1%E3%81%86%E3%81%97%E9%AD%81%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%86%E3%82%A3%E9%AB%98%E6%A0%A1/</guid><description>&lt;p&gt;&lt;a href="http://www.asahi.com/culture/theater/TKY200506290265.html"&gt;http://www.asahi.com/&lt;/a&gt;
+&lt;a href="http://chuspo.chunichi.co.jp/00/hou/20050630/spon____hou_____002.shtml"&gt;http://chuspo.chunichi.co.jp/&lt;/a&gt;
+&lt;a href="http://www.daily.co.jp/gossip/2005/06/30/178334.shtml"&gt;http://www.daily.co.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;元プロ野球巨人のウォーレン・クロマティさん（５１）が２９日、「氏名を無断で使われ、パブリシティー権（著名人がネームバリューの経済的価値を独占的に使う権利）を侵害された」として、公開差し止めの仮処分を東京地裁に申し立てた。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいです。
+う〜ん。確かに「クロマティ」さんを意識しているとは思うけど、
+そんなに目くじら立ててまで言うほどの問題じゃないと思うんだけどね。。。
+映画を盛り上げるためのネタか、もしくは誰かにだまされたと思われる。&lt;/p&gt;</description></item><item><title>バイ・デザインから52型リアプロ キター</title><link>https://igawa.io/posts/2005/06/%E3%83%90%E3%82%A4%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%8B%E3%82%8952%E5%9E%8B%E3%83%AA%E3%82%A2%E3%83%97%E3%83%AD-%E3%82%AD%E3%82%BF%E3%83%BC/</link><pubDate>Thu, 30 Jun 2005 21:03:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/%E3%83%90%E3%82%A4%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%8B%E3%82%8952%E5%9E%8B%E3%83%AA%E3%82%A2%E3%83%97%E3%83%AD-%E3%82%AD%E3%82%BF%E3%83%BC/</guid><description>&lt;p&gt;&lt;a href="http://www.bydsign.co.jp/2004/pro/d5275DPJ.htm"&gt;http://www.bydsign.co.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;299,800円也。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;デジカメの画像(JPEG、JPG)、ＭＰ３、WMA形式の音楽ファイルなどの再生が可能&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいです。&lt;/p&gt;
+&lt;p&gt;バイ・デザインのWebサイト以外では、
+ヨドバシカメラやビックカメラで購入できる。
+ヨドバシなら10%ポイント還元！
+&lt;a href="http://www5.yodobashi.com/enjoy/more/i/39955340.html"&gt;http://www5.yodobashi.com/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>著作権の“盾”を破れ——テレビ番組ネット配信の課題</title><link>https://igawa.io/posts/2005/06/%E8%91%97%E4%BD%9C%E6%A8%A9%E3%81%AE%E7%9B%BE%E3%82%92%E7%A0%B4%E3%82%8C%E3%83%86%E3%83%AC%E3%83%93%E7%95%AA%E7%B5%84%E3%83%8D%E3%83%83%E3%83%88%E9%85%8D%E4%BF%A1%E3%81%AE%E8%AA%B2%E9%A1%8C/</link><pubDate>Wed, 29 Jun 2005 00:24:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/%E8%91%97%E4%BD%9C%E6%A8%A9%E3%81%AE%E7%9B%BE%E3%82%92%E7%A0%B4%E3%82%8C%E3%83%86%E3%83%AC%E3%83%93%E7%95%AA%E7%B5%84%E3%83%8D%E3%83%83%E3%83%88%E9%85%8D%E4%BF%A1%E3%81%AE%E8%AA%B2%E9%A1%8C/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0506/28/news072.html"&gt;http://www.itmedia.co.jp/&lt;/a&gt;
+もう、なんだか今のテレビ業界の「縛り」をみていると、
+テレビを見る気が失せてしまう。
+HDDレコーダを買ってからは、リアルタイムでテレビを見ることなんてほとんどなくなりました。
+「ケータイでテレビ！」なんていうのはほとんど流行んないんじゃないかな。&lt;/p&gt;
+&lt;p&gt;それよりも、「自由に録画できて、自由に持ち歩き」できた方がよっぽどうれしいです。
+マジで。&lt;/p&gt;</description></item><item><title>トランスウエアがOpera販売権を巡ってライブドアを東京地裁に提訴</title><link>https://igawa.io/posts/2005/06/%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B9%E3%82%A6%E3%82%A8%E3%82%A2%E3%81%8Copera%E8%B2%A9%E5%A3%B2%E6%A8%A9%E3%82%92%E5%B7%A1%E3%81%A3%E3%81%A6%E3%83%A9%E3%82%A4%E3%83%96%E3%83%89%E3%82%A2%E3%82%92%E6%9D%B1%E4%BA%AC%E5%9C%B0%E8%A3%81%E3%81%AB%E6%8F%90%E8%A8%B4/</link><pubDate>Sat, 25 Jun 2005 00:56:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B9%E3%82%A6%E3%82%A8%E3%82%A2%E3%81%8Copera%E8%B2%A9%E5%A3%B2%E6%A8%A9%E3%82%92%E5%B7%A1%E3%81%A3%E3%81%A6%E3%83%A9%E3%82%A4%E3%83%96%E3%83%89%E3%82%A2%E3%82%92%E6%9D%B1%E4%BA%AC%E5%9C%B0%E8%A3%81%E3%81%AB%E6%8F%90%E8%A8%B4/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/NC/NEWS/20050622/163216/"&gt;http://itpro.nikkeibp.co.jp/&lt;/a&gt;
+&lt;a href="http://slashdot.jp/article.pl?sid=05/06/22/0839210&amp;amp;topic=73"&gt;http://slashdot.jp/&lt;/a&gt;
+どちらかに思い違いが有るのだとは思いますが、
+もう、ここまで来たら引き下がれないのでしょう。&lt;/p&gt;</description></item><item><title>Webメール de PostPet</title><link>https://igawa.io/posts/2005/06/web%E3%83%A1%E3%83%BC%E3%83%AB-de-postpet/</link><pubDate>Thu, 23 Jun 2005 23:55:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/web%E3%83%A1%E3%83%BC%E3%83%AB-de-postpet/</guid><description>&lt;p&gt;&lt;a href="http://blog.so-net.ne.jp/postpetwm/"&gt;http://blog.so-net.ne.jp/&lt;/a&gt;
+&lt;a href="http://www.itmedia.co.jp/news/articles/0506/23/news038.html"&gt;http://www.itmedia.co.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;最近は、ほとんどの環境が常時接続なんだし、
+Flashなら、それなりの速度で動作すると思われるので、
+こういうPostPetもアリですね。&lt;/p&gt;</description></item><item><title>ヨドバシカメラ、FeliCa機能搭載の新型ゴールドポイントカード</title><link>https://igawa.io/posts/2005/06/%E3%83%A8%E3%83%89%E3%83%90%E3%82%B7%E3%82%AB%E3%83%A1%E3%83%A9felica%E6%A9%9F%E8%83%BD%E6%90%AD%E8%BC%89%E3%81%AE%E6%96%B0%E5%9E%8B%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%82%AB%E3%83%BC%E3%83%89/</link><pubDate>Mon, 20 Jun 2005 23:24:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/%E3%83%A8%E3%83%89%E3%83%90%E3%82%B7%E3%82%AB%E3%83%A1%E3%83%A9felica%E6%A9%9F%E8%83%BD%E6%90%AD%E8%BC%89%E3%81%AE%E6%96%B0%E5%9E%8B%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%82%AB%E3%83%BC%E3%83%89/</guid><description>&lt;p&gt;&lt;a href="http://pc.watch.impress.co.jp/docs/2005/0620/yodobashi.htm"&gt;picture&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ちょっといいかも。
+何がいいかって、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;他店で購入した商品のクレジットカード決済分については、別途、利用金額に
+応じたポイントが発行され、ゴールドポイントに加算される。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;まぁ、どれくらい還元されるかにもよるけど。。。&lt;/p&gt;</description></item><item><title>JavaのGUIをXMLから生成する gui4j 1.1公開</title><link>https://igawa.io/posts/2005/06/java%E3%81%AEgui%E3%82%92xml%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B-gui4j-11%E5%85%AC%E9%96%8B/</link><pubDate>Sat, 11 Jun 2005 22:59:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/java%E3%81%AEgui%E3%82%92xml%E3%81%8B%E3%82%89%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B-gui4j-11%E5%85%AC%E9%96%8B/</guid><description>&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2005/06/09/012.html"&gt;http://pcweb.mycom.co.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ちょっと面白いかも。
+こういうものは、どんどん外に出して行った方が、
+保守性が高まって、変更もしやすくなるね。&lt;/p&gt;</description></item><item><title>シュレッダーくず、緩衝材に再利用 前橋中央郵便局</title><link>https://igawa.io/posts/2005/06/%E3%82%B7%E3%83%A5%E3%83%AC%E3%83%83%E3%83%80%E3%83%BC%E3%81%8F%E3%81%9A%E7%B7%A9%E8%A1%9D%E6%9D%90%E3%81%AB%E5%86%8D%E5%88%A9%E7%94%A8-%E5%89%8D%E6%A9%8B%E4%B8%AD%E5%A4%AE%E9%83%B5%E4%BE%BF%E5%B1%80/</link><pubDate>Sat, 11 Jun 2005 22:55:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/%E3%82%B7%E3%83%A5%E3%83%AC%E3%83%83%E3%83%80%E3%83%BC%E3%81%8F%E3%81%9A%E7%B7%A9%E8%A1%9D%E6%9D%90%E3%81%AB%E5%86%8D%E5%88%A9%E7%94%A8-%E5%89%8D%E6%A9%8B%E4%B8%AD%E5%A4%AE%E9%83%B5%E4%BE%BF%E5%B1%80/</guid><description>&lt;p&gt;&lt;a href="http://www.asahi.com/life/update/0610/003.html"&gt;http://www.asahi.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;個人情報は大丈夫か？
+名前と住所がばっちり見える状態で裁断されることだって
+有るだろうと思うんだが。&lt;/p&gt;</description></item><item><title>サッカー日本 ワールドカップドイツ大会出場決定！おめでと〜</title><link>https://igawa.io/posts/2005/06/%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E6%97%A5%E6%9C%AC-%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%82%AB%E3%83%83%E3%83%97%E3%83%89%E3%82%A4%E3%83%84%E5%A4%A7%E4%BC%9A%E5%87%BA%E5%A0%B4%E6%B1%BA%E5%AE%9A%E3%81%8A%E3%82%81%E3%81%A7%E3%81%A8/</link><pubDate>Wed, 08 Jun 2005 23:55:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E6%97%A5%E6%9C%AC-%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%82%AB%E3%83%83%E3%83%97%E3%83%89%E3%82%A4%E3%83%84%E5%A4%A7%E4%BC%9A%E5%87%BA%E5%A0%B4%E6%B1%BA%E5%AE%9A%E3%81%8A%E3%82%81%E3%81%A7%E3%81%A8/</guid><description>&lt;p&gt;&lt;a href="http://www.mainichi-msn.co.jp/today/news/20050609k0000m050091000c.html"&gt;毎日
+&lt;/a&gt;、&lt;a href="http://www.asahi.com/sports/update/0608/123.html"&gt;朝日&lt;/a&gt;、&lt;a href="http://www.yomiuri.co.jp/main/news/20050608it12.htm"&gt;読売&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;おめでとうございます。
+ジーコ監督もちょっとはほっとしたことでしょう。&lt;/p&gt;</description></item><item><title>マウスだけで文字入力 予測変換で素早く</title><link>https://igawa.io/posts/2005/06/%E3%83%9E%E3%82%A6%E3%82%B9%E3%81%A0%E3%81%91%E3%81%A7%E6%96%87%E5%AD%97%E5%85%A5%E5%8A%9B-%E4%BA%88%E6%B8%AC%E5%A4%89%E6%8F%9B%E3%81%A7%E7%B4%A0%E6%97%A9%E3%81%8F/</link><pubDate>Wed, 08 Jun 2005 22:22:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/%E3%83%9E%E3%82%A6%E3%82%B9%E3%81%A0%E3%81%91%E3%81%A7%E6%96%87%E5%AD%97%E5%85%A5%E5%8A%9B-%E4%BA%88%E6%B8%AC%E5%A4%89%E6%8F%9B%E3%81%A7%E7%B4%A0%E6%97%A9%E3%81%8F/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0506/07/news061.html"&gt;http://www.itmedia.co.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Internet Explorer（IE）の入力フォームに、マウスだけで文字を入力できる
+システム「モジット」のテクニカルプレビュー版を
+「&lt;a href="http://www.atok.com/"&gt;ATOK.com&lt;/a&gt;」
+で無料公開した&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ぐは。IEだけか。。。
+でも、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;■使用制限
+お使いいただくモジットは、テクニカルプレビュー版のため、Internet
+Explorer上でしか動作しません。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;と、書かれていますので、製品版では他のブラウザにも対応しそうな感じ。
+&lt;a href="https://www.justsystem.co.jp/atok/suisui/mojit/index.html"&gt;
+https://www.justsystem.co.jp/
+&lt;/a&gt;
+から、ダウンロードできるみたいです。&lt;/p&gt;</description></item><item><title>47V型で30万以下、エプソンが高画質・低価格リアプロジェクションTV</title><link>https://igawa.io/posts/2005/06/47v%E5%9E%8B%E3%81%A730%E4%B8%87%E4%BB%A5%E4%B8%8B%E3%82%A8%E3%83%97%E3%82%BD%E3%83%B3%E3%81%8C%E9%AB%98%E7%94%BB%E8%B3%AA%E4%BD%8E%E4%BE%A1%E6%A0%BC%E3%83%AA%E3%82%A2%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3tv/</link><pubDate>Tue, 07 Jun 2005 22:12:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/47v%E5%9E%8B%E3%81%A730%E4%B8%87%E4%BB%A5%E4%B8%8B%E3%82%A8%E3%83%97%E3%82%BD%E3%83%B3%E3%81%8C%E9%AB%98%E7%94%BB%E8%B3%AA%E4%BD%8E%E4%BE%A1%E6%A0%BC%E3%83%AA%E3%82%A2%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3tv/</guid><description>&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2005/06/07/004.html"&gt;http://pcweb.mycom.co.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「ELS-47S1(47V型)」29万8,000円
+「ELS-57S1(57V型)」39万8,000円&lt;/p&gt;
+&lt;p&gt;省電力性も特徴で、47V型、57V型ともに198Wの消費電力を実現。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1万8,000円程度の交換用予備ランプを標準で同梱&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;だそうです。&lt;/p&gt;
+&lt;p&gt;一日に8時間平均で見るとして、ランプ寿命が約1万時間なので、
+一つのランプで
+10000/8/365=3.42..
+約3年半の寿命。
+ランプがついているのでおよそ7年くらいはランプ購入しなくて済む計算か。。&lt;/p&gt;
+&lt;p&gt;まぁ、ハードユーザで無い限りは、ランプ購入はしなくて済みそうな感じかな。&lt;/p&gt;
+&lt;p&gt;なお、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ユーザーの不満点の1つであった視野角については、明るさの向上で多少改善
+されたものの、「液晶やプラズマテレビよりはまだ狭い」(同社取締役・映像
+機器事業部長 内田健治氏)ため、今後改善することを目指す。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;とのことなので、しばらく待つとまた新製品が出る可能性もありうる。&lt;/p&gt;</description></item><item><title>Debian GNU/Linux 3.1 "sarge" リリース!</title><link>https://igawa.io/posts/2005/06/debian-gnulinux-31-sarge-%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</link><pubDate>Tue, 07 Jun 2005 22:04:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/debian-gnulinux-31-sarge-%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=05/06/07/0050220&amp;amp;topic=24"&gt;http://slashdot.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;とうとうリリースされた模様。
+これを機に、Debianにしてみようかな。
+apt-getは、使い始めるとやめられません。
+(Vine Linuxでも使えますが)&lt;/p&gt;</description></item><item><title>新コピーソフト「RatDVD」--映画業界に新たな強敵出現か</title><link>https://igawa.io/posts/2005/06/%E6%96%B0%E3%82%B3%E3%83%94%E3%83%BC%E3%82%BD%E3%83%95%E3%83%88ratdvd-%E6%98%A0%E7%94%BB%E6%A5%AD%E7%95%8C%E3%81%AB%E6%96%B0%E3%81%9F%E3%81%AA%E5%BC%B7%E6%95%B5%E5%87%BA%E7%8F%BE%E3%81%8B/</link><pubDate>Tue, 07 Jun 2005 00:14:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/%E6%96%B0%E3%82%B3%E3%83%94%E3%83%BC%E3%82%BD%E3%83%95%E3%83%88ratdvd-%E6%98%A0%E7%94%BB%E6%A5%AD%E7%95%8C%E3%81%AB%E6%96%B0%E3%81%9F%E3%81%AA%E5%BC%B7%E6%95%B5%E5%87%BA%E7%8F%BE%E3%81%8B/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20084182,00.htm"&gt;http://japan.cnet.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;どうだ？使えるのか？
+全然使えない可能性も有るけど、注目すべきだろうか？
+とりあえず、ダウンロードして使ってみる？&lt;/p&gt;</description></item><item><title>Linux普及 絶好調？</title><link>https://igawa.io/posts/2005/06/linux%E6%99%AE%E5%8F%8A-%E7%B5%B6%E5%A5%BD%E8%AA%BF/</link><pubDate>Tue, 07 Jun 2005 00:04:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/linux%E6%99%AE%E5%8F%8A-%E7%B5%B6%E5%A5%BD%E8%AA%BF/</guid><description>&lt;p&gt;日経BPの記事。Linuxの話題がたくさんでした。&lt;/p&gt;
+&lt;p&gt;2005年度は1000万台近いLinux搭載3G携帯を出荷する NTTドコモ
+開発担当部長　談
+&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050603/162119/"&gt;http://itpro.nikkeibp.co.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「2006年、スパコン全モデルにLinuxを」、米クレイのCEO語る
+&lt;a href="http://itpro.nikkeibp.co.jp/free/NC/NEWS/20050603/162100/"&gt;http://itpro.nikkeibp.co.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「WindowsからLinuxシン・クライアントへの移行で絶対のセキュリティを実現」
+&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050605/162124/"&gt;http://itpro.nikkeibp.co.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NokiaのLinux携帯端末は日本製オープンソース・メール「Sylpheed」を搭載
+&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050603/162111/"&gt;http://itpro.nikkeibp.co.jp/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>シャープ、65Vインチの“ハイビジョン液晶テレビ”を製品化──既存の液晶テレビ では世界最大サイズ</title><link>https://igawa.io/posts/2005/06/%E3%82%B7%E3%83%A3%E3%83%BC%E3%83%9765v%E3%82%A4%E3%83%B3%E3%83%81%E3%81%AE%E3%83%8F%E3%82%A4%E3%83%93%E3%82%B8%E3%83%A7%E3%83%B3%E6%B6%B2%E6%99%B6%E3%83%86%E3%83%AC%E3%83%93%E3%82%92%E8%A3%BD%E5%93%81%E5%8C%96%E6%97%A2%E5%AD%98%E3%81%AE%E6%B6%B2%E6%99%B6%E3%83%86%E3%83%AC%E3%83%93-%E3%81%A7%E3%81%AF%E4%B8%96%E7%95%8C%E6%9C%80%E5%A4%A7%E3%82%B5%E3%82%A4%E3%82%BA/</link><pubDate>Sun, 05 Jun 2005 13:26:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/%E3%82%B7%E3%83%A3%E3%83%BC%E3%83%9765v%E3%82%A4%E3%83%B3%E3%83%81%E3%81%AE%E3%83%8F%E3%82%A4%E3%83%93%E3%82%B8%E3%83%A7%E3%83%B3%E6%B6%B2%E6%99%B6%E3%83%86%E3%83%AC%E3%83%93%E3%82%92%E8%A3%BD%E5%93%81%E5%8C%96%E6%97%A2%E5%AD%98%E3%81%AE%E6%B6%B2%E6%99%B6%E3%83%86%E3%83%AC%E3%83%93-%E3%81%A7%E3%81%AF%E4%B8%96%E7%95%8C%E6%9C%80%E5%A4%A7%E3%82%B5%E3%82%A4%E3%82%BA/</guid><description>&lt;p&gt;&lt;a href="http://ascii24.com/news/i/hard/article/2005/06/03/656226-000.html"&gt;http://ascii24.com/&lt;/a&gt;
+すげーな。でも、値段は「168万円」也。&lt;/p&gt;</description></item><item><title>攻殻機動隊 STAND ALONE COMPLEX 特別編 TACHIKOMA FILE (タチコマ特集)</title><link>https://igawa.io/posts/2005/06/%E6%94%BB%E6%AE%BB%E6%A9%9F%E5%8B%95%E9%9A%8A-stand-alone-complex-%E7%89%B9%E5%88%A5%E7%B7%A8-tachikoma-file-%E3%82%BF%E3%83%81%E3%82%B3%E3%83%9E%E7%89%B9%E9%9B%86/</link><pubDate>Sat, 04 Jun 2005 22:09:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/%E6%94%BB%E6%AE%BB%E6%A9%9F%E5%8B%95%E9%9A%8A-stand-alone-complex-%E7%89%B9%E5%88%A5%E7%B7%A8-tachikoma-file-%E3%82%BF%E3%83%81%E3%82%B3%E3%83%9E%E7%89%B9%E9%9B%86/</guid><description>&lt;p&gt;&lt;a href="http://www.amazon.co.jp/exec/obidos/ASIN/489425381X/hughundercons-22/"&gt;攻殻機動隊 STAND ALONE COMPLEX 特別編 TACHIKOMA
+FILE&lt;/a&gt;
+ハイクオリティなフィギュア『ニュータチコマ』付き〜
+タチコマー ━━━━━━(ﾟ∀ﾟ)━━━━━━ !!!!!&lt;/p&gt;</description></item><item><title>日本HP，SolarisからLinuxへの移植支援ツールを無償提供</title><link>https://igawa.io/posts/2005/05/%E6%97%A5%E6%9C%AChpsolaris%E3%81%8B%E3%82%89linux%E3%81%B8%E3%81%AE%E7%A7%BB%E6%A4%8D%E6%94%AF%E6%8F%B4%E3%83%84%E3%83%BC%E3%83%AB%E3%82%92%E7%84%A1%E5%84%9F%E6%8F%90%E4%BE%9B/</link><pubDate>Mon, 30 May 2005 22:55:00 +0900</pubDate><guid>https://igawa.io/posts/2005/05/%E6%97%A5%E6%9C%AChpsolaris%E3%81%8B%E3%82%89linux%E3%81%B8%E3%81%AE%E7%A7%BB%E6%A4%8D%E6%94%AF%E6%8F%B4%E3%83%84%E3%83%BC%E3%83%AB%E3%82%92%E7%84%A1%E5%84%9F%E6%8F%90%E4%BE%9B/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050527/161644/"&gt;http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050527/161644/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Solarisが無料になったから、それに負けないための対応ってわけか？
+そういえば、HPって&lt;a href="http://h50146.www5.hp.com/products/software/oe/hpux/index.html"&gt;HP-UX&lt;/a&gt;ってUNIX-OSも持ってるはずだけど、
+それとの住み分けはどんな風にしているのだろうか。。。？&lt;/p&gt;</description></item><item><title>Javaを脅かすPHP，大手テクノロジ企業が続々支持</title><link>https://igawa.io/posts/2005/05/java%E3%82%92%E8%84%85%E3%81%8B%E3%81%99php%E5%A4%A7%E6%89%8B%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E4%BC%81%E6%A5%AD%E3%81%8C%E7%B6%9A%E3%80%85%E6%94%AF%E6%8C%81/</link><pubDate>Mon, 30 May 2005 22:53:00 +0900</pubDate><guid>https://igawa.io/posts/2005/05/java%E3%82%92%E8%84%85%E3%81%8B%E3%81%99php%E5%A4%A7%E6%89%8B%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E4%BC%81%E6%A5%AD%E3%81%8C%E7%B6%9A%E3%80%85%E6%94%AF%E6%8C%81/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/members/ITPro/USURA/20050526/161575/"&gt;http://itpro.nikkeibp.co.jp/members/ITPro/USURA/20050526/161575/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;PHPって全然使ったこと無いんだけど、使いやすいのかぁ。
+今度使ってみよっと。&lt;/p&gt;</description></item><item><title>「パスワードは(紙に)メモしておけ」--MSのセキュリティ担当幹部、自説を披露</title><link>https://igawa.io/posts/2005/05/%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E3%81%AF%E7%B4%99%E3%81%AB%E3%83%A1%E3%83%A2%E3%81%97%E3%81%A6%E3%81%8A%E3%81%91-ms%E3%81%AE%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E6%8B%85%E5%BD%93%E5%B9%B9%E9%83%A8%E8%87%AA%E8%AA%AC%E3%82%92%E6%8A%AB%E9%9C%B2/</link><pubDate>Thu, 26 May 2005 23:04:00 +0900</pubDate><guid>https://igawa.io/posts/2005/05/%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E3%81%AF%E7%B4%99%E3%81%AB%E3%83%A1%E3%83%A2%E3%81%97%E3%81%A6%E3%81%8A%E3%81%91-ms%E3%81%AE%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E6%8B%85%E5%BD%93%E5%B9%B9%E9%83%A8%E8%87%AA%E8%AA%AC%E3%82%92%E6%8A%AB%E9%9C%B2/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/sec/story/0,2000050480,20083861,00.htm"&gt;http://japan.cnet.com/news/sec/story/0,2000050480,20083861,00.htm&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;そのメモをきちんと管理&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;できればいいが、普通、そんな管理は出来ないだろう。
+せいぜい、机の鍵のかかる引き出しに入れるくらいか？&lt;/p&gt;
+&lt;p&gt;でも、そんな鍵は、簡単に外せてしまうでしょ？
+それよりも、
+ＰＣ上でテキストファイルにメモをして、
+十分な強度の暗号化を行うようにしたほうが簡単じゃないの？&lt;/p&gt;
+&lt;p&gt;っていうか、天下のMicrosoftなんだからそういうソフト
+(パスワード管理ソフト)を発売すればいいじゃない？
+#いまどき、無料で良いソフトがたくさん有るから、
+#売れるかどうかはわからんが。&lt;/p&gt;</description></item><item><title>おいおい。いいのか？</title><link>https://igawa.io/posts/2005/05/%E3%81%8A%E3%81%84%E3%81%8A%E3%81%84%E3%81%84%E3%81%84%E3%81%AE%E3%81%8B/</link><pubDate>Thu, 26 May 2005 00:14:00 +0900</pubDate><guid>https://igawa.io/posts/2005/05/%E3%81%8A%E3%81%84%E3%81%8A%E3%81%84%E3%81%84%E3%81%84%E3%81%AE%E3%81%8B/</guid><description>&lt;p&gt;おいおい。いいのか？
+&lt;a href="http://lunatic.xrea.jp/mt/archives/linux_windows.html"&gt;&lt;img alt="picture" loading="lazy" src="http://lunatic.xrea.jp/mt/archives/linux_windows-thumb.PNG"&gt;&lt;/a&gt;
+&lt;a href="http://japan.linux.com/enterprise/05/05/23/0210210.shtml?topic=1"&gt;http://japan.linux.com/enterprise/05/05/23/0210210.shtml?topic=1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今は違うかもしれないけど、私がこのページを見たときには、
+Microsoftの
+「&lt;a href="http://www.microsoft.com/japan/windowsserversystem/facts/default.mspx"&gt;WindowsはLinuxよりTCOが低くてチョー良い感じ〜&lt;/a&gt;」
+な広告が出ていました。。。&lt;/p&gt;
+&lt;p&gt;わざとか？&lt;/p&gt;</description></item><item><title>ニンテンドーDSでLinuxが動いた</title><link>https://igawa.io/posts/2005/05/%E3%83%8B%E3%83%B3%E3%83%86%E3%83%B3%E3%83%89%E3%83%BCds%E3%81%A7linux%E3%81%8C%E5%8B%95%E3%81%84%E3%81%9F/</link><pubDate>Mon, 09 May 2005 23:44:00 +0900</pubDate><guid>https://igawa.io/posts/2005/05/%E3%83%8B%E3%83%B3%E3%83%86%E3%83%B3%E3%83%89%E3%83%BCds%E3%81%A7linux%E3%81%8C%E5%8B%95%E3%81%84%E3%81%9F/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=05/05/09/0315223&amp;amp;topic=76"&gt;http://slashdot.jp/article.pl?sid=05/05/09/0315223&amp;amp;topic=76&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;う〜ん。すごい。
+タッチパッドがまともに動くようになったら、
+最強のモバイルLinuxマシンになりそう。。か？&lt;/p&gt;</description></item><item><title>北海道旅行に行ってきました</title><link>https://igawa.io/posts/2005/05/%E5%8C%97%E6%B5%B7%E9%81%93%E6%97%85%E8%A1%8C%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/</link><pubDate>Mon, 09 May 2005 23:24:00 +0900</pubDate><guid>https://igawa.io/posts/2005/05/%E5%8C%97%E6%B5%B7%E9%81%93%E6%97%85%E8%A1%8C%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/</guid><description>&lt;p&gt;北海道旅行に行ってきました。
+&lt;a href="http://lunatic.xrea.jp/mt/archives/DSC_0465.html"&gt;&lt;img alt="picture" loading="lazy" src="http://lunatic.xrea.jp/mt/archives/DSC_0465-thumb.JPG"&gt;
+&lt;/a&gt;
+網走監獄&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/DSC_0497.html"&gt;&lt;img alt="picture" loading="lazy" src="http://lunatic.xrea.jp/mt/archives/DSC_0497-thumb.jpg"&gt;
+&lt;/a&gt;
+海老チリスパゲティ&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/DSC_0387.html"&gt;&lt;img alt="picture" loading="lazy" src="http://lunatic.xrea.jp/mt/archives/DSC_0387-thumb.JPG"&gt;
+&lt;/a&gt;
+日本最北端の地
+&lt;a href="http://lunatic.xrea.jp/mt/archives/DSC_0687.html"&gt;&lt;img alt="picture" loading="lazy" src="http://lunatic.xrea.jp/mt/archives/DSC_0687-thumb.JPG"&gt;
+&lt;/a&gt;
+トラ肉球&lt;/p&gt;</description></item><item><title>ゴールデンウィーク突入ぅー</title><link>https://igawa.io/posts/2005/04/%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%87%E3%83%B3%E3%82%A6%E3%82%A3%E3%83%BC%E3%82%AF%E7%AA%81%E5%85%A5%E3%81%85%E3%83%BC/</link><pubDate>Thu, 28 Apr 2005 20:16:00 +0900</pubDate><guid>https://igawa.io/posts/2005/04/%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%87%E3%83%B3%E3%82%A6%E3%82%A3%E3%83%BC%E3%82%AF%E7%AA%81%E5%85%A5%E3%81%85%E3%83%BC/</guid><description>&lt;p&gt;ゴールデンウィークに突入です。
+私は北海道に行って来ます。
+あと、2ヶ月くらいで結婚式＆披露宴をやるつもりなのに、イイのか？
+まぁ、いいか。&lt;/p&gt;</description></item><item><title>TurboLinux社TigersPC発売</title><link>https://igawa.io/posts/2005/04/turbolinux%E7%A4%BEtigerspc%E7%99%BA%E5%A3%B2/</link><pubDate>Thu, 28 Apr 2005 20:10:00 +0900</pubDate><guid>https://igawa.io/posts/2005/04/turbolinux%E7%A4%BEtigerspc%E7%99%BA%E5%A3%B2/</guid><description>&lt;p&gt;&lt;a href="http://www.turbolinux.co.jp/products/tigerspc/"&gt;http://www.turbolinux.co.jp/products/tigerspc/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;なんか、なにげにこんなの発売されていたんですね。
+でも、誰が買うんだろう。。。？
+Linux好きの阪神ファン？？&lt;/p&gt;</description></item><item><title>「アイフル」取り立て被害、全国会議が設立集会</title><link>https://igawa.io/posts/2005/04/%E3%82%A2%E3%82%A4%E3%83%95%E3%83%AB%E5%8F%96%E3%82%8A%E7%AB%8B%E3%81%A6%E8%A2%AB%E5%AE%B3%E5%85%A8%E5%9B%BD%E4%BC%9A%E8%AD%B0%E3%81%8C%E8%A8%AD%E7%AB%8B%E9%9B%86%E4%BC%9A/</link><pubDate>Sun, 24 Apr 2005 19:31:00 +0900</pubDate><guid>https://igawa.io/posts/2005/04/%E3%82%A2%E3%82%A4%E3%83%95%E3%83%AB%E5%8F%96%E3%82%8A%E7%AB%8B%E3%81%A6%E8%A2%AB%E5%AE%B3%E5%85%A8%E5%9B%BD%E4%BC%9A%E8%AD%B0%E3%81%8C%E8%A8%AD%E7%AB%8B%E9%9B%86%E4%BC%9A/</guid><description>&lt;p&gt;&lt;a href="http://www.asahi.com/national/update/0416/OSK200504160016.html"&gt;http://www.asahi.com/national/update/0416/OSK200504160016.html&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;支援団体の人が具体的な電話のやりとりを紹介した。「お前らなんてつぶすの
+なんともねえ」「金融監督庁でも野球の監督でもつれてこい」などと怒鳴り、
+「破産を撤回する文書を出せ」と要求されたとする例が報告された。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;アイドルを使って、イメージを良くしようとしているけれども、
+結局こんなもんなんですね。
+怖いですね。&lt;/p&gt;</description></item><item><title>乗って操縦できる２足歩行ロボ、１台３６００万で販売</title><link>https://igawa.io/posts/2005/04/%E4%B9%97%E3%81%A3%E3%81%A6%E6%93%8D%E7%B8%A6%E3%81%A7%E3%81%8D%E3%82%8B%EF%BC%92%E8%B6%B3%E6%AD%A9%E8%A1%8C%E3%83%AD%E3%83%9C%EF%BC%91%E5%8F%B0%EF%BC%93%EF%BC%96%EF%BC%90%EF%BC%90%E4%B8%87%E3%81%A7%E8%B2%A9%E5%A3%B2/</link><pubDate>Sun, 24 Apr 2005 19:22:00 +0900</pubDate><guid>https://igawa.io/posts/2005/04/%E4%B9%97%E3%81%A3%E3%81%A6%E6%93%8D%E7%B8%A6%E3%81%A7%E3%81%8D%E3%82%8B%EF%BC%92%E8%B6%B3%E6%AD%A9%E8%A1%8C%E3%83%AD%E3%83%9C%EF%BC%91%E5%8F%B0%EF%BC%93%EF%BC%96%EF%BC%90%EF%BC%90%E4%B8%87%E3%81%A7%E8%B2%A9%E5%A3%B2/</guid><description>&lt;p&gt;&lt;a href="http://www.yomiuri.co.jp/main/news/20050421i505.htm"&gt;http://www.yomiuri.co.jp/main/news/20050421i505.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ガンダムに一歩近づいたか？
+後は腕が欲しいですね。&lt;/p&gt;</description></item><item><title>Death note(デスノート) 第６巻発売！</title><link>https://igawa.io/posts/2005/04/death-note%E3%83%87%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88-%E7%AC%AC%EF%BC%96%E5%B7%BB%E7%99%BA%E5%A3%B2/</link><pubDate>Fri, 15 Apr 2005 00:09:00 +0900</pubDate><guid>https://igawa.io/posts/2005/04/death-note%E3%83%87%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%88-%E7%AC%AC%EF%BC%96%E5%B7%BB%E7%99%BA%E5%A3%B2/</guid><description>&lt;p&gt;&lt;a href="http://www.bk1.co.jp/product/2537109/p-hugh55881" title="オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"&gt;&lt;img alt="Ｄｅａｔｈ\u3000ｎｏｔｅ" loading="lazy" src="http://img.bk1.co.jp/bookimages/0253/025371090000.jpg"&gt;&lt;/a&gt;{#bk1link}&lt;/p&gt;
+&lt;p&gt;style=&amp;ldquo;float:left;margin-left:15px;line-height:120%;&amp;quot;&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/product/2537109/p-hugh55881" title="オンライン書店ビーケーワン：Ｄｅａｔｈ　ｎｏｔｅ"&gt;Ｄｅａｔｈ　ｎｏｔｅ第６巻&lt;/a&gt;{#bk1link}
+style=&amp;ldquo;font-size:7pt;margin-top:5px;font-family:verdana;line-height:120%;&amp;quot;&amp;gt;&lt;/p&gt;
+&lt;p&gt;posted with
+&lt;a href="http://breeder.bk1.jp/cgi-bin/link/create.cgi?bibid=2537109&amp;amp;aid=p-hugh55881" title="簡単リンクくん"&gt;簡単リンクくん&lt;/a&gt;
+at 2005. 4.15&lt;/p&gt;
+&lt;p&gt;集英社 (2005.4)
+通常24時間以内に発送します。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/product/2537109/p-hugh55881" title="オンライン書店ビーケーワン"&gt;オンライン書店ビーケーワンで詳細を見る&lt;/a&gt;{#bk1link}&lt;/p&gt;
+&lt;p&gt;うわー。買わなきゃ〜。&lt;/p&gt;</description></item><item><title>ＧＰＳ付き通学服を発売 刃物に備えて強力繊維</title><link>https://igawa.io/posts/2005/04/%EF%BD%87%EF%BD%90%EF%BD%93%E4%BB%98%E3%81%8D%E9%80%9A%E5%AD%A6%E6%9C%8D%E3%82%92%E7%99%BA%E5%A3%B2-%E5%88%83%E7%89%A9%E3%81%AB%E5%82%99%E3%81%88%E3%81%A6%E5%BC%B7%E5%8A%9B%E7%B9%8A%E7%B6%AD/</link><pubDate>Thu, 14 Apr 2005 23:06:00 +0900</pubDate><guid>https://igawa.io/posts/2005/04/%EF%BD%87%EF%BD%90%EF%BD%93%E4%BB%98%E3%81%8D%E9%80%9A%E5%AD%A6%E6%9C%8D%E3%82%92%E7%99%BA%E5%A3%B2-%E5%88%83%E7%89%A9%E3%81%AB%E5%82%99%E3%81%88%E3%81%A6%E5%BC%B7%E5%8A%9B%E7%B9%8A%E7%B6%AD/</guid><description>&lt;p&gt;&lt;a href="http://news.goo.ne.jp/news/kyodo/keizai/20050413/20050413a2280.html"&gt;http://news.goo.ne.jp/news/kyodo/keizai/20050413/20050413a2280.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「いじめられっ子」に最適？&lt;/p&gt;</description></item><item><title>アドビ、Linux対応「Adobe Reader」を間もなくリリースへ</title><link>https://igawa.io/posts/2005/04/%E3%82%A2%E3%83%89%E3%83%93linux%E5%AF%BE%E5%BF%9Cadobe-reader%E3%82%92%E9%96%93%E3%82%82%E3%81%AA%E3%81%8F%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%B8/</link><pubDate>Tue, 12 Apr 2005 21:43:00 +0900</pubDate><guid>https://igawa.io/posts/2005/04/%E3%82%A2%E3%83%89%E3%83%93linux%E5%AF%BE%E5%BF%9Cadobe-reader%E3%82%92%E9%96%93%E3%82%82%E3%81%AA%E3%81%8F%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%B8/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/ent/story/0,2000047623,20082615,00.htm"&gt;http://japan.cnet.com/news/ent/story/0,2000047623,20082615,00.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;日本語版はまだ〜？&lt;/p&gt;</description></item><item><title>TV見過ぎるといじめっ子に？</title><link>https://igawa.io/posts/2005/04/tv%E8%A6%8B%E9%81%8E%E3%81%8E%E3%82%8B%E3%81%A8%E3%81%84%E3%81%98%E3%82%81%E3%81%A3%E5%AD%90%E3%81%AB/</link><pubDate>Thu, 07 Apr 2005 00:43:00 +0900</pubDate><guid>https://igawa.io/posts/2005/04/tv%E8%A6%8B%E9%81%8E%E3%81%8E%E3%82%8B%E3%81%A8%E3%81%84%E3%81%98%E3%82%81%E3%81%A3%E5%AD%90%E3%81%AB/</guid><description>&lt;p&gt;&lt;a href="http://news.goo.ne.jp/news/topics/index/28005/1.html"&gt;http://news.goo.ne.jp/news/topics/index/28005/1.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;いんちき臭い調査結果だな。
+私は、かなりのテレビっ子だったけど、
+むしろ「いじめられっ子」だったよ。&lt;/p&gt;
+&lt;p&gt;「テレビを見る」という行為自体よりも、
+そのほかの家庭環境が影響していたりするんじゃないの？
+そこら辺の影響は調査されているんだろうか。。。&lt;/p&gt;</description></item><item><title>鋼の錬金術師１０巻発売されました！</title><link>https://igawa.io/posts/2005/04/%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%AB%EF%BC%91%EF%BC%90%E5%B7%BB%E7%99%BA%E5%A3%B2%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/</link><pubDate>Tue, 05 Apr 2005 00:11:00 +0900</pubDate><guid>https://igawa.io/posts/2005/04/%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%AB%EF%BC%91%EF%BC%90%E5%B7%BB%E7%99%BA%E5%A3%B2%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F/</guid><description>&lt;p&gt;&lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_detail.cgi?aid=p-hugh55881&amp;amp;bibid=02529095" title="オンライン書店ｂｋ１：鋼の錬金術師 １０(ガンガンコミックス)"&gt;鋼の錬金術師
+１０(ガンガンコミックス)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_detail.cgi?aid=p-hugh55881&amp;amp;bibid=02529095" title="オンライン書店ｂｋ１：鋼の錬金術師 １０(ガンガンコミックス)"&gt;&lt;img alt="picture" loading="lazy" src="http://www.bk1.co.jp/bookimages/02/52/90/95/025290950000.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;荒川弘著&lt;/p&gt;
+&lt;p&gt;出版社　&lt;strong&gt;スクウェア・エニックス&lt;/strong&gt;
+発売日　&lt;strong&gt;2005.03&lt;/strong&gt;
+価格 　&lt;strong&gt;￥ 410（￥ 390）&lt;/strong&gt;
+ISBN 　&lt;strong&gt;4757513860&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_detail.cgi?aid=p-hugh55881&amp;amp;bibid=02529095" title="オンライン書店ｂｋ１：鋼の錬金術師 １０(ガンガンコミックス)"&gt;ｂｋ１で詳しく見る&lt;/a&gt;
+&lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_top.cgi?aid=p-hugh55881" title="オンライン書店ｂｋ１"&gt;&lt;img alt="オンライン書店ｂｋ１" loading="lazy" src="http://www.bk1.co.jp/images/breeder/banner/button.gif"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;だいぶ前ですがね。。。&lt;/p&gt;</description></item><item><title>天気がよかったので、近くの公園に行ってみました。</title><link>https://igawa.io/posts/2005/04/%E5%A4%A9%E6%B0%97%E3%81%8C%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E8%BF%91%E3%81%8F%E3%81%AE%E5%85%AC%E5%9C%92%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F/</link><pubDate>Sun, 03 Apr 2005 22:45:00 +0900</pubDate><guid>https://igawa.io/posts/2005/04/%E5%A4%A9%E6%B0%97%E3%81%8C%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E8%BF%91%E3%81%8F%E3%81%AE%E5%85%AC%E5%9C%92%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F/</guid><description>&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/DSC_0085s.html"&gt;&lt;img alt="picture" loading="lazy" src="http://lunatic.xrea.jp/mt/archives/DSC_0085s-thumb.JPG"&gt;
+&lt;/a&gt;
+天気がよかったので近くの公園に行ってみました。
+初めて行ったのですが、かなり広くていろんな生き物がいて楽しかったです。
+これからも、ダイエットを兼ねてちょくちょく行きたいと思います。&lt;/p&gt;</description></item><item><title>Google、Firefoxブラウザで検索機能強化</title><link>https://igawa.io/posts/2005/04/googlefirefox%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A7%E6%A4%9C%E7%B4%A2%E6%A9%9F%E8%83%BD%E5%BC%B7%E5%8C%96/</link><pubDate>Sun, 03 Apr 2005 22:14:00 +0900</pubDate><guid>https://igawa.io/posts/2005/04/googlefirefox%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A7%E6%A4%9C%E7%B4%A2%E6%A9%9F%E8%83%BD%E5%BC%B7%E5%8C%96/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0504/01/news014.html"&gt;http://www.itmedia.co.jp/news/articles/0504/01/news014.html&lt;/a&gt;
+Firefox(Mozilla)とGoogleが手を組んで、FirefoxでGoogle検索したときの
+機能を強化したようです。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;FirefoxとMozillaを使ってGoogleで検索した場合、最上位の検索結果についてはユーザーがクリックする前からリンク先のページを自動的にダウンロードしておくよう、ブラウザに指示を出すようにした。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいです。&lt;/p&gt;</description></item><item><title>マンションにICタグ、不審者の侵入防止に--日立と三菱地所設計</title><link>https://igawa.io/posts/2005/04/%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%ABic%E3%82%BF%E3%82%B0%E4%B8%8D%E5%AF%A9%E8%80%85%E3%81%AE%E4%BE%B5%E5%85%A5%E9%98%B2%E6%AD%A2%E3%81%AB-%E6%97%A5%E7%AB%8B%E3%81%A8%E4%B8%89%E8%8F%B1%E5%9C%B0%E6%89%80%E8%A8%AD%E8%A8%88/</link><pubDate>Sun, 03 Apr 2005 02:12:00 +0900</pubDate><guid>https://igawa.io/posts/2005/04/%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%ABic%E3%82%BF%E3%82%B0%E4%B8%8D%E5%AF%A9%E8%80%85%E3%81%AE%E4%BE%B5%E5%85%A5%E9%98%B2%E6%AD%A2%E3%81%AB-%E6%97%A5%E7%AB%8B%E3%81%A8%E4%B8%89%E8%8F%B1%E5%9C%B0%E6%89%80%E8%A8%AD%E8%A8%88/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/sec/story/0,2000050480,20081528,00.htm"&gt;http://japan.cnet.com/news/sec/story/0,2000050480,20081528,00.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;う〜ん。ICタグなんて使わずに、非接触ICカードを使えばいいんじゃない？
+そんなに、コストを下げたいのだろうか？
+非接触ICカードではなく、ICタグを使うことによるメリットはどの辺なのか？&lt;/p&gt;</description></item><item><title>さくらが咲きました</title><link>https://igawa.io/posts/2005/04/%E3%81%95%E3%81%8F%E3%82%89%E3%81%8C%E5%92%B2%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/</link><pubDate>Sun, 03 Apr 2005 00:48:00 +0900</pubDate><guid>https://igawa.io/posts/2005/04/%E3%81%95%E3%81%8F%E3%82%89%E3%81%8C%E5%92%B2%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/</guid><description>&lt;p&gt;&lt;a href="http://lunatic.xrea.jp/mt/archives/DSC_22.html"&gt;&lt;img alt="picture" loading="lazy" src="http://lunatic.xrea.jp/mt/archives/DSC_22-thumb.JPG"&gt;&lt;/a&gt;
+近くで、さくらが咲いたので撮ってみた。&lt;/p&gt;</description></item><item><title>近畿総合通信局が「ランドセルに電子タグ」の実験結果を発表</title><link>https://igawa.io/posts/2005/03/%E8%BF%91%E7%95%BF%E7%B7%8F%E5%90%88%E9%80%9A%E4%BF%A1%E5%B1%80%E3%81%8C%E3%83%A9%E3%83%B3%E3%83%89%E3%82%BB%E3%83%AB%E3%81%AB%E9%9B%BB%E5%AD%90%E3%82%BF%E3%82%B0%E3%81%AE%E5%AE%9F%E9%A8%93%E7%B5%90%E6%9E%9C%E3%82%92%E7%99%BA%E8%A1%A8/</link><pubDate>Wed, 23 Mar 2005 09:02:00 +0900</pubDate><guid>https://igawa.io/posts/2005/03/%E8%BF%91%E7%95%BF%E7%B7%8F%E5%90%88%E9%80%9A%E4%BF%A1%E5%B1%80%E3%81%8C%E3%83%A9%E3%83%B3%E3%83%89%E3%82%BB%E3%83%AB%E3%81%AB%E9%9B%BB%E5%AD%90%E3%82%BF%E3%82%B0%E3%81%AE%E5%AE%9F%E9%A8%93%E7%B5%90%E6%9E%9C%E3%82%92%E7%99%BA%E8%A1%A8/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=05/03/18/0620218&amp;amp;topic=57"&gt;スラッシュドット
+ジャパン&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;スラドの投稿者の間でも散々言われ放題だが、
+安全性が増えるどころか、むしろ、
+危険性が増えかねないシステムなのに、
+そういう指摘を無視して進めて行くのって
+どうなんだろう？&lt;/p&gt;
+&lt;p&gt;結局被害を被るのは利用者なわけなんだし、
+もうちょっと、意見を言って行くべきだと思う。
+どういう点が問題なのかは、スラドのコメントとか、
+&lt;a href="http://takagi-hiromitsu.jp/diary/"&gt;ここらへん&lt;/a&gt;
+を参照。&lt;/p&gt;</description></item><item><title>ロボットで株を自動売買するコンテスト、優勝者は年利回り332％</title><link>https://igawa.io/posts/2005/03/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%81%A7%E6%A0%AA%E3%82%92%E8%87%AA%E5%8B%95%E5%A3%B2%E8%B2%B7%E3%81%99%E3%82%8B%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E5%84%AA%E5%8B%9D%E8%80%85%E3%81%AF%E5%B9%B4%E5%88%A9%E5%9B%9E%E3%82%8A332/</link><pubDate>Wed, 23 Mar 2005 00:40:00 +0900</pubDate><guid>https://igawa.io/posts/2005/03/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%81%A7%E6%A0%AA%E3%82%92%E8%87%AA%E5%8B%95%E5%A3%B2%E8%B2%B7%E3%81%99%E3%82%8B%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E5%84%AA%E5%8B%9D%E8%80%85%E3%81%AF%E5%B9%B4%E5%88%A9%E5%9B%9E%E3%82%8A332/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/biz/story/0,2000050156,20081450,00.htm"&gt;http://japan.cnet.com/news/biz/story/0,2000050156,20081450,00.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;はぁ。。。
+すげーな。
+このロボットを提供する証券会社が出てきたりして。
+っていうか、株を運用する会社ではすでに、
+似たようなものを使ってたりする？&lt;/p&gt;</description></item><item><title>Linux入門書『Linux Personal Workstation』、PDFで公開</title><link>https://igawa.io/posts/2005/03/linux%E5%85%A5%E9%96%80%E6%9B%B8linux-personal-workstationpdf%E3%81%A7%E5%85%AC%E9%96%8B/</link><pubDate>Sun, 20 Mar 2005 17:45:00 +0900</pubDate><guid>https://igawa.io/posts/2005/03/linux%E5%85%A5%E9%96%80%E6%9B%B8linux-personal-workstationpdf%E3%81%A7%E5%85%AC%E9%96%8B/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=05/03/17/0657232&amp;amp;topic=2"&gt;http://slashdot.jp/article.pl?sid=05/03/17/0657232&amp;amp;topic=2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Vine Linuxを前提にして書かれているらしいが、
+Linux全般で役に立ちそう。&lt;/p&gt;</description></item><item><title>Nikon D70に</title><link>https://igawa.io/posts/2005/03/nikon-d70%E3%81%AB/</link><pubDate>Fri, 18 Mar 2005 20:22:00 +0900</pubDate><guid>https://igawa.io/posts/2005/03/nikon-d70%E3%81%AB/</guid><description>&lt;p&gt;先日、Nikon D70を購入したのだが、&lt;/p&gt;</description></item><item><title>Nikon D70 ゲット━━━━(ﾟ∀ﾟ)━━━━!!</title><link>https://igawa.io/posts/2005/03/nikon-d70-%E3%82%B2%E3%83%83%E3%83%88%EF%BE%9F%EF%BE%9F/</link><pubDate>Tue, 15 Mar 2005 17:37:00 +0900</pubDate><guid>https://igawa.io/posts/2005/03/nikon-d70-%E3%82%B2%E3%83%83%E3%83%88%EF%BE%9F%EF%BE%9F/</guid><description>&lt;p&gt;かな〜り前からトップページの右側に広告リンクを貼っていて、
+非常に気になっていた&lt;a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0001FTPGE/hughundercons-22/ref=nosim"&gt;Nikon
+D70&lt;/a&gt;をついに購入した。
+&lt;a href="http://lunatic.xrea.jp/mt/archives/D70_box.html"&gt;&lt;img alt="picture" loading="lazy" src="http://lunatic.xrea.jp/mt/archives/D70_box-thumb.jpg"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(購入した店は「ビックカメラ 柏店」)&lt;/p&gt;
+&lt;p&gt;購入に踏み切った理由は以下のとおり。&lt;/p&gt;
+&lt;p&gt;Nikonが&lt;a href="http://www.nikon-image.com/jpn/event/campaign/d70_cashback/"&gt;D70を買うと1万円キャッシュバックキャンペーン&lt;/a&gt;をやっていたから&lt;/p&gt;
+&lt;p&gt;後継機が出るためなのか、やたら値段が下がってきたら。&lt;/p&gt;
+&lt;p&gt;今持ってるデジカメ(Nikon COOLPIX
+990)は、一眼レフ並みの大きさだし、銀鉛一眼レフ(New
+FM2)も持っているが、今更ネガフィルムでは写真を撮らないようなきがするため、これらをヤフオクで売れば、それほどの出費は無いと考えたため。
+です。
+まだ、使い初めて間もないので、使い勝手とかは良くわかりませんが。。。
+液晶画面が無ければ、普通のAF一眼レフカメラですね。&lt;/p&gt;</description></item><item><title>新株予約権、差し止め ライブドアの申請認め仮処分決定</title><link>https://igawa.io/posts/2005/03/%E6%96%B0%E6%A0%AA%E4%BA%88%E7%B4%84%E6%A8%A9%E5%B7%AE%E3%81%97%E6%AD%A2%E3%82%81-%E3%83%A9%E3%82%A4%E3%83%96%E3%83%89%E3%82%A2%E3%81%AE%E7%94%B3%E8%AB%8B%E8%AA%8D%E3%82%81%E4%BB%AE%E5%87%A6%E5%88%86%E6%B1%BA%E5%AE%9A/</link><pubDate>Sat, 12 Mar 2005 19:21:00 +0900</pubDate><guid>https://igawa.io/posts/2005/03/%E6%96%B0%E6%A0%AA%E4%BA%88%E7%B4%84%E6%A8%A9%E5%B7%AE%E3%81%97%E6%AD%A2%E3%82%81-%E3%83%A9%E3%82%A4%E3%83%96%E3%83%89%E3%82%A2%E3%81%AE%E7%94%B3%E8%AB%8B%E8%AA%8D%E3%82%81%E4%BB%AE%E5%87%A6%E5%88%86%E6%B1%BA%E5%AE%9A/</guid><description>&lt;p&gt;&lt;a href="http://www.asahi.com/national/update/0311/TKY200503110331.html"&gt;http://www.asahi.com/national/update/0311/TKY200503110331.html&lt;/a&gt;
+ほりえもん、まず先勝。
+妥当な司法判断だったと思うよ。
+ニッポン放送側が、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;「ライブドアの支配により企業価値が損なわれるのを防ぎ、放送の公共性を確保するために発行した」&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;と、言っているのがなんか胡散臭いね。&lt;/p&gt;</description></item><item><title>「Linuxの振興を支援する」——自民党政調会長 衆議院議員 与謝野馨氏</title><link>https://igawa.io/posts/2005/03/linux%E3%81%AE%E6%8C%AF%E8%88%88%E3%82%92%E6%94%AF%E6%8F%B4%E3%81%99%E3%82%8B%E8%87%AA%E6%B0%91%E5%85%9A%E6%94%BF%E8%AA%BF%E4%BC%9A%E9%95%B7-%E8%A1%86%E8%AD%B0%E9%99%A2%E8%AD%B0%E5%93%A1-%E4%B8%8E%E8%AC%9D%E9%87%8E%E9%A6%A8%E6%B0%8F/</link><pubDate>Fri, 11 Mar 2005 00:00:00 +0900</pubDate><guid>https://igawa.io/posts/2005/03/linux%E3%81%AE%E6%8C%AF%E8%88%88%E3%82%92%E6%94%AF%E6%8F%B4%E3%81%99%E3%82%8B%E8%87%AA%E6%B0%91%E5%85%9A%E6%94%BF%E8%AA%BF%E4%BC%9A%E9%95%B7-%E8%A1%86%E8%AD%B0%E9%99%A2%E8%AD%B0%E5%93%A1-%E4%B8%8E%E8%AC%9D%E9%87%8E%E9%A6%A8%E6%B0%8F/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050308/157144/"&gt;http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050308/157144/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;なんか、すんごいPC好きみたい。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;——これまでに何台くらい組み立てられたのですか。&lt;/p&gt;
+&lt;p&gt;作っては壊したり，人にあげたりしているから，何台くらい作ったか分から
+ないくらい作ってますね。毎年2〜3台作っているから，20台くらい作ったんじゃ
+ないでしょうか。
+　部品はビックカメラで買うこともあるし，秋葉原のTWO TOPとかT-ZONEとか
+で買うこともありますね。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;だそうだ。&lt;/p&gt;</description></item><item><title>経済産業省が省内にLinuxデスクトップを導入，職員が実務で利用</title><link>https://igawa.io/posts/2005/03/%E7%B5%8C%E6%B8%88%E7%94%A3%E6%A5%AD%E7%9C%81%E3%81%8C%E7%9C%81%E5%86%85%E3%81%ABlinux%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E5%B0%8E%E5%85%A5%E8%81%B7%E5%93%A1%E3%81%8C%E5%AE%9F%E5%8B%99%E3%81%A7%E5%88%A9%E7%94%A8/</link><pubDate>Thu, 03 Mar 2005 00:09:00 +0900</pubDate><guid>https://igawa.io/posts/2005/03/%E7%B5%8C%E6%B8%88%E7%94%A3%E6%A5%AD%E7%9C%81%E3%81%8C%E7%9C%81%E5%86%85%E3%81%ABlinux%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E5%B0%8E%E5%85%A5%E8%81%B7%E5%93%A1%E3%81%8C%E5%AE%9F%E5%8B%99%E3%81%A7%E5%88%A9%E7%94%A8/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050301/156848/"&gt;http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050301/156848/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;おぉ。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;まず3台のLinuxデスクトップ機を導入し，商務情報局の職員が実務に利用しな
+がら検証する。実用に堪えることを確認した後，採用を拡大する方針。2005年
+度中に数十台の導入を目標としている。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいです。&lt;/p&gt;
+&lt;p&gt;グループウェア(Notes)はWebアプリケーションになっているらしく、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;LinuxではWebブラウザのMozillaからNotesを利用する。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしい。&lt;/p&gt;
+&lt;p&gt;今の「Windows一色」な環境から脱するのは良いことだと思う。
+でも、「Linux一色」になるのは、どうなのかとも思う。
+FreeBSDやMacなどを導入してもいいのではないか？
+と思うのですが。&lt;/p&gt;</description></item><item><title>マネキン型ロボット</title><link>https://igawa.io/posts/2005/03/%E3%83%9E%E3%83%8D%E3%82%AD%E3%83%B3%E5%9E%8B%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88/</link><pubDate>Wed, 02 Mar 2005 00:08:00 +0900</pubDate><guid>https://igawa.io/posts/2005/03/%E3%83%9E%E3%83%8D%E3%82%AD%E3%83%B3%E5%9E%8B%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88/</guid><description>&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2005/03/01/007.html"&gt;http://pcweb.mycom.co.jp/news/2005/03/01/007.html&lt;/a&gt;
+売りは、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Paletteの具体的な機能としては、足元にセンサーを装備し、Paletteが置かれたショーウィンドウの前に人が立つと、それを感知してその人の方向を向き、状況に応じた様々な動きで商品を演出するというもの。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいのですが、こんなマネキンちょっと怖いかも。
+「動くマネキン」とは知らずに近づいて、いきなり動いたら怖いよ。&lt;/p&gt;</description></item><item><title>ソニーの新「PSX」が生産終了</title><link>https://igawa.io/posts/2005/03/%E3%82%BD%E3%83%8B%E3%83%BC%E3%81%AE%E6%96%B0psx%E3%81%8C%E7%94%9F%E7%94%A3%E7%B5%82%E4%BA%86/</link><pubDate>Tue, 01 Mar 2005 00:03:00 +0900</pubDate><guid>https://igawa.io/posts/2005/03/%E3%82%BD%E3%83%8B%E3%83%BC%E3%81%AE%E6%96%B0psx%E3%81%8C%E7%94%9F%E7%94%A3%E7%B5%82%E4%BA%86/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0502/28/news028.html"&gt;http://www.itmedia.co.jp/news/articles/0502/28/news028.html&lt;/a&gt;
+ん？どういうことだ？
+新しいバージョンのPSXが発売されるって事？
+それとも、もうPSXは発売しないって事？&lt;/p&gt;</description></item><item><title>Linuxプログラミング—例題で学ぶUNIXプログラミング環境のすべて</title><link>https://igawa.io/posts/2005/02/linux%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E4%BE%8B%E9%A1%8C%E3%81%A7%E5%AD%A6%E3%81%B6unix%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E7%92%B0%E5%A2%83%E3%81%AE%E3%81%99%E3%81%B9%E3%81%A6/</link><pubDate>Sun, 27 Feb 2005 00:14:00 +0900</pubDate><guid>https://igawa.io/posts/2005/02/linux%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E4%BE%8B%E9%A1%8C%E3%81%A7%E5%AD%A6%E3%81%B6unix%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E7%92%B0%E5%A2%83%E3%81%AE%E3%81%99%E3%81%B9%E3%81%A6/</guid><description>&lt;p&gt;最近ちょっと気になっている本。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_detail.cgi?aid=p-hugh55881&amp;amp;bibid=02467533" title="オンライン書店ｂｋ１：Ｌｉｎｕｘプログラミング 改訂第２版"&gt;Ｌｉｎｕｘプログラミング
+改訂第２版&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_detail.cgi?aid=p-hugh55881&amp;amp;bibid=02467533" title="オンライン書店ｂｋ１：Ｌｉｎｕｘプログラミング 改訂第２版"&gt;&lt;img alt="picture" loading="lazy" src="http://www.bk1.co.jp/bookimages/02/46/75/33/024675330000.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ニール・マシュー著・リチャード・ストーンズ著・葛西重夫訳&lt;/p&gt;
+&lt;p&gt;出版社　&lt;strong&gt;ソフトバンクパブリッシング&lt;/strong&gt;
+発売日　&lt;strong&gt;2004.08&lt;/strong&gt;
+価格 　&lt;strong&gt;￥ 4,725（￥ 4,500）&lt;/strong&gt;
+ISBN 　&lt;strong&gt;4797327014&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ｌｉｎｕｘでのプログラミングを網羅した本格的・体系的な入門書。シェルスクリプトやｇｃｃの基本から、高度なネットワークプログラミングまで、ＵＮＩＸプログラミングの真髄を学ぶ。９９年刊の改訂第２版。
+[ｂｋ１の内容紹介]&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_detail.cgi?aid=p-hugh55881&amp;amp;bibid=02467533" title="オンライン書店ｂｋ１：Ｌｉｎｕｘプログラミング 改訂第２版"&gt;ｂｋ１で詳しく見る&lt;/a&gt;
+&lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_top.cgi?aid=p-hugh55881" title="オンライン書店ｂｋ１"&gt;&lt;img alt="オンライン書店ｂｋ１" loading="lazy" src="http://www.bk1.co.jp/images/breeder/banner/button.gif"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Linuxプログラミングしたいなと思っているので。&lt;/p&gt;</description></item><item><title>Linuxとのセキュリティ対決でWindows Server 2003が勝利</title><link>https://igawa.io/posts/2005/02/linux%E3%81%A8%E3%81%AE%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E5%AF%BE%E6%B1%BA%E3%81%A7windows-server-2003%E3%81%8C%E5%8B%9D%E5%88%A9/</link><pubDate>Tue, 22 Feb 2005 23:53:00 +0900</pubDate><guid>https://igawa.io/posts/2005/02/linux%E3%81%A8%E3%81%AE%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E5%AF%BE%E6%B1%BA%E3%81%A7windows-server-2003%E3%81%8C%E5%8B%9D%E5%88%A9/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/NT/NEWS/20050221/3/"&gt;http://itpro.nikkeibp.co.jp/free/NT/NEWS/20050221/3/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;最後のほうで、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;これがサーバーOSとしては，WindowsがLinuxよりも安全だという証明になるだろうか？
+オープン・ソース・モデルは，1社独占である Microsoftよりも，
+早く修正プログラムを提供できないのではないかと思われる。
+私がよくいっているように
+「Linuxのセキュリティ神話は全くまやかしだ」という，
+面白い現実例になっている。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;って、誇らしげに言ってるけど、何か別の視点が抜けて無いか？&lt;/p&gt;
+&lt;p&gt;「Windowsは、脆弱性を多くの人数で(ソースコードレベルで)検証できない。」&lt;/p&gt;
+&lt;p&gt;「Windowsを修正＆販売することが出来るのはMicrosoftのみ」
+とかさ。&lt;/p&gt;</description></item><item><title>「おかあさんといっしょ」のイベント入場券でダフ屋行為</title><link>https://igawa.io/posts/2005/02/%E3%81%8A%E3%81%8B%E3%81%82%E3%81%95%E3%82%93%E3%81%A8%E3%81%84%E3%81%A3%E3%81%97%E3%82%87%E3%81%AE%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E5%85%A5%E5%A0%B4%E5%88%B8%E3%81%A7%E3%83%80%E3%83%95%E5%B1%8B%E8%A1%8C%E7%82%BA/</link><pubDate>Fri, 18 Feb 2005 23:59:00 +0900</pubDate><guid>https://igawa.io/posts/2005/02/%E3%81%8A%E3%81%8B%E3%81%82%E3%81%95%E3%82%93%E3%81%A8%E3%81%84%E3%81%A3%E3%81%97%E3%82%87%E3%81%AE%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E5%85%A5%E5%A0%B4%E5%88%B8%E3%81%A7%E3%83%80%E3%83%95%E5%B1%8B%E8%A1%8C%E7%82%BA/</guid><description>&lt;p&gt;&lt;a href="http://www.asahi.com/national/update/0217/022.html"&gt;http://www.asahi.com/national/update/0217/022.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;みんな気をつけてね。
+良い子は転売目的で購入しちゃダメだよ（ｗ&lt;/p&gt;</description></item><item><title>SCOの証拠は全く不十分——判事が断定</title><link>https://igawa.io/posts/2005/02/sco%E3%81%AE%E8%A8%BC%E6%8B%A0%E3%81%AF%E5%85%A8%E3%81%8F%E4%B8%8D%E5%8D%81%E5%88%86%E5%88%A4%E4%BA%8B%E3%81%8C%E6%96%AD%E5%AE%9A/</link><pubDate>Fri, 18 Feb 2005 23:58:00 +0900</pubDate><guid>https://igawa.io/posts/2005/02/sco%E3%81%AE%E8%A8%BC%E6%8B%A0%E3%81%AF%E5%85%A8%E3%81%8F%E4%B8%8D%E5%8D%81%E5%88%86%E5%88%A4%E4%BA%8B%E3%81%8C%E6%96%AD%E5%AE%9A/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/enterprise/articles/0502/14/news094.html"&gt;http://www.itmedia.co.jp/enterprise/articles/0502/14/news094.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;もはや、こんな事件があったことすら忘れかけていました(笑)が、
+SCOにとっては、厳しい(しかし、客観的には妥当な)判断がなされた模様。
+こんな企業、さっさと無くなったほうがいいんじゃないの？&lt;/p&gt;</description></item><item><title>これって増設用？ 東芝が“DVDなし”の「RD-H1」発表</title><link>https://igawa.io/posts/2005/02/%E3%81%93%E3%82%8C%E3%81%A3%E3%81%A6%E5%A2%97%E8%A8%AD%E7%94%A8-%E6%9D%B1%E8%8A%9D%E3%81%8Cdvd%E3%81%AA%E3%81%97%E3%81%AErd-h1%E7%99%BA%E8%A1%A8/</link><pubDate>Wed, 16 Feb 2005 23:42:00 +0900</pubDate><guid>https://igawa.io/posts/2005/02/%E3%81%93%E3%82%8C%E3%81%A3%E3%81%A6%E5%A2%97%E8%A8%AD%E7%94%A8-%E6%9D%B1%E8%8A%9D%E3%81%8Cdvd%E3%81%AA%E3%81%97%E3%81%AErd-h1%E7%99%BA%E8%A1%A8/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/lifestyle/articles/0502/16/news040.html"&gt;http://www.itmedia.co.jp/lifestyle/articles/0502/16/news040.html&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;4月上旬から同社の直販サイト「shop 1048」で限定販売する予定&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしい。
+お値段は、3万円台前半だそうです。
+「ネット de ナビ」
+「ネット de ダビング」
+「ネット de モニター」
+がすべて使える模様。
+これがあれば万事解決だ！！！&lt;/p&gt;</description></item><item><title>2005年4月からJAFで、二輪のロードサービス開始！</title><link>https://igawa.io/posts/2005/02/2005%E5%B9%B44%E6%9C%88%E3%81%8B%E3%82%89jaf%E3%81%A7%E4%BA%8C%E8%BC%AA%E3%81%AE%E3%83%AD%E3%83%BC%E3%83%89%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</link><pubDate>Wed, 16 Feb 2005 22:08:00 +0900</pubDate><guid>https://igawa.io/posts/2005/02/2005%E5%B9%B44%E6%9C%88%E3%81%8B%E3%82%89jaf%E3%81%A7%E4%BA%8C%E8%BC%AA%E3%81%AE%E3%83%AD%E3%83%BC%E3%83%89%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</guid><description>&lt;p&gt;&lt;a href="http://www.jaf.or.jp/proceed/join/200504_srv/200504_srv.htm"&gt;http://www.jaf.or.jp/proceed/join/200504_srv/200504_srv.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;これは嬉しいです。
+うちのバイク、結構調子が悪くってなかなかエンジンがかからないときが
+あるので、気軽にJAFを呼べると嬉しい感じ。&lt;/p&gt;</description></item><item><title>DEATH NOTE第5巻発売!</title><link>https://igawa.io/posts/2005/02/death-note%E7%AC%AC5%E5%B7%BB%E7%99%BA%E5%A3%B2/</link><pubDate>Tue, 08 Feb 2005 09:28:00 +0900</pubDate><guid>https://igawa.io/posts/2005/02/death-note%E7%AC%AC5%E5%B7%BB%E7%99%BA%E5%A3%B2/</guid><description>&lt;p&gt;&lt;a href="http://www.amazon.co.jp/exec/obidos/ASIN/4088737741/hughundercons-22/ref=nosim"&gt;
+&lt;img alt="picture" loading="lazy" src="http://images-jp.amazon.com/images/P/4088737741.09.TZZZZZZZ.jpg"&gt;
+DEATH
+NOT第5巻&lt;/a&gt;
+待望のDEATH NOTE第5巻が発売されました!
+私は既に購入済(笑)
+bk1で買うなら、こっちでどうぞ。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_detail.cgi?aid=p-hugh55881&amp;amp;bibid=02517339" title="オンライン書店ｂｋ１：ＤＥＡＴＨ　ＮＯＴＥ５(ジャンプコミックス)"&gt;ＤＥＡＴＨ　ＮＯＴＥ５(ジャンプコミックス)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_detail.cgi?aid=p-hugh55881&amp;amp;bibid=02517339" title="オンライン書店ｂｋ１：ＤＥＡＴＨ　ＮＯＴＥ５(ジャンプコミックス)"&gt;&lt;img alt="picture" loading="lazy" src="http://www.bk1.co.jp/bookimages/02/51/73/39/025173390000.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;大場　つぐみ・小畑　健&lt;/p&gt;
+&lt;p&gt;出版社　&lt;strong&gt;集英社&lt;/strong&gt;
+発売日　&lt;strong&gt;2005.02.04&lt;/strong&gt;
+価格  　&lt;strong&gt;￥ 410（￥ 390）&lt;/strong&gt;
+ISBN  　&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_detail.cgi?aid=p-hugh55881&amp;amp;bibid=02517339" title="オンライン書店ｂｋ１：ＤＥＡＴＨ　ＮＯＴＥ５(ジャンプコミックス)"&gt;ｂｋ１で詳しく見る&lt;/a&gt;  &lt;a href="http://www.bk1.co.jp/cgi-bin/srch/srch_top.cgi?aid=p-hugh55881" title="オンライン書店ｂｋ１"&gt;&lt;img alt="オンライン書店ｂｋ１" loading="lazy" src="http://www.bk1.co.jp/images/breeder/banner/button.gif"&gt;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>も〜</title><link>https://igawa.io/posts/2005/02/%E3%82%82/</link><pubDate>Wed, 02 Feb 2005 01:58:00 +0900</pubDate><guid>https://igawa.io/posts/2005/02/%E3%82%82/</guid><description>&lt;p&gt;仕事が忙しいのと、体調が悪いのとで、全然更新できてない。。。
+やべーぜ。&lt;/p&gt;</description></item><item><title>ブラウザ市場でIEのシェア低下止まらず</title><link>https://igawa.io/posts/2005/01/%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E5%B8%82%E5%A0%B4%E3%81%A7ie%E3%81%AE%E3%82%B7%E3%82%A7%E3%82%A2%E4%BD%8E%E4%B8%8B%E6%AD%A2%E3%81%BE%E3%82%89%E3%81%9A/</link><pubDate>Sat, 22 Jan 2005 14:09:00 +0900</pubDate><guid>https://igawa.io/posts/2005/01/%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E5%B8%82%E5%A0%B4%E3%81%A7ie%E3%81%AE%E3%82%B7%E3%82%A7%E3%82%A2%E4%BD%8E%E4%B8%8B%E6%AD%A2%E3%81%BE%E3%82%89%E3%81%9A/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0501/22/news008.html"&gt;http://www.itmedia.co.jp/news/articles/0501/22/news008.html&lt;/a&gt;
+市場調査会社の「WebSideStory」によると、
+IEのシェアは９０．３％、一方FireFoxのシェアは５．０％となったそうです。
+まぁ、まだまだIEの独占状態ですね。。&lt;/p&gt;</description></item><item><title>ホームシアターを始める人のための「スクリーンの“いろは”」</title><link>https://igawa.io/posts/2005/01/%E3%83%9B%E3%83%BC%E3%83%A0%E3%82%B7%E3%82%A2%E3%82%BF%E3%83%BC%E3%82%92%E5%A7%8B%E3%82%81%E3%82%8B%E4%BA%BA%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%81%AE%E3%81%84%E3%82%8D%E3%81%AF/</link><pubDate>Wed, 12 Jan 2005 01:24:00 +0900</pubDate><guid>https://igawa.io/posts/2005/01/%E3%83%9B%E3%83%BC%E3%83%A0%E3%82%B7%E3%82%A2%E3%82%BF%E3%83%BC%E3%82%92%E5%A7%8B%E3%82%81%E3%82%8B%E4%BA%BA%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%81%AE%E3%81%84%E3%82%8D%E3%81%AF/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/lifestyle/articles/0408/06/news085.html"&gt;http://www.itmedia.co.jp/lifestyle/articles/0408/06/news085.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;そのうち、「ホームシアター」をはじめたいと思っているので。&lt;/p&gt;</description></item><item><title>CES 2005 - フラットパネルはシャープ、リアプロ再参入などで事業を強化</title><link>https://igawa.io/posts/2005/01/ces-2005-%E3%83%95%E3%83%A9%E3%83%83%E3%83%88%E3%83%91%E3%83%8D%E3%83%AB%E3%81%AF%E3%82%B7%E3%83%A3%E3%83%BC%E3%83%97%E3%83%AA%E3%82%A2%E3%83%97%E3%83%AD%E5%86%8D%E5%8F%82%E5%85%A5%E3%81%AA%E3%81%A9%E3%81%A7%E4%BA%8B%E6%A5%AD%E3%82%92%E5%BC%B7%E5%8C%96/</link><pubDate>Sun, 09 Jan 2005 15:00:00 +0900</pubDate><guid>https://igawa.io/posts/2005/01/ces-2005-%E3%83%95%E3%83%A9%E3%83%83%E3%83%88%E3%83%91%E3%83%8D%E3%83%AB%E3%81%AF%E3%82%B7%E3%83%A3%E3%83%BC%E3%83%97%E3%83%AA%E3%82%A2%E3%83%97%E3%83%AD%E5%86%8D%E5%8F%82%E5%85%A5%E3%81%AA%E3%81%A9%E3%81%A7%E4%BA%8B%E6%A5%AD%E3%82%92%E5%BC%B7%E5%8C%96/</guid><description>&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/articles/2005/01/06/ces3/"&gt;http://pcweb.mycom.co.jp/articles/2005/01/06/ces3/&lt;/a&gt;
+シャープが日本でリアプロを発売するのかどうかは微妙な模様。。。&lt;/p&gt;</description></item><item><title>マヨネーズ散乱で５時間通行止め 静岡の東名上り線</title><link>https://igawa.io/posts/2005/01/%E3%83%9E%E3%83%A8%E3%83%8D%E3%83%BC%E3%82%BA%E6%95%A3%E4%B9%B1%E3%81%A7%EF%BC%95%E6%99%82%E9%96%93%E9%80%9A%E8%A1%8C%E6%AD%A2%E3%82%81-%E9%9D%99%E5%B2%A1%E3%81%AE%E6%9D%B1%E5%90%8D%E4%B8%8A%E3%82%8A%E7%B7%9A/</link><pubDate>Sun, 09 Jan 2005 12:09:00 +0900</pubDate><guid>https://igawa.io/posts/2005/01/%E3%83%9E%E3%83%A8%E3%83%8D%E3%83%BC%E3%82%BA%E6%95%A3%E4%B9%B1%E3%81%A7%EF%BC%95%E6%99%82%E9%96%93%E9%80%9A%E8%A1%8C%E6%AD%A2%E3%82%81-%E9%9D%99%E5%B2%A1%E3%81%AE%E6%9D%B1%E5%90%8D%E4%B8%8A%E3%82%8A%E7%B7%9A/</guid><description>&lt;p&gt;&lt;a href="http://www.asahi.com/national/update/0105/007.html?2005"&gt;http://www.asahi.com/national/update/0105/007.html?2005&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;１万本以上のマヨネーズが散乱した画像有り。
+すごいことになっています。&lt;/p&gt;
+&lt;p&gt;高速道路に油は厳禁だからな。。。&lt;/p&gt;</description></item><item><title>LPI レベル2(の201試験)を受けて来た</title><link>https://igawa.io/posts/2004/12/lpi-%E3%83%AC%E3%83%99%E3%83%AB2%E3%81%AE201%E8%A9%A6%E9%A8%93%E3%82%92%E5%8F%97%E3%81%91%E3%81%A6%E6%9D%A5%E3%81%9F/</link><pubDate>Thu, 23 Dec 2004 18:40:00 +0900</pubDate><guid>https://igawa.io/posts/2004/12/lpi-%E3%83%AC%E3%83%99%E3%83%AB2%E3%81%AE201%E8%A9%A6%E9%A8%93%E3%82%92%E5%8F%97%E3%81%91%E3%81%A6%E6%9D%A5%E3%81%9F/</guid><description>&lt;p&gt;LPIレベル2(201試験)を、12月21日に受けて来た。
+結果は合格。
+勉強方法は、普段からLinuxを使うようにしているのと、
+問題集で勉強。
+使った本は、
+「&lt;a href="http://www.amazon.co.jp/exec/obidos/ASIN/4798104981/hughundercons-22"&gt;Linux教科書
+LPICレベル2　Linux教科書&lt;/a&gt;」と、
+「&lt;a href="http://www.amazon.co.jp/exec/obidos/ASIN/4844318446/hughundercons-22"&gt;徹底攻略 LPI問題集 Level
+2対応&lt;/a&gt;」&lt;/p&gt;
+&lt;p&gt;結構、ぎりぎりな点数での合格でしたが、
+まぁ、試験なんて受かりゃそれでいいので、良いことにします。&lt;/p&gt;
+&lt;p&gt;202試験は来年の1月に受験予定。&lt;/p&gt;</description></item><item><title>「ガラスの仮面」42巻、発売される</title><link>https://igawa.io/posts/2004/12/%E3%82%AC%E3%83%A9%E3%82%B9%E3%81%AE%E4%BB%AE%E9%9D%A242%E5%B7%BB%E7%99%BA%E5%A3%B2%E3%81%95%E3%82%8C%E3%82%8B/</link><pubDate>Mon, 20 Dec 2004 20:09:00 +0900</pubDate><guid>https://igawa.io/posts/2004/12/%E3%82%AC%E3%83%A9%E3%82%B9%E3%81%AE%E4%BB%AE%E9%9D%A242%E5%B7%BB%E7%99%BA%E5%A3%B2%E3%81%95%E3%82%8C%E3%82%8B/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=04/12/18/1458230&amp;amp;topic=9"&gt;slashdot.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;高校生のとき、読んでたんですが、ストーリーなんて、
+もうすっかり忘れてしまいました。
+あらすじはわかるのですが、最後のほうは覚えていません。。
+なんだか、もう一度読みたくなってきたな。&lt;/p&gt;</description></item><item><title>ソニー「液晶、リアプロに注力」</title><link>https://igawa.io/posts/2004/12/%E3%82%BD%E3%83%8B%E3%83%BC%E6%B6%B2%E6%99%B6%E3%83%AA%E3%82%A2%E3%83%97%E3%83%AD%E3%81%AB%E6%B3%A8%E5%8A%9B/</link><pubDate>Mon, 20 Dec 2004 19:59:00 +0900</pubDate><guid>https://igawa.io/posts/2004/12/%E3%82%BD%E3%83%8B%E3%83%BC%E6%B6%B2%E6%99%B6%E3%83%AA%E3%82%A2%E3%83%97%E3%83%AD%E3%81%AB%E6%B3%A8%E5%8A%9B/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0412/20/news010.html"&gt;itmedia&lt;/a&gt;
+世の中には、プラズマTVを買って、
+「やっぱ、21世紀はプラズマTVの時代だよね〜」
+なんてこと言ってる人がいるかもしれないが、大間違いってこと。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;「平面TV事業に関しては、今後も液晶、リアプロジェクションTVに集中して事業展開を進める。プラズマTVに関しても製造・販売を継続する」&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ということなので、プラズマTVも細々と続けていくつもりらしい。&lt;/p&gt;
+&lt;p&gt;これから、&lt;a href="http://web.canon.jp/technology/detail/device/sed_display/"&gt;SED&lt;/a&gt;とか、有機ELとかもあるのでどれにしようか迷うような状態かも。&lt;/p&gt;</description></item><item><title>まさか・・あんなものが(｀□´)</title><link>https://igawa.io/posts/2004/12/%E3%81%BE%E3%81%95%E3%81%8B%E3%81%82%E3%82%93%E3%81%AA%E3%82%82%E3%81%AE%E3%81%8C/</link><pubDate>Thu, 16 Dec 2004 19:17:00 +0900</pubDate><guid>https://igawa.io/posts/2004/12/%E3%81%BE%E3%81%95%E3%81%8B%E3%81%82%E3%82%93%E3%81%AA%E3%82%82%E3%81%AE%E3%81%8C/</guid><description>&lt;p&gt;毎日自転車で最寄り駅まで通っているのですが、仕事から帰ってきて駐輪場に行ってみると、ないんですよ！
+いや、自転車はあったのですが、サドルだけがないんです！
+信じられません(+_+)
+サドル無しで乗るわけにもいかないので、サドルだけ買う事にします。うー。&lt;/p&gt;</description></item><item><title>学力低下、理科も深刻 中２が６位、小４は３位に</title><link>https://igawa.io/posts/2004/12/%E5%AD%A6%E5%8A%9B%E4%BD%8E%E4%B8%8B%E7%90%86%E7%A7%91%E3%82%82%E6%B7%B1%E5%88%BB-%E4%B8%AD%EF%BC%92%E3%81%8C%EF%BC%96%E4%BD%8D%E5%B0%8F%EF%BC%94%E3%81%AF%EF%BC%93%E4%BD%8D%E3%81%AB/</link><pubDate>Wed, 15 Dec 2004 22:30:00 +0900</pubDate><guid>https://igawa.io/posts/2004/12/%E5%AD%A6%E5%8A%9B%E4%BD%8E%E4%B8%8B%E7%90%86%E7%A7%91%E3%82%82%E6%B7%B1%E5%88%BB-%E4%B8%AD%EF%BC%92%E3%81%8C%EF%BC%96%E4%BD%8D%E5%B0%8F%EF%BC%94%E3%81%AF%EF%BC%93%E4%BD%8D%E3%81%AB/</guid><description>&lt;p&gt;&lt;a href="http://www.asahi.com/national/update/1215/009.html?2004"&gt;asahi.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;別に、無理して理数系の学力をアップさせることも無いんじゃないの？
+こういう結果が出ると、
+「宿題が足りないからだ！」とか「授業時間が短いからだ！」とかいう
+話が出てくるけど、そうじゃないんだと思う。&lt;/p&gt;
+&lt;p&gt;やっぱり「授業に魅力が無い」のが一番だと思うよ。
+「むずかしいから」とか「教えるにはまだ早い」とかいう理由で、
+面白い部分を教えられなければ、授業がつまんなくなるのは当たり前。&lt;/p&gt;
+&lt;p&gt;まぁ、「面白い部分を教えた」ところでそれを面白いと思うかどうかは
+その子どもの育ってきた環境にもよるので、
+みんなが「面白い」と思うことは、まずありえないだろうけど。&lt;/p&gt;</description></item><item><title>「Linuxは商用ソフトよりバグが少ない」--米調査</title><link>https://igawa.io/posts/2004/12/linux%E3%81%AF%E5%95%86%E7%94%A8%E3%82%BD%E3%83%95%E3%83%88%E3%82%88%E3%82%8A%E3%83%90%E3%82%B0%E3%81%8C%E5%B0%91%E3%81%AA%E3%81%84-%E7%B1%B3%E8%AA%BF%E6%9F%BB/</link><pubDate>Wed, 15 Dec 2004 22:18:00 +0900</pubDate><guid>https://igawa.io/posts/2004/12/linux%E3%81%AF%E5%95%86%E7%94%A8%E3%82%BD%E3%83%95%E3%83%88%E3%82%88%E3%82%8A%E3%83%90%E3%82%B0%E3%81%8C%E5%B0%91%E3%81%AA%E3%81%84-%E7%B1%B3%E8%AA%BF%E6%9F%BB/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/sec/story/0,2000050480,20079664,00.htm"&gt;japan.cnet.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;なんだ？ この調査。
+網目の大きさの違う「ざる」ですくった、それぞれの結果を見ても、
+すくえた数が、どちらが多いかなんてわかんないでしょう？&lt;/p&gt;
+&lt;p&gt;「カーネギーメロン大学から提供されたデータ」は
+「Coverityのコード分析ツール」で分析した結果なのだろうか？
+そこがわからないと、
+「Linuxは商用ソフトよりバグが少ない」なんてことは
+導けないはずだろう。&lt;/p&gt;
+&lt;p&gt;そこら辺は、ちゃんと書いておいて欲しいものだ。&lt;/p&gt;</description></item><item><title>高速道路を避けて生きることは可能か</title><link>https://igawa.io/posts/2004/12/%E9%AB%98%E9%80%9F%E9%81%93%E8%B7%AF%E3%82%92%E9%81%BF%E3%81%91%E3%81%A6%E7%94%9F%E3%81%8D%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AF%E5%8F%AF%E8%83%BD%E3%81%8B/</link><pubDate>Wed, 15 Dec 2004 22:16:00 +0900</pubDate><guid>https://igawa.io/posts/2004/12/%E9%AB%98%E9%80%9F%E9%81%93%E8%B7%AF%E3%82%92%E9%81%BF%E3%81%91%E3%81%A6%E7%94%9F%E3%81%8D%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AF%E5%8F%AF%E8%83%BD%E3%81%8B/</guid><description>&lt;p&gt;&lt;a href="http://blog.japan.cnet.com/umeda/"&gt;japan.cnet.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;おそらく、多くの人は「できれば高速道路」を避けて生きて行きたいと
+思っているに違いない。
+中には、「高速道路」の先頭で走り続けたい人もいるだろうが、
+ほとんどの人は、「高速道路を走るのは疲れた」という感想を持っているだろう。&lt;/p&gt;
+&lt;p&gt;では、何故、「高速道路」を走りたがる人が多いのか？&lt;/p&gt;
+&lt;p&gt;それは、「一般道」や「道の無いところ」は長い時間走り続けると
+さらに疲れるからであろう。&lt;/p&gt;
+&lt;p&gt;やはり、ちゃんと整備されている道の方が、「一般道」なんかよりも
+数倍走りやすく、また、
+行き先もわかりやすい→先行きの不安が少ない
+ということもあるのかもしれない。&lt;/p&gt;
+&lt;p&gt;私は、どちらを走りたいのだろうか。&lt;/p&gt;
+&lt;p&gt;自分の中では「道の無いところ」を走りたいと思うが、
+なかなかそうもいかない。&lt;/p&gt;</description></item><item><title>うさこは言ってる事がわけわからんので</title><link>https://igawa.io/posts/2004/12/%E3%81%86%E3%81%95%E3%81%93%E3%81%AF%E8%A8%80%E3%81%A3%E3%81%A6%E3%82%8B%E4%BA%8B%E3%81%8C%E3%82%8F%E3%81%91%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E3%81%AE%E3%81%A7/</link><pubDate>Fri, 10 Dec 2004 23:47:00 +0900</pubDate><guid>https://igawa.io/posts/2004/12/%E3%81%86%E3%81%95%E3%81%93%E3%81%AF%E8%A8%80%E3%81%A3%E3%81%A6%E3%82%8B%E4%BA%8B%E3%81%8C%E3%82%8F%E3%81%91%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E3%81%AE%E3%81%A7/</guid><description>&lt;p&gt;お休みさせました。
+代わりに、「はぼと」君を登場させています。
+「？」をクリックして遊んであげてください。&lt;/p&gt;</description></item><item><title>今年の年賀状はフリーで行こう - Perl + TeXでこだわりの宛名印刷</title><link>https://igawa.io/posts/2004/12/%E4%BB%8A%E5%B9%B4%E3%81%AE%E5%B9%B4%E8%B3%80%E7%8A%B6%E3%81%AF%E3%83%95%E3%83%AA%E3%83%BC%E3%81%A7%E8%A1%8C%E3%81%93%E3%81%86-perl--tex%E3%81%A7%E3%81%93%E3%81%A0%E3%82%8F%E3%82%8A%E3%81%AE%E5%AE%9B%E5%90%8D%E5%8D%B0%E5%88%B7/</link><pubDate>Thu, 09 Dec 2004 08:29:00 +0900</pubDate><guid>https://igawa.io/posts/2004/12/%E4%BB%8A%E5%B9%B4%E3%81%AE%E5%B9%B4%E8%B3%80%E7%8A%B6%E3%81%AF%E3%83%95%E3%83%AA%E3%83%BC%E3%81%A7%E8%A1%8C%E3%81%93%E3%81%86-perl--tex%E3%81%A7%E3%81%93%E3%81%A0%E3%82%8F%E3%82%8A%E3%81%AE%E5%AE%9B%E5%90%8D%E5%8D%B0%E5%88%B7/</guid><description>&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/special/2004/nenga/"&gt;pcweb.mycom.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;やばい。なんか面白そうかも。。&lt;/p&gt;</description></item><item><title>広がりつつあるMicrosoft包囲網!</title><link>https://igawa.io/posts/2004/12/%E5%BA%83%E3%81%8C%E3%82%8A%E3%81%A4%E3%81%A4%E3%81%82%E3%82%8Bmicrosoft%E5%8C%85%E5%9B%B2%E7%B6%B2/</link><pubDate>Tue, 07 Dec 2004 01:08:00 +0900</pubDate><guid>https://igawa.io/posts/2004/12/%E5%BA%83%E3%81%8C%E3%82%8A%E3%81%A4%E3%81%A4%E3%81%82%E3%82%8Bmicrosoft%E5%8C%85%E5%9B%B2%E7%B6%B2/</guid><description>&lt;p&gt;&lt;a href="http://pc.watch.impress.co.jp/docs/2004/1206/nishikawa.htm"&gt;pc.watch.impress.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;あえて、「Linux」カテゴリに分類してみた。
+やっぱり、&lt;strong&gt;一社独占&lt;/strong&gt;は良くないよね。&lt;/p&gt;</description></item><item><title>通勤ラッシュによるストレスは戦場以上--調査報告</title><link>https://igawa.io/posts/2004/12/%E9%80%9A%E5%8B%A4%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B9%E3%83%88%E3%83%AC%E3%82%B9%E3%81%AF%E6%88%A6%E5%A0%B4%E4%BB%A5%E4%B8%8A-%E8%AA%BF%E6%9F%BB%E5%A0%B1%E5%91%8A/</link><pubDate>Sat, 04 Dec 2004 00:02:00 +0900</pubDate><guid>https://igawa.io/posts/2004/12/%E9%80%9A%E5%8B%A4%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B9%E3%83%88%E3%83%AC%E3%82%B9%E3%81%AF%E6%88%A6%E5%A0%B4%E4%BB%A5%E4%B8%8A-%E8%AA%BF%E6%9F%BB%E5%A0%B1%E5%91%8A/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/biz/story/0,2000050156,20077623,00.htm"&gt;japan.cnet.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;戦場で戦う人と、ふつーのサラリーマンとまるっきり違う人を比べているので、
+「どっちの状況がつらいのか」ということは判断できませんが、
+サラリーマンから見れば、
+戦場以上のストレスがかかっていることには、間違いないですね。&lt;/p&gt;
+&lt;p&gt;このレポートは海外のものの様だけど、日本での調査はないのかな？
+海外での通勤ラッシュってどんな感じ何だろう？
+日本並にすごいのだろうか？&lt;/p&gt;</description></item><item><title>軽くて安い！ “紙製”のホームシアター用スクリーン</title><link>https://igawa.io/posts/2004/11/%E8%BB%BD%E3%81%8F%E3%81%A6%E5%AE%89%E3%81%84-%E7%B4%99%E8%A3%BD%E3%81%AE%E3%83%9B%E3%83%BC%E3%83%A0%E3%82%B7%E3%82%A2%E3%82%BF%E3%83%BC%E7%94%A8%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3/</link><pubDate>Sun, 28 Nov 2004 01:32:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E8%BB%BD%E3%81%8F%E3%81%A6%E5%AE%89%E3%81%84-%E7%B4%99%E8%A3%BD%E3%81%AE%E3%83%9B%E3%83%BC%E3%83%A0%E3%82%B7%E3%82%A2%E3%82%BF%E3%83%BC%E7%94%A8%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/lifestyle/articles/0411/26/news019.html"&gt;itmedia.co.jp&lt;/a&gt;
+60インチワイドサイズが4700円。
+80インチワイドサイズが6300円。
+このくらいの価格なら、ちょっとかってみようかなって気になる。
+でも、まずはプロジェクタと、それを設置するスペースが必要か。。。&lt;/p&gt;</description></item><item><title>低価格DLP機の実力は？——HP初のホームプロジェクター「ep7100シリーズ」</title><link>https://igawa.io/posts/2004/11/%E4%BD%8E%E4%BE%A1%E6%A0%BCdlp%E6%A9%9F%E3%81%AE%E5%AE%9F%E5%8A%9B%E3%81%AFhp%E5%88%9D%E3%81%AE%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%82%BF%E3%83%BCep7100%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA/</link><pubDate>Sun, 28 Nov 2004 01:30:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E4%BD%8E%E4%BE%A1%E6%A0%BCdlp%E6%A9%9F%E3%81%AE%E5%AE%9F%E5%8A%9B%E3%81%AFhp%E5%88%9D%E3%81%AE%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%82%BF%E3%83%BCep7100%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/lifestyle/articles/0411/26/news025.html"&gt;itmedia.co.jp&lt;/a&gt;
+ちょっと私が注目中のホームプロジェクタep7100シリーズのレビュー。&lt;/p&gt;</description></item><item><title>新紙幣、アイロンがけ要注意 ホログラム、熱で変質</title><link>https://igawa.io/posts/2004/11/%E6%96%B0%E7%B4%99%E5%B9%A3%E3%82%A2%E3%82%A4%E3%83%AD%E3%83%B3%E3%81%8C%E3%81%91%E8%A6%81%E6%B3%A8%E6%84%8F-%E3%83%9B%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E7%86%B1%E3%81%A7%E5%A4%89%E8%B3%AA/</link><pubDate>Sun, 28 Nov 2004 01:12:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E6%96%B0%E7%B4%99%E5%B9%A3%E3%82%A2%E3%82%A4%E3%83%AD%E3%83%B3%E3%81%8C%E3%81%91%E8%A6%81%E6%B3%A8%E6%84%8F-%E3%83%9B%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E7%86%B1%E3%81%A7%E5%A4%89%E8%B3%AA/</guid><description>&lt;p&gt;&lt;a href="http://www.asahi.com/national/update/1127/006.html?2004"&gt;asahi.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「ピン札にしよう！」と思ってアイロンがけしちゃうと、
+かえってホログラムが変質してしまって、ぜんぜん新しっぽくなくなってしまうので、
+ご注意を。&lt;/p&gt;</description></item><item><title>ICタグで小学生の登下校を監視？</title><link>https://igawa.io/posts/2004/11/ic%E3%82%BF%E3%82%B0%E3%81%A7%E5%B0%8F%E5%AD%A6%E7%94%9F%E3%81%AE%E7%99%BB%E4%B8%8B%E6%A0%A1%E3%82%92%E7%9B%A3%E8%A6%96/</link><pubDate>Sat, 27 Nov 2004 00:56:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/ic%E3%82%BF%E3%82%B0%E3%81%A7%E5%B0%8F%E5%AD%A6%E7%94%9F%E3%81%AE%E7%99%BB%E4%B8%8B%E6%A0%A1%E3%82%92%E7%9B%A3%E8%A6%96/</guid><description>&lt;p&gt;&lt;a href="http://takagi-hiromitsu.jp/diary/20041123.html#p02"&gt;takagi-hiromitsu.jp&lt;/a&gt;
+&lt;a href="http://www.secu354.co.jp/school/kiji04101001.htm"&gt;secu354.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ICタグを使って小学生の登下校を監視する仕組みらしい。
+登下校すると、保護者にメールが送信される(希望者のみ)仕組みにも
+なっているようだ。&lt;/p&gt;
+&lt;p&gt;保護者様や開発者は、
+ICタグは、悪意を持った第三者からも読み取られる可能性があることは、
+認識しているのだろうか？&lt;/p&gt;
+&lt;p&gt;こういう、重要な情報を「不確かな技術である」インターネットメールで
+送信するって言うのはどうなのだろうか？&lt;/p&gt;
+&lt;p&gt;「インターネットメールは、配達されないこともある」ってことは、
+「保護者」様には認知されているのだろうか？&lt;/p&gt;
+&lt;p&gt;いろいろ、疑問が湧く試みだ。&lt;/p&gt;</description></item><item><title>Linuxは滅び行く運命にあるのか</title><link>https://igawa.io/posts/2004/11/linux%E3%81%AF%E6%BB%85%E3%81%B3%E8%A1%8C%E3%81%8F%E9%81%8B%E5%91%BD%E3%81%AB%E3%81%82%E3%82%8B%E3%81%AE%E3%81%8B/</link><pubDate>Sat, 27 Nov 2004 00:29:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/linux%E3%81%AF%E6%BB%85%E3%81%B3%E8%A1%8C%E3%81%8F%E9%81%8B%E5%91%BD%E3%81%AB%E3%81%82%E3%82%8B%E3%81%AE%E3%81%8B/</guid><description>&lt;p&gt;&lt;a href="http://japan.linux.com/opensource/04/11/25/0216245.shtml?topic=1"&gt;japan.linux.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Solaris10のオープンソース化を受けて、
+「Linuxは滅びてしまうんじゃないのか？」という意見が
+出てきたらしい。
+でも、いままでLinuxを開発して来た人が、
+特に理由もないのにSolarisを開発し始めるとも思えず、
+また、Linuxにはいろいろなディストリビューションがあるけれども、
+Solarisは「一つである」ことを優位な点として挙げているようですが、
+Linuxの面白さは「多種多様さ」にもあると思われます。
+ので、Linuxが面白いと思っている人は、Linuxを使い続けるのではないか？
+と思ったり。なんかして。&lt;/p&gt;</description></item><item><title>月を撮ってみた</title><link>https://igawa.io/posts/2004/11/%E6%9C%88%E3%82%92%E6%92%AE%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</link><pubDate>Fri, 26 Nov 2004 00:49:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E6%9C%88%E3%82%92%E6%92%AE%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</guid><description>&lt;p&gt;月を撮ってみました。
+320x240で、QVGA液晶サイズ。
+京ポンにぴったりサイズ(なはず)。&lt;/p&gt;</description></item><item><title>米では薄型ブラウン管テレビがブレイクの予感</title><link>https://igawa.io/posts/2004/11/%E7%B1%B3%E3%81%A7%E3%81%AF%E8%96%84%E5%9E%8B%E3%83%96%E3%83%A9%E3%82%A6%E3%83%B3%E7%AE%A1%E3%83%86%E3%83%AC%E3%83%93%E3%81%8C%E3%83%96%E3%83%AC%E3%82%A4%E3%82%AF%E3%81%AE%E4%BA%88%E6%84%9F/</link><pubDate>Fri, 26 Nov 2004 00:44:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E7%B1%B3%E3%81%A7%E3%81%AF%E8%96%84%E5%9E%8B%E3%83%96%E3%83%A9%E3%82%A6%E3%83%B3%E7%AE%A1%E3%83%86%E3%83%AC%E3%83%93%E3%81%8C%E3%83%96%E3%83%AC%E3%82%A4%E3%82%AF%E3%81%AE%E4%BA%88%E6%84%9F/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/tech/story/0,2000047674,20076103,00.htm"&gt;japan.cnet.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;SED方式のテレビのことかな？
+SED方式の原理は、ここらへんわかりやすいか？
+&lt;a href="http://www.watch.impress.co.jp/av/docs/20040914/sed.htm"&gt;watch.impress.co.jp&lt;/a&gt;
+&lt;a href="http://www.rbbtoday.com/cgi-bin/news/pict.cgi?n=18973&amp;amp;d=20041008&amp;amp;f=20041007_sed03_l.jpg"&gt;rbbtoday.com&lt;/a&gt;&lt;/p&gt;</description></item><item><title>【PHPウォッチ】第12回 PHPでWindowsのGUIアプリを作る「WinBinder」</title><link>https://igawa.io/posts/2004/11/php%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81%E7%AC%AC12%E5%9B%9E-php%E3%81%A7windows%E3%81%AEgui%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%82%8Bwinbinder/</link><pubDate>Fri, 26 Nov 2004 00:42:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/php%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81%E7%AC%AC12%E5%9B%9E-php%E3%81%A7windows%E3%81%AEgui%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%82%8Bwinbinder/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/members/ITPro/oss/20041110/152408/index.shtml"&gt;itpro.nikkeibp.co.jp&lt;/a&gt;(閲覧には会員登録(無料)が必要)&lt;/p&gt;
+&lt;p&gt;Visual Basicは高くて買えないので、
+こういうやつでWindows GUIアプリでも作ってみようかな。&lt;/p&gt;</description></item><item><title>「ドラえもん」の声優が一気に交代！</title><link>https://igawa.io/posts/2004/11/%E3%83%89%E3%83%A9%E3%81%88%E3%82%82%E3%82%93%E3%81%AE%E5%A3%B0%E5%84%AA%E3%81%8C%E4%B8%80%E6%B0%97%E3%81%AB%E4%BA%A4%E4%BB%A3/</link><pubDate>Mon, 22 Nov 2004 08:34:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E3%83%89%E3%83%A9%E3%81%88%E3%82%82%E3%82%93%E3%81%AE%E5%A3%B0%E5%84%AA%E3%81%8C%E4%B8%80%E6%B0%97%E3%81%AB%E4%BA%A4%E4%BB%A3/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/articles/04/11/21/157230.shtml?topic=9"&gt;slashdot.jp&lt;/a&gt;
+&lt;a href="http://www.sankei.co.jp/news/041121/bun091.htm"&gt;sankei.co.jp&lt;/a&gt;
+&lt;a href="http://www.asahi.com/culture/update/1122/001.html?2004"&gt;asahi.com&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;大山のぶ代(ドラえもん)　1936年10月16日 (68歳)
+小原 乃梨子(のび太)　　 1935年10月 2日 (69歳)
+たてかべ和也(ジャイアン)1934年 7月25日 (70歳)
+肝付 兼太(スネ夫)　1935年11月15日 (69歳)
+野村道子(静香)　　1938年 3月31日　(66歳)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;が、一気に交代するらしい。。。
+別の漫画になってしまいそうな悪寒。
+私が知っている限り、ドラえもんの声はずっと大山のぶ代さんなので。&lt;/p&gt;</description></item><item><title>いつの間にか10万Hit達成！ヤッター</title><link>https://igawa.io/posts/2004/11/%E3%81%84%E3%81%A4%E3%81%AE%E9%96%93%E3%81%AB%E3%81%8B10%E4%B8%87hit%E9%81%94%E6%88%90%E3%83%A4%E3%83%83%E3%82%BF%E3%83%BC/</link><pubDate>Sun, 21 Nov 2004 23:22:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E3%81%84%E3%81%A4%E3%81%AE%E9%96%93%E3%81%AB%E3%81%8B10%E4%B8%87hit%E9%81%94%E6%88%90%E3%83%A4%E3%83%83%E3%82%BF%E3%83%BC/</guid><description>&lt;p&gt;いつの間にか１０万Hit達成だー！
+ヤッター！
+これからも、細々とがんばろうっと。&lt;/p&gt;</description></item><item><title>リアプロTVは日本に根付くのか？</title><link>https://igawa.io/posts/2004/11/%E3%83%AA%E3%82%A2%E3%83%97%E3%83%ADtv%E3%81%AF%E6%97%A5%E6%9C%AC%E3%81%AB%E6%A0%B9%E4%BB%98%E3%81%8F%E3%81%AE%E3%81%8B/</link><pubDate>Fri, 19 Nov 2004 23:45:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E3%83%AA%E3%82%A2%E3%83%97%E3%83%ADtv%E3%81%AF%E6%97%A5%E6%9C%AC%E3%81%AB%E6%A0%B9%E4%BB%98%E3%81%8F%E3%81%AE%E3%81%8B/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/lifestyle/articles/0411/19/news024.html"&gt;itmedia.co.jp&lt;/a&gt;
+リアプロは日本で普及するのか？という話題。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;業界の統計では、薄型テレビは2008年には今の半値になるという予測がされてます。そして、ブラウン管なみの高画質を薄型テレビで可能にするSEDも、2010年には8万円になるといっています。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいので、そうなった時にはリアプロのメリットである「安さ」は無くなる。
+それで生き残れるかどうか？
+それは、薄型テレビとの差別化が必要。
+「シネマ画質」を目指すべきだということらしい。&lt;/p&gt;
+&lt;p&gt;ところで、リアプロってランプ寿命はどのくらいなのだろう？
+フロントプロジェクタは大体長くて3000時間くらいだが。&lt;/p&gt;</description></item><item><title>吉田戦車が「それいけ！新型ウイルス君」</title><link>https://igawa.io/posts/2004/11/%E5%90%89%E7%94%B0%E6%88%A6%E8%BB%8A%E3%81%8C%E3%81%9D%E3%82%8C%E3%81%84%E3%81%91%E6%96%B0%E5%9E%8B%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9%E5%90%9B/</link><pubDate>Fri, 19 Nov 2004 23:01:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E5%90%89%E7%94%B0%E6%88%A6%E8%BB%8A%E3%81%8C%E3%81%9D%E3%82%8C%E3%81%84%E3%81%91%E6%96%B0%E5%9E%8B%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9%E5%90%9B/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0411/18/news073.html"&gt;http://www.itmedia.co.jp/news/articles/0411/18/news073.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「ウイルス」が脅威であることは、もうほとんどの人が知っているので、
+吉田戦車様には、まだ「脅威である」とは広く認知されていないようなものについて
+(例えば、&lt;a href="http://takagi-hiromitsu.jp/diary/20041010.html#p04"&gt;高木さんのサイト&lt;/a&gt;でぼしゅうしているような感じのやつ)
+漫画を描いてほしいなぁ。&lt;/p&gt;</description></item><item><title>iTunes Music Store日本でも開始！(来春)</title><link>https://igawa.io/posts/2004/11/itunes-music-store%E6%97%A5%E6%9C%AC%E3%81%A7%E3%82%82%E9%96%8B%E5%A7%8B%E6%9D%A5%E6%98%A5/</link><pubDate>Fri, 19 Nov 2004 22:56:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/itunes-music-store%E6%97%A5%E6%9C%AC%E3%81%A7%E3%82%82%E9%96%8B%E5%A7%8B%E6%9D%A5%E6%98%A5/</guid><description>&lt;p&gt;&lt;a href="http://www.nikkei.co.jp/news/sangyo/20041118AT1D1704R17112004.html"&gt;nikkei.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;やったー。
+ついにiTMSが日本でも始まります。
+これで、日本でのバカ高い曲値段が下がるといいね。
+ただ、日本のレコード会社はどれくらいの値段で曲をＡｐｐｌｅに
+提供するのだろうか？
+やっぱりバカ高だったら、意味無いね。&lt;/p&gt;</description></item><item><title>「ターボリナックスホーム」レビュー記事</title><link>https://igawa.io/posts/2004/11/%E3%82%BF%E3%83%BC%E3%83%9C%E3%83%AA%E3%83%8A%E3%83%83%E3%82%AF%E3%82%B9%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E8%A8%98%E4%BA%8B/</link><pubDate>Fri, 19 Nov 2004 22:54:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E3%82%BF%E3%83%BC%E3%83%9C%E3%83%AA%E3%83%8A%E3%83%83%E3%82%AF%E3%82%B9%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E8%A8%98%E4%BA%8B/</guid><description>&lt;p&gt;&lt;a href="http://pc.watch.impress.co.jp/docs/2004/1117/nishikawa.htm"&gt;pc.watch.impress.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「OSインストール」などという敷居の高い作業を、
+「ターボリナックスホーム」を使うユーザ層が行うとは思えないが、
+こういうのも必要なのだろう。
+この分野でLinuxが成功するためには、
+やはり、「プリインストールされたPC」が必要だと思う。&lt;/p&gt;
+&lt;p&gt;で、レビュー記事を見る限り、「今一歩」な感じの様だ。
+コンセプトは良いと思うので、製品をもう少しブラッシュアップすれば
+良いのではないだろうか？&lt;/p&gt;</description></item><item><title>鋼の錬金術師第9巻予約受付中！</title><link>https://igawa.io/posts/2004/11/%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%AB%E7%AC%AC9%E5%B7%BB%E4%BA%88%E7%B4%84%E5%8F%97%E4%BB%98%E4%B8%AD/</link><pubDate>Sun, 14 Nov 2004 01:50:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%AB%E7%AC%AC9%E5%B7%BB%E4%BA%88%E7%B4%84%E5%8F%97%E4%BB%98%E4%B8%AD/</guid><description>&lt;p&gt;&lt;a href="http://www.amazon.co.jp/exec/obidos/ASIN/4757513186/hughundercons-22/ref=nosim"&gt;
+私のもう一つ好きな漫画「鋼の錬金術師第9巻」が
+アマゾンで予約受付中！&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;これは見逃せません。&lt;/p&gt;</description></item><item><title>「iTunes」上で再生する音楽の音量を音圧指定で均一化できる「iGain」</title><link>https://igawa.io/posts/2004/11/itunes%E4%B8%8A%E3%81%A7%E5%86%8D%E7%94%9F%E3%81%99%E3%82%8B%E9%9F%B3%E6%A5%BD%E3%81%AE%E9%9F%B3%E9%87%8F%E3%82%92%E9%9F%B3%E5%9C%A7%E6%8C%87%E5%AE%9A%E3%81%A7%E5%9D%87%E4%B8%80%E5%8C%96%E3%81%A7%E3%81%8D%E3%82%8Bigain/</link><pubDate>Sat, 13 Nov 2004 01:26:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/itunes%E4%B8%8A%E3%81%A7%E5%86%8D%E7%94%9F%E3%81%99%E3%82%8B%E9%9F%B3%E6%A5%BD%E3%81%AE%E9%9F%B3%E9%87%8F%E3%82%92%E9%9F%B3%E5%9C%A7%E6%8C%87%E5%AE%9A%E3%81%A7%E5%9D%87%E4%B8%80%E5%8C%96%E3%81%A7%E3%81%8D%E3%82%8Bigain/</guid><description>&lt;p&gt;&lt;a href="http://www.forest.impress.co.jp/article/2004/11/11/igain.html"&gt;forest.impress.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Windows版しか無いみたいだけど、ちょっとほしいなぁ。&lt;/p&gt;</description></item><item><title>普段、小画面。時々、プロジェクター</title><link>https://igawa.io/posts/2004/11/%E6%99%AE%E6%AE%B5%E5%B0%8F%E7%94%BB%E9%9D%A2%E6%99%82%E3%80%85%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%82%BF%E3%83%BC/</link><pubDate>Sat, 13 Nov 2004 01:24:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E6%99%AE%E6%AE%B5%E5%B0%8F%E7%94%BB%E9%9D%A2%E6%99%82%E3%80%85%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%82%BF%E3%83%BC/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/lifestyle/articles/0410/26/news047.html"&gt;itmedia.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;テレビで放送されているものは、基本的には小さな画面でも
+楽しめるつくりになっていて、大きな画面で見なくても良く。&lt;/p&gt;
+&lt;p&gt;また、映画などは、40〜50インチの画面で見てもなんとなく小さく感じる。&lt;/p&gt;
+&lt;p&gt;だったらいっそのこと、
+普段のテレビは、小さな画面(20インチ台)で見て、
+時々、映画などを見るときには、100インチ以上のプロジェクターで
+見るのもいいじゃない？
+っていう提案記事。&lt;/p&gt;
+&lt;p&gt;記事中にも書かれているが、確かに万人向けではない
+(プロジェクターは、光に弱くって、ちゃんと遮光が出来ないと、
+ちゃんと見えない。
+プロジェクターの投影スペースを確保する必要がある。など。)
+けれども、なかなか良い提案だと思う。&lt;/p&gt;
+&lt;p&gt;今、流行の大型プラズマTVや液晶テレビの
+標準サイズである、「４０〜６０インチ」だと、
+結局「帯に短し襷に長し」ってことだろう。&lt;/p&gt;
+&lt;p&gt;そんなものに４０〜６０万円出費するのではなく、&lt;/p&gt;
+&lt;p&gt;２０インチ台の液晶テレビ(１０万円台であるだろう)と
+エントリーレベルのプロジェクター(HPの「&amp;lt;a
+href=&amp;ldquo;&lt;a href="http://h50146.www5.hp.com/products/projectors/hcp/product/ep7100/index.html%22&amp;amp;gt;ep7122"&gt;http://h50146.www5.hp.com/products/projectors/hcp/product/ep7100/index.html&amp;quot;&amp;amp;gt;ep7122&lt;/a&gt;」なら25万円くらい)
+で合計約45万円。
+他にいろいろ買っても50万円くらいだせば、
+一通りそろうだろう。&lt;/p&gt;
+&lt;p&gt;大型TVに同じくらいの金額出すなら、
+「普段、小画面。時々、プロジェクター。」
+という考え方も良いと思う。&lt;/p&gt;
+&lt;p&gt;ただ、プロジェクターはランプ寿命が結構短く、
+せいぜい3〜4000時間くらい。
+しかも、高い(5〜6万円くらい。。)。
+まぁ、とは言え、普通の映画が3時間くらいだとすると、
+1000回くらいは見られる計算にはなりますが。。&lt;/p&gt;</description></item><item><title>DEATH NOTE 第4巻発売！</title><link>https://igawa.io/posts/2004/11/death-note-%E7%AC%AC4%E5%B7%BB%E7%99%BA%E5%A3%B2/</link><pubDate>Wed, 10 Nov 2004 08:28:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/death-note-%E7%AC%AC4%E5%B7%BB%E7%99%BA%E5%A3%B2/</guid><description>&lt;p&gt;&lt;a href="http://www.amazon.co.jp/exec/obidos/ASIN/4088736710/hughundercons-22/ref=nosim"&gt;
+DEATH NOTE 4巻
+(410円)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今、個人的に大注目の漫画「&lt;a href="http://www.amazon.co.jp/exec/obidos/ASIN/4088736710/hughundercons-22/ref=nosim"&gt;DEATH
+NOTE&lt;/a&gt;」の4巻が、発売されました！&lt;/p&gt;
+&lt;p&gt;この漫画のいい所は、ストーリーの面白さと、絵のきれいさで、話しにぐいぐい引き込まれます。
+特に、第4巻では「第2のキラ」と「オリジナル キラ」が会い、
+話しはすごい方向へ進んで行きます。&lt;/p&gt;
+&lt;p&gt;あっという間に4巻を読み終えて、早くも5巻が待ち遠しいです。
+でも、5巻の発売は来年までお預けです。 (ﾟ∀ﾟ)ﾉ&lt;/p&gt;</description></item><item><title>広島大、昼夜でWindows/Linuxを入れ替えるグリッド構築</title><link>https://igawa.io/posts/2004/11/%E5%BA%83%E5%B3%B6%E5%A4%A7%E6%98%BC%E5%A4%9C%E3%81%A7windowslinux%E3%82%92%E5%85%A5%E3%82%8C%E6%9B%BF%E3%81%88%E3%82%8B%E3%82%B0%E3%83%AA%E3%83%83%E3%83%89%E6%A7%8B%E7%AF%89/</link><pubDate>Mon, 08 Nov 2004 15:46:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E5%BA%83%E5%B3%B6%E5%A4%A7%E6%98%BC%E5%A4%9C%E3%81%A7windowslinux%E3%82%92%E5%85%A5%E3%82%8C%E6%9B%BF%E3%81%88%E3%82%8B%E3%82%B0%E3%83%AA%E3%83%83%E3%83%89%E6%A7%8B%E7%AF%89/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=04/11/07/0521243&amp;amp;topic=1"&gt;slashdot.jp&lt;/a&gt;
+&lt;a href="http://www.asahi.com/tech/asahinews/TKY200411070072.html"&gt;asahi.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;面白い試みだ。
+いっそのこと、昼もLinuxにしたっていいんじゃないのか？
+と思う。&lt;/p&gt;
+&lt;p&gt;私が大学の授業でPCを使ったのって、&lt;/p&gt;
+&lt;p&gt;C言語の勉強&lt;/p&gt;
+&lt;p&gt;Fortranの勉強&lt;/p&gt;
+&lt;p&gt;電子メールとかWebブラウズの仕方
+など、今思えば
+別にWindowsじゃなくても全然OKな授業ばっかりだったんだよね。
+(使ってたのもWindows3.1とかだったしね。。)&lt;/p&gt;
+&lt;p&gt;最近の大学の授業ってPC使ってなにやってるんだろうね？&lt;/p&gt;
+&lt;p&gt;MS-AccessとかMS-WordとかMS-Excelなどの使い方を習っているのだろうか？&lt;/p&gt;</description></item><item><title>ライブドア 西武御購入するか？</title><link>https://igawa.io/posts/2004/11/%E3%83%A9%E3%82%A4%E3%83%96%E3%83%89%E3%82%A2-%E8%A5%BF%E6%AD%A6%E5%BE%A1%E8%B3%BC%E5%85%A5%E3%81%99%E3%82%8B%E3%81%8B/</link><pubDate>Sat, 06 Nov 2004 20:58:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E3%83%A9%E3%82%A4%E3%83%96%E3%83%89%E3%82%A2-%E8%A5%BF%E6%AD%A6%E5%BE%A1%E8%B3%BC%E5%85%A5%E3%81%99%E3%82%8B%E3%81%8B/</guid><description>&lt;p&gt;&lt;a href="http://www.nikkei.co.jp/news/sangyo/20041106AT1D0600906112004.html"&gt;NIKKEI&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;証券会社から西武ライオンズの買収提案が持ち込まれていたことが6日明らかになった&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいです。
+どうなることやら。&lt;/p&gt;</description></item><item><title>NovellがMicrosoftの“反Linuxキャンペーン”対抗サイトで反証を展開</title><link>https://igawa.io/posts/2004/11/novell%E3%81%8Cmicrosoft%E3%81%AE%E5%8F%8Dlinux%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3%E5%AF%BE%E6%8A%97%E3%82%B5%E3%82%A4%E3%83%88%E3%81%A7%E5%8F%8D%E8%A8%BC%E3%82%92%E5%B1%95%E9%96%8B/</link><pubDate>Sat, 06 Nov 2004 20:55:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/novell%E3%81%8Cmicrosoft%E3%81%AE%E5%8F%8Dlinux%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3%E5%AF%BE%E6%8A%97%E3%82%B5%E3%82%A4%E3%83%88%E3%81%A7%E5%8F%8D%E8%A8%BC%E3%82%92%E5%B1%95%E9%96%8B/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20041104/152160/"&gt;NIKKEI
+BP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Microsoftにだけ、変なキャンペーンを許すわけにはいかないよね。
+あとは、このキャンペーンが日本でも展開されることを望みます。&lt;/p&gt;</description></item><item><title>高木さんは「はてな」の利用規約違反者だった？</title><link>https://igawa.io/posts/2004/11/%E9%AB%98%E6%9C%A8%E3%81%95%E3%82%93%E3%81%AF%E3%81%AF%E3%81%A6%E3%81%AA%E3%81%AE%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84%E9%81%95%E5%8F%8D%E8%80%85%E3%81%A0%E3%81%A3%E3%81%9F/</link><pubDate>Sat, 06 Nov 2004 20:53:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E9%AB%98%E6%9C%A8%E3%81%95%E3%82%93%E3%81%AF%E3%81%AF%E3%81%A6%E3%81%AA%E3%81%AE%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84%E9%81%95%E5%8F%8D%E8%80%85%E3%81%A0%E3%81%A3%E3%81%9F/</guid><description>&lt;p&gt;&lt;a href="http://d.hatena.ne.jp/HiromitsuTakagi/"&gt;http://d.hatena.ne.jp/HiromitsuTakagi/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;にアクセスしたら、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;この日記は、プライベートモードに設定されています。&lt;/p&gt;
+&lt;p&gt;私はこれまではてなに虚偽の誕生日と郵便番号を登録していました。
+心の整理がつくまで、この日記の公開を停止します。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;と表示されてました。。&lt;/p&gt;
+&lt;p&gt;なんで急にそんなことを言い出したのだろう？
+と思ったら、
+&lt;a href="http://www.hatena.ne.jp/info/address"&gt;http://www.hatena.ne.jp/info/address&lt;/a&gt;
+に、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2004年11月より、ユーザー登録に必要な項目として住所を追加し、また、氏名・
+生年月日・性別についても正確な情報のご登録をお願いするよう変更を行いま
+す。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;と、書かれていました。
+何かの抗議のつもりだろうか？
+とも思ったが、単に、知らなかっただけだろうか？&lt;/p&gt;
+&lt;p&gt;なんにしても、高木さんの文章は
+非常に読みごたえのある内容だったので、
+いつも、更新されるのを楽しみにしていたのだが、
+残念です。。&lt;/p&gt;
+&lt;p&gt;と、思っていたら、
+「高木浩光＠移転準備作業中」らしいので、
+また、どこかで始めるってことだろう。&lt;/p&gt;</description></item><item><title>新球団は楽天に決定！</title><link>https://igawa.io/posts/2004/11/%E6%96%B0%E7%90%83%E5%9B%A3%E3%81%AF%E6%A5%BD%E5%A4%A9%E3%81%AB%E6%B1%BA%E5%AE%9A/</link><pubDate>Wed, 03 Nov 2004 12:24:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E6%96%B0%E7%90%83%E5%9B%A3%E3%81%AF%E6%A5%BD%E5%A4%A9%E3%81%AB%E6%B1%BA%E5%AE%9A/</guid><description>&lt;p&gt;&lt;a href="http://www.sankei.co.jp/news/041102/sha095.htm"&gt;サンケイ&lt;/a&gt;
+楽天に決まったけど、地元では非難轟々みたい。
+で、会見は、
+ライブドアのほりえもんは、仙台で。
+楽天の三木谷は、東京で。
+とそれぞれの会見だったが、どうしてもライブドアの方に肩入れしたくなる感じ。&lt;/p&gt;</description></item><item><title>生徒の血液使い理科授業 和歌山・橋本の男性教諭</title><link>https://igawa.io/posts/2004/11/%E7%94%9F%E5%BE%92%E3%81%AE%E8%A1%80%E6%B6%B2%E4%BD%BF%E3%81%84%E7%90%86%E7%A7%91%E6%8E%88%E6%A5%AD-%E5%92%8C%E6%AD%8C%E5%B1%B1%E6%A9%8B%E6%9C%AC%E3%81%AE%E7%94%B7%E6%80%A7%E6%95%99%E8%AB%AD/</link><pubDate>Wed, 03 Nov 2004 12:06:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E7%94%9F%E5%BE%92%E3%81%AE%E8%A1%80%E6%B6%B2%E4%BD%BF%E3%81%84%E7%90%86%E7%A7%91%E6%8E%88%E6%A5%AD-%E5%92%8C%E6%AD%8C%E5%B1%B1%E6%A9%8B%E6%9C%AC%E3%81%AE%E7%94%B7%E6%80%A7%E6%95%99%E8%AB%AD/</guid><description>&lt;p&gt;&lt;a href="http://headlines.yahoo.co.jp/hl?a=20041102-00000065-kyodo-soci"&gt;Yahoo!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;え。ダメなの？
+ちゃんと熱消毒もしてるんだし、
+ちょこっと刺して、血を出すくらいいいんじゃないの？&lt;/p&gt;</description></item><item><title>国内初、PC量産ラインにRFID導入 NEC</title><link>https://igawa.io/posts/2004/10/%E5%9B%BD%E5%86%85%E5%88%9Dpc%E9%87%8F%E7%94%A3%E3%83%A9%E3%82%A4%E3%83%B3%E3%81%ABrfid%E5%B0%8E%E5%85%A5-nec/</link><pubDate>Fri, 29 Oct 2004 00:35:00 +0900</pubDate><guid>https://igawa.io/posts/2004/10/%E5%9B%BD%E5%86%85%E5%88%9Dpc%E9%87%8F%E7%94%A3%E3%83%A9%E3%82%A4%E3%83%B3%E3%81%ABrfid%E5%B0%8E%E5%85%A5-nec/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0410/25/news010.html"&gt;ITmedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;こういうのは、現場の人間に
+「本当に効率的になったのか？」
+「作業量が減ったのか？」
+を確認してみないと、効果は良くわからないよね。
+本当のところはどうなんだろうね。&lt;/p&gt;
+&lt;p&gt;今まで、いちいちバーコードリーダで読み取りしていたとしたら、
+非常に便利になったのかもしれないとは
+思うけど。&lt;/p&gt;
+&lt;p&gt;こういう用途ならプライバシーの問題とか考えなくて良いと思うので
+良い使い方なのではないでしょうか。&lt;/p&gt;</description></item><item><title>ターボリナックスが、「ターボリナックス ホーム」を発売</title><link>https://igawa.io/posts/2004/10/%E3%82%BF%E3%83%BC%E3%83%9C%E3%83%AA%E3%83%8A%E3%83%83%E3%82%AF%E3%82%B9%E3%81%8C%E3%82%BF%E3%83%BC%E3%83%9C%E3%83%AA%E3%83%8A%E3%83%83%E3%82%AF%E3%82%B9-%E3%83%9B%E3%83%BC%E3%83%A0%E3%82%92%E7%99%BA%E5%A3%B2/</link><pubDate>Tue, 26 Oct 2004 00:15:00 +0900</pubDate><guid>https://igawa.io/posts/2004/10/%E3%82%BF%E3%83%BC%E3%83%9C%E3%83%AA%E3%83%8A%E3%83%83%E3%82%AF%E3%82%B9%E3%81%8C%E3%82%BF%E3%83%BC%E3%83%9C%E3%83%AA%E3%83%8A%E3%83%83%E3%82%AF%E3%82%B9-%E3%83%9B%E3%83%BC%E3%83%A0%E3%82%92%E7%99%BA%E5%A3%B2/</guid><description>&lt;p&gt;&lt;a href="http://www.turbolinux.co.jp/news/2004/oct/tl1020.html"&gt;Turbo Linux
+プレスリリース&lt;/a&gt;
+&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20041023/151631/"&gt;ITPro&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.turbolinux.co.jp/press_room/download/tlhome/turbohome.jpg"&gt;ターボリナックスの画面&lt;/a&gt;をみると、
+かなり気合が入ってきているのがわかる。
+で、一般の人が使うであろう機能はほぼ、網羅されていてこの機能で十分な人も多いと思う。
+これをパッケージ版として発売しても、物好き以外は買わないと思うので、
+売るなら、Windowsと比べて低価格なPCとして売り出すことになるだろう。&lt;/p&gt;
+&lt;p&gt;で、使い始めのうちは何の問題もなく動作していると思うが、
+デバイス(グラフィックカードとか、プリンターとか、スキャナーとか・・)を
+追加・変更し始めると、とたんにどうしていいか、わからない人が続出する予感。&lt;/p&gt;
+&lt;p&gt;本気で売り出す気なら、サポートにかなり力を入れないと厳しいと思う。
+今のところ、一般の人はLinuxは話にしか聞いたこと無いと思うが、
+「Linuxは安いけど、なんか使いづらい・・」と一度思われてしまうと、
+それ以降、広まるのがさらに難しくなるだろう。&lt;/p&gt;</description></item><item><title>はてな、新潟地震義援金に「はてなポイント」募集</title><link>https://igawa.io/posts/2004/10/%E3%81%AF%E3%81%A6%E3%81%AA%E6%96%B0%E6%BD%9F%E5%9C%B0%E9%9C%87%E7%BE%A9%E6%8F%B4%E9%87%91%E3%81%AB%E3%81%AF%E3%81%A6%E3%81%AA%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E5%8B%9F%E9%9B%86/</link><pubDate>Mon, 25 Oct 2004 08:23:00 +0900</pubDate><guid>https://igawa.io/posts/2004/10/%E3%81%AF%E3%81%A6%E3%81%AA%E6%96%B0%E6%BD%9F%E5%9C%B0%E9%9C%87%E7%BE%A9%E6%8F%B4%E9%87%91%E3%81%AB%E3%81%AF%E3%81%A6%E3%81%AA%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E5%8B%9F%E9%9B%86/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0410/24/news002.html"&gt;ITmedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;何かできることはないかと考えていたところなので、
+これは いい(≧∇≦)b 。
+早速ポイントを購入して(少ない額ですが)送りました。&lt;/p&gt;</description></item><item><title>J2MEにBytecode検証の脆弱性</title><link>https://igawa.io/posts/2004/10/j2me%E3%81%ABbytecode%E6%A4%9C%E8%A8%BC%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7/</link><pubDate>Sun, 24 Oct 2004 19:47:00 +0900</pubDate><guid>https://igawa.io/posts/2004/10/j2me%E3%81%ABbytecode%E6%A4%9C%E8%A8%BC%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/security/04/10/23/061207.shtml?topic=43"&gt;Slashdot.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ケータイとかに使われているJ2ME(&lt;a href="http://java.sun.com/j2me/"&gt;Java 2 Micro
+Edition&lt;/a&gt;)に、
+脆弱性が有り、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;実際にNokia
+DCT4について検証したところ、アドレス帳を読み出したり、フラッシュメモリを書き換えたり、コードをインストールしたりできた&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいです。&lt;/p&gt;
+&lt;p&gt;信頼できないサイトからはＪａｖａアプリケーションはダウンロードしないほうが良いってことだね。
+でも、私のＰＨＳはＪａｖａアプリケーションなんて使えません。
+ケータイ(A5404S)でもＪａｖａアプリケーションなんてぜんぜん使っていませんよ。
+えぇ。&lt;/p&gt;</description></item><item><title>提灯記事キター！「ICタグのこと，どのくらい知ってますか？」</title><link>https://igawa.io/posts/2004/10/%E6%8F%90%E7%81%AF%E8%A8%98%E4%BA%8B%E3%82%AD%E3%82%BF%E3%83%BCic%E3%82%BF%E3%82%B0%E3%81%AE%E3%81%93%E3%81%A8%E3%81%A9%E3%81%AE%E3%81%8F%E3%82%89%E3%81%84%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%BE%E3%81%99%E3%81%8B/</link><pubDate>Fri, 22 Oct 2004 00:42:00 +0900</pubDate><guid>https://igawa.io/posts/2004/10/%E6%8F%90%E7%81%AF%E8%A8%98%E4%BA%8B%E3%82%AD%E3%82%BF%E3%83%BCic%E3%82%BF%E3%82%B0%E3%81%AE%E3%81%93%E3%81%A8%E3%81%A9%E3%81%AE%E3%81%8F%E3%82%89%E3%81%84%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%BE%E3%81%99%E3%81%8B/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/OPINION/20041019/151399/"&gt;ITmedia&lt;/a&gt;
+ITProの「栗原」様。
+&lt;a href="http://itpro.nikkeibp.co.jp/members/parts/putfeedback.jsp?_PARTS_ID=FB01&amp;amp;REF=/free/ITPro/OPINION/20041019/151399/"&gt;読者のコメント&lt;/a&gt;
+を見ても、突っ込まれまくりである。&lt;/p&gt;
+&lt;p&gt;今回は、「ICタグ自体」のことについてどれくらい知っているのか？
+という記事だったが、記者自体最初に「あんまり知っていない」と言っていて、
+ちゃんと調査・取材をしたのかと思ったら、そうでもなくって。。
+大丈夫なんだろうか。&lt;/p&gt;</description></item><item><title>CEATECリアプロTV勢揃い</title><link>https://igawa.io/posts/2004/10/ceatec%E3%83%AA%E3%82%A2%E3%83%97%E3%83%ADtv%E5%8B%A2%E6%8F%83%E3%81%84/</link><pubDate>Tue, 19 Oct 2004 00:39:00 +0900</pubDate><guid>https://igawa.io/posts/2004/10/ceatec%E3%83%AA%E3%82%A2%E3%83%97%E3%83%ADtv%E5%8B%A2%E6%8F%83%E3%81%84/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/lifestyle/articles/0410/06/news040.html"&gt;ITmedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;三菱のリアプロは62V型で、なんと奥行き&lt;strong&gt;２６cm&lt;/strong&gt;!
+ビクターからは７０V型のD-ILAリアプロTV。解像度は1280×720ピクセルらしいが、
+これは参考展示のため発売の予定は無いらしく、
+発売するなら、フルHD対応の物になるみたい。&lt;/p&gt;
+&lt;p&gt;三洋からは４５V型の展示。&lt;strong&gt;実売30万円前後&lt;/strong&gt;になるらしい！&lt;/p&gt;
+&lt;p&gt;今後もリアプロTVからは目が離せない。&lt;/p&gt;</description></item><item><title>アップル、カラーLCD付き「Photo iPod」を年末商戦に投入か？</title><link>https://igawa.io/posts/2004/10/%E3%82%A2%E3%83%83%E3%83%97%E3%83%AB%E3%82%AB%E3%83%A9%E3%83%BClcd%E4%BB%98%E3%81%8Dphoto-ipod%E3%82%92%E5%B9%B4%E6%9C%AB%E5%95%86%E6%88%A6%E3%81%AB%E6%8A%95%E5%85%A5%E3%81%8B/</link><pubDate>Wed, 13 Oct 2004 00:39:00 +0900</pubDate><guid>https://igawa.io/posts/2004/10/%E3%82%A2%E3%83%83%E3%83%97%E3%83%AB%E3%82%AB%E3%83%A9%E3%83%BClcd%E4%BB%98%E3%81%8Dphoto-ipod%E3%82%92%E5%B9%B4%E6%9C%AB%E5%95%86%E6%88%A6%E3%81%AB%E6%8A%95%E5%85%A5%E3%81%8B/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/tech/story/0,2000047674,20075076,00.htm"&gt;CNET
+Japan&lt;/a&gt;
+&lt;a href="http://slashdot.jp/mac/04/10/12/1423211.shtml?topic=11"&gt;slashdot.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「Photo iPod」かぁ。。。う〜ん。
+液晶のサイズによっては、「手軽なアルバム」にもなって良いのかも。
+最近は、デジカメで写真を撮っても、印刷する以外に見せる方法があんまり無くって、
+困っている人もいるのかもね。&lt;/p&gt;</description></item><item><title>ミュンヘン市、Linux移行プロジェクトの前進を決定</title><link>https://igawa.io/posts/2004/10/%E3%83%9F%E3%83%A5%E3%83%B3%E3%83%98%E3%83%B3%E5%B8%82linux%E7%A7%BB%E8%A1%8C%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%89%8D%E9%80%B2%E3%82%92%E6%B1%BA%E5%AE%9A/</link><pubDate>Mon, 04 Oct 2004 14:55:00 +0900</pubDate><guid>https://igawa.io/posts/2004/10/%E3%83%9F%E3%83%A5%E3%83%B3%E3%83%98%E3%83%B3%E5%B8%82linux%E7%A7%BB%E8%A1%8C%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%89%8D%E9%80%B2%E3%82%92%E6%B1%BA%E5%AE%9A/</guid><description>&lt;p&gt;&lt;a href="http://japan.linux.com/news/04/10/01/0550254.shtml?topic=1"&gt;linux.com&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;もしも、ミュンヘン市がオープンソースのLinuxソフトウェを従来のWindowsソ
+フトウェアの代わりに導入するという昨年の大きな決定を撤回するのでは・・・
+と淡い期待をマイクロソフトが抱いていたとしたら、その望みは9月29日に潰
+えた。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;と、結構刺激的な書き出しで始まる記事です。&lt;/p&gt;
+&lt;p&gt;一時期ミュンヘン市は、
+Linux OSがEUの新しい特許法のためにソフトウェア特許に抵触する恐れがある
+として、一時期はLinux OS導入を撤回する可能性もあったらしい。&lt;/p&gt;
+&lt;p&gt;でも同市は、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;予測される危険を冒して同計画を前進させることを決めた。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;すごいね。&lt;/p&gt;</description></item><item><title>サン、従業員数ベースの価格体系などで特許出願中</title><link>https://igawa.io/posts/2004/10/%E3%82%B5%E3%83%B3%E5%BE%93%E6%A5%AD%E5%93%A1%E6%95%B0%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E4%BE%A1%E6%A0%BC%E4%BD%93%E7%B3%BB%E3%81%AA%E3%81%A9%E3%81%A7%E7%89%B9%E8%A8%B1%E5%87%BA%E9%A1%98%E4%B8%AD/</link><pubDate>Mon, 04 Oct 2004 14:54:00 +0900</pubDate><guid>https://igawa.io/posts/2004/10/%E3%82%B5%E3%83%B3%E5%BE%93%E6%A5%AD%E5%93%A1%E6%95%B0%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E4%BE%A1%E6%A0%BC%E4%BD%93%E7%B3%BB%E3%81%AA%E3%81%A9%E3%81%A7%E7%89%B9%E8%A8%B1%E5%87%BA%E9%A1%98%E4%B8%AD/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/ent/story/0,2000047623,20074909,00.htm"&gt;CNET
+Japan&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;なんだかくだらないも特許がまた一つ生まれそうな感じ。
+ビジネスモデルとかソフトウェアの特許なんて
+法律で規制したほうがいいんじゃないのか？&lt;/p&gt;</description></item><item><title>Linux World C&amp;D 2004 - ライブドア堀江社長、「プロ球団を持てたら、Linux球 団にしたい」</title><link>https://igawa.io/posts/2004/10/linux-world-cd-2004-%E3%83%A9%E3%82%A4%E3%83%96%E3%83%89%E3%82%A2%E5%A0%80%E6%B1%9F%E7%A4%BE%E9%95%B7%E3%83%97%E3%83%AD%E7%90%83%E5%9B%A3%E3%82%92%E6%8C%81%E3%81%A6%E3%81%9F%E3%82%89linux%E7%90%83-%E5%9B%A3%E3%81%AB%E3%81%97%E3%81%9F%E3%81%84/</link><pubDate>Mon, 04 Oct 2004 14:50:00 +0900</pubDate><guid>https://igawa.io/posts/2004/10/linux-world-cd-2004-%E3%83%A9%E3%82%A4%E3%83%96%E3%83%89%E3%82%A2%E5%A0%80%E6%B1%9F%E7%A4%BE%E9%95%B7%E3%83%97%E3%83%AD%E7%90%83%E5%9B%A3%E3%82%92%E6%8C%81%E3%81%A6%E3%81%9F%E3%82%89linux%E7%90%83-%E5%9B%A3%E3%81%AB%E3%81%97%E3%81%9F%E3%81%84/</guid><description>&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/articles/2004/09/30/lwcd2/"&gt;MYCOM PC&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;最近、この人が胡散臭い人に見えるのは私だけだろうか？&lt;/p&gt;</description></item><item><title>Sun、待望のJava 2 Standard Edition（J2SE）5.0をリリース</title><link>https://igawa.io/posts/2004/10/sun%E5%BE%85%E6%9C%9B%E3%81%AEjava-2-standard-editionj2se50%E3%82%92%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</link><pubDate>Mon, 04 Oct 2004 14:49:00 +0900</pubDate><guid>https://igawa.io/posts/2004/10/sun%E5%BE%85%E6%9C%9B%E3%81%AEjava-2-standard-editionj2se50%E3%82%92%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/ent/story/0,2000047623,20074901,00.htm"&gt;CNET
+Japan&lt;/a&gt;
+今まで、バージョンは「１．１」「１．２」「１．３」「１．４」
+と来ていたのに、急に「５．０」になりました。&lt;/p&gt;
+&lt;p&gt;それだけ今回のバージョンには自信があるということなのでしょう。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://jp.sun.com/learnabout/java/"&gt;http://jp.sun.com/learnabout/java/&lt;/a&gt;
+には、まだ「ベータ版」って書かれてるけど、
+&lt;a href="http://java.sun.com/j2se/1.5.0/ja/download.html"&gt;http://java.sun.com/j2se/1.5.0/ja/download.html&lt;/a&gt;
+には、「ベータ」じゃないJDKがある模様。&lt;/p&gt;</description></item><item><title>5つ クリエイティブになるためのアイデア</title><link>https://igawa.io/posts/2004/10/5%E3%81%A4-%E3%82%AF%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E3%82%A2%E3%82%A4%E3%83%87%E3%82%A2/</link><pubDate>Mon, 04 Oct 2004 14:42:00 +0900</pubDate><guid>https://igawa.io/posts/2004/10/5%E3%81%A4-%E3%82%AF%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E3%82%A2%E3%82%A4%E3%83%87%E3%82%A2/</guid><description>&lt;p&gt;&lt;a href="http://www.adnec.com/blog/archives/2004_09_28_171828.html"&gt;adnec&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;三人に一人が「アイデアは寝ているときに浮かんでくる」と答えた・・・そう
+いう調査が最近発表された。逆に「アイデアは職場で浮かんでくる」と答えた
+人は11%にとどまった。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ちゃんと寝れれば進む仕事も、あんまり寝れないと進まない。
+ってこと？&lt;/p&gt;</description></item><item><title>米新興企業、Javaの速度向上をねらったカスタムチップに賭ける</title><link>https://igawa.io/posts/2004/10/%E7%B1%B3%E6%96%B0%E8%88%88%E4%BC%81%E6%A5%ADjava%E3%81%AE%E9%80%9F%E5%BA%A6%E5%90%91%E4%B8%8A%E3%82%92%E3%81%AD%E3%82%89%E3%81%A3%E3%81%9F%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%81%E3%83%83%E3%83%97%E3%81%AB%E8%B3%AD%E3%81%91%E3%82%8B/</link><pubDate>Mon, 04 Oct 2004 14:34:00 +0900</pubDate><guid>https://igawa.io/posts/2004/10/%E7%B1%B3%E6%96%B0%E8%88%88%E4%BC%81%E6%A5%ADjava%E3%81%AE%E9%80%9F%E5%BA%A6%E5%90%91%E4%B8%8A%E3%82%92%E3%81%AD%E3%82%89%E3%81%A3%E3%81%9F%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%81%E3%83%83%E3%83%97%E3%81%AB%E8%B3%AD%E3%81%91%E3%82%8B/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/ent/story/0,2000047623,20074847,00.htm"&gt;CNET
+Japan&lt;/a&gt;
+う〜ん。こういうのってどうなんだろう。
+値段と性能がよくわからないので、コストパフォーマンスの比較のしようが無いけど、
+普通のサーバで動かせば、Javaってそんなに遅くないと思うんだけど。
+Java専用のハードウェア(どの程度ハードウェア化されているかもわからない
+が、)ってことは、
+もしバグがあった場合には、へたすりゃ「ハードウェア交換」する
+必要だってあるはずだ。
+むむむ。&lt;/p&gt;</description></item><item><title>誰も止めようとしない 家畜用ICタグの小学生への適用</title><link>https://igawa.io/posts/2004/09/%E8%AA%B0%E3%82%82%E6%AD%A2%E3%82%81%E3%82%88%E3%81%86%E3%81%A8%E3%81%97%E3%81%AA%E3%81%84-%E5%AE%B6%E7%95%9C%E7%94%A8ic%E3%82%BF%E3%82%B0%E3%81%AE%E5%B0%8F%E5%AD%A6%E7%94%9F%E3%81%B8%E3%81%AE%E9%81%A9%E7%94%A8/</link><pubDate>Thu, 30 Sep 2004 01:23:00 +0900</pubDate><guid>https://igawa.io/posts/2004/09/%E8%AA%B0%E3%82%82%E6%AD%A2%E3%82%81%E3%82%88%E3%81%86%E3%81%A8%E3%81%97%E3%81%AA%E3%81%84-%E5%AE%B6%E7%95%9C%E7%94%A8ic%E3%82%BF%E3%82%B0%E3%81%AE%E5%B0%8F%E5%AD%A6%E7%94%9F%E3%81%B8%E3%81%AE%E9%81%A9%E7%94%A8/</guid><description>&lt;p&gt;&lt;a href="http://d.hatena.ne.jp/HiromitsuTakagi/20040927"&gt;はてなの高木さんサイト&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;気にすべき点は、以下。&lt;/p&gt;
+&lt;p&gt;・「タグ番号」が連番？
+・ICタグは普段からID電波を出し続けている
+・「安全対策は何重にあっても邪魔になるものではない」どころか、
+危険性が利用者には見えていないだけ。&lt;/p&gt;
+&lt;p&gt;こんなの使わなくたって、
+「ここだよナビ」などの安全対策技術があるじゃないか。&lt;/p&gt;
+&lt;p&gt;新しいものを使って、儲けたいのだろう。&lt;/p&gt;</description></item><item><title>“第3の大画面”リアプロTV、A＆Vフェスタに集う</title><link>https://igawa.io/posts/2004/09/%E7%AC%AC3%E3%81%AE%E5%A4%A7%E7%94%BB%E9%9D%A2%E3%83%AA%E3%82%A2%E3%83%97%E3%83%ADtvav%E3%83%95%E3%82%A7%E3%82%B9%E3%82%BF%E3%81%AB%E9%9B%86%E3%81%86/</link><pubDate>Thu, 30 Sep 2004 01:21:00 +0900</pubDate><guid>https://igawa.io/posts/2004/09/%E7%AC%AC3%E3%81%AE%E5%A4%A7%E7%94%BB%E9%9D%A2%E3%83%AA%E3%82%A2%E3%83%97%E3%83%ADtvav%E3%83%95%E3%82%A7%E3%82%B9%E3%82%BF%E3%81%AB%E9%9B%86%E3%81%86/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/lifestyle/articles/0409/22/news084.html"&gt;ITmedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;リアプロTV、がぜん欲しくなってきた。&lt;/p&gt;</description></item><item><title>「A&amp;Vフェスタ2004」が9月22日開幕 - パシフィコ横浜</title><link>https://igawa.io/posts/2004/09/av%E3%83%95%E3%82%A7%E3%82%B9%E3%82%BF2004%E3%81%8C9%E6%9C%8822%E6%97%A5%E9%96%8B%E5%B9%95-%E3%83%91%E3%82%B7%E3%83%95%E3%82%A3%E3%82%B3%E6%A8%AA%E6%B5%9C/</link><pubDate>Sat, 25 Sep 2004 20:46:00 +0900</pubDate><guid>https://igawa.io/posts/2004/09/av%E3%83%95%E3%82%A7%E3%82%B9%E3%82%BF2004%E3%81%8C9%E6%9C%8822%E6%97%A5%E9%96%8B%E5%B9%95-%E3%83%91%E3%82%B7%E3%83%95%E3%82%A3%E3%82%B3%E6%A8%AA%E6%B5%9C/</guid><description>&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/articles/2004/09/24/avfesta1/"&gt;MYCOM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;エプソンと三洋でリアプロTVの展示あり。&lt;/p&gt;
+&lt;p&gt;エプソンの「LIVING STATION」については、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;今回展示していた製品は明るい室内でも十分な輝度を達成している&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしい。&lt;/p&gt;
+&lt;p&gt;三洋は55インチで奥行き40cmだ。&lt;/p&gt;</description></item><item><title>「国内市場には必ず戻ってきます」——ソニーのリアプロTV戦略</title><link>https://igawa.io/posts/2004/09/%E5%9B%BD%E5%86%85%E5%B8%82%E5%A0%B4%E3%81%AB%E3%81%AF%E5%BF%85%E3%81%9A%E6%88%BB%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%99%E3%82%BD%E3%83%8B%E3%83%BC%E3%81%AE%E3%83%AA%E3%82%A2%E3%83%97%E3%83%ADtv%E6%88%A6%E7%95%A5/</link><pubDate>Wed, 22 Sep 2004 23:22:00 +0900</pubDate><guid>https://igawa.io/posts/2004/09/%E5%9B%BD%E5%86%85%E5%B8%82%E5%A0%B4%E3%81%AB%E3%81%AF%E5%BF%85%E3%81%9A%E6%88%BB%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%99%E3%82%BD%E3%83%8B%E3%83%BC%E3%81%AE%E3%83%AA%E3%82%A2%E3%83%97%E3%83%ADtv%E6%88%A6%E7%95%A5/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/lifestyle/articles/0409/17/news082.html"&gt;ITmedia&lt;/a&gt;
+米国市場向けに従来の「はかま」部分をなくしているらしい。
+確かにパッと見は、プラズマテレビかと思うかも。
+で、ソニーのリアプロは「黒」にこだわっているらしい。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;「米国でのリアプロTV成功を、全世界でも展開しようと計画している。この
+“全世界”の中にはもちろん日本も含まれている。国内のリアプロTV市場には
+必ず戻ってきます」&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;だそうだ。
+年末にはソニーからリアプロテレビが登場するかも。
+期待大。&lt;/p&gt;</description></item><item><title>世界一の癒し効果、アザラシ型ロボット「パロ」、いよいよ実用化</title><link>https://igawa.io/posts/2004/09/%E4%B8%96%E7%95%8C%E4%B8%80%E3%81%AE%E7%99%92%E3%81%97%E5%8A%B9%E6%9E%9C%E3%82%A2%E3%82%B6%E3%83%A9%E3%82%B7%E5%9E%8B%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%83%91%E3%83%AD%E3%81%84%E3%82%88%E3%81%84%E3%82%88%E5%AE%9F%E7%94%A8%E5%8C%96/</link><pubDate>Wed, 22 Sep 2004 23:08:00 +0900</pubDate><guid>https://igawa.io/posts/2004/09/%E4%B8%96%E7%95%8C%E4%B8%80%E3%81%AE%E7%99%92%E3%81%97%E5%8A%B9%E6%9E%9C%E3%82%A2%E3%82%B6%E3%83%A9%E3%82%B7%E5%9E%8B%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%83%91%E3%83%AD%E3%81%84%E3%82%88%E3%81%84%E3%82%88%E5%AE%9F%E7%94%A8%E5%8C%96/</guid><description>&lt;p&gt;&lt;a href="http://www.aist.go.jp/aist_j/press_release/pr2004/pr20040917_2/pr20040917_2.html"&gt;AIST&lt;/a&gt;
+う〜ん。微妙。
+介護老人保健施設では、効果があったみたいだけど、
+私はあまり欲しくない。。
+なんか、寂しくなりそうだから。&lt;/p&gt;</description></item><item><title>HDDレコーダがSPAMの踏み台にされる</title><link>https://igawa.io/posts/2004/09/hdd%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%80%E3%81%8Cspam%E3%81%AE%E8%B8%8F%E3%81%BF%E5%8F%B0%E3%81%AB%E3%81%95%E3%82%8C%E3%82%8B/</link><pubDate>Wed, 22 Sep 2004 22:55:00 +0900</pubDate><guid>https://igawa.io/posts/2004/09/hdd%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%80%E3%81%8Cspam%E3%81%AE%E8%B8%8F%E3%81%BF%E5%8F%B0%E3%81%AB%E3%81%95%E3%82%8C%E3%82%8B/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=04/09/20/2213218&amp;amp;topic=66"&gt;スラド&lt;/a&gt;
+ちょっといや〜な予感がしたが、
+やっぱり、東芝のRD-xxシリーズのＨＤＤレコーダの話みたい。&lt;/p&gt;
+&lt;p&gt;でも、デフォルトで認証ＯＮだった気がする。
+今のところ、外部からは直接は接続できないようにしているので、
+適当なパスワードにしている。
+でも、外部から接続するようにする場合には、
+ポート番号と、ユーザＩＤ・パスワードは変更するつもりだ。&lt;/p&gt;
+&lt;p&gt;ポート番号まで変えるのは、すでにWWWサーバを公開してるから。
+(ごく身内のためだけだけど)&lt;/p&gt;</description></item><item><title>“Windows上で動くLinux”coLinux開発者が来日，対応ディストリビューションも 続々登場</title><link>https://igawa.io/posts/2004/09/windows%E4%B8%8A%E3%81%A7%E5%8B%95%E3%81%8Flinuxcolinux%E9%96%8B%E7%99%BA%E8%80%85%E3%81%8C%E6%9D%A5%E6%97%A5%E5%AF%BE%E5%BF%9C%E3%83%87%E3%82%A3%E3%82%B9%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%82-%E7%B6%9A%E3%80%85%E7%99%BB%E5%A0%B4/</link><pubDate>Wed, 15 Sep 2004 23:32:00 +0900</pubDate><guid>https://igawa.io/posts/2004/09/windows%E4%B8%8A%E3%81%A7%E5%8B%95%E3%81%8Flinuxcolinux%E9%96%8B%E7%99%BA%E8%80%85%E3%81%8C%E6%9D%A5%E6%97%A5%E5%AF%BE%E5%BF%9C%E3%83%87%E3%82%A3%E3%82%B9%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%82-%E7%B6%9A%E3%80%85%E7%99%BB%E5%A0%B4/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20040914/149921/"&gt;ITPro&lt;/a&gt;
+この、講演行って来ました！
+Dan Aloni氏、かなりかっこ良かったですよ。
+この写真に写ってるシャツは、あえてファッションとしてボタンを掛け違えてるそうです。
+まぁ、私は話の半分もわかんなかったんですけどね。。。。。。&lt;/p&gt;</description></item><item><title>インクジェット光沢紙の年賀状、関東で限定発売</title><link>https://igawa.io/posts/2004/09/%E3%82%A4%E3%83%B3%E3%82%AF%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E5%85%89%E6%B2%A2%E7%B4%99%E3%81%AE%E5%B9%B4%E8%B3%80%E7%8A%B6%E9%96%A2%E6%9D%B1%E3%81%A7%E9%99%90%E5%AE%9A%E7%99%BA%E5%A3%B2/</link><pubDate>Fri, 10 Sep 2004 23:08:00 +0900</pubDate><guid>https://igawa.io/posts/2004/09/%E3%82%A4%E3%83%B3%E3%82%AF%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E5%85%89%E6%B2%A2%E7%B4%99%E3%81%AE%E5%B9%B4%E8%B3%80%E7%8A%B6%E9%96%A2%E6%9D%B1%E3%81%A7%E9%99%90%E5%AE%9A%E7%99%BA%E5%A3%B2/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0409/09/news067.html"&gt;ITmedia&lt;/a&gt;
+最近は、年賀状の発行枚数も減り気味らしいので、これが打開策になる！
+のかなぁ。&lt;/p&gt;</description></item><item><title>三菱電機、今年度中に62V型DLPリアプロTVを投入へ</title><link>https://igawa.io/posts/2004/08/%E4%B8%89%E8%8F%B1%E9%9B%BB%E6%A9%9F%E4%BB%8A%E5%B9%B4%E5%BA%A6%E4%B8%AD%E3%81%AB62v%E5%9E%8Bdlp%E3%83%AA%E3%82%A2%E3%83%97%E3%83%ADtv%E3%82%92%E6%8A%95%E5%85%A5%E3%81%B8/</link><pubDate>Tue, 31 Aug 2004 00:34:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/%E4%B8%89%E8%8F%B1%E9%9B%BB%E6%A9%9F%E4%BB%8A%E5%B9%B4%E5%BA%A6%E4%B8%AD%E3%81%AB62v%E5%9E%8Bdlp%E3%83%AA%E3%82%A2%E3%83%97%E3%83%ADtv%E3%82%92%E6%8A%95%E5%85%A5%E3%81%B8/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/lifestyle/articles/0408/24/news057.html"&gt;ITmedia
+&lt;/a&gt;
+いいねぇ。リアプロもちょっとは盛り上がってきたってことか？&lt;/p&gt;</description></item><item><title>なんか、うちのサイトの花火画像が使われてました。</title><link>https://igawa.io/posts/2004/08/%E3%81%AA%E3%82%93%E3%81%8B%E3%81%86%E3%81%A1%E3%81%AE%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E8%8A%B1%E7%81%AB%E7%94%BB%E5%83%8F%E3%81%8C%E4%BD%BF%E3%82%8F%E3%82%8C%E3%81%A6%E3%81%BE%E3%81%97%E3%81%9F/</link><pubDate>Sun, 22 Aug 2004 17:02:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/%E3%81%AA%E3%82%93%E3%81%8B%E3%81%86%E3%81%A1%E3%81%AE%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E8%8A%B1%E7%81%AB%E7%94%BB%E5%83%8F%E3%81%8C%E4%BD%BF%E3%82%8F%E3%82%8C%E3%81%A6%E3%81%BE%E3%81%97%E3%81%9F/</guid><description>&lt;p&gt;&lt;a href="http://e.z-z.jp/?kokusai1D@15th1D"&gt;ここで、&lt;/a&gt;
+&lt;a href="http://lunatic.xrea.jp/pukiwiki/index.php?2003%C7%AF7%B7%EE20%C6%FC%B2%D6%B2%D0%B2%E8%C1%FC"&gt;うちのサイトの花火画像&lt;/a&gt;が使われてました。
+季節がら、良いかもね。&lt;/p&gt;</description></item><item><title>ライブドア、新球団で参入めざす</title><link>https://igawa.io/posts/2004/08/%E3%83%A9%E3%82%A4%E3%83%96%E3%83%89%E3%82%A2%E6%96%B0%E7%90%83%E5%9B%A3%E3%81%A7%E5%8F%82%E5%85%A5%E3%82%81%E3%81%96%E3%81%99/</link><pubDate>Sun, 22 Aug 2004 16:33:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/%E3%83%A9%E3%82%A4%E3%83%96%E3%83%89%E3%82%A2%E6%96%B0%E7%90%83%E5%9B%A3%E3%81%A7%E5%8F%82%E5%85%A5%E3%82%81%E3%81%96%E3%81%99/</guid><description>&lt;p&gt;&lt;a href="http://www.asahi.com/sports/update/0818/143.html?2004"&gt;asahi.com&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;プロ野球に加わるには、実行委員会とオーナー会議で４分の３以上の賛成を得なければならない。また、野球協約では加盟料６０億円が課される。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしく、非常に大変らしい。&lt;/p&gt;</description></item><item><title>成績でポイントため海外旅行 関西国際大でマイレージ制</title><link>https://igawa.io/posts/2004/08/%E6%88%90%E7%B8%BE%E3%81%A7%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%81%9F%E3%82%81%E6%B5%B7%E5%A4%96%E6%97%85%E8%A1%8C-%E9%96%A2%E8%A5%BF%E5%9B%BD%E9%9A%9B%E5%A4%A7%E3%81%A7%E3%83%9E%E3%82%A4%E3%83%AC%E3%83%BC%E3%82%B8%E5%88%B6/</link><pubDate>Sun, 22 Aug 2004 13:03:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/%E6%88%90%E7%B8%BE%E3%81%A7%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%81%9F%E3%82%81%E6%B5%B7%E5%A4%96%E6%97%85%E8%A1%8C-%E9%96%A2%E8%A5%BF%E5%9B%BD%E9%9A%9B%E5%A4%A7%E3%81%A7%E3%83%9E%E3%82%A4%E3%83%AC%E3%83%BC%E3%82%B8%E5%88%B6/</guid><description>&lt;p&gt;&lt;a href="http://www.asahi.com/national/update/0816/014.html?2004"&gt;asahi.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;・・・なんだこりゃ。何のための大学なのか。。
+こんなもんで釣らないと、学生は動かないってことか？&lt;/p&gt;</description></item><item><title>アルゼからLinuxベースの業務用ゲームシステム</title><link>https://igawa.io/posts/2004/08/%E3%82%A2%E3%83%AB%E3%82%BC%E3%81%8B%E3%82%89linux%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E6%A5%AD%E5%8B%99%E7%94%A8%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0/</link><pubDate>Sun, 22 Aug 2004 12:58:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/%E3%82%A2%E3%83%AB%E3%82%BC%E3%81%8B%E3%82%89linux%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E6%A5%AD%E5%8B%99%E7%94%A8%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=04/08/14/1518253&amp;amp;topic=31"&gt;スラド&lt;/a&gt;
+ゲームプログラマになりたかったんだよね。本当は。
+でも、CとかC++ってめんどくさいんだよね。本来考えるべきことじゃない、
+余計なことばっかり考えなきゃいけないし。&lt;/p&gt;
+&lt;p&gt;でも、できるようになりたいな。
+がんばろう。。&lt;/p&gt;</description></item><item><title>東京ガス、クレジットカードで料金支払いＯＫに</title><link>https://igawa.io/posts/2004/08/%E6%9D%B1%E4%BA%AC%E3%82%AC%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%B8%E3%83%83%E3%83%88%E3%82%AB%E3%83%BC%E3%83%89%E3%81%A7%E6%96%99%E9%87%91%E6%94%AF%E6%89%95%E3%81%84%EF%BD%8F%EF%BD%8B%E3%81%AB/</link><pubDate>Wed, 18 Aug 2004 20:13:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/%E6%9D%B1%E4%BA%AC%E3%82%AC%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%B8%E3%83%83%E3%83%88%E3%82%AB%E3%83%BC%E3%83%89%E3%81%A7%E6%96%99%E9%87%91%E6%94%AF%E6%89%95%E3%81%84%EF%BD%8F%EF%BD%8B%E3%81%AB/</guid><description>&lt;p&gt;&lt;a href="http://www.asahi.com/business/update/0818/093.html?2004"&gt;asahi.com&lt;/a&gt;
+京葉ガスはまだ〜？&lt;/p&gt;</description></item><item><title>石油元売り、エタノール混合ガソリン実証実験へ</title><link>https://igawa.io/posts/2004/08/%E7%9F%B3%E6%B2%B9%E5%85%83%E5%A3%B2%E3%82%8A%E3%82%A8%E3%82%BF%E3%83%8E%E3%83%BC%E3%83%AB%E6%B7%B7%E5%90%88%E3%82%AC%E3%82%BD%E3%83%AA%E3%83%B3%E5%AE%9F%E8%A8%BC%E5%AE%9F%E9%A8%93%E3%81%B8/</link><pubDate>Tue, 17 Aug 2004 22:09:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/%E7%9F%B3%E6%B2%B9%E5%85%83%E5%A3%B2%E3%82%8A%E3%82%A8%E3%82%BF%E3%83%8E%E3%83%BC%E3%83%AB%E6%B7%B7%E5%90%88%E3%82%AC%E3%82%BD%E3%83%AA%E3%83%B3%E5%AE%9F%E8%A8%BC%E5%AE%9F%E9%A8%93%E3%81%B8/</guid><description>&lt;p&gt;&lt;a href="http://www.nikkei.co.jp/news/sangyo/20040817AT1D1600916082004.html"&gt;NIKKEI&lt;/a&gt;
+これって、「&lt;a href="http://www.epion-jp.com/"&gt;ガイアックス&lt;/a&gt;」なガソリンってことか？
+すったもんだあって、やめさせられたような気がするが。。&lt;/p&gt;</description></item><item><title>全国で「打ち水大作戦」 気温２度下げるのが目標</title><link>https://igawa.io/posts/2004/08/%E5%85%A8%E5%9B%BD%E3%81%A7%E6%89%93%E3%81%A1%E6%B0%B4%E5%A4%A7%E4%BD%9C%E6%88%A6-%E6%B0%97%E6%B8%A9%EF%BC%92%E5%BA%A6%E4%B8%8B%E3%81%92%E3%82%8B%E3%81%AE%E3%81%8C%E7%9B%AE%E6%A8%99/</link><pubDate>Sun, 15 Aug 2004 10:33:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/%E5%85%A8%E5%9B%BD%E3%81%A7%E6%89%93%E3%81%A1%E6%B0%B4%E5%A4%A7%E4%BD%9C%E6%88%A6-%E6%B0%97%E6%B8%A9%EF%BC%92%E5%BA%A6%E4%B8%8B%E3%81%92%E3%82%8B%E3%81%AE%E3%81%8C%E7%9B%AE%E6%A8%99/</guid><description>&lt;p&gt;&lt;a href="http://www.asahi.com/national/update/0812/021.html?2004"&gt;asahi.com&lt;/a&gt;
+去年は「0.5〜1」℃くらい下がったそうです。
+今年の夏も猛暑が続いてきたので、気温下ると良いですね。&lt;/p&gt;</description></item><item><title>NECの新人はインドで鍛える</title><link>https://igawa.io/posts/2004/08/nec%E3%81%AE%E6%96%B0%E4%BA%BA%E3%81%AF%E3%82%A4%E3%83%B3%E3%83%89%E3%81%A7%E9%8D%9B%E3%81%88%E3%82%8B/</link><pubDate>Sun, 15 Aug 2004 10:14:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/nec%E3%81%AE%E6%96%B0%E4%BA%BA%E3%81%AF%E3%82%A4%E3%83%B3%E3%83%89%E3%81%A7%E9%8D%9B%E3%81%88%E3%82%8B/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0408/10/news036.html"&gt;ITmedia&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;研修は現地のIT企業に委託。インド人講師により英語で行われる。まず17日間かけてオブジェクト指向開発技術を学習。Java関連技術はSun
+SJC-P合格レベルを目指す。その後5日間かけ、3−4人のグループでJavaアプリケーションを開発し、実習成果を英語で発表する。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいです。
+私には、耐えられないかもしれません。
+すごいな。&lt;/p&gt;</description></item><item><title>favicon.icoを作ってみました</title><link>https://igawa.io/posts/2004/08/faviconico%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F/</link><pubDate>Sat, 07 Aug 2004 21:41:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/faviconico%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F/</guid><description>&lt;p&gt;&lt;a href="http://sonic64.hp.infoseek.co.jp/2004-04-11.html"&gt;Landscape -
+エンジニアのメモ&lt;/a&gt;
+のページを参考に「favicon.ico」というものを作ってみました。
+ただ、「ひ」って書いてあるだけですが。。。&lt;/p&gt;</description></item><item><title>IBM：「自社の特許を使って、Linuxを攻撃したりはしない」</title><link>https://igawa.io/posts/2004/08/ibm%E8%87%AA%E7%A4%BE%E3%81%AE%E7%89%B9%E8%A8%B1%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6linux%E3%82%92%E6%94%BB%E6%92%83%E3%81%97%E3%81%9F%E3%82%8A%E3%81%AF%E3%81%97%E3%81%AA%E3%81%84/</link><pubDate>Fri, 06 Aug 2004 22:45:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/ibm%E8%87%AA%E7%A4%BE%E3%81%AE%E7%89%B9%E8%A8%B1%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6linux%E3%82%92%E6%94%BB%E6%92%83%E3%81%97%E3%81%9F%E3%82%8A%E3%81%AF%E3%81%97%E3%81%AA%E3%81%84/</guid><description>&lt;p&gt;同じような時に、同じような題材(ソフトウェア特許)の話です。
+でも、「マイクロソフトが所有している」とされる27件の特許が気になります。&lt;/p&gt;</description></item><item><title>Solaris 10、Linux Worldで披露 - Linuxとのバイナリコンパチビリティ実現</title><link>https://igawa.io/posts/2004/08/solaris-10linux-world%E3%81%A7%E6%8A%AB%E9%9C%B2-linux%E3%81%A8%E3%81%AE%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E3%82%B3%E3%83%B3%E3%83%91%E3%83%81%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3%E5%AE%9F%E7%8F%BE/</link><pubDate>Thu, 05 Aug 2004 00:18:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/solaris-10linux-world%E3%81%A7%E6%8A%AB%E9%9C%B2-linux%E3%81%A8%E3%81%AE%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E3%82%B3%E3%83%B3%E3%83%91%E3%83%81%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3%E5%AE%9F%E7%8F%BE/</guid><description>&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2004/08/04/004.html"&gt;MYCOM PCWEB&lt;/a&gt;
+Linuxの話題なのかどうか微妙ですが、
+実現しているのだとしたらすごいことだ。。。&lt;/p&gt;</description></item><item><title>暑ければ暑いほど安くなるオンラインショップ</title><link>https://igawa.io/posts/2004/08/%E6%9A%91%E3%81%91%E3%82%8C%E3%81%B0%E6%9A%91%E3%81%84%E3%81%BB%E3%81%A9%E5%AE%89%E3%81%8F%E3%81%AA%E3%82%8B%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/</link><pubDate>Thu, 05 Aug 2004 00:09:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/%E6%9A%91%E3%81%91%E3%82%8C%E3%81%B0%E6%9A%91%E3%81%84%E3%81%BB%E3%81%A9%E5%AE%89%E3%81%8F%E3%81%AA%E3%82%8B%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0408/04/news037.html"&gt;ITmedia&lt;/a&gt;
+東京地方の最高気温が&lt;strong&gt;38℃&lt;strong&gt;以上なら&lt;/strong&gt;5%OFF&lt;/strong&gt;となるそうです。
+よく考えたな。。。&lt;/p&gt;</description></item><item><title>自分で3.5インチHDDを追加できるDVDレコーダ</title><link>https://igawa.io/posts/2004/08/%E8%87%AA%E5%88%86%E3%81%A735%E3%82%A4%E3%83%B3%E3%83%81hdd%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%A7%E3%81%8D%E3%82%8Bdvd%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%80/</link><pubDate>Wed, 04 Aug 2004 23:54:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/%E8%87%AA%E5%88%86%E3%81%A735%E3%82%A4%E3%83%B3%E3%83%81hdd%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%A7%E3%81%8D%E3%82%8Bdvd%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%80/</guid><description>&lt;p&gt;&lt;a href="http://www.watch.impress.co.jp/av/docs/20040804/quixun.htm"&gt;AV Watch&lt;/a&gt;
+販売価格は27,800円だそうだ。
+なんかいいかも。
+再生フォーマットは、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DivX、MPEG1、MPEG2、WMA、MP3、JPEG、MotionJPEG、DVD-Audio&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいです。すげー。&lt;/p&gt;</description></item><item><title>「週刊リアルロボット」の魅力を探る(その2)</title><link>https://igawa.io/posts/2004/08/%E9%80%B1%E5%88%8A%E3%83%AA%E3%82%A2%E3%83%AB%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%81%AE%E9%AD%85%E5%8A%9B%E3%82%92%E6%8E%A2%E3%82%8B%E3%81%9D%E3%81%AE2/</link><pubDate>Tue, 03 Aug 2004 22:55:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/%E9%80%B1%E5%88%8A%E3%83%AA%E3%82%A2%E3%83%AB%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%81%AE%E9%AD%85%E5%8A%9B%E3%82%92%E6%8E%A2%E3%82%8B%E3%81%9D%E3%81%AE2/</guid><description>&lt;p&gt;&lt;a href="http://pc.watch.impress.co.jp/docs/2004/0803/digital009.htm"&gt;PC Watch&lt;/a&gt;
+う〜ん。
+「週刊リアルロボット」欲しいかも。。&lt;/p&gt;</description></item><item><title>iTunesがLinuxで動く？</title><link>https://igawa.io/posts/2004/08/itunes%E3%81%8Clinux%E3%81%A7%E5%8B%95%E3%81%8F/</link><pubDate>Tue, 03 Aug 2004 22:47:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/itunes%E3%81%8Clinux%E3%81%A7%E5%8B%95%E3%81%8F/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20070196,00.htm"&gt;CNET
+Japan&lt;/a&gt;
+う〜ん。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;「LinuxでもiTunesが動作可能に&amp;ndash;米新興企業がサポート技術を発表」&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;記事を読む限り、WINEのような感じで、WindowsのソフトをLinux上で動作させるソフトのサポート対象としたようです。
+ほんとに、ちゃんと動くんかいな？
+日本語もOKか？といろいろ気になります。&lt;/p&gt;</description></item><item><title>Vine Linux 3.0リリース！</title><link>https://igawa.io/posts/2004/08/vine-linux-30%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</link><pubDate>Tue, 03 Aug 2004 22:44:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/vine-linux-30%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</guid><description>&lt;p&gt;&lt;a href="http://vinelinux.org/"&gt;Vine Linux&lt;/a&gt;
+&lt;a href="http://vinelinux.org/PR/press20040802.html"&gt;Vine Linux press&lt;/a&gt;
+&lt;a href="http://slashdot.jp/article.pl?sid=04/08/02/1312222&amp;amp;topic=2"&gt;スラド&lt;/a&gt;
+うちでは、Vineの2.6r4使ってます。
+さーて。いつアップデートしようかな。。
+でも、メール受信＆保存マシンなのでうかつにさわりたくない。。
+#アップデートに失敗して、ブートしなくなったらメールが読めなくなる。。&lt;/p&gt;</description></item><item><title>iTunes経由で民主党大会のスピーチ配信</title><link>https://igawa.io/posts/2004/07/itunes%E7%B5%8C%E7%94%B1%E3%81%A7%E6%B0%91%E4%B8%BB%E5%85%9A%E5%A4%A7%E4%BC%9A%E3%81%AE%E3%82%B9%E3%83%94%E3%83%BC%E3%83%81%E9%85%8D%E4%BF%A1/</link><pubDate>Sat, 31 Jul 2004 12:52:00 +0900</pubDate><guid>https://igawa.io/posts/2004/07/itunes%E7%B5%8C%E7%94%B1%E3%81%A7%E6%B0%91%E4%B8%BB%E5%85%9A%E5%A4%A7%E4%BC%9A%E3%81%AE%E3%82%B9%E3%83%94%E3%83%BC%E3%83%81%E9%85%8D%E4%BF%A1/</guid><description>&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0407/31/news007.html"&gt;ITmedia&lt;/a&gt;
+う〜ん、と、&lt;strong&gt;日本の民主党&lt;/strong&gt;の話ではありません。
+当然ながら。
+アメリカの民主党の話なのでお間違え無いように。&lt;/p&gt;</description></item><item><title>「LinuxはWindowsより安全」とする調査結果が発表</title><link>https://igawa.io/posts/2004/07/linux%E3%81%AFwindows%E3%82%88%E3%82%8A%E5%AE%89%E5%85%A8%E3%81%A8%E3%81%99%E3%82%8B%E8%AA%BF%E6%9F%BB%E7%B5%90%E6%9E%9C%E3%81%8C%E7%99%BA%E8%A1%A8/</link><pubDate>Thu, 29 Jul 2004 18:20:00 +0900</pubDate><guid>https://igawa.io/posts/2004/07/linux%E3%81%AFwindows%E3%82%88%E3%82%8A%E5%AE%89%E5%85%A8%E3%81%A8%E3%81%99%E3%82%8B%E8%AA%BF%E6%9F%BB%E7%B5%90%E6%9E%9C%E3%81%8C%E7%99%BA%E8%A1%A8/</guid><description>&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2004/07/29/003.html"&gt;MYCOM PC WEB&lt;/a&gt;
+やっぱ、「LinuxはWindowsより安全」なのか？？
+OSそのもの自体の安全性ってそんな簡単には判断できないと思う。
+LinuxはWindowsに比べると、(特にデスクトップ分野では)普及率に圧倒的な差があり、
+Linuxを使用している人は、Windowsを使用している人と比べ、
+セキュリティ意識が非常に高い人が多い可能性がある。
+それを踏まえたうえで、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;これまでLinuxを利用していてウイルスに感染したことがあるとの回答は、全体の8%のみ
+1度でもクラッキングの被害に遭ったことがあるとの回答は、全体の22%にとどまった
+過去に3度以上のクラッキング被害を報告したLinux開発者は、わずか7%未満だった&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;という結果は、疑問が残る。
+Windowsでは、パッチが適用されていれば防げた被害も多いはずであり、
+パッチ適用していないことによる影響がかなり多いはずだ。
+　
+という私は、WindowsよりLinux派です。&lt;/p&gt;</description></item><item><title>高校球児に「ハッスルポーズ」禁止令</title><link>https://igawa.io/posts/2004/07/%E9%AB%98%E6%A0%A1%E7%90%83%E5%85%90%E3%81%AB%E3%83%8F%E3%83%83%E3%82%B9%E3%83%AB%E3%83%9D%E3%83%BC%E3%82%BA%E7%A6%81%E6%AD%A2%E4%BB%A4/</link><pubDate>Tue, 27 Jul 2004 21:56:00 +0900</pubDate><guid>https://igawa.io/posts/2004/07/%E9%AB%98%E6%A0%A1%E7%90%83%E5%85%90%E3%81%AB%E3%83%8F%E3%83%83%E3%82%B9%E3%83%AB%E3%83%9D%E3%83%BC%E3%82%BA%E7%A6%81%E6%AD%A2%E4%BB%A4/</guid><description>&lt;p&gt;&lt;a href="http://sports.yahoo.co.jp/hl?c=sports&amp;amp;d=20040727&amp;amp;a=20040727-00000018-ykf-spo"&gt;Yahoo&lt;/a&gt;
+高等学校野球連盟関係者は、頭がおかしいとしか思えないね。
+「自分たちが、高校生らしさを守ってるんだ！」
+と、自己陶酔しているのだろうか。
+高等学校野球連盟関係者とやらは、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;髪の毛にしたって、今は、ロン毛に茶髪なんて普通に見られるようになった。これまでは球児といえば、丸刈りが当たり前だったのに&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;と、言っているが、茶髪だろうが、ロン毛だろうが野球に支障が無ければ
+別に、何でもいいではないか。
+人の、髪型までとやかく言うのは人権侵害なんじゃないの？
+#まぁ、**「ロン毛」**が野球しやすいとは到底思えませんがね。&lt;/p&gt;</description></item><item><title>「HMP-A1」レビュー</title><link>https://igawa.io/posts/2004/07/hmp-a1%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</link><pubDate>Mon, 26 Jul 2004 17:28:00 +0900</pubDate><guid>https://igawa.io/posts/2004/07/hmp-a1%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</guid><description>&lt;p&gt;&lt;a href="http://pc.watch.impress.co.jp/docs/2004/0726/kai35.htm"&gt;後藤弘茂の人生を変えたこの1品!!&lt;/a&gt;
+私も、HDDレコーダーを買ってから、家でじっくり見る時間が無いので、
+「HMP-A1」の購入を検討していました。
+が、この記事によると、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;コントラストやエッジ、色彩がはっきりしていて、画面上の情報量がある程度限定されている絵が向いている&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ことと、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;絵だけでなく、コンテンツの長さも意外と重要だったりする。細切れの時間をビデオに使う上に、場合によっては2〜3日ポータブルビデオプレーヤーを使わない時があったりする。すると、2時間クラスの映画を観るのはかなりきつい。そもそも、映画だと続けて観ないと、テンションが落ちてしまう。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;という理由のため、&lt;strong&gt;映画よりも(短い時間の)アニメの方が、ポータブルビデオプレーヤーには
+適している&lt;/strong&gt;らしい。&lt;/p&gt;</description></item><item><title>F1ドイツＧＰ 佐藤琢磨8位</title><link>https://igawa.io/posts/2004/07/f1%E3%83%89%E3%82%A4%E3%83%84%EF%BD%87%EF%BD%90-%E4%BD%90%E8%97%A4%E7%90%A2%E7%A3%A88%E4%BD%8D/</link><pubDate>Mon, 26 Jul 2004 17:25:00 +0900</pubDate><guid>https://igawa.io/posts/2004/07/f1%E3%83%89%E3%82%A4%E3%83%84%EF%BD%87%EF%BD%90-%E4%BD%90%E8%97%A4%E7%90%A2%E7%A3%A88%E4%BD%8D/</guid><description>&lt;p&gt;&lt;a href="http://www.asahi.com/sports/update/0725/175.html?2004"&gt;asahi.com&lt;/a&gt;
+う〜ん。
+「&lt;strong&gt;8位&lt;/strong&gt;」という成績自体は、そこそこすばらしいと思うのだが、
+佐藤琢磨の潜在能力を考えると、
+&lt;strong&gt;たかが8位&lt;/strong&gt;
+と思える。
+&lt;strong&gt;F1参戦1年目&lt;/strong&gt;も同じ状態なので、
+来年以降に期待かな。。&lt;/p&gt;</description></item><item><title>日本の借金時計</title><link>https://igawa.io/posts/2004/07/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%80%9F%E9%87%91%E6%99%82%E8%A8%88/</link><pubDate>Thu, 22 Jul 2004 22:08:00 +0900</pubDate><guid>https://igawa.io/posts/2004/07/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%80%9F%E9%87%91%E6%99%82%E8%A8%88/</guid><description>&lt;p&gt;&lt;a href="http://www.takarabe-hrj.co.jp/takarabe/clock/"&gt;日本の借金時計のページ&lt;/a&gt;
+どえらいことになっています。
+とはいえ、個人としてどうすれば良いのか、
+何をすればよいのか、
+全くわかりません。
+と、書いている間にも数千万円いや数億円の単位で
+借金が増えてる。。&lt;/p&gt;</description></item><item><title>“全チャンネル/全番組”同時録画可能なソフト無償公開(アイ・オー・データ)</title><link>https://igawa.io/posts/2004/07/%E5%85%A8%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB%E5%85%A8%E7%95%AA%E7%B5%84%E5%90%8C%E6%99%82%E9%8C%B2%E7%94%BB%E5%8F%AF%E8%83%BD%E3%81%AA%E3%82%BD%E3%83%95%E3%83%88%E7%84%A1%E5%84%9F%E5%85%AC%E9%96%8B%E3%82%A2%E3%82%A4%E3%82%AA%E3%83%BC%E3%83%87%E3%83%BC%E3%82%BF/</link><pubDate>Thu, 22 Jul 2004 20:33:00 +0900</pubDate><guid>https://igawa.io/posts/2004/07/%E5%85%A8%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB%E5%85%A8%E7%95%AA%E7%B5%84%E5%90%8C%E6%99%82%E9%8C%B2%E7%94%BB%E5%8F%AF%E8%83%BD%E3%81%AA%E3%82%BD%E3%83%95%E3%83%88%E7%84%A1%E5%84%9F%E5%85%AC%E9%96%8B%E3%82%A2%E3%82%A4%E3%82%AA%E3%83%BC%E3%83%87%E3%83%BC%E3%82%BF/</guid><description>&lt;p&gt;&lt;a href="http://www.iodata.jp/sp/magictv_preview/"&gt;アイ・オー&lt;/a&gt;　&lt;a href="http://pc.watch.impress.co.jp/docs/2004/0722/iodata.htm"&gt;PC
+Watch&lt;/a&gt;
+アイ・オー・データから、**“全チャンネル/全番組”**同時録画可能なソフトが無償公開されました！
+でも、同社製品の、
+「GV-MVP/RX」(PCI)
+「GV-MVP/RXLE」(PCI)
+「GV-MVP/RZ」(USB)
+の３製品にのみ対応だそうです。
+6枚ざしの写真や、12個のUSB版接続の写真が、印象的です。
+金持ちだったら、やってみようかなぁという気にもなるけど・・・&lt;/p&gt;</description></item><item><title>第3の薄型テレビ「リアプロジェクション」は日本で普及するのか</title><link>https://igawa.io/posts/2004/07/%E7%AC%AC3%E3%81%AE%E8%96%84%E5%9E%8B%E3%83%86%E3%83%AC%E3%83%93%E3%83%AA%E3%82%A2%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AF%E6%97%A5%E6%9C%AC%E3%81%A7%E6%99%AE%E5%8F%8A%E3%81%99%E3%82%8B%E3%81%AE%E3%81%8B/</link><pubDate>Wed, 21 Jul 2004 00:02:00 +0900</pubDate><guid>https://igawa.io/posts/2004/07/%E7%AC%AC3%E3%81%AE%E8%96%84%E5%9E%8B%E3%83%86%E3%83%AC%E3%83%93%E3%83%AA%E3%82%A2%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AF%E6%97%A5%E6%9C%AC%E3%81%A7%E6%99%AE%E5%8F%8A%E3%81%99%E3%82%8B%E3%81%AE%E3%81%8B/</guid><description>&lt;p&gt;(&lt;strong&gt;&lt;a href="http://japan.cnet.com/column/market/story/0,2000047993,20069904,00.htm"&gt;CNET
+Japan&lt;/a&gt;&lt;/strong&gt;)
+特に目新しい話題は無い感じ。
+確かに、50インチなんていらないような気もするけど、
+50インチ以上あれば、ゲームとか映画とか全く異なる次元で楽しめる気がする。
+ただ、これだけ大きいと、&lt;strong&gt;専用ルーム&lt;/strong&gt;が無いと、
+ちょっとむなしいかもね。。
+アパート暮らしをやめたら、購入を考えるとするかな。&lt;/p&gt;</description></item><item><title>平均寿命最高を更新 女８５．３３歳、男７８．３６歳</title><link>https://igawa.io/posts/2004/07/%E5%B9%B3%E5%9D%87%E5%AF%BF%E5%91%BD%E6%9C%80%E9%AB%98%E3%82%92%E6%9B%B4%E6%96%B0-%E5%A5%B3%EF%BC%98%EF%BC%95%EF%BC%93%EF%BC%93%E6%AD%B3%E7%94%B7%EF%BC%97%EF%BC%98%EF%BC%93%EF%BC%96%E6%AD%B3/</link><pubDate>Sat, 17 Jul 2004 11:48:00 +0900</pubDate><guid>https://igawa.io/posts/2004/07/%E5%B9%B3%E5%9D%87%E5%AF%BF%E5%91%BD%E6%9C%80%E9%AB%98%E3%82%92%E6%9B%B4%E6%96%B0-%E5%A5%B3%EF%BC%98%EF%BC%95%EF%BC%93%EF%BC%93%E6%AD%B3%E7%94%B7%EF%BC%97%EF%BC%98%EF%BC%93%EF%BC%96%E6%AD%B3/</guid><description>&lt;p&gt;(&lt;a href="http://www.asahi.com/national/update/0717/001.html?2004"&gt;asahi.com&lt;/a&gt;)
+私はあと、50年以上生きるかも。
+それにしても、女性と男性の平均寿命の差が開いていきますね。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;男性の延びが女性より低かった要因として、約２万３千人と統計史上最悪を記録した自殺者の多いことが原因&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;のひとつのようだ。
+男のほうが自殺しやすいんだね。
+ストレスに弱いんだろうか？&lt;/p&gt;</description></item><item><title>サン、Java Enterprise Systemのオープンソース化を検討</title><link>https://igawa.io/posts/2004/07/%E3%82%B5%E3%83%B3java-enterprise-system%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9%E5%8C%96%E3%82%92%E6%A4%9C%E8%A8%8E/</link><pubDate>Fri, 16 Jul 2004 09:39:00 +0900</pubDate><guid>https://igawa.io/posts/2004/07/%E3%82%B5%E3%83%B3java-enterprise-system%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9%E5%8C%96%E3%82%92%E6%A4%9C%E8%A8%8E/</guid><description>&lt;p&gt;(&lt;a href="http://japan.cnet.com/news/ent/story/0,2000047623,20069874,00.htm"&gt;CNET
+Japan&lt;/a&gt;)
+Java Enterprise Systemに含まれる製品としては、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;●ネットワークアイデンティティ・サービス：
+Directory Server
+Identity Server
+Directory Proxy Server&lt;/p&gt;
+&lt;p&gt;●Web&amp;amp;アプリケーション・サービス：
+Application Server 7, Platform Edition
+Application Server 7, Standard Edition
+Message Queue, Enterprise Edition
+Web Server&lt;/p&gt;
+&lt;p&gt;●ポータルサービス：
+Portal Server
+Portal Server, Secure Remote Access&lt;/p&gt;
+&lt;p&gt;●コミュニケーション&amp;amp;コラボレーション・サービス：
+Messaging Server
+Calendar Server
+Instant Messaging&lt;/p&gt;
+&lt;p&gt;●高可用性サービス：
+Sun Cluster 3.1&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;がある。
+「すべての製品がオープンソース化されるのか？」
+「どんなライセンスとなるのか？」
+等、いろいろ疑問も出てくるが、
+Java Enterprise System製品中の&lt;strong&gt;Web
+Server&lt;/strong&gt;は、私が仕事で使用しているものであり、
+今後の行方が非常に気になる。。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;</description></item><item><title>「にがり」と「痩身効果」には関連性なし</title><link>https://igawa.io/posts/2004/07/%E3%81%AB%E3%81%8C%E3%82%8A%E3%81%A8%E7%97%A9%E8%BA%AB%E5%8A%B9%E6%9E%9C%E3%81%AB%E3%81%AF%E9%96%A2%E9%80%A3%E6%80%A7%E3%81%AA%E3%81%97/</link><pubDate>Thu, 15 Jul 2004 14:36:00 +0900</pubDate><guid>https://igawa.io/posts/2004/07/%E3%81%AB%E3%81%8C%E3%82%8A%E3%81%A8%E7%97%A9%E8%BA%AB%E5%8A%B9%E6%9E%9C%E3%81%AB%E3%81%AF%E9%96%A2%E9%80%A3%E6%80%A7%E3%81%AA%E3%81%97/</guid><description>&lt;p&gt;(&lt;a href="http://news.goo.ne.jp/news/kyodo/shakai/20040714/20040714a4540.html"&gt;gooニュース&lt;/a&gt;)(&lt;a href="http://hfnet.nih.go.jp/contents/detail.php?no=170"&gt;NIH&lt;/a&gt;)
+「にがり」で「痩せる」っていうのはマグネシウムの&lt;strong&gt;下剤&lt;/strong&gt;としての
+効果が現れただけらしい。
+&lt;a href="http://www.ktv.co.jp/ARUARU/search2/aru9/9_1.html"&gt;有名某番組&lt;/a&gt;では、あたかも&lt;strong&gt;メカニズムが証明されている&lt;/strong&gt;かの様に書いてあるけど、
+全く証明されていなかったわけだね。
+この番組は、いつもこんな感じだよね。。(~o~)
+全く証明されていないことを、あたかも、&lt;strong&gt;証明されている・間違いない&lt;/strong&gt;こととして、放送する。
+そして、一般消費者は騙されて、特定の商品を我先に買い求めようとする。
+まぁ、一般消費者も馬鹿じゃないので、そろそろ気づき始めていることでしょう。(私のように)&lt;/p&gt;</description></item><item><title>新生銀行パワーダイレクト振込手数料有料化</title><link>https://igawa.io/posts/2004/07/%E6%96%B0%E7%94%9F%E9%8A%80%E8%A1%8C%E3%83%91%E3%83%AF%E3%83%BC%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%E6%8C%AF%E8%BE%BC%E6%89%8B%E6%95%B0%E6%96%99%E6%9C%89%E6%96%99%E5%8C%96/</link><pubDate>Thu, 15 Jul 2004 00:43:00 +0900</pubDate><guid>https://igawa.io/posts/2004/07/%E6%96%B0%E7%94%9F%E9%8A%80%E8%A1%8C%E3%83%91%E3%83%AF%E3%83%BC%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%E6%8C%AF%E8%BE%BC%E6%89%8B%E6%95%B0%E6%96%99%E6%9C%89%E6%96%99%E5%8C%96/</guid><description>&lt;p&gt;（&lt;a href="http://www.shinseibank.com/news/news_furikomi.html"&gt;プレス&lt;/a&gt;）
+前月末残高1,000万円なら、３０回/月まで(実質)無料。
+それ以外の人は、５回/月まで(実質)無料。
+それを超えると、他行への振込みは、３００円かかるそうです。。
+有料化の理由としては、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;につきましてお客さまの平均月間利用回数が約2回未満である一方、
+ごく一部のお客さまが&lt;strong&gt;極めて多数&lt;/strong&gt;の振込を利用されており、
+このような状況が続きますと本サービスを継続していくことが困難となる恐れがあります。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;だそうです。でも、一部は本当だろうけど、一部はウソだろ。
+&lt;strong&gt;極めて多数&lt;/strong&gt;ってどんくらいよ？ヤフオクでがんがん落札して
+がんがん振り込んじゃったりしてる人が結構いるってことか？&lt;/p&gt;</description></item><item><title>静止画像なのに動いているように見える〜</title><link>https://igawa.io/posts/2004/07/%E9%9D%99%E6%AD%A2%E7%94%BB%E5%83%8F%E3%81%AA%E3%81%AE%E3%81%AB%E5%8B%95%E3%81%84%E3%81%A6%E3%81%84%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E8%A6%8B%E3%81%88%E3%82%8B/</link><pubDate>Wed, 14 Jul 2004 12:38:00 +0900</pubDate><guid>https://igawa.io/posts/2004/07/%E9%9D%99%E6%AD%A2%E7%94%BB%E5%83%8F%E3%81%AA%E3%81%AE%E3%81%AB%E5%8B%95%E3%81%84%E3%81%A6%E3%81%84%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E8%A6%8B%E3%81%88%E3%82%8B/</guid><description>&lt;p&gt;(&lt;a href="http://slashdot.jp/article.pl?sid=04/07/14/0259254&amp;amp;topic=42"&gt;スラド&lt;/a&gt;)
+まずは、&lt;a href="http://www.ritsumei.ac.jp/~akitaoka/"&gt;ここを見るべし&lt;/a&gt;。
+乗り物酔いしやすい人とかは、だめなのかも。
+とにかく、不思議な気分になります。
+ところで、スラドに&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;試みに何枚かのGIF画像をダウンロードしてGIFアニメ作成ソフトでのぞいてみたのだが、どれも1枚ものだと言うことが確認できた。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;と書かれているけど、こんなことしなくても
+紙に印刷すりゃいいだけじゃないのか？&lt;/p&gt;</description></item><item><title>ＵＦＪ、三菱東京と統合へ 総資産１９０兆円、世界最大</title><link>https://igawa.io/posts/2004/07/%EF%BD%95%EF%BD%86%EF%BD%8A%E4%B8%89%E8%8F%B1%E6%9D%B1%E4%BA%AC%E3%81%A8%E7%B5%B1%E5%90%88%E3%81%B8-%E7%B7%8F%E8%B3%87%E7%94%A3%EF%BC%91%EF%BC%99%EF%BC%90%E5%85%86%E5%86%86%E4%B8%96%E7%95%8C%E6%9C%80%E5%A4%A7/</link><pubDate>Wed, 14 Jul 2004 12:27:00 +0900</pubDate><guid>https://igawa.io/posts/2004/07/%EF%BD%95%EF%BD%86%EF%BD%8A%E4%B8%89%E8%8F%B1%E6%9D%B1%E4%BA%AC%E3%81%A8%E7%B5%B1%E5%90%88%E3%81%B8-%E7%B7%8F%E8%B3%87%E7%94%A3%EF%BC%91%EF%BC%99%EF%BC%90%E5%85%86%E5%86%86%E4%B8%96%E7%95%8C%E6%9C%80%E5%A4%A7/</guid><description>&lt;p&gt;何でもアリだな。。。
+このままだと、最終的には一つになっちゃったりして。
+でも、そうなったら消費者(利用者)にとってはマイナスだ。
+そうならないことを望みます。&lt;/p&gt;</description></item><item><title>民主躍進、自民敗北（参院議員選挙）</title><link>https://igawa.io/posts/2004/07/%E6%B0%91%E4%B8%BB%E8%BA%8D%E9%80%B2%E8%87%AA%E6%B0%91%E6%95%97%E5%8C%97%E5%8F%82%E9%99%A2%E8%AD%B0%E5%93%A1%E9%81%B8%E6%8C%99/</link><pubDate>Mon, 12 Jul 2004 03:44:00 +0900</pubDate><guid>https://igawa.io/posts/2004/07/%E6%B0%91%E4%B8%BB%E8%BA%8D%E9%80%B2%E8%87%AA%E6%B0%91%E6%95%97%E5%8C%97%E5%8F%82%E9%99%A2%E8%AD%B0%E5%93%A1%E9%81%B8%E6%8C%99/</guid><description>&lt;p&gt;私も、もちろん投票には行きました。
+私が行ったときには、ひどい雨で
+「こりゃぁ、投票率悪いだろうなぁ。。。」
+と思っていたのですが、投票を終えて家に帰ったら、
+晴れ間が出てきました。。(~o~)
+まぁ、いいか。&lt;/p&gt;</description></item><item><title>引越し</title><link>https://igawa.io/posts/2004/06/%E5%BC%95%E8%B6%8A%E3%81%97/</link><pubDate>Sun, 27 Jun 2004 23:43:00 +0900</pubDate><guid>https://igawa.io/posts/2004/06/%E5%BC%95%E8%B6%8A%E3%81%97/</guid><description>&lt;p&gt;実は、今度引っ越すことにしたのだが、
+今度引っ越すことにより、以下のような利点がある。
+会社までの通勤時間が約半減。
+家賃＋駐車場料金が1.5万円減る。
+駅前が、今の最寄り駅より栄えている:-P
+まぁ、デメリットもあるわけで、
+駅まで遠い。
+政令指定都市ではない。(たいした問題じゃない)
+そんなところかな。&lt;/p&gt;</description></item></channel></rss>

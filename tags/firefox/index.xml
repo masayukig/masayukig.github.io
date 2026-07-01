@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Firefox on What's done is done</title><link>https://igawa.io/tags/firefox/</link><description>Recent content in Firefox on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sat, 13 Dec 2008 06:55:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/firefox/index.xml" rel="self" type="application/rss+xml"/><item><title>Ubuntu(8.10)上のFirefoxで日本語フォントがおかしい（中国語フォント？）</title><link>https://igawa.io/posts/2008/12/ubuntu810%E4%B8%8A%E3%81%AEfirefox%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84%E4%B8%AD%E5%9B%BD%E8%AA%9E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/</link><pubDate>Sat, 13 Dec 2008 06:55:00 +0900</pubDate><guid>https://igawa.io/posts/2008/12/ubuntu810%E4%B8%8A%E3%81%AEfirefox%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84%E4%B8%AD%E5%9B%BD%E8%AA%9E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/</guid><description>&lt;p&gt;Ubuntu(8.10)上のFirefoxで日本語フォントがおかしい（中国語フォント？）と言う現象に遭遇したので、
+解決するためのメモ。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://forum.ubuntulinux.jp/viewtopic.php?id=3124"&gt;http://forum.ubuntulinux.jp/viewtopic.php?id=3124&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bugs.launchpad.net/ubuntu-jp-improvement/+bug/272387"&gt;https://bugs.launchpad.net/ubuntu-jp-improvement/+bug/272387&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;を参考に(というかそのままだがw)、
+&lt;code&gt;$ sudo ln -s /etc/fonts/conf.avail/69-language-selector-ja-jp.conf /etc/fonts/conf.d/&lt;/code&gt;
+を、実行。ブラウザリロード(not リスタート)で、即解決。&lt;/p&gt;</description></item><item><title>Firefox3にアップデート</title><link>https://igawa.io/posts/2008/06/firefox3%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/</link><pubDate>Thu, 26 Jun 2008 00:01:00 +0900</pubDate><guid>https://igawa.io/posts/2008/06/firefox3%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/</guid><description>&lt;p&gt;いつも使ってるWebブラウザはFirefoxなのですが、&lt;/p&gt;
+&lt;p&gt;Firefox3が出たことなので、アップデートしました。&lt;/p&gt;
+&lt;p&gt;会社ではWindows、家ではMacBookとLinux(Fedora8)を使用していて、&lt;/p&gt;
+&lt;p&gt;Bookmarkなどの同期のため、Google Browser Syncを使用していました。&lt;/p&gt;
+&lt;p&gt;でも、どうやら&lt;/p&gt;
+&lt;p&gt;「Google Browser
+Syncは、Firefox3へは対応しない」(&lt;a href="http://netafull.net/firefox-addon/026281.html" title="http://netafull.net/firefox-addon/026281.html"&gt;netafull.net&lt;/a&gt;),
+(&lt;a href="http://lifehacker.com/396112/google-browser-sync-discontinued-no-firefox-3-support" title="http://lifehacker.com/396112/google-browser-sync-discontinued-no-firefox-3-support"&gt;lifehacker.com&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;ということらしく、Firefox3へのアップデートは躊躇していました。&lt;/p&gt;
+&lt;p&gt;が、Bookmarkの同期だけなら、
+&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/2410" title="https://addons.mozilla.org/en-US/firefox/addon/2410"&gt;Foxmarks Bookmark
+Synchronizer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;というやつが使えることがわかり、しばらくは、これで行ってみることにしました。&lt;/p&gt;
+&lt;p&gt;なお、Tab Mix PlusもFirefox3では使えなくなっているのですが、&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://addons.mozilla.org/ja/firefox/addon/1122"&gt;https://addons.mozilla.org/ja/firefox/addon/1122&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;には、「A version for Firefox 3 is found
+here:http://tmp.garyr.net/forum/viewtopic.php?t=7031 」&lt;/p&gt;
+&lt;p&gt;と、書いてあり、上記のリンクをたどって、&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://tmp.garyr.net/tab_mix_plus-dev-build.xpi"&gt;http://tmp.garyr.net/tab_mix_plus-dev-build.xpi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;から、無事、Tab Mix Plusをインストールすることが出来ました！&lt;/p&gt;
+&lt;p&gt;良かったー。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://getfirefox.jp/"&gt;&lt;img alt="Mozilla Firefox\nブラウザ無料ダウンロード" loading="lazy" src="http://www.0r2.info/blog//getfirefox.jp/b/125x125_rounded_whitegrey" title="Mozilla Firefox ブラウザ無料ダウンロード"&gt;&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

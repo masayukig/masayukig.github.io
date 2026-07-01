@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>IPad on What's done is done</title><link>https://igawa.io/tags/ipad/</link><description>Recent content in IPad on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Tue, 20 Mar 2012 20:28:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/ipad/index.xml" rel="self" type="application/rss+xml"/><item><title>Dropbox Automatorを使って写真を全自動でEvernoteへアップロードする(若干注意が必要) #evernote #dropbox</title><link>https://igawa.io/posts/2012/03/dropbox-automator%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E5%86%99%E7%9C%9F%E3%82%92%E5%85%A8%E8%87%AA%E5%8B%95%E3%81%A7evernote%E3%81%B8%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E8%8B%A5%E5%B9%B2%E6%B3%A8%E6%84%8F%E3%81%8C%E5%BF%85%E8%A6%81-evernote-dropbox/</link><pubDate>Tue, 20 Mar 2012 20:28:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/dropbox-automator%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E5%86%99%E7%9C%9F%E3%82%92%E5%85%A8%E8%87%AA%E5%8B%95%E3%81%A7evernote%E3%81%B8%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E8%8B%A5%E5%B9%B2%E6%B3%A8%E6%84%8F%E3%81%8C%E5%BF%85%E8%A6%81-evernote-dropbox/</guid><description>&lt;p&gt;[はじめに]{.Apple-style-span style=&amp;ldquo;font-size:large;&amp;rdquo;}
+&lt;a href="http://wappwolf.com/dropboxautomator/"&gt;Dropbox
+Automator&lt;/a&gt;というのを使って、iPhone,
+iPad, Android, デジカメで
+撮影した写真を全自動でEvernoteへアップロードする方法を記します。&lt;/p&gt;
+&lt;p&gt;ただし、注意点があるので、それは最後に書きます。&lt;/p&gt;
+&lt;p&gt;[前提条件]{.Apple-style-span style=&amp;ldquo;font-size:large;&amp;rdquo;}&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/1202/24/news092.html"&gt;Dropboxの写真や動画の自動アップロードサービス&lt;/a&gt;が有効になっていること&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;[方法]{.Apple-style-span style=&amp;ldquo;font-size:large;&amp;rdquo;}
+[&lt;a href="http://wappwolf.com/dropboxautomator/"&gt;Dropbox
+Automator&lt;/a&gt; にアクセスし、あとは以下の画像の通り進めます。]{.Apple-style-span
+style=&amp;ldquo;font-size:small;&amp;rdquo;}&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/9556c-dropboxautomator-01.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/9556c-dropboxautomator-01.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/8a791-dropboxautomator-02.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/8a791-dropboxautomator-02.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/10778-dropboxautomator-03.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/10778-dropboxautomator-03.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/ac3fe-dropboxautomator-04.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/ac3fe-dropboxautomator-04.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/fbad5-dropboxautomator-05.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/fbad5-dropboxautomator-05.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/5a13c-dropboxautomator-06.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/5a13c-dropboxautomator-06.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/72eb7-dropboxautomator-07.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/72eb7-dropboxautomator-07.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/ac0c5-dropboxautomator-08.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/ac0c5-dropboxautomator-08.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/019bc-dropboxautomator-10.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/019bc-dropboxautomator-10.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/dcb4a-dropboxautomator-11.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/dcb4a-dropboxautomator-11.png?w=241"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[注意点]{.Apple-style-span style=&amp;ldquo;font-size:large;&amp;rdquo;}&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Evernoteの月間最大アップロードは、60MB(無料アカウント)または1GB(プレミアムアカウント)です。既に、Camera
+Uploadsフォルダにある程度の枚数写真がある場合、月間最大アップロード量を超えてしまうかもしれません。(その場合、次の月までアップロードできなくなります。。)&lt;/li&gt;
+&lt;li&gt;Evernoteへアップロード処理されると、「processed」というフォルダに勝手に移動されてしまうようです。これで、今後もDropbox的にうまく動作するのか？はよくわかっていません。。&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>iPad2購入</title><link>https://igawa.io/posts/2011/10/ipad2%E8%B3%BC%E5%85%A5/</link><pubDate>Sat, 29 Oct 2011 06:45:00 +0900</pubDate><guid>https://igawa.io/posts/2011/10/ipad2%E8%B3%BC%E5%85%A5/</guid><description>&lt;hr&gt;
+&lt;h2 id="送信者-for-blog"&gt;&lt;a href="https://picasaweb.google.com/lh/photo/8gHrPRHvlm78tLkx_IPZcw?feat=embedwebsite"&gt;&lt;img alt="picture" loading="lazy" src="https://lh4.googleusercontent.com/-DjtpT99VSgU/TqsdSBEAd2I/AAAAAAAAoWU/N512e1upM-Y/s400/IMG_1202.jpg"&gt;&lt;/a&gt;
+送信者 &lt;a href="https://picasaweb.google.com/masayuki.igawa/ForBlog?authuser=0&amp;amp;feat=embedwebsite"&gt;for Blog&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;というわけで、iPad2を購入しました。&lt;/p&gt;
+&lt;p&gt;例の「アレコレソレキャンペーン」で購入しました。
+基本的には、3G通信は一切行わない予定なので、「&lt;a href="http://mb.softbank.jp/mb/special/are_kore_sore/another_one/packet/"&gt;ゼロから定額プラン&lt;/a&gt;」にしました。&lt;/p&gt;
+&lt;p&gt;当然、モバイルデータ通信は「オフ」に設定しています。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="picture"&gt;&lt;a href="https://picasaweb.google.com/lh/photo/e9YASe4zfhWXc0IrcXCEsw?feat=embedwebsite"&gt;&lt;img alt="picture" loading="lazy" src="https://lh4.googleusercontent.com/-a9obLN-pbTk/TqsjNY3vnTI/AAAAAAAAoXI/6RwjLHfBBvA/s400/IMG_0002.jpg"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;まぁ、このプラン、100MBまでは0円なのですが、それ以降従量課金で、
+111.5MBで、4,980円になるという素晴らしいプランですｗ
+11.5MBで4,980円なので、100MBを超えると、433円/MBってことでしょうか。
+すごいですね。&lt;/p&gt;
+&lt;p&gt;外で、じっくり使う場合には、やっぱりハードウェアキーボードが欲しくなるので、
+&lt;a href="http://store.apple.com/jp/product/H6353PA/A"&gt;Incase Workstation for Apple Wireless Keyboard, iPad and iPad
+2&lt;/a&gt;と、&lt;a href="http://store.apple.com/jp/product/MC184LL/B"&gt;Apple Wireless
+Keyboard (US)&lt;/a&gt;
+あたりの購入を検討しています。&lt;/p&gt;
+&lt;p&gt;また、液晶画面がむき出しなので、カバーとしては、
+&lt;a href="http://store.apple.com/jp/product/MD303FE/A"&gt;iPad Smart Cover&lt;/a&gt;と、&lt;a href="http://www.amazon.co.jp/gp/product/B004TXP34W/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=hughundercons-22&amp;amp;linkCode=as2&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=B004TXP34W"&gt;iPad
+2 PRO GUARD AF HD Grade Anti-Fingerprint・防指紋-プロガード ＡＦ /
+PGAF-IPAD2R&lt;/a&gt;&lt;img alt="picture" loading="lazy" src="http://www.assoc-amazon.jp/e/ir?t=hughundercons-22&amp;l=as2&amp;o=9&amp;a=B004TXP34W"&gt;
+あたりの購入を検討しています。&lt;/p&gt;</description></item><item><title>iPhone4S予約申し込んだ！</title><link>https://igawa.io/posts/2011/10/iphone4s%E4%BA%88%E7%B4%84%E7%94%B3%E3%81%97%E8%BE%BC%E3%82%93%E3%81%A0/</link><pubDate>Sun, 09 Oct 2011 06:11:00 +0900</pubDate><guid>https://igawa.io/posts/2011/10/iphone4s%E4%BA%88%E7%B4%84%E7%94%B3%E3%81%97%E8%BE%BC%E3%82%93%E3%81%A0/</guid><description>&lt;p&gt;というわけで、iPhone4Sを申し込みました！&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="picture"&gt;&lt;a href="https://picasaweb.google.com/lh/photo/hmnjuu2dzHTguh0a8_cmFg?feat=embedwebsite"&gt;&lt;img alt="picture" loading="lazy" src="https://lh4.googleusercontent.com/-u_uNEMVPZnk/TpC7P5bsMpI/AAAAAAAAoII/rQJIVGdAbyc/s400/%2525E3%252582%2525B9%2525E3%252582%2525AF%2525E3%252583%2525AA%2525E3%252583%2525BC%2525E3%252583%2525B3%2525E3%252582%2525B7%2525E3%252583%2525A7%2525E3%252583%252583%2525E3%252583%252588%2525202011-10-09%2525205.41.22.png"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;SoftBankのオンラインショップ で予約をしました。&lt;/p&gt;
+&lt;p&gt;近くの家電量販店(≠ヨドバシ、ビック、ヤマダ)に行ってみたのですが、
+特に、予約受付をしている感じではなかったので、オンラインショップで予約をすることにしました。&lt;/p&gt;
+&lt;p&gt;とはいえ、予約を申し込むと、以下のようなメールが送られてきて、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在庫の確保が出来しだい、メールにて本申し込みのご案内をいたします。
+在庫状況によりご連絡にお時間がかかる場合がありますので、あらかじめ
+ご了承ください。&lt;/p&gt;
+&lt;p&gt;また、在庫状況により、在庫の確保が困難な場合につきましては、
+お取り消しのご連絡をさせていただきますので、あらかじめご了承ください。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;まだ在庫の確保中で、本申し込みメール待ちです。&lt;/p&gt;</description></item><item><title>iPad2発表(3/25発売)</title><link>https://igawa.io/posts/2011/03/ipad2%E7%99%BA%E8%A1%A8325%E7%99%BA%E5%A3%B2/</link><pubDate>Thu, 03 Mar 2011 06:01:00 +0900</pubDate><guid>https://igawa.io/posts/2011/03/ipad2%E7%99%BA%E8%A1%A8325%E7%99%BA%E5%A3%B2/</guid><description>&lt;p&gt;&lt;a href="http://www.flickr.com/photos/31362181@N08/5492201767/" title="ipad2"&gt;&lt;img alt="ipad2" loading="lazy" src="http://farm6.static.flickr.com/5216/5492201767_9a1d9f0de1_m.jpg"&gt;{.alignnone}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.apple.com/jp/ipad/"&gt;iPad2発表になりました&lt;/a&gt;ね。&lt;/p&gt;
+&lt;p&gt;大方の予想通りの仕様のようですね。
+カメラがついたので、FaceTimeでお話できるかな？&lt;/p&gt;</description></item><item><title>iPhone4とiPadの仕様比較</title><link>https://igawa.io/posts/2010/06/iphone4%E3%81%A8ipad%E3%81%AE%E4%BB%95%E6%A7%98%E6%AF%94%E8%BC%83/</link><pubDate>Wed, 09 Jun 2010 10:01:00 +0900</pubDate><guid>https://igawa.io/posts/2010/06/iphone4%E3%81%A8ipad%E3%81%AE%E4%BB%95%E6%A7%98%E6%AF%94%E8%BC%83/</guid><description>&lt;p&gt;iPhone4とiPadの仕様を比較してみることにします。&lt;/p&gt;
+&lt;p&gt;[table id=3 /]&lt;/p&gt;</description></item><item><title>iPhone4発表！そして、iPadを買うかどうか悩む。。</title><link>https://igawa.io/posts/2010/06/iphone4%E7%99%BA%E8%A1%A8%E3%81%9D%E3%81%97%E3%81%A6ipad%E3%82%92%E8%B2%B7%E3%81%86%E3%81%8B%E3%81%A9%E3%81%86%E3%81%8B%E6%82%A9%E3%82%80/</link><pubDate>Wed, 09 Jun 2010 01:10:00 +0900</pubDate><guid>https://igawa.io/posts/2010/06/iphone4%E7%99%BA%E8%A1%A8%E3%81%9D%E3%81%97%E3%81%A6ipad%E3%82%92%E8%B2%B7%E3%81%86%E3%81%8B%E3%81%A9%E3%81%86%E3%81%8B%E6%82%A9%E3%82%80/</guid><description>&lt;p&gt;昨日、iPhone4が発表されました。
+&lt;a href="http://www.apple.com/jp/iphone/"&gt;http://www.apple.com/jp/iphone/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.apple.com/jp/iphone/specs.html"&gt;仕様&lt;/a&gt;を見ると、
+「960×640=614,400ピクセル」という解像度。
+iPadの「1024x768=786,432ピクセル」には及ばないものの、
+614,400/786,432*100=78.1%と、かなりのピクセル数だ。&lt;/p&gt;
+&lt;p&gt;「本を手軽に持ち歩きたい」というニーズには、
+iPhone4の方がiPadよりも適している気もして来たのだが、どうなのだろうか？&lt;/p&gt;
+&lt;p&gt;もちろん、iPadの方が大きな文字で読めることは確かだと思うが、
+現行のiPhone3GSでも結構良い線行っていることを考えると、
+iPhone4でもいい気がして来た。&lt;/p&gt;
+&lt;p&gt;うーん。悩みます。&lt;/p&gt;</description></item><item><title>iPad予約開始(5/10 10:00-)。最安は48,800円(16GB Wi-Fiモデル)</title><link>https://igawa.io/posts/2010/05/ipad%E4%BA%88%E7%B4%84%E9%96%8B%E5%A7%8B510-1000-%E6%9C%80%E5%AE%89%E3%81%AF48800%E5%86%8616gb-wi-fi%E3%83%A2%E3%83%87%E3%83%AB/</link><pubDate>Mon, 10 May 2010 05:49:00 +0900</pubDate><guid>https://igawa.io/posts/2010/05/ipad%E4%BA%88%E7%B4%84%E9%96%8B%E5%A7%8B510-1000-%E6%9C%80%E5%AE%89%E3%81%AF48800%E5%86%8616gb-wi-fi%E3%83%A2%E3%83%87%E3%83%AB/</guid><description>&lt;p&gt;iPadの予約が、本日(5/10) 10:00-開始される様です。
+Apple Store には、すでに「先行注文」のリンクがありました。
+最安は、48,800円(16GB Wi-Fiモデル)で、最高は、81,800円(64GB Wi-Fi + 3Gモデル)です。&lt;/p&gt;
+&lt;p&gt;各モデルと値段は以下のとおり。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Wi-Fi
+16GB　￥48,800
+32GB　￥58,800
+64GB　￥68,800
+Wi-Fi + 3G
+16GB　￥61,800
+32GB　￥71,800
+64GB　￥81,800
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

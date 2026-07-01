@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>お名前.com on What's done is done</title><link>https://igawa.io/tags/%E3%81%8A%E5%90%8D%E5%89%8D.com/</link><description>Recent content in お名前.com on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sat, 17 Jul 2010 22:27:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/%E3%81%8A%E5%90%8D%E5%89%8D.com/index.xml" rel="self" type="application/rss+xml"/><item><title>VPS比較(DTI vs お名前.com)</title><link>https://igawa.io/posts/2010/07/vps%E6%AF%94%E8%BC%83dti-vs-%E3%81%8A%E5%90%8D%E5%89%8Dcom/</link><pubDate>Sat, 17 Jul 2010 22:27:00 +0900</pubDate><guid>https://igawa.io/posts/2010/07/vps%E6%AF%94%E8%BC%83dti-vs-%E3%81%8A%E5%90%8D%E5%89%8Dcom/</guid><description>&lt;p&gt;現在、このサイトは お名前.comのVPS 上で動作しているが、
+&lt;a href="http://dream.jp/vps/"&gt;DTIのServersMan VPS&lt;/a&gt;が期間限定ながら無料で試せるようだったので、
+試してみた。&lt;/p&gt;
+&lt;p&gt;結論から言うと、お名前.comの方が私は好みです。
+お名前.com
+VPS：x86_64カーネル、CPU:16コア、(下記の単純なベンチマークで)２倍程度早い
+DTI VPS：x86カーネル、CPU:2コア、お名前.comの半分程度のスピード&lt;/p&gt;
+&lt;p&gt;以下、計測ログ等。&lt;/p&gt;
+&lt;p&gt;お名前.comサーバ&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ grep processor /proc/cpuinfo |wc -l
+16
+$ time for ((i=0; i&amp;lt;100000; i++)); do :; done
+real 0m0.640s
+user 0m0.187s
+sys 0m0.453s
+$ time for ((i=0; i&amp;lt;100000; i++)); do :; done
+real 0m0.641s
+user 0m0.187s
+sys 0m0.454s
+$ time for ((i=0; i&amp;lt;100000; i++)); do :; done
+real 0m0.780s
+user 0m0.359s
+sys 0m0.421s
+$ uname -a
+Linux 0r2.info 2.6.18-028stab068.9 #1 SMP Tue Mar 30 17:22:31 MSD 2010 x86_64 x86_64 x86_64 GNU/Linux
+$ cat /etc/redhat-release
+CentOS release 5.5 (Final)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;DTI VPS&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ grep processor /proc/cpuinfo |wc -l
+2
+$ time for ((i=0; i&amp;lt;100000; i++)); do :; done
+real 0m1.485s
+user 0m1.065s
+sys 0m0.382s
+$ time for ((i=0; i&amp;lt;100000; i++)); do :; done
+real 0m1.499s
+user 0m1.074s
+sys 0m0.383s
+$ time for ((i=0; i&amp;lt;100000; i++)); do :; done
+real 0m1.488s
+user 0m1.045s
+sys 0m0.405s
+$
+$ uname -a
+Linux localhost 2.6.18-194.3.1.el5.028stab069.6 #1 SMP Wed May 26 18:31:05 MSD 2010 i686 i686 i386 GNU/Linux
+$ cat /etc/redhat-release
+CentOS release 5.5 (Final)
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>サーバの乗り換えをしました</title><link>https://igawa.io/posts/2010/06/%E3%82%B5%E3%83%BC%E3%83%90%E3%81%AE%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%82%92%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</link><pubDate>Tue, 01 Jun 2010 06:29:00 +0900</pubDate><guid>https://igawa.io/posts/2010/06/%E3%82%B5%E3%83%BC%E3%83%90%E3%81%AE%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%82%92%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</guid><description>&lt;p&gt;最近、Coreserver
+の調子がちょっと悪く思えたので、サーバの乗り換えをしました。
+乗り換えた先は[お名前.comのVPS]&lt;/p&gt;
+&lt;p&gt;Virtuozzoを使っていて、root権限がありメモリ1GB,
+HDD120GBで、29,484円/1年と、かなりのスペックです。
+ただし、メモリに関しては、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;「各VPSには基本メモリとして512MBが割り当てられています。ハードウェアのリソースに余裕がある場合は最大1GBまで割り当てられます。」&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ということらしいので、若干注意が必要です。
+(現在のところ、私のサーバには1GBが割り当てられているようです。)&lt;/p&gt;
+&lt;p&gt;また、GMOの株主になっていれば、&lt;a href="http://ir.gmo.jp/stock/returns-stockholders/#a4"&gt;株主優待&lt;/a&gt;でさらに割引になる可能性もあります。&lt;/p&gt;</description></item></channel></rss>

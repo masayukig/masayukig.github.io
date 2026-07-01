@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Rpm on What's done is done</title><link>https://igawa.io/tags/rpm/</link><description>Recent content in Rpm on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sat, 21 Mar 2009 13:53:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/rpm/index.xml" rel="self" type="application/rss+xml"/><item><title>一般ユーザ権限でrpmbuildを実行</title><link>https://igawa.io/posts/2009/03/%E4%B8%80%E8%88%AC%E3%83%A6%E3%83%BC%E3%82%B6%E6%A8%A9%E9%99%90%E3%81%A7rpmbuild%E3%82%92%E5%AE%9F%E8%A1%8C/</link><pubDate>Sat, 21 Mar 2009 13:53:00 +0900</pubDate><guid>https://igawa.io/posts/2009/03/%E4%B8%80%E8%88%AC%E3%83%A6%E3%83%BC%E3%82%B6%E6%A8%A9%E9%99%90%E3%81%A7rpmbuild%E3%82%92%E5%AE%9F%E8%A1%8C/</guid><description>&lt;p&gt;$ echo &amp;ldquo;%_topdir $HOME/src/rpms&amp;rdquo; &amp;gt; $HOME/.rpmmacros
+$ mkdir -p $HOME/src/rpms/{BUILD,RPMS,SOURCES,SPECS,SRPMS}&lt;/p&gt;
+&lt;p&gt;を、実行して、後は、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ rpmbuild --rebuild hogehuga.src.rpm
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;を実行すればおk。&lt;/p&gt;</description></item><item><title>courier-imapをインストール</title><link>https://igawa.io/posts/2008/07/courier-imap%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link><pubDate>Sun, 13 Jul 2008 22:14:00 +0900</pubDate><guid>https://igawa.io/posts/2008/07/courier-imap%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid><description>&lt;p&gt;メールは今は、ほぼ、Gmailしか使って無いのですが、たまに、ローカルPC上でも見たい事があるので、
+fetchmail/procmailでダウンロードして、IMAP(courier-imap)経由で見ることがたまにあります。
+(以前は、これを、「主」としていたのですが。。)
+というわけで、courier-imapをインストールする方法を記しておきます。&lt;/p&gt;
+&lt;p&gt;とは言っても、RPMパッケージを作ってインストールするだけなので、とても簡単です。
+&lt;a href="http://www.courier-mta.org/download.php"&gt;http://www.courier-mta.org/download.php&lt;/a&gt;
+から、&lt;/p&gt;
+&lt;p&gt;Package: Courier-IMAP
+Version: 4.3.1 (23-Mar-2008)
+Filename: courier-imap-4.3.1.tar.bz2 (3.2M)&lt;/p&gt;
+&lt;p&gt;Package: Courier authentication library
+Version: 0.60.6 (08-Jun-2008)
+Filename: courier-authlib-0.60.6.tar.bz2 (2.1M)&lt;/p&gt;
+&lt;p&gt;をダウンロードして、&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ rpmbuild -ta courier-authlib-0.60.6.tar.bz2$ sudo rpm -ihv ~/rpmbuild/RPMS/x86_64/courier*$ rpmbuild -ta courier-imap-4.3.1.tar.bz2$ sudo rpm -ihv ~/rpmbuild/RPMS/x86_64/courier-imap*&lt;/code&gt;
+で、インストールは完了。&lt;/p&gt;
+&lt;p&gt;もしかしたら、「必要なパッケージが無い」というエラーが出るかもしれませんが、
+(私の場合は、「openldap-serversが必要」でした。)
+その場合は、
+# yum install openldap-servers(などの必要なパッケージ名)
+で、大丈夫でしょう。&lt;/p&gt;</description></item></channel></rss>

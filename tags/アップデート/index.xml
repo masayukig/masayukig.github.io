@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>アップデート on What's done is done</title><link>https://igawa.io/tags/%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/</link><description>Recent content in アップデート on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Tue, 22 Jun 2010 23:33:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/index.xml" rel="self" type="application/rss+xml"/><item><title>Amazon Kindle 2.5.2アップデート</title><link>https://igawa.io/posts/2010/06/amazon-kindle-252%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/</link><pubDate>Tue, 22 Jun 2010 23:33:00 +0900</pubDate><guid>https://igawa.io/posts/2010/06/amazon-kindle-252%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/</guid><description>&lt;p&gt;&lt;a href="http://www.flickr.com/photos/masayun/4723870177/" title="Amazon Kindle updated by masayukig, on Flickr"&gt;&lt;img alt="Amazon Kindle\nupdated" loading="lazy" src="http://farm2.static.flickr.com/1309/4723870177_9dca605c35.jpg"&gt;
+&lt;/a&gt;
+自動でアップデートされる（というか、どうせなら最新版を発送して欲しかったのですが）
+と思っていたんですが、
+なかなかアップデートが開始されないので、手動でアップデートしました。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.amazon.com/gp/help/customer/display.html/ref=hp_kswup_manlink?nodeId=200324680&amp;amp;#manual"&gt;http://www.amazon.com/gp/help/customer/display.html/ref=hp_kswup_manlink?nodeId=200324680&amp;amp;#manual&lt;/a&gt;
+を、参考に、&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://s3.amazonaws.com/G7G_FirmwareUpdates_WebDownloads/Update_kindle2_gw_2.5.2.bin"&gt;アップデートソフトウェア&lt;/a&gt;を、ダウンロード&lt;/li&gt;
+&lt;li&gt;KindleをUSB接続。&lt;/li&gt;
+&lt;li&gt;先ほどダウンロードしたファイル()を、Kindleのルートディレクトリへコピー&lt;/li&gt;
+&lt;li&gt;Kindleをアンマウント&lt;/li&gt;
+&lt;li&gt;Kindleで、MENU- Setting-Update&lt;/li&gt;
+&lt;li&gt;後は、勝手にアップデートされます&lt;/li&gt;
+&lt;/ol&gt;</description></item></channel></rss>

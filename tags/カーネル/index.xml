@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>カーネル on What's done is done</title><link>https://igawa.io/tags/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB/</link><description>Recent content in カーネル on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Fri, 20 Jun 2008 23:45:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB/index.xml" rel="self" type="application/rss+xml"/><item><title>Linuxカーネルのコンパイル(ビルド)方法</title><link>https://igawa.io/posts/2008/06/linux%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E3%83%93%E3%83%AB%E3%83%89%E6%96%B9%E6%B3%95/</link><pubDate>Fri, 20 Jun 2008 23:45:00 +0900</pubDate><guid>https://igawa.io/posts/2008/06/linux%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E3%83%93%E3%83%AB%E3%83%89%E6%96%B9%E6%B3%95/</guid><description>&lt;p&gt;突然だが、Linuxカーネルのコンパイル方法を書いてみる。&lt;/p&gt;
+&lt;p&gt;とは言っても、とても簡単です。&lt;/p&gt;
+&lt;p&gt;Linuxのディストリビューションは、とりあえず、Fedora8を基準に書きますが、&lt;/p&gt;
+&lt;p&gt;他のディストリビューションでも大きな違いはないでしょう。&lt;/p&gt;
+&lt;h3 id="手順比較的新しい2618を想定"&gt;手順：(比較的新しい(2.6.18〜)を想定)&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Linuxカーネルをダウンロード&lt;/li&gt;
+&lt;li&gt;.configファイルの作成&lt;/li&gt;
+&lt;li&gt;make &amp;amp;&amp;amp; sudo make modules_install &amp;amp;&amp;amp; sudo make install&lt;/li&gt;
+&lt;li&gt;再起動。(再起動時のGRUBの選択画面で、インストールしたカーネルを選ぶ。)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;これぐらいでしょうか。それぞれを詳しく述べてみます。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Linuxカーネルをダウンロード&lt;/li&gt;
+&lt;li&gt;.configファイルの作成&lt;/li&gt;
+&lt;li&gt;make &amp;amp;&amp;amp; sudo make modules_install &amp;amp;&amp;amp; sudo make install&lt;/li&gt;
+&lt;li&gt;再起動。(再起動時のGRUBの選択画面で、インストールしたカーネルを選ぶ。)&lt;/li&gt;
+&lt;/ol&gt;</description></item></channel></rss>

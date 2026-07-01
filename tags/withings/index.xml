@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Withings on What's done is done</title><link>https://igawa.io/tags/withings/</link><description>Recent content in Withings on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Thu, 08 Nov 2012 14:18:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/withings/index.xml" rel="self" type="application/rss+xml"/><item><title>I won #Withings x #IFTTT contest!</title><link>https://igawa.io/posts/2012/11/i-won-withings-x-ifttt-contest/</link><pubDate>Thu, 08 Nov 2012 14:18:00 +0900</pubDate><guid>https://igawa.io/posts/2012/11/i-won-withings-x-ifttt-contest/</guid><description>&lt;p&gt;Yesterday, I received a tweet&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Congratulations @&lt;a href="https://twitter.com/masayukig"&gt;masayukig&lt;/a&gt;! You
+imagined the most useful @&lt;a href="https://twitter.com/ifttt"&gt;ifttt&lt;/a&gt; recipe!
+&lt;a href="https://t.co/etB8ljWv" title="https://ifttt.com/recipes/63114"&gt;ifttt.com/recipes/63114&lt;/a&gt;
+Please contact us: &lt;a href="mailto:community@withings.com"&gt;community@withings.com&lt;/a&gt;
+— Withingsさん (@Withings) &lt;a href="https://twitter.com/Withings/status/266141604526579714"&gt;11月 7,
+2012&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="//platform.twitter.com/widgets.js"&gt;//platform.twitter.com/widgets.js&lt;/a&gt;
+Yeah! I&amp;rsquo;m really happy to see this.&lt;/p&gt;
+&lt;p&gt;I read the article a few weeks ago:
+&lt;a href="http://blog.withings.com/en/2012/10/17/ifttt-x-withings-contest-imagine-the-most-usefuluseless-recipe/"&gt;http://blog.withings.com/en/2012/10/17/ifttt-x-withings-contest-imagine-the-most-usefuluseless-recipe/&lt;/a&gt;
+And I seek the recipe about Withings x Google Calendar. But I could not
+find out.
+So I imagined this recipe. This recipe is used 53 times! This is my best
+score about ifttt.&lt;/p&gt;
+&lt;p&gt;But actually, this recipe has a few problems..
+That is about&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;time zone(?)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the data itself&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For example, when I weighed my weight at &amp;ldquo;Nov 8 22:31 JST 2012&amp;rdquo;, but the
+datetime of Google Calendar is &amp;ldquo;Nov 9 22:31 JST 2012&amp;rdquo;.
+The difference is about 24 hours!&lt;/p&gt;</description></item></channel></rss>

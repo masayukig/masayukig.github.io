@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Sakura on What's done is done</title><link>https://igawa.io/tags/sakura/</link><description>Recent content in Sakura on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Mon, 02 Apr 2012 21:06:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/sakura/index.xml" rel="self" type="application/rss+xml"/><item><title>さくらインターネットから「詫び状」キター</title><link>https://igawa.io/posts/2012/04/%E3%81%95%E3%81%8F%E3%82%89%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E3%81%8B%E3%82%89%E8%A9%AB%E3%81%B3%E7%8A%B6%E3%82%AD%E3%82%BF%E3%83%BC/</link><pubDate>Mon, 02 Apr 2012 21:06:00 +0900</pubDate><guid>https://igawa.io/posts/2012/04/%E3%81%95%E3%81%8F%E3%82%89%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E3%81%8B%E3%82%89%E8%A9%AB%E3%81%B3%E7%8A%B6%E3%82%AD%E3%82%BF%E3%83%BC/</guid><description>&lt;p&gt;昨日、さくらVPS
+の2Gを申し込んだのですが、うまく申し込めなかったようです。
+で、(´・ω・`)な感じだったのですが、昨夜以下のようなメールが来たので、
+申し込んでみました。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/04/8d385-apology_from_sakura.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/04/8d385-apology_from_sakura.png?w=285"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;で、申し込んだ結果が以下。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/04/98ba7-sakura_2g_vps.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/04/98ba7-sakura_2g_vps.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;上の方は、中途半端な申し込みとなっていて、削除される予定のもの。
+で、下側が今回申し込んだもの。
+IPアドレスが出ているのが、申し込みが最後まで進んだ証拠なんだと思います。&lt;/p&gt;
+&lt;p&gt;無事、新しいサーバへアクセスすることができたので、
+これからOS(Fedora16)を再インストール予定。&lt;/p&gt;</description></item><item><title>さくらVPS上位プランへアップグレードできないか？問い合わせてみた</title><link>https://igawa.io/posts/2011/03/%E3%81%95%E3%81%8F%E3%82%89vps%E4%B8%8A%E4%BD%8D%E3%83%97%E3%83%A9%E3%83%B3%E3%81%B8%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%81%8B%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E3%81%BF%E3%81%9F/</link><pubDate>Fri, 11 Mar 2011 04:00:00 +0900</pubDate><guid>https://igawa.io/posts/2011/03/%E3%81%95%E3%81%8F%E3%82%89vps%E4%B8%8A%E4%BD%8D%E3%83%97%E3%83%A9%E3%83%B3%E3%81%B8%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%81%8B%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E3%81%BF%E3%81%9F/</guid><description>&lt;p&gt;&lt;a href="http://b.0r2.info/?p=1447"&gt;先日のエントリー&lt;/a&gt;で書いた さくらのVPS の上位プランへのアップグレードについて、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;簡単に容量アップできるのかな。。？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;と、書いたのですが、 さくらのVPS ページには特に何も書いてなかったので、
+問い合わせてみました。&lt;/p&gt;
+&lt;p&gt;で、得られた回答が以下の通り。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;大変恐れ入りますが、「さくらのVPSシリーズ」では、収容サーバが
+異なる為、プラン変更やアップグレードのお手続きがございません。&lt;/p&gt;
+&lt;p&gt;ご希望のサービスを新規でお申し込みいただき、お客様にてサーバの構築や
+データ等の移行作業を行われた後、不要なサービスの解約を頂く対応と
+なっております。&lt;/p&gt;
+&lt;p&gt;ご希望に沿えず申し訳ございませんが、ご了承賜りますようお願いいたします。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;プラン変更／アップグレードができないというのは
+ちょっとガッカリですが、まぁサーバ自体に特に不満はないので、
+その内移行したいと思います。&lt;/p&gt;</description></item><item><title>さくらのVPSでUnixBench(5.1.3)を実施してみた - part2(結果編)</title><link>https://igawa.io/posts/2011/03/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps%E3%81%A7unixbench513%E3%82%92%E5%AE%9F%E6%96%BD%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F-part2%E7%B5%90%E6%9E%9C%E7%B7%A8/</link><pubDate>Sun, 06 Mar 2011 06:30:00 +0900</pubDate><guid>https://igawa.io/posts/2011/03/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps%E3%81%A7unixbench513%E3%82%92%E5%AE%9F%E6%96%BD%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F-part2%E7%B5%90%E6%9E%9C%E7%B7%A8/</guid><description>&lt;p&gt;&lt;a href="http://www.flickr.com/photos/31362181@N08/5500656344/" title="result of sakura vps benchmark"&gt;&lt;img alt="result of sakura vps\nbenchmark" loading="lazy" src="http://farm6.static.flickr.com/5136/5500656344_6a9db11cd9_m.jpg"&gt;{.alignnone}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;と、いうわけで以下結果です。&lt;/p&gt;
+&lt;p&gt;スコアとしては、1256.5。こんなもんなんでしょうか。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;========================================================================
+BYTE UNIX Benchmarks (Version 5.1.3)
+System: 0r2.info: GNU/Linux
+OS: GNU/Linux -- 2.6.38-rc4-00106-gd247852 -- #1 SMP Sat Feb 12 05:11:57 JST 2011
+Machine: x86_64 (x86_64)
+Language: en_US.utf8 (charmap=&amp;quot;UTF-8&amp;quot;, collate=&amp;quot;UTF-8&amp;quot;)
+CPU 0: Intel(R) Core(TM)2 Duo CPU T7700 @ 2.40GHz (5320.3 bogomips)
+x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET
+CPU 1: Intel(R) Core(TM)2 Duo CPU T7700 @ 2.40GHz (5320.3 bogomips)
+x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET
+05:26:55 up 18 days, 15:23, 1 user, load average: 0.02, 0.04, 0.05; runlevel 3
+------------------------------------------------------------------------
+Benchmark Run: 金 3月 04 2011 05:26:55 - 05:54:56
+2 CPUs in system; running 1 parallel copy of tests
+Dhrystone 2 using register variables 23992196.0 lps (10.0 s, 7 samples)
+Double-Precision Whetstone 3085.0 MWIPS (9.1 s, 7 samples)
+Execl Throughput 1307.9 lps (30.0 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks 441004.0 KBps (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks 122297.6 KBps (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks 992115.9 KBps (30.0 s, 2 samples)
+Pipe Throughput 1037608.4 lps (10.0 s, 7 samples)
+Pipe-based Context Switching 145308.5 lps (10.0 s, 7 samples)
+Process Creation 3073.2 lps (30.0 s, 2 samples)
+Shell Scripts (1 concurrent) 2637.8 lpm (60.0 s, 2 samples)
+Shell Scripts (8 concurrent) 652.9 lpm (60.1 s, 2 samples)
+System Call Overhead 1429308.8 lps (10.0 s, 7 samples)
+System Benchmarks Index Values BASELINE RESULT INDEX
+Dhrystone 2 using register variables 116700.0 23992196.0 2055.9
+Double-Precision Whetstone 55.0 3085.0 560.9
+Execl Throughput 43.0 1307.9 304.2
+File Copy 1024 bufsize 2000 maxblocks 3960.0 441004.0 1113.6
+File Copy 256 bufsize 500 maxblocks 1655.0 122297.6 739.0
+File Copy 4096 bufsize 8000 maxblocks 5800.0 992115.9 1710.5
+Pipe Throughput 12440.0 1037608.4 834.1
+Pipe-based Context Switching 4000.0 145308.5 363.3
+Process Creation 126.0 3073.2 243.9
+Shell Scripts (1 concurrent) 42.4 2637.8 622.1
+Shell Scripts (8 concurrent) 6.0 652.9 1088.2
+System Call Overhead 15000.0 1429308.8 952.9
+========
+System Benchmarks Index Score 731.7
+------------------------------------------------------------------------
+Benchmark Run: 金 3月 04 2011 05:54:56 - 06:23:16
+2 CPUs in system; running 2 parallel copies of tests
+Dhrystone 2 using register variables 45446984.0 lps (10.0 s, 7 samples)
+Double-Precision Whetstone 6064.6 MWIPS (9.5 s, 7 samples)
+Execl Throughput 3794.6 lps (29.9 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks 465812.5 KBps (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks 134853.9 KBps (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks 1176253.0 KBps (30.0 s, 2 samples)
+Pipe Throughput 1914346.3 lps (10.0 s, 7 samples)
+Pipe-based Context Switching 272961.3 lps (10.0 s, 7 samples)
+Process Creation 9831.0 lps (30.0 s, 2 samples)
+Shell Scripts (1 concurrent) 5213.8 lpm (60.0 s, 2 samples)
+Shell Scripts (8 concurrent) 744.4 lpm (60.1 s, 2 samples)
+System Call Overhead 2521800.8 lps (10.0 s, 7 samples)
+System Benchmarks Index Values BASELINE RESULT INDEX
+Dhrystone 2 using register variables 116700.0 45446984.0 3894.3
+Double-Precision Whetstone 55.0 6064.6 1102.7
+Execl Throughput 43.0 3794.6 882.5
+File Copy 1024 bufsize 2000 maxblocks 3960.0 465812.5 1176.3
+File Copy 256 bufsize 500 maxblocks 1655.0 134853.9 814.8
+File Copy 4096 bufsize 8000 maxblocks 5800.0 1176253.0 2028.0
+Pipe Throughput 12440.0 1914346.3 1538.9
+Pipe-based Context Switching 4000.0 272961.3 682.4
+Process Creation 126.0 9831.0 780.2
+Shell Scripts (1 concurrent) 42.4 5213.8 1229.7
+Shell Scripts (8 concurrent) 6.0 744.4 1240.7
+System Call Overhead 15000.0 2521800.8 1681.2
+========
+System Benchmarks Index Score 1256.5
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>「さくらのVPS」に待望の上位プラン追加</title><link>https://igawa.io/posts/2011/03/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps%E3%81%AB%E5%BE%85%E6%9C%9B%E3%81%AE%E4%B8%8A%E4%BD%8D%E3%83%97%E3%83%A9%E3%83%B3%E8%BF%BD%E5%8A%A0/</link><pubDate>Thu, 03 Mar 2011 06:06:00 +0900</pubDate><guid>https://igawa.io/posts/2011/03/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps%E3%81%AB%E5%BE%85%E6%9C%9B%E3%81%AE%E4%B8%8A%E4%BD%8D%E3%83%97%E3%83%A9%E3%83%B3%E8%BF%BD%E5%8A%A0/</guid><description>&lt;p&gt;&lt;a href="http://vps.sakura.ad.jp/news/archives/20110224-003.news"&gt;「さくらのVPS」に待望の上位プラン&lt;/a&gt;が追加されるようです。&lt;/p&gt;
+&lt;p&gt;私は1GBにしたいと思っています。
+でも、簡単に容量アップできるのかな。。？&lt;/p&gt;</description></item></channel></rss>

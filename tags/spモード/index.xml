@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>SPモード on What's done is done</title><link>https://igawa.io/tags/sp%E3%83%A2%E3%83%BC%E3%83%89/</link><description>Recent content in SPモード on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Fri, 17 Sep 2010 04:47:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/sp%E3%83%A2%E3%83%BC%E3%83%89/index.xml" rel="self" type="application/rss+xml"/><item><title>SPモード使うのやーめた</title><link>https://igawa.io/posts/2010/09/sp%E3%83%A2%E3%83%BC%E3%83%89%E4%BD%BF%E3%81%86%E3%81%AE%E3%82%84%E3%83%BC%E3%82%81%E3%81%9F/</link><pubDate>Fri, 17 Sep 2010 04:47:00 +0900</pubDate><guid>https://igawa.io/posts/2010/09/sp%E3%83%A2%E3%83%BC%E3%83%89%E4%BD%BF%E3%81%86%E3%81%AE%E3%82%84%E3%83%BC%E3%82%81%E3%81%9F/</guid><description>&lt;p&gt;&lt;a href="http://www.0r2.info/blog/2010/09/11/sp%E3%83%A2%E3%83%BC%E3%83%89%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%9F%E6%84%9F%E6%83%B3/"&gt;先日のエントリ&lt;/a&gt;で、SPモードを使い始めたと書いたのですが、
+しばらく使うのを止めることにしました。&lt;/p&gt;
+&lt;p&gt;理由は以下のとおり。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;メールアプリの動作が遅い。機能不足&lt;/li&gt;
+&lt;li&gt;i-mode専用サイトが見られない&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;特に、「メールアプリの動作が遅い。機能不足」が致命的。
+もう、普通にpopかimapを提供してくれればメールアプリは適当なのを使うのに。。という感じ。
+メール通知だけしてくれれば充分です。&lt;/p&gt;
+&lt;p&gt;なので、今は、&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Xperia(WoSim) + WiMax&lt;/li&gt;
+&lt;li&gt;ガラケー(N906i)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;で、結構快適。&lt;/p&gt;
+&lt;p&gt;ガラケーでi-modeサイトを見ると、パケット代がかかって来ますが、
+まぁ、あんまり気にしない方が精神衛生上いい気がしてきました。
+それほどi-modeサイトを見ることはないので、多分最小金額に抑えられる気がしています。&lt;/p&gt;
+&lt;p&gt;ちょっと不満はWiMaxのエリアの狭さ＋電池の持ちが悪いことでしょうか。&lt;/p&gt;</description></item><item><title>SPモードとiモード.netについて</title><link>https://igawa.io/posts/2010/09/sp%E3%83%A2%E3%83%BC%E3%83%89%E3%81%A8i%E3%83%A2%E3%83%BC%E3%83%89net%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</link><pubDate>Sat, 11 Sep 2010 06:14:00 +0900</pubDate><guid>https://igawa.io/posts/2010/09/sp%E3%83%A2%E3%83%BC%E3%83%89%E3%81%A8i%E3%83%A2%E3%83%BC%E3%83%89net%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</guid><description>&lt;p&gt;&lt;a href="http://www.0r2.info/blog/2010/09/11/sp%e3%83%a2%e3%83%bc%e3%83%89%e3%82%92%e4%bd%bf%e3%81%84%e5%a7%8b%e3%82%81%e3%81%9f%e6%84%9f%e6%83%b3/"&gt;先ほどのエントリー&lt;/a&gt;で、SPモードを使い始めたのは書いたとおりですが、
+ここでは、iモード.netとの関係を書きたいと思います。&lt;/p&gt;
+&lt;p&gt;どこかにまとまった資料があればいいのですが、
+&lt;a href="http://www.nttdocomo.co.jp/service/provider/spmode/guide/index.html"&gt;SPモードマニュアル&lt;/a&gt;には以下の記述があるだけで、&lt;/p&gt;
+&lt;p&gt;iモード.net：spモードメール×。iモードメール○。&lt;/p&gt;
+&lt;p&gt;「メールアドレス入れ替え」をした場合の動作などが
+いまいち不明確だったので、とりあえず書いておきます。&lt;/p&gt;
+&lt;p&gt;結論：
+「メールアドレス入れ替え」をした場合、
+「iモードメールになった方のアドレスでiモード.netできる」
+という単純なものでした。。&lt;/p&gt;
+&lt;p&gt;つまり、&lt;/p&gt;
+&lt;p&gt;spモードメールアドレス：foo@docomo&amp;hellip;.
+iモードメールアドレス：bar@docomo&amp;hellip;.&lt;/p&gt;
+&lt;p&gt;という状態の時は、bar@docomo&amp;hellip;のメールに対してiモード.netができ、
+「メールアドレス入れ替え」を行って、&lt;/p&gt;
+&lt;p&gt;spモードメールアドレス：bar@docomo&amp;hellip;.
+iモードメールアドレス：foo@docomo&amp;hellip;.&lt;/p&gt;
+&lt;p&gt;という状態の時は、foo@docomo&amp;hellip;のメールに対してiモード.netができるということです。
+分かってしまえば単純ですが、やってみるまでいまいち分かりませんでした。&lt;/p&gt;</description></item><item><title>SPモードを使い始めた(感想)</title><link>https://igawa.io/posts/2010/09/sp%E3%83%A2%E3%83%BC%E3%83%89%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%9F%E6%84%9F%E6%83%B3/</link><pubDate>Sat, 11 Sep 2010 05:57:00 +0900</pubDate><guid>https://igawa.io/posts/2010/09/sp%E3%83%A2%E3%83%BC%E3%83%89%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%9F%E6%84%9F%E6%83%B3/</guid><description>&lt;p&gt;先日より、「&lt;a href="http://www.nttdocomo.co.jp/service/provider/spmode/"&gt;SPモード&lt;/a&gt;」と言うサービスが始まったので、
+使ってみました。で、その感想。&lt;/p&gt;
+&lt;p&gt;（使い始める前の）しょっぱなの印象：
+「へー。(docomo.ne.jpの)メールアドレスが二つ持てるってことか。最初の半年は無料らしいし、なんだか良いかも。」&lt;/p&gt;
+&lt;p&gt;現在の印象：
+「肝心要のメールアプリの使い勝手が悪すぎる。重いし、低機能。」&lt;/p&gt;
+&lt;p&gt;と言う感じです。。&lt;/p&gt;
+&lt;p&gt;SPモードメールアプリは、SPモードを契約しないと使えないので実質無料だと思うのですが、
+この品質はひどすぎる。
+いろいろなブログ上で、話題になっている模様。
+&lt;a href="http://www.google.co.jp/search?q=sp%E3%83%A2%E3%83%BC%E3%83%89&amp;amp;hl=ja&amp;amp;tbs=blg:1"&gt;http://www.google.co.jp/search?q=sp%E3%83%A2%E3%83%BC%E3%83%89&amp;amp;hl=ja&amp;amp;tbs=blg:1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://d.hatena.ne.jp/msml/20100910/1284092892"&gt;Music Save My Life.&lt;/a&gt;
+では、いろいろと改善要望をまとめているので、もし、
+「まだSPモード使って無いけど、気になっている。」
+というひとは、どんな感じなのか、見てみると良いかと思います。&lt;/p&gt;
+&lt;p&gt;個人的には、
+「挙動が重たい、遅い。」
+が、一番痛い。twicca並の動作にしてほしい。&lt;/p&gt;
+&lt;p&gt;次は、
+「無線LAN設定時にiモードメールがダウンロードできない」
+でしょうか。これができないので、無線LANは常時OFFの運用になってしまいました。
+（いちいち切り替えるのが面倒くさい）&lt;/p&gt;
+&lt;p&gt;上記に載っていないことで気になっている点は、
+「絵文字の選択のさせ方がユーザフレンドリじゃない」
+です。
+どういうことかというと、
+SPモードメールアプリで、絵文字を入力しようとすると、
+「デコメ」ボタンを押すのが普通だと思うのですが、これを押すと、
+「ファイル選択」というダイアログで「本体から選択」と「SDカードから選択」
+の「選択」を迫られます。で、「選択」すると次は、「カテゴリ毎」の絵文字を選択することになります。&lt;/p&gt;
+&lt;p&gt;ユーザに選択を迫りすぎです。「デコメ」ボタンを押したら即、絵文字を入力できれば良いだけだと思います。
+「SDカードから選択」したい人なんてほとんどいないだろうし、
+「デフォルト動作をどちらにするか？」を設定させるか、
+「本体へコピーする」機能を追加すれば良いだけだろう。&lt;/p&gt;
+&lt;p&gt;正直、一般消費者が使うものなのに、まったく使い勝手を考えた設計・テストができていないと思われます。&lt;/p&gt;
+&lt;p&gt;SPモードを使うために、しばらくWiMaxを使わないことにしたのですが、
+早々にくじけそうですw。以前の運用(SIMなしXperia + WiMax +
+ガラケー)の方が、
+普段は快適だった気がします。。&lt;/p&gt;
+&lt;p&gt;＃でも、WiMaxのエリアが微妙過ぎるし、モバイルルータの電池の持ちがとても微妙なので、
+＃E-Mobileにでもしようかとも。。&lt;/p&gt;
+&lt;p&gt;とにかく、ひとまず、SPモードメールアプリの使い勝手をもうちょっとよくしてほしいものです。&lt;/p&gt;</description></item></channel></rss>

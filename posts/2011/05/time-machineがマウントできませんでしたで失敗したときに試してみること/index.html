@@ -1,0 +1,107 @@
+<!doctype html><html lang=ja dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Time Machineが「マウントできませんでした」で失敗したときに試してみること | What's done is done</title><meta name=keywords content="Apple,Mac,timemachine"><meta name=description content="現在、Time MachineをNAS上のボリュームで使っているのですが、たまに、
+「マウントできませんでした」
+という感じのエラーが発生し、バックアップができなくなることがあります。
+そのとき、/var/log/system.logには以下の様な出力がありました。
+May 22 04:20:49 ariel com.apple.backupd[6949]: Error 45 creating backup disk image
+May 22 04:20:49 ariel com.apple.backupd[6949]: Failed to create disk image /Volumes/Public/ariel.sparsebundle, status: 45
+May 22 04:20:54 ariel com.apple.backupd[6949]: Backup failed with error: 20
+May 22 04:20:55 ariel com.apple.backupd[6949]: Ejected Time Machine network volume.
+
+こういう場合には、以下を試してみます。
+**
+[なお、これらの作業は自己責任でお願いします。]{style=&ldquo;color:#ff0000;&rdquo;}
+[私の環境ではうまく行きましたが、すべての環境でうまく行くとは限りません。]{style=&ldquo;color:#ff0000;&rdquo;}
+**
+
+
+Time
+Machineバックアップに失敗すると、ディレクトリ名に日付／時間がついてしまうので、それを元に戻す。
+$ mv ariel_XXXXXXXXXXXX_2011-05-21-113228.sparsebundle ariel_XXXXXXXXXXXX.sparsebundle
+
+
+
+変更禁止フラグがたっている(らしい)ので、それを解除。
+$ chflags nouchg ariel_XXXXXXXXXXXX.sparsebundle
+
+
+
+以下のファイル内容の修正を行う。
+$ vim ariel_XXXXXXXXXXXX.sparsebundle/com.apple.TimeMachine.MachineID.plist
+
+        VerificationState
+  2
+
+を
+        VerificationState
+  1
+
+に変更。
+
+
+変更禁止フラグを再度設定。
+$ chflags uchg ariel_XXXXXXXXXXXX.sparsebundle
+
+
+
+再度、バックアップを試してみる。
+
+
+＃まぁ、本当に大丈夫なのかどうかは、リストアしてみるまでわかりませんが。。w
+参考サイト: mtaneda’s diary -
+続・Time Machine
+によるバックアップの検証が完了しました。信頼性を向上するために、新規バックアップの作成が必要になりました。"><meta name=author content="Masayuki Igawa"><link rel=canonical href=https://igawa.io/posts/2011/05/time-machine%E3%81%8C%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%E3%81%A7%E3%81%97%E3%81%9F%E3%81%A7%E5%A4%B1%E6%95%97%E3%81%97%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AB%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8/><link crossorigin=anonymous href=/assets/css/stylesheet.987d551cdd092d8da451805d60d63e0d671e3a1a995a5f3e18d5dfd22623e655.css integrity="sha256-mH1VHN0JLY2kUYBdYNY+DWceOhqZWl8+GNXf0iYj5lU=" rel="preload stylesheet" as=style><link rel=icon href=https://igawa.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://igawa.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://igawa.io/favicon-32x32.png><link rel=apple-touch-icon href=https://igawa.io/apple-touch-icon.png><link rel=mask-icon href=https://igawa.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=ja href=https://igawa.io/posts/2011/05/time-machine%E3%81%8C%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%E3%81%A7%E3%81%97%E3%81%9F%E3%81%A7%E5%A4%B1%E6%95%97%E3%81%97%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AB%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-M8ZXKW4C73"></script><script>var doNotTrack=!1,dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes";if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-M8ZXKW4C73")}</script><meta property="og:url" content="https://igawa.io/posts/2011/05/time-machine%E3%81%8C%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%E3%81%A7%E3%81%97%E3%81%9F%E3%81%A7%E5%A4%B1%E6%95%97%E3%81%97%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AB%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8/"><meta property="og:site_name" content="What's done is done"><meta property="og:title" content="Time Machineが「マウントできませんでした」で失敗したときに試してみること"><meta property="og:description" content="現在、Time MachineをNAS上のボリュームで使っているのですが、たまに、 「マウントできませんでした」 という感じのエラーが発生し、バックアップができなくなることがあります。 そのとき、/var/log/system.logには以下の様な出力がありました。
+May 22 04:20:49 ariel com.apple.backupd[6949]: Error 45 creating backup disk image May 22 04:20:49 ariel com.apple.backupd[6949]: Failed to create disk image /Volumes/Public/ariel.sparsebundle, status: 45 May 22 04:20:54 ariel com.apple.backupd[6949]: Backup failed with error: 20 May 22 04:20:55 ariel com.apple.backupd[6949]: Ejected Time Machine network volume. こういう場合には、以下を試してみます。 ** [なお、これらの作業は自己責任でお願いします。]{style=“color:#ff0000;”} [私の環境ではうまく行きましたが、すべての環境でうまく行くとは限りません。]{style=“color:#ff0000;”} **
+Time Machineバックアップに失敗すると、ディレクトリ名に日付／時間がついてしまうので、それを元に戻す。
+$ mv ariel_XXXXXXXXXXXX_2011-05-21-113228.sparsebundle ariel_XXXXXXXXXXXX.sparsebundle 変更禁止フラグがたっている(らしい)ので、それを解除。
+$ chflags nouchg ariel_XXXXXXXXXXXX.sparsebundle 以下のファイル内容の修正を行う。
+$ vim ariel_XXXXXXXXXXXX.sparsebundle/com.apple.TimeMachine.MachineID.plist VerificationState 2 を
+VerificationState 1 に変更。
+変更禁止フラグを再度設定。
+$ chflags uchg ariel_XXXXXXXXXXXX.sparsebundle 再度、バックアップを試してみる。
+＃まぁ、本当に大丈夫なのかどうかは、リストアしてみるまでわかりませんが。。w
+参考サイト: mtaneda’s diary - 続・Time Machine によるバックアップの検証が完了しました。信頼性を向上するために、新規バックアップの作成が必要になりました。"><meta property="og:locale" content="ja"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2011-05-22T05:20:00+09:00"><meta property="article:modified_time" content="2011-05-22T05:20:00+09:00"><meta property="article:tag" content="Apple"><meta property="article:tag" content="Mac"><meta property="article:tag" content="Timemachine"><meta name=twitter:card content="summary"><meta name=twitter:title content="Time Machineが「マウントできませんでした」で失敗したときに試してみること"><meta name=twitter:description content="現在、Time MachineをNAS上のボリュームで使っているのですが、たまに、 「マウントできませんでした」 という感じのエラーが発生し、バックアップができなくなることがあります。 そのとき、/var/log/system.logには以下の様な出力がありました。
+May 22 04:20:49 ariel com.apple.backupd[6949]: Error 45 creating backup disk image May 22 04:20:49 ariel com.apple.backupd[6949]: Failed to create disk image /Volumes/Public/ariel.sparsebundle, status: 45 May 22 04:20:54 ariel com.apple.backupd[6949]: Backup failed with error: 20 May 22 04:20:55 ariel com.apple.backupd[6949]: Ejected Time Machine network volume. こういう場合には、以下を試してみます。 ** [なお、これらの作業は自己責任でお願いします。]{style=“color:#ff0000;”} [私の環境ではうまく行きましたが、すべての環境でうまく行くとは限りません。]{style=“color:#ff0000;”} **
+Time Machineバックアップに失敗すると、ディレクトリ名に日付／時間がついてしまうので、それを元に戻す。
+$ mv ariel_XXXXXXXXXXXX_2011-05-21-113228.sparsebundle ariel_XXXXXXXXXXXX.sparsebundle 変更禁止フラグがたっている(らしい)ので、それを解除。
+$ chflags nouchg ariel_XXXXXXXXXXXX.sparsebundle 以下のファイル内容の修正を行う。
+$ vim ariel_XXXXXXXXXXXX.sparsebundle/com.apple.TimeMachine.MachineID.plist VerificationState 2 を
+VerificationState 1 に変更。
+変更禁止フラグを再度設定。
+$ chflags uchg ariel_XXXXXXXXXXXX.sparsebundle 再度、バックアップを試してみる。
+＃まぁ、本当に大丈夫なのかどうかは、リストアしてみるまでわかりませんが。。w
+参考サイト: mtaneda’s diary - 続・Time Machine によるバックアップの検証が完了しました。信頼性を向上するために、新規バックアップの作成が必要になりました。"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://igawa.io/posts/"},{"@type":"ListItem","position":2,"name":"Time Machineが「マウントできませんでした」で失敗したときに試してみること","item":"https://igawa.io/posts/2011/05/time-machine%E3%81%8C%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%E3%81%A7%E3%81%97%E3%81%9F%E3%81%A7%E5%A4%B1%E6%95%97%E3%81%97%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AB%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Time Machineが「マウントできませんでした」で失敗したときに試してみること","name":"Time Machineが「マウントできませんでした」で失敗したときに試してみること","description":"現在、Time MachineをNAS上のボリュームで使っているのですが、たまに、 「マウントできませんでした」 という感じのエラーが発生し、バックアップができなくなることがあります。 そのとき、/var/log/system.logには以下の様な出力がありました。\nMay 22 04:20:49 ariel com.apple.backupd[6949]: Error 45 creating backup disk image May 22 04:20:49 ariel com.apple.backupd[6949]: Failed to create disk image /Volumes/Public/ariel.sparsebundle, status: 45 May 22 04:20:54 ariel com.apple.backupd[6949]: Backup failed with error: 20 May 22 04:20:55 ariel com.apple.backupd[6949]: Ejected Time Machine network volume. こういう場合には、以下を試してみます。 ** [なお、これらの作業は自己責任でお願いします。]{style=\u0026ldquo;color:#ff0000;\u0026rdquo;} [私の環境ではうまく行きましたが、すべての環境でうまく行くとは限りません。]{style=\u0026ldquo;color:#ff0000;\u0026rdquo;} **\nTime Machineバックアップに失敗すると、ディレクトリ名に日付／時間がついてしまうので、それを元に戻す。\n$ mv ariel_XXXXXXXXXXXX_2011-05-21-113228.sparsebundle ariel_XXXXXXXXXXXX.sparsebundle 変更禁止フラグがたっている(らしい)ので、それを解除。\n$ chflags nouchg ariel_XXXXXXXXXXXX.sparsebundle 以下のファイル内容の修正を行う。\n$ vim ariel_XXXXXXXXXXXX.sparsebundle/com.apple.TimeMachine.MachineID.plist VerificationState 2 を\nVerificationState 1 に変更。\n変更禁止フラグを再度設定。\n$ chflags uchg ariel_XXXXXXXXXXXX.sparsebundle 再度、バックアップを試してみる。\n＃まぁ、本当に大丈夫なのかどうかは、リストアしてみるまでわかりませんが。。w\n参考サイト: mtaneda’s diary - 続・Time Machine によるバックアップの検証が完了しました。信頼性を向上するために、新規バックアップの作成が必要になりました。\n","keywords":["Apple","Mac","timemachine"],"articleBody":"現在、Time MachineをNAS上のボリュームで使っているのですが、たまに、 「マウントできませんでした」 という感じのエラーが発生し、バックアップができなくなることがあります。 そのとき、/var/log/system.logには以下の様な出力がありました。\nMay 22 04:20:49 ariel com.apple.backupd[6949]: Error 45 creating backup disk image May 22 04:20:49 ariel com.apple.backupd[6949]: Failed to create disk image /Volumes/Public/ariel.sparsebundle, status: 45 May 22 04:20:54 ariel com.apple.backupd[6949]: Backup failed with error: 20 May 22 04:20:55 ariel com.apple.backupd[6949]: Ejected Time Machine network volume. こういう場合には、以下を試してみます。 ** [なお、これらの作業は自己責任でお願いします。]{style=“color:#ff0000;”} [私の環境ではうまく行きましたが、すべての環境でうまく行くとは限りません。]{style=“color:#ff0000;”} **\nTime Machineバックアップに失敗すると、ディレクトリ名に日付／時間がついてしまうので、それを元に戻す。\n$ mv ariel_XXXXXXXXXXXX_2011-05-21-113228.sparsebundle ariel_XXXXXXXXXXXX.sparsebundle 変更禁止フラグがたっている(らしい)ので、それを解除。\n$ chflags nouchg ariel_XXXXXXXXXXXX.sparsebundle 以下のファイル内容の修正を行う。\n$ vim ariel_XXXXXXXXXXXX.sparsebundle/com.apple.TimeMachine.MachineID.plist VerificationState 2 を\nVerificationState 1 に変更。\n変更禁止フラグを再度設定。\n$ chflags uchg ariel_XXXXXXXXXXXX.sparsebundle 再度、バックアップを試してみる。\n＃まぁ、本当に大丈夫なのかどうかは、リストアしてみるまでわかりませんが。。w\n参考サイト: mtaneda’s diary - 続・Time Machine によるバックアップの検証が完了しました。信頼性を向上するために、新規バックアップの作成が必要になりました。\n","wordCount":"89","inLanguage":"ja","datePublished":"2011-05-22T05:20:00+09:00","dateModified":"2011-05-22T05:20:00+09:00","author":{"@type":"Person","name":"Masayuki Igawa"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://igawa.io/posts/2011/05/time-machine%E3%81%8C%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%E3%81%A7%E3%81%97%E3%81%9F%E3%81%A7%E5%A4%B1%E6%95%97%E3%81%97%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AB%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8/"},"publisher":{"@type":"Organization","name":"What's done is done","logo":{"@type":"ImageObject","url":"https://igawa.io/favicon.ico"}}}</script></head><body id=top><header class=header><nav class=header-nav><div class=logo><a href=https://igawa.io/ accesskey=h title="What's done is done (Alt + H)">What's done is done</a><div class=logo-switches><button id=theme-toggle class=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg class="moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg class="sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu class=menu><li><a href=https://igawa.io/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://igawa.io/categories/ title=Categories><span>Categories</span></a></li><li><a href=https://igawa.io/tags/ title=Tags><span>Tags</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><nav class=breadcrumbs role=navigation aria-label=Breadcrumb><a href=/>ホーム</a>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg>
+<a href=/posts/>Posts</a>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg></nav><h1 class="post-title entry-hint-parent">Time Machineが「マウントできませんでした」で失敗したときに試してみること</h1><div class=post-meta><span title='2011-05-22 05:20:00 +0900 +0900'>2011-05-22</span>&nbsp;·&nbsp;<span>1 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span></div></header><div class="post-content md-content"><p>現在、Time MachineをNAS上のボリュームで使っているのですが、たまに、
+「マウントできませんでした」
+という感じのエラーが発生し、バックアップができなくなることがあります。
+そのとき、/var/log/system.logには以下の様な出力がありました。</p><pre><code>May 22 04:20:49 ariel com.apple.backupd[6949]: Error 45 creating backup disk image
+May 22 04:20:49 ariel com.apple.backupd[6949]: Failed to create disk image /Volumes/Public/ariel.sparsebundle, status: 45
+May 22 04:20:54 ariel com.apple.backupd[6949]: Backup failed with error: 20
+May 22 04:20:55 ariel com.apple.backupd[6949]: Ejected Time Machine network volume.
+</code></pre><p>こういう場合には、以下を試してみます。
+**
+[なお、これらの作業は自己責任でお願いします。]{style=&ldquo;color:#ff0000;&rdquo;}
+[私の環境ではうまく行きましたが、すべての環境でうまく行くとは限りません。]{style=&ldquo;color:#ff0000;&rdquo;}
+**</p><ol><li><p>Time
+Machineバックアップに失敗すると、ディレクトリ名に日付／時間がついてしまうので、それを元に戻す。</p><pre><code>$ mv ariel_XXXXXXXXXXXX_2011-05-21-113228.sparsebundle ariel_XXXXXXXXXXXX.sparsebundle
+</code></pre></li><li><p>変更禁止フラグがたっている(らしい)ので、それを解除。</p><pre><code>$ chflags nouchg ariel_XXXXXXXXXXXX.sparsebundle
+</code></pre></li><li><p>以下のファイル内容の修正を行う。</p><pre><code>$ vim ariel_XXXXXXXXXXXX.sparsebundle/com.apple.TimeMachine.MachineID.plist
+
+        VerificationState
+  2
+</code></pre><p>を</p><pre><code>        VerificationState
+  1
+</code></pre><p>に変更。</p></li><li><p>変更禁止フラグを再度設定。</p><pre><code>$ chflags uchg ariel_XXXXXXXXXXXX.sparsebundle
+</code></pre></li><li><p>再度、バックアップを試してみる。</p></li></ol><p>＃まぁ、本当に大丈夫なのかどうかは、リストアしてみるまでわかりませんが。。w</p><p>参考サイト: <a href=http://d.hatena.ne.jp/mtaneda/>mtaneda’s diary</a> -
+<a href=http://d.hatena.ne.jp/mtaneda/20101207/1291670192>続・Time Machine
+によるバックアップの検証が完了しました。信頼性を向上するために、新規バックアップの作成が必要になりました。</a></p></div><footer class=post-footer><ul class=post-tags><li><a href=https://igawa.io/tags/apple/>Apple</a></li><li><a href=https://igawa.io/tags/mac/>Mac</a></li><li><a href=https://igawa.io/tags/timemachine/>Timemachine</a></li></ul><nav class=paginav><a class=prev href=https://igawa.io/posts/2011/06/mac-%E3%81%A7-scala-%E3%81%A8-lift-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B1-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E7%B7%A8/><span class=title>« 前へ</span>
+<span>Mac で Scala と Lift を使ってみる(1) インストール編</span>
+</a><a class=next href=https://igawa.io/posts/2011/04/%E7%95%B0%E3%81%AA%E3%82%8B%E3%83%9E%E3%82%B7%E3%83%B3%E3%81%A7%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%81%84%E3%81%9Flvm%E3%83%9C%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%A0%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95fedora14/><span class=title>次へ »</span>
+<span>異なるマシンで使用していたLVMボリュームを使用する方法(Fedora14)</span></a></nav></footer><div id=disqus_thread></div><script>var disqus_config=function(){this.page.url="https://igawa.io/posts/2011/05/time-machine%E3%81%8C%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%E3%81%A7%E3%81%97%E3%81%9F%E3%81%A7%E5%A4%B1%E6%95%97%E3%81%97%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AB%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B%E3%81%93%E3%81%A8/",this.page.identifier="2011-05-22-time-machinegamauntodekimasendeshita-deshi-bai-shitatokinishi-shitemirukoto"};(function(){var e=document,t=e.createElement("script");t.src="https://afterstack.disqus.com/embed.js",t.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(t)})()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></article></main><footer class=footer><span>&copy; 2026 <a href=https://igawa.io/>What's done is done</a></span> ·
+<span>Powered by
+<a href="https://gohugo.io/?utm_source=papermod" rel=noopener target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top id=top-link class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey=g><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up"><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var toplink=document.getElementById("top-link");window.onscroll=function(){const e=window.innerHeight;document.body.scrollTop>e||document.documentElement.scrollTop>e?toplink.classList.remove("hidden"):toplink.classList.add("hidden")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="コピー";function s(){t.innerHTML="コピーされました!",setTimeout(()=>{t.innerHTML="コピー"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>

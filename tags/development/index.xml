@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Development on What's done is done</title><link>https://igawa.io/tags/development/</link><description>Recent content in Development on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Mon, 18 Sep 2017 00:00:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/development/index.xml" rel="self" type="application/rss+xml"/><item><title>Retrospective for PTG in Denver 2017</title><link>https://igawa.io/posts/2017/09/retrospective-denver-ptg-2017/</link><pubDate>Mon, 18 Sep 2017 00:00:00 +0900</pubDate><guid>https://igawa.io/posts/2017/09/retrospective-denver-ptg-2017/</guid><description>&lt;p&gt;I&amp;rsquo;d like to run a retrospective myself against the PTG in Denver, briefly.&lt;/p&gt;
+&lt;h2 id="positive"&gt;Positive&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;keep to have conversation with QA and the other people&lt;/li&gt;
+&lt;li&gt;got new conversation with QA and some people&lt;/li&gt;
+&lt;li&gt;had a lot of fun time in a social meeting&lt;/li&gt;
+&lt;li&gt;(almost) only one pub was very convenient :)&lt;/li&gt;
+&lt;li&gt;got productive time&lt;/li&gt;
+&lt;li&gt;got to know new QA related things like Zuul v3/o-h, OPNFV testing&lt;/li&gt;
+&lt;li&gt;got a Happy hour with Parrots&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="negative"&gt;Negative&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;still very poor English, conversation skill, it didn&amp;rsquo;t often go well.&lt;/li&gt;
+&lt;li&gt;still poor technical skill&lt;/li&gt;
+&lt;li&gt;tooooo much drunk&lt;/li&gt;
+&lt;li&gt;very hectic on the last day (Saturday)&lt;/li&gt;
+&lt;li&gt;in very bad jet lag days&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="action"&gt;Action&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Learn and train English and conversation skill&lt;/p&gt;</description></item><item><title>初めてのOpenStackリポジトリ追加</title><link>https://igawa.io/posts/2016/12/adding-a-new-repo-to-openstack/</link><pubDate>Sat, 17 Dec 2016 00:00:00 +0900</pubDate><guid>https://igawa.io/posts/2016/12/adding-a-new-repo-to-openstack/</guid><description>&lt;p&gt;これは、 &lt;a href="http://www.adventar.org/calendars/1739"&gt;OpenStack Advent Calendar 2016&lt;/a&gt; のエントリです。&lt;/p&gt;
+&lt;p&gt;先日、OpenStack に新たなリポジトリを追加したので、そのときに感じたことや経験を共有してみたいと思います。&lt;/p&gt;
+&lt;h2 id="ナニを追加したのか"&gt;ナニを追加したのか？&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://launchpad.net/coverage2sql"&gt;coverage2sql&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://coverage.readthedocs.io/"&gt;Coverage.py&lt;/a&gt; によって生成される、単体テストなどの coverage データを、データベースに時系列な
+データとして保持するための小さなツールです。最終的には、 &lt;a href="https://launchpad.net/openstack-health"&gt;openstack-health&lt;/a&gt; と連携して、
+単体テストの coverage 推移を表示したいと考えてます。もちろん、:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;「カバレッジ100%だったら品質が良いわけじゃないよね？」
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;という話はあります。しかし、少なくとも、カバレッジ率が意図せず下落傾向な場合は、問題がある可能性があり、
+それを知ることができるというのが重要と考えています。&lt;/p&gt;
+&lt;p&gt;このような性質のコンポーネントのため、独立したプロジェクトではなく、 &lt;a href="https://wiki.openstack.org/wiki/QA"&gt;Quality Assurance&lt;/a&gt;
+プログラム配下のリポジトリとして追加しました。このようなリポジトリを追加することはなかなか無いこととは
+思いますが、新しいリポジトリを追加した経験は、もしかしたら誰かの役に立つかもしれないと思い、共有します。&lt;/p&gt;
+&lt;p&gt;なお、似たようなツールとして &lt;a href="https://launchpad.net/subunit2sql"&gt;subunit2sql&lt;/a&gt; と言うものがあるのですが、それにインスパイアされて作りました。&lt;/p&gt;
+&lt;h2 id="新しいリポジトリの追加方法"&gt;新しいリポジトリの追加方法&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://docs.openstack.org/infra/manual/creators.html"&gt;Project Creator&amp;rsquo;s Guide&lt;/a&gt; をまずは読みます。ステップ・バイ・ステップで丁寧に説明された
+ドキュメントです。このとおりやっていれば、あまり迷うことも無いと思います。&lt;/p&gt;
+&lt;p&gt;大きな流れとしては、&lt;/p&gt;
+&lt;h1 id="launchpad-設定"&gt;Launchpad 設定&lt;/h1&gt;
+&lt;h1 id="pypi-設定"&gt;PyPI 設定&lt;/h1&gt;
+&lt;h1 id="openstack-infraproject-config-openstackgovernance-設定"&gt;openstack-infra/project-config, openstack/governance 設定&lt;/h1&gt;
+&lt;h1 id="レビュー待ち対応"&gt;レビュー待ち＆対応&lt;/h1&gt;
+&lt;h1 id="新しいリポジトリ作成最初でもok"&gt;新しいリポジトリ作成（最初でもOK）&lt;/h1&gt;
+&lt;h1 id="gateジョブ実行動作確認"&gt;Gateジョブ実行動作確認&lt;/h1&gt;
+&lt;h1 id="初期バージョンリリース"&gt;初期バージョンリリース&lt;/h1&gt;
+&lt;h1 id="heading"&gt;&amp;hellip;&lt;/h1&gt;
+&lt;p&gt;という感じになると思います。&lt;/p&gt;
+&lt;h2 id="ドキュメントに書いてないこと"&gt;ドキュメントに書いてないこと&lt;/h2&gt;
+&lt;p&gt;ドキュメントのとおりに進んでいって、特に困ったことにはならなかったので、あまりないですね。強いて言えば、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Launchpadの登録で、少しだけ記述が現状とあってない部分があった。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-&amp;gt; &lt;a href="https://review.openstack.org/#/c/393651"&gt;ドキュメントの修正パッチ&lt;/a&gt; を出しています。（まだ誰もレビューしてくれないけどｗ）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ubuntuバージョンはxenialが基本(trustyが必要でなければそのジョブは入れないほうが良い)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;くらいでしょうか。&lt;/p&gt;
+&lt;h2 id="感想まとめ"&gt;感想・まとめ&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;リポジトリ追加は比較的カンタン&lt;/li&gt;
+&lt;li&gt;OpenStack Infra job設定わかりづらい。。(他のを真似してやればある程度は想像つくけど)&lt;/li&gt;
+&lt;li&gt;でも、OpenStack インフラを使って自動ビルド・テストが実行できるのはとても便利&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="参考url"&gt;参考URL&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://docs.openstack.org/infra/manual/creators.html"&gt;Project Creator’s Guide&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;coverage2sql&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://launchpad.net/coverage2sql"&gt;https://launchpad.net/coverage2sql&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;openstack/governance: &lt;a href="https://review.openstack.org/#/c/394276/"&gt;Add coverage2sql to Quality Assurance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;openstack-infra/project-config: &lt;a href="https://review.openstack.org/#/c/393634/"&gt;Add coverage2sql project&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;</description></item></channel></rss>

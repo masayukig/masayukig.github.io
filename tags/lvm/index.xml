@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>LVM on What's done is done</title><link>https://igawa.io/tags/lvm/</link><description>Recent content in LVM on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Fri, 20 Mar 2009 09:13:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/lvm/index.xml" rel="self" type="application/rss+xml"/><item><title>lvremove出来ない！(Can't remove open logical volume "hogehoge")</title><link>https://igawa.io/posts/2009/03/lvremove%E5%87%BA%E6%9D%A5%E3%81%AA%E3%81%84cant-remove-open-logical-volume-hogehoge/</link><pubDate>Fri, 20 Mar 2009 09:13:00 +0900</pubDate><guid>https://igawa.io/posts/2009/03/lvremove%E5%87%BA%E6%9D%A5%E3%81%AA%E3%81%84cant-remove-open-logical-volume-hogehoge/</guid><description>&lt;p&gt;lvmを使っていて、必要なくなったlvを削除するためのコマンドである、
+lvremove
+というのがあります。
+先日、iscsiテスト用に作ったlvを、これを使って削除しようとしたら、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo lvremove /dev/vg01/iscsi
+Can't remove open logical volume &amp;quot;iscsi&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;と、言われて削除できなかったので、その解決方法など。
+結論を言うと、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo dmsetup ls
+vg01-iscsip3 (254, 4)
+vg01-iscsip1 (254, 3)
+vg01-iscsi (254, 0)
+$ sudo dmsetup remove vg01-iscsip1
+$ sudo dmsetup remove vg01-iscsip3
+$ sudo dmsetup remove vg01-iscsi
+$ sudo lvremove /dev/vg01/iscsi
+Logical volume &amp;quot;iscsi&amp;quot; successfully removed
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;と、すれば良い模様。
+最初、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo dmsetup remove vg01-iscsi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;をやったのですが、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;device-mapper: remove ioctl failed: Device or resource busy
+Command failed
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;と、言われて削除できませんでした。&lt;/p&gt;
+&lt;p&gt;vg01-iscsip1,3というのが(多分)勝手に作られていて、
+それがあったために、vg01-iscsiを削除できなかったのではないかと思っています。&lt;/p&gt;
+&lt;p&gt;#記憶は若干あやふやなので、参考程度に。。&lt;/p&gt;</description></item><item><title>Linux2.6系でxfsでLVM のsnapshotをとりたい場合は、xfs_freeze不要？</title><link>https://igawa.io/posts/2008/12/linux26%E7%B3%BB%E3%81%A7xfs%E3%81%A7lvm-%E3%81%AEsnapshot%E3%82%92%E3%81%A8%E3%82%8A%E3%81%9F%E3%81%84%E5%A0%B4%E5%90%88%E3%81%AFxfs_freeze%E4%B8%8D%E8%A6%81/</link><pubDate>Mon, 15 Dec 2008 04:14:00 +0900</pubDate><guid>https://igawa.io/posts/2008/12/linux26%E7%B3%BB%E3%81%A7xfs%E3%81%A7lvm-%E3%81%AEsnapshot%E3%82%92%E3%81%A8%E3%82%8A%E3%81%9F%E3%81%84%E5%A0%B4%E5%90%88%E3%81%AFxfs_freeze%E4%B8%8D%E8%A6%81/</guid><description>&lt;p&gt;xfsではsnapshotをとる場合に、整合性を保つために
+&lt;code&gt;xfs_freeze&lt;/code&gt;
+というコマンドがある。&lt;/p&gt;
+&lt;p&gt;が、これは、Linux2.6系では実行してはいけないらしい。
+(最近の2.6.27とかでも同様かは不明。)&lt;/p&gt;
+&lt;p&gt;情報元：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://ja.wikipedia.org/wiki/XFS#.E3.82.B9.E3.83.8A.E3.83.83.E3.83.97.E3.82.B7.E3.83.A7.E3.83.83.E3.83.88"&gt;http://ja.wikipedia.org/wiki/XFS#.E3.82.B9.E3.83.8A.E3.83.83.E3.83.97.E3.82.B7.E3.83.A7.E3.83.83.E3.83.88&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://labs.unoh.net/2006/09/lvm_xfs_mysql.html"&gt;http://labs.unoh.net/2006/09/lvm_xfs_mysql.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://marc.info/?l=linux-lvm&amp;amp;m=111014382900031&amp;amp;w=2"&gt;http://marc.info/?l=linux-lvm&amp;amp;m=111014382900031&amp;amp;w=2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>LVM xfs使用時の領域拡張方法</title><link>https://igawa.io/posts/2008/12/lvm-xfs%E4%BD%BF%E7%94%A8%E6%99%82%E3%81%AE%E9%A0%98%E5%9F%9F%E6%8B%A1%E5%BC%B5%E6%96%B9%E6%B3%95/</link><pubDate>Sun, 14 Dec 2008 08:04:00 +0900</pubDate><guid>https://igawa.io/posts/2008/12/lvm-xfs%E4%BD%BF%E7%94%A8%E6%99%82%E3%81%AE%E9%A0%98%E5%9F%9F%E6%8B%A1%E5%BC%B5%E6%96%B9%E6%B3%95/</guid><description>&lt;p&gt;LVMは動的に領域を拡張できて便利なわけですが、ファイルシステムに、
+xfsを使用している時の、領域拡張法法を記しておきます。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;# lvresize -L +500M /dev/vg01/lv01# xfs_growfs /mnt/lv01-mountpoint&lt;/code&gt;
+xfs_growfsは、マウントポイントをパラメータにとるので注意。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;# xfs_growfs &amp;ndash;help
+xfs_growfs: invalid option &amp;ndash; &amp;lsquo;-&amp;rsquo;
+Usage: xfs_growfs [options] mountpoint&lt;/p&gt;
+&lt;p&gt;Options:
+-d grow data/metadata section
+-l grow log section
+-r grow realtime section
+-n don&amp;rsquo;t change anything, just show geometry
+-I allow inode numbers to exceed 32 significant bits
+-i convert log from external to internal format
+-t alternate location for mount table (/etc/mtab)
+-x convert log from internal to external format
+-D size grow data/metadata section to size blks
+-L size grow/shrink log section to size blks
+-R size grow realtime section to size blks
+-e size set realtime extent size to size blks
+-m imaxpct set inode max percent to imaxpct
+-V print version information&lt;/p&gt;</description></item><item><title>LVMリサイズ</title><link>https://igawa.io/posts/2008/12/lvm%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA/</link><pubDate>Sat, 13 Dec 2008 06:49:00 +0900</pubDate><guid>https://igawa.io/posts/2008/12/lvm%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA/</guid><description>&lt;p&gt;LVMで領域のリサイズをしようと思ったら、ちょっとハマったので、メモ。
+通常、ext3（などのリサイズできるファイルシステムを使っているなら、
+&lt;code&gt;# lvresize -L +500M /dev/vg01/lv01# ext2online /dev/vg01/lv01&lt;/code&gt;
+とすれば、領域を拡張できるはずなのだが、今回、何度上記を実行しても、
+&lt;code&gt;# ext2online /dev/vg01/lv01ext2online v1.1.19 - 2001/03/18 for EXT2FS 0.5bfound 0 not 20 at 0[19]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;ext2online: unable to resize /dev/mapper/vg01-lv01&lt;/p&gt;
+&lt;p&gt;などと出力されて、拡張できなかった。&lt;/p&gt;
+&lt;p&gt;以下の手順で取りあえず拡張できたっぽい。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;# umount /lv01-mountpoint# e2fsck -f /dev/vg01/lv01 &amp;amp;&amp;amp; resize2fs /dev/vg01/lv01# mount /dev/vg01/lv01 /lv01-mountpoint&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;dfコマンド上は、拡張された様に見える。
+＃実運用でどうなるかはシラネw&lt;/p&gt;</description></item></channel></rss>

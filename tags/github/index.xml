@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Github on What's done is done</title><link>https://igawa.io/tags/github/</link><description>Recent content in Github on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Mon, 25 Dec 2017 00:00:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>Keeping my contribution during a month</title><link>https://igawa.io/posts/2017/12/keep-contribution-during-a-month/</link><pubDate>Mon, 25 Dec 2017 00:00:00 +0900</pubDate><guid>https://igawa.io/posts/2017/12/keep-contribution-during-a-month/</guid><description>&lt;p&gt;I have some feelings about keeping my contribution through a month on
+&lt;a href="https://github.com/masayukig/"&gt;My GitHub profile&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="whats-the-tricks"&gt;What&amp;rsquo;s the tricks?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Have your own github repositories and contribute them.&lt;/li&gt;
+&lt;li&gt;Dump out everything to the github repositories as possible.&lt;/li&gt;
+&lt;li&gt;Forget the limitation. We can commit everything to github repositories even if your blog posts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="what-are-the-positivenegativeaction-items"&gt;What are the Positive/Negative/Action Items?&lt;/h2&gt;
+&lt;h3 id="positive"&gt;Positive&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Almost green!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="negtive"&gt;Negtive&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Only white on Dec. 13&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It was green for some days. But it was turned to white suddenly. This might be caused by this rule: &lt;a href="https://help.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile/"&gt;https://help.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Not only actual code but also issues and blog posts&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="action"&gt;Action&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Keep it, anyway. Even if it&amp;rsquo;ll be a blog post or issue.&lt;/li&gt;
+&lt;li&gt;Mixed contribution like issues, comments, push patches are better to avoid an accident.&lt;/li&gt;
+&lt;li&gt;Try to write more code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;</description></item><item><title>ssh git@github.comで「Agent admitted failure to sign using the key. 」と なったら...</title><link>https://igawa.io/posts/2010/10/ssh-git@githubcom%E3%81%A7agent-admitted-failure-to-sign-using-the-key-%E3%81%A8-%E3%81%AA%E3%81%A3%E3%81%9F%E3%82%89/</link><pubDate>Mon, 11 Oct 2010 05:49:00 +0900</pubDate><guid>https://igawa.io/posts/2010/10/ssh-git@githubcom%E3%81%A7agent-admitted-failure-to-sign-using-the-key-%E3%81%A8-%E3%81%AA%E3%81%A3%E3%81%9F%E3%82%89/</guid><description>&lt;p&gt;ssh &lt;a href="mailto:git@github.com"&gt;git@github.com&lt;/a&gt;で「Agent admitted failure to sign using the key.
+」となったら、&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssh-add ~/.ssh/id_rsa&lt;/code&gt;
+と、するとうまくいくかもしれない。&lt;/p&gt;
+&lt;p&gt;参考サイト：&lt;a href="http://ripan27.wordpress.com/2010/04/01/ssh-gitgithub-com-agent-admitted-failure-to-sign-using-the-key-permission-denied-publickey/"&gt;http://ripan27.wordpress.com/2010/04/01/ssh-gitgithub-com-agent-admitted-failure-to-sign-using-the-key-permission-denied-publickey/&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

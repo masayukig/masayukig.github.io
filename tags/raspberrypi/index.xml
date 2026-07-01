@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Raspberrypi on What's done is done</title><link>https://igawa.io/tags/raspberrypi/</link><description>Recent content in Raspberrypi on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sat, 09 Feb 2013 21:51:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml"/><item><title>Raspberry Pi購入記＆到着したので、Macを使ってセットアップしてみる #raspberrypi</title><link>https://igawa.io/posts/2013/02/raspberry-pi%E8%B3%BC%E5%85%A5%E8%A8%98%E5%88%B0%E7%9D%80%E3%81%97%E3%81%9F%E3%81%AE%E3%81%A7mac%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B-raspberrypi/</link><pubDate>Sat, 09 Feb 2013 21:51:00 +0900</pubDate><guid>https://igawa.io/posts/2013/02/raspberry-pi%E8%B3%BC%E5%85%A5%E8%A8%98%E5%88%B0%E7%9D%80%E3%81%97%E3%81%9F%E3%81%AE%E3%81%A7mac%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B-raspberrypi/</guid><description>&lt;h3 id="履歴"&gt;履歴&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;2013-01-12 Raspberry Piを購入&lt;/li&gt;
+&lt;li&gt;2013-01-26 購入時のOrder
+confirmation以外、なんの音沙汰もないので、どういう状況なのか問い合わせ実施。(購入時には「Standard
+Delivery &lt;strong&gt;(Despatch expected within 1 week(s))&lt;/strong&gt;」というOrder
+confirmationが来たのだが)&lt;/li&gt;
+&lt;li&gt;2013-02-01(頃)Raspberry Pi到着。&lt;/li&gt;
+&lt;li&gt;2013-02-03
+とりあえず、近所の100均でコンパクトなmicroUSBケーブルを購入し、Amazonで&lt;a href="http://www.amazon.co.jp/gp/product/B0093IE9S4/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=B0093IE9S4&amp;amp;linkCode=as2&amp;amp;tag=hughundercons-22"&gt;TDK
+LoR SDHCカード 32GB Class10
+T-SDHC32GB10-FFP&lt;/a&gt;&lt;img alt="picture" loading="lazy" src="http://www.assoc-amazon.jp/e/ir?t=hughundercons-22&amp;l=as2&amp;o=9&amp;a=B0093IE9S4"&gt;
+を購入。&lt;/li&gt;
+&lt;li&gt;2013-02-04 AmazonからSDHCカード到着。早い。&lt;/li&gt;
+&lt;li&gt;2013-02-05
+rswww.comから、「あなたの注文は1/16にdispatchされている。日本にはだいたい21営業日かかるのでそれでも到着しないようなら、再度連絡ください」的なメールが届く。「もう、届いたよ」と連絡しようと思ったが、それを処理するのも向こう側が大変かなと思い、とりあえずやめておく。&lt;/li&gt;
+&lt;li&gt;2013-02-10 &lt;a href="http://www.raspberrypi.org/downloads"&gt;http://www.raspberrypi.org/downloads&lt;/a&gt; からRaspbian
+&amp;ldquo;wheezy&amp;quot;のイメージをダウンロードし、Mac で
+ddコマンドを使ってSDHCに書き込む。Raspberry
+Piへ差し込み、microUSBケーブルとLANケーブルも差し込んでしばらく待つ。&lt;/li&gt;
+&lt;li&gt;LED的なものがピカピカ光って、動作している風。なお、HDMIが直接使えるディスプレイがそばにないので、SSHが使えるようになっていることを祈りつつ、
+Macからarp
+-aコマンドを叩いて、それっぽいIPアドレスへアクセスしてみる。(Default
+login &amp;ndash; Username: pi/Password: raspberry)&lt;/li&gt;
+&lt;li&gt;ログインできた！&lt;/li&gt;
+&lt;li&gt;で、Please run &amp;lsquo;sudo raspi-config&amp;rsquo;をやって、様子を見ようと思っている
+&amp;lt;- いまここ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="mac-で-sdhc-カードへ-dd-を使って書き込む時の注意"&gt;Mac で SDHC カードへ dd を使って書き込む時の注意&lt;/h3&gt;
+&lt;p&gt;Linux なら 差し込まれたデバイスの /dev/sd? が何かを確認して、 dd
+コマンドで書き込めばいいと思います。 Mac でも
+ほぼ同様ですが、dfコマンドで表示されたデバイス名そのままだとダメらしいので、
+脳内変換が必要なようです(本当？)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;-&amp;gt; % df -h
+Filesystem Size Used Avail Capacity iused ifree %iused Mounted on
+/dev/disk1s1 29Gi 2.3Mi 29Gi 1% 0 0 100% /Volumes/NO NAME
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;/dev/disk1s1がSDHC カードなのですが、この場合、 /dev/rdisk1
+とddコマンドに渡す必要が有るようです。
+なぜ、「&lt;strong&gt;r&lt;/strong&gt;」を付けないとダメなのかはよくわかりませんw
+**
+追記**&amp;ldquo;r&amp;quot;は、rawデバイスってことらしい
+  &lt;a href="http://d.hatena.ne.jp/pasela/20121222"&gt;http://d.hatena.ne.jp/pasela/20121222&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;-&amp;gt; % time sudo dd bs=1m if=2012-12-16-wheezy-raspbian.img of=/dev/rdisk1
+1850+0 records in
+1850+0 records out
+1939865600 bytes transferred in 141.153967 secs (13742905 bytes/sec)
+sudo dd bs=1m if=2012-12-16-wheezy-raspbian.img of=/dev/rdisk1 0.03s user 1.10s system 0% cpu 2:21.20 total
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="今回得られたもの"&gt;今回得られたもの&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Raspberry Piの注文〜到着には、3週間程度はかかること&lt;/li&gt;
+&lt;li&gt;Macで SDHC へ dd で書き込むときの方法&lt;/li&gt;
+&lt;li&gt;Raspberry Pi使用中はほんのり温かい&lt;/li&gt;
+&lt;li&gt;ラズベリーのつづりはRas&lt;strong&gt;p&lt;/strong&gt;berryであることｗ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="アフィリエイト"&gt;アフィリエイト&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as4&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;ref=ss_til&amp;amp;asins=B0093IE9S4"&gt;http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as4&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;ref=ss_til&amp;amp;asins=B0093IE9S4&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

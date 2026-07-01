@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>C言語 on What's done is done</title><link>https://igawa.io/tags/c%E8%A8%80%E8%AA%9E/</link><description>Recent content in C言語 on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sun, 08 Aug 2010 07:31:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/c%E8%A8%80%E8%AA%9E/index.xml" rel="self" type="application/rss+xml"/><item><title>CソースとC++ソース共存実験(その1)</title><link>https://igawa.io/posts/2010/08/c%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%A8c-%E3%82%BD%E3%83%BC%E3%82%B9%E5%85%B1%E5%AD%98%E5%AE%9F%E9%A8%93%E3%81%9D%E3%81%AE1/</link><pubDate>Sun, 08 Aug 2010 07:31:00 +0900</pubDate><guid>https://igawa.io/posts/2010/08/c%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%A8c-%E3%82%BD%E3%83%BC%E3%82%B9%E5%85%B1%E5%AD%98%E5%AE%9F%E9%A8%93%E3%81%9D%E3%81%AE1/</guid><description>&lt;p&gt;CソースとC++ソースの共存を実験してみた。
+とは言っても、printf()とcout&amp;lt;&amp;lt; を同時に使ってみただけ。&lt;/p&gt;
+&lt;p&gt;同時に使えるんですね。まずは、第一歩。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ cat c_cpp_test.cpp #include #include using namespace std;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;int main()
+{
+printf(&amp;ldquo;Hello, world\n&amp;rdquo;);
+cout &amp;lt;&amp;lt; &amp;ldquo;Hello, world2\n&amp;rdquo;;&lt;/p&gt;
+&lt;p&gt;return 0;
+}
+$ g++ c_cpp_test.cpp
+$ ./a.out
+Hello, world
+Hello, world2
+$&lt;/p&gt;
+&lt;p&gt;続きがあるのか？は未定w&lt;/p&gt;</description></item><item><title>SQLiteでprepared statementとBLOBを使って構造体を保存(C言語)その2 #sqlite</title><link>https://igawa.io/posts/2010/06/sqlite%E3%81%A7prepared-statement%E3%81%A8blob%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E6%A7%8B%E9%80%A0%E4%BD%93%E3%82%92%E4%BF%9D%E5%AD%98c%E8%A8%80%E8%AA%9E%E3%81%9D%E3%81%AE2-sqlite/</link><pubDate>Sat, 19 Jun 2010 21:25:00 +0900</pubDate><guid>https://igawa.io/posts/2010/06/sqlite%E3%81%A7prepared-statement%E3%81%A8blob%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E6%A7%8B%E9%80%A0%E4%BD%93%E3%82%92%E4%BF%9D%E5%AD%98c%E8%A8%80%E8%AA%9E%E3%81%9D%E3%81%AE2-sqlite/</guid><description>&lt;p&gt;と言うわけで、&lt;a href="http://www.0r2.info/blog/2010/06/19/sqlite%E3%81%A7prepared-statement%E3%81%A8blob%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E6%A7%8B%E9%80%A0%E4%BD%93%E3%82%92%E4%BF%9D%E5%AD%98c%E8%A8%80%E8%AA%9E/"&gt;前回&lt;/a&gt;に続き今回は、前回作成したDBファイルをsqlite3コマンドで見てみます。&lt;/p&gt;
+&lt;p&gt;以下の様に構造体はBLOBで格納したのですが、最初のメンバーはsqlite3コマンドで見られます。
+Oracleではちょっと考えられませんが、この辺がsqliteらしいとこでしょうか。
+&lt;code&gt;$ sqlite3 test.dbSQLite version 3.6.22Enter &amp;quot;.help&amp;quot; for instructionsEnter SQL statements terminated with a &amp;quot;;&amp;quot;sqlite&amp;gt; select * from member;0|Isono Katsuo1|Isono Wakame2|Huguta Tarao3|Huguta Masuo4|Huguta Sazaesqlite&amp;gt; &lt;/code&gt;&lt;/p&gt;</description></item><item><title>SQLiteでprepared statementとBLOBを使って構造体を保存(C言語)その1 #sqlite</title><link>https://igawa.io/posts/2010/06/sqlite%E3%81%A7prepared-statement%E3%81%A8blob%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E6%A7%8B%E9%80%A0%E4%BD%93%E3%82%92%E4%BF%9D%E5%AD%98c%E8%A8%80%E8%AA%9E%E3%81%9D%E3%81%AE1-sqlite/</link><pubDate>Sat, 19 Jun 2010 08:28:00 +0900</pubDate><guid>https://igawa.io/posts/2010/06/sqlite%E3%81%A7prepared-statement%E3%81%A8blob%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E6%A7%8B%E9%80%A0%E4%BD%93%E3%82%92%E4%BF%9D%E5%AD%98c%E8%A8%80%E8%AA%9E%E3%81%9D%E3%81%AE1-sqlite/</guid><description>&lt;p&gt;SQLiteのC言語APIを使ってprepared statementで、BLOBを使ってみます。&lt;/p&gt;
+&lt;p&gt;基本的には、以下のサイトに書いてある方法ですが、日本語で書いてみることにします。
+&lt;a href="http://www.sqlite.org/capi3ref.html#sqlite3_stmt"&gt;http://www.sqlite.org/capi3ref.html#sqlite3_stmt&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;sqlite3_prepare_v2()(あるいはそれに類するもの)を使って、sqlite3_stmtのオブジェクトを作る。&lt;/li&gt;
+&lt;li&gt;sqlite3_bind_*() インターフェースを使ってパラメータに値をBind。&lt;/li&gt;
+&lt;li&gt;sqlite3_step()を使ってSQL実行。(sqlite3_step()は何回でも実行できる)&lt;/li&gt;
+&lt;li&gt;sqlite3_reset()を使ってstatementをリセットして、step
+2に戻る。これは何度でもできるし、やらなくても良い。&lt;/li&gt;
+&lt;li&gt;sqlite3_finalize()を使ってオブジェクトを破棄する。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;というわけで、いきなりサンプルコードw
+便利だなーと思ったのは、sqlite3_errmsg()関数。dbを引数にすると、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ gcc -o sqlite_test sqlite_test.c -lsqlite3
+$ chmod 000 test.db
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;と、DBファイルを読み書き出来ないようにして、実行すると、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ./sqlite_test
+open error:14, unable to open database file
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;と、何でエラーになったのかが表示されます。&lt;/p&gt;
+&lt;p&gt;さらに、このDBファイルをsqlite3コマンドで見たときの話は次回のエントリに書きたいと思います。&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#include
+#include
+#include
+#include
+struct human {
+char name[256];
+int age;
+int height;
+int sex;
+};
+int main(int argc, char *argv[])
+{
+struct human human[5] = {
+{ &amp;#34;Isono Katsuo&amp;#34;, 32, 168, 0 },
+{ &amp;#34;Isono Wakame&amp;#34;, 29, 158, 1 },
+{ &amp;#34;Huguta Tarao&amp;#34;, 20, 180, 0 },
+{ &amp;#34;Huguta Masuo&amp;#34;, 52, 178, 0 },
+{ &amp;#34;Huguta Sazae&amp;#34;, 48, 161, 1 } };
+sqlite3 *db;
+sqlite3_stmt *dropStmt = NULL;
+sqlite3_stmt *createStmt = NULL;
+sqlite3_stmt *selectStmt = NULL;
+sqlite3_stmt *insertStmt = NULL;
+char *drop_tbl_sql = &amp;#34;drop table member&amp;#34;;
+char *create_tbl_sql = &amp;#34;create table member&amp;#34;
+&amp;#34;(id INTEGER PRIMARY KEY,&amp;#34;
+&amp;#34;human BLOB NOT NULL )&amp;#34;;
+char *insert_tbl_sql = &amp;#34;INSERT INTO member (id, human) values (?, ?)&amp;#34;;
+char *select_tbl_sql = &amp;#34;select human from member where id = ?&amp;#34;;
+char *pzTail;
+int rc = 0;
+int exitcode = 0;
+rc = sqlite3_open(&amp;#34;test.db&amp;#34;, &amp;amp;db);
+//rc = sqlite3_open(&amp;#34;:memory:&amp;#34;, &amp;amp;db);
+if (rc != SQLITE_OK) {
+printf(&amp;#34;open error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+exitcode = 1;
+goto end;
+}
+/* cleanup. ignore error. */
+sqlite3_prepare_v2(db, drop_tbl_sql, -1, &amp;amp;dropStmt, NULL);
+sqlite3_step(dropStmt);
+rc = sqlite3_prepare_v2(db, create_tbl_sql, -1, &amp;amp;createStmt, NULL);
+if (rc != SQLITE_OK) {
+printf(&amp;#34;create error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+exitcode = 1;
+goto end;
+}
+rc = sqlite3_step(createStmt);
+if (rc != SQLITE_DONE) {
+printf(&amp;#34;create error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+exitcode = 1;
+goto end;
+}
+rc = sqlite3_prepare_v2(db, insert_tbl_sql, -1, &amp;amp;insertStmt, NULL);
+if (rc != SQLITE_OK) {
+printf(&amp;#34;insert error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+exitcode = 1;
+goto end;
+}
+rc = sqlite3_prepare_v2(db, select_tbl_sql, -1, &amp;amp;selectStmt, NULL);
+if (rc != SQLITE_OK) {
+printf(&amp;#34;select error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+exitcode = 1;
+goto end;
+}
+int i = 0;
+for (i = 0; i &amp;lt; 5; i++) {
+sqlite3_reset(insertStmt);
+sqlite3_bind_int(insertStmt, 1, i);
+sqlite3_bind_blob(insertStmt, 2, &amp;amp;human[i], sizeof(struct human), SQLITE_STATIC);
+rc = sqlite3_step(insertStmt);
+if (rc != SQLITE_DONE) {
+printf(&amp;#34;insert error:%d, %s\n&amp;#34;, rc, sqlite3_errmsg(db));
+exitcode = 1;
+goto end;
+}
+}
+printf(&amp;#34;-------------------------------------\n&amp;#34;);
+for (i = 0; i &amp;lt; 5; i++) {
+sqlite3_reset(selectStmt);
+sqlite3_bind_int(selectStmt, 1, i);
+rc = sqlite3_step(selectStmt);
+//printf(&amp;#34;select result:%d\n&amp;#34;, rc);
+if (rc == SQLITE_ROW) {
+struct human *t = (struct human*)sqlite3_column_blob(selectStmt, 0);
+printf(&amp;#34;ID: %d\n\t name: %s\n\t age: %d\n\t height: %d\n\t sex: %s\n&amp;#34;,
+i, t-&amp;gt;name, t-&amp;gt;age, t-&amp;gt;height, t-&amp;gt;sex == 0 ? &amp;#34;M&amp;#34; : &amp;#34;F&amp;#34;);
+printf(&amp;#34;-------------------------------------\n&amp;#34;);
+}
+}
+end:
+sqlite3_finalize(selectStmt);
+sqlite3_finalize(insertStmt);
+sqlite3_finalize(createStmt);
+sqlite3_finalize(dropStmt);
+return exitcode;
+}
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Valgrindの使い方</title><link>https://igawa.io/posts/2010/05/valgrind%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</link><pubDate>Thu, 20 May 2010 21:43:00 +0900</pubDate><guid>https://igawa.io/posts/2010/05/valgrind%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</guid><description>&lt;p&gt;&lt;a href="http://kzk9.net/column/valgrind-memcheck.html"&gt;http://kzk9.net/column/valgrind-memcheck.html&lt;/a&gt;
+自分用にメモメモ。
+メモリリークを検出出来るらしい。&lt;/p&gt;</description></item><item><title>C/C++でGC</title><link>https://igawa.io/posts/2008/07/cc-%E3%81%A7gc/</link><pubDate>Mon, 07 Jul 2008 23:55:00 +0900</pubDate><guid>https://igawa.io/posts/2008/07/cc-%E3%81%A7gc/</guid><description>&lt;p&gt;Java野郎(私)が、C/C++でメンドイものの一つに、&lt;/p&gt;
+&lt;p&gt;**「malloc()したらfree()しなきゃならん」**というものがある。&lt;/p&gt;
+&lt;p&gt;大体、誰も参照しなくなったら、もはや、誰も触れないんだから、勝手に開放してほしいのだ。&lt;/p&gt;
+&lt;h6 id="でもそれをc言語自体に望むのは無理だって言うのもわかってる"&gt;でも、それをC言語自体に望むのは無理だって言うのもわかってる。&lt;/h6&gt;
+&lt;p&gt;どうにかなんないの？と思っていたら、C/C++でGCするためのライブラリがあるということを知りました。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.hpl.hp.com/personal/Hans_Boehm/gc/"&gt;http://www.hpl.hp.com/personal/Hans_Boehm/gc/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;自分(個人)でプログラム書くときは、これ使います。多分。&lt;/p&gt;
+&lt;p&gt;(いちいち、malloc()/free()なんてしてられっか)&lt;/p&gt;</description></item></channel></rss>

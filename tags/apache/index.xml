@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Apache on What's done is done</title><link>https://igawa.io/tags/apache/</link><description>Recent content in Apache on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sat, 12 Feb 2011 05:44:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/apache/index.xml" rel="self" type="application/rss+xml"/><item><title>このブログはサブドメイン(b.0r2.info)で運用することにした</title><link>https://igawa.io/posts/2011/02/%E3%81%93%E3%81%AE%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AF%E3%82%B5%E3%83%96%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3b0r2info%E3%81%A7%E9%81%8B%E7%94%A8%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AB%E3%81%97%E3%81%9F/</link><pubDate>Sat, 12 Feb 2011 05:44:00 +0900</pubDate><guid>https://igawa.io/posts/2011/02/%E3%81%93%E3%81%AE%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AF%E3%82%B5%E3%83%96%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3b0r2info%E3%81%A7%E9%81%8B%E7%94%A8%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AB%E3%81%97%E3%81%9F/</guid><description>&lt;p&gt;今まで、このブログは、
+&lt;a href="http://www.0r2.info/blog"&gt;http://www.0r2.info/blog&lt;/a&gt;
+で運用していたが、
+&lt;a href="http://b.0r2.info/"&gt;http://b.0r2.info/&lt;/a&gt;
+で、運用することにしました。&lt;/p&gt;
+&lt;p&gt;私の環境の場合、(*.0r2.infoがこのサーバにくるようにしているので)
+DNS設定は特にいじる必要はなく、
+WordPress設定の、
+&lt;code&gt;WordPress のアドレス (URL) http://www.0r2.info/blog/サイトのアドレス (URL) http://www.0r2.info/blog/&lt;/code&gt;
+を
+&lt;code&gt;WordPress のアドレス (URL) http://b.0r2.info/サイトのアドレス (URL) http://b.0r2.info/&lt;/code&gt;
+に変更し、/etc/httpd/conf/httpd.confに、以下を追加し、httpdをrestart。
+[php]&lt;/p&gt;
+&lt;p&gt;ServerAdmin &lt;a href="mailto:m@0r2.info"&gt;m@0r2.info&lt;/a&gt;
+DocumentRoot /var/www/html/b
+ServerName b.0r2.info
+ErrorLog logs/b.0r2.info-error_log
+CustomLog logs/b.0r2.info-access_log common&lt;/p&gt;
+&lt;p&gt;[/php]
+で、基本的にはいいのですが、これだと、検索サイト、ブックマーク等からの
+古い記事へのリンクが軒並み、Not Foundになってしまいます。&lt;/p&gt;
+&lt;p&gt;これを解決する手段を探していたところ、以下の記事を見つけ、解決しました。
+&lt;a href="http://wordpress.matometa.net/archives/20080219223538"&gt;www.付きドメインとサブドメインの.htaccessリダイレクト&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;上記記事を参考に、以下の記述を追加して、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# cat /var/www/html/.htaccess
+Redirect permanent /blog http://b.0r2.info/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;思い通りの動作：
+&lt;a href="http://www.0r2.info/blog/about-2/"&gt;http://www.0r2.info/blog/about-2/&lt;/a&gt;
+へアクセスすると、
+&lt;a href="http://b.0r2.info/about-2/"&gt;http://b.0r2.info/about-2/&lt;/a&gt;
+へ自動的に転送される様になりました。&lt;/p&gt;
+&lt;p&gt;ほかのサイトもあるので、はやいとこ、wordpressの複数ブログ機能を使いたいところです。。&lt;/p&gt;</description></item><item><title>apacheでアクセス数が少ない場合のメモリ節約方法</title><link>https://igawa.io/posts/2010/10/apache%E3%81%A7%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%95%B0%E3%81%8C%E5%B0%91%E3%81%AA%E3%81%84%E5%A0%B4%E5%90%88%E3%81%AE%E3%83%A1%E3%83%A2%E3%83%AA%E7%AF%80%E7%B4%84%E6%96%B9%E6%B3%95/</link><pubDate>Mon, 11 Oct 2010 06:09:00 +0900</pubDate><guid>https://igawa.io/posts/2010/10/apache%E3%81%A7%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%95%B0%E3%81%8C%E5%B0%91%E3%81%AA%E3%81%84%E5%A0%B4%E5%90%88%E3%81%AE%E3%83%A1%E3%83%A2%E3%83%AA%E7%AF%80%E7%B4%84%E6%96%B9%E6%B3%95/</guid><description>&lt;p&gt;現在このサイトは、さくらVPSをつかっていて、いまのところ、メモリが512MBとそれほど多いわけではない。
+で、
+「何だか動作が遅いなー」
+と思って、muninなどのツールを使って状況を確認して見たところ、swapしまくりで、
+ディスクIOしまくりだったので、apacheの設定を以下の様に変更してメモリ節約をしてみることにしました。&lt;/p&gt;
+&lt;p&gt;以下の様に変更してみたら、圧倒的にレスポンススピードが向上しました。&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# git diff f65246dc7a075a10537640ac9f6e6641ef812569 httpd/
+diff --git a/httpd/conf/httpd.conf b/httpd/conf/httpd.conf
+index 5c6710a..7e41ddc 100644
+--- a/httpd/conf/httpd.conf
++++ b/httpd/conf/httpd.conf
+@@ -41,7 +41,8 @@
+# Don&amp;#39;t give away too much information about all the subcomponents
+# we are running. Comment out this line if you don&amp;#39;t mind remote sites
+# finding out what major optional modules you are running
+-ServerTokens OS
++#ServerTokens OS
++ServerTokens Prod
+#
+# ServerRoot: The top of the directory tree under which the server&amp;#39;s
+@@ -98,11 +99,11 @@ KeepAliveTimeout 15
+# MaxClients: maximum number of server processes allowed to start
+# MaxRequestsPerChild: maximum number of requests a server process serves
+-StartServers 8
+-MinSpareServers 5
+-MaxSpareServers 20
+-ServerLimit 256
+-MaxClients 256
++StartServers 2
++MinSpareServers 2
++MaxSpareServers 4
++ServerLimit 25
++MaxClients 25
+MaxRequestsPerChild 4000
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;まぁ、もちろん、このサイトのアクセス数が少ないからこの設定が有効なだけなので、
+ある程度以上になると、この設定ではいろいろと不都合が出ると思いますが、
+そうなったら、その時対処方法(別のサーバにするとか)を考えるということにしておきます。&lt;/p&gt;</description></item></channel></rss>

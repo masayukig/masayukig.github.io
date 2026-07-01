@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Misc on What's done is done</title><link>https://igawa.io/categories/misc/</link><description>Recent content in Misc on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Fri, 08 Dec 2017 00:00:00 +0900</lastBuildDate><atom:link href="https://igawa.io/categories/misc/index.xml" rel="self" type="application/rss+xml"/><item><title>The architecture of this blog</title><link>https://igawa.io/posts/2017/12/blog-architecture-and-tools/</link><pubDate>Fri, 08 Dec 2017 00:00:00 +0900</pubDate><guid>https://igawa.io/posts/2017/12/blog-architecture-and-tools/</guid><description>&lt;p&gt;I already posted_ about switching this blog to igawa.io. But I think
+it&amp;rsquo;s good to share the information about the architecture of this blog
+for you and especially me :)&lt;/p&gt;
+&lt;h2 id="architecturetools"&gt;Architecture/tools&lt;/h2&gt;
+&lt;h3 id="github-pages-cloudflare"&gt;GitHub Pages, CloudFlare&lt;/h3&gt;
+&lt;p&gt;So, currently, this blog uses &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; which can be used as a
+free blog system. And I also use it with my custom domain and HTTPS
+with CloudFlare_.&lt;/p&gt;
+&lt;h3 id="pelican"&gt;Pelican&lt;/h3&gt;
+&lt;p&gt;And I&amp;rsquo;m using pelican_ as a blog system which is really powerful and
+written by python. That means I can improve and fix if I need it. And
+&lt;a href="https://github.com/masayukig/masayukig.github.io/issues"&gt;I&amp;rsquo;ve done it&lt;/a&gt; before.&lt;/p&gt;
+&lt;h3 id="branches"&gt;Branches&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/masayukig/masayukig.github.io/issues"&gt;Here&lt;/a&gt; is
+the repository of this blog. This has two main branches, one
+is master and the other is source. &lt;code&gt;master&lt;/code&gt; branch is for managing
+generated contents. &lt;code&gt;source&lt;/code&gt; branch is for managing source code such
+as blog post rst/md, imange, files, etc. So, the two branches are
+completely different. I feel this is a bit weird, but I couldn&amp;rsquo;t find
+a better solution so far. And It seems it works well. I don&amp;rsquo;t need to
+change the workflow.&lt;/p&gt;</description></item><item><title>Switched my blog to igawa.io</title><link>https://igawa.io/posts/2017/11/migrated-my-blog-to-igawaio/</link><pubDate>Sun, 26 Nov 2017 00:00:00 +0900</pubDate><guid>https://igawa.io/posts/2017/11/migrated-my-blog-to-igawaio/</guid><description>&lt;p&gt;I changed my blog to my original domain. My blogs were split to some
+different domains due to my laziness. So I decided to merge them.&lt;/p&gt;
+&lt;p&gt;I was trying to change it to wordpress.com first. But it&amp;rsquo;s not my
+taste :-p So, I decided to use pelican_.&lt;/p&gt;
+&lt;p&gt;I actually had two blogs on Blogger(br.0r2.info) and github
+pages(afterstack.net). So I needed to export br.0r2.info data to merge
+github pages. And I also wanted to change the domain to use igawa.io_.&lt;/p&gt;
+&lt;p&gt;Firstly, I was trying to use wordpress.com, so I exported my blogger
+data, and imported it on wordpress. And next, I also exported the
+wordprss data, and I imported the data with using pelican-import_ like
+this.&lt;/p&gt;</description></item></channel></rss>

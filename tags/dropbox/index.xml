@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Dropbox on What's done is done</title><link>https://igawa.io/tags/dropbox/</link><description>Recent content in Dropbox on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Tue, 20 Mar 2012 20:28:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/dropbox/index.xml" rel="self" type="application/rss+xml"/><item><title>Dropbox Automatorを使って写真を全自動でEvernoteへアップロードする(若干注意が必要) #evernote #dropbox</title><link>https://igawa.io/posts/2012/03/dropbox-automator%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E5%86%99%E7%9C%9F%E3%82%92%E5%85%A8%E8%87%AA%E5%8B%95%E3%81%A7evernote%E3%81%B8%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E8%8B%A5%E5%B9%B2%E6%B3%A8%E6%84%8F%E3%81%8C%E5%BF%85%E8%A6%81-evernote-dropbox/</link><pubDate>Tue, 20 Mar 2012 20:28:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/dropbox-automator%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E5%86%99%E7%9C%9F%E3%82%92%E5%85%A8%E8%87%AA%E5%8B%95%E3%81%A7evernote%E3%81%B8%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E8%8B%A5%E5%B9%B2%E6%B3%A8%E6%84%8F%E3%81%8C%E5%BF%85%E8%A6%81-evernote-dropbox/</guid><description>&lt;p&gt;[はじめに]{.Apple-style-span style=&amp;ldquo;font-size:large;&amp;rdquo;}
+&lt;a href="http://wappwolf.com/dropboxautomator/"&gt;Dropbox
+Automator&lt;/a&gt;というのを使って、iPhone,
+iPad, Android, デジカメで
+撮影した写真を全自動でEvernoteへアップロードする方法を記します。&lt;/p&gt;
+&lt;p&gt;ただし、注意点があるので、それは最後に書きます。&lt;/p&gt;
+&lt;p&gt;[前提条件]{.Apple-style-span style=&amp;ldquo;font-size:large;&amp;rdquo;}&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/1202/24/news092.html"&gt;Dropboxの写真や動画の自動アップロードサービス&lt;/a&gt;が有効になっていること&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;[方法]{.Apple-style-span style=&amp;ldquo;font-size:large;&amp;rdquo;}
+[&lt;a href="http://wappwolf.com/dropboxautomator/"&gt;Dropbox
+Automator&lt;/a&gt; にアクセスし、あとは以下の画像の通り進めます。]{.Apple-style-span
+style=&amp;ldquo;font-size:small;&amp;rdquo;}&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/9556c-dropboxautomator-01.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/9556c-dropboxautomator-01.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/8a791-dropboxautomator-02.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/8a791-dropboxautomator-02.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/10778-dropboxautomator-03.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/10778-dropboxautomator-03.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/ac3fe-dropboxautomator-04.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/ac3fe-dropboxautomator-04.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/fbad5-dropboxautomator-05.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/fbad5-dropboxautomator-05.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/5a13c-dropboxautomator-06.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/5a13c-dropboxautomator-06.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/72eb7-dropboxautomator-07.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/72eb7-dropboxautomator-07.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/ac0c5-dropboxautomator-08.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/ac0c5-dropboxautomator-08.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/019bc-dropboxautomator-10.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/019bc-dropboxautomator-10.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/dcb4a-dropboxautomator-11.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/dcb4a-dropboxautomator-11.png?w=241"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[注意点]{.Apple-style-span style=&amp;ldquo;font-size:large;&amp;rdquo;}&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Evernoteの月間最大アップロードは、60MB(無料アカウント)または1GB(プレミアムアカウント)です。既に、Camera
+Uploadsフォルダにある程度の枚数写真がある場合、月間最大アップロード量を超えてしまうかもしれません。(その場合、次の月までアップロードできなくなります。。)&lt;/li&gt;
+&lt;li&gt;Evernoteへアップロード処理されると、「processed」というフォルダに勝手に移動されてしまうようです。これで、今後もDropbox的にうまく動作するのか？はよくわかっていません。。&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>Dropbox 100GBプラン登場</title><link>https://igawa.io/posts/2009/06/dropbox-100gb%E3%83%97%E3%83%A9%E3%83%B3%E7%99%BB%E5%A0%B4/</link><pubDate>Thu, 04 Jun 2009 05:26:00 +0900</pubDate><guid>https://igawa.io/posts/2009/06/dropbox-100gb%E3%83%97%E3%83%A9%E3%83%B3%E7%99%BB%E5%A0%B4/</guid><description>&lt;p&gt;&lt;a href="http://www.0r2.info/blog/2009/04/20/dropbox-100gb%e3%83%97%e3%83%a9%e3%83%b3%e7%99%bb%e5%a0%b4%ef%bc%9f/"&gt;先日のエントリー&lt;/a&gt;で、「Dropboxに100GBのプランが追加されたかも」と書いたのですが、
+いつの間にか、正式に追加された様です。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.getdropbox.com/plans"&gt;https://www.getdropbox.com/plans&lt;/a&gt;
+に、「100GB」のプランが表示されています。
+ただ、&lt;strong&gt;$199/year&lt;/strong&gt;は、ちょっと高いので、
+100GBプランへのアップグレードは躊躇しています。。
+より良い方法はないだろうか。。&lt;/p&gt;</description></item><item><title>Dropbox 100GBプラン登場？</title><link>https://igawa.io/posts/2009/04/dropbox-100gb-plan/</link><pubDate>Mon, 20 Apr 2009 05:26:00 +0900</pubDate><guid>https://igawa.io/posts/2009/04/dropbox-100gb-plan/</guid><description>&lt;p&gt;ファイルのバックアップ、履歴管理、複数PCでのファイル共有に最適な
+&lt;a href="https://www.getdropbox.com/referrals/NTQ1NjE1MTk"&gt;Dropbox&lt;/a&gt;(左記は（最大）+500MBになる紹介リンク)
+ですが、100GBのプランが登場しているようです。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.getdropbox.com/upgrade?plan=100"&gt;https://www.getdropbox.com/upgrade?plan=100&lt;/a&gt;(利用登録者しか見られないかもしれません。)&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://forums.getdropbox.com/topic.php?id=8278&amp;amp;replies=23#post-52700"&gt;http://forums.getdropbox.com/topic.php?id=8278&amp;amp;replies=23#post-52700&lt;/a&gt;
+で、知ったのですが、通常のプラン一覧
+&lt;a href="https://www.getdropbox.com/plans"&gt;https://www.getdropbox.com/plans&lt;/a&gt;
+には、表示されていないので、もしかしたら、正式なものではないのかも。&lt;/p&gt;
+&lt;p&gt;私は、50GBプランを契約中なのですが、既に90%以上の使用率になっているので、
+さらなる容量のプランが出てくるのは、非常にうれしいです。&lt;/p&gt;</description></item></channel></rss>

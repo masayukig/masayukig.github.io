@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Snapshot on What's done is done</title><link>https://igawa.io/tags/snapshot/</link><description>Recent content in Snapshot on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Mon, 15 Dec 2008 04:14:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/snapshot/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux2.6系でxfsでLVM のsnapshotをとりたい場合は、xfs_freeze不要？</title><link>https://igawa.io/posts/2008/12/linux26%E7%B3%BB%E3%81%A7xfs%E3%81%A7lvm-%E3%81%AEsnapshot%E3%82%92%E3%81%A8%E3%82%8A%E3%81%9F%E3%81%84%E5%A0%B4%E5%90%88%E3%81%AFxfs_freeze%E4%B8%8D%E8%A6%81/</link><pubDate>Mon, 15 Dec 2008 04:14:00 +0900</pubDate><guid>https://igawa.io/posts/2008/12/linux26%E7%B3%BB%E3%81%A7xfs%E3%81%A7lvm-%E3%81%AEsnapshot%E3%82%92%E3%81%A8%E3%82%8A%E3%81%9F%E3%81%84%E5%A0%B4%E5%90%88%E3%81%AFxfs_freeze%E4%B8%8D%E8%A6%81/</guid><description>&lt;p&gt;xfsではsnapshotをとる場合に、整合性を保つために
+&lt;code&gt;xfs_freeze&lt;/code&gt;
+というコマンドがある。&lt;/p&gt;
+&lt;p&gt;が、これは、Linux2.6系では実行してはいけないらしい。
+(最近の2.6.27とかでも同様かは不明。)&lt;/p&gt;
+&lt;p&gt;情報元：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://ja.wikipedia.org/wiki/XFS#.E3.82.B9.E3.83.8A.E3.83.83.E3.83.97.E3.82.B7.E3.83.A7.E3.83.83.E3.83.88"&gt;http://ja.wikipedia.org/wiki/XFS#.E3.82.B9.E3.83.8A.E3.83.83.E3.83.97.E3.82.B7.E3.83.A7.E3.83.83.E3.83.88&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://labs.unoh.net/2006/09/lvm_xfs_mysql.html"&gt;http://labs.unoh.net/2006/09/lvm_xfs_mysql.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://marc.info/?l=linux-lvm&amp;amp;m=111014382900031&amp;amp;w=2"&gt;http://marc.info/?l=linux-lvm&amp;amp;m=111014382900031&amp;amp;w=2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

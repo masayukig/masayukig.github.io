@@ -1,0 +1,143 @@
+<!doctype html><html lang=ja dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Mac に vagrant+devstack を入れてみる - その１ #openstack #devstack #vagrant | What's done is done</title><meta name=keywords content="vagrant"><meta name=description content="何するのか?
+vagrant_devstack っていうのを使って、vagrant+devstack
+という素敵な環境を、
+Mac OS Mountain Lion(10.8.2)に 作ってみる。
+一応、vagrant_devstackのREADMEには、Macに対する言及があるので、
+できるんじゃないかと妄想。
+はじめに
+まずは、
+https://github.com/bcwaldon/vagrant_devstack
+のREADMEにしたがって、
+
+Virtualboxインストール
+gem update &ndash;system
+gem install vagrant
+
+を行った。。。。
+困ったこと発生
+が、「3.」で問題発生。
+% gem install vagrant
+Fetching: archive-tar-minitar-0.5.2.gem (100%)
+Fetching: json-1.5.4.gem (100%)
+Building native extensions.  This could take a while...
+ERROR:  Error installing vagrant:
+ ERROR: Failed to build gem native extension.
+
+        /Users/igawa/.rvm/rubies/ruby-1.9.3-p194/bin/ruby extconf.rb
+checking for re.h... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of
+necessary libraries and/or headers.  Check the mkmf.log file for more
+details.  You may need configuration options.
+
+と、こんな感じのエラーが出力され、インストール出来ない。
+解決策
+ググってみると、
+【Mac】【RubyGems】/usr/bin/gcc-4.2
+がない！
+という記事を見つけたので、それに習って、以下のようにシンボリックリンクを
+張ってみました。
+% sudo ln -s /usr/bin/llvm-gcc-4.2 /usr/bin/gcc-4.2
+
+結果、
+% gem install vagrant
+Building native extensions.  This could take a while&mldr;
+Fetching: log4r-1.1.10.gem (100%)
+Fetching: net-ssh-2.2.2.gem (100%)
+Fetching: net-scp-1.0.4.gem (100%)
+Fetching: vagrant-1.0.5.gem (100%)
+Successfully installed json-1.5.4
+Successfully installed log4r-1.1.10
+Successfully installed net-ssh-2.2.2
+Successfully installed net-scp-1.0.4
+Successfully installed vagrant-1.0.5
+5 gems installed"><meta name=author content="Masayuki Igawa"><link rel=canonical href=https://igawa.io/posts/2012/10/mac-%E3%81%AB-vagrant-devstack-%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B-%E3%81%9D%E3%81%AE%EF%BC%91-openstack-devstack-vagrant/><link crossorigin=anonymous href=/assets/css/stylesheet.987d551cdd092d8da451805d60d63e0d671e3a1a995a5f3e18d5dfd22623e655.css integrity="sha256-mH1VHN0JLY2kUYBdYNY+DWceOhqZWl8+GNXf0iYj5lU=" rel="preload stylesheet" as=style><link rel=icon href=https://igawa.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://igawa.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://igawa.io/favicon-32x32.png><link rel=apple-touch-icon href=https://igawa.io/apple-touch-icon.png><link rel=mask-icon href=https://igawa.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=ja href=https://igawa.io/posts/2012/10/mac-%E3%81%AB-vagrant-devstack-%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B-%E3%81%9D%E3%81%AE%EF%BC%91-openstack-devstack-vagrant/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-M8ZXKW4C73"></script><script>var doNotTrack=!1,dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes";if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-M8ZXKW4C73")}</script><meta property="og:url" content="https://igawa.io/posts/2012/10/mac-%E3%81%AB-vagrant-devstack-%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B-%E3%81%9D%E3%81%AE%EF%BC%91-openstack-devstack-vagrant/"><meta property="og:site_name" content="What's done is done"><meta property="og:title" content="Mac に vagrant+devstack を入れてみる - その１ #openstack #devstack #vagrant"><meta property="og:description" content="何するのか? vagrant_devstack っていうのを使って、vagrant+devstack という素敵な環境を、
+Mac OS Mountain Lion(10.8.2)に 作ってみる。 一応、vagrant_devstackのREADMEには、Macに対する言及があるので、 できるんじゃないかと妄想。
+はじめに まずは、
+https://github.com/bcwaldon/vagrant_devstack
+のREADMEにしたがって、
+Virtualboxインストール gem update –system gem install vagrant を行った。。。。 困ったこと発生 が、「3.」で問題発生。
+% gem install vagrant Fetching: archive-tar-minitar-0.5.2.gem (100%) Fetching: json-1.5.4.gem (100%) Building native extensions. This could take a while... ERROR: Error installing vagrant: ERROR: Failed to build gem native extension. /Users/igawa/.rvm/rubies/ruby-1.9.3-p194/bin/ruby extconf.rb checking for re.h... *** extconf.rb failed *** Could not create Makefile due to some reason, probably lack of necessary libraries and/or headers. Check the mkmf.log file for more details. You may need configuration options. と、こんな感じのエラーが出力され、インストール出来ない。 解決策 ググってみると、
+【Mac】【RubyGems】/usr/bin/gcc-4.2 がない！
+という記事を見つけたので、それに習って、以下のようにシンボリックリンクを
+張ってみました。
+% sudo ln -s /usr/bin/llvm-gcc-4.2 /usr/bin/gcc-4.2 結果、 % gem install vagrant Building native extensions. This could take a while… Fetching: log4r-1.1.10.gem (100%) Fetching: net-ssh-2.2.2.gem (100%) Fetching: net-scp-1.0.4.gem (100%) Fetching: vagrant-1.0.5.gem (100%) Successfully installed json-1.5.4 Successfully installed log4r-1.1.10 Successfully installed net-ssh-2.2.2 Successfully installed net-scp-1.0.4 Successfully installed vagrant-1.0.5 5 gems installed"><meta property="og:locale" content="ja"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2012-10-03T15:06:00+09:00"><meta property="article:modified_time" content="2012-10-03T15:06:00+09:00"><meta property="article:tag" content="Vagrant"><meta name=twitter:card content="summary"><meta name=twitter:title content="Mac に vagrant+devstack を入れてみる - その１ #openstack #devstack #vagrant"><meta name=twitter:description content="何するのか? vagrant_devstack っていうのを使って、vagrant+devstack という素敵な環境を、
+Mac OS Mountain Lion(10.8.2)に 作ってみる。 一応、vagrant_devstackのREADMEには、Macに対する言及があるので、 できるんじゃないかと妄想。
+はじめに まずは、
+https://github.com/bcwaldon/vagrant_devstack
+のREADMEにしたがって、
+Virtualboxインストール gem update –system gem install vagrant を行った。。。。 困ったこと発生 が、「3.」で問題発生。
+% gem install vagrant Fetching: archive-tar-minitar-0.5.2.gem (100%) Fetching: json-1.5.4.gem (100%) Building native extensions. This could take a while... ERROR: Error installing vagrant: ERROR: Failed to build gem native extension. /Users/igawa/.rvm/rubies/ruby-1.9.3-p194/bin/ruby extconf.rb checking for re.h... *** extconf.rb failed *** Could not create Makefile due to some reason, probably lack of necessary libraries and/or headers. Check the mkmf.log file for more details. You may need configuration options. と、こんな感じのエラーが出力され、インストール出来ない。 解決策 ググってみると、
+【Mac】【RubyGems】/usr/bin/gcc-4.2 がない！
+という記事を見つけたので、それに習って、以下のようにシンボリックリンクを
+張ってみました。
+% sudo ln -s /usr/bin/llvm-gcc-4.2 /usr/bin/gcc-4.2 結果、 % gem install vagrant Building native extensions. This could take a while… Fetching: log4r-1.1.10.gem (100%) Fetching: net-ssh-2.2.2.gem (100%) Fetching: net-scp-1.0.4.gem (100%) Fetching: vagrant-1.0.5.gem (100%) Successfully installed json-1.5.4 Successfully installed log4r-1.1.10 Successfully installed net-ssh-2.2.2 Successfully installed net-scp-1.0.4 Successfully installed vagrant-1.0.5 5 gems installed"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://igawa.io/posts/"},{"@type":"ListItem","position":2,"name":"Mac に vagrant+devstack を入れてみる - その１ #openstack #devstack #vagrant","item":"https://igawa.io/posts/2012/10/mac-%E3%81%AB-vagrant-devstack-%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B-%E3%81%9D%E3%81%AE%EF%BC%91-openstack-devstack-vagrant/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Mac に vagrant+devstack を入れてみる - その１ #openstack #devstack #vagrant","name":"Mac に vagrant\u002bdevstack を入れてみる - その１ #openstack #devstack #vagrant","description":"何するのか? vagrant_devstack っていうのを使って、vagrant+devstack という素敵な環境を、\nMac OS Mountain Lion(10.8.2)に 作ってみる。 一応、vagrant_devstackのREADMEには、Macに対する言及があるので、 できるんじゃないかと妄想。\nはじめに まずは、\nhttps://github.com/bcwaldon/vagrant_devstack\nのREADMEにしたがって、\nVirtualboxインストール gem update \u0026ndash;system gem install vagrant を行った。。。。 困ったこと発生 が、「3.」で問題発生。\n% gem install vagrant Fetching: archive-tar-minitar-0.5.2.gem (100%) Fetching: json-1.5.4.gem (100%) Building native extensions. This could take a while... ERROR: Error installing vagrant: ERROR: Failed to build gem native extension. /Users/igawa/.rvm/rubies/ruby-1.9.3-p194/bin/ruby extconf.rb checking for re.h... *** extconf.rb failed *** Could not create Makefile due to some reason, probably lack of necessary libraries and/or headers. Check the mkmf.log file for more details. You may need configuration options. と、こんな感じのエラーが出力され、インストール出来ない。 解決策 ググってみると、\n【Mac】【RubyGems】/usr/bin/gcc-4.2 がない！\nという記事を見つけたので、それに習って、以下のようにシンボリックリンクを\n張ってみました。\n% sudo ln -s /usr/bin/llvm-gcc-4.2 /usr/bin/gcc-4.2 結果、 % gem install vagrant Building native extensions. This could take a while\u0026hellip; Fetching: log4r-1.1.10.gem (100%) Fetching: net-ssh-2.2.2.gem (100%) Fetching: net-scp-1.0.4.gem (100%) Fetching: vagrant-1.0.5.gem (100%) Successfully installed json-1.5.4 Successfully installed log4r-1.1.10 Successfully installed net-ssh-2.2.2 Successfully installed net-scp-1.0.4 Successfully installed vagrant-1.0.5 5 gems installed\n","keywords":["vagrant"],"articleBody":"何するのか? vagrant_devstack っていうのを使って、vagrant+devstack という素敵な環境を、\nMac OS Mountain Lion(10.8.2)に 作ってみる。 一応、vagrant_devstackのREADMEには、Macに対する言及があるので、 できるんじゃないかと妄想。\nはじめに まずは、\nhttps://github.com/bcwaldon/vagrant_devstack\nのREADMEにしたがって、\nVirtualboxインストール gem update –system gem install vagrant を行った。。。。 困ったこと発生 が、「3.」で問題発生。\n% gem install vagrant Fetching: archive-tar-minitar-0.5.2.gem (100%) Fetching: json-1.5.4.gem (100%) Building native extensions. This could take a while... ERROR: Error installing vagrant: ERROR: Failed to build gem native extension. /Users/igawa/.rvm/rubies/ruby-1.9.3-p194/bin/ruby extconf.rb checking for re.h... *** extconf.rb failed *** Could not create Makefile due to some reason, probably lack of necessary libraries and/or headers. Check the mkmf.log file for more details. You may need configuration options. と、こんな感じのエラーが出力され、インストール出来ない。 解決策 ググってみると、\n【Mac】【RubyGems】/usr/bin/gcc-4.2 がない！\nという記事を見つけたので、それに習って、以下のようにシンボリックリンクを\n張ってみました。\n% sudo ln -s /usr/bin/llvm-gcc-4.2 /usr/bin/gcc-4.2 結果、 % gem install vagrant Building native extensions. This could take a while… Fetching: log4r-1.1.10.gem (100%) Fetching: net-ssh-2.2.2.gem (100%) Fetching: net-scp-1.0.4.gem (100%) Fetching: vagrant-1.0.5.gem (100%) Successfully installed json-1.5.4 Successfully installed log4r-1.1.10 Successfully installed net-ssh-2.2.2 Successfully installed net-scp-1.0.4 Successfully installed vagrant-1.0.5 5 gems installed\nっていうように先に進めました。\nようやく本番 ようやく、本来やりたかったところに入れます。\nで、更に、マニュアルに従い、\ngit clone http://github.com/bcwaldon/vagrant_devstack.git cd vagrant_devstack git submodule init git submodule update cp etc/vagrant.yaml.sample etc/vagrant.yaml vim Vagrantfile を実行。Vagrantfileは、以下の様な感じに修正。\n% git diff diff --git a/Vagrantfile b/Vagrantfile index 4aaa5fa..75bccfe 100644 --- a/Vagrantfile +++ b/Vagrantfile @@ -4,7 +4,9 @@ conf = { 'ip_prefix' =\u003e '192.168.27', 'mac_prefix' =\u003e '080027027', 'box_name' =\u003e 'precise', - 'box_url' =\u003e 'http://c479942.r42.cf2.rackcdn.com/precise64.box', + 'box_url' =\u003e 'http://dl.dropbox.com/u/1537815/precise64.box', +# 'box_url' =\u003e 'http://files.vagrantup.com/precise64.box', +# 'box_url' =\u003e 'http://c479942.r42.cf2.rackcdn.com/precise64.box', 'allocate_memory' =\u003e 1024, 'cache_dir' =\u003e 'cache/', 'ssh_dir' =\u003e '~/.ssh/', で、ここまで来たら、\nvagrant up を実行。\n[default] Box precise was not found. Fetching box from specified URL... [vagrant] Downloading with Vagrant::Downloaders::HTTP... [vagrant] Downloading box: http://dl.dropbox.com/u/1537815/precise64.box [vagrant] Progress: 7% (43960869 / 567768576) 結構時間が掛かる。待ってられないので、一眠り。。。。\n","wordCount":"252","inLanguage":"ja","datePublished":"2012-10-03T15:06:00+09:00","dateModified":"2012-10-03T15:06:00+09:00","author":{"@type":"Person","name":"Masayuki Igawa"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://igawa.io/posts/2012/10/mac-%E3%81%AB-vagrant-devstack-%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B-%E3%81%9D%E3%81%AE%EF%BC%91-openstack-devstack-vagrant/"},"publisher":{"@type":"Organization","name":"What's done is done","logo":{"@type":"ImageObject","url":"https://igawa.io/favicon.ico"}}}</script></head><body id=top><header class=header><nav class=header-nav><div class=logo><a href=https://igawa.io/ accesskey=h title="What's done is done (Alt + H)">What's done is done</a><div class=logo-switches><button id=theme-toggle class=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg class="moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg class="sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu class=menu><li><a href=https://igawa.io/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://igawa.io/categories/ title=Categories><span>Categories</span></a></li><li><a href=https://igawa.io/tags/ title=Tags><span>Tags</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><nav class=breadcrumbs role=navigation aria-label=Breadcrumb><a href=/>ホーム</a>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg>
+<a href=/posts/>Posts</a>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg></nav><h1 class="post-title entry-hint-parent">Mac に vagrant+devstack を入れてみる - その１ #openstack #devstack #vagrant</h1><div class=post-meta><span title='2012-10-03 15:06:00 +0900 +0900'>2012-10-03</span>&nbsp;·&nbsp;<span>2 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span></div></header><details class=toc><summary accesskey=c title="(Alt + C)"><span class=title>目次</span></summary><div class=inner><ul><li><a href=#%e4%bd%95%e3%81%99%e3%82%8b%e3%81%ae%e3%81%8b aria-label=何するのか?>何するのか?</a></li><li><a href=#%e3%81%af%e3%81%98%e3%82%81%e3%81%ab aria-label=はじめに>はじめに</a></li><li><a href=#%e3%82%88%e3%81%86%e3%82%84%e3%81%8f%e6%9c%ac%e7%95%aa aria-label=ようやく本番>ようやく本番</a></li></ul></div></details><div class="post-content md-content"><h2 id=何するのか>何するのか?<a hidden class=anchor aria-hidden=true href=#何するのか>#</a></h2><p><a href=https://github.com/bcwaldon/vagrant_devstack>vagrant_devstack</a> っていうのを使って、vagrant+devstack
+という素敵な環境を、</p><p>Mac OS Mountain Lion(10.8.2)に 作ってみる。
+一応、vagrant_devstackのREADMEには、Macに対する言及があるので、
+できるんじゃないかと妄想。</p><h2 id=はじめに>はじめに<a hidden class=anchor aria-hidden=true href=#はじめに>#</a></h2><p>まずは、</p><p><a href=https://github.com/bcwaldon/vagrant_devstack>https://github.com/bcwaldon/vagrant_devstack</a></p><p>のREADMEにしたがって、</p><ol><li>Virtualboxインストール</li><li>gem update &ndash;system</li><li>gem install vagrant</li></ol><h2 id=困ったこと発生>を行った。。。。
+困ったこと発生</h2><p>が、「3.」で問題発生。</p><pre><code>% gem install vagrant
+Fetching: archive-tar-minitar-0.5.2.gem (100%)
+Fetching: json-1.5.4.gem (100%)
+Building native extensions.  This could take a while...
+ERROR:  Error installing vagrant:
+ ERROR: Failed to build gem native extension.
+
+        /Users/igawa/.rvm/rubies/ruby-1.9.3-p194/bin/ruby extconf.rb
+checking for re.h... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of
+necessary libraries and/or headers.  Check the mkmf.log file for more
+details.  You may need configuration options.
+</code></pre><h2 id=解決策>と、こんな感じのエラーが出力され、インストール出来ない。
+解決策</h2><p>ググってみると、</p><p><strong><a href=http://loveless-ainakimono.seesaa.net/article/232323709.html>【Mac】【RubyGems】/usr/bin/gcc-4.2
+がない！</a></strong></p><p>という記事を見つけたので、それに習って、以下のようにシンボリックリンクを</p><p>張ってみました。</p><pre><code>% sudo ln -s /usr/bin/llvm-gcc-4.2 /usr/bin/gcc-4.2
+</code></pre><p>結果、
+% gem install vagrant
+Building native extensions. This could take a while&mldr;
+Fetching: log4r-1.1.10.gem (100%)
+Fetching: net-ssh-2.2.2.gem (100%)
+Fetching: net-scp-1.0.4.gem (100%)
+Fetching: vagrant-1.0.5.gem (100%)
+Successfully installed json-1.5.4
+Successfully installed log4r-1.1.10
+Successfully installed net-ssh-2.2.2
+Successfully installed net-scp-1.0.4
+Successfully installed vagrant-1.0.5
+5 gems installed</p><p>っていうように先に進めました。</p><h2 id=ようやく本番>ようやく本番<a hidden class=anchor aria-hidden=true href=#ようやく本番>#</a></h2><p>ようやく、本来やりたかったところに入れます。</p><p>で、更に、マニュアルに従い、</p><pre><code>git clone http://github.com/bcwaldon/vagrant_devstack.git
+cd vagrant_devstack
+git submodule init
+git submodule update
+cp etc/vagrant.yaml.sample etc/vagrant.yaml
+vim Vagrantfile
+</code></pre><p>を実行。Vagrantfileは、以下の様な感じに修正。</p><pre><code>% git diff
+diff --git a/Vagrantfile b/Vagrantfile
+index 4aaa5fa..75bccfe 100644
+--- a/Vagrantfile
++++ b/Vagrantfile
+@@ -4,7 +4,9 @@ conf = {
+     'ip_prefix' =&gt; '192.168.27',
+     'mac_prefix' =&gt; '080027027',
+     'box_name' =&gt; 'precise',
+-    'box_url' =&gt; 'http://c479942.r42.cf2.rackcdn.com/precise64.box',
++    'box_url' =&gt; 'http://dl.dropbox.com/u/1537815/precise64.box',
++#    'box_url' =&gt; 'http://files.vagrantup.com/precise64.box',
++#    'box_url' =&gt; 'http://c479942.r42.cf2.rackcdn.com/precise64.box',
+     'allocate_memory' =&gt; 1024,
+     'cache_dir' =&gt; 'cache/',
+     'ssh_dir' =&gt; '~/.ssh/',
+</code></pre><p>で、ここまで来たら、</p><pre><code>vagrant up
+</code></pre><p>を実行。</p><pre><code>[default] Box precise was not found. Fetching box from specified URL...
+[vagrant] Downloading with Vagrant::Downloaders::HTTP...
+[vagrant] Downloading box: http://dl.dropbox.com/u/1537815/precise64.box
+[vagrant] Progress: 7% (43960869 / 567768576)
+</code></pre><p>結構時間が掛かる。待ってられないので、一眠り。。。。</p></div><footer class=post-footer><ul class=post-tags><li><a href=https://igawa.io/tags/vagrant/>Vagrant</a></li></ul><nav class=paginav><a class=prev href=https://igawa.io/posts/2012/10/mac-%E3%81%AB-vagrant-devstack-%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B-%E3%81%9D%E3%81%AE%EF%BC%92-openstack-devstack-vagrant/><span class=title>« 前へ</span>
+<span>Mac に vagrant+devstack を入れてみる - その２ #openstack #devstack #vagrant</span>
+</a><a class=next href=https://igawa.io/posts/2012/09/windows8-release-preview%E3%82%92vmware-fusion5-on-mac-mini%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9%E3%81%AE%E8%A9%95%E4%BE%A1%E3%82%92%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/><span class=title>次へ »</span>
+<span>Windows8 Release PreviewをVMware Fusion5 on Mac miniにインストールしてパフォーマンスの評価をしてみた</span></a></nav></footer><div id=disqus_thread></div><script>var disqus_config=function(){this.page.url="https://igawa.io/posts/2012/10/mac-%E3%81%AB-vagrant-devstack-%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B-%E3%81%9D%E3%81%AE%EF%BC%91-openstack-devstack-vagrant/",this.page.identifier="2012-10-03-mac-ni-vagrantdevstack-woru-retemiru-sono1-openstack-devstack-vagrant"};(function(){var e=document,t=e.createElement("script");t.src="https://afterstack.disqus.com/embed.js",t.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(t)})()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></article></main><footer class=footer><span>&copy; 2026 <a href=https://igawa.io/>What's done is done</a></span> ·
+<span>Powered by
+<a href="https://gohugo.io/?utm_source=papermod" rel=noopener target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top id=top-link class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey=g><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up"><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var toplink=document.getElementById("top-link");window.onscroll=function(){const e=window.innerHeight;document.body.scrollTop>e||document.documentElement.scrollTop>e?toplink.classList.remove("hidden"):toplink.classList.add("hidden")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="コピー";function s(){t.innerHTML="コピーされました!",setTimeout(()=>{t.innerHTML="コピー"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>

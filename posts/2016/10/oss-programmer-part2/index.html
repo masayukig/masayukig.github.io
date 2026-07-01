@@ -1,757 +1,187 @@
-<!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
-<head>
-    <title>あなたの知らないOSSプログラマの世界 - part 2 - What's done is done</title>
-    <!-- Using the latest rendering mode for IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-<link rel="canonical" href="https://igawa.io/posts/2016/10/oss-programmer-part2/">
-
-        <meta name="author" content="Masayuki Igawa" />
-        <meta name="keywords" content="work,oss,english,career,openstack" />
-        <meta name="description" content="oss-programmer-part1 の続き 前回: 次回は仕事内容、コミュニケーションの様子などを書きたいと思います。 と、書いておいてしばらく経っ …" />
-
-        <meta property="og:site_name" content="What's done is done" />
-        <meta property="og:type" content="article"/>
-        <meta property="og:title" content="あなたの知らないOSSプログラマの世界 - part 2"/>
-        <meta property="og:url" content="https://igawa.io/posts/2016/10/oss-programmer-part2/"/>
-        <meta property="og:description" content="oss-programmer-part1 の続き 前回: 次回は仕事内容、コミュニケーションの様子などを書きたいと思います。 と、書いておいてしばらく経っ …"/>
-        <meta property="article:published_time" content="2016-10-18" />
-            <meta property="article:section" content="Work" />
-            <meta property="article:tag" content="work" />
-            <meta property="article:tag" content="oss" />
-            <meta property="article:tag" content="english" />
-            <meta property="article:tag" content="career" />
-            <meta property="article:tag" content="openstack" />
-            <meta property="article:author" content="Masayuki Igawa" />
-
-    <meta name="twitter:dnt" content="on">
-    <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="@masayukig">
-        <meta name="twitter:creator" content="@masayukig">
-    <meta name="twitter:domain" content="https://igawa.io">
-
-
-    <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://igawa.io/theme/css/bootstrap.slate.min.css" type="text/css"/>
-    <link href="https://igawa.io/theme/css/font-awesome.min.css" rel="stylesheet">
-
-    <link href="https://igawa.io/theme/css/pygments/native.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://igawa.io/theme/css/style.css" type="text/css"/>
-        <link href="https://igawa.io/static/custom.css" rel="stylesheet">
-
-        <link href="https://igawa.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
-              title="What's done is done ATOM Feed"/>
-
-        <link href="https://igawa.io/feeds/work.atom.xml" type="application/atom+xml" rel="alternate"
-              title="What's done is done Work ATOM Feed"/>
-</head>
-<body>
-
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="https://igawa.io/" class="navbar-brand">
-What's done is done            </a>
-        </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                         <li><a href="https://igawa.io/pages/disclaimer.html">
-                             DISCLAIMER
-                          </a></li>
-                         <li><a href="https://igawa.io/pages/presentations.html">
-                             Presentations
-                          </a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-</div> <!-- /.navbar -->
-
-<!-- Banner -->
-<!-- End Banner -->
-
-<!-- Content Container -->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-9">
-    <section id="content">
-        <article>
-            <header class="page-header">
-                <h1>
-                    <a href="https://igawa.io/posts/2016/10/oss-programmer-part2/"
-                       rel="bookmark"
-                       title="Permalink to あなたの知らないOSSプログラマの世界 - part 2">
-                        あなたの知らないOSSプログラマの世界 - part 2
-                    </a>
-                </h1>
-            </header>
-            <div class="entry-content">
-                <div class="panel">
-                    <div class="panel-body">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-10-18T00:00:00+09:00"> 2016-10-18</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="https://igawa.io/author/masayuki-igawa.html"><i class="fa fa-user"></i> Masayuki Igawa</a>
-
-
-
-<span class="label label-default">Tags</span>
-	<a href="https://igawa.io/tag/work.html">work</a>
-        /
-	<a href="https://igawa.io/tag/oss.html">oss</a>
-        /
-	<a href="https://igawa.io/tag/english.html">english</a>
-        /
-	<a href="https://igawa.io/tag/career.html">career</a>
-        /
-	<a href="https://igawa.io/tag/openstack.html">openstack</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                </div>
-                <p><a class="reference external" href="../../06/oss-programmer-part1">oss-programmer-part1</a> の続き</p>
-<p>前回:</p>
-<pre class="literal-block">
+<!doctype html><html lang=ja dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>あなたの知らないOSSプログラマの世界 - part 2 | What's done is done</title><meta name=keywords content="work,oss,english,career,openstack"><meta name=description content="oss-programmer-part1 の続き
+前回:
 次回は仕事内容、コミュニケーションの様子などを書きたいと思います。
-</pre>
-<p>と、書いておいてしばらく経ってしまいました。
-気になってる人がいないとも限らないので、書いてみたいと思います。</p>
-<div class="section" id="id1">
-<h2>コミュニケーションの様子</h2>
-<p>HPEは外資系の会社なので、社内のシステムやメールなどは英語が主ですが、日本にいる社員の大半は日本人なので、
-日本オフィスは、日本語が共通語になっているようです。</p>
-<p>ただし、私の仕事内容はOpenStackというオープンソースのクラウド基盤ソフトウェアを、コミュニティの中で開発
+と、書いておいてしばらく経ってしまいました。
+気になってる人がいないとも限らないので、書いてみたいと思います。
+コミュニケーションの様子
+HPEは外資系の会社なので、社内のシステムやメールなどは英語が主ですが、日本にいる社員の大半は日本人なので、
+日本オフィスは、日本語が共通語になっているようです。
+ただし、私の仕事内容はOpenStackというオープンソースのクラウド基盤ソフトウェアを、コミュニティの中で開発
 することです。また、会社のチームはインターナショナルチームなのでチームメンバー・上司が英語が母国語の
 人たちが大多数で共通語は英語という状況。そのため、英語が必須な状況ですが、10ヶ月近く経った今も、
-英語スキルは以前とあまり変わりがありません orz...</p>
-<p>もちろん「前から英語ができてた」わけではなく「今もあまりできません」という有様です。
+英語スキルは以前とあまり変わりがありません orz&mldr;
+もちろん「前から英語ができてた」わけではなく「今もあまりできません」という有様です。
 気心知れた人との１対１での会話ならなんとかなります(「あ、こいつ英語苦手なんだね」と相手がある程度手加減
-してくれることが多いのです)が、ネイティブあるいはそれに近い同士が議論をし始めると、なかなか入っていけません。</p>
-<p>また、もともと人見知り(!)でコミュニケーションは苦手な部分があるので、なかなか会話に入っていけません。
-それでも、どうにかなってるのは、テキストでの会話（IRC, E-mail）のお陰かなと思います。</p>
-<p>この辺は、自分の中の要改善項目です。</p>
-<div class="section" id="id2">
-<h3>テキスト</h3>
-<p>というわけで私はテキストでの会話が主です。タイムゾーン問題、英語力、などのことを考慮すると、
-テキストでの会話が便利です。</p>
-<div class="section" id="e-mail">
-<h4>E-mail</h4>
-<p>テキストでのコミュニケーションというとコレが思い浮かぶと思います。ただ、あまり使ってないです。
+してくれることが多いのです)が、ネイティブあるいはそれに近い同士が議論をし始めると、なかなか入っていけません。
+また、もともと人見知り(!)でコミュニケーションは苦手な部分があるので、なかなか会話に入っていけません。
+それでも、どうにかなってるのは、テキストでの会話（IRC, E-mail）のお陰かなと思います。
+この辺は、自分の中の要改善項目です。
+テキスト
+というわけで私はテキストでの会話が主です。タイムゾーン問題、英語力、などのことを考慮すると、
+テキストでの会話が便利です。
+E-mail
+テキストでのコミュニケーションというとコレが思い浮かぶと思います。ただ、あまり使ってないです。
 正式な通知とか、後述のものでは伝えにくいもの（言うことがたくさんあったり、添付ファイルとか）で
-使う感じ。</p>
-</div>
-<div class="section" id="irc">
-<h4>IRC</h4>
-<p>E-mailはリアルタイム性が低いので、結構やりやすいですが、どうしても時間がかかってしまいがちです。
+使う感じ。
+IRC
+E-mailはリアルタイム性が低いので、結構やりやすいですが、どうしても時間がかかってしまいがちです。
 IRCはリアルタイム性が高いので、やり取りがけっこう大変ですが、くだけた会話でもどうにかなります。
 一長一短ありますが、IRCの方が気楽なことが多いと思います。
 今だと、SlackやHipChatなどのツールもありますが、私のチームではできるだけ「オープン」なものが
-好まれる印象です。</p>
-</div>
-</div>
-<div class="section" id="face-to-face">
-<h3>Face to Face</h3>
-<p>Face to Faceのやり取りがないのかというと、そうでもありません。</p>
-<div class="section" id="google-hangouts-skype">
-<h4>Google Hangouts, Skype</h4>
-<p>これらのツールを使う機会もあって、</p>
-<ul class="simple">
-<li>Happy Hour</li>
-<li>重要な通知</li>
-</ul>
-<p>といったタイミングで使ってきました。</p>
-<p>「Happy Hour」はチーム内のコミュニケーションを活性化して、風通しを良くするような効果があったと思います。</p>
-<p>その名の通り、就業時間後のバーチャル飲み会風な感じなのですが、日本時間だと朝９時とかなので、
-こちらはさすがにお酒を飲むわけにはいかないのがつらいところでしたｗ</p>
-<p>また、雑談が高速で行われるので、あんまりついていけない感じなのも残念でした＞自分</p>
-<p>「重要な通知」は、メールやIRCだけで伝えるべき内容ではないものですね。チームの行く末とか。
-こちらについてはまた別途。</p>
-</div>
-<div class="section" id="id3">
-<h4>各種イベント</h4>
-<p>OpenStack Summit等、各種イベントで各国に散らばってるメンバーが集まることもあるので、
-一緒にお昼ごはんに行ったり、夜飲んだりとかありました。</p>
-</div>
-</div>
-</div>
-<div class="section" id="id4">
-<h2>仕事内容について</h2>
-<div class="section" id="id5">
-<h3>体制</h3>
-<p>チームには日本人は私しかおらず、日本で作業しているのも私のみです。
+好まれる印象です。
+Face to Face
+Face to Faceのやり取りがないのかというと、そうでもありません。
+Google Hangouts, Skype
+これらのツールを使う機会もあって、
+
+Happy Hour
+重要な通知
+
+といったタイミングで使ってきました。
+「Happy Hour」はチーム内のコミュニケーションを活性化して、風通しを良くするような効果があったと思います。
+その名の通り、就業時間後のバーチャル飲み会風な感じなのですが、日本時間だと朝９時とかなので、
+こちらはさすがにお酒を飲むわけにはいかないのがつらいところでしたｗ
+また、雑談が高速で行われるので、あんまりついていけない感じなのも残念でした＞自分
+「重要な通知」は、メールやIRCだけで伝えるべき内容ではないものですね。チームの行く末とか。
+こちらについてはまた別途。
+各種イベント
+OpenStack Summit等、各種イベントで各国に散らばってるメンバーが集まることもあるので、
+一緒にお昼ごはんに行ったり、夜飲んだりとかありました。
+仕事内容について
+体制
+チームには日本人は私しかおらず、日本で作業しているのも私のみです。
 直属のマネージャはオーストラリアにおり、タイムゾーンが近いこともあって、IRCなどで会話をすることが多いです。
-さらにその上の上司は、 <a class="reference external" href="http://allisonrandal.com/">Allison Randal</a> (<a class="reference external" href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AA%E3%82%BD%E3%83%B3%E3%83%BB%E3%83%A9%E3%83%B3%E3%83%80%E3%83%AB">Wikipedia JA</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Allison_Randal">Wikipedia EN</a>) さんで、
-やはりIRCで会話をすることが多いです。(タイムゾーンが違うこともあり、なかなか会話はないですが)</p>
-<p>さらに上の方になってくると、HPE のクラウドを統括している人になってきますが、なかなか話をする機会はない
+さらにその上の上司は、 Allison Randal (Wikipedia JA, Wikipedia EN) さんで、
+やはりIRCで会話をすることが多いです。(タイムゾーンが違うこともあり、なかなか会話はないですが)
+さらに上の方になってくると、HPE のクラウドを統括している人になってきますが、なかなか話をする機会はない
 ですね。ただ、IRCのミーティングに参加したりすることもあり、非常に上下の風通しは良いんじゃないかと感じます。
-変な上下意識が見えないのが心地よく感じます。（もちろん、役割はしっかり意識されています。）</p>
-</div>
-<div class="section" id="id6">
-<h3>外資系企業について</h3>
-<p>当初思っていたよりも、ずっと個人を重視してくれているように思います。
-(身の回りの10ヶ月弱くらいの感想です。)</p>
-<p>外資系企業に対する私の印象は、</p>
-<blockquote>
+変な上下意識が見えないのが心地よく感じます。（もちろん、役割はしっかり意識されています。）
+外資系企業について
+当初思っていたよりも、ずっと個人を重視してくれているように思います。
+(身の回りの10ヶ月弱くらいの感想です。)
+外資系企業に対する私の印象は、
 「キミ、最近パフォーマンスが良くないから、改善策を検討して実施するように。特になければこの改善策を実施
-　して、1ヶ月で改善されないようならクビね。」</blockquote>
-<p>くらい厳しいものだったのですが、少なくとも今いるチームではそのようなことはありません。
-この辺は、上司に依存するところが大きいと思います。</p>
-<p>(でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。
-が、それはまた別途書きたいと思います。)</p>
-</div>
-<div class="section" id="id7">
-<h3>作業内容</h3>
-<p>基本的にはOpenStack関連コードの読み書き・レビューしてます。
-イベントでの発表などがあれば、その準備も。</p>
-<p>最近はopenstack-healthというコンポーネントに注力して作業してます。フロントエンドがAngularJSなので、
-かなり刺激的。悪戦苦闘の日々です。</p>
-</div>
-<div class="section" id="id8">
-<h3>作業場所</h3>
-<p>大島 日本法人本社８階 食堂で作業してます。景色がいいし、比較的静か（心地よいノイズ）があるのでいい感じで
-作業できてます。</p>
-<p>参考URL:</p>
-<ul class="simple">
-<li><a class="reference external" href="http://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html">http://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html</a></li>
-<li><a class="reference external" href="http://www.shashoku.com/shashoku/012.html">http://www.shashoku.com/shashoku/012.html</a></li>
-<li><a class="reference external" href="http://www.pc-ninki.net/about/hp-oshima.html">http://www.pc-ninki.net/about/hp-oshima.html</a></li>
-<li><a class="reference external" href="https://job.career-tasu.jp/2017/guide/study/shashoku/01.html">https://job.career-tasu.jp/2017/guide/study/shashoku/01.html</a></li>
-</ul>
-<p>Happy Hacking!</p>
-</div>
-</div>
+　して、1ヶ月で改善されないようならクビね。」
+くらい厳しいものだったのですが、少なくとも今いるチームではそのようなことはありません。
+この辺は、上司に依存するところが大きいと思います。
+(でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。
+が、それはまた別途書きたいと思います。)
+作業内容
+基本的にはOpenStack関連コードの読み書き・レビューしてます。
+イベントでの発表などがあれば、その準備も。
+最近はopenstack-healthというコンポーネントに注力して作業してます。フロントエンドがAngularJSなので、
+かなり刺激的。悪戦苦闘の日々です。
+作業場所
+大島 日本法人本社８階 食堂で作業してます。景色がいいし、比較的静か（心地よいノイズ）があるのでいい感じで
+作業できてます。
+参考URL:
 
-            </div>
-            <!-- /.entry-content -->
-<section class="well" id="related-posts">
-    <h4>Related Posts:</h4>
-    <ul>
-        <li><a href="https://igawa.io/posts/2016/10/dps-forever/">チーム解散?!</a></li>
-        <li><a href="https://igawa.io/posts/2016/06/oss-programmer-part1/">あなたの知らないOSSプログラマの世界 - part 1</a></li>
-        <li><a href="https://igawa.io/posts/2017/09/retrospective-denver-ptg-2017/">Retrospective for PTG in Denver 2017</a></li>
-        <li><a href="https://igawa.io/posts/2016/12/adding-a-new-repo-to-openstack/">初めてのOpenStackリポジトリ追加</a></li>
-        <li><a href="https://igawa.io/posts/2016/12/moving-company-is-better-choice/">転職は良い選択だった</a></li>
-    </ul>
-</section>
-    <hr />
-    <!-- AddThis Button BEGIN -->
-    <div class="addthis_toolbox addthis_default_style">
-            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-            <a class="addthis_button_tweet"></a>
-            <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-    </div>
-    <!-- AddThis Button END -->
-    <hr/>
-    <section class="comments" id="comments">
-        <h2>Comments</h2>
+http://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html
+http://www.shashoku.com/shashoku/012.html
+http://www.pc-ninki.net/about/hp-oshima.html
+https://job.career-tasu.jp/2017/guide/study/shashoku/01.html
 
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'afterstack'; // required: replace example with your forum shortname
-
-            var disqus_config = function () {
-                this.language = "en";
-
-                        this.page.identifier = '2016-10-18-oss-programmer-part2';
-                        this.page.url = 'https://igawa.io/posts/2016/10/oss-programmer-part2/';
-            };
-
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function () {
-                var dsq = document.createElement('script');
-                dsq.type = 'text/javascript';
-                dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-            Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-    </section>
-        </article>
-    </section>
-
-        </div>
-        <div class="col-sm-3" id="sidebar">
-            <aside>
-<div id="aboutme">
-    <p>
-      <strong>About Masayuki Igawa</strong><br/>
-        <a href="https://www.linkedin.com/in/masayukig">LinkedIn</a>
-    </p>
-</div><!-- Sidebar -->
-<section class="well well-sm">
-  <ul class="list-group list-group-flush">
-
-<!-- Sidebar/Social -->
-<li class="list-group-item">
-  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
-  <ul class="list-group" id="social">
-    <li class="list-group-item"><a href="https://twitter.com/masayukig"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
-    <li class="list-group-item"><a href="https://www.linkedin.com/in/masayukig"><i class="fa fa-linkedin-square fa-lg"></i> LinkedIn</a></li>
-    <li class="list-group-item"><a href="https://github.com/masayukig"><i class="fa fa-github-square fa-lg"></i> GitHub</a></li>
-    <li class="list-group-item"><a href="https://flickr.com/masayun"><i class="fa fa-flickr fa-lg"></i> Flickr</a></li>
-    <li class="list-group-item"><a href="https://instagram.com/masayukig"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
-  </ul>
-</li>
-<!-- End Sidebar/Social -->
-
-<!-- Sidebar/Recent Posts -->
-<li class="list-group-item">
-  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
-  <ul class="list-group" id="recentposts">
-    <li class="list-group-item"><a href="https://igawa.io/posts/2018/06/opensuse-mini-summit-2018/">openSUSE mini Summit 2018</a></li>
-  </ul>
-</li>
-<!-- End Sidebar/Recent Posts -->
-
-<!-- Sidebar/Categories -->
-<li class="list-group-item">
-  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Categories</span></h4>
-  <ul class="list-group" id="categories">
-    <li class="list-group-item">
-      <a href="https://igawa.io/category/english.html"><i class="fa fa-folder-open fa-lg"></i>English</a>
-    </li>
-    <li class="list-group-item">
-      <a href="https://igawa.io/category/gadget.html"><i class="fa fa-folder-open fa-lg"></i>gadget</a>
-    </li>
-    <li class="list-group-item">
-      <a href="https://igawa.io/category/imported.html"><i class="fa fa-folder-open fa-lg"></i>imported</a>
-    </li>
-    <li class="list-group-item">
-      <a href="https://igawa.io/category/misc.html"><i class="fa fa-folder-open fa-lg"></i>Misc</a>
-    </li>
-    <li class="list-group-item">
-      <a href="https://igawa.io/category/openstack.html"><i class="fa fa-folder-open fa-lg"></i>openstack</a>
-    </li>
-    <li class="list-group-item">
-      <a href="https://igawa.io/category/oss.html"><i class="fa fa-folder-open fa-lg"></i>oss</a>
-    </li>
-    <li class="list-group-item">
-      <a href="https://igawa.io/category/process.html"><i class="fa fa-folder-open fa-lg"></i>process</a>
-    </li>
-    <li class="list-group-item">
-      <a href="https://igawa.io/category/uncategorized.html"><i class="fa fa-folder-open fa-lg"></i>Uncategorized</a>
-    </li>
-    <li class="list-group-item">
-      <a href="https://igawa.io/category/work.html"><i class="fa fa-folder-open fa-lg"></i>Work</a>
-    </li>
-  </ul>
-</li>
-<!-- End Sidebar/Categories -->
-
-<!-- Sidebar/Tag Cloud -->
-<li class="list-group-item">
-  <a href="https://igawa.io/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
-  <ul class="list-group " id="tags">
-    <li class="list-group-item tag-1">
-      <a href="https://igawa.io/tag/pc.html">PC</a>
-    </li>
-    <li class="list-group-item tag-1">
-      <a href="https://igawa.io/tag/phs-mobile-phone.html">PHS-Mobile-Phone</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/science.html">science</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/kindle.html">Kindle</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/software.html">Software</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/ipad.html">iPad</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/vps.html">VPS</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/net.html">net</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/mac.html">Mac</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/entertainments.html">entertainments</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/psp.html">PSP</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/twitter.html">twitter</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/life_health.html">life_health</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/iphone-3g-s.html">iPhone 3G S</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/apple.html">Apple</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/work.html">work</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/iphone-3gs.html">iPhone 3GS</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/os.html">OS</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/oss.html">oss</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/game.html">game</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/kai-fa.html">開発</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/wei-fen-lei.html">未分類</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/spam.html">SPAM</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/sakura.html">さくら</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/fedora.html">Fedora</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/linux.html">Linux</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/android.html">Android</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/iphone.html">iPhone</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/xperia.html">Xperia</a>
-    </li>
-    <li class="list-group-item tag-2">
-      <a href="https://igawa.io/tag/ojin.html">お金</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/kamera.html">カメラ</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/lion.html">lion</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/lvm.html">LVM</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/c.html">C++</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/apuri.html">アプリ</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/food.html">food</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/sheng-huo.html">生活</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/she-ding.html">設定</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/blog.html">blog</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/openstack.html">openstack</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/unixbench.html">unixbench</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/backup.html">backup</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/xie-zhen.html">写真</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/du-shu.html">読書</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/cyan-yu.html">C言語</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/career.html">career</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/konosaito.html">このサイト</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/pickup.html">PICKUP</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/gadget.html">gadget</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/benchmark.html">benchmark</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/ubuntu.html">Ubuntu</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/evernote.html">evernote</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/kvm.html">KVM</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/english.html">english</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/ifttt.html">ifttt</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/life-hack.html">life hack</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/crashplan.html">crashplan</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/spmodo.html">SPモード</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/nex-5n.html">nex-5n</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/dropbox.html">dropbox</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/she-hui.html">社会</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/scala.html">scala</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/hua-xiang.html">画像</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/tips.html">tips</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/wu-yu.html">物欲</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/konosaitonoshi.html">このサイトの事</a>
-    </li>
-    <li class="list-group-item tag-3">
-      <a href="https://igawa.io/tag/blogger.html">blogger</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/sabaguan-li.html">サーバ管理</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/apache.html">apache</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/x-bows.html">x-bows</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/development.html">development</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/xfs.html">xfs</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/keyboard.html">keyboard</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/uroad-7000.html">UROAD-7000</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/mixi.html">mixi</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/vagrant.html">vagrant</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/saba.html">サーバ</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/sony.html">sony</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/fedora11.html">Fedora11</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/firefox.html">Firefox</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/ipad2.html">ipad2</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/rpm.html">rpm</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/bian-naxie-zhen.html">変な写真</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/nexus7.html">nexus7</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/coreserverjp.html">coreserver.jp</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/kernel.html">kernel</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/github.html">github</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/konosaitonokoto.html">このサイトのこと</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/book.html">book</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/camera.html">camera</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/nex-5nd.html">nex-5nd</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/shi-shi.html">仕事</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/opensuse.html">opensuse</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/timemachine.html">timemachine</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/gps.html">GPS</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/simple-massager.html">Simple-Massager</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/hdd.html">HDD</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/oming-qian-com.html">お名前.com</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/lift.html">lift</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://igawa.io/tag/vim.html">vim</a>
-    </li>
-  </ul>
-</li>
-<!-- End Sidebar/Tag Cloud -->
-
-<!-- Sidebar/Twitter Timeline -->
-<li class="list-group-item">
-  <h4><i class="fa fa-twitter fa-lg"></i><span class="icon-label">Latest Tweets</span></h4>
-  <div id="twitter_timeline">
-    <a class="twitter-timeline" data-width="250" data-height="300" data-dnt="true" data-theme="light" href="https://twitter.com/masayukig">Tweets by masayukig</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-</li>
-<!-- End Sidebar/Twitter Timeline -->
-
-<!-- Sidebar/Links -->
-<li class="list-group-item">
-  <h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
-  <ul class="list-group" id="links">
-    <li class="list-group-item">
-      <a href="http://python.org/" target="_blank">Python.org</a>
-    </li>
-    <li class="list-group-item">
-      <a href="http://openstack.org/" target="_blank">OpenStack.org</a>
-    </li>
-  </ul>
-</li>
-<!-- End Sidebar/Links -->
-  </ul>
-</section>
-<!-- End Sidebar -->            </aside>
-        </div>
-    </div>
-</div>
-<!-- End Content Container -->
-
-<footer>
-   <div class="container-fluid">
-      <hr>
-      <div class="row">
-         <div class="col-xs-10">&copy; 2018 Masayuki Igawa
-            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
-    Content
-  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
-</small></p>
-         </div>
-         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
-      </div>
-   </div>
-</footer>
-<script src="https://igawa.io/theme/js/jquery.min.js"></script>
-
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://igawa.io/theme/js/bootstrap.min.js"></script>
-
-<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="https://igawa.io/theme/js/respond.min.js"></script>
-
-
-    <!-- Disqus -->
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'afterstack'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function () {
-            var s = document.createElement('script');
-            s.async = true;
-            s.type = 'text/javascript';
-            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-    </script>
-    <!-- End Disqus Code -->
-    <!-- Google Analytics Universal -->
-    <script type="text/javascript">
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-4773446-12', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <!-- End Google Analytics Universal Code -->
-
-
-        <script type="text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=masayukig"></script>
-</body>
-</html>
+Happy Hacking!"><meta name=author content="Masayuki Igawa"><link rel=canonical href=https://igawa.io/posts/2016/10/oss-programmer-part2/><link crossorigin=anonymous href=/assets/css/stylesheet.987d551cdd092d8da451805d60d63e0d671e3a1a995a5f3e18d5dfd22623e655.css integrity="sha256-mH1VHN0JLY2kUYBdYNY+DWceOhqZWl8+GNXf0iYj5lU=" rel="preload stylesheet" as=style><link rel=icon href=https://igawa.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://igawa.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://igawa.io/favicon-32x32.png><link rel=apple-touch-icon href=https://igawa.io/apple-touch-icon.png><link rel=mask-icon href=https://igawa.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=ja href=https://igawa.io/posts/2016/10/oss-programmer-part2/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-M8ZXKW4C73"></script><script>var doNotTrack=!1,dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes";if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-M8ZXKW4C73")}</script><meta property="og:url" content="https://igawa.io/posts/2016/10/oss-programmer-part2/"><meta property="og:site_name" content="What's done is done"><meta property="og:title" content="あなたの知らないOSSプログラマの世界 - part 2"><meta property="og:description" content="oss-programmer-part1 の続き
+前回:
+次回は仕事内容、コミュニケーションの様子などを書きたいと思います。 と、書いておいてしばらく経ってしまいました。 気になってる人がいないとも限らないので、書いてみたいと思います。
+コミュニケーションの様子 HPEは外資系の会社なので、社内のシステムやメールなどは英語が主ですが、日本にいる社員の大半は日本人なので、 日本オフィスは、日本語が共通語になっているようです。
+ただし、私の仕事内容はOpenStackというオープンソースのクラウド基盤ソフトウェアを、コミュニティの中で開発 することです。また、会社のチームはインターナショナルチームなのでチームメンバー・上司が英語が母国語の 人たちが大多数で共通語は英語という状況。そのため、英語が必須な状況ですが、10ヶ月近く経った今も、 英語スキルは以前とあまり変わりがありません orz…
+もちろん「前から英語ができてた」わけではなく「今もあまりできません」という有様です。 気心知れた人との１対１での会話ならなんとかなります(「あ、こいつ英語苦手なんだね」と相手がある程度手加減 してくれることが多いのです)が、ネイティブあるいはそれに近い同士が議論をし始めると、なかなか入っていけません。
+また、もともと人見知り(!)でコミュニケーションは苦手な部分があるので、なかなか会話に入っていけません。 それでも、どうにかなってるのは、テキストでの会話（IRC, E-mail）のお陰かなと思います。
+この辺は、自分の中の要改善項目です。
+テキスト というわけで私はテキストでの会話が主です。タイムゾーン問題、英語力、などのことを考慮すると、 テキストでの会話が便利です。
+E-mail テキストでのコミュニケーションというとコレが思い浮かぶと思います。ただ、あまり使ってないです。 正式な通知とか、後述のものでは伝えにくいもの（言うことがたくさんあったり、添付ファイルとか）で 使う感じ。
+IRC E-mailはリアルタイム性が低いので、結構やりやすいですが、どうしても時間がかかってしまいがちです。 IRCはリアルタイム性が高いので、やり取りがけっこう大変ですが、くだけた会話でもどうにかなります。 一長一短ありますが、IRCの方が気楽なことが多いと思います。 今だと、SlackやHipChatなどのツールもありますが、私のチームではできるだけ「オープン」なものが 好まれる印象です。
+Face to Face Face to Faceのやり取りがないのかというと、そうでもありません。
+Google Hangouts, Skype これらのツールを使う機会もあって、
+Happy Hour 重要な通知 といったタイミングで使ってきました。
+「Happy Hour」はチーム内のコミュニケーションを活性化して、風通しを良くするような効果があったと思います。
+その名の通り、就業時間後のバーチャル飲み会風な感じなのですが、日本時間だと朝９時とかなので、 こちらはさすがにお酒を飲むわけにはいかないのがつらいところでしたｗ
+また、雑談が高速で行われるので、あんまりついていけない感じなのも残念でした＞自分
+「重要な通知」は、メールやIRCだけで伝えるべき内容ではないものですね。チームの行く末とか。 こちらについてはまた別途。
+各種イベント OpenStack Summit等、各種イベントで各国に散らばってるメンバーが集まることもあるので、 一緒にお昼ごはんに行ったり、夜飲んだりとかありました。
+仕事内容について 体制 チームには日本人は私しかおらず、日本で作業しているのも私のみです。 直属のマネージャはオーストラリアにおり、タイムゾーンが近いこともあって、IRCなどで会話をすることが多いです。 さらにその上の上司は、 Allison Randal (Wikipedia JA, Wikipedia EN) さんで、 やはりIRCで会話をすることが多いです。(タイムゾーンが違うこともあり、なかなか会話はないですが)
+さらに上の方になってくると、HPE のクラウドを統括している人になってきますが、なかなか話をする機会はない ですね。ただ、IRCのミーティングに参加したりすることもあり、非常に上下の風通しは良いんじゃないかと感じます。 変な上下意識が見えないのが心地よく感じます。（もちろん、役割はしっかり意識されています。）
+外資系企業について 当初思っていたよりも、ずっと個人を重視してくれているように思います。 (身の回りの10ヶ月弱くらいの感想です。)
+外資系企業に対する私の印象は、
+「キミ、最近パフォーマンスが良くないから、改善策を検討して実施するように。特になければこの改善策を実施 して、1ヶ月で改善されないようならクビね。」
+くらい厳しいものだったのですが、少なくとも今いるチームではそのようなことはありません。 この辺は、上司に依存するところが大きいと思います。
+(でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。 が、それはまた別途書きたいと思います。)
+作業内容 基本的にはOpenStack関連コードの読み書き・レビューしてます。 イベントでの発表などがあれば、その準備も。
+最近はopenstack-healthというコンポーネントに注力して作業してます。フロントエンドがAngularJSなので、 かなり刺激的。悪戦苦闘の日々です。
+作業場所 大島 日本法人本社８階 食堂で作業してます。景色がいいし、比較的静か（心地よいノイズ）があるのでいい感じで 作業できてます。
+参考URL:
+http://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html http://www.shashoku.com/shashoku/012.html http://www.pc-ninki.net/about/hp-oshima.html https://job.career-tasu.jp/2017/guide/study/shashoku/01.html Happy Hacking!"><meta property="og:locale" content="ja"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2016-10-18T00:00:00+09:00"><meta property="article:modified_time" content="2016-10-18T00:00:00+09:00"><meta property="article:tag" content="Work"><meta property="article:tag" content="Oss"><meta property="article:tag" content="English"><meta property="article:tag" content="Career"><meta property="article:tag" content="Openstack"><meta name=twitter:card content="summary"><meta name=twitter:title content="あなたの知らないOSSプログラマの世界 - part 2"><meta name=twitter:description content="oss-programmer-part1 の続き
+前回:
+次回は仕事内容、コミュニケーションの様子などを書きたいと思います。 と、書いておいてしばらく経ってしまいました。 気になってる人がいないとも限らないので、書いてみたいと思います。
+コミュニケーションの様子 HPEは外資系の会社なので、社内のシステムやメールなどは英語が主ですが、日本にいる社員の大半は日本人なので、 日本オフィスは、日本語が共通語になっているようです。
+ただし、私の仕事内容はOpenStackというオープンソースのクラウド基盤ソフトウェアを、コミュニティの中で開発 することです。また、会社のチームはインターナショナルチームなのでチームメンバー・上司が英語が母国語の 人たちが大多数で共通語は英語という状況。そのため、英語が必須な状況ですが、10ヶ月近く経った今も、 英語スキルは以前とあまり変わりがありません orz…
+もちろん「前から英語ができてた」わけではなく「今もあまりできません」という有様です。 気心知れた人との１対１での会話ならなんとかなります(「あ、こいつ英語苦手なんだね」と相手がある程度手加減 してくれることが多いのです)が、ネイティブあるいはそれに近い同士が議論をし始めると、なかなか入っていけません。
+また、もともと人見知り(!)でコミュニケーションは苦手な部分があるので、なかなか会話に入っていけません。 それでも、どうにかなってるのは、テキストでの会話（IRC, E-mail）のお陰かなと思います。
+この辺は、自分の中の要改善項目です。
+テキスト というわけで私はテキストでの会話が主です。タイムゾーン問題、英語力、などのことを考慮すると、 テキストでの会話が便利です。
+E-mail テキストでのコミュニケーションというとコレが思い浮かぶと思います。ただ、あまり使ってないです。 正式な通知とか、後述のものでは伝えにくいもの（言うことがたくさんあったり、添付ファイルとか）で 使う感じ。
+IRC E-mailはリアルタイム性が低いので、結構やりやすいですが、どうしても時間がかかってしまいがちです。 IRCはリアルタイム性が高いので、やり取りがけっこう大変ですが、くだけた会話でもどうにかなります。 一長一短ありますが、IRCの方が気楽なことが多いと思います。 今だと、SlackやHipChatなどのツールもありますが、私のチームではできるだけ「オープン」なものが 好まれる印象です。
+Face to Face Face to Faceのやり取りがないのかというと、そうでもありません。
+Google Hangouts, Skype これらのツールを使う機会もあって、
+Happy Hour 重要な通知 といったタイミングで使ってきました。
+「Happy Hour」はチーム内のコミュニケーションを活性化して、風通しを良くするような効果があったと思います。
+その名の通り、就業時間後のバーチャル飲み会風な感じなのですが、日本時間だと朝９時とかなので、 こちらはさすがにお酒を飲むわけにはいかないのがつらいところでしたｗ
+また、雑談が高速で行われるので、あんまりついていけない感じなのも残念でした＞自分
+「重要な通知」は、メールやIRCだけで伝えるべき内容ではないものですね。チームの行く末とか。 こちらについてはまた別途。
+各種イベント OpenStack Summit等、各種イベントで各国に散らばってるメンバーが集まることもあるので、 一緒にお昼ごはんに行ったり、夜飲んだりとかありました。
+仕事内容について 体制 チームには日本人は私しかおらず、日本で作業しているのも私のみです。 直属のマネージャはオーストラリアにおり、タイムゾーンが近いこともあって、IRCなどで会話をすることが多いです。 さらにその上の上司は、 Allison Randal (Wikipedia JA, Wikipedia EN) さんで、 やはりIRCで会話をすることが多いです。(タイムゾーンが違うこともあり、なかなか会話はないですが)
+さらに上の方になってくると、HPE のクラウドを統括している人になってきますが、なかなか話をする機会はない ですね。ただ、IRCのミーティングに参加したりすることもあり、非常に上下の風通しは良いんじゃないかと感じます。 変な上下意識が見えないのが心地よく感じます。（もちろん、役割はしっかり意識されています。）
+外資系企業について 当初思っていたよりも、ずっと個人を重視してくれているように思います。 (身の回りの10ヶ月弱くらいの感想です。)
+外資系企業に対する私の印象は、
+「キミ、最近パフォーマンスが良くないから、改善策を検討して実施するように。特になければこの改善策を実施 して、1ヶ月で改善されないようならクビね。」
+くらい厳しいものだったのですが、少なくとも今いるチームではそのようなことはありません。 この辺は、上司に依存するところが大きいと思います。
+(でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。 が、それはまた別途書きたいと思います。)
+作業内容 基本的にはOpenStack関連コードの読み書き・レビューしてます。 イベントでの発表などがあれば、その準備も。
+最近はopenstack-healthというコンポーネントに注力して作業してます。フロントエンドがAngularJSなので、 かなり刺激的。悪戦苦闘の日々です。
+作業場所 大島 日本法人本社８階 食堂で作業してます。景色がいいし、比較的静か（心地よいノイズ）があるのでいい感じで 作業できてます。
+参考URL:
+http://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html http://www.shashoku.com/shashoku/012.html http://www.pc-ninki.net/about/hp-oshima.html https://job.career-tasu.jp/2017/guide/study/shashoku/01.html Happy Hacking!"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://igawa.io/posts/"},{"@type":"ListItem","position":2,"name":"あなたの知らないOSSプログラマの世界 - part 2","item":"https://igawa.io/posts/2016/10/oss-programmer-part2/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"あなたの知らないOSSプログラマの世界 - part 2","name":"あなたの知らないOSSプログラマの世界 - part 2","description":"oss-programmer-part1 の続き\n前回:\n次回は仕事内容、コミュニケーションの様子などを書きたいと思います。 と、書いておいてしばらく経ってしまいました。 気になってる人がいないとも限らないので、書いてみたいと思います。\nコミュニケーションの様子 HPEは外資系の会社なので、社内のシステムやメールなどは英語が主ですが、日本にいる社員の大半は日本人なので、 日本オフィスは、日本語が共通語になっているようです。\nただし、私の仕事内容はOpenStackというオープンソースのクラウド基盤ソフトウェアを、コミュニティの中で開発 することです。また、会社のチームはインターナショナルチームなのでチームメンバー・上司が英語が母国語の 人たちが大多数で共通語は英語という状況。そのため、英語が必須な状況ですが、10ヶ月近く経った今も、 英語スキルは以前とあまり変わりがありません orz\u0026hellip;\nもちろん「前から英語ができてた」わけではなく「今もあまりできません」という有様です。 気心知れた人との１対１での会話ならなんとかなります(「あ、こいつ英語苦手なんだね」と相手がある程度手加減 してくれることが多いのです)が、ネイティブあるいはそれに近い同士が議論をし始めると、なかなか入っていけません。\nまた、もともと人見知り(!)でコミュニケーションは苦手な部分があるので、なかなか会話に入っていけません。 それでも、どうにかなってるのは、テキストでの会話（IRC, E-mail）のお陰かなと思います。\nこの辺は、自分の中の要改善項目です。\nテキスト というわけで私はテキストでの会話が主です。タイムゾーン問題、英語力、などのことを考慮すると、 テキストでの会話が便利です。\nE-mail テキストでのコミュニケーションというとコレが思い浮かぶと思います。ただ、あまり使ってないです。 正式な通知とか、後述のものでは伝えにくいもの（言うことがたくさんあったり、添付ファイルとか）で 使う感じ。\nIRC E-mailはリアルタイム性が低いので、結構やりやすいですが、どうしても時間がかかってしまいがちです。 IRCはリアルタイム性が高いので、やり取りがけっこう大変ですが、くだけた会話でもどうにかなります。 一長一短ありますが、IRCの方が気楽なことが多いと思います。 今だと、SlackやHipChatなどのツールもありますが、私のチームではできるだけ「オープン」なものが 好まれる印象です。\nFace to Face Face to Faceのやり取りがないのかというと、そうでもありません。\nGoogle Hangouts, Skype これらのツールを使う機会もあって、\nHappy Hour 重要な通知 といったタイミングで使ってきました。\n「Happy Hour」はチーム内のコミュニケーションを活性化して、風通しを良くするような効果があったと思います。\nその名の通り、就業時間後のバーチャル飲み会風な感じなのですが、日本時間だと朝９時とかなので、 こちらはさすがにお酒を飲むわけにはいかないのがつらいところでしたｗ\nまた、雑談が高速で行われるので、あんまりついていけない感じなのも残念でした＞自分\n「重要な通知」は、メールやIRCだけで伝えるべき内容ではないものですね。チームの行く末とか。 こちらについてはまた別途。\n各種イベント OpenStack Summit等、各種イベントで各国に散らばってるメンバーが集まることもあるので、 一緒にお昼ごはんに行ったり、夜飲んだりとかありました。\n仕事内容について 体制 チームには日本人は私しかおらず、日本で作業しているのも私のみです。 直属のマネージャはオーストラリアにおり、タイムゾーンが近いこともあって、IRCなどで会話をすることが多いです。 さらにその上の上司は、 Allison Randal (Wikipedia JA, Wikipedia EN) さんで、 やはりIRCで会話をすることが多いです。(タイムゾーンが違うこともあり、なかなか会話はないですが)\nさらに上の方になってくると、HPE のクラウドを統括している人になってきますが、なかなか話をする機会はない ですね。ただ、IRCのミーティングに参加したりすることもあり、非常に上下の風通しは良いんじゃないかと感じます。 変な上下意識が見えないのが心地よく感じます。（もちろん、役割はしっかり意識されています。）\n外資系企業について 当初思っていたよりも、ずっと個人を重視してくれているように思います。 (身の回りの10ヶ月弱くらいの感想です。)\n外資系企業に対する私の印象は、\n「キミ、最近パフォーマンスが良くないから、改善策を検討して実施するように。特になければこの改善策を実施 して、1ヶ月で改善されないようならクビね。」\nくらい厳しいものだったのですが、少なくとも今いるチームではそのようなことはありません。 この辺は、上司に依存するところが大きいと思います。\n(でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。 が、それはまた別途書きたいと思います。)\n作業内容 基本的にはOpenStack関連コードの読み書き・レビューしてます。 イベントでの発表などがあれば、その準備も。\n最近はopenstack-healthというコンポーネントに注力して作業してます。フロントエンドがAngularJSなので、 かなり刺激的。悪戦苦闘の日々です。\n作業場所 大島 日本法人本社８階 食堂で作業してます。景色がいいし、比較的静か（心地よいノイズ）があるのでいい感じで 作業できてます。\n参考URL:\nhttp://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html http://www.shashoku.com/shashoku/012.html http://www.pc-ninki.net/about/hp-oshima.html https://job.career-tasu.jp/2017/guide/study/shashoku/01.html Happy Hacking!\n","keywords":["work","oss","english","career","openstack"],"articleBody":"oss-programmer-part1 の続き\n前回:\n次回は仕事内容、コミュニケーションの様子などを書きたいと思います。 と、書いておいてしばらく経ってしまいました。 気になってる人がいないとも限らないので、書いてみたいと思います。\nコミュニケーションの様子 HPEは外資系の会社なので、社内のシステムやメールなどは英語が主ですが、日本にいる社員の大半は日本人なので、 日本オフィスは、日本語が共通語になっているようです。\nただし、私の仕事内容はOpenStackというオープンソースのクラウド基盤ソフトウェアを、コミュニティの中で開発 することです。また、会社のチームはインターナショナルチームなのでチームメンバー・上司が英語が母国語の 人たちが大多数で共通語は英語という状況。そのため、英語が必須な状況ですが、10ヶ月近く経った今も、 英語スキルは以前とあまり変わりがありません orz…\nもちろん「前から英語ができてた」わけではなく「今もあまりできません」という有様です。 気心知れた人との１対１での会話ならなんとかなります(「あ、こいつ英語苦手なんだね」と相手がある程度手加減 してくれることが多いのです)が、ネイティブあるいはそれに近い同士が議論をし始めると、なかなか入っていけません。\nまた、もともと人見知り(!)でコミュニケーションは苦手な部分があるので、なかなか会話に入っていけません。 それでも、どうにかなってるのは、テキストでの会話（IRC, E-mail）のお陰かなと思います。\nこの辺は、自分の中の要改善項目です。\nテキスト というわけで私はテキストでの会話が主です。タイムゾーン問題、英語力、などのことを考慮すると、 テキストでの会話が便利です。\nE-mail テキストでのコミュニケーションというとコレが思い浮かぶと思います。ただ、あまり使ってないです。 正式な通知とか、後述のものでは伝えにくいもの（言うことがたくさんあったり、添付ファイルとか）で 使う感じ。\nIRC E-mailはリアルタイム性が低いので、結構やりやすいですが、どうしても時間がかかってしまいがちです。 IRCはリアルタイム性が高いので、やり取りがけっこう大変ですが、くだけた会話でもどうにかなります。 一長一短ありますが、IRCの方が気楽なことが多いと思います。 今だと、SlackやHipChatなどのツールもありますが、私のチームではできるだけ「オープン」なものが 好まれる印象です。\nFace to Face Face to Faceのやり取りがないのかというと、そうでもありません。\nGoogle Hangouts, Skype これらのツールを使う機会もあって、\nHappy Hour 重要な通知 といったタイミングで使ってきました。\n「Happy Hour」はチーム内のコミュニケーションを活性化して、風通しを良くするような効果があったと思います。\nその名の通り、就業時間後のバーチャル飲み会風な感じなのですが、日本時間だと朝９時とかなので、 こちらはさすがにお酒を飲むわけにはいかないのがつらいところでしたｗ\nまた、雑談が高速で行われるので、あんまりついていけない感じなのも残念でした＞自分\n「重要な通知」は、メールやIRCだけで伝えるべき内容ではないものですね。チームの行く末とか。 こちらについてはまた別途。\n各種イベント OpenStack Summit等、各種イベントで各国に散らばってるメンバーが集まることもあるので、 一緒にお昼ごはんに行ったり、夜飲んだりとかありました。\n仕事内容について 体制 チームには日本人は私しかおらず、日本で作業しているのも私のみです。 直属のマネージャはオーストラリアにおり、タイムゾーンが近いこともあって、IRCなどで会話をすることが多いです。 さらにその上の上司は、 Allison Randal (Wikipedia JA, Wikipedia EN) さんで、 やはりIRCで会話をすることが多いです。(タイムゾーンが違うこともあり、なかなか会話はないですが)\nさらに上の方になってくると、HPE のクラウドを統括している人になってきますが、なかなか話をする機会はない ですね。ただ、IRCのミーティングに参加したりすることもあり、非常に上下の風通しは良いんじゃないかと感じます。 変な上下意識が見えないのが心地よく感じます。（もちろん、役割はしっかり意識されています。）\n外資系企業について 当初思っていたよりも、ずっと個人を重視してくれているように思います。 (身の回りの10ヶ月弱くらいの感想です。)\n外資系企業に対する私の印象は、\n「キミ、最近パフォーマンスが良くないから、改善策を検討して実施するように。特になければこの改善策を実施 して、1ヶ月で改善されないようならクビね。」\nくらい厳しいものだったのですが、少なくとも今いるチームではそのようなことはありません。 この辺は、上司に依存するところが大きいと思います。\n(でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。 が、それはまた別途書きたいと思います。)\n作業内容 基本的にはOpenStack関連コードの読み書き・レビューしてます。 イベントでの発表などがあれば、その準備も。\n最近はopenstack-healthというコンポーネントに注力して作業してます。フロントエンドがAngularJSなので、 かなり刺激的。悪戦苦闘の日々です。\n作業場所 大島 日本法人本社８階 食堂で作業してます。景色がいいし、比較的静か（心地よいノイズ）があるのでいい感じで 作業できてます。\n参考URL:\nhttp://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html http://www.shashoku.com/shashoku/012.html http://www.pc-ninki.net/about/hp-oshima.html https://job.career-tasu.jp/2017/guide/study/shashoku/01.html Happy Hacking!\n","wordCount":"103","inLanguage":"ja","datePublished":"2016-10-18T00:00:00+09:00","dateModified":"2016-10-18T00:00:00+09:00","author":{"@type":"Person","name":"Masayuki Igawa"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://igawa.io/posts/2016/10/oss-programmer-part2/"},"publisher":{"@type":"Organization","name":"What's done is done","logo":{"@type":"ImageObject","url":"https://igawa.io/favicon.ico"}}}</script></head><body id=top><header class=header><nav class=header-nav><div class=logo><a href=https://igawa.io/ accesskey=h title="What's done is done (Alt + H)">What's done is done</a><div class=logo-switches><button id=theme-toggle class=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg class="moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg class="sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu class=menu><li><a href=https://igawa.io/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://igawa.io/categories/ title=Categories><span>Categories</span></a></li><li><a href=https://igawa.io/tags/ title=Tags><span>Tags</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><nav class=breadcrumbs role=navigation aria-label=Breadcrumb><a href=/>ホーム</a>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg>
+<a href=/posts/>Posts</a>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg></nav><h1 class="post-title entry-hint-parent">あなたの知らないOSSプログラマの世界 - part 2</h1><div class=post-meta><span title='2016-10-18 00:00:00 +0900 +0900'>2016-10-18</span>&nbsp;·&nbsp;<span>1 分</span>&nbsp;·&nbsp;<span>Masayuki Igawa</span></div></header><details class=toc><summary accesskey=c title="(Alt + C)"><span class=title>目次</span></summary><div class=inner><ul><li><a href=#%e3%82%b3%e3%83%9f%e3%83%a5%e3%83%8b%e3%82%b1%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%81%ae%e6%a7%98%e5%ad%90 aria-label=コミュニケーションの様子>コミュニケーションの様子</a><ul><li><a href=#%e3%83%86%e3%82%ad%e3%82%b9%e3%83%88 aria-label=テキスト>テキスト</a><ul><li><a href=#e-mail aria-label=E-mail>E-mail</a></li><li><a href=#irc aria-label=IRC>IRC</a></li></ul></li><li><a href=#face-to-face aria-label="Face to Face">Face to Face</a><ul><li><a href=#google-hangouts-skype aria-label="Google Hangouts, Skype">Google Hangouts, Skype</a></li><li><a href=#%e5%90%84%e7%a8%ae%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88 aria-label=各種イベント>各種イベント</a></li></ul></li></ul></li><li><a href=#%e4%bb%95%e4%ba%8b%e5%86%85%e5%ae%b9%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6 aria-label=仕事内容について>仕事内容について</a><ul><li><a href=#%e4%bd%93%e5%88%b6 aria-label=体制>体制</a></li><li><a href=#%e5%a4%96%e8%b3%87%e7%b3%bb%e4%bc%81%e6%a5%ad%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6 aria-label=外資系企業について>外資系企業について</a></li><li><a href=#%e4%bd%9c%e6%a5%ad%e5%86%85%e5%ae%b9 aria-label=作業内容>作業内容</a></li><li><a href=#%e4%bd%9c%e6%a5%ad%e5%a0%b4%e6%89%80 aria-label=作業場所>作業場所</a></li></ul></li></ul></div></details><div class="post-content md-content"><p><a href=../../06/oss-programmer-part1>oss-programmer-part1</a> の続き</p><p>前回:</p><pre tabindex=0><code>次回は仕事内容、コミュニケーションの様子などを書きたいと思います。
+</code></pre><p>と、書いておいてしばらく経ってしまいました。
+気になってる人がいないとも限らないので、書いてみたいと思います。</p><h2 id=コミュニケーションの様子>コミュニケーションの様子<a hidden class=anchor aria-hidden=true href=#コミュニケーションの様子>#</a></h2><p>HPEは外資系の会社なので、社内のシステムやメールなどは英語が主ですが、日本にいる社員の大半は日本人なので、
+日本オフィスは、日本語が共通語になっているようです。</p><p>ただし、私の仕事内容はOpenStackというオープンソースのクラウド基盤ソフトウェアを、コミュニティの中で開発
+することです。また、会社のチームはインターナショナルチームなのでチームメンバー・上司が英語が母国語の
+人たちが大多数で共通語は英語という状況。そのため、英語が必須な状況ですが、10ヶ月近く経った今も、
+英語スキルは以前とあまり変わりがありません orz&mldr;</p><p>もちろん「前から英語ができてた」わけではなく「今もあまりできません」という有様です。
+気心知れた人との１対１での会話ならなんとかなります(「あ、こいつ英語苦手なんだね」と相手がある程度手加減
+してくれることが多いのです)が、ネイティブあるいはそれに近い同士が議論をし始めると、なかなか入っていけません。</p><p>また、もともと人見知り(!)でコミュニケーションは苦手な部分があるので、なかなか会話に入っていけません。
+それでも、どうにかなってるのは、テキストでの会話（IRC, E-mail）のお陰かなと思います。</p><p>この辺は、自分の中の要改善項目です。</p><h3 id=テキスト>テキスト<a hidden class=anchor aria-hidden=true href=#テキスト>#</a></h3><p>というわけで私はテキストでの会話が主です。タイムゾーン問題、英語力、などのことを考慮すると、
+テキストでの会話が便利です。</p><h4 id=e-mail>E-mail<a hidden class=anchor aria-hidden=true href=#e-mail>#</a></h4><p>テキストでのコミュニケーションというとコレが思い浮かぶと思います。ただ、あまり使ってないです。
+正式な通知とか、後述のものでは伝えにくいもの（言うことがたくさんあったり、添付ファイルとか）で
+使う感じ。</p><h4 id=irc>IRC<a hidden class=anchor aria-hidden=true href=#irc>#</a></h4><p>E-mailはリアルタイム性が低いので、結構やりやすいですが、どうしても時間がかかってしまいがちです。
+IRCはリアルタイム性が高いので、やり取りがけっこう大変ですが、くだけた会話でもどうにかなります。
+一長一短ありますが、IRCの方が気楽なことが多いと思います。
+今だと、SlackやHipChatなどのツールもありますが、私のチームではできるだけ「オープン」なものが
+好まれる印象です。</p><h3 id=face-to-face>Face to Face<a hidden class=anchor aria-hidden=true href=#face-to-face>#</a></h3><p>Face to Faceのやり取りがないのかというと、そうでもありません。</p><h4 id=google-hangouts-skype>Google Hangouts, Skype<a hidden class=anchor aria-hidden=true href=#google-hangouts-skype>#</a></h4><p>これらのツールを使う機会もあって、</p><ul><li>Happy Hour</li><li>重要な通知</li></ul><p>といったタイミングで使ってきました。</p><p>「Happy Hour」はチーム内のコミュニケーションを活性化して、風通しを良くするような効果があったと思います。</p><p>その名の通り、就業時間後のバーチャル飲み会風な感じなのですが、日本時間だと朝９時とかなので、
+こちらはさすがにお酒を飲むわけにはいかないのがつらいところでしたｗ</p><p>また、雑談が高速で行われるので、あんまりついていけない感じなのも残念でした＞自分</p><p>「重要な通知」は、メールやIRCだけで伝えるべき内容ではないものですね。チームの行く末とか。
+こちらについてはまた別途。</p><h4 id=各種イベント>各種イベント<a hidden class=anchor aria-hidden=true href=#各種イベント>#</a></h4><p>OpenStack Summit等、各種イベントで各国に散らばってるメンバーが集まることもあるので、
+一緒にお昼ごはんに行ったり、夜飲んだりとかありました。</p><h2 id=仕事内容について>仕事内容について<a hidden class=anchor aria-hidden=true href=#仕事内容について>#</a></h2><h3 id=体制>体制<a hidden class=anchor aria-hidden=true href=#体制>#</a></h3><p>チームには日本人は私しかおらず、日本で作業しているのも私のみです。
+直属のマネージャはオーストラリアにおり、タイムゾーンが近いこともあって、IRCなどで会話をすることが多いです。
+さらにその上の上司は、 <a href=http://allisonrandal.com/>Allison Randal</a> (<a href=https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AA%E3%82%BD%E3%83%B3%E3%83%BB%E3%83%A9%E3%83%B3%E3%83%80%E3%83%AB>Wikipedia JA</a>, <a href=https://en.wikipedia.org/wiki/Allison_Randal>Wikipedia EN</a>) さんで、
+やはりIRCで会話をすることが多いです。(タイムゾーンが違うこともあり、なかなか会話はないですが)</p><p>さらに上の方になってくると、HPE のクラウドを統括している人になってきますが、なかなか話をする機会はない
+ですね。ただ、IRCのミーティングに参加したりすることもあり、非常に上下の風通しは良いんじゃないかと感じます。
+変な上下意識が見えないのが心地よく感じます。（もちろん、役割はしっかり意識されています。）</p><h3 id=外資系企業について>外資系企業について<a hidden class=anchor aria-hidden=true href=#外資系企業について>#</a></h3><p>当初思っていたよりも、ずっと個人を重視してくれているように思います。
+(身の回りの10ヶ月弱くらいの感想です。)</p><p>外資系企業に対する私の印象は、</p><p>「キミ、最近パフォーマンスが良くないから、改善策を検討して実施するように。特になければこの改善策を実施
+　して、1ヶ月で改善されないようならクビね。」</p><p>くらい厳しいものだったのですが、少なくとも今いるチームではそのようなことはありません。
+この辺は、上司に依存するところが大きいと思います。</p><p>(でも、時にはパフォーマンスに関係なくバッサリクビを斬られることがわかりました。。
+が、それはまた別途書きたいと思います。)</p><h3 id=作業内容>作業内容<a hidden class=anchor aria-hidden=true href=#作業内容>#</a></h3><p>基本的にはOpenStack関連コードの読み書き・レビューしてます。
+イベントでの発表などがあれば、その準備も。</p><p>最近はopenstack-healthというコンポーネントに注力して作業してます。フロントエンドがAngularJSなので、
+かなり刺激的。悪戦苦闘の日々です。</p><h3 id=作業場所>作業場所<a hidden class=anchor aria-hidden=true href=#作業場所>#</a></h3><p>大島 日本法人本社８階 食堂で作業してます。景色がいいし、比較的静か（心地よいノイズ）があるのでいい感じで
+作業できてます。</p><p>参考URL:</p><ul><li><a href=http://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html>http://www.lifehacker.jp/2013/03/130313hp_staff_canteen.html</a></li><li><a href=http://www.shashoku.com/shashoku/012.html>http://www.shashoku.com/shashoku/012.html</a></li><li><a href=http://www.pc-ninki.net/about/hp-oshima.html>http://www.pc-ninki.net/about/hp-oshima.html</a></li><li><a href=https://job.career-tasu.jp/2017/guide/study/shashoku/01.html>https://job.career-tasu.jp/2017/guide/study/shashoku/01.html</a></li></ul><p>Happy Hacking!</p></div><footer class=post-footer><ul class=post-tags><li><a href=https://igawa.io/tags/work/>Work</a></li><li><a href=https://igawa.io/tags/oss/>Oss</a></li><li><a href=https://igawa.io/tags/english/>English</a></li><li><a href=https://igawa.io/tags/career/>Career</a></li><li><a href=https://igawa.io/tags/openstack/>Openstack</a></li></ul><nav class=paginav><a class=prev href=https://igawa.io/posts/2016/10/openstack-health-updates/><span class=title>« 前へ</span>
+<span>OpenStack-Health updates</span>
+</a><a class=next href=https://igawa.io/posts/2016/10/dps-forever/><span class=title>次へ »</span>
+<span>チーム解散?!</span></a></nav></footer><div id=disqus_thread></div><script>var disqus_config=function(){this.page.url="https://igawa.io/posts/2016/10/oss-programmer-part2/",this.page.identifier="2016-10-18-oss-programmer-part2"};(function(){var e=document,t=e.createElement("script");t.src="https://afterstack.disqus.com/embed.js",t.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(t)})()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></article></main><footer class=footer><span>&copy; 2026 <a href=https://igawa.io/>What's done is done</a></span> ·
+<span>Powered by
+<a href="https://gohugo.io/?utm_source=papermod" rel=noopener target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top id=top-link class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey=g><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up"><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var toplink=document.getElementById("top-link");window.onscroll=function(){const e=window.innerHeight;document.body.scrollTop>e||document.documentElement.scrollTop>e?toplink.classList.remove("hidden"):toplink.classList.add("hidden")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="コピー";function s(){t.innerHTML="コピーされました!",setTimeout(()=>{t.innerHTML="コピー"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>

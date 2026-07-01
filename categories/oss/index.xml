@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>OSS on What's done is done</title><link>https://igawa.io/categories/oss/</link><description>Recent content in OSS on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sat, 23 Jun 2018 00:00:00 +0900</lastBuildDate><atom:link href="https://igawa.io/categories/oss/index.xml" rel="self" type="application/rss+xml"/><item><title>openSUSE mini Summit 2018</title><link>https://igawa.io/posts/2018/06/opensuse-mini-summit-2018/</link><pubDate>Sat, 23 Jun 2018 00:00:00 +0900</pubDate><guid>https://igawa.io/posts/2018/06/opensuse-mini-summit-2018/</guid><description>&lt;p&gt;I had &lt;a href="https://github.com/masayukig/cheap-cloud/blob/2018-06-23-opensuse-mini-summit/cheap_cloud.pdf"&gt;a talk&lt;/a&gt; at the &lt;a href="https://opensuseja.connpass.com/event/86085/"&gt;openSUSE mini Summit 2018&lt;/a&gt; about &lt;code&gt;my private cloud&lt;/code&gt;. I had build this for my personal testing. This cloud is enough
+for my use but it&amp;rsquo;s costy for running due to the electricity. So, I&amp;rsquo;m
+thinking to use more efficient machines like Raspberry Pi or something
+like that. I think NUC boxes are better but costy for the initial
+cost..&lt;/p&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;</description></item><item><title>Snapper</title><link>https://igawa.io/posts/2018/02/snapper/</link><pubDate>Fri, 09 Feb 2018 00:00:00 +0900</pubDate><guid>https://igawa.io/posts/2018/02/snapper/</guid><description>&lt;p&gt;I found that &lt;a href="https://en.opensuse.org/openSUSE:Snapper_Tutorial"&gt;snapper&lt;/a&gt; of openSUSE is
+very useful! When I faced an update trouble, it worked very well
+without any trouble!&lt;/p&gt;
+&lt;p&gt;Basically, we tend to forget to make a backup everyday every time by
+hand because it&amp;rsquo;s not necessary normally. However, the thing is happen
+all of a sudden!&lt;/p&gt;
+&lt;p&gt;This is the first time to use that tool. It worked very well without
+any trouble. So, I think snapper is a very good feature.&lt;/p&gt;
+&lt;p&gt;By default, openSUSE setups snapper on your root volume w/ btrfs. So
+you can use it like this, We can rollback where you want.&lt;/p&gt;
+&lt;p&gt;To use &lt;code&gt;snapper&lt;/code&gt;, it&amp;rsquo;s very easy. By default, &lt;code&gt;snapper&lt;/code&gt; creates
+snapshots every zypper updates. So, if you want to rollback, you just
+need to select the option to rollback on the boot menu. Or you can
+specify a snapshot like this:&lt;/p&gt;</description></item><item><title>Keeping my contribution during a month</title><link>https://igawa.io/posts/2017/12/keep-contribution-during-a-month/</link><pubDate>Mon, 25 Dec 2017 00:00:00 +0900</pubDate><guid>https://igawa.io/posts/2017/12/keep-contribution-during-a-month/</guid><description>&lt;p&gt;I have some feelings about keeping my contribution through a month on
+&lt;a href="https://github.com/masayukig/"&gt;My GitHub profile&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="whats-the-tricks"&gt;What&amp;rsquo;s the tricks?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Have your own github repositories and contribute them.&lt;/li&gt;
+&lt;li&gt;Dump out everything to the github repositories as possible.&lt;/li&gt;
+&lt;li&gt;Forget the limitation. We can commit everything to github repositories even if your blog posts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="what-are-the-positivenegativeaction-items"&gt;What are the Positive/Negative/Action Items?&lt;/h2&gt;
+&lt;h3 id="positive"&gt;Positive&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Almost green!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="negtive"&gt;Negtive&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Only white on Dec. 13&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It was green for some days. But it was turned to white suddenly. This might be caused by this rule: &lt;a href="https://help.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile/"&gt;https://help.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Not only actual code but also issues and blog posts&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="action"&gt;Action&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Keep it, anyway. Even if it&amp;rsquo;ll be a blog post or issue.&lt;/li&gt;
+&lt;li&gt;Mixed contribution like issues, comments, push patches are better to avoid an accident.&lt;/li&gt;
+&lt;li&gt;Try to write more code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;</description></item><item><title>Simple HTTPServer in Python</title><link>https://igawa.io/posts/2017/12/simple-httpserver-in-python/</link><pubDate>Mon, 18 Dec 2017 00:00:00 +0900</pubDate><guid>https://igawa.io/posts/2017/12/simple-httpserver-in-python/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;This is an article for &lt;a href="https://adventar.org/calendars/2628"&gt;鰻 Advent Calendar 2017&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;Every time I&amp;rsquo;d like to use a http server in development such as
+checking generated HTML documentation files, I need to google how to
+do it. So I post a blog as a memorandum.&lt;/p&gt;
+&lt;h2 id="python2"&gt;&lt;a href="https://docs.python.org/2/library/simplehttpserver.html"&gt;Python2&lt;/a&gt;&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ python -m SimpleHTTPServer [PORT]
+# default port is 8000
+Serving HTTP on 0.0.0.0 port 8000 ...
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="python3"&gt;&lt;a href="https://docs.python.org/3/library/http.server.html"&gt;Python3&lt;/a&gt;&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ python3 -m http.server [PORT]
+# default port is 8000
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Happy Hacking!&lt;/p&gt;</description></item><item><title>Ubuntuでデフォルトのエディタをnanoからvimに変更</title><link>https://igawa.io/posts/2011/01/ubuntu%E3%81%A7%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E3%81%AE%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%82%92nano%E3%81%8B%E3%82%89vim%E3%81%AB%E5%A4%89%E6%9B%B4/</link><pubDate>Wed, 26 Jan 2011 05:01:00 +0900</pubDate><guid>https://igawa.io/posts/2011/01/ubuntu%E3%81%A7%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E3%81%AE%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%82%92nano%E3%81%8B%E3%82%89vim%E3%81%AB%E5%A4%89%E6%9B%B4/</guid><description>&lt;p&gt;Ubuntuのデフォルトエディタはnanoというやつですが、
+操作方法がさっぱりわからんので、vimに変更します。
+参考にしたサイトは、
+「&lt;a href="http://www.gabuchan.net/blog/archives/15"&gt;Ubuntu のデフォルトエディタを nano から vim
+に変更する方法&lt;/a&gt;」です。&lt;/p&gt;
+&lt;p&gt;まずは、vimのインストールから。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo apt-get install vim
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています
+状態情報を読み取っています... 完了
+以下の特別パッケージがインストールされます:
+vim-runtime
+提案パッケージ:
+ctags vim-doc vim-scripts
+以下のパッケージが新たにインストールされます:
+vim vim-runtime
+アップグレード: 0 個、新規インストール: 2 個、削除: 0 個、保留: 10 個。
+6,563kB のアーカイブを取得する必要があります。
+この操作後に追加で 27.1MB のディスク容量が消費されます。
+続行しますか [Y/n]?
+取得:1 http://jp.archive.ubuntu.com/ubuntu/ maverick/main vim-runtime all 2:7.2.330-1ubuntu4 [5,707kB]
+取得:2 http://jp.archive.ubuntu.com/ubuntu/ maverick/main vim i386 2:7.2.330-1ubuntu4 [856kB]
+6,563kB を 4秒 で取得しました (1,315kB/s)
+未選択パッケージ vim-runtime を選択しています。
+(データベースを読み込んでいます ... 現在 153356 個のファイルとディレクトリがインストールされています。)
+(.../vim-runtime_2%3a7.2.330-1ubuntu4_all.deb から) vim-runtime を展開しています...
+Adding 'diversion of /usr/share/vim/vim72/doc/help.txt to /usr/share/vim/vim72/doc/help.txt.vim-tiny by vim-runtime'
+Adding 'diversion of /usr/share/vim/vim72/doc/tags to /usr/share/vim/vim72/doc/tags.vim-tiny by vim-runtime'
+未選択パッケージ vim を選択しています。
+(.../vim_2%3a7.2.330-1ubuntu4_i386.deb から) vim を展開しています...
+man-db のトリガを処理しています ...
+vim-runtime (2:7.2.330-1ubuntu4) を設定しています ...
+Processing /usr/share/vim/addons/doc
+vim (2:7.2.330-1ubuntu4) を設定しています ...
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vim (vim) in auto mode.
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vimdiff (vimdiff) in auto mode.
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rvim (rvim) in auto mode.
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rview (rview) in auto mode.
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vi (vi) in auto mode.
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/view (view) in auto mode.
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/ex (ex) in auto mode.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;そして、update-alternativesコマンドで変更。&lt;/p&gt;</description></item><item><title>Ubuntu(10.10)で最新Kernelビルド</title><link>https://igawa.io/posts/2011/01/ubuntu1010%E3%81%A7%E6%9C%80%E6%96%B0kernel%E3%83%93%E3%83%AB%E3%83%89/</link><pubDate>Sat, 22 Jan 2011 07:30:00 +0900</pubDate><guid>https://igawa.io/posts/2011/01/ubuntu1010%E3%81%A7%E6%9C%80%E6%96%B0kernel%E3%83%93%E3%83%AB%E3%83%89/</guid><description>&lt;p&gt;UbuntuでKernelをビルドしたくなり、そのときのメモ。
+&lt;a href="http://dogmap.jp/2009/06/19/rebuild-kernel/"&gt;http://dogmap.jp/2009/06/19/rebuild-kernel/&lt;/a&gt;
+を、参考に（ほぼそのままですが）しました。&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;/*** カーネル再構築に必要なパッケージをインストール ***/
+$ sudo apt-get install build-essential
+$ sudo apt-get install kernel-package libncurses5-dev libqt3-mt-dev
+$ sudo apt-get install git git-core
+$ sudo apt-get install fakeroot
+/*** カーネルソースをインストールして展開 ***/
+$ mkdir ~/src; cd src
+$ git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux-2.6.git
+/*** .config ファイルの作成 ***/
+$ cd linux-2.6
+$ cp /boot/config-2.6.35-xx-generic .config
+/*** 好きなconfigをONにする。今回は、LGUESTと
+例のミラクルパッチwをONにしてみた
+http://gihyo.jp/admin/clip/01/linux_dt/201011/18
+***/
+$ make menuconfig
+/*** カーネルのリビルド ***/
+$ fakeroot make-kpkg clean
+$ fakeroot make-kpkg --initrd --revision=.20110121 kernel_image kernel_headers
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;今はここまで。これが終わったら、以下を実行予定。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/*** .deb ができるので dpkg でインストール ***/
+$ cd ..
+$ dpkg -i linux-image-2.6.38.xx_20110121_x86.deb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;# スクリプト化しよう。。&lt;/p&gt;
+&lt;p&gt;(2011/01/30追記)だったが、うまくいかなかった。。が、
+試行錯誤し、以下のようなパッチをあててなんとかできるようになった。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;--- /usr/share/kernel-package/ruleset/kernel_version.mk.orig 2008-05-02 07:06:28.000000000 +0200
++++ /usr/share/kernel-package/ruleset/kernel_version.mk 2010-07-08 00:02:45.316669641 +0200
+@@ -62,7 +62,7 @@
+@echo &amp;quot;$(strip $(EXTRAVERSION))&amp;quot;
+debian_LOCALVERSION:
+- @echo $(if $(strip $(localver-full)),&amp;quot;$(strip $(localver-full))&amp;quot;, &amp;quot;$(strip $(LOCALVERSION))&amp;quot;)
++ @./scripts/setlocalversion
+debian_TOPDIR:
+# 2.6 kernels declared TOPDIR obsolete, so use srctree if it exists
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;参考サイト：&lt;a href="http://d.hatena.ne.jp/kinneko/20110111/p53"&gt;http://d.hatena.ne.jp/kinneko/20110111/p53&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Simple Massager v1.1.1 released!</title><link>https://igawa.io/posts/2010/10/simple-massager-v111-released/</link><pubDate>Fri, 29 Oct 2010 05:19:00 +0900</pubDate><guid>https://igawa.io/posts/2010/10/simple-massager-v111-released/</guid><description>&lt;p&gt;&lt;a href="//details?id=org.orzlabs.android.massage"&gt;Simple Massager
+v1.1.1&lt;/a&gt;をリリースしました。
+v1.1.1:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;画面表示をよりシンプルにわかりやすくしたつもりです。
+もし、バグを見つけたり、ご意見などありましたら、
+下記のgithub
+ウェブサイトでその問題点等の書き込みをしてくれると嬉しいです♪
+&lt;a href="http://github.com/masayukig/Simple-Massager/issues"&gt;http://github.com/masayukig/Simple-Massager/issues&lt;/a&gt;
+ダウンロードは、以下を読み取っても可能です。
+&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2010/10/47385-qrcode.gif"&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Androidアプリを作って公開してみた - Simple Massager</title><link>https://igawa.io/posts/2010/10/android%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E5%85%AC%E9%96%8B%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F-simple-massager/</link><pubDate>Wed, 13 Oct 2010 05:59:00 +0900</pubDate><guid>https://igawa.io/posts/2010/10/android%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E5%85%AC%E9%96%8B%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F-simple-massager/</guid><description>&lt;p&gt;初めて、Androidアプリを作って公開してみた。
+&amp;ldquo;Simple Massager&amp;rdquo;
+というアプリです。&lt;/p&gt;
+&lt;p&gt;機能は非常に単純で、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;振動開始・停止&lt;/li&gt;
+&lt;li&gt;ランダム振動・連続振動の選択&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;が出来るのみです。&lt;/p&gt;
+&lt;p&gt;最大の欠点は、
+「デバイスの振動が弱すぎてほとんど使いものにならない」
+というところですw&lt;/p&gt;
+&lt;p&gt;次のアプリのアイデアもあるので、それの開発に着手したいと思います。&lt;/p&gt;
+&lt;p&gt;なお、ソースコードは、以下で公開しています。
+&lt;a href="http://github.com/masayukig/Simple-Massager"&gt;http://github.com/masayukig/Simple-Massager&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;英語版ブログは&lt;a href="http://blog.orzlabs.org/"&gt;http://blog.orzlabs.org/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Vimから投稿するテスト</title><link>https://igawa.io/posts/2009/11/vim%E3%81%8B%E3%82%89%E6%8A%95%E7%A8%BF%E3%81%99%E3%82%8B%E3%83%86%E3%82%B9%E3%83%88/</link><pubDate>Sat, 21 Nov 2009 05:30:00 +0900</pubDate><guid>https://igawa.io/posts/2009/11/vim%E3%81%8B%E3%82%89%E6%8A%95%E7%A8%BF%E3%81%99%E3%82%8B%E3%83%86%E3%82%B9%E3%83%88/</guid><description>&lt;p&gt;&lt;a href="http://mattn.kaoriya.net/software/vim/20070831122307.htm"&gt;http://mattn.kaoriya.net/software/vim/20070831122307.htm&lt;/a&gt;
+の記事を参考に、vimから投稿してみます。&lt;/p&gt;</description></item><item><title>Ubuntu(8.10)上のFirefoxで日本語フォントがおかしい（中国語フォント？）</title><link>https://igawa.io/posts/2008/12/ubuntu810%E4%B8%8A%E3%81%AEfirefox%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84%E4%B8%AD%E5%9B%BD%E8%AA%9E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/</link><pubDate>Sat, 13 Dec 2008 06:55:00 +0900</pubDate><guid>https://igawa.io/posts/2008/12/ubuntu810%E4%B8%8A%E3%81%AEfirefox%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84%E4%B8%AD%E5%9B%BD%E8%AA%9E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/</guid><description>&lt;p&gt;Ubuntu(8.10)上のFirefoxで日本語フォントがおかしい（中国語フォント？）と言う現象に遭遇したので、
+解決するためのメモ。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://forum.ubuntulinux.jp/viewtopic.php?id=3124"&gt;http://forum.ubuntulinux.jp/viewtopic.php?id=3124&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bugs.launchpad.net/ubuntu-jp-improvement/+bug/272387"&gt;https://bugs.launchpad.net/ubuntu-jp-improvement/+bug/272387&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;を参考に(というかそのままだがw)、
+&lt;code&gt;$ sudo ln -s /etc/fonts/conf.avail/69-language-selector-ja-jp.conf /etc/fonts/conf.d/&lt;/code&gt;
+を、実行。ブラウザリロード(not リスタート)で、即解決。&lt;/p&gt;</description></item><item><title>古い記事をインポートしました(MovableType -&gt; Wordpress)</title><link>https://igawa.io/posts/2008/11/%E5%8F%A4%E3%81%84%E8%A8%98%E4%BA%8B%E3%82%92%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%97%E3%81%BE%E3%81%97%E3%81%9Fmovabletype-wordpress/</link><pubDate>Sun, 16 Nov 2008 08:09:00 +0900</pubDate><guid>https://igawa.io/posts/2008/11/%E5%8F%A4%E3%81%84%E8%A8%98%E4%BA%8B%E3%82%92%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%97%E3%81%BE%E3%81%97%E3%81%9Fmovabletype-wordpress/</guid><description>&lt;p&gt;以前、MovableTypeで書いていた記事を、wordpressにインポートしました。&lt;/p&gt;
+&lt;p&gt;方法は、至って簡単。&lt;/p&gt;
+&lt;p&gt;MovableTypeの「ユーティリティ」-&amp;gt;「読み込み/書き出し」-&amp;gt;「エントリの書き出し」で、&lt;/p&gt;
+&lt;p&gt;エントリをファイルに書き出す。しばらく待つと、ファイル保存のダイアログがでるので、&lt;/p&gt;
+&lt;p&gt;適当に名前をつけて保存。&lt;/p&gt;
+&lt;p&gt;その後は、Wordpressの「Tools」-&amp;gt;「インポート」で、先ほど保存したファイルをインポートするだけ。&lt;/p&gt;
+&lt;p&gt;良しとする。w&lt;/p&gt;</description></item><item><title>OpenOffice.org 2.0ベータ2の日本語版リリース，約400ページの解説書もPDFで 無償公開へ</title><link>https://igawa.io/posts/2005/09/openofficeorg-20%E3%83%99%E3%83%BC%E3%82%BF2%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E7%B4%84400%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E8%A7%A3%E8%AA%AC%E6%9B%B8%E3%82%82pdf%E3%81%A7-%E7%84%A1%E5%84%9F%E5%85%AC%E9%96%8B%E3%81%B8/</link><pubDate>Tue, 06 Sep 2005 23:32:00 +0900</pubDate><guid>https://igawa.io/posts/2005/09/openofficeorg-20%E3%83%99%E3%83%BC%E3%82%BF2%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E7%B4%84400%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E8%A7%A3%E8%AA%AC%E6%9B%B8%E3%82%82pdf%E3%81%A7-%E7%84%A1%E5%84%9F%E5%85%AC%E9%96%8B%E3%81%B8/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/article/NEWS/20050831/220381/"&gt;itpro.nikkeibp.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;解説書も無償公開とはすごいですね。
+まぁ、「約４００ページ」なので、家庭用のプリンターで印刷するのは、
+ちょっと躊躇してしまいますが。。。
+(印刷しても、結局読みづらそうだし。持ち運びにも不便そうだし。。)&lt;/p&gt;</description></item><item><title>Mozilla/Mozilla Firefoxの脆弱性が再発</title><link>https://igawa.io/posts/2005/06/mozillamozilla-firefox%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7%E3%81%8C%E5%86%8D%E7%99%BA/</link><pubDate>Tue, 07 Jun 2005 22:06:00 +0900</pubDate><guid>https://igawa.io/posts/2005/06/mozillamozilla-firefox%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7%E3%81%8C%E5%86%8D%E7%99%BA/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=05/06/06/1146249&amp;amp;topic=51"&gt;http://slashdot.jp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;最新版のFirefoxで脆弱性があるので注意が必要。&lt;/p&gt;</description></item><item><title>Firefox 1.0.4キター</title><link>https://igawa.io/posts/2005/05/firefox-104%E3%82%AD%E3%82%BF%E3%83%BC/</link><pubDate>Sat, 21 May 2005 01:27:00 +0900</pubDate><guid>https://igawa.io/posts/2005/05/firefox-104%E3%82%AD%E3%82%BF%E3%83%BC/</guid><description>&lt;p&gt;&lt;a href="http://www.mozilla-japan.org/products/firefox/"&gt;http://www.mozilla-japan.org/products/firefox/
+&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2005/05/13
+いくつかの重大なセキュリティ脆弱性を修正した Firefox 1.0.4
+の日本語版をリリースいたしました。すべてのユーザにアップグレードを推奨します。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;だそうです。
+早速アップデート完了しました。&lt;/p&gt;</description></item><item><title>Mozilla Firefox1.0.3に最高レベルの脆弱性</title><link>https://igawa.io/posts/2005/05/mozilla-firefox103%E3%81%AB%E6%9C%80%E9%AB%98%E3%83%AC%E3%83%99%E3%83%AB%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7/</link><pubDate>Mon, 09 May 2005 23:46:00 +0900</pubDate><guid>https://igawa.io/posts/2005/05/mozilla-firefox103%E3%81%AB%E6%9C%80%E9%AB%98%E3%83%AC%E3%83%99%E3%83%AB%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=05/05/09/0327254&amp;amp;topic=51"&gt;http://slashdot.jp/article.pl?sid=05/05/09/0327254&amp;amp;topic=51&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;あらら。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Firefoxユーザがこの脆弱性を利用したページの任意の箇所をクリックしただ
+けで batch/exe 等攻撃コードが実行されてしまう&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいので、とりあえず、
+怪しいWebサイトに行かないようにするしか無いか？&lt;/p&gt;
+&lt;p&gt;怪しいサイトに行く場合には、JavaScriptは「無効」にするのが吉か？&lt;/p&gt;</description></item><item><title>Firefoxに危険なセキュリティ・ホール，最新版「Firefox 1.0.2」で解消</title><link>https://igawa.io/posts/2005/03/firefox%E3%81%AB%E5%8D%B1%E9%99%BA%E3%81%AA%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%83%9B%E3%83%BC%E3%83%AB%E6%9C%80%E6%96%B0%E7%89%88firefox-102%E3%81%A7%E8%A7%A3%E6%B6%88/</link><pubDate>Sat, 26 Mar 2005 01:25:00 +0900</pubDate><guid>https://igawa.io/posts/2005/03/firefox%E3%81%AB%E5%8D%B1%E9%99%BA%E3%81%AA%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%83%9B%E3%83%BC%E3%83%AB%E6%9C%80%E6%96%B0%E7%89%88firefox-102%E3%81%A7%E8%A7%A3%E6%B6%88/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050324/157958/"&gt;http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050324/157958/&lt;/a&gt;
+何があるか、わからない時代なので、1.0.2にさっさとバージョンアップしましょう。
+Mac OS
+Xなら、ダウンロードしてFirefoxを終了後、アイコンをドラッグアンドドロップするだけだ。
+長い間Windowsを使っていた人間からすると、
+「こんなんで本当にいいの？！」
+と思ってしまうが、きっといいのだろう。&lt;/p&gt;</description></item><item><title>Firefox 1.0.1日本語版リリース</title><link>https://igawa.io/posts/2005/03/firefox-101%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</link><pubDate>Mon, 14 Mar 2005 07:43:00 +0900</pubDate><guid>https://igawa.io/posts/2005/03/firefox-101%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</guid><description>&lt;p&gt;&lt;a href="http://slashdot.jp/article.pl?sid=05/03/13/134244&amp;amp;topic=51"&gt;Firefox
+1.0.1日本語版リリース(スラド)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;いくつかのバグが修正されてるみたいだから、
+早速、ダウンロードしなくては!!!&lt;/p&gt;</description></item><item><title>オープンソースのオフィス・ソフトOpenOffice.org 2.0日本語版ベータが公開</title><link>https://igawa.io/posts/2005/03/%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AE%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9%E3%82%BD%E3%83%95%E3%83%88openofficeorg-20%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E3%83%99%E3%83%BC%E3%82%BF%E3%81%8C%E5%85%AC%E9%96%8B/</link><pubDate>Thu, 10 Mar 2005 23:57:00 +0900</pubDate><guid>https://igawa.io/posts/2005/03/%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AE%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9%E3%82%BD%E3%83%95%E3%83%88openofficeorg-20%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E3%83%99%E3%83%BC%E3%82%BF%E3%81%8C%E5%85%AC%E9%96%8B/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050307/157078/"&gt;http://itpro.nikkeibp.co.jp/free/ITPro/NEWS/20050307/157078/&lt;/a&gt;
+早速ダウンロード開始（ｗ&lt;/p&gt;</description></item><item><title>なぜウケる？ 汎用機世代にオープンソース</title><link>https://igawa.io/posts/2005/03/%E3%81%AA%E3%81%9C%E3%82%A6%E3%82%B1%E3%82%8B-%E6%B1%8E%E7%94%A8%E6%A9%9F%E4%B8%96%E4%BB%A3%E3%81%AB%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9/</link><pubDate>Thu, 10 Mar 2005 23:56:00 +0900</pubDate><guid>https://igawa.io/posts/2005/03/%E3%81%AA%E3%81%9C%E3%82%A6%E3%82%B1%E3%82%8B-%E6%B1%8E%E7%94%A8%E6%A9%9F%E4%B8%96%E4%BB%A3%E3%81%AB%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/OPINION/20050126/155299/"&gt;http://itpro.nikkeibp.co.jp/free/ITPro/OPINION/20050126/155299/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;汎用機世代は、ソースを見ることに慣れているそうです。&lt;/p&gt;</description></item><item><title>CVSに変わるバージョン管理ツールSubversionの記事</title><link>https://igawa.io/posts/2005/02/cvs%E3%81%AB%E5%A4%89%E3%82%8F%E3%82%8B%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%83%84%E3%83%BC%E3%83%ABsubversion%E3%81%AE%E8%A8%98%E4%BA%8B/</link><pubDate>Tue, 22 Feb 2005 23:55:00 +0900</pubDate><guid>https://igawa.io/posts/2005/02/cvs%E3%81%AB%E5%A4%89%E3%82%8F%E3%82%8B%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%83%84%E3%83%BC%E3%83%ABsubversion%E3%81%AE%E8%A8%98%E4%BA%8B/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/members/ITPro/oss/20050215/156212/"&gt;http://itpro.nikkeibp.co.jp/members/ITPro/oss/20050215/156212/&lt;/a&gt;
+(なお、閲覧には無料のユーザ登録が必要)&lt;/p&gt;
+&lt;p&gt;たいしたソフトを使ってないので、今のところ
+管理する気も無いが、導入してみようかなぁ。。&lt;/p&gt;</description></item><item><title>「Solaris 10」触ってみました!</title><link>https://igawa.io/posts/2005/02/solaris-10%E8%A7%A6%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F/</link><pubDate>Sat, 19 Feb 2005 00:00:00 +0900</pubDate><guid>https://igawa.io/posts/2005/02/solaris-10%E8%A7%A6%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F/</guid><description>&lt;p&gt;&lt;a href="http://pc.watch.impress.co.jp/docs/2005/0216/nishikawa.htm"&gt;http://pc.watch.impress.co.jp/docs/2005/0216/nishikawa.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;初心者向けのレビュー記事。(ファーストインプレッション)
+私には最適な記事かも。
+ダウンロードしようかなぁ。。。&lt;/p&gt;</description></item><item><title>Firefox用スパイウェア、年内にも登場か</title><link>https://igawa.io/posts/2005/02/firefox%E7%94%A8%E3%82%B9%E3%83%91%E3%82%A4%E3%82%A6%E3%82%A7%E3%82%A2%E5%B9%B4%E5%86%85%E3%81%AB%E3%82%82%E7%99%BB%E5%A0%B4%E3%81%8B/</link><pubDate>Sun, 13 Feb 2005 20:43:00 +0900</pubDate><guid>https://igawa.io/posts/2005/02/firefox%E7%94%A8%E3%82%B9%E3%83%91%E3%82%A4%E3%82%A6%E3%82%A7%E3%82%A2%E5%B9%B4%E5%86%85%E3%81%AB%E3%82%82%E7%99%BB%E5%A0%B4%E3%81%8B/</guid><description>&lt;p&gt;&lt;a href="http://japan.linux.com/security/05/02/09/0347232.shtml?topic=1"&gt;http://japan.linux.com/security/05/02/09/0347232.shtml?topic=1&lt;/a&gt;
+まぁ、どんなソフトウェアにも穴はあるでしょう。
+問題は、その「穴」がどれくらいの速さで塞がれるのかって事じゃないかね。&lt;/p&gt;</description></item><item><title>モジラ、「Thunderbird 1.1」にフィッシング対策機能を追加か？</title><link>https://igawa.io/posts/2005/02/%E3%83%A2%E3%82%B8%E3%83%A9thunderbird-11%E3%81%AB%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E5%AF%BE%E7%AD%96%E6%A9%9F%E8%83%BD%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%8B/</link><pubDate>Wed, 02 Feb 2005 02:03:00 +0900</pubDate><guid>https://igawa.io/posts/2005/02/%E3%83%A2%E3%82%B8%E3%83%A9thunderbird-11%E3%81%AB%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E5%AF%BE%E7%AD%96%E6%A9%9F%E8%83%BD%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%8B/</guid><description>&lt;p&gt;モジラ、「Thunderbird 1.1」にフィッシング対策機能を追加か？
+&lt;a href="http://japan.cnet.com/news/sec/story/0,2000050480,20080244,00.htm"&gt;http://japan.cnet.com/news/sec/story/0,2000050480,20080244,00.htm&lt;/a&gt;
+こういう機能がつくのはいいけど、この機能に頼りっきりな人が出てこないか不安。&lt;/p&gt;</description></item><item><title>Sun、Solaris 10を発表</title><link>https://igawa.io/posts/2004/12/sunsolaris-10%E3%82%92%E7%99%BA%E8%A1%A8/</link><pubDate>Fri, 03 Dec 2004 23:53:00 +0900</pubDate><guid>https://igawa.io/posts/2004/12/sunsolaris-10%E3%82%92%E7%99%BA%E8%A1%A8/</guid><description>&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2004/11/30/009.html"&gt;pcweb.mycom.co.jp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;なんか、新しいオープンソースライセンスになるという噂のSolaris 10。
+どんな物なのか試して見ようと思って、只今ダウンロード中。&lt;/p&gt;</description></item><item><title>Firefox 1.0発表--ファン殺到でモジラサイトは一時ダウン寸前に</title><link>https://igawa.io/posts/2004/11/firefox-10%E7%99%BA%E8%A1%A8-%E3%83%95%E3%82%A1%E3%83%B3%E6%AE%BA%E5%88%B0%E3%81%A7%E3%83%A2%E3%82%B8%E3%83%A9%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AF%E4%B8%80%E6%99%82%E3%83%80%E3%82%A6%E3%83%B3%E5%AF%B8%E5%89%8D%E3%81%AB/</link><pubDate>Fri, 19 Nov 2004 22:50:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/firefox-10%E7%99%BA%E8%A1%A8-%E3%83%95%E3%82%A1%E3%83%B3%E6%AE%BA%E5%88%B0%E3%81%A7%E3%83%A2%E3%82%B8%E3%83%A9%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AF%E4%B8%80%E6%99%82%E3%83%80%E3%82%A6%E3%83%B3%E5%AF%B8%E5%89%8D%E3%81%AB/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20075667,00.htm"&gt;japan.cnet.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;すげ〜。&lt;/p&gt;</description></item><item><title>Firefox1.0リリースで、再注目されるモジラとグーグルの関係</title><link>https://igawa.io/posts/2004/11/firefox10%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%A7%E5%86%8D%E6%B3%A8%E7%9B%AE%E3%81%95%E3%82%8C%E3%82%8B%E3%83%A2%E3%82%B8%E3%83%A9%E3%81%A8%E3%82%B0%E3%83%BC%E3%82%B0%E3%83%AB%E3%81%AE%E9%96%A2%E4%BF%82/</link><pubDate>Sat, 13 Nov 2004 01:25:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/firefox10%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%A7%E5%86%8D%E6%B3%A8%E7%9B%AE%E3%81%95%E3%82%8C%E3%82%8B%E3%83%A2%E3%82%B8%E3%83%A9%E3%81%A8%E3%82%B0%E3%83%BC%E3%82%B0%E3%83%AB%E3%81%AE%E9%96%A2%E4%BF%82/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20075726,00.htm"&gt;japan.cnet.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Firefoxのスタートページが、Googleだったので、
+「なんでかなぁ〜？」と思っていたのですが、
+いろいろ協力しているようですね。
+より良いサービスにつなげて欲しいです。&lt;/p&gt;</description></item><item><title>日経にもFireFox1.0の話題が！</title><link>https://igawa.io/posts/2004/11/%E6%97%A5%E7%B5%8C%E3%81%AB%E3%82%82firefox10%E3%81%AE%E8%A9%B1%E9%A1%8C%E3%81%8C/</link><pubDate>Sat, 13 Nov 2004 01:17:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E6%97%A5%E7%B5%8C%E3%81%AB%E3%82%82firefox10%E3%81%AE%E8%A9%B1%E9%A1%8C%E3%81%8C/</guid><description>&lt;p&gt;&lt;a href="http://www.nikkei.co.jp/news/sangyo/20041110AT1D1003010112004.html"&gt;nikkei.co.jp&lt;/a&gt;
+現在、IEが9割強のシェアを握っているところを、
+FireFoxで「1割のシェアを確保したい」と考えているようです。
+今の勢いからすると、難しくも無い気もしますが、
+現在の人気は、IEのセキュリティ欠陥の多さに嫌気が指した人が
+乗り換えているケースが多いと思うので、
+もし、FireFoxでセキュリティ欠陥が多数見つかってきたりすると、
+この動きが鈍化することも十分考えられますね。&lt;/p&gt;
+&lt;p&gt;逆に、IEにさらにセキュリティ欠陥が見つかれば、
+この動きが加速されることも考えられますね。&lt;/p&gt;</description></item><item><title>Firefox、待望のバージョン1.0がリリース!</title><link>https://igawa.io/posts/2004/11/firefox%E5%BE%85%E6%9C%9B%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B310%E3%81%8C%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</link><pubDate>Tue, 09 Nov 2004 23:51:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/firefox%E5%BE%85%E6%9C%9B%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B310%E3%81%8C%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20075645,00.htm"&gt;japan.cnet.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;やったー！
+早速ダウンロードしたぞ！
+まぁ、RC版とはたいした違いは無いみたいだけど、
+「1.0」っていうのがうれしい感じ。&lt;/p&gt;</description></item><item><title>ブラウザ市場、IE の独占時代にかげり？</title><link>https://igawa.io/posts/2004/11/%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E5%B8%82%E5%A0%B4ie-%E3%81%AE%E7%8B%AC%E5%8D%A0%E6%99%82%E4%BB%A3%E3%81%AB%E3%81%8B%E3%81%92%E3%82%8A/</link><pubDate>Sat, 06 Nov 2004 21:14:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E5%B8%82%E5%A0%B4ie-%E3%81%AE%E7%8B%AC%E5%8D%A0%E6%99%82%E4%BB%A3%E3%81%AB%E3%81%8B%E3%81%92%E3%82%8A/</guid><description>&lt;p&gt;&lt;a href="http://japan.internet.com/webtech/20041104/12.html"&gt;japan.internet.com&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;全バージョンを合計した IE
+の市場シェアが、2004年6月4日から10月29日の間に2.62ポイント下がったことが、同社の統計調査でわかった。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいです。&lt;/p&gt;
+&lt;p&gt;でも、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Netscape/Mozilla 系列の全バージョンの中で、評判の高い『Mozilla
+Firefox』のシェアは、現在ブラウザ全体のわずか3％でしかない&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしい。
+(,,ﾟДﾟ) ｶﾞﾝｶﾞﾚ!　「Firefox」&lt;/p&gt;</description></item><item><title>OpenOffice.org 1.1.3リリース -不具合の修正が中心</title><link>https://igawa.io/posts/2004/11/openofficeorg-113%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9-%E4%B8%8D%E5%85%B7%E5%90%88%E3%81%AE%E4%BF%AE%E6%AD%A3%E3%81%8C%E4%B8%AD%E5%BF%83/</link><pubDate>Wed, 03 Nov 2004 12:05:00 +0900</pubDate><guid>https://igawa.io/posts/2004/11/openofficeorg-113%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9-%E4%B8%8D%E5%85%B7%E5%90%88%E3%81%AE%E4%BF%AE%E6%AD%A3%E3%81%8C%E4%B8%AD%E5%BF%83/</guid><description>&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2004/10/27/010.html"&gt;MYCOM PC WEB&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回のバージョンアップは不具合修正が中心で、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;112個の不具合を修正、安定度向上を実現している&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしい。&lt;/p&gt;
+&lt;p&gt;日本語での利用に最適化したバイナリは、
+&lt;a href="http://ja.openoffice.org/1.1.3/"&gt;http://ja.openoffice.org/1.1.3/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;からダウンロードできる。&lt;/p&gt;
+&lt;p&gt;日ごろ、仕事ではMS-WordやMS-Excelなどを使用しているが、
+個人で買おうと思うと、非常に値段が高く二の足を踏んでしまう。
+しかも、2〜3年に一回バージョンアップするので、それについていこうと思う
+と、大変な出費を強いられる。&lt;/p&gt;
+&lt;p&gt;そんなものに金は払いたくない！
+とか、
+オープンソースのオフィススイートってどんなだろう？
+とか、
+友人にMS-WORD形式のファイルを渡さなきゃならないが、
+その友人はMS-WORDを持っていない！どうしよう！
+とか。
+いろいろ使おうかなと思える場面は想像できる。&lt;/p&gt;</description></item><item><title>Firefox 1.0の最終テストバージョンがリリースに！</title><link>https://igawa.io/posts/2004/10/firefox-10%E3%81%AE%E6%9C%80%E7%B5%82%E3%83%86%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%81%8C%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%AB/</link><pubDate>Fri, 29 Oct 2004 22:30:00 +0900</pubDate><guid>https://igawa.io/posts/2004/10/firefox-10%E3%81%AE%E6%9C%80%E7%B5%82%E3%83%86%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%81%8C%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%AB/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20075471,00.htm"&gt;CNET
+Japan&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;とうとう、もうすぐで1.0がリリースされそう。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;9月にリリースされたプレビューバージョンで見つかったバグ約250カ所が修正されている&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいので、非常に期待が持てる。&lt;/p&gt;
+&lt;p&gt;また、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;11月9日の同ブラウザの発表に合わせて予定される
+The New York Times紙への全面広告掲載に向け、
+支持者に寄付を呼びかけている。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいので、寄付してみてはどうか？&lt;/p&gt;</description></item><item><title>「抵抗と戦い自治体の『丸投げ意識』を変えた」——長崎県総務部参事監 島村秀 世氏</title><link>https://igawa.io/posts/2004/10/%E6%8A%B5%E6%8A%97%E3%81%A8%E6%88%A6%E3%81%84%E8%87%AA%E6%B2%BB%E4%BD%93%E3%81%AE%E4%B8%B8%E6%8A%95%E3%81%92%E6%84%8F%E8%AD%98%E3%82%92%E5%A4%89%E3%81%88%E3%81%9F%E9%95%B7%E5%B4%8E%E7%9C%8C%E7%B7%8F%E5%8B%99%E9%83%A8%E5%8F%82%E4%BA%8B%E7%9B%A3-%E5%B3%B6%E6%9D%91%E7%A7%80-%E4%B8%96%E6%B0%8F/</link><pubDate>Thu, 07 Oct 2004 01:28:00 +0900</pubDate><guid>https://igawa.io/posts/2004/10/%E6%8A%B5%E6%8A%97%E3%81%A8%E6%88%A6%E3%81%84%E8%87%AA%E6%B2%BB%E4%BD%93%E3%81%AE%E4%B8%B8%E6%8A%95%E3%81%92%E6%84%8F%E8%AD%98%E3%82%92%E5%A4%89%E3%81%88%E3%81%9F%E9%95%B7%E5%B4%8E%E7%9C%8C%E7%B7%8F%E5%8B%99%E9%83%A8%E5%8F%82%E4%BA%8B%E7%9B%A3-%E5%B3%B6%E6%9D%91%E7%A7%80-%E4%B8%96%E6%B0%8F/</guid><description>&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/members/ITPro/oss/20041004/150747/"&gt;ITmedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;オープンソースで地方の中小企業が活躍できるようにしたそうです。
+商用ソフトは、地方の中小企業にとっては、&lt;/p&gt;
+&lt;p&gt;技術を習得するのに、時間もお金もかかる。&lt;/p&gt;
+&lt;p&gt;中小企業にそんなお金を払う余裕は無い。&lt;/p&gt;
+&lt;p&gt;オープンソースなら、無料でソフトを導入でき、どんどん試せる。
+などの理由があったようです。&lt;/p&gt;
+&lt;p&gt;また、丸投げじゃないので、業務を知っている人が設計をするので
+非常にいい感じなシステムになるようです。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://itpro.nikkeibp.co.jp/free/ITPro/OPINION/20041004/150752/"&gt;「昨日と違う仕事のやり方」を実現する方法」&lt;/a&gt;
+同じ人にインタビューしてます。参考として。&lt;/p&gt;</description></item><item><title>Firefox 1.0 プレビューリリースの日本語版が公開</title><link>https://igawa.io/posts/2004/09/firefox-10-%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E3%81%8C%E5%85%AC%E9%96%8B/</link><pubDate>Sat, 25 Sep 2004 20:42:00 +0900</pubDate><guid>https://igawa.io/posts/2004/09/firefox-10-%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E3%81%8C%E5%85%AC%E9%96%8B/</guid><description>&lt;p&gt;&lt;a href="http://pcweb.mycom.co.jp/news/2004/09/22/014.html"&gt;MYCOM PC&lt;/a&gt;
+現時点ではWindows版のみ。&lt;/p&gt;</description></item><item><title>IEからFirefoxへの乗り換えユーザーが増加中--米報告</title><link>https://igawa.io/posts/2004/09/ie%E3%81%8B%E3%82%89firefox%E3%81%B8%E3%81%AE%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%8C%E5%A2%97%E5%8A%A0%E4%B8%AD-%E7%B1%B3%E5%A0%B1%E5%91%8A/</link><pubDate>Fri, 17 Sep 2004 00:03:00 +0900</pubDate><guid>https://igawa.io/posts/2004/09/ie%E3%81%8B%E3%82%89firefox%E3%81%B8%E3%81%AE%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%8C%E5%A2%97%E5%8A%A0%E4%B8%AD-%E7%B1%B3%E5%A0%B1%E5%91%8A/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20074203,00.htm"&gt;CNET
+Japan&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;お。いいんじゃな〜い。
+一時的な現象とならないことを期待しています。&lt;/p&gt;</description></item><item><title>Firefoxブラウザ、ついにバージョン1.0をリリースへ</title><link>https://igawa.io/posts/2004/09/firefox%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A4%E3%81%84%E3%81%AB%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B310%E3%82%92%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%B8/</link><pubDate>Wed, 15 Sep 2004 23:29:00 +0900</pubDate><guid>https://igawa.io/posts/2004/09/firefox%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A4%E3%81%84%E3%81%AB%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B310%E3%82%92%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%B8/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/media/story/0,2000047715,20073563,00.htm"&gt;CNET
+Japan&lt;/a&gt;
+ついに1.0になるそうだ。
+今、貧弱な環境でMacOSXを使っているので、なるべく軽いブラウザがいいんだけど、
+Firefoxと比べるとSafariの方が軽いんだよね。
+う〜ん。&lt;/p&gt;</description></item><item><title>モジラ、バグ報告への懸賞金プログラムを発表</title><link>https://igawa.io/posts/2004/08/%E3%83%A2%E3%82%B8%E3%83%A9%E3%83%90%E3%82%B0%E5%A0%B1%E5%91%8A%E3%81%B8%E3%81%AE%E6%87%B8%E8%B3%9E%E9%87%91%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%82%92%E7%99%BA%E8%A1%A8/</link><pubDate>Tue, 03 Aug 2004 22:57:00 +0900</pubDate><guid>https://igawa.io/posts/2004/08/%E3%83%A2%E3%82%B8%E3%83%A9%E3%83%90%E3%82%B0%E5%A0%B1%E5%91%8A%E3%81%B8%E3%81%AE%E6%87%B8%E8%B3%9E%E9%87%91%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%82%92%E7%99%BA%E8%A1%A8/</guid><description>&lt;p&gt;&lt;a href="http://japan.cnet.com/news/sec/story/0,2000050480,20070200,00.htm"&gt;CNET
+Japan&lt;/a&gt;
+&lt;a href="http://slashdot.jp/articles/04/08/03/129257.shtml?topic=51"&gt;スラド&lt;/a&gt;
+面白い試みですね。
+成功するといいね。(C言語がわからんので他人事)&lt;/p&gt;</description></item></channel></rss>

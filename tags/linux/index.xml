@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Linux on What's done is done</title><link>https://igawa.io/tags/linux/</link><description>Recent content in Linux on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Tue, 09 Aug 2011 05:35:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>CrashPlanを使ってみる</title><link>https://igawa.io/posts/2011/08/crashplan%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</link><pubDate>Tue, 09 Aug 2011 05:35:00 +0900</pubDate><guid>https://igawa.io/posts/2011/08/crashplan%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</guid><description>&lt;p&gt;日頃から、PCにデータは出来るだけ持たないようにしているのですが、
+どうしても増加傾向です。&lt;/p&gt;
+&lt;p&gt;どうでも良い様なデータが大半ではありますが、子どもの動画や音楽データ等は、
+無くなってしまうと寂しいので、バックアップを考えます。&lt;/p&gt;
+&lt;p&gt;以前は&lt;a href="http://tw.0r2.info/?s=safesync"&gt;Safesyncを使っていた&lt;/a&gt;のですが、
+&lt;a href="http://www.trendmicro.co.jp/support/news.asp?id=1538&amp;amp;cm_sp=Sup-_-SS-_-lineup_top"&gt;残念なことになってしまった&lt;/a&gt;ので、乗り換え先を探していました。&lt;/p&gt;
+&lt;p&gt;コストパフォーマンス的に、&lt;a href="http://www.crashplan.com/"&gt;CrashPlan&lt;/a&gt;が良いかなと考えています。
+30日間は無料でCrashPlan+の機能が利用できるらしいので試してみたいと思います。&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;今のところ、0.5Mbps程度のバックアップ速度なので、40GBのバックアップに１週間以上かかる計算ですw&lt;/del&gt;
+よく見たら、設定で通信速度を変更可能でした。
+&lt;a href="https://picasaweb.google.com/lh/photo/WaQQ9d7MYGD0x2AW8OBPWQ?feat=embedwebsite"&gt;&lt;img alt="picture" loading="lazy" src="https://lh5.googleusercontent.com/-1UcmzXXeulA/TkBLJxBRKNI/AAAAAAAAhWU/k-4PLl2o6Jc/s400/%2525E3%252582%2525B9%2525E3%252582%2525AF%2525E3%252583%2525AA%2525E3%252583%2525BC%2525E3%252583%2525B3%2525E3%252582%2525B7%2525E3%252583%2525A7%2525E3%252583%252583%2525E3%252583%252588%2525202011-08-09%2525205.43.08.jpg"&gt;
+&lt;/a&gt;
+上記のように制限無しに変更したら、3.5Mbps程度出ています。これなら1日程度で終わる計算ですね
+:-)&lt;/p&gt;
+&lt;p&gt;対応しているクライアントOSも非常に多く、
+Windows, Mac, Linux, Open Solaris
+と、まず、問題ない品揃え。&lt;/p&gt;
+&lt;p&gt;管理用クライアントアプリも、日本語化されており、使いやすいのではないかと思います。&lt;/p&gt;
+&lt;p&gt;ググってみたところ、以下のサイトが参考になりました。
+&lt;a href="http://sleepless.jp/archives/1305"&gt;http://sleepless.jp/archives/1305&lt;/a&gt;
+&lt;a href="http://www.forest.impress.co.jp/article/2009/06/26/crashplan.html"&gt;http://www.forest.impress.co.jp/article/2009/06/26/crashplan.html&lt;/a&gt;
+&lt;a href="http://pc.mogeringo.com/archives/5595"&gt;http://pc.mogeringo.com/archives/5595&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Mac で Scala と Lift を使ってみる(1) インストール編</title><link>https://igawa.io/posts/2011/06/mac-%E3%81%A7-scala-%E3%81%A8-lift-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B1-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E7%B7%A8/</link><pubDate>Fri, 10 Jun 2011 06:06:00 +0900</pubDate><guid>https://igawa.io/posts/2011/06/mac-%E3%81%A7-scala-%E3%81%A8-lift-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B1-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E7%B7%A8/</guid><description>&lt;p&gt;Scala と Lift が気になってきたので、インストール。
+くろだろぐさん： &lt;a href="http://kuroda.exblog.jp/12093277/"&gt;http://kuroda.exblog.jp/12093277/&lt;/a&gt; の記述を参考に、
+最新版っぽいscala29をインストールした。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo port selfupdate
+sudo port upgrade outdated
+sudo port install scala28 scala29 maven2
+sudo port select --set maven maven2
+sudo scala_select scala29
+scala -version
+sudo port install sbt
+mvn archetype:generate -U
+-DarchetypeGroupId=net.liftweb
+-DarchetypeArtifactId=lift-archetype-basic_2.8.1
+-DarchetypeVersion=2.3
+-DarchetypeRepository=http://scala-tools.org/repo-snapshots
+-DremoteRepositories=http://scala-tools.org/repo-snapshots
+-DgroupId=your.com
+-DartifactId=sample
+-Dversion=1.0
+cd sample
+sbt update
+sbt ~jetty-run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;で、できた。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.flickr.com/photos/31362181@N08/5815832647/" title="mac de Scala/Lift sample"&gt;&lt;img alt="mac de Scala/Lift\nsample" loading="lazy" src="http://farm6.static.flickr.com/5261/5815832647_168f6767f5.jpg"&gt;{.alignnone}&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Xperiaソフトウェアアップデートした(R1EA025)</title><link>https://igawa.io/posts/2010/06/xperia%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E3%81%97%E3%81%9Fr1ea025/</link><pubDate>Fri, 11 Jun 2010 06:03:00 +0900</pubDate><guid>https://igawa.io/posts/2010/06/xperia%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E3%81%97%E3%81%9Fr1ea025/</guid><description>&lt;p&gt;&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html"&gt;&lt;img alt="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html" loading="lazy" src="http://kwout.com/cutout/8/st/3x/5az_bor.jpg" title="POBox Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で - ITmedia +D モバイル"&gt;
+&lt;/a&gt;
+[POBox
+Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ITmedia +D
+モバイル](&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html"&gt;http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html&lt;/a&gt;)
+via &lt;a href="http://itmedia.kwout.com/quote/8st3x5az"&gt;kwout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://kwout.com/cutout/8/st/3x/5az_bor.js"&gt;http://kwout.com/cutout/8/st/3x/5az_bor.js&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Xperiaソフトウェアアップデートが再開されたので、アップデートしました。&lt;/p&gt;
+&lt;p&gt;POBoxのフリック入力は、iPhoneのソレよりも良い感じですね。
+私の場合、フリックする方向と、入力される文字の対応が体に染み込んでないので、
+POBoxの表示方式(押したキーの上側に候補が表示される方式)が、いい感じです。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html"&gt;&lt;img alt="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html" loading="lazy" src="http://kwout.com/cutout/7/xj/qn/ife_bor.jpg" title="POBox Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で - ITmedia +D モバイル"&gt;
+&lt;/a&gt;
+[POBox
+Touchが「2.0」に進化：ドコモ、「Xperia」の正式アップデートを開始——まずはPC経由で&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ITmedia +D
+モバイル](&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html"&gt;http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html&lt;/a&gt;)
+via &lt;a href="http://itmedia.kwout.com/quote/7xjqnife"&gt;kwout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://kwout.com/cutout/7/xj/qn/ife_bor.js"&gt;http://kwout.com/cutout/7/xj/qn/ife_bor.js&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;また、タッチパネルの感度が向上しているということなので、ちょっと期待してます。&lt;/p&gt;
+&lt;p&gt;PC経由か、あるいは、Xperia単体でのアップデートも可能になっています。
+Xperia単体で手動でアップデートする場合は、
+「設定」→「端末情報」→「ソフトウェア更新」
+で出来ると思います。&lt;/p&gt;
+&lt;p&gt;参考リンク：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.sonyericsson.co.jp/support/software/updateservice/"&gt;http://www.sonyericsson.co.jp/support/software/updateservice/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://japanese.engadget.com/2010/06/09/xperia/"&gt;http://japanese.engadget.com/2010/06/09/xperia/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html"&gt;http://plusd.itmedia.co.jp/mobile/articles/1006/09/news086.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://av.watch.impress.co.jp/docs/news/20100609_373193.html"&gt;http://av.watch.impress.co.jp/docs/news/20100609_373193.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ameblo.jp/moon-age/entry-10559165157.html"&gt;http://ameblo.jp/moon-age/entry-10559165157.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://saya.s145.xrea.com/archives/2010/06/xperia_4.html"&gt;http://saya.s145.xrea.com/archives/2010/06/xperia_4.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://h-scp10.blog.so-net.ne.jp/2010-06-10"&gt;http://h-scp10.blog.so-net.ne.jp/2010-06-10&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://d.hatena.ne.jp/Sapphire/20100610/1276175119"&gt;http://d.hatena.ne.jp/Sapphire/20100610/1276175119&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>ShareMyApps: インストールしているAndroidアプリの一覧を取得してメール送信 するアプリ ( #Xperia #Android )</title><link>https://igawa.io/posts/2010/06/sharemyapps-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%84%E3%82%8Bandroid%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E4%B8%80%E8%A6%A7%E3%82%92%E5%8F%96%E5%BE%97%E3%81%97%E3%81%A6%E3%83%A1%E3%83%BC%E3%83%AB%E9%80%81%E4%BF%A1-%E3%81%99%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AA-xperia-android/</link><pubDate>Sat, 05 Jun 2010 05:56:00 +0900</pubDate><guid>https://igawa.io/posts/2010/06/sharemyapps-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%84%E3%82%8Bandroid%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E4%B8%80%E8%A6%A7%E3%82%92%E5%8F%96%E5%BE%97%E3%81%97%E3%81%A6%E3%83%A1%E3%83%BC%E3%83%AB%E9%80%81%E4%BF%A1-%E3%81%99%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AA-xperia-android/</guid><description>&lt;p&gt;たくさんアプリをインストールしたので、
+「今いったいどれだけのアプリをインストールしているのだろうか？」と
+疑問に思い、「インストールしているアプリの一覧が欲しいなぁ」と思ったので、
+そういうアプリを作ろうかなと思ったら、既にありました。 :-)
+「ShareMyApps」というアプリです。&lt;/p&gt;
+&lt;p&gt;数えて見たところ、合計、120アプリ&amp;hellip;結構インストールしてるな。。&lt;/p&gt;
+&lt;p&gt;以下、現在インストールしている、Androidアプリの一覧です。
+注意：以下のリンクはAndroidマーケットのURLなので、普通のWebブラウザでアクセスしてもエラーとなるようです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;3000 Viewer
+&lt;a href="http://market.android.com/search?q=com.matsumo.sankviewer"&gt;http://market.android.com/search?q=com.matsumo.sankviewer&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ACV
+&lt;a href="http://market.android.com/search?q=net.androidcomics.acv"&gt;http://market.android.com/search?q=net.androidcomics.acv&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Advanced Task Killer Free
+&lt;a href="http://market.android.com/search?q=com.rechild.advancedtaskkiller"&gt;http://market.android.com/search?q=com.rechild.advancedtaskkiller&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;AK Notepad
+&lt;a href="http://market.android.com/search?q=com.akproduction.notepad"&gt;http://market.android.com/search?q=com.akproduction.notepad&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;AmbientTime Lite
+&lt;a href="http://market.android.com/search?q=com.sonyericsson.android.ambienttime"&gt;http://market.android.com/search?q=com.sonyericsson.android.ambienttime&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;AndExplorer
+&lt;a href="http://market.android.com/search?q=lysesoft.andexplorer"&gt;http://market.android.com/search?q=lysesoft.andexplorer&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Androlib壁紙
+&lt;a href="http://market.android.com/search?q=com.nix.apps.androlib.wallpapers"&gt;http://market.android.com/search?q=com.nix.apps.androlib.wallpapers&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;antivirus
+&lt;a href="http://market.android.com/search?q=com.antivirus"&gt;http://market.android.com/search?q=com.antivirus&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;App Referrer
+&lt;a href="http://market.android.com/search?q=com.drathus.android.appreferer"&gt;http://market.android.com/search?q=com.drathus.android.appreferer&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Automatic Task Killer
+&lt;a href="http://market.android.com/search?q=biz.stachibana.TaskKiller"&gt;http://market.android.com/search?q=biz.stachibana.TaskKiller&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Battery Status Pro
+&lt;a href="http://market.android.com/search?q=batterys.batterys"&gt;http://market.android.com/search?q=batterys.batterys&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;BBC News
+&lt;a href="http://market.android.com/search?q=net.jimblackler.newswidget"&gt;http://market.android.com/search?q=net.jimblackler.newswidget&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;BeamReader
+&lt;a href="http://market.android.com/search?q=com.slgmobile.beamreader"&gt;http://market.android.com/search?q=com.slgmobile.beamreader&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;BrowserHook
+&lt;a href="http://market.android.com/search?q=jp.rgfx_currentdir_ozero.browserhook"&gt;http://market.android.com/search?q=jp.rgfx_currentdir_ozero.browserhook&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bubble
+&lt;a href="http://market.android.com/search?q=bz.ktk.bubble"&gt;http://market.android.com/search?q=bz.ktk.bubble&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bubble
+&lt;a href="http://market.android.com/search?q=net.androgames.level"&gt;http://market.android.com/search?q=net.androgames.level&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bump
+&lt;a href="http://market.android.com/search?q=com.bumptech.bumpga"&gt;http://market.android.com/search?q=com.bumptech.bumpga&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ColorDict
+&lt;a href="http://market.android.com/search?q=com.socialnmobile.colordict"&gt;http://market.android.com/search?q=com.socialnmobile.colordict&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ConnectBot
+&lt;a href="http://market.android.com/search?q=org.connectbot"&gt;http://market.android.com/search?q=org.connectbot&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DictData American English Spelling
+&lt;a href="http://market.android.com/search?q=com.socialnmobile.dictdata.cmuaes"&gt;http://market.android.com/search?q=com.socialnmobile.dictdata.cmuaes&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DictData Japanese &amp;amp; English
+&lt;a href="http://market.android.com/search?q=com.socialnmobile.dictdata.jmdict"&gt;http://market.android.com/search?q=com.socialnmobile.dictdata.jmdict&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DictData Wordnet 3.0
+&lt;a href="http://market.android.com/search?q=com.socialnmobile.dictdata.dictionary.english.wordnet3"&gt;http://market.android.com/search?q=com.socialnmobile.dictdata.dictionary.english.wordnet3&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dictionary.com
+&lt;a href="http://market.android.com/search?q=com.dictionary"&gt;http://market.android.com/search?q=com.dictionary&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Disney Puzzle
+&lt;a href="http://market.android.com/search?q=monkeypunch.android.disneypuzzle"&gt;http://market.android.com/search?q=monkeypunch.android.disneypuzzle&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dora Memory Game
+&lt;a href="http://market.android.com/search?q=com.pwg.DoraMemory"&gt;http://market.android.com/search?q=com.pwg.DoraMemory&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dropbox
+&lt;a href="http://market.android.com/search?q=com.dropbox.android"&gt;http://market.android.com/search?q=com.dropbox.android&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Emogmail
+&lt;a href="http://market.android.com/search?q=jp.utilz.emogmail"&gt;http://market.android.com/search?q=jp.utilz.emogmail&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ES ファイルエクスプローラー
+&lt;a href="http://market.android.com/search?q=com.estrongs.android.pop"&gt;http://market.android.com/search?q=com.estrongs.android.pop&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Evernote
+&lt;a href="http://market.android.com/search?q=com.evernote"&gt;http://market.android.com/search?q=com.evernote&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Flash News for Android
+&lt;a href="http://market.android.com/search?q=jp.co.bii.android.app.afn"&gt;http://market.android.com/search?q=jp.co.bii.android.app.afn&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Flickr Droid
+&lt;a href="http://market.android.com/search?q=name.mikemosher.mobile.flickr.droid"&gt;http://market.android.com/search?q=name.mikemosher.mobile.flickr.droid&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;FlickWnn
+&lt;a href="http://market.android.com/search?q=com.pm9.flickwnn"&gt;http://market.android.com/search?q=com.pm9.flickwnn&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Galapagos Browser
+&lt;a href="http://market.android.com/search?q=net.adgjm.orochi"&gt;http://market.android.com/search?q=net.adgjm.orochi&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gesture Search
+&lt;a href="http://market.android.com/search?q=com.google.android.apps.gesturesearch"&gt;http://market.android.com/search?q=com.google.android.apps.gesturesearch&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gmail Notifier
+&lt;a href="http://market.android.com/search?q=com.jonasl.gmailnotifier"&gt;http://market.android.com/search?q=com.jonasl.gmailnotifier&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Goggles
+&lt;a href="http://market.android.com/search?q=com.google.android.apps.unveil"&gt;http://market.android.com/search?q=com.google.android.apps.unveil&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Google Buzz
+&lt;a href="http://market.android.com/search?q=com.google.android.apps.updates.widget"&gt;http://market.android.com/search?q=com.google.android.apps.updates.widget&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Google Skyマップ
+&lt;a href="http://market.android.com/search?q=com.google.android.stardroid"&gt;http://market.android.com/search?q=com.google.android.stardroid&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HCTransitEX
+&lt;a href="http://market.android.com/search?q=jp.co.humancreate.HCTransitEX"&gt;http://market.android.com/search?q=jp.co.humancreate.HCTransitEX&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IMoNi
+&lt;a href="http://market.android.com/search?q=net.grandnature.android.imodenotifier"&gt;http://market.android.com/search?q=net.grandnature.android.imodenotifier&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;iモード.net モバイルアプリ
+&lt;a href="http://market.android.com/search?q=com.nttdocomo.email"&gt;http://market.android.com/search?q=com.nttdocomo.email&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ks Uninstaller
+&lt;a href="http://market.android.com/search?q=com.kugoweb.uninstaller"&gt;http://market.android.com/search?q=com.kugoweb.uninstaller&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Listen
+&lt;a href="http://market.android.com/search?q=com.google.android.apps.listen"&gt;http://market.android.com/search?q=com.google.android.apps.listen&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MemInfo
+&lt;a href="http://market.android.com/search?q=at.zweng.android.meminfo"&gt;http://market.android.com/search?q=at.zweng.android.meminfo&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mod.Email
+&lt;a href="http://market.android.com/search?q=com.pm9.email"&gt;http://market.android.com/search?q=com.pm9.email&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mora touch
+&lt;a href="http://market.android.com/search?q=jp.co.labelgate.moratouch"&gt;http://market.android.com/search?q=jp.co.labelgate.moratouch&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mora-音楽ダウンロード
+&lt;a href="http://market.android.com/search?q=jp.co.labelgate.moraroid.launcher"&gt;http://market.android.com/search?q=jp.co.labelgate.moraroid.launcher&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;More Icons Free Widget
+&lt;a href="http://market.android.com/search?q=com.reeyees.moreiconsfreewidget"&gt;http://market.android.com/search?q=com.reeyees.moreiconsfreewidget&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;My docomo checker
+&lt;a href="http://market.android.com/search?q=jp.meloncake.mydocomo"&gt;http://market.android.com/search?q=jp.meloncake.mydocomo&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;My Tracks
+&lt;a href="http://market.android.com/search?q=com.google.android.maps.mytracks"&gt;http://market.android.com/search?q=com.google.android.maps.mytracks&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Xperia雑感</title><link>https://igawa.io/posts/2010/05/xperia%E9%9B%91%E6%84%9F/</link><pubDate>Mon, 17 May 2010 23:15:00 +0900</pubDate><guid>https://igawa.io/posts/2010/05/xperia%E9%9B%91%E6%84%9F/</guid><description>&lt;ul&gt;
+&lt;li&gt;Xperiaは操作について、どきどき引っかかりを感じ、iPhoneほどスムーズでない&lt;/li&gt;
+&lt;li&gt;Xperia(Android)とiPhone両方で出ているアプリを比較すると、全般的にiPhoneのアプリの方が高機能。(Weather
+news, Dropbox等)&lt;/li&gt;
+&lt;li&gt;XperiaはGmailのPushが便利&lt;/li&gt;
+&lt;li&gt;ボタン操作がわかりにくい&lt;/li&gt;
+&lt;li&gt;(期待の)独自アプリMediascape,
+Timescapeは、動作が鈍すぎて使う気にならない&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;と、全般的に、iPhoneの方が「良い」と感じます。Android2.1(2.2?)に期待でしょうか。
+&lt;a href="http://qa.sonyericsson.co.jp/detail.asp?FAQID=588&amp;amp;baID=13&amp;amp;strKind=1&amp;amp;Option=&amp;amp;NodeID=&amp;amp;DispNodeID=86&amp;amp;CID=&amp;amp;Text=&amp;amp;Field=&amp;amp;KW=&amp;amp;KWAnd=&amp;amp;Attrs=&amp;amp;SearchID=&amp;amp;Bind="&gt;http://qa.sonyericsson.co.jp/detail.asp?FAQID=588&amp;amp;baID=13&amp;amp;strKind=1&amp;amp;Option=&amp;amp;NodeID=&amp;amp;DispNodeID=86&amp;amp;CID=&amp;amp;Text=&amp;amp;Field=&amp;amp;KW=&amp;amp;KWAnd=&amp;amp;Attrs=&amp;amp;SearchID=&amp;amp;Bind=&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Xperia買っちゃったw</title><link>https://igawa.io/posts/2010/04/xperia%E8%B2%B7%E3%81%A3%E3%81%A1%E3%82%83%E3%81%A3%E3%81%9Fw/</link><pubDate>Thu, 29 Apr 2010 22:10:00 +0900</pubDate><guid>https://igawa.io/posts/2010/04/xperia%E8%B2%B7%E3%81%A3%E3%81%A1%E3%82%83%E3%81%A3%E3%81%9Fw/</guid><description>&lt;p&gt;iPhoneを持ってるのに、Xperiaを買っちゃいましたw
+&lt;a href="http://www.flickr.com/photos/masayun/4562523183/" title="xperia by masayukig, on Flickr"&gt;&lt;img alt="xperia" loading="lazy" src="http://www.0r2.info/blog//0r2.info/3035/4562523183_cc0be3d31d.jpg"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;なんか、ケータイ電話とは程遠い気がします。
+普通に、/proc配下のディレクトリにアクセスできたりしますし。&lt;/p&gt;
+&lt;p&gt;/proc/config.gzにもアクセスできたので、とりあえず張り付けてみる。
+&lt;a href="http://www.0r2.info/blog/wp-content/uploads/2010/04/config.gz"&gt;Xperiaの.config&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;で、それ以外の情報ですが、/proc配下から適当に取ってきてみました。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/proc/version:
+Linux version 2.6.29-rel (semc-android@SEMC) (gcc version 4.2.1) #2 PREEMPT Sun Feb 21 11:47:54 JST 2010
+/proc/meminfo:
+MemTotal: 274608 kB
+MemFree: 6048 kB
+Buffers: 116 kB
+Cached: 27148 kB
+SwapCached: 0 kB
+Active: 111936 kB
+Inactive: 125948 kB
+Active(anon): 100964 kB
+Inactive(anon): 111256 kB
+Active(file): 10972 kB
+Inactive(file): 14692 kB
+Unevictable: 1124 kB
+Mlocked: 0 kB
+SwapTotal: 0 kB
+SwapFree: 0 kB
+Dirty: 0 kB
+Writeback: 0 kB
+AnonPages: 211760 kB
+Mapped: 24620 kB
+Slab: 7920 kB
+SReclaimable: 1764 kB
+SUnreclaim: 6156 kB
+PageTables: 11080 kB
+NFS_Unstable: 0 kB
+Bounce: 0 kB
+WritebackTmp: 0 kB
+CommitLimit: 137304 kB
+Committed_AS: 3801756 kB
+VmallocTotal: 1179648 kB
+VmallocUsed: 132756 kB
+VmallocChunk: 939004 kB
+/proc/cpuinfo:
+Processor : ARMv7 Processor rev 2 (v7l)
+BogoMIPS : 383.38
+Features : swp half thumb fastmult vfp edsp neon
+CPU implementer : 0x51
+CPU architecture: 7
+CPU variant : 0x0
+CPU part : 0x00f
+CPU revision : 2
+Hardware : ES209RA
+Revision : 0000
+Serial : 0000000000000000
+/proc/iomem:
+03000000-031fffff : kgsl_phys_memory
+03000000-031fffff : kgsl
+20000000-2dffffff : System RAM
+2002b000-20485fff : Kernel text
+20486000-205bea43 : Kernel data
+30000000-37efffff : System RAM
+37fe0000-37ffffff : ram_console
+a0000000-a001ffff : kgsl_reg_memory
+a0000000-a001ffff : kgsl
+a0300000-a0300fff : msm_sdcc.1
+a0400000-a0400fff : msm_sdcc.2
+a0700000-a0700004 : audio_base_addr
+a0800000-a08003ff : msm_hsusb_periphera
+a0900000-a0900fff : msm_serial_hs.1
+a0a00000-a0a007ff : msm_nand_phys
+a1200000-a1200fff : spi_base
+a1200000-a1200fff : spi_qsd
+a9900000-a9900fff : msm_i2c.0
+a9900000-a9900fff : msm_i2c
+a9a00000-a9a00fff : msm_serial.0
+a9a00000-a9a00fff : msm_serial
+aa200000-aa2effff : mdp
+aa300000-aa300fff : tssc
+aa400000-aa400fff : tvenc
+aa600000-aa600fff : pmdh
+aa700000-aa700fff : emdh
+/proc/mounts:
+rootfs / rootfs rw 0 0
+tmpfs /dev tmpfs rw,mode=755 0 0
+devpts /dev/pts devpts rw,mode=600 0 0
+proc /proc proc rw 0 0
+sysfs /sys sysfs rw 0 0
+tmpfs /sqlite_stmt_journals tmpfs rw,size=4096k 0 0
+/dev/block/mtdblock2 /system yaffs2 ro 0 0
+/dev/block/mtdblock3 /data yaffs2 rw,nosuid,nodev 0 0
+/dev/block/mtdblock1 /cache yaffs2 rw,nosuid,nodev 0 0
+/dev/block/loop0 /cdrom iso9660 ro 0 0
+DxDrmServerIpc /data/DxDrm/fuse fuse.DxDrmServerIpc rw,nosuid,nodev,user_id=0,group_id=0,allow_other 0 0
+/dev/block//vold/179:1 /sdcard vfat rw,dirsync,nosuid,nodev,noexec,uid=1000,gid=1015,fmask=0702,dmask=0702,allow_utime=0020,codepage=cp437,iocharset=iso8859-1,shortname=mixed,utf8 0 0
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Linux(Ubuntu)で、Objective-C</title><link>https://igawa.io/posts/2009/08/linuxubuntu%E3%81%A7objective-c/</link><pubDate>Sat, 15 Aug 2009 05:54:00 +0900</pubDate><guid>https://igawa.io/posts/2009/08/linuxubuntu%E3%81%A7objective-c/</guid><description>&lt;p&gt;iPhoneアプリを作るなら、Objective-Cという言語を知っておく必要が
+ありそうなので、とりあえず、LinuxでObjective-Cをやってみる。
+参考にしている書籍は、以下。
+&lt;a href="http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as1&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;md=1X69VDGQCMF7Z30FM082&amp;amp;asins=4797346809"&gt;http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=hughundercons-22&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as1&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;md=1X69VDGQCMF7Z30FM082&amp;amp;asins=4797346809&lt;/a&gt;
+私は、とりあえず、図書館で借りました。
+が、図書館に無かったり、近くに図書館が内容な場合は、上記からご購入ください
+:-)&lt;/p&gt;
+&lt;p&gt;Apple製品専用言語なのかと思ったが、ググったら、Linuxでも動きそうだったので、
+挑戦してみる。&lt;/p&gt;
+&lt;p&gt;以下、その内容。
+まずは、Objective-Cの環境をインストール。
+&lt;a href="http://d.hatena.ne.jp/elm200/20080426/1209211127"&gt;Linux で Objective C
+を走らせてみた&lt;/a&gt;
+の記事を参照して、以下の様にインストール。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo aptitude install gobjc
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています
+状態情報を読み取っています... 完了
+拡張状態情報を読み込んでいます
+パッケージの状態を初期化しています... 完了
+拡張状態情報を書き込んでいます... 完了
+以下の新規パッケージがインストールされます:
+gobjc gobjc-4.3{a} libobjc2{a}
+0 個のパッケージを更新、 3 個を新たにインストール、 0 個を削除予定、1 個が更新されていない。
+3700kB のアーカイブを取得する必要があります。 展開後に 9478kB のディスク領域が新たに消費されます。
+先に進みますか? [Y/n/?] Y
+拡張状態情報を書き込んでいます... 完了
+取得:1 http://jp.archive.ubuntu.com jaunty/main libobjc2 4.3.3-5ubuntu4 [160kB]
+取得:2 http://jp.archive.ubuntu.com jaunty/main gobjc-4.3 4.3.3-5ubuntu4 [3538kB]
+取得:3 http://jp.archive.ubuntu.com jaunty/main gobjc 4:4.3.3-1ubuntu1 [894B]
+3700kB を 2s 秒でダウンロードしました (1552kB/s)
+未選択パッケージ libobjc2 を選択しています。
+(データベースを読み込んでいます ... 現在 250930 個のファイルとディレクトリがインストールされています。)
+(.../libobjc2_4.3.3-5ubuntu4_amd64.deb から) libobjc2 を展開しています...
+未選択パッケージ gobjc-4.3 を選択しています。
+(.../gobjc-4.3_4.3.3-5ubuntu4_amd64.deb から) gobjc-4.3 を展開しています...
+未選択パッケージ gobjc を選択しています。
+(.../gobjc_4%3a4.3.3-1ubuntu1_amd64.deb から) gobjc を展開しています...
+libobjc2 (4.3.3-5ubuntu4) を設定しています ...
+gobjc-4.3 (4.3.3-5ubuntu4) を設定しています ...
+gobjc (4:4.3.3-1ubuntu1) を設定しています ...
+libc6 のトリガを処理しています ...
+ldconfig deferred processing now taking place
+パッケージリストを読み込んでいます... 完了
+依存関係ツリーを作成しています
+状態情報を読み取っています... 完了
+拡張状態情報を読み込んでいます
+パッケージの状態を初期化しています... 完了
+拡張状態情報を書き込んでいます... 完了
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;で、まずは、お約束Hello Worldからw（インターネットはどれくらい&amp;quot;Hello
+World&amp;quot;であふれているのだろうか..）&lt;/p&gt;</description></item><item><title>W-ZERO3でAndroidが動く！</title><link>https://igawa.io/posts/2009/06/w-zero3%E3%81%A7android%E3%81%8C%E5%8B%95%E3%81%8F/</link><pubDate>Sun, 21 Jun 2009 06:47:00 +0900</pubDate><guid>https://igawa.io/posts/2009/06/w-zero3%E3%81%A7android%E3%81%8C%E5%8B%95%E3%81%8F/</guid><description>&lt;p&gt;&lt;a href="http://d.hatena.ne.jp/dot_h2o2/"&gt;.h2o2のお気楽日記&lt;/a&gt;で開発されているものですが、
+W-ZERO3(私はWS011SH)で、Androidが動きました！
+&lt;a href="http://www.0r2.info/blog/2009/06/21/w-zero3%e3%81%a7android%e3%81%8c%e5%8b%95%e3%81%8f%ef%bc%81/nec_0041/"&gt;&lt;img alt="android(W-ZERO3-1)" loading="lazy" src="http://www.0r2.info/blog/wp-content/uploads/2009/06/NEC_0041-225x300.jpg" title="android(W-ZERO3-1)"&gt;{.alignnone
+.size-medium .wp-image-795 width=&amp;ldquo;225&amp;rdquo;
+&lt;/a&gt;[caption
+id=&amp;ldquo;attachment_796&amp;rdquo; align=&amp;ldquo;alignnone&amp;rdquo; width=&amp;ldquo;225&amp;rdquo;
+caption=&amp;ldquo;android(W-ZERO3-2)&amp;rdquo;]&lt;a href="http://www.0r2.info/blog/2009/06/21/w-zero3%e3%81%a7android%e3%81%8c%e5%8b%95%e3%81%8f%ef%bc%81/nec_0042/"&gt;&lt;img alt="android(W-ZERO3-2)" loading="lazy" src="http://www.0r2.info/blog/wp-content/uploads/2009/06/NEC_0042-225x300.jpg" title="android(W-ZERO3-2)"&gt;{.size-medium
+.wp-image-796 width=&amp;ldquo;225&amp;rdquo;
+&lt;/a&gt;[/caption]
+毎日、進展があってすごいです!&lt;/p&gt;
+&lt;p&gt;ちゃんと、カーソルキーも使えました。
+動きも、思った以上にサクサクです。
+後は、無線LANと正常な停止が出来れば、結構使えそうです。
+(でも、iPhoneかったら、そっちがメインかも。。:-P)&lt;/p&gt;</description></item><item><title>jpeg画像の撮影日時を修正する方法</title><link>https://igawa.io/posts/2009/01/jpeg%E7%94%BB%E5%83%8F%E3%81%AE%E6%92%AE%E5%BD%B1%E6%97%A5%E6%99%82%E3%82%92%E4%BF%AE%E6%AD%A3%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 13 Jan 2009 12:11:00 +0900</pubDate><guid>https://igawa.io/posts/2009/01/jpeg%E7%94%BB%E5%83%8F%E3%81%AE%E6%92%AE%E5%BD%B1%E6%97%A5%E6%99%82%E3%82%92%E4%BF%AE%E6%AD%A3%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid><description>&lt;p&gt;いろいろな理由で、jpeg画像の撮影日時を修正したくなることがあると思います。
+その場合には、以下の方法により修正できます。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;jheadコマンドをインストール。&lt;/li&gt;
+&lt;li&gt;jheadコマンドを実行&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Ubuntu(8.10)上のFirefoxで日本語フォントがおかしい（中国語フォント？）</title><link>https://igawa.io/posts/2008/12/ubuntu810%E4%B8%8A%E3%81%AEfirefox%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84%E4%B8%AD%E5%9B%BD%E8%AA%9E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/</link><pubDate>Sat, 13 Dec 2008 06:55:00 +0900</pubDate><guid>https://igawa.io/posts/2008/12/ubuntu810%E4%B8%8A%E3%81%AEfirefox%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84%E4%B8%AD%E5%9B%BD%E8%AA%9E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/</guid><description>&lt;p&gt;Ubuntu(8.10)上のFirefoxで日本語フォントがおかしい（中国語フォント？）と言う現象に遭遇したので、
+解決するためのメモ。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://forum.ubuntulinux.jp/viewtopic.php?id=3124"&gt;http://forum.ubuntulinux.jp/viewtopic.php?id=3124&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bugs.launchpad.net/ubuntu-jp-improvement/+bug/272387"&gt;https://bugs.launchpad.net/ubuntu-jp-improvement/+bug/272387&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;を参考に(というかそのままだがw)、
+&lt;code&gt;$ sudo ln -s /etc/fonts/conf.avail/69-language-selector-ja-jp.conf /etc/fonts/conf.d/&lt;/code&gt;
+を、実行。ブラウザリロード(not リスタート)で、即解決。&lt;/p&gt;</description></item><item><title>Fedoraにuuencode, uudecodeをインストールしたいとき</title><link>https://igawa.io/posts/2008/11/fedora%E3%81%ABuuencode-uudecode%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E3%81%84%E3%81%A8%E3%81%8D/</link><pubDate>Mon, 03 Nov 2008 15:35:00 +0900</pubDate><guid>https://igawa.io/posts/2008/11/fedora%E3%81%ABuuencode-uudecode%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E3%81%84%E3%81%A8%E3%81%8D/</guid><description>&lt;p&gt;Fedoraにuuencode, uudecodeをインストールしたいときは、
+&lt;code&gt;# yum install sharutils&lt;/code&gt;
+と、実行する。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;# yum install uudecode&lt;/code&gt;
+と、実行しても、&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Setting up Install ProcessParsing package install argumentsNo package uudecode available.Nothing to do&lt;/code&gt;
+と、なるだけです。&lt;/p&gt;
+&lt;p&gt;参照URL:&lt;a href="http://d.hatena.ne.jp/hogem/20061217/1166368657"&gt;http://d.hatena.ne.jp/hogem/20061217/1166368657&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

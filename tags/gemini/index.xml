@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Gemini on What's done is done</title><link>https://igawa.io/tags/gemini/</link><description>Recent content in Gemini on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Wed, 06 Jun 2018 00:00:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/gemini/index.xml" rel="self" type="application/rss+xml"/><item><title>Restore Gemini PDA Firmware</title><link>https://igawa.io/posts/2018/06/restore-gemini-pda-firmware/</link><pubDate>Wed, 06 Jun 2018 00:00:00 +0900</pubDate><guid>https://igawa.io/posts/2018/06/restore-gemini-pda-firmware/</guid><description>&lt;p&gt;&lt;img alt="Gemini PDA" loading="lazy" src="https://photos.app.goo.gl/n0nD0O5Ulc7uPBlj1"&gt;&lt;/p&gt;
+&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;I had updated my Gemini PDA firmware which was showed in the
+setting. However, after the updating, my gemini never booted with the
+planets rotating screen.&lt;/p&gt;
+&lt;h2 id="how-to-solve-it"&gt;How to solve it&lt;/h2&gt;
+&lt;p&gt;First, I sent an email it to the support. They replied me very quickly
+and said &amp;ldquo;We are aware of the issue. We are investigating the issue
+with our firmware over the air (FOTA) &amp;hellip;.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;However, I don&amp;rsquo;t want to wait for that :-p. And my friend who has also
+a gemini pda told me &lt;a href="http://support.planetcom.co.uk/index.php/Gemini_Firmware"&gt;Gemini Firmware&lt;/a&gt; and &lt;a href="http://support.planetcom.co.uk/index.php/Flashing_Guide"&gt;Flashing Guide&lt;/a&gt; pages.&lt;/p&gt;
+&lt;p&gt;To do this, I had to install &lt;a href="http://packman.links2linux.org/download/nas/2455730/libaudio2-1.9.4-1.27.x86_64.rpm"&gt;libaudio2 rpm package&lt;/a&gt; manually to use
+&lt;code&gt;flash_tool.sh&lt;/code&gt; .&lt;/p&gt;</description></item></channel></rss>

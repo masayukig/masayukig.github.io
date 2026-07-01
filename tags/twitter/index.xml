@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Twitter on What's done is done</title><link>https://igawa.io/tags/twitter/</link><description>Recent content in Twitter on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Tue, 27 Mar 2012 20:06:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/twitter/index.xml" rel="self" type="application/rss+xml"/><item><title>#fbというhashtagをつけて#twitter へtweetしたら、#fbのハッシュタグは取り除いて、#Facebook へ投稿</title><link>https://igawa.io/posts/2012/03/fb%E3%81%A8%E3%81%84%E3%81%86hashtag%E3%82%92%E3%81%A4%E3%81%91%E3%81%A6twitter-%E3%81%B8tweet%E3%81%97%E3%81%9F%E3%82%89fb%E3%81%AE%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%82%BF%E3%82%B0%E3%81%AF%E5%8F%96%E3%82%8A%E9%99%A4%E3%81%84%E3%81%A6facebook-%E3%81%B8%E6%8A%95%E7%A8%BF/</link><pubDate>Tue, 27 Mar 2012 20:06:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/fb%E3%81%A8%E3%81%84%E3%81%86hashtag%E3%82%92%E3%81%A4%E3%81%91%E3%81%A6twitter-%E3%81%B8tweet%E3%81%97%E3%81%9F%E3%82%89fb%E3%81%AE%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%82%BF%E3%82%B0%E3%81%AF%E5%8F%96%E3%82%8A%E9%99%A4%E3%81%84%E3%81%A6facebook-%E3%81%B8%E6%8A%95%E7%A8%BF/</guid><description>&lt;p&gt;というiftttのレシピを作りました。
+&lt;a href="http://ifttt.com/recipes/26782"&gt;http://ifttt.com/recipes/26782&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今までは、Twitter -&amp;gt; Facebookを自動連携していましたが、
+最近、Twitterに情報を流すことが多くなり、ちょっと後ろめたさがあったので、
+こんなことにしてみました。&lt;/p&gt;</description></item><item><title>Wifi Body Scale</title><link>https://igawa.io/posts/2010/01/wifi-body-scale/</link><pubDate>Sat, 30 Jan 2010 08:34:00 +0900</pubDate><guid>https://igawa.io/posts/2010/01/wifi-body-scale/</guid><description>&lt;p&gt;&lt;a href="http://www.withings.com/ja"&gt;http://www.withings.com/ja&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;インターネット接続の体重計。
+自動的にTweetする機能もついてるらしい。&lt;/p&gt;
+&lt;p&gt;ちょっと欲しいかもｗ&lt;/p&gt;</description></item><item><title>KernelOrgBotを作ってみた</title><link>https://igawa.io/posts/2009/09/kernelorgbot%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</link><pubDate>Tue, 08 Sep 2009 03:43:00 +0900</pubDate><guid>https://igawa.io/posts/2009/09/kernelorgbot%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</guid><description>&lt;p&gt;Twitterで「KernelOrgBot」なるものを作ってみた。
+&lt;a href="http://twitter.com/KernelOrgBot"&gt;http://twitter.com/KernelOrgBot&lt;/a&gt;
+ちょっと探してみた限りでは、それっぽいものが無かったので。
+ただ、「作った」とは言っても&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitterfeed.com/"&gt;https://twitterfeed.com/&lt;/a&gt;
+で、
+&lt;a href="http://kernel.org/kdist/rss.xml"&gt;http://kernel.org/kdist/rss.xml&lt;/a&gt;
+を読み込ませて、30分毎にチェックする設定にしたぐらいです。&lt;/p&gt;
+&lt;p&gt;もうすでに、3人の方がフォローしてくれているらしい。
+スゴい。&lt;/p&gt;
+&lt;p&gt;こっちから、フォローして良いものかどうか迷ったが、
+フォローしてみることにする。&lt;/p&gt;</description></item><item><title>twitter2mixi.rbの改良は、後回しにしようかな(Twitter対抗、mixi「エコー」 正式サービスに APIも公開へ)</title><link>https://igawa.io/posts/2009/08/twitter2mixirb%E3%81%AE%E6%94%B9%E8%89%AF%E3%81%AF%E5%BE%8C%E5%9B%9E%E3%81%97%E3%81%AB%E3%81%97%E3%82%88%E3%81%86%E3%81%8B%E3%81%AAtwitter%E5%AF%BE%E6%8A%97mixi%E3%82%A8%E3%82%B3%E3%83%BC-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AB-api%E3%82%82%E5%85%AC%E9%96%8B%E3%81%B8/</link><pubDate>Sat, 01 Aug 2009 04:48:00 +0900</pubDate><guid>https://igawa.io/posts/2009/08/twitter2mixirb%E3%81%AE%E6%94%B9%E8%89%AF%E3%81%AF%E5%BE%8C%E5%9B%9E%E3%81%97%E3%81%AB%E3%81%97%E3%82%88%E3%81%86%E3%81%8B%E3%81%AAtwitter%E5%AF%BE%E6%8A%97mixi%E3%82%A8%E3%82%B3%E3%83%BC-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AB-api%E3%82%82%E5%85%AC%E9%96%8B%E3%81%B8/</guid><description>&lt;p&gt;「Twitter対抗、mixi「エコー」正式サービスに　APIも公開へ」&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.itmedia.co.jp/news/articles/0907/31/news085.html"&gt;&lt;img alt="http://www.itmedia.co.jp/news/articles/0907/31/news085.html" loading="lazy" src="http://kwout.com/cutout/7/gk/fz/8pm_bor.jpg" title="Twitter対抗、mixi「エコー」正式サービスに\u3000APIも公開へ - ITmedia News"&gt;
+&lt;/a&gt;
+&lt;a href="http://www.itmedia.co.jp/news/articles/0907/31/news085.html"&gt;Twitter対抗、mixi「エコー」正式サービスに　APIも公開へ - ITmedia
+News&lt;/a&gt; via
+&lt;a href="http://itmedia.kwout.com/quote/7gkfz8pm"&gt;kwout&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://kwout.com/cutout/7/gk/fz/8pm_bor.js"&gt;http://kwout.com/cutout/7/gk/fz/8pm_bor.js&lt;/a&gt;
+ということらしいです。&lt;/p&gt;
+&lt;p&gt;今、twitter2mixi.rbというスクリプトをcronで動かして、twitterつぶやきをmixiエコーへ投げているのですが、
+このスクリプトは、最新の1件だけ取ってきて、mixiエコーへ投げています。
+これを、最新つぶやき全部を取ってきて、全部投げることができるようにしようかなと
+思っていたのですが、APIが公開されるのであれば、それを待ってからの方が良いかなと、
+思ったり、思わなかったり。&lt;/p&gt;</description></item><item><title>friendfeed</title><link>https://igawa.io/posts/2009/07/friendfeed/</link><pubDate>Wed, 29 Jul 2009 06:06:00 +0900</pubDate><guid>https://igawa.io/posts/2009/07/friendfeed/</guid><description>&lt;p&gt;ブログ更新をtwitterへつぶやくのに、wordpressのプラグインを使っていたが、
+friendfeedというのが良さそうだったので、使ってみる。&lt;/p&gt;
+&lt;p&gt;参考サイト:&lt;a href="http://www.ideaxidea.com/archives/2009/06/twitter_via_friendfeed.html"&gt;http://www.ideaxidea.com/archives/2009/06/twitter_via_friendfeed.html&lt;/a&gt;&lt;/p&gt;</description></item><item><title>twitterからmixiエコーへ送信</title><link>https://igawa.io/posts/2009/07/twitter%E3%81%8B%E3%82%89mixi%E3%82%A8%E3%82%B3%E3%83%BC%E3%81%B8%E9%80%81%E4%BF%A1/</link><pubDate>Sun, 26 Jul 2009 07:27:00 +0900</pubDate><guid>https://igawa.io/posts/2009/07/twitter%E3%81%8B%E3%82%89mixi%E3%82%A8%E3%82%B3%E3%83%BC%E3%81%B8%E9%80%81%E4%BF%A1/</guid><description>&lt;p&gt;&lt;a href="http://cyberwave.jp/nashiki/2009/04/twitter%E3%81%97%E3%81%9F%E3%82%89%E3%80%81%E8%87%AA%E5%8B%95%E3%81%A7mixi%E3%82%A8%E3%82%B3%E3%83%BC%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%88%E3%80%80%E3%80%8Etwitter2mixirb%E3%80%8F/comment-page-1/"&gt;Twitterしたら、自動でMixiエコー作ったよ!!　『twitter2mixi.rb』&lt;/a&gt;
+の記事を参考に(というかほぼそのままだが)、Twitterから、mixiエコーへ送信するようにしてみた。&lt;/p&gt;
+&lt;p&gt;mixiの微妙な閉鎖感が若干嫌で、ちょっと足が遠のきつつあったが、
+辛うじてつなぎ止まったかも。&lt;/p&gt;
+&lt;p&gt;上記のスクリプトを使用する上で、私の環境だといくつかつまづいたことがあったので、
+とりあえず、以下に記しておくことにする&amp;hellip;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;文字コードの問題&lt;/li&gt;
+&lt;li&gt;依存ライブラリの問題&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;・文字コードの問題
+ソースをUTF-8-unixで書いたのだが、実行すると、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hoge@unicorn:~/bin$ ./twitter2mixi.rb
+./twitter2mixi.rb:45: syntax error, unexpected tIDENTIFIER, expecting kEND
+puts &amp;quot;login to mixi by #{config['mixiusername']}&amp;quot;
+^
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;と、よく分からないエラーとなる。
+これは、実行時のrubyのKCODEとソースの文字コードが異なると発生する（？）様で、
+twitter2mixi.rbソースの先頭の記述を以下の様に変更して対応。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/ruby -Ku
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;また、最終行近くの&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; form.fields.find { |f| f.name == 'body' }.value = twitterlaststatus.toeuc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;もうまく動作しなかったので、&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; form.fields.find { |f| f.name == 'body' }.value = twitterlaststatus.toutf8
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;に、変更。&lt;/p&gt;
+&lt;p&gt;・依存ライブラリの問題&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Building native extensions. This could take a while&amp;hellip;
+ERROR: Error installing mechanize:
+ERROR: Failed to build gem native extension.
+(snip)
+checking for libxslt/xslt.h in
+/opt/local/include/,/opt/local/include/libxml2,/opt/local/include,/opt/local/include,/opt/local/include/libxml2,/usr/local/include,/usr/local/include/libxml2,/usr/include,/usr/include/libxml2,/usr/include,/usr/include/libxml2&amp;hellip;
+no
+libxslt is missing. try &amp;lsquo;port install libxslt&amp;rsquo; or &amp;lsquo;yum install
+libxslt-devel&amp;rsquo;
+(snip)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;というエラーが出たが、ubuntuにはそんなパッケージは無い。
+で、&lt;/p&gt;</description></item><item><title>Twitter始めてみた</title><link>https://igawa.io/posts/2009/07/twitter%E5%A7%8B%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F/</link><pubDate>Sat, 25 Jul 2009 04:21:00 +0900</pubDate><guid>https://igawa.io/posts/2009/07/twitter%E5%A7%8B%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F/</guid><description>&lt;p&gt;Twitterを始めてみました。&lt;/p&gt;</description></item></channel></rss>

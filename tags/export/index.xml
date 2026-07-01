@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Export on What's done is done</title><link>https://igawa.io/tags/export/</link><description>Recent content in Export on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sun, 16 Nov 2008 08:09:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/export/index.xml" rel="self" type="application/rss+xml"/><item><title>古い記事をインポートしました(MovableType -&gt; Wordpress)</title><link>https://igawa.io/posts/2008/11/%E5%8F%A4%E3%81%84%E8%A8%98%E4%BA%8B%E3%82%92%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%97%E3%81%BE%E3%81%97%E3%81%9Fmovabletype-wordpress/</link><pubDate>Sun, 16 Nov 2008 08:09:00 +0900</pubDate><guid>https://igawa.io/posts/2008/11/%E5%8F%A4%E3%81%84%E8%A8%98%E4%BA%8B%E3%82%92%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%97%E3%81%BE%E3%81%97%E3%81%9Fmovabletype-wordpress/</guid><description>&lt;p&gt;以前、MovableTypeで書いていた記事を、wordpressにインポートしました。&lt;/p&gt;
+&lt;p&gt;方法は、至って簡単。&lt;/p&gt;
+&lt;p&gt;MovableTypeの「ユーティリティ」-&amp;gt;「読み込み/書き出し」-&amp;gt;「エントリの書き出し」で、&lt;/p&gt;
+&lt;p&gt;エントリをファイルに書き出す。しばらく待つと、ファイル保存のダイアログがでるので、&lt;/p&gt;
+&lt;p&gt;適当に名前をつけて保存。&lt;/p&gt;
+&lt;p&gt;その後は、Wordpressの「Tools」-&amp;gt;「インポート」で、先ほど保存したファイルをインポートするだけ。&lt;/p&gt;
+&lt;p&gt;良しとする。w&lt;/p&gt;</description></item></channel></rss>

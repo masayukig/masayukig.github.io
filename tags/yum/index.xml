@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Yum on What's done is done</title><link>https://igawa.io/tags/yum/</link><description>Recent content in Yum on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Mon, 03 Nov 2008 15:35:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/yum/index.xml" rel="self" type="application/rss+xml"/><item><title>Fedoraにuuencode, uudecodeをインストールしたいとき</title><link>https://igawa.io/posts/2008/11/fedora%E3%81%ABuuencode-uudecode%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E3%81%84%E3%81%A8%E3%81%8D/</link><pubDate>Mon, 03 Nov 2008 15:35:00 +0900</pubDate><guid>https://igawa.io/posts/2008/11/fedora%E3%81%ABuuencode-uudecode%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E3%81%84%E3%81%A8%E3%81%8D/</guid><description>&lt;p&gt;Fedoraにuuencode, uudecodeをインストールしたいときは、
+&lt;code&gt;# yum install sharutils&lt;/code&gt;
+と、実行する。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;# yum install uudecode&lt;/code&gt;
+と、実行しても、&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Setting up Install ProcessParsing package install argumentsNo package uudecode available.Nothing to do&lt;/code&gt;
+と、なるだけです。&lt;/p&gt;
+&lt;p&gt;参照URL:&lt;a href="http://d.hatena.ne.jp/hogem/20061217/1166368657"&gt;http://d.hatena.ne.jp/hogem/20061217/1166368657&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

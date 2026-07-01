@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Gadget on What's done is done</title><link>https://igawa.io/tags/gadget/</link><description>Recent content in Gadget on What's done is done</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Mon, 11 Jun 2018 00:00:00 +0900</lastBuildDate><atom:link href="https://igawa.io/tags/gadget/index.xml" rel="self" type="application/rss+xml"/><item><title>X-Bows Keyboard first impression (day 2)</title><link>https://igawa.io/posts/2018/06/x-bows-keyboard-first-impression-2/</link><pubDate>Mon, 11 Jun 2018 00:00:00 +0900</pubDate><guid>https://igawa.io/posts/2018/06/x-bows-keyboard-first-impression-2/</guid><description>&lt;p&gt;&lt;img alt="X-Bows Keyboard" loading="lazy" src="https://lh3.googleusercontent.com/A68ov2kKQgJmQLoJUeQGsbCulq_bBCfHZpt8kzkY4eQQv5MTsUJ_Txf0Xt8jFr6egW7ygxhHuGknHT3os_lqPlkxwwXAgtYTFPdpGvCAVkniUqhoxGg6temcF6n8f7KLS83UWBvIndA=w2400"&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve got the &lt;a href="http://www.x-bows.com/"&gt;X-Bows Mechanical Ergonomic Keyboard&lt;/a&gt;, and I&amp;rsquo;m still
+using and confusing about it now.
+Almost keys are good for me, but I&amp;rsquo;m struggle with some keys such as
+&lt;code&gt;-, =, ), [], space, backslash, enter, backspace and B, Z, etc&lt;/code&gt; keys
+are really annoying for me right now.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m using Emacs and Ctrl+B key a lot, but I often push the Enter
+key&amp;hellip; :(&lt;/p&gt;
+&lt;p&gt;Anyway, I need to practice to get used to it more.&lt;/p&gt;
+&lt;p&gt;Happy Hacking!&lt;/p&gt;</description></item><item><title>X-Bows Keyboard first impression</title><link>https://igawa.io/posts/2018/06/x-bows-keyboard-first-impression/</link><pubDate>Fri, 08 Jun 2018 00:00:00 +0900</pubDate><guid>https://igawa.io/posts/2018/06/x-bows-keyboard-first-impression/</guid><description>&lt;p&gt;&lt;img alt="X-Bows Keyboard" loading="lazy" src="https://lh3.googleusercontent.com/A68ov2kKQgJmQLoJUeQGsbCulq_bBCfHZpt8kzkY4eQQv5MTsUJ_Txf0Xt8jFr6egW7ygxhHuGknHT3os_lqPlkxwwXAgtYTFPdpGvCAVkniUqhoxGg6temcF6n8f7KLS83UWBvIndA=w2400"&gt;&lt;/p&gt;
+&lt;p&gt;I just got the &lt;a href="http://www.x-bows.com/"&gt;X-Bows Mechanical Ergonomic Keyboard&lt;/a&gt;, yeah, the
+shape is a bit weird and it&amp;rsquo;s a bit annoying to get use to, actually..&lt;/p&gt;
+&lt;p&gt;However, it realized me that my hands position was really bad. And,
+I think/believe doing new things are really good for my brain.&lt;/p&gt;
+&lt;p&gt;And also, this keyboard is silent compare to normal mechanical
+keyboards. Touch feeling is also good to me, not so heavy, not so
+light. I feel this is really good for my health.&lt;/p&gt;
+&lt;p&gt;But not sure, someone might say &amp;ldquo;your key typing is very noisy&amp;rdquo;
+someday. If I get like that thing, I need to re-think my keyboard
+strategy.&lt;/p&gt;</description></item><item><title>Restore Gemini PDA Firmware</title><link>https://igawa.io/posts/2018/06/restore-gemini-pda-firmware/</link><pubDate>Wed, 06 Jun 2018 00:00:00 +0900</pubDate><guid>https://igawa.io/posts/2018/06/restore-gemini-pda-firmware/</guid><description>&lt;p&gt;&lt;img alt="Gemini PDA" loading="lazy" src="https://photos.app.goo.gl/n0nD0O5Ulc7uPBlj1"&gt;&lt;/p&gt;
+&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;I had updated my Gemini PDA firmware which was showed in the
+setting. However, after the updating, my gemini never booted with the
+planets rotating screen.&lt;/p&gt;
+&lt;h2 id="how-to-solve-it"&gt;How to solve it&lt;/h2&gt;
+&lt;p&gt;First, I sent an email it to the support. They replied me very quickly
+and said &amp;ldquo;We are aware of the issue. We are investigating the issue
+with our firmware over the air (FOTA) &amp;hellip;.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;However, I don&amp;rsquo;t want to wait for that :-p. And my friend who has also
+a gemini pda told me &lt;a href="http://support.planetcom.co.uk/index.php/Gemini_Firmware"&gt;Gemini Firmware&lt;/a&gt; and &lt;a href="http://support.planetcom.co.uk/index.php/Flashing_Guide"&gt;Flashing Guide&lt;/a&gt; pages.&lt;/p&gt;
+&lt;p&gt;To do this, I had to install &lt;a href="http://packman.links2linux.org/download/nas/2455730/libaudio2-1.9.4-1.27.x86_64.rpm"&gt;libaudio2 rpm package&lt;/a&gt; manually to use
+&lt;code&gt;flash_tool.sh&lt;/code&gt; .&lt;/p&gt;</description></item><item><title>Eye-Fi Pro X2を購入しました。で、オススメの購入方法や、Macでの設定方法について</title><link>https://igawa.io/posts/2012/03/eye-fi-pro-x2%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%81%A7%E3%82%AA%E3%82%B9%E3%82%B9%E3%83%A1%E3%81%AE%E8%B3%BC%E5%85%A5%E6%96%B9%E6%B3%95%E3%82%84mac%E3%81%A7%E3%81%AE%E8%A8%AD%E5%AE%9A%E6%96%B9%E6%B3%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</link><pubDate>Thu, 29 Mar 2012 20:50:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/eye-fi-pro-x2%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%81%A7%E3%82%AA%E3%82%B9%E3%82%B9%E3%83%A1%E3%81%AE%E8%B3%BC%E5%85%A5%E6%96%B9%E6%B3%95%E3%82%84mac%E3%81%A7%E3%81%AE%E8%A8%AD%E5%AE%9A%E6%96%B9%E6%B3%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.eyefi.co.jp/products/prox2"&gt;Eye-Fi Pro X2&lt;/a&gt; を購入しました。&lt;/p&gt;
+&lt;p&gt;というわけで、購入方法、設定方法について。&lt;/p&gt;
+&lt;h2 id="オススメ購入方法"&gt;オススメ購入方法&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Evernoteプレミアム会員になっていて今後も使い続ける予定&lt;/strong&gt;、
+　あるいは、
+**GMOとくとくポイントが余っている &lt;strong&gt;ならば、
+　&lt;a href="http://eyefi.shop-pro.jp/"&gt;Eye-Fi公式オンラインストア&lt;/a&gt;
+がオススメです。
+なぜなら、2012/03/30現在、Eye-Fi公式オンラインストアでは、
+Eye-Fi Mobile X2、または、Pro X2を購入すると、
+**　Evernoteプレミアム会員1年分&lt;/strong&gt;
+が、無料でバンドルされるキャンペーンを実施中だからです。
+(Evernoteプレミアム1年分特典は、2012/4/10 16:00購入分までなので注意)&lt;/p&gt;
+&lt;p&gt;GMOとくとくポイントに関しては、あまり使い所が見つからなくて、
+個人的にちょっと持て余していたところだったので、調度良かっただけです。(^^;&lt;/p&gt;
+&lt;p&gt;どちらにも特に当てはまらない場合は、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://kakaku.com/search_results/Eye-Fi/"&gt;価格.comで最安値を検索&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.yodobashi.com/ec/product/100000001001230441/index.html"&gt;カメラ量販店等&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;で、購入することで良いと思います。&lt;/p&gt;
+&lt;h2 id="設定方法"&gt;設定方法&lt;/h2&gt;
+&lt;h4 id="初めてeye-fiを使う場合"&gt;初めてEye-Fiを使う場合&lt;/h4&gt;
+&lt;p&gt;&lt;a href="http://eyefi.co.jp/support/download/"&gt;http://eyefi.co.jp/support/download/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;より、Eye-Fi Softwareセンターをダウンロードし、インストールする。&lt;/p&gt;
+&lt;p&gt;特に迷うような点はないはず。&lt;/p&gt;
+&lt;h4 id="以前にeye-fiを使用したことがありeye-fi-softwareセンターをインストール済み"&gt;以前にEye-Fiを使用したことがあり、Eye-Fi Softwareセンターをインストール済み&lt;/h4&gt;
+&lt;p&gt;こちらの場合も簡単でした。
+Eye-FiカードをMacに接続すると、以下のような画面が表示されます。
+(表示されない場合は、Eye-Fi Centerを開きます)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/085aa-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-02-20.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/085aa-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-02-20.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回は、「Eye-Fiファームウェアの更新」が案内されたので、
+それに従い、更新してみます。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/ec6dd-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-04.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/ec6dd-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-04.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/5f989-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-19.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/5f989-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-19.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;更新されるかとおもいきや、失敗しました。。orz&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/d3d95-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-39.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/d3d95-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-05-39.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ちょっと悪い予感がしましたが、上記に従い、一度Eye-Fiを取り外してから、
+再度、接続しなおしてみます。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/9c7bc-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-17-19.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/9c7bc-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-17-19.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;特に、エラーは出ること無く、使えるようになっていました。&lt;/p&gt;
+&lt;p&gt;後は、以下の画面からネットワークの設定やアップロードの設定を行えば完了です。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/4cc6c-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-08-34.png"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/4cc6c-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-304-08-34.png?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="まとめ"&gt;まとめ&lt;/h2&gt;
+&lt;h4 id="購入方法"&gt;購入方法&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;[Evernoteを今後も使い続ける予定、または、&lt;a href="http://point.gmo.jp/"&gt;GMOとくとくポイント&lt;/a&gt;が余っている]{.Apple-style-span
+style=&amp;ldquo;font-size:small;font-weight:normal;&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[[　　→　&lt;a href="http://eyefi.shop-pro.jp/"&gt;Eye-Fiオンラインストア&lt;/a&gt;で購入(ただし、Evernoteプレミアム1年分特典は、2012/4/10
+16:00購入分までなので注意)。GMOとくとくポイントがあるならそれを使用する。]{.Apple-style-span
+style=&amp;ldquo;font-weight:normal;&amp;rdquo;}]{.Apple-style-span
+style=&amp;ldquo;font-size:small;&amp;rdquo;}&lt;/p&gt;
+&lt;h4 id="設定方法-1"&gt;設定方法&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;[[基本的にはとても簡単。ただし、ちょっと残念な動作になることもあるので、期待はしすぎないほうが良い。]{.Apple-style-span
+style=&amp;ldquo;font-weight:normal;&amp;rdquo;}]{.Apple-style-span
+style=&amp;ldquo;font-size:small;&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[[
+]{.Apple-style-span style=&amp;ldquo;font-weight:normal;&amp;rdquo;}]{.Apple-style-span
+style=&amp;ldquo;font-size:small;&amp;rdquo;}&lt;/p&gt;
+&lt;p&gt;[[
+]{.Apple-style-span style=&amp;ldquo;font-weight:normal;&amp;rdquo;}]{.Apple-style-span
+style=&amp;ldquo;font-size:small;&amp;rdquo;}&lt;/p&gt;</description></item><item><title>というわけで、NEX-5Nにつけるアクセサリを買ってみた</title><link>https://igawa.io/posts/2012/03/%E3%81%A8%E3%81%84%E3%81%86%E3%82%8F%E3%81%91%E3%81%A7nex-5n%E3%81%AB%E3%81%A4%E3%81%91%E3%82%8B%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</link><pubDate>Wed, 28 Mar 2012 21:05:00 +0900</pubDate><guid>https://igawa.io/posts/2012/03/%E3%81%A8%E3%81%84%E3%81%86%E3%82%8F%E3%81%91%E3%81%A7nex-5n%E3%81%AB%E3%81%A4%E3%81%91%E3%82%8B%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</guid><description>&lt;p&gt;このままでは、NEX-5Nのレンズや液晶がむき出しになってしまうので、&lt;/p&gt;
+&lt;p&gt;保護シートやレンズキャップを買ってみました。&lt;/p&gt;
+&lt;h4 id="購入したもの"&gt;購入したもの&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/8dcd2-2012-03-2904-37-46.jpg"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/8dcd2-2012-03-2904-37-46.jpg?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;左から、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.yodobashi.com/%E3%83%8F%E3%82%AF%E3%83%90-DGF-SANEX5N-SONY-SONY-NEX-5N%E7%94%A8%E6%B6%B2%E6%99%B6%E4%BF%9D%E8%AD%B7%E3%83%95%E3%82%A3%E3%83%AB%E3%83%A0/pd/100000001001414236/"&gt;ハクバ DGF-SANEX5N/SONY
+NEX-5N用液晶保護フィルム&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.yodobashi.com/%E3%82%B1%E3%83%B3%E3%82%B3%E3%83%BC-%E3%83%AC%E3%83%B3%E3%82%BA%E3%82%AD%E3%83%A4%E3%83%84%E3%83%97-KLC-49/pd/100000001001457532/"&gt;ケンコーレンズキャップ(KLC-49)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.amazon.co.jp/gp/product/B00161959Y/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=hughundercons-22&amp;amp;linkCode=as2&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=B00161959Y"&gt;ケンコー [コンパクトデジタルカメラ用フィルター] MCプロテクター
+シルバー枠
+49mm&lt;/a&gt;&lt;img alt="picture" loading="lazy" src="http://www.assoc-amazon.jp/e/ir?t=hughundercons-22&amp;l=as2&amp;o=9&amp;a=B00161959Y"&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;です。&lt;/p&gt;
+&lt;p&gt;私はすべて、ヨドバシカメラ(yodobashi.com)で購入しました。&lt;/p&gt;
+&lt;p&gt;Amazonで購入しても良かったのですが、高いものでも100円程度しか差がなく、
+ヨドバシポイントも貯まっていたので。
+これで安心して外へ持っていくことができそうです。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://masayukig.files.wordpress.com/2012/03/6b4af-2012-03-2905-48-43.jpg"&gt;&lt;img alt="picture" loading="lazy" src="https://masayukig.files.wordpress.com/2012/03/6b4af-2012-03-2905-48-43.jpg?w=300"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;各種アイテム装着後の写真。(液晶保護フィルムは見た目に差が無いのでパス)&lt;/p&gt;
+&lt;h3 id="各アイテム雑感"&gt;各アイテム雑感&lt;/h3&gt;
+&lt;h4 id="液晶保護フィルム"&gt;液晶保護フィルム&lt;/h4&gt;
+&lt;p&gt;300円で購入。
+貼るときに若干気泡が入ってしまったものの、
+添付されていた不織布の液晶クリーニングペーパーをあてて、
+上からカードでゆっくり押していたら、消えました。
+NEX-5Nは、液晶タッチパネルですが、保護フィルムを貼っても特にタッチ感度が
+悪くなった印象は無いです。&lt;/p&gt;
+&lt;h4 id="レンズキャップ"&gt;レンズキャップ&lt;/h4&gt;
+&lt;p&gt;290円で購入。
+NEX-5NDには、もちろん、レンズごとにキャップがついているのですが、
+持ち歩いているといつの間にかなくなっていると悲しいので、
+ひも付きのレンズキャップにしてみました。
+ひもは邪魔にも感じますが、とりあえず、これで持ち歩いて見ることにします。&lt;/p&gt;
+&lt;h4 id="mcプロテクター"&gt;MCプロテクター&lt;/h4&gt;
+&lt;p&gt;1,320円で購入。&lt;/p&gt;
+&lt;p&gt;NEX-5NDには、2つのレンズがついていますが、ひとまず1つだけ購入。&lt;/p&gt;
+&lt;p&gt;レンズがシルバーなので、MCプロテクターもシルバーにしてみたのですが、&lt;/p&gt;
+&lt;p&gt;レンズ先端部分は黒だったので、黒でも良かったかも。。&lt;/p&gt;
+&lt;p&gt;ひとまず、18-55mmレンズに装着。&lt;/p&gt;
+&lt;p&gt;16mmレンズも持ち歩くようになったら、追加購入を考えます。&lt;/p&gt;</description></item></channel></rss>
