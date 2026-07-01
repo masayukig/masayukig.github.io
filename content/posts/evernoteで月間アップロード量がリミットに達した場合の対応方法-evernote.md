@@ -1,0 +1,37 @@
+---
+title: 'Evernoteで月間アップロード量がリミットに達した場合の対応方法 #evernote'
+date: '2012-03-29T09:51:00+09:00'
+slug: evernoteで月間アップロード量がリミットに達した場合の対応方法-evernote
+tags:
+- evernote
+draft: false
+disqus_identifier: 2012-03-29-evernotedeyue-jian-atsupurodoliang-garimitsutonida-shitachang-he-nodui-ying-fang-fa-evernote
+---
+
+先日、Evernoteで月間アップロード量がリミットに達してしまい、
+かなりショボンな感じだったのですが、(一時的に)回避する方法がありました。
+**450円を支払うと、1ヶ月だけ1GBアップロード容量が増える**
+というものです。
+
+
+[![picture](https://masayukig.files.wordpress.com/2012/03/b7ea3-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-29-10.png?w=300)
+](https://masayukig.files.wordpress.com/2012/03/b7ea3-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-29-10.png)
+
+
+
+WebでEvernoteにアクセスして、上記をクリックすると、以下のような画面になるので、 
+
+
+
+[![picture](https://masayukig.files.wordpress.com/2012/03/b13ac-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-38-01.png?w=300)
+](https://masayukig.files.wordpress.com/2012/03/b13ac-e382b9e382afe383aae383bce383b3e382b7e383a7e38383e383882012-03-2918-38-01.png)
+
+
+必要事項を入力すれば、即時で1GBアップロード容量が増えます。
+
+
+公式アナウンスもされているようですし、
+WebでEvernoteを使っていれば、まるわかりだったのですね。。
+
+<http://blog.evernote.com/2011/11/23/new-premium-feature-increase-your-monthly-allowance/>
+<https://support.evernote.com/link/portal/16051/16058/Article/2173/Increased-Upload-Allowance-Overview>

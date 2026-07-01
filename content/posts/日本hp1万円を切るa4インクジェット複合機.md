@@ -1,0 +1,26 @@
+---
+title: 日本HP、1万円を切るA4インクジェット複合機
+date: '2005-06-01T23:24:00+09:00'
+slug: 日本hp1万円を切るa4インクジェット複合機
+tags:
+- PC
+draft: false
+disqus_identifier: 2005-06-01-ri-ben-hp-1mo-yuan-woqie-rua4inkuzietsutofu-he-ji
+---
+
+[http://pc.watch.impress.co.jp/](http://pc.watch.impress.co.jp/docs/2005/0601/hp.htm)
+[http://pcweb.mycom.co.jp/](http://pcweb.mycom.co.jp/news/2005/06/01/001.html)
+[http://h50146.www5.hp.com/](http://h50146.www5.hp.com/products/printers/inkjet/psc1510/index.html)
+
+安いから、大したこと無いんだろう。。と思っていたら大間違い。
+
+印刷解像度 最大4,800×1,200dpi
+
+デジカメと直結して印刷を行なう「PictBridge」に対応
+
+プリント速度 モノクロ20ppm、カラー/モノクロ混在18ppm
+などなど、必要十分と思われる機能を搭載している。
+
+ただ、
+惜しいのは、「メモリカードスロット」が無いことかなぁ。。
+でも無くてもいいか。

@@ -1,0 +1,18 @@
+---
+title: auのWIN向けドラクエ〜FF、8月19日リリース
+date: '2004-08-05T00:14:00+09:00'
+slug: auのwin向けドラクエ〜ff8月19日リリース
+tags:
+- PHS-Mobile-Phone
+draft: false
+disqus_identifier: 2004-08-05-aunowinxiang-kedorakue-ff-8yue-19ri-ririsu
+---
+
+[ITmedia](http://lunatic.xrea.jp/mt/mt.cgi?__mode=view&_type=entry&blog_id=2)
+ゲーム自体はすばらしいんだろうけど、
+
+> 料金は月額525円。
+
+。。。
+数ヶ月しかやる気が起きない値段だね。。
+なんかがっかり。

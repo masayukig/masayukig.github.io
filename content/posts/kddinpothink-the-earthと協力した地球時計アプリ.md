@@ -1,0 +1,32 @@
+---
+title: KDDI、NPO「Think the Earth」と協力した地球時計アプリ
+date: '2005-06-04T21:56:00+09:00'
+slug: kddinpothink-the-earthと協力した地球時計アプリ
+tags:
+- PHS-Mobile-Phone
+draft: false
+disqus_identifier: 2005-06-04-kddi-npothink-the-earth-toxie-li-shitadi-qiu-shi-ji-apuri
+---
+
+[http://k-tai.impress.co.jp/](http://k-tai.impress.co.jp/cda/article/news_toppage/24155.html)
+
+> 「Think the
+> Earthプロジェクト」は、地球環境問題などに喚起を促すような商品・サービスを開発しているNPO。
+
+だそうです。
+この「地球時計アプリ」はＢＲＥＷ対応ケータイで使用できるんだけど、
+
+> 月額105円の利用料で、1日4回更新される雲画像の取得が可能。
+
+だそうだ。無料ではないので、ご注意を。
+しかし、
+
+> 有料登録したユーザーは今後予定されているさまざまなコンテンツも利用できるようになる。
+> 　　　　　　　：
+> 利用料の一部はThink the
+> Earthプロジェクトへの協賛金となり、環境・社会貢献活動に利用される。
+
+とのことなので、気軽に社会貢献できると思えば、安いものなのかも。
+でも、「利用料の一部」がどれくらいなのかは、いまいち不明。
+雲情報の取得に通信料金が別途かかるので、
+auを儲けさせることになるのが、ちょっと悔しい。

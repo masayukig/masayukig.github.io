@@ -1,0 +1,116 @@
+---
+title: さくらのVPS(2G)でUnixBench(5.1.3)を実行してみた。結果：値段そのままなのに、大幅に性能アップ！
+date: '2012-04-03T20:04:00+09:00'
+slug: さくらのvps2gでunixbench513を実行してみた結果値段そのままなのに大幅に性能アップ
+tags:
+- さくら
+- benchmark
+- unixbench
+- VPS
+draft: false
+disqus_identifier: 2012-04-03-sakuranovps2gdeunixbench513woshi-xing-shitemita-jie-guo-zhi-duan-sonomamananoni-da-fu-nixing-neng-atsupu
+---
+
+はじめに
+========
+
+というわけで、早速、 さくらのVPS(2G)で、UnixBenchを実行してみました。
+なお、1.5Gで評価した結果は、["さくらのVPSでUnixBench(5.1.3)を実施してみた
+-
+part2(結果編)"](/posts/2011/03/sakuranovpsdeunixbench513woshi-shi-shitemita-part2jie-guo-bian/)を参照して下さい。
+
+    ========================================================================
+       BYTE UNIX Benchmarks (Version 5.1.3)
+
+       System: localhost.localdomain: GNU/Linux
+       OS: GNU/Linux -- 3.3.0-8.fc16.x86_64 -- #1 SMP Thu Mar 29 18:37:19 UTC 2012
+       Machine: x86_64 (x86_64)
+       Language: en_US.utf8 (charmap="UTF-8", collate="UTF-8")
+       CPU 0: Intel(R) Xeon(R) CPU E5645 (4800.2 bogomips)
+              Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSCALL/SYSRET
+       CPU 1: Intel(R) Xeon(R) CPU E5645 (4800.2 bogomips)
+              Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSCALL/SYSRET
+       CPU 2: Intel(R) Xeon(R) CPU E5645 (4800.2 bogomips)
+              Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSCALL/SYSRET
+       20:22:38 up  2:57,  2 users,  load average: 0.53, 0.41, 0.21; runlevel 3
+
+    ------------------------------------------------------------------------
+    Benchmark Run: Tue Apr 03 2012 20:22:38 - 20:49:59
+    3 CPUs in system; running 1 parallel copy of tests
+
+    Dhrystone 2 using register variables       24322317.4 lps   (10.0 s, 7 samples)
+    Double-Precision Whetstone                     2961.2 MWIPS (7.0 s, 7 samples)
+    Execl Throughput                               1451.8 lps   (30.0 s, 2 samples)
+    File Copy 1024 bufsize 2000 maxblocks        787751.5 KBps  (30.0 s, 2 samples)
+    File Copy 256 bufsize 500 maxblocks          223048.0 KBps  (30.0 s, 2 samples)
+    File Copy 4096 bufsize 8000 maxblocks       1639344.8 KBps  (30.0 s, 2 samples)
+    Pipe Throughput                             1385086.0 lps   (10.0 s, 7 samples)
+    Pipe-based Context Switching                 226423.8 lps   (10.0 s, 7 samples)
+    Process Creation                               3676.0 lps   (30.0 s, 2 samples)
+    Shell Scripts (1 concurrent)                   3725.1 lpm   (60.0 s, 2 samples)
+    Shell Scripts (8 concurrent)                   1646.1 lpm   (60.0 s, 2 samples)
+    System Call Overhead                        1578386.4 lps   (10.0 s, 7 samples)
+
+    System Benchmarks Index Values               BASELINE       RESULT    INDEX
+    Dhrystone 2 using register variables         116700.0   24322317.4   2084.2
+    Double-Precision Whetstone                       55.0       2961.2    538.4
+    Execl Throughput                                 43.0       1451.8    337.6
+    File Copy 1024 bufsize 2000 maxblocks          3960.0     787751.5   1989.3
+    File Copy 256 bufsize 500 maxblocks            1655.0     223048.0   1347.7
+    File Copy 4096 bufsize 8000 maxblocks          5800.0    1639344.8   2826.5
+    Pipe Throughput                               12440.0    1385086.0   1113.4
+    Pipe-based Context Switching                   4000.0     226423.8    566.1
+    Process Creation                                126.0       3676.0    291.7
+    Shell Scripts (1 concurrent)                     42.4       3725.1    878.6
+    Shell Scripts (8 concurrent)                      6.0       1646.1   2743.5
+    System Call Overhead                          15000.0    1578386.4   1052.3
+                                                                       ========
+    System Benchmarks Index Score                                        1024.6
+
+    ------------------------------------------------------------------------
+    Benchmark Run: Tue Apr 03 2012 20:49:59 - 21:17:27
+    3 CPUs in system; running 3 parallel copies of tests
+
+    Dhrystone 2 using register variables       72068041.9 lps   (10.0 s, 7 samples)
+    Double-Precision Whetstone                     8846.1 MWIPS (7.2 s, 7 samples)
+    Execl Throughput                               8582.7 lps   (30.0 s, 2 samples)
+    File Copy 1024 bufsize 2000 maxblocks       1071208.3 KBps  (30.0 s, 2 samples)
+    File Copy 256 bufsize 500 maxblocks          285035.8 KBps  (30.0 s, 2 samples)
+    File Copy 4096 bufsize 8000 maxblocks       2289930.0 KBps  (30.0 s, 2 samples)
+    Pipe Throughput                             4059296.6 lps   (10.0 s, 7 samples)
+    Pipe-based Context Switching                 654058.4 lps   (10.0 s, 7 samples)
+    Process Creation                              28607.3 lps   (30.0 s, 2 samples)
+    Shell Scripts (1 concurrent)                  14152.2 lpm   (60.0 s, 2 samples)
+    Shell Scripts (8 concurrent)                   1953.0 lpm   (60.0 s, 2 samples)
+    System Call Overhead                        4106210.8 lps   (10.0 s, 7 samples)
+
+    System Benchmarks Index Values               BASELINE       RESULT    INDEX
+    Dhrystone 2 using register variables         116700.0   72068041.9   6175.5
+    Double-Precision Whetstone                       55.0       8846.1   1608.4
+    Execl Throughput                                 43.0       8582.7   1996.0
+    File Copy 1024 bufsize 2000 maxblocks          3960.0    1071208.3   2705.1
+    File Copy 256 bufsize 500 maxblocks            1655.0     285035.8   1722.3
+    File Copy 4096 bufsize 8000 maxblocks          5800.0    2289930.0   3948.2
+    Pipe Throughput                               12440.0    4059296.6   3263.1
+    Pipe-based Context Switching                   4000.0     654058.4   1635.1
+    Process Creation                                126.0      28607.3   2270.4
+    Shell Scripts (1 concurrent)                     42.4      14152.2   3337.8
+    Shell Scripts (8 concurrent)                      6.0       1953.0   3254.9
+    System Call Overhead                          15000.0    4106210.8   2737.5
+                                                                       ========
+    System Benchmarks Index Score                                        2670.2
+
+まとめ
+======
+
+  テスト内容                    旧システム(1.5G)                    新システム(2G)
+  ----------------------------- ----------------------------------- -----------------------
+  1 parallel copy of tests      731.7                               1024.6
+  2or3 parallel copy of tests   1256.5                              2670.2
+  CPU                           Core2 Duo T7700@2.4Ghz(2666.8MHz)   Xeon E5645(2400.0MHz)
+
+パラレルテストでは、1.5Gと比較して、2倍以上の結果がでており、CPUもパワーアップしていて、
+さらに、HDD容量2倍以上(200GB)、メモリ512MBアップで、お値段そのままなので、乗り換える価値大と思います。
+
+ただし、まだ、サービス開始直後なので、今後、他のVMの使用状況によっては、
+この結果が維持されるとは限らないので、注意が必要と思います。

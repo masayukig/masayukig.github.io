@@ -1,0 +1,18 @@
+---
+title: ニンテンドーDS発売！
+date: '2004-12-03T23:56:00+09:00'
+slug: ニンテンドーds発売
+tags:
+- game
+draft: false
+disqus_identifier: 2004-12-03-nintendodsfa-mai
+---
+
+[pc.watch.impress.co.jp](http://pc.watch.impress.co.jp/docs/2004/1202/nintendo.htm)
+[business-i.jp](http://www.business-i.jp/news/sou-page/news/art-20041202220906-JQQJKFUHUK.nwc)
+[itmedia](http://www.itmedia.co.jp/lifestyle/articles/0412/02/news122.html)
+
+impressでは、早速分解されちゃってます。
+
+電子手帳機能があれば、即購入しようかと思うのですが。。
+ついてないのかな？タッチパッドもあるから、入力はばっちりだと思うんですが。

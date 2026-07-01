@@ -1,0 +1,24 @@
+---
+title: インストールしたアプリ(iPhone)
+date: '2009-06-28T06:28:00+09:00'
+slug: インストールしたアプリiphone
+tags:
+- GPS
+- iPhone
+- iPhone 3G
+- iPhone 3G S
+- PHS-Mobile-Phone
+draft: false
+disqus_identifier: 2009-06-28-insutorushitaapuriiphone
+---
+
+各種、無料のアプリの他、以下のアプリもインストールしました。
+
+-   iTrail(315円(だったかな？))[![iTrail](http://ax.itunes.apple.com/images/badgeitunes61x15dark.gif)
+    ](http://click.linksynergy.com/fs-bin/stat?id=6ZMj3qNtbOQ&offerid=94348&type=3&subid=0&tmpid=2192&RD_PARM1=http%253A%252F%252Fitunes.apple.com%252FWebObjects%252FMZStore.woa%252Fwa%252FviewSoftware%253Fid%253D286695233%2526mt%253D8%2526uo%253D6%2526partnerId%253D30)
+-   TouchTerm SSH（115円）[![TouchTerm
+    SSH](http://ax.itunes.apple.com/images/badgeitunes61x15dark.gif)
+    ](http://click.linksynergy.com/fs-bin/stat?id=6ZMj3qNtbOQ&offerid=94348&type=3&subid=0&tmpid=2192&RD_PARM1=http%253A%252F%252Fitunes.apple.com%252FWebObjects%252FMZStore.woa%252Fwa%252FviewSoftware%253Fid%253D286623227%2526mt%253D8%2526uo%253D6%2526partnerId%253D30)
+
+iTrailは、GPSロガーになってくれることを期待してます。
+TouchTermは、自宅のサーバにSSHで接続するために購入してみました。

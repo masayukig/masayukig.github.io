@@ -1,0 +1,29 @@
+---
+title: 'screenの時代は終わり。tmuxでリモートコンソールを便利に使うTips : アシアルブログ'
+date: '2012-03-15T21:01:00+09:00'
+slug: screenの時代は終わりtmuxでリモートコンソールを便利に使うtips-アシアルブログ
+categories:
+- Uncategorized
+draft: true
+---
+
+<http://blog.asial.co.jp/881>
+
+
+
+> > [screenの時代は終わり。tmuxでリモートコンソールを便利に使うTips: アシアルブログ](http://blog.asial.co.jp/881)
+> >
+> > お久しぶりの田中です。最近、ずっと大型案件に携わっていた関係で、あまりブログ等でのアウトプットができていませんでした。これからはドンドン書いていきますので、どうぞよろしくお願いします。本日はGNU
+> > screenと同様の機能を持つtmuxを紹介します。 GNU
+> > screenやtmuxは、1つのターミナル画面上に複数のコンソールウィンドウを表示するためのソフトです。デファクトスタンダードであるGNU
+> > ...
+> >
+> > [![はてなブックマーク -
+> > screenの時代は終わり。tmuxでリモートコンソールを便利に使うTips :
+> > アシアルブログ](http://b.hatena.ne.jp/entry/image/http://blog.asial.co.jp/881 "はてなブックマーク - screenの時代は終わり。tmuxでリモートコンソールを便利に使うTips : アシアルブログ")](http://b.hatena.ne.jp/entry/http://blog.asial.co.jp/881)
+> > [![はてなブックマークに追加](http://b.hatena.ne.jp/images/append.gif "はてなブックマークに追加")](http://b.hatena.ne.jp/append?http://blog.asial.co.jp/881)
+
+
+
+from はてなブックマーク - タグ - lifehack
+<http://b.hatena.ne.jp/t/lifehack?sort=hot&threshold=5>

@@ -1,0 +1,35 @@
+---
+title: BCA-453K(東芝 BS/CSアンテナ)購入
+date: '2010-02-22T20:56:00+09:00'
+slug: bca-453k東芝-bscsアンテナ購入
+tags:
+- テレビ
+- デジタル放送
+- BS
+- entertainments
+draft: false
+disqus_identifier: 2010-02-22-bca-453kdong-zhi-bscsantenagou-ru
+---
+
+東芝のBCA-453Kというアンテナを購入しました。
+
+[![BCA-453K](http://farm3.static.flickr.com/2683/4378184177_ca3392eb5e.jpg)
+](http://www.flickr.com/photos/masayun/4378184177/ "BCA-453K by masayukig, on Flickr")
+
+最近、液晶テレビとHDDレコーダを買ったのですがどちらにもBSデジタルチューナーがついていたので、
+アンテナをつければBSデジタル放送が見られるようだったので。
+
+Amazonで5,410円(送料込み)でした。
+まだ、取り付けてませんが、一人で取り付けられるだろうか。。。？
+
+<http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=hughundercons-22&o=9&p=8&l=as1&m=amazon&f=ifr&md=1X69VDGQCMF7Z30FM082&asins=B002B3MWE6>
+
+2010/03/07追記
+
+無事、取り付け終わった。
+もともと、テレビとベランダがとても近い位置だったので、
+テレビで受信強度を見ながらの調整がとても楽にできました。
+
+ベランダからテレビが見られない配置だったら、一人での取り付けは
+「やってらんねー」と思ったと思う。
+mm(実際には角度だが)単位の位置調整作業なので。
