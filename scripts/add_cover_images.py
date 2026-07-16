@@ -3,6 +3,7 @@
 body, so PaperMod shows a thumbnail on the home page list and post header.
 Posts with no embedded image are left untouched (no cover shown).
 """
+
 import glob
 import os
 import re
@@ -18,7 +19,7 @@ for path in sorted(glob.glob(os.path.join(POSTS_DIR, "*.md"))):
     with open(path, encoding="utf-8") as f:
         text = f.read()
     m = re.match(r"^---\n(.*?\n)---\n", text, re.DOTALL)
-    fm_text, body = m.group(1), text[m.end():]
+    fm_text, body = m.group(1), text[m.end() :]
     fm = yaml.safe_load(fm_text)
 
     img = IMG_RE.search(body)

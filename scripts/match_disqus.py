@@ -8,6 +8,7 @@ recompute. Instead we scrape the identifier straight out of the old
 generated HTML (checked out from the `main` branch) and match it back to
 the corresponding new post by (date, normalized title).
 """
+
 import glob
 import os
 import re
@@ -50,7 +51,7 @@ for path in sorted(glob.glob(os.path.join(POSTS_DIR, "*.md"))):
     with open(path, encoding="utf-8") as f:
         text = f.read()
     m = re.match(r"^---\n(.*?\n)---\n", text, re.DOTALL)
-    fm_text, body = m.group(1), text[m.end():]
+    fm_text, body = m.group(1), text[m.end() :]
     fm = yaml.safe_load(fm_text)
     if fm.get("draft"):
         continue

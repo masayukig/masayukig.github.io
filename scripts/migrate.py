@@ -10,9 +10,9 @@ Output: OUT_DIR/*.md  (Hugo posts with TOML-ish YAML front matter)
 Not a general rst->md converter -- only handles the constructs actually
 present in this specific 25-file corpus (checked by hand beforehand).
 """
+
 import os
 import re
-import sys
 import yaml
 from datetime import datetime
 
@@ -53,12 +53,17 @@ def dump_front_matter(meta):
     for k in ("title", "date", "lastmod", "slug", "categories", "tags", "draft"):
         if k in meta:
             ordered[k] = meta[k]
-    return "---\n" + yaml.safe_dump(ordered, allow_unicode=True, sort_keys=False) + "---\n\n"
+    return (
+        "---\n"
+        + yaml.safe_dump(ordered, allow_unicode=True, sort_keys=False)
+        + "---\n\n"
+    )
 
 
 # ---------------------------------------------------------------------------
 # imported/*.md  (Pelican "Field: value" metadata, body already Markdown)
 # ---------------------------------------------------------------------------
+
 
 def parse_imported(path):
     with open(path, encoding="utf-8") as f:
@@ -175,7 +180,11 @@ def rst_to_md(lines, fname):
         if re.match(r"^\.\. note::\s*$", line.strip()):
             i += 1
             block = []
-            while i < n and (lines[i].strip() == "" or lines[i].startswith(" ") or lines[i].startswith("\t")):
+            while i < n and (
+                lines[i].strip() == ""
+                or lines[i].startswith(" ")
+                or lines[i].startswith("\t")
+            ):
                 if lines[i].strip() == "":
                     if block and block[-1] == "":
                         i += 1
@@ -196,7 +205,9 @@ def rst_to_md(lines, fname):
             url = m.group(1).replace("{static}/images/", "/images/")
             i += 1
             alt = ""
-            while i < n and (lines[i].strip() == "" or re.match(r"^\s+:\w+:", lines[i])):
+            while i < n and (
+                lines[i].strip() == "" or re.match(r"^\s+:\w+:", lines[i])
+            ):
                 opt = re.match(r"^\s+:alt:\s*(.*)$", lines[i])
                 if opt:
                     alt = opt.group(1).strip()
@@ -207,7 +218,9 @@ def rst_to_md(lines, fname):
 
         # unhandled rst comment/directive -> drop, flag for manual review
         if line.strip().startswith(".. "):
-            review_notes.append(f"[rst] {fname}: dropped directive/comment: {line.strip()!r}")
+            review_notes.append(
+                f"[rst] {fname}: dropped directive/comment: {line.strip()!r}"
+            )
             i += 1
             continue
 
@@ -225,10 +238,14 @@ def rst_to_md(lines, fname):
                 j += 1
             while block and block[-1] == "":
                 block.pop()
-            indent = min((len(b) - len(b.lstrip()) for b in block if b.strip()), default=0)
+            indent = min(
+                (len(b) - len(b.lstrip()) for b in block if b.strip()), default=0
+            )
             block = [b[indent:] if b.strip() else b for b in block]
             if lead_text:
-                out.append(lead_text + ":" if not lead_text.endswith(":") else lead_text)
+                out.append(
+                    lead_text + ":" if not lead_text.endswith(":") else lead_text
+                )
                 out.append("")
             out.append("```")
             out.extend(block)
@@ -284,7 +301,9 @@ def migrate_rst():
     # disclaimer.rst / presentations.rst come from content/pages/ (static
     # pages, no Pelican field-list metadata) -- handled separately, not posts.
     PAGE_FILES = {"disclaimer.rst", "presentations.rst"}
-    files = sorted(f for f in os.listdir(SRC_RST) if f.endswith(".rst") and f not in PAGE_FILES)
+    files = sorted(
+        f for f in os.listdir(SRC_RST) if f.endswith(".rst") and f not in PAGE_FILES
+    )
     count = 0
     for fname in files:
         path = os.path.join(SRC_RST, fname)

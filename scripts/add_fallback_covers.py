@@ -2,6 +2,7 @@
 """Give posts that have no embedded image a category-based fallback cover,
 using free (Pixabay) photos fetched into static/images/covers/.
 """
+
 import glob
 import os
 
@@ -11,14 +12,16 @@ POSTS_DIR = os.path.expanduser("~/git/masayukig.github.io/content/posts")
 COVERS_DIR = os.path.expanduser("~/git/masayukig.github.io/static/images/covers")
 
 available = {os.path.splitext(f)[0] for f in os.listdir(COVERS_DIR)}
-ext_by_name = {os.path.splitext(f)[0]: os.path.splitext(f)[1] for f in os.listdir(COVERS_DIR)}
+ext_by_name = {
+    os.path.splitext(f)[0]: os.path.splitext(f)[1] for f in os.listdir(COVERS_DIR)
+}
 
 updated = 0
 for path in sorted(glob.glob(os.path.join(POSTS_DIR, "*.md"))):
     with open(path, encoding="utf-8") as f:
         text = f.read()
     m = __import__("re").match(r"^---\n(.*?\n)---\n", text, __import__("re").DOTALL)
-    fm_text, body = m.group(1), text[m.end():]
+    fm_text, body = m.group(1), text[m.end() :]
     fm = yaml.safe_load(fm_text)
 
     if fm.get("cover"):

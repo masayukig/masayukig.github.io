@@ -10,5 +10,3 @@ cover:
   image: /images/covers/uncategorized.jpg
   alt: Linux kernelソースをmakeして、結果をブログへ投稿スクリプト
 ---
-
-

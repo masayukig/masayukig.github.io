@@ -10,5 +10,3 @@ cover:
   image: /images/covers/uncategorized.jpg
   alt: iPhone
 ---
-
-

@@ -1,0 +1,41 @@
+# pre-commit: https://pre-commit.com/
+#
+# インストール:
+#   pipx install pre-commit
+#   pre-commit install
+#
+# 手動で全ファイルに実行:
+#   pre-commit run --all-files
+#
+# Hugoビルド出力(public/)とtheme submodule(themes/)は対象外。
+# scripts/配下のみPython(ruff)対象。
+exclude: ^public/
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: ["--maxkb=2048"]
+      - id: check-yaml
+        args: ["--allow-multiple-documents"]
+      - id: detect-private-key
+
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+        args: ["--baseline", ".secrets.baseline"]
+        exclude: ^public/
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.20
+    hooks:
+      - id: ruff-check
+        args: [--fix]
+        files: ^scripts/
+      - id: ruff-format
+        files: ^scripts/
