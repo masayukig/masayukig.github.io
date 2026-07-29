@@ -9476,4 +9476,33 @@ Cloud&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;OpenStackはどのようにテストしているのか？ (in Japanese)&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;OpenStackはどのようにテストしているのか？ (in Japanese)&lt;/p&gt;</description></item><item><title>Privacy Policy / プライバシーポリシー</title><link>https://igawa.io/privacy-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://igawa.io/privacy-policy/</guid><description>&lt;p&gt;Last updated: 2026-07-29 / 最終更新: 2026年7月29日&lt;/p&gt;
+&lt;h2 id="english"&gt;English&lt;/h2&gt;
+&lt;h3 id="1-scope"&gt;1. Scope&lt;/h3&gt;
+&lt;p&gt;This Privacy Policy covers:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;This website&lt;/strong&gt; (&lt;code&gt;https://igawa.io/&lt;/code&gt;), a personal blog operated by Masayuki Igawa.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;health-tracker&lt;/strong&gt;, a personal, self-hosted application operated by Masayuki Igawa
+for the sole purpose of recording and visualizing his own health data. It is not
+offered to, and is not usable by, any other person.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="2-this-website"&gt;2. This website&lt;/h3&gt;
+&lt;p&gt;This website uses Google Analytics to collect anonymous aggregate access statistics
+(such as page views and referrers). Google Analytics uses cookies. You can opt out via
+the &lt;a href="https://tools.google.com/dlpage/gaoptout"&gt;Google Analytics Opt-out Browser Add-on&lt;/a&gt;.
+This website does not otherwise collect personal information, and has no login,
+no user accounts, and no forms.&lt;/p&gt;</description></item><item><title>Terms of Service / 利用規約</title><link>https://igawa.io/terms-of-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://igawa.io/terms-of-service/</guid><description>&lt;p&gt;Last updated: 2026-07-29 / 最終更新: 2026年7月29日&lt;/p&gt;
+&lt;h2 id="english"&gt;English&lt;/h2&gt;
+&lt;h3 id="1-about-these-terms"&gt;1. About these terms&lt;/h3&gt;
+&lt;p&gt;These terms apply to &lt;strong&gt;health-tracker&lt;/strong&gt;, a personal application operated by
+Masayuki Igawa (&amp;ldquo;the operator&amp;rdquo;) on his own hardware, and to this website
+(&lt;code&gt;https://igawa.io/&lt;/code&gt;).&lt;/p&gt;
+&lt;h3 id="2-who-may-use-health-tracker"&gt;2. Who may use health-tracker&lt;/h3&gt;
+&lt;p&gt;health-tracker is a single-user application built and run by the operator for his own
+use only. It is not offered as a service, it has no sign-up, and no other person is
+granted a right to use it. It runs on a private home network that is not reachable from
+the public internet.&lt;/p&gt;
+&lt;h3 id="3-data-accessed"&gt;3. Data accessed&lt;/h3&gt;
+&lt;p&gt;health-tracker reads the operator&amp;rsquo;s own health and fitness data from the Google Health
+API using read-only scopes. See the &lt;a href="https://igawa.io/privacy-policy/"&gt;Privacy Policy&lt;/a&gt; for the exact
+scopes, the purpose of each, and how the data is stored and handled.&lt;/p&gt;</description></item></channel></rss>
