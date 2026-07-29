@@ -9436,7 +9436,22 @@ Cloud&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;OpenStackはどのようにテストしているのか？ (in Japanese)&lt;/p&gt;</description></item><item><title>DISCLAIMER</title><link>https://igawa.io/disclaimer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://igawa.io/disclaimer/</guid><description>&lt;p&gt;These blog posts are my own opinion.&lt;/p&gt;
-&lt;p&gt;本ブログに記載の内容は個人の見解であり、所属する組織・企業の意見を代表するものではありません。&lt;/p&gt;</description></item><item><title>Presentations</title><link>https://igawa.io/presentations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://igawa.io/presentations/</guid><description>&lt;p&gt;These are my public speaking/writing list.&lt;/p&gt;
+&lt;p&gt;本ブログに記載の内容は個人の見解であり、所属する組織・企業の意見を代表するものではありません。&lt;/p&gt;</description></item><item><title>health-tracker</title><link>https://igawa.io/health-tracker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://igawa.io/health-tracker/</guid><description>&lt;h2 id="english"&gt;English&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;health-tracker&lt;/strong&gt; is a personal, self-hosted application built and operated by
+Masayuki Igawa to record and visualize his own health data. It is a single-user
+application: it is not offered as a service, it has no sign-up, and no other person
+can use it.&lt;/p&gt;
+&lt;h3 id="what-it-does"&gt;What it does&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Records blood test results, entered by hand or imported from clinic PDFs&lt;/li&gt;
+&lt;li&gt;Records body weight and body composition from a connected smart scale&lt;/li&gt;
+&lt;li&gt;Records daily step counts, resting heart rate, heart rate variability, and sleep,
+read from the Google Health API&lt;/li&gt;
+&lt;li&gt;Displays all of the above as time-series charts on a private dashboard, so that
+long-term trends are visible alongside each other&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All data belongs to the operator, is stored on hardware the operator owns, and is
+never shared with anyone.&lt;/p&gt;</description></item><item><title>Presentations</title><link>https://igawa.io/presentations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://igawa.io/presentations/</guid><description>&lt;p&gt;These are my public speaking/writing list.&lt;/p&gt;
 &lt;h2 id="speaking"&gt;Speaking&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
