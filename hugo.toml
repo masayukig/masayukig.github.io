@@ -80,3 +80,15 @@ paginate = 10
     name = "Tags"
     url = "/tags/"
     weight = 30
+  # Google OAuth のポリシー要件により、プライバシーポリシーはホームページから
+  # リンクされている必要があるため、メニューに含めている
+  [[menu.main]]
+    identifier = "privacy-policy"
+    name = "Privacy"
+    url = "/privacy-policy/"
+    weight = 40
+  [[menu.main]]
+    identifier = "terms-of-service"
+    name = "Terms"
+    url = "/terms-of-service/"
+    weight = 50
